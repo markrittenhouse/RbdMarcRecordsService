@@ -2,7 +2,7 @@
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class RittenhouseMarcFile : MarcFileData2, IMarcFile
+    public class RittenhouseMarcFile : MarcFileData, IMarcFile
     {
         private readonly MarcRecordProvider _marcRecordProvider;
 

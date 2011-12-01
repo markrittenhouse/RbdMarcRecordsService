@@ -72,17 +72,17 @@ namespace MarcRecordServiceApp
                 {
                     case "-CreateNlmMarcRecords":
                     case "01":
-                        task = new MarcRecordsTask2(MarcRecordProvider.Nlm);
+                        task = new MarcRecordsTask(MarcRecordProvider.Nlm);
                         break;
 
                     case "-CreateLcMarcRecords":
                     case "02":
-                        task = new MarcRecordsTask2(MarcRecordProvider.Lc);
+                        task = new MarcRecordsTask(MarcRecordProvider.Lc);
                         break;
 
                     case "-CreateRbdMarcRecords":
                     case "03":
-                        task = new MarcRecordsTask2(MarcRecordProvider.Rbd);
+                        task = new MarcRecordsTask(MarcRecordProvider.Rbd);
                         break;
 
                     default:
