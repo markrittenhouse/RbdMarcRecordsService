@@ -1,56 +1,38 @@
-﻿using System.Linq;
+﻿using System;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Entities.Base;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class MarcFileData : EntityBase
+	public class MarcFileData2 : EntityBase
     {
-        public const char GroupSeparator = '\x1d';
-        public const char RecordSeparator = '\x1e';
-        public const char UnitSeparator = '\x1f';
-
-        public string Isbn10 { get; private set; }
-        public string Isbn13 { get; private set; }
-        public string MrcFileText { get; private set; }
+        
+        public string EncodingLevel { get; private set; }
+        private string _mrcFileText;
+        public string XmlFileText { get; set; }
         public string MrkFileText { get; set; }
-        public Product Product { get; private set; }
-
-        private string[] _records;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="mrcFileText"></param>
-        public MarcFileData(string mrcFileText)
+        public string MrcFileText
         {
-            if (!mrcFileText.EndsWith(GroupSeparator.ToString()))
+            get { return _mrcFileText; }
+            set
             {
-                MrcFileText = string.Format("{0}{1}", mrcFileText, GroupSeparator);
-            }
-            MrcFileText = mrcFileText;
-
-            _records = MrcFileText.Split(RecordSeparator);
-
-            if (_records.Length > 3)
-            {
-                Isbn10 = _records[2].Substring(3);
-                Isbn13 = _records[3].Substring(3);
-                Log.DebugFormat("isbn10: {0}, isbn13: {1}", Isbn10, Isbn13);
+                _mrcFileText = value;
+                EncodingLevel = value.Substring(17, 1);
             }
         }
 
+        public Product Product { get; private set; }
+
+        public DateTime ProcessedDate { get; private set; }
+
         /// <summary>
-        /// 
+        /// Need to set product to insert null records when no record is found on external searchs
         /// </summary>
-        /// <param name="products"></param>
-        public void SetProduct(Product[] products)
+        /// <param name="product"></param>
+        public MarcFileData2(Product product)
         {
-            foreach (Product product in products.Where(product => product.Isbn10 == Isbn10))
-            {
-                Product = product;
-                return;
-            }
+            Product = product;
+            ProcessedDate = DateTime.Now;
         }
     }
 }
