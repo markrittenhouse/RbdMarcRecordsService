@@ -117,9 +117,8 @@
     <Compile Include="Tasks\MarcRecords\IMarcFile.cs" />
     <Compile Include="Tasks\MarcRecords\LcMarcFile.cs" />
     <Compile Include="Tasks\MarcRecords\MarcFileData.cs" />
-    <Compile Include="Tasks\MarcRecords\MarcFileData2.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordProvider.cs" />
-    <Compile Include="Tasks\MarcRecords\MarcRecordsTask2.cs" />
+    <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\NlmMarcFile.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseMarcFile.cs" />
     <Compile Include="Tasks\TaskBase.cs" />

@@ -36,14 +36,14 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .ToString();
 
         public static readonly string FromProductAndMarcRecords = new StringBuilder()
-            .Append("from   dbo.Product p ")
-            .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-            .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-            .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
-            .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append(" left join MarcRecords.dbo.MarcRecord mr on mr.sku = p.sku ")
-            .Append(" left join MarcRecords.dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId ")
+            .Append("from   RittenhouseWeb.dbo.Product p ")
+            .Append(" join  RittenhouseWeb.dbo.Inventory i on i.productId = p.productId ")
+            .Append(" join  RittenhouseWeb.dbo.ProductPrice pp on pp.productId = p.productId ")
+            .Append(" left join  RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
+            .Append(" left join  RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
+            .Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
+            .Append(" left join dbo.MarcRecord mr on mr.sku = p.sku ")
+            .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId ")
             .Append(" and mrp.MarcRecordProviderTypeId = {0} ")
             .Append(" where p.isAvailableForSale = 1 ")
             .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) ")
@@ -53,124 +53,124 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
 
             
-        /// <summary>
-        /// Old Marc Record Count
-        /// </summary>
-        /// <param name="batchSize"></param>
-        /// <returns></returns>
-        public static Product[] GetProductsWithoutMarcRecords(int batchSize)
-        {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-            SqlDataReader reader = null;
+        ///// <summary>
+        ///// Old Marc Record Count
+        ///// </summary>
+        ///// <param name="batchSize"></param>
+        ///// <returns></returns>
+        //public static Product[] GetProductsWithoutMarcRecords(int batchSize)
+        //{
+        //    SqlConnection cnn = null;
+        //    SqlCommand command = null;
+        //    SqlDataReader reader = null;
 
-            List<Product> products = new List<Product>();
+        //    List<Product> products = new List<Product>();
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+        //    Stopwatch stopWatch = new Stopwatch();
+        //    stopWatch.Start();
 
-            string sql = new StringBuilder()
-            .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
-            .Append("from   dbo.Product p ")
-            .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-            .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-            .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
-            .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append("where  p.productId not in (select pmr.productId from ProductMarcRecord pmr) ")
-            .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
-            .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-            .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-            .Append("order by orderByDate ")    // process oldest records first
-            .ToString();
+        //    string sql = new StringBuilder()
+        //    .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
+        //    .Append("from   dbo.Product p ")
+        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
+        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
+        //    .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
+        //    .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
+        //    .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
+        //    .Append("where  p.productId not in (select pmr.productId from ProductMarcRecord pmr) ")
+        //    .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
+        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
+        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
+        //    .Append("order by orderByDate ")    // process oldest records first
+        //    .ToString();
 
-            try
-            {
-                cnn = GetRittenhouseConnection();
+        //    try
+        //    {
+        //        cnn = GetRittenhouseConnection();
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
+        //        command = cnn.CreateCommand();
+        //        command.CommandText = sql;
+        //        command.CommandTimeout = 15;
 
-                reader = command.ExecuteReader();
+        //        reader = command.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    //Product product = PopulateProduct(reader, false);
-                    //products.Add(product);
-                    ProductEntity productEntity = new ProductEntity();
-                    productEntity.Populate(reader);
-                    products.Add(productEntity.GetProduct());
-                }
-                return products.ToArray();
-            }
-            catch (Exception ex)
-            {
-                Log.InfoFormat("sql: {0}", sql);
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command, reader);
-            }
-        }
+        //        while (reader.Read())
+        //        {
+        //            //Product product = PopulateProduct(reader, false);
+        //            //products.Add(product);
+        //            ProductEntity productEntity = new ProductEntity();
+        //            productEntity.Populate(reader);
+        //            products.Add(productEntity.GetProduct());
+        //        }
+        //        return products.ToArray();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Log.InfoFormat("sql: {0}", sql);
+        //        Log.Error(ex.Message, ex);
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DisposeConnections(cnn, command, reader);
+        //    }
+        //}
 
-        /// <summary>
-        /// Old Marc Record Count
-        /// </summary>
-        /// <returns></returns>
-        public static int GetProductsWithoutMarcRecordsCount()
-        {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-            SqlDataReader reader = null;
+        ///// <summary>
+        ///// Old Marc Record Count
+        ///// </summary>
+        ///// <returns></returns>
+        //public static int GetProductsWithoutMarcRecordsCount()
+        //{
+        //    SqlConnection cnn = null;
+        //    SqlCommand command = null;
+        //    SqlDataReader reader = null;
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+        //    Stopwatch stopWatch = new Stopwatch();
+        //    stopWatch.Start();
 
-            string sql = new StringBuilder()
-            .Append("select count(*) ")
-            .Append("from   dbo.Product p ")
-            .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-            .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-            .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
-            .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append("where  p.isbn13 not in (select isbn13 from MarcRecords.dbo.MarcRecord) ")
-            .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
-            .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-            .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-            .ToString();
+        //    string sql = new StringBuilder()
+        //    .Append("select count(*) ")
+        //    .Append("from   dbo.Product p ")
+        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
+        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
+        //    .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
+        //    .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
+        //    .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
+        //    .Append("where  p.isbn13 not in (select isbn13 from MarcRecords.dbo.MarcRecord) ")
+        //    .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
+        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
+        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
+        //    .ToString();
 
-            try
-            {
-                cnn = GetRittenhouseConnection();
+        //    try
+        //    {
+        //        cnn = GetRittenhouseConnection();
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
+        //        command = cnn.CreateCommand();
+        //        command.CommandText = sql;
+        //        command.CommandTimeout = 15;
 
-                reader = command.ExecuteReader();
+        //        reader = command.ExecuteReader();
 
-                int count = -2;
-                if (reader.Read())
-                {
-                    count = GetInt32Value(reader, 0, -1);
-                }
-                return count;
-            }
-            catch (Exception ex)
-            {
-                Log.InfoFormat("sql: {0}", sql);
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command, reader);
-            }
-        }
+        //        int count = -2;
+        //        if (reader.Read())
+        //        {
+        //            count = GetInt32Value(reader, 0, -1);
+        //        }
+        //        return count;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Log.InfoFormat("sql: {0}", sql);
+        //        Log.Error(ex.Message, ex);
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DisposeConnections(cnn, command, reader);
+        //    }
+        //}
 
         /// <summary>
         /// 
@@ -284,128 +284,128 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="batchSize"></param>
-        /// <returns></returns>
-        public static Product[] GetProductsWithMarcRecordsForUpdate(int batchSize)
-        {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-            SqlDataReader reader = null;
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="batchSize"></param>
+        ///// <returns></returns>
+        //public static Product[] GetProductsWithMarcRecordsForUpdate(int batchSize)
+        //{
+        //    SqlConnection cnn = null;
+        //    SqlCommand command = null;
+        //    SqlDataReader reader = null;
 
-            List<Product> products = new List<Product>();
+        //    List<Product> products = new List<Product>();
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+        //    Stopwatch stopWatch = new Stopwatch();
+        //    stopWatch.Start();
 
-            string sql = new StringBuilder()
-            .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
-            .Append("from   dbo.Product p ")
-            .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-            //.Append(" join  dbo.ProductStatus status on p.productStatusId = status.productStatusId ")
-            .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-            .Append(" left join dbo.Category cat on p.categoryId = cat.categoryId ")
-            .Append(" left join dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            .Append(" left join dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append(" join  dbo.ProductMarcRecord pmr on p.productId = pmr.productId ")
-            .Append("where  p.isAvailableForSale = 1 ")             // only process titles available for sale
-            .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-            .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-            .Append("  and  p.dateUpdated > pmr.dateCreated ")      // records that need to be updated.
-            .Append("order by orderByDate ")    // process oldest records first
-            .ToString();
+        //    string sql = new StringBuilder()
+        //    .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
+        //    .Append("from   dbo.Product p ")
+        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
+        //    //.Append(" join  dbo.ProductStatus status on p.productStatusId = status.productStatusId ")
+        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
+        //    .Append(" left join dbo.Category cat on p.categoryId = cat.categoryId ")
+        //    .Append(" left join dbo.Publisher pub on p.publisherId = pub.publisherId ")
+        //    .Append(" left join dbo.ProductCoverImage pci on p.productId = pci.productId ")
+        //    .Append(" join  dbo.ProductMarcRecord pmr on p.productId = pmr.productId ")
+        //    .Append("where  p.isAvailableForSale = 1 ")             // only process titles available for sale
+        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
+        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
+        //    .Append("  and  p.dateUpdated > pmr.dateCreated ")      // records that need to be updated.
+        //    .Append("order by orderByDate ")    // process oldest records first
+        //    .ToString();
 
-            try
-            {
-                cnn = GetRittenhouseConnection();
+        //    try
+        //    {
+        //        cnn = GetRittenhouseConnection();
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
+        //        command = cnn.CreateCommand();
+        //        command.CommandText = sql;
+        //        command.CommandTimeout = 15;
 
-                reader = command.ExecuteReader();
+        //        reader = command.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    //Product product = PopulateProduct(reader, false);
-                    ProductEntity productEntity = new ProductEntity();
-                    productEntity.Populate(reader);
-                    Product product = productEntity.GetProduct();
+        //        while (reader.Read())
+        //        {
+        //            //Product product = PopulateProduct(reader, false);
+        //            ProductEntity productEntity = new ProductEntity();
+        //            productEntity.Populate(reader);
+        //            Product product = productEntity.GetProduct();
 
-                    products.Add(product);
-                }
-                return products.ToArray();
-            }
-            catch (Exception ex)
-            {
-                Log.InfoFormat("sql: {0}", sql);
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command, reader);
-            }
-        }
+        //            products.Add(product);
+        //        }
+        //        return products.ToArray();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Log.InfoFormat("sql: {0}", sql);
+        //        Log.Error(ex.Message, ex);
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DisposeConnections(cnn, command, reader);
+        //    }
+        //}
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public static int GetProductsWithMarcRecordsCountForUpdate()
-        {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-            SqlDataReader reader = null;
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <returns></returns>
+        //public static int GetProductsWithMarcRecordsCountForUpdate()
+        //{
+        //    SqlConnection cnn = null;
+        //    SqlCommand command = null;
+        //    SqlDataReader reader = null;
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+        //    Stopwatch stopWatch = new Stopwatch();
+        //    stopWatch.Start();
 
-            string sql = new StringBuilder()
-            .Append("select count(*) ")
-            .Append("from   dbo.Product p ")
-            .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-            .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-            .Append(" left join dbo.Category cat on p.categoryId = cat.categoryId ")
-            .Append(" left join dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            .Append(" left join dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append(" join  dbo.ProductMarcRecord pmr on p.productId = pmr.productId ")
-            .Append("where  p.isAvailableForSale = 1 ")             // only process titles available for sale
-            .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-            .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-            .Append("  and  p.dateUpdated > pmr.dateCreated ")      // records that need to be updated.
-            .ToString();
+        //    string sql = new StringBuilder()
+        //    .Append("select count(*) ")
+        //    .Append("from   dbo.Product p ")
+        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
+        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
+        //    .Append(" left join dbo.Category cat on p.categoryId = cat.categoryId ")
+        //    .Append(" left join dbo.Publisher pub on p.publisherId = pub.publisherId ")
+        //    .Append(" left join dbo.ProductCoverImage pci on p.productId = pci.productId ")
+        //    .Append(" join  dbo.ProductMarcRecord pmr on p.productId = pmr.productId ")
+        //    .Append("where  p.isAvailableForSale = 1 ")             // only process titles available for sale
+        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
+        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
+        //    .Append("  and  p.dateUpdated > pmr.dateCreated ")      // records that need to be updated.
+        //    .ToString();
 
-            try
-            {
-                cnn = GetRittenhouseConnection();
+        //    try
+        //    {
+        //        cnn = GetRittenhouseConnection();
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
+        //        command = cnn.CreateCommand();
+        //        command.CommandText = sql;
+        //        command.CommandTimeout = 15;
 
-                reader = command.ExecuteReader();
+        //        reader = command.ExecuteReader();
 
-                int count = -2;
-                if (reader.Read())
-                {
-                    count = GetInt32Value(reader, 0, -1);
-                }
-                return count;
-            }
-            catch (Exception ex)
-            {
-                Log.InfoFormat("sql: {0}", sql);
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command, reader);
-            }
-        }
+        //        int count = -2;
+        //        if (reader.Read())
+        //        {
+        //            count = GetInt32Value(reader, 0, -1);
+        //        }
+        //        return count;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Log.InfoFormat("sql: {0}", sql);
+        //        Log.Error(ex.Message, ex);
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        DisposeConnections(cnn, command, reader);
+        //    }
+        //}
 
 		///// <summary>
 		///// 

@@ -12,7 +12,7 @@ using Zoom.Net.YazSharp;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class MarcRecordsTask2 : TaskBase2
+    public class MarcRecordsTask : TaskBase2
     {
         //private readonly int _batchSize = Properties.Settings.Default.MarcRecordBatchSize;
         //private readonly int _batchSize = 100;
@@ -27,8 +27,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// <summary>
         /// 
         /// </summary>
-        public MarcRecordsTask2(MarcRecordProvider recordProvider)
-            : base("Generate MArC Records 2", "CreateMarcRecords2")
+        public MarcRecordsTask(MarcRecordProvider recordProvider)
+            : base("Generate MArC Records", "CreateMarcRecords")
         {
             ProviderType = recordProvider;
             switch (recordProvider)
@@ -54,7 +54,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             TaskResultStep step = new TaskResultStep
                                       {
-                                          Name = "MarcRecords2.Generator",
+                                          Name = "MarcRecords.Generator",
                                           TaskResultId = TaskResult.Id,
                                           StartTime = DateTime.Now
                                       };

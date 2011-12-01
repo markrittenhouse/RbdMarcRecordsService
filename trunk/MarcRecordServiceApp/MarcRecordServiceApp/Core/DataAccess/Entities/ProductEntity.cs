@@ -212,56 +212,55 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
             try
             {
                 Product product = new Product
-                {
-                    Id = Id,
-                    Sku = Sku,
-                    Isbn10 = Isbn10,
-                    Isbn13 = Isbn13,
-                    Title = Title,
-                    SubTitle = SubTitle,
-                    Authors = Authors,
-                    FirstAuthorLastName = FirstAuthorLastName,
-                    Affiliation = Affiliation,
-                    Copyright = Copyright,
-                    PublicationDate = PublicationDate,
-                    Format = Format,
-                    Edition = Edition,
-                    Pages = Pages,
-                    Weight = Weight,
-                    Length = Length,
-                    Width = Width,
-                    Thickness = Thickness,
-                    CartonQuantity = CartonQuantity,
-                    SeriesName = SeriesName,
-                    LCCallNumber = LCCallNumber,
-                    NLM = NLM,
-                    AnnouncedEdition = AnnouncedEdition,
-                    AnnouncedDate = AnnouncedDate,
-                    NewEditionIsbn = NewEditionIsbn,
-                    PreviousEditionIsbn = PreviousEditionIsbn,
-                    AlternateIsbn = AlternateIsbn,
-                    BrandonHillCodes = BrandonHillCodes,
-                    PriceGroup = PriceGroup,
-                    VendorNumber = VendorNumber,
-                    VendorInfo = VendorNumber,
-                    IsReturnable = IsReturnable,
-                    IsGsa = IsGsa,
-                    ProductType = ProductType,
-                    AudiencePrimary = AudiencePrimary,
-                    AudienceSecondary = AudienceSecondary,
-                    Imprint = Imprint,
-                    DoodyRating = DoodyRating,
-                    Publisher = { PreludeName = PublisherName },
-                    R2ResourceId = R2ResourceId,
-                    CountryCode = CountryCode,
-                    EIsbn = EIsbn,
-                    IsAvailableForSale = IsAvailableForSale,
-                    AvailabilityCode = AvailabilityCode,
-                    TocFilename = TocFilename,
-                    QuantityOnHand = QuantityOnHand,
-                    QuantityOnOrder = QuantityOnOrder,
-                    InStockOverride = InStockOverride,
-                };
+                                      {
+                                          Id = Id,
+                                          Sku = Sku,
+                                          Isbn10 = Isbn10,
+                                          Isbn13 = Isbn13,
+                                          Title = Title,
+                                          SubTitle = SubTitle,
+                                          Authors = Authors,
+                                          FirstAuthorLastName = FirstAuthorLastName,
+                                          Affiliation = Affiliation,
+                                          Copyright = Copyright,
+                                          PublicationDate = PublicationDate,
+                                          Format = Format,
+                                          Edition = Edition,
+                                          Pages = Pages,
+                                          Weight = Weight,
+                                          Length = Length,
+                                          Width = Width,
+                                          Thickness = Thickness,
+                                          CartonQuantity = CartonQuantity,
+                                          SeriesName = SeriesName,
+                                          LCCallNumber = LCCallNumber,
+                                          NLM = NLM,
+                                          AnnouncedEdition = AnnouncedEdition,
+                                          AnnouncedDate = AnnouncedDate,
+                                          NewEditionIsbn = NewEditionIsbn,
+                                          PreviousEditionIsbn = PreviousEditionIsbn,
+                                          AlternateIsbn = AlternateIsbn,
+                                          BrandonHillCodes = BrandonHillCodes,
+                                          PriceGroup = PriceGroup,
+                                          VendorNumber = VendorNumber,
+                                          VendorInfo = VendorNumber,
+                                          IsReturnable = IsReturnable,
+                                          IsGsa = IsGsa,
+                                          ProductType = ProductType,
+                                          AudiencePrimary = AudiencePrimary,
+                                          AudienceSecondary = AudienceSecondary,
+                                          Imprint = Imprint,
+                                          DoodyRating = DoodyRating,
+                                          R2ResourceId = R2ResourceId,
+                                          CountryCode = CountryCode,
+                                          EIsbn = EIsbn,
+                                          IsAvailableForSale = IsAvailableForSale,
+                                          AvailabilityCode = AvailabilityCode,
+                                          TocFilename = TocFilename,
+                                          QuantityOnHand = QuantityOnHand,
+                                          QuantityOnOrder = QuantityOnOrder,
+                                          InStockOverride = InStockOverride
+                                      };
 
                 int productStatusId = ProductStatusId;
                 product.Status = ProductStatusFactory.GetById(productStatusId);
@@ -275,13 +274,10 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
                 product.Prices[4] = Price4;
                 product.Prices[5] = PriceFuture;
 
-                product.Category.Id = CategoryId;
-                product.Category.Name = CategoryName;
-                product.Category.Code = CategoryCode;
+                product.Category = new Category {Id = CategoryId, Name = CategoryName, Code = CategoryCode};
 
                 // pub.publisherId, pub.publisherName
-                product.Publisher.Id = PublisherId;
-                product.Publisher.Name = PublisherName;
+                product.Publisher = new Publisher {Id = PublisherId, Name = PublisherName};
                 product.PublisherPrelude = PublisherPrelude;
 
                 product.Image = ImageFileName;

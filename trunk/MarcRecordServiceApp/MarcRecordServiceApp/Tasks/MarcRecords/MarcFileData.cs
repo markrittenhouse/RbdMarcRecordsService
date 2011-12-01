@@ -4,7 +4,7 @@ using MarcRecordServiceApp.Core.DataAccess.Entities.Base;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-	public class MarcFileData2 : EntityBase
+	public class MarcFileData : EntityBase
     {
         
         public string EncodingLevel { get; private set; }
@@ -29,7 +29,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// Need to set product to insert null records when no record is found on external searchs
         /// </summary>
         /// <param name="product"></param>
-        public MarcFileData2(Product product)
+        public MarcFileData(Product product)
         {
             Product = product;
             ProcessedDate = DateTime.Now;
