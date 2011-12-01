@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Get";
+}
+
+@using MarcRecordServiceSite.Models
+@model MarcRecordRequestItem
+
+<h2>Get</h2>
+
+@using(Html.BeginForm("Get", "MarcRecords"))
+{
+	<div> @Html.LabelFor(model => model.Isbn10) : @Html.EditorFor(model => model.Isbn10) @Html.ValidationMessageFor(model => model.Isbn10) </div>
+	<div> @Html.LabelFor(model => model.Isbn13) : @Html.EditorFor(model => model.Isbn13) @Html.ValidationMessageFor(model => model.Isbn13) </div>
+	<div> @Html.LabelFor(model => model.Sku) : @Html.EditorFor(model => model.Sku) @Html.ValidationMessageFor(model => model.Sku) </div>
+		<input type="submit" value="Get" />
+}
