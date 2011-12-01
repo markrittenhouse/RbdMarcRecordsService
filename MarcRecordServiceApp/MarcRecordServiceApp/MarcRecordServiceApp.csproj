@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D8F974C-D7C0-493B-9962-C99469F45A40}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarcRecordServiceApp</RootNamespace>
+    <AssemblyName>MarcRecordServiceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\References\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MARCEngine, Version=1.2.4.0, Culture=neutral, PublicKeyToken=d91fa60ef56a91bc, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\MarcEdit\64bit\MARCEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zoom.Net, Version=1.0.3.5, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Zoom.Net\Zoom.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Zoom.Net.YazSharp, Version=1.0.3.4, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Zoom.Net\Zoom.Net.YazSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\DataAccess\Entities\Base\EntityBase.cs" />
+    <Compile Include="Core\DataAccess\Entities\Base\IDataEntity.cs" />
+    <Compile Include="Core\DataAccess\Entities\Category.cs" />
+    <Compile Include="Core\DataAccess\Entities\Product.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductEntity.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\IProductStatus.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\ProductStatusFactory.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusActive.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusBase.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusNone.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusNotYetPublished.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusOutOfPrint.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusOutOfStockAtPublisher.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusOutOfStockIndefinitely.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusPrintOnDemand.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusPublicationCancelled.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusPublicationIndefinite.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Active.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Archived.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Cancelled.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Forthcoming.cs" />
+    <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Inactive.cs" />
+    <Compile Include="Core\DataAccess\Entities\Publisher.cs" />
+    <Compile Include="Core\DataAccess\Entities\TaskResult.cs" />
+    <Compile Include="Core\DataAccess\Entities\TaskResultStep.cs" />
+    <Compile Include="Core\DataAccess\Factories\Base\DbCommandHelper.cs" />
+    <Compile Include="Core\DataAccess\Factories\Base\DbConnectionHelper.cs" />
+    <Compile Include="Core\DataAccess\Factories\Base\DbReaderHelper.cs" />
+    <Compile Include="Core\DataAccess\Factories\Base\EntityFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\Base\FactoryBase.cs" />
+    <Compile Include="Core\DataAccess\Factories\MarcRecordsProductFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\TaskResultFactory.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\BooleanParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\ByteArrayParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\DateTimeNullParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\DateTimeParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\DecimalParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\Int16Parameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\Int32Parameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\Int64Parameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\ISqlCommandParameter.cs" />
+    <Compile Include="Core\DataAccess\SqlCommandParameters\StringParameter.cs" />
+    <Compile Include="Core\RittenhouseException.cs" />
+    <Compile Include="Core\Utilities\EmailMessageData.cs" />
+    <Compile Include="Core\Utilities\EmailTextAttachment.cs" />
+    <Compile Include="EmailConfigs\EmailConfiguration.cs" />
+    <Compile Include="EmailConfigs\TaskEmailSettings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\ITask.cs" />
+    <Compile Include="Tasks\MarcRecords\IMarcFile.cs" />
+    <Compile Include="Tasks\MarcRecords\LcMarcFile.cs" />
+    <Compile Include="Tasks\MarcRecords\MarcFileData.cs" />
+    <Compile Include="Tasks\MarcRecords\MarcFileData2.cs" />
+    <Compile Include="Tasks\MarcRecords\MarcRecordProvider.cs" />
+    <Compile Include="Tasks\MarcRecords\MarcRecordsTask2.cs" />
+    <Compile Include="Tasks\MarcRecords\NlmMarcFile.cs" />
+    <Compile Include="Tasks\MarcRecords\RittenhouseMarcFile.cs" />
+    <Compile Include="Tasks\TaskBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EmailConfigs\Default.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

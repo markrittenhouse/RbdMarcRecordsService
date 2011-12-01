@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RittenhouseWebLoader>
+	<EmailConfigurations>
+		<EmailConfiguration type="Success" send="true">
+			<ToAddresses>
+				<EmailAddress>rittenhouse@lane4solutions.com</EmailAddress>
+				<!-- EmailAddress>ken-technotects@lane4solutions.com</EmailAddress -->
+			</ToAddresses>
+		</EmailConfiguration>
+		<EmailConfiguration type="Error" send="true">
+			<ToAddresses>
+				<EmailAddress>rittenhouse@lane4solutions.com</EmailAddress>
+				<!-- EmailAddress>ken-technotects@lane4solutions.com</EmailAddress -->
+				</ToAddresses>
+		</EmailConfiguration>
+	</EmailConfigurations>
+</RittenhouseWebLoader>
