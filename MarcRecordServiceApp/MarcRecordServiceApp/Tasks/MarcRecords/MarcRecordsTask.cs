@@ -245,9 +245,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             {
                 try
                 {
+                    Console.WriteLine("Pre-Zoom Connection");
                     if (marcRecordType != MarcRecordProvider.Rbd)
                     {
                         MarcRecordProviderValue serverValue = new MarcRecordProviderValue(marcRecordType);
+
                         Connection lcConnection = new Connection(serverValue.ToString(), 7090)
                         {
                             DatabaseName = "Voyager",
@@ -258,6 +260,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         // ReSharper restore ReturnValueOfPureMethodIsNotUsed
                         processAttempts++;
                         lcConnection.Connect();
+
+                        Console.WriteLine("Zoom-Connected");
 
                         foreach (string query in queries)
                         {
@@ -302,6 +306,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     processAttempts++;
                 }
             }
+            Console.WriteLine("External Search Complete");
             return mrcStrings;
             
         }
