@@ -23,7 +23,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
         private MarcRecordProvider ProviderType { get; set; }
         private int BatchSize { get; set; }
-        
+
         /// <summary>
         /// 
         /// </summary>
@@ -53,11 +53,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             Log.InfoFormat("Task - {0} - STARTED ...", TaskResult.Name);
 
             TaskResultStep step = new TaskResultStep
-                                      {
-                                          Name = "MarcRecords.Generator",
-                                          TaskResultId = TaskResult.Id,
-                                          StartTime = DateTime.Now
-                                      };
+            {
+                Name = "MarcRecords.Generator",
+                TaskResultId = TaskResult.Id,
+                StartTime = DateTime.Now
+            };
             TaskResult.AddStep(step);
 
             try
@@ -89,11 +89,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 Log.InfoFormat("workingDirectory:\n{0}", workingDirectory);
                 Log.InfoFormat("MarcRecordGeneratorMaxProducts: {0}", BatchSize);
                 Log.InfoFormat("MarcRecordBatchSize: {0}", Settings.Default.MarcRecordBatchSize);
-                
+
                 //Set Marc Records to get
                 int productsWithoutMarcRecordsCount = MarcRecordsProductFactory.GetProductsWithoutMarcRecordsCount(ProviderType);
                 Log.InfoFormat("productsWithoutMarcRecordsCount: {0}", productsWithoutMarcRecordsCount);
-                
+
 
                 ClearWorkingDirectory(workingDirectory);
 
@@ -128,16 +128,16 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// <returns></returns>
         private int ProcessNextBatchOfNewProducts(int batchSize, string workingDirectory)
         {
-            
+
             int productProcessedCount = 0;
             int processedAttempts = 0;
             //Loop three times if a failure
-            while (processedAttempts < 3) 
+            while (processedAttempts < 3)
             {
                 try
                 {
                     // get next batch to process
-                    List<IMarcFile> marcFiles = MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize,ProviderType);
+                    List<IMarcFile> marcFiles = MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize, ProviderType);
 
                     Log.InfoFormat("batch contains {0} products", marcFiles.Count);
                     if (marcFiles.Count == 0)
@@ -190,8 +190,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     File.WriteAllText(mrcFilePath, mrcString);
 
                     MARC21 marc21 = new MARC21();
-                    marc21.MarcFile(mrcFilePath, mrkFilePath); 
-                                        
+                    marc21.MarcFile(mrcFilePath, mrkFilePath);
+
                     if (new FileInfo(mrkFilePath).Length == 0)
                     {
                         //Indicates an issue with the record or the process
@@ -209,16 +209,16 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
                     IEnumerable<string> isbns = ExtractIsbnsFromXml(xmlFileText);
 
-					foreach (string isbn in isbns)
-					{
-						foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
-						{
-							marcFile.MrcFileText = mrcString;
-							marcFile.XmlFileText = xmlFileText;
-							marcFile.MrkFileText = mrkFileText;
-							break;
-						}
-					}
+                    foreach (string isbn in isbns)
+                    {
+                        foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
+                        {
+                            marcFile.MrcFileText = mrcString;
+                            marcFile.XmlFileText = xmlFileText;
+                            marcFile.MrkFileText = mrkFileText;
+                            break;
+                        }
+                    }
                 }
                 return marcFiles;
             }
@@ -238,14 +238,18 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         private IEnumerable<string> GetMarcRecords(List<IMarcFile> marcFiles, MarcRecordProvider marcRecordType, string workingDirectory)
         {
             List<string> queries = new List<string>(GetMarcQuery(marcFiles));
-            List<string> mrcStrings = new List<string>(); 
+            List<string> mrcStrings = new List<string>();
             int processAttempts = 0;
             //Loop five times if a failure
             while (processAttempts < 5)
             {
                 try
                 {
+<<<<<<< .mine
+                    Console.WriteLine("Pre-ZoomConnection");
+=======
                     Console.WriteLine("Pre-Zoom Connection");
+>>>>>>> .r10
                     if (marcRecordType != MarcRecordProvider.Rbd)
                     {
                         MarcRecordProviderValue serverValue = new MarcRecordProviderValue(marcRecordType);
@@ -260,7 +264,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         // ReSharper restore ReturnValueOfPureMethodIsNotUsed
                         processAttempts++;
                         lcConnection.Connect();
-
+                        Console.WriteLine("Zoom-Connected");
                         Console.WriteLine("Zoom-Connected");
 
                         foreach (string query in queries)
@@ -308,7 +312,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             }
             Console.WriteLine("External Search Complete");
             return mrcStrings;
-            
+
         }
         /// <summary>
         /// 
@@ -325,7 +329,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 if (marcRecordsLeft < 10)
                 {
                     for (int i = ii; i < ii + marcRecordsLeft; i++)
-                    {                        
+                    {
                         queries.Add(string.Format(" @attr 1=7 {0} ", marcFiles[i].Product.Isbn10 ?? marcFiles[i].Product.Isbn13));
                     }
                 }
@@ -342,7 +346,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     }
                     queries.Add(sbQuery.ToString());
                 }
-                ii += 10;                
+                ii += 10;
             }
             return queries;
         }
@@ -373,7 +377,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             //while (IsFileLocked(new FileInfo(filepath)))
             //{
-                
+
             //}
             StreamReader streamReaderToParse = File.OpenText(filepath);
             string parsedText = streamReaderToParse.ReadToEnd();
@@ -558,29 +562,29 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
-        protected virtual bool IsFileLocked(FileInfo file)     
-        {         
-            FileStream stream = null;          
+        protected virtual bool IsFileLocked(FileInfo file)
+        {
+            FileStream stream = null;
             try
             {
                 stream = file.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.None);
-            }         
-            catch (IOException)         
-            {             
+            }
+            catch (IOException)
+            {
                 //the file is unavailable because it is:             
                 //still being written to             
                 //or being processed by another thread             
                 //or does not exist (has already been processed)             
-                return true;         
-            }         
+                return true;
+            }
             finally
             {
-                if (stream != null)                 
+                if (stream != null)
                     stream.Close();
-            }          
+            }
             //file is not locked         
-            return false;     
-        } 
+            return false;
+        }
     }
 }
 
@@ -619,7 +623,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 //                        break;
 //                }                
 //            }
-            
+
 //            if (rbdDictionary != null)
 //                try
 //                {
@@ -645,7 +649,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 //                    string test = "test";
 //                    throw;
 //                }
-                
+
 //            return mergedRecords;
 //        }
 //        /// <summary>
@@ -666,7 +670,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
 //            rbdControlTagList.Sort(new XmlTagAndNodeAsc());
 //            rbdDataTagList.Sort(new XmlTagAndNodeAsc());
-            
+
 //            XmlDocument rbdDoc = new XmlDocument();
 //            rbdDoc.LoadXml(rbdRecord);
 
@@ -686,7 +690,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 //                rbdDoc.GetElementsByTagName("datafield")[i].ParentNode.RemoveChild(rbdDoc.GetElementsByTagName("datafield")[i]);
 //                i--;
 //            }
-            
+
 //            foreach (XmlTagAndNode xmlTagAndNode in rbdDataTagList)
 //            {
 //                rbdDoc.DocumentElement.AppendChild(rbdDoc.ImportNode(xmlTagAndNode.Node, true));
@@ -813,7 +817,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 //    public int Tag { get; set; }
 //    public XmlNode Node { get; set; }
 
-    
+
 //}
 //public class XmlTagAndNodeAsc : IComparer<XmlTagAndNode>
 //{
@@ -824,6 +828,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 //            return -1;
 //        }
 //        return x.Tag > y.Tag ? 1 : 0;
-        
+
 //    }
 //}
