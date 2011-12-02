@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
+//using MARCEngine5;
 using MARCEngine5;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
@@ -163,71 +164,73 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             return productProcessedCount;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="marcFiles"></param>
-        /// <param name="workingDirectory"></param>
-        private List<IMarcFile> SetMarcDataForProducts(List<IMarcFile> marcFiles, string workingDirectory)
-        {
-            List<string> mrcStrings = new List<string>(GetMarcRecords(marcFiles, ProviderType, workingDirectory));
 
-            try
-            {
-                foreach (string mrcString in mrcStrings)
-                {
-                    string batchFileNameBase = string.Format("batch_{0:yyyyMMdd_HHmmssfff}", DateTime.Now);
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="marcFiles"></param>
+		/// <param name="workingDirectory"></param>
+		private List<IMarcFile> SetMarcDataForProducts(List<IMarcFile> marcFiles, string workingDirectory)
+		{
+			List<string> mrcStrings = new List<string>(GetMarcRecords(marcFiles, ProviderType, workingDirectory));
 
-                    string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, batchFileNameBase);
-                    Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
+			try
+			{
+				foreach (string mrcString in mrcStrings)
+				{
+					string batchFileNameBase = string.Format("batch_{0:yyyyMMdd_HHmmssfff}", DateTime.Now);
 
-                    string mrcFilePath = string.Format(@"{0}{1}.mrc", workingDirectory, batchFileNameBase);
-                    Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
+					string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, batchFileNameBase);
+					Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
 
-                    string xmlFilePath = string.Format(@"{0}{1}.xml", workingDirectory, batchFileNameBase);
-                    Log.DebugFormat("xmlFilePath: {0}", xmlFilePath);
+					string mrcFilePath = string.Format(@"{0}{1}.mrc", workingDirectory, batchFileNameBase);
+					Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
 
-                    File.WriteAllText(mrcFilePath, mrcString);
+					string xmlFilePath = string.Format(@"{0}{1}.xml", workingDirectory, batchFileNameBase);
+					Log.DebugFormat("xmlFilePath: {0}", xmlFilePath);
 
-                    MARC21 marc21 = new MARC21();
-                    marc21.MarcFile(mrcFilePath, mrkFilePath);
+					File.WriteAllText(mrcFilePath, mrcString);
 
-                    if (new FileInfo(mrkFilePath).Length == 0)
-                    {
-                        //Indicates an issue with the record or the process
-                        continue;
-                    }
-                    string mrkFileText = ReadMarcFile(mrkFilePath);
-                    marc21.MARC2MARC21XML(mrcFilePath, xmlFilePath, false);
+					MARC21 marc21 = new MARC21();
+					marc21.MarcFile(mrcFilePath, mrkFilePath);
 
-                    if (new FileInfo(xmlFilePath).Length == 0)
-                    {
-                        //Indicates an issue with the record or the process
-                        continue;
-                    }
-                    string xmlFileText = ReadMarcFile(xmlFilePath);
+					if (new FileInfo(mrkFilePath).Length == 0)
+					{
+						//Indicates an issue with the record or the process
+						continue;
+					}
+					string mrkFileText = ReadMarcFile(mrkFilePath);
+					marc21.MARC2MARC21XML(mrcFilePath, xmlFilePath, false);
 
-                    IEnumerable<string> isbns = ExtractIsbnsFromXml(xmlFileText);
+					if (new FileInfo(xmlFilePath).Length == 0)
+					{
+						//Indicates an issue with the record or the process
+						continue;
+					}
+					string xmlFileText = ReadMarcFile(xmlFilePath);
 
-                    foreach (string isbn in isbns)
-                    {
-                        foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
-                        {
-                            marcFile.MrcFileText = mrcString;
-                            marcFile.XmlFileText = xmlFileText;
-                            marcFile.MrkFileText = mrkFileText;
-                            break;
-                        }
-                    }
-                }
-                return marcFiles;
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-        }
+					IEnumerable<string> isbns = ExtractIsbnsFromXml(xmlFileText);
+
+					foreach (string isbn in isbns)
+					{
+						foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
+						{
+							marcFile.MrcFileText = mrcString;
+							marcFile.XmlFileText = xmlFileText;
+							marcFile.MrkFileText = mrkFileText;
+							break;
+						}
+					}
+				}
+				return marcFiles;
+			}
+			catch (Exception ex)
+			{
+				Log.Error(ex.Message, ex);
+				throw;
+			}
+		}
+
         /// <summary>
         /// 
         /// </summary>
@@ -245,11 +248,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             {
                 try
                 {
-<<<<<<< .mine
-                    Console.WriteLine("Pre-ZoomConnection");
-=======
-                    Console.WriteLine("Pre-Zoom Connection");
->>>>>>> .r10
+					Log.Info("Pre-Zoom Connection");
                     if (marcRecordType != MarcRecordProvider.Rbd)
                     {
                         MarcRecordProviderValue serverValue = new MarcRecordProviderValue(marcRecordType);
@@ -259,15 +258,16 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                             DatabaseName = "Voyager",
                             Syntax = RecordSyntax.USMARC,
                         };
+
                         // ReSharper disable ReturnValueOfPureMethodIsNotUsed
                         lcConnection.Options.Equals("F");
                         // ReSharper restore ReturnValueOfPureMethodIsNotUsed
                         processAttempts++;
                         lcConnection.Connect();
-                        Console.WriteLine("Zoom-Connected");
-                        Console.WriteLine("Zoom-Connected");
 
-                        foreach (string query in queries)
+						Log.Info("Zoom-Connected");
+
+						foreach (string query in queries)
                         {
                             PrefixQuery prefixQuery = new PrefixQuery(query);
                             ResultSet resultSet = (ResultSet)lcConnection.Search(prefixQuery);
@@ -295,9 +295,9 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                             Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
 
                             File.WriteAllText(mrkFilePath, mrkFileText);
-                            MARC21 marc21 = new MARC21();
+							MARC21 marc21 = new MARC21();
 
-                            marc21.MMaker(mrkFilePath, mrcFilePath);
+							marc21.MMaker(mrkFilePath, mrcFilePath);
 
                             mrcStrings.Add(ReadMarcFile(mrcFilePath));
                         }
@@ -310,11 +310,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     processAttempts++;
                 }
             }
-            Console.WriteLine("External Search Complete");
+			Log.Info("External Search Complete");
             return mrcStrings;
-
         }
-        /// <summary>
+
+		/// <summary>
         /// 
         /// </summary>
         /// <param name="marcFiles"></param>

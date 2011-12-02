@@ -38,9 +38,9 @@
     <Reference Include="log4net">
       <HintPath>..\..\References\log4net\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="MARCEngine, Version=1.2.4.0, Culture=neutral, PublicKeyToken=d91fa60ef56a91bc, processorArchitecture=x86">
+    <Reference Include="MARCEngine, Version=1.2.18.0, Culture=neutral, PublicKeyToken=d91fa60ef56a91bc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\MarcEdit\64bit\MARCEngine.dll</HintPath>
+      <HintPath>..\..\References\MarcEdit\5.6-32bit\MARCEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,13 +49,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Zoom.Net, Version=1.0.3.5, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=x86">
+    <Reference Include="Zoom.Net, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Zoom.Net\Zoom.Net.dll</HintPath>
+      <HintPath>..\..\References\Zoom.net.Debug\Zoom.Net.dll</HintPath>
     </Reference>
-    <Reference Include="Zoom.Net.YazSharp, Version=1.0.3.4, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=x86">
+    <Reference Include="Zoom.Net.YazSharp, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Zoom.Net\Zoom.Net.YazSharp.dll</HintPath>
+      <HintPath>..\..\References\Zoom.net.Debug\Zoom.Net.YazSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -131,9 +131,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EmailConfigs\Default.xml" />
+    <Content Include="EmailConfigs\Default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CopyToBin\Zoom.Net\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(ProjectDir)CopyToBin\Zoom.Net\* $(ProjectDir)\$(OutDir)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
