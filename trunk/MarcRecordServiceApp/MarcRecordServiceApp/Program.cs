@@ -15,6 +15,10 @@ namespace MarcRecordServiceApp
 	{
 		private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName);
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="args"></param>
 		static void Main(string[] args)
 		{
             log4net.Config.XmlConfigurator.Configure();
@@ -53,7 +57,8 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("01 = CreateNlmMarcRecords");
                     Console.WriteLine("02 = CreateLcMarcRecords ");
                     Console.WriteLine("03 = CreateRbdMarcRecords");
-                    Console.Write("Please enter code: ");
+					Console.WriteLine("");
+					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
                 }
                 else
