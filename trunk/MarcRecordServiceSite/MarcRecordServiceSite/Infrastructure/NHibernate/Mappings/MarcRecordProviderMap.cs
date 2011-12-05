@@ -21,6 +21,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Mappings
 			Map(x => x.DateUpdated).Column("dateUpdated");
 
 			References<MarcRecord>(x => x.MarcRecord).Column("marcRecordId");
+			HasMany<MarcRecordFile>(x => x.Files).KeyColumn("marcRecordProviderId").AsBag().Cascade.All().Not.LazyLoad();
 
 		}
 	}

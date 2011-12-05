@@ -13,6 +13,6 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Entities
 		public virtual DateTime DateUpdated { get; set; }
 
 		public virtual MarcRecord MarcRecord { get; set; }
-		
+		public virtual IList<MarcRecordFile> Files { get; set; }		
 	}
 }
