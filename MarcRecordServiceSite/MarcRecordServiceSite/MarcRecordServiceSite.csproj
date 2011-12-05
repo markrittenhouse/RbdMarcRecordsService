@@ -52,6 +52,14 @@
     <Reference Include="log4net">
       <HintPath>..\..\References\log4net\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="MARCEngine, Version=1.2.18.0, Culture=neutral, PublicKeyToken=d91fa60ef56a91bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\MarcEdit\5.6-64bit\MARCEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\References\NHibernate\NHibernate.dll</HintPath>
     </Reference>
@@ -62,28 +70,63 @@
       <HintPath>..\..\References\NHibernate\Remotion.Data.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebMatrix.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\DefaultController.cs" />
@@ -92,7 +135,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecord.cs" />
+    <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordFile.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordProvider.cs" />
+    <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordFileMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Queries\MarcRecordQueries.cs" />
