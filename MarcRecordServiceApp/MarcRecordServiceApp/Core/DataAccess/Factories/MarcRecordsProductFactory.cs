@@ -442,7 +442,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
             string sql = new StringBuilder()
                 .Append(" select count(*) from MarcRecordProvider mrp ")
-                .Append(" inner join MarcRecordFile mrf ON mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
+                //.Append(" inner join MarcRecordFile mrf ON mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
                 .Append(" where mrp.marcRecordId = @MarcRecordId and mrp.marcRecordProviderTypeId = @MarcRecordProviderTypeId ")
                 .ToString();
 
