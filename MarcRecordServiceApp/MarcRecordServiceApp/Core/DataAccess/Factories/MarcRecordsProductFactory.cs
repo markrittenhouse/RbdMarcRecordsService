@@ -442,7 +442,6 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
             string sql = new StringBuilder()
                 .Append(" select count(*) from MarcRecordProvider mrp ")
-                //.Append(" inner join MarcRecordFile mrf ON mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
                 .Append(" where mrp.marcRecordId = @MarcRecordId and mrp.marcRecordProviderTypeId = @MarcRecordProviderTypeId ")
                 .ToString();
 
@@ -458,7 +457,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 marcRecordProvider = UpdateMarcRecordProvider(marcFile, marcRecordId);
                 if (marcFile.MrcFileText != null)
                 {
-                    recordCount = UpdateMarcRecordFile(marcFile, marcRecordProvider);
+                    return UpdateMarcRecordFile(marcFile, marcRecordProvider);
                 }
             }
             else
@@ -466,57 +465,12 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 marcRecordProvider = InsertMarcRecordProvider(marcFile, marcRecordId);
                 if (marcFile.MrcFileText != null)
                 {
-                    recordCount = InsertMarcRecordFile(marcFile, marcRecordProvider);
-                }                  
+                    return InsertMarcRecordFile(marcFile, marcRecordProvider);
+                }
             }
-            return recordCount;
+            return 0;
         }
 
-        //public static int InsertProductMarcRecordFile(IMarcFile marcFile)
-        //{
-        //    int marcRecordId = GetProductMarcRecordId(marcFile);
-        //    StringBuilder sql = new StringBuilder()
-
-        //    .Append(" insert into MarcRecordProvider (MarcRecordId, MarcRecordProviderTypeId, EncodingLevel, DateCreated, dateUpdated) ")
-        //    .Append(" VALUES (@MarcRecordId, @MarcRecordProviderTypeId, @EncodingLevel, @DateCreated, @DateUpdated) ")
-        //    ;
-        //    List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>
-        //                                                {
-        //                                                    new Int32Parameter("MarcRecordId", marcRecordId),
-        //                                                    new Int32Parameter("MarcRecordProviderTypeId", (int)marcFile.RecordProvider),
-        //                                                    new DateTimeParameter("DateCreated",marcFile.ProcessedDate),
-        //                                                    new DateTimeParameter("DateUpdated",marcFile.ProcessedDate),
-        //                                                    new StringParameter("EncodingLevel", marcFile.EncodingLevel)
-        //                                                };
-        //    int marcRecordProviderId = ExecuteInsertStatementReturnIdentity(sql.ToString(), parameters.ToArray(), true, Properties.Settings.Default.RittenhouseMarcDb);
-        //    int rowCount = 0;
-        //    if (marcFile.MrcFileText != null)
-        //    {
-        //        sql = new StringBuilder()
-        //            .Append(" insert into MarcRecordFile (MarcRecordProviderId, MarcRecordFileTypeId, FileData) ")
-        //            .Append(" VALUES (@MarcRecordProviderId, @MarcRecordFileTypeId1, @FileData1); ")
-        //            .Append(" insert into MarcRecordFile (MarcRecordProviderId, MarcRecordFileTypeId, FileData) ")
-        //            .Append(" VALUES (@MarcRecordProviderId, @MarcRecordFileTypeId2, @FileData2); ")
-        //            .Append(" insert into MarcRecordFile (MarcRecordProviderId, MarcRecordFileTypeId, FileData) ")
-        //            .Append(" VALUES (@MarcRecordProviderId, @MarcRecordFileTypeId3, @FileData3); ");
-
-        //        parameters = new List<ISqlCommandParameter>
-        //                                                {
-        //                                                    new Int32Parameter("MarcRecordProviderId", marcRecordProviderId),
-        //                                                    new Int32Parameter("MarcRecordFileTypeId1", 1),
-        //                                                    new Int32Parameter("MarcRecordFileTypeId2", 2),
-        //                                                    new Int32Parameter("MarcRecordFileTypeId3", 3),
-        //                                                    new StringParameter("FileData1", marcFile.MrcFileText),
-        //                                                    new StringParameter("FileData2", marcFile.MrkFileText),
-        //                                                    new StringParameter("FileData3", marcFile.XmlFileText)
-        //                                                };
-
-        //        rowCount = ExecuteUpdateStatement(sql.ToString(), parameters.ToArray(), false, Properties.Settings.Default.RittenhouseMarcDb);
-        //    }
-            
-
-        //    return rowCount;
-        //}
         /// <summary>
         /// 
         /// </summary>
@@ -636,9 +590,21 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         /// <returns></returns>
         public static int UpdateMarcRecordFile(IMarcFile marcFile, int marcRecordProviderId)
         {
-            int rowCount = 0;
-            if (marcFile.MrcFileText != null)
+            string sql2 = new StringBuilder()
+                .Append(" select count(*) from MarcRecordFile ")
+                .Append(" where marcRecordProviderId = @MarcRecordProviderId ")
+                .ToString();
+
+            List<ISqlCommandParameter> parameters2 = new List<ISqlCommandParameter>
+                                                         {
+                                                             new Int32Parameter("MarcRecordProviderId",
+                                                                                marcRecordProviderId),
+                                                         };
+            int recordCount = ExecuteBasicCountQuery(sql2, parameters2, true, Settings.Default.RittenhouseMarcDb);
+
+            if (recordCount > 0)
             {
+                
                 string sql = new StringBuilder()
                     .Append(" update MarcRecordFile set FileData = @FileData1 ")
                     .Append(" where MarcRecordProviderId = @MarcRecordProviderId and MarcRecordFileTypeId = @MarcRecordFileTypeId1; ")
@@ -649,19 +615,19 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                     .ToString();
 
                 List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>
-                                                        {
-                                                            new Int32Parameter("MarcRecordProviderId", marcRecordProviderId),
-                                                            new Int32Parameter("MarcRecordFileTypeId1", 1),
-                                                            new Int32Parameter("MarcRecordFileTypeId2", 2),
-                                                            new Int32Parameter("MarcRecordFileTypeId3", 3),
-                                                            new StringParameter("FileData1", marcFile.MrcFileText),
-                                                            new StringParameter("FileData2", marcFile.MrkFileText),
-                                                            new StringParameter("FileData3", marcFile.XmlFileText)
-                                                        };
+                                                    {
+                                                        new Int32Parameter("MarcRecordProviderId", marcRecordProviderId),
+                                                        new Int32Parameter("MarcRecordFileTypeId1", 1),
+                                                        new Int32Parameter("MarcRecordFileTypeId2", 2),
+                                                        new Int32Parameter("MarcRecordFileTypeId3", 3),
+                                                        new StringParameter("FileData1", marcFile.MrcFileText),
+                                                        new StringParameter("FileData2", marcFile.MrkFileText),
+                                                        new StringParameter("FileData3", marcFile.XmlFileText)
+                                                    };
 
-                rowCount = ExecuteUpdateStatement(sql, parameters.ToArray(), false, Settings.Default.RittenhouseMarcDb);
-            }
-            return rowCount;
+                return ExecuteUpdateStatement(sql, parameters.ToArray(), false, Settings.Default.RittenhouseMarcDb);
+            }            
+            return InsertMarcRecordFile(marcFile, marcRecordProviderId);            
         }
         /// <summary>
         /// 
