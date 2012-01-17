@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
-using MarcRecordServiceSite.Models;
 using NHibernate;
 using NHibernate.Transform;
-using MarcRecordServiceSite.Infrastructure.NHibernate.Extensions;
 using NHibernate.Linq;
 
 namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
@@ -62,23 +58,23 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             return result;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="items"></param>
-        /// <returns></returns>
-        public static IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing(MarcRecordRequestItems items)
-        {
-            var session = MvcApplication.CreateSession();
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="items"></param>
+        ///// <returns></returns>
+        //public static IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing(MarcRecordRequestItems items)
+        //{
+        //    var session = MvcApplication.CreateSession();
 
-            // Works the way I want it. Returns too many results
-            var result = (from x in session.Query<MarcRecordFile>()
-                          where items.Items.Contains(x.Provider.MarcRecord.Isbn13) || items.Items.Contains(x.Provider.MarcRecord.Isbn10) || items.Items.Contains(x.Provider.MarcRecord.Sku)
-                          where x.MarcRecordFileTypeId == 2
-                          orderby x.Provider.MarcRecord.Isbn13, x.Provider.ProviderType.Priority ascending
-                          select x);
-            return result;
-        }
+        //    // Works the way I want it. Returns too many results
+        //    var result = (from x in session.Query<MarcRecordFile>()
+        //                  where items.Items.Contains(x.Provider.MarcRecord.Isbn13) || items.Items.Contains(x.Provider.MarcRecord.Isbn10) || items.Items.Contains(x.Provider.MarcRecord.Sku)
+        //                  where x.MarcRecordFileTypeId == 2
+        //                  orderby x.Provider.MarcRecord.Isbn13, x.Provider.ProviderType.Priority ascending
+        //                  select x);
+        //    return result;
+        //}
 
         /// <summary>
         /// 

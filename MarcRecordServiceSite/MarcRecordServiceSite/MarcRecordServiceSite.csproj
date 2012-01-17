@@ -137,7 +137,6 @@
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecord.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordFile.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordProvider.cs" />
-    <Compile Include="Infrastructure\NHibernate\Extensions\IQueryOverExtensions.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordFileMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordMap.cs" />
