@@ -20,8 +20,15 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Mappings
 			Map(x => x.EncodingLevel).Column("encodingLevel");
 			Map(x => x.DateUpdated).Column("dateUpdated");
 
-			References<MarcRecord>(x => x.MarcRecord).Column("marcRecordId");
-			HasMany<MarcRecordFile>(x => x.Files).KeyColumn("marcRecordProviderId").AsBag().Cascade.All().Not.LazyLoad();
+			References(x => x.MarcRecord).Column("marcRecordId");
+            
+            //Start Added to filter by priority level
+            //References(x => x.ProviderType).Column("marcRecordProviderTypeId");
+
+            HasOne<MarcRecordProviderType>(x => x.ProviderType).ForeignKey("marcRecordProviderTypeId").Not.LazyLoad();
+		    //HasOne MarcRecordProviderType (x => x.ProviderType.Id).ForeignKey("marcRecordProviderTypeId").Not.LazyLoad();
+            //End
+            HasMany<MarcRecordFile>(x => x.Files).KeyColumn("marcRecordProviderId").AsBag().Cascade.All().Not.LazyLoad();
 
 		}
 	}

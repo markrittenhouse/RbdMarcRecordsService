@@ -11,8 +11,16 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Entities
 		public virtual int MarcRecordProviderTypeId { get; set; }		
 		public virtual string EncodingLevel { get; set; }
 		public virtual DateTime DateUpdated { get; set; }
-
+        public virtual MarcRecordProviderType ProviderType { get; set; }
 		public virtual MarcRecord MarcRecord { get; set; }
 		public virtual IList<MarcRecordFile> Files { get; set; }		
 	}
+
+
+    public class MarcRecordProviderType
+    {
+        public virtual int Id { get; set; }
+        public virtual int Priority { get; set; }
+
+    }
 }
