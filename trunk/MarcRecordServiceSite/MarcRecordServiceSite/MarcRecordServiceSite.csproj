@@ -137,12 +137,14 @@
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecord.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordFile.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordProvider.cs" />
+    <Compile Include="Infrastructure\NHibernate\Extensions\IQueryOverExtensions.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordFileMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordMap.cs" />
+    <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderTypeMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Queries\MarcRecordQueries.cs" />
+    <Compile Include="Models\JsonMarcRecordRequest.cs" />
     <Compile Include="Models\MarcRecordRequestItem.cs" />
-    <Compile Include="Models\MarcRecordsRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,7 +211,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -239,7 +240,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24502</DevelopmentServerPort>
+          <DevelopmentServerPort>8090</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

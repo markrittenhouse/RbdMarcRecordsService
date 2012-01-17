@@ -17,7 +17,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Mappings
 			Id(x => x.Id).Column("marcRecordFileId");
 			Map(x => x.MarcRecordFileTypeId).Column("marcRecordFileTypeId");
 			Map(x => x.FileData).Column("fileData");
-			References<MarcRecordProvider>(x => x.Provider).Column("marcRecordProviderId");
+			References(x => x.Provider).Column("marcRecordProviderId");
 		}
 	}
 }
