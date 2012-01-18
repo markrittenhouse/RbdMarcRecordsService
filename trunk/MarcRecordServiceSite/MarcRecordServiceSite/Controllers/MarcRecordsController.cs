@@ -433,10 +433,14 @@ namespace MarcRecordServiceSite.Controllers
         [HttpPost]
         public ActionResult Download(JsonMarcRecordRequest marcRecordRequest)
         {
-            if (marcRecordRequest != null)
-            {
-                List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
+            
+                try
+                {
 
+
+                Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
+                List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
+                Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
                 IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
 
                 string lastIsbn = "";
@@ -454,6 +458,13 @@ namespace MarcRecordServiceSite.Controllers
                                              select WriteIndividualMarcFile2(file, jsonIsbnAndCustomerFields, marcRecordRequest.AccountNumber, out lastIsbn));
                 }
 
+                if (marcRecordPaths.Count == 0)
+                {
+                    Log.Debug("Zero Files found");
+                    return null;
+                }
+
+                Log.Debug("Begin MArC REcord Files Merge");
                 string filePath = GetFilePath(marcRecordRequest.AccountNumber, "MarcRecords");
 
                 FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
@@ -465,12 +476,12 @@ namespace MarcRecordServiceSite.Controllers
                 sw.Close();
                 aFile.Close();
 
-                
-                
+                Log.Debug("End MArC REcord Files Merge");
+
                 if (marcRecordRequest.Format != "mrk")
                 {
                     string newFilePath = string.Format(@"{0}.mrc", filePath.Replace(".mrk", ""));
-
+                    Log.Debug("Changing MRK file to MRC");
                     MARC21 marc21 = new MARC21();
                     marc21.MMaker(filePath, newFilePath);
 
@@ -478,6 +489,7 @@ namespace MarcRecordServiceSite.Controllers
 
                     if (marcRecordRequest.Format == "xml")
                     {
+                        Log.Debug("Changing MRC file to XML");
                         newFilePath = string.Format(@"{0}.xml", filePath.Replace(".mrk", ""));
                         marc21.MARC2MARC21XML(filePath, newFilePath, false);
                         filePath = newFilePath;
@@ -487,14 +499,22 @@ namespace MarcRecordServiceSite.Controllers
                 string fileStream = filePath;
                 const string mimeType = "text/plain";
                 string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.{3}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, marcRecordRequest.Format);
+                Log.DebugFormat("File to stream back: {0}", fileDownloadName);
                 return File(fileStream, mimeType, fileDownloadName);
+            
             }
-            return null;
+            catch (Exception ex)
+            {
+                Log.ErrorFormat("Error in Download: {0}", ex);
+                return null;
+            }
+            
         }
 
 
         public ActionResult Download()
         {
+            Log.Error("Test Error");
             return View();
         }
 
@@ -514,7 +534,7 @@ namespace MarcRecordServiceSite.Controllers
             StreamWriter sw = new StreamWriter(aFile);
 
             lastIsbn = marcRecordFile.Provider.MarcRecord.Isbn13;
-            Log.DebugFormat("      Id: {0}, FileData: {1}", marcRecordFile.Id, marcRecordFile.FileData);
+            Log.DebugFormat("Id: {0} | FileData: {1}", marcRecordFile.Id, marcRecordFile.FileData);
             sw.Write(marcRecordFile.FileData);
 
             sw.Close();
@@ -546,6 +566,10 @@ namespace MarcRecordServiceSite.Controllers
                         marc21.Add_Field(filePath, sb.ToString());
                     }
                 }
+            }
+            else
+            {
+                Log.DebugFormat("No customer specific MarcFields to add");
             }
             return filePath;
         }
