@@ -523,7 +523,7 @@ namespace MarcRecordServiceSite.Controllers
             MARC21 marc21 = new MARC21();
             marc21.Delete_Field(filePath, FieldsToRemove);
 
-            if (jsonIsbnAndCustomerField.CustomMarcFields.Count > 0)
+            if (jsonIsbnAndCustomerField.CustomMarcFields != null && jsonIsbnAndCustomerField.CustomMarcFields.Count > 0)
             {
                 foreach (JsonCustomMarcField jsonCustomMarcField in jsonIsbnAndCustomerField.CustomMarcFields)
                 {
