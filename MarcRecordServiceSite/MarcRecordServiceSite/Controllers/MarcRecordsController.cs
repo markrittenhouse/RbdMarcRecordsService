@@ -492,6 +492,12 @@ namespace MarcRecordServiceSite.Controllers
             return null;
         }
 
+
+        public ActionResult Download()
+        {
+            return View();
+        }
+
         /// <summary>
         /// 
         /// </summary>
