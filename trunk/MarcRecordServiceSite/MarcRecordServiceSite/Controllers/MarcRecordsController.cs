@@ -433,15 +433,13 @@ namespace MarcRecordServiceSite.Controllers
         [HttpPost]
         public ActionResult Download(JsonMarcRecordRequest marcRecordRequest)
         {
-            
-                try
-                {
-
-
+            try
+            {
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
                 List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
                 IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
+              
 
                 string lastIsbn = "";
                 List<string> marcRecordPaths = new List<string>();
@@ -464,19 +462,19 @@ namespace MarcRecordServiceSite.Controllers
                     return null;
                 }
 
-                Log.Debug("Begin MArC REcord Files Merge");
+                Log.Debug("Begin MArC Record Files Merge");
                 string filePath = GetFilePath(marcRecordRequest.AccountNumber, "MarcRecords");
 
                 FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(aFile);
-                foreach (string marcRecordPath in marcRecordPaths)
+                foreach (string marcRecordPath in marcRecordPaths.Where(System.IO.File.Exists))
                 {
-                    sw.WriteLine(string.Format(System.IO.File.ReadAllText(marcRecordPath)));
+                    sw.WriteLine(System.IO.File.ReadAllText(marcRecordPath));
                 }
                 sw.Close();
                 aFile.Close();
 
-                Log.Debug("End MArC REcord Files Merge");
+                Log.Debug("End MArC Record Files Merge");
 
                 if (marcRecordRequest.Format != "mrk")
                 {
@@ -514,7 +512,6 @@ namespace MarcRecordServiceSite.Controllers
 
         public ActionResult Download()
         {
-            Log.Error("Test Error");
             return View();
         }
 
