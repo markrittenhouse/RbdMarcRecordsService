@@ -88,7 +88,7 @@ namespace MarcRecordServiceSite
 				Log.Error(ex.Message, ex);
 				throw;
 			}
-			Log.Error("Application_Start() <<<");
+			Log.Info("Application_Start() <<<");
 		}
 
 		/// <summary>
