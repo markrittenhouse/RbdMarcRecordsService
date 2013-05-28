@@ -121,6 +121,7 @@
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\NlmMarcFile.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseMarcFile.cs" />
+    <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />
   </ItemGroup>
   <ItemGroup>

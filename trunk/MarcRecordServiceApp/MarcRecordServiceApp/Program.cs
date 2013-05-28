@@ -57,6 +57,7 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("01 = CreateNlmMarcRecords");
                     Console.WriteLine("02 = CreateLcMarcRecords ");
                     Console.WriteLine("03 = CreateRbdMarcRecords");
+                    Console.WriteLine("04 = CreateMissingRbdMarcRecords");
 					Console.WriteLine("");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
@@ -88,6 +89,11 @@ namespace MarcRecordServiceApp
                     case "-CreateRbdMarcRecords":
                     case "03":
                         task = new MarcRecordsTask(MarcRecordProvider.Rbd);
+                        break;
+
+                    case "-CreateMissingRbdMarcRecords":
+                    case "04":
+                        task = new RittenhouseOnlyMarcRecordsTask();
                         break;
 
                     default:

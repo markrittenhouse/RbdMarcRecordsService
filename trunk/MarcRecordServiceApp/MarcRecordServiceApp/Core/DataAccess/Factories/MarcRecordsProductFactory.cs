@@ -48,8 +48,23 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(" where p.isAvailableForSale = 1 ")
             .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) ")
             .Append(" and  (p.copyright is not null or p.publicationDate is not null) ")
-            .Append(" and  (mrp.DateUpdated is null or mrp.DateUpdated < getdate() - 7) ")          
+            .Append(" and  (mrp.DateUpdated is null or mrp.DateUpdated < getdate() - 7) ")
             .ToString();
+
+
+        public static readonly string FromMissingMarcRecordsRittenhouseOnly = new StringBuilder()
+            .Append(" from   RittenhouseWeb.dbo.Product p ")
+            .Append(" join  RittenhouseWeb.dbo.Inventory i on i.productId = p.productId ")
+            .Append(" join  RittenhouseWeb.dbo.ProductPrice pp on pp.productId = p.productId ")
+            .Append(" left join  RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
+            .Append(" left join  RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
+            .Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
+            .Append(" left join dbo.MarcRecord mr on mr.sku = p.sku ")
+            .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3 ")
+            .Append(" where (p.copyright is not null or p.publicationDate is not null) ")
+            .Append(" and (mrp.dateCreated is null) ")
+            .ToString();
+
 
 
             
@@ -237,6 +252,59 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         }
 
         /// <summary>
+        /// This will only Rittenhouse Products WITHOUT MARC records
+        /// </summary>
+        /// <param name="batchSize"></param>
+        /// <returns></returns>
+        public static List<IMarcFile> GetProductsWithoutMarcRecords(int batchSize)
+        {
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+            SqlDataReader reader = null;
+
+            List<IMarcFile> marcFiles = new List<IMarcFile>();
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            string sql = new StringBuilder()
+            .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
+            .Append(FromMissingMarcRecordsRittenhouseOnly)
+            .Append(" order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate ")
+            .ToString();
+
+            try
+            {
+                cnn = GetRittenhouseConnection();
+
+                command = cnn.CreateCommand();
+                command.CommandText = sql;
+                command.CommandTimeout = 15;
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    ProductEntity productEntity = new ProductEntity();
+                    productEntity.Populate(reader);
+
+                    marcFiles.Add(new RittenhouseMarcFile(productEntity.GetProduct()));
+                }
+                return marcFiles;
+            }
+            catch (Exception ex)
+            {
+                Log.InfoFormat("sql: {0}", sql);
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command, reader);
+            }
+        }
+
+        /// <summary>
         /// 
         /// </summary>
         /// <param name="providerType"></param>
@@ -255,6 +323,53 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .AppendFormat(FromProductAndMarcRecords, (int)providerType)
                 .ToString();
             
+            try
+            {
+                cnn = GetRittenhouseConnection();
+
+                command = cnn.CreateCommand();
+                command.CommandText = sql;
+                command.CommandTimeout = 15;
+
+                reader = command.ExecuteReader();
+
+                int count = -2;
+                if (reader.Read())
+                {
+                    count = GetInt32Value(reader, 0, -1);
+                }
+                return count;
+            }
+            catch (Exception ex)
+            {
+                Log.InfoFormat("sql: {0}", sql);
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command, reader);
+            }
+        }
+
+        /// <summary>
+        /// This will only get the count for Rittenhouse Products WITHOUT MARC records
+        /// </summary>
+        /// <returns></returns>
+        public static int GetProductsWithoutMarcRecordsCount()
+        {
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+            SqlDataReader reader = null;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            string sql = new StringBuilder()
+                .Append("select count(*) ")
+                .Append(FromMissingMarcRecordsRittenhouseOnly)
+                .ToString();
+
             try
             {
                 cnn = GetRittenhouseConnection();
