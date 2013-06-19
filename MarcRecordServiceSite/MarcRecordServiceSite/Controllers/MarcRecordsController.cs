@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Script.Serialization;
 using MARCEngine5;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Queries;
@@ -54,7 +51,16 @@ namespace MarcRecordServiceSite.Controllers
 			{
                 MARC21 marc21 = new MARC21();
 
-			    var file = MarcRecordQueries.GetMnemonicMarcFileForEditing(item.Isbn13);
+			    MarcRecordFile file = MarcRecordQueries.GetMnemonicMarcFileForEditing2(item.Isbn13);
+                if (file == null && !string.IsNullOrWhiteSpace(item.Isbn10))
+                {
+                    file = MarcRecordQueries.GetMnemonicMarcFileForEditing2(item.Isbn10);
+                }
+                if (file == null && !string.IsNullOrWhiteSpace(item.Sku))
+                {
+                    file = MarcRecordQueries.GetMnemonicMarcFileForEditing2(item.Sku);
+                }
+
                 Log.DebugFormat("Id: {0}, FileData: {1}", file.Id, file.FileData);
 
                 string filePath = string.Format("{0}\\{1}_{2}.{3}", workingDirectory, item.Isbn13, file.Provider.Id,
@@ -438,8 +444,9 @@ namespace MarcRecordServiceSite.Controllers
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
                 List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
-                IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
-              
+
+                //IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
+                IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing2(isbnsToFind);
 
                 string lastIsbn = "";
                 List<string> marcRecordPaths = new List<string>();
@@ -448,12 +455,24 @@ namespace MarcRecordServiceSite.Controllers
                 {
                     if (lastIsbn == file.Provider.MarcRecord.Isbn13 || lastIsbn == file.Provider.MarcRecord.Isbn10 || lastIsbn == file.Provider.MarcRecord.Sku) continue;
 
-                    marcRecordPaths.AddRange(from jsonIsbnAndCustomerFields in marcRecordRequest.IsbnAndCustomerFields
-                                             where
-                                                 jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn13 ||
-                                                 jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn10 ||
-                                                 jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Sku
-                                             select WriteIndividualMarcFile2(file, jsonIsbnAndCustomerFields, marcRecordRequest.AccountNumber, out lastIsbn));
+                    //marcRecordPaths.AddRange(from jsonIsbnAndCustomerFields in marcRecordRequest.IsbnAndCustomerFields
+                    //                         where
+                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn13 ||
+                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn10 ||
+                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Sku
+                    //                         select WriteIndividualMarcFile2(file, jsonIsbnAndCustomerFields, marcRecordRequest.AccountNumber, out lastIsbn));
+                    foreach (var jsonIsbnAndCustomerField in marcRecordRequest.IsbnAndCustomerFields)
+                    {
+                        if (jsonIsbnAndCustomerField.IsbnOrSku != file.Provider.MarcRecord.Isbn13 &&
+                            jsonIsbnAndCustomerField.IsbnOrSku != file.Provider.MarcRecord.Isbn10 &&
+                            jsonIsbnAndCustomerField.IsbnOrSku != file.Provider.MarcRecord.Sku)
+                        {
+                            continue;
+                        }
+                        marcRecordPaths.Add(WriteIndividualMarcFile2(file, jsonIsbnAndCustomerField, marcRecordRequest.AccountNumber, out lastIsbn));
+                        break;
+                    }
+
                 }
 
                 if (marcRecordPaths.Count == 0)
@@ -547,6 +566,11 @@ namespace MarcRecordServiceSite.Controllers
                     StringBuilder sb = new StringBuilder();
                     if (jsonCustomMarcField.FieldNumber != 0)
                     {
+                        if (jsonCustomMarcField.FieldNumber == 856)
+                        {
+                            marc21.Delete_Field(filePath, "=856");
+                        }
+
                         sb.AppendFormat("={0} {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
                                         jsonCustomMarcField.FieldIndicator2);
                         if (jsonCustomMarcField.MarcSubfields.Count > 0)
