@@ -271,12 +271,13 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         {
                             PrefixQuery prefixQuery = new PrefixQuery(query);
                             ResultSet resultSet = (ResultSet)lcConnection.Search(prefixQuery);
-
+                            
                             for (uint i = 0; i < ((IResultSet)resultSet).Size; i++)
                             {
                                 string temp = Encoding.UTF8.GetString(((IResultSet)resultSet)[i].Content);
-                                if (temp.Length <= 0) continue;
+                                if (temp.Length <= 0) continue;                                
                                 mrcStrings.Add(temp);
+                                break;
                             }
                             ((IResultSet)resultSet).Dispose();
                         }
@@ -330,7 +331,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 {
                     for (int i = ii; i < ii + marcRecordsLeft; i++)
                     {
-                        queries.Add(string.Format(" @attr 1=7 {0} ", marcFiles[i].Product.Isbn10 ?? marcFiles[i].Product.Isbn13));
+                        queries.Add(string.Format(" @attr 1=7 {0} ", marcFiles[i].Product.Isbn13 ?? marcFiles[i].Product.Isbn10));
                     }
                 }
                 else
@@ -342,7 +343,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     int count = ii + 10;
                     for (int i = ii; i < count; i++)
                     {
-                        sbQuery.AppendFormat(" @attr 1=7 {0} ", marcFiles[i].Product.Isbn10 ?? marcFiles[i].Product.Isbn13);
+                        sbQuery.AppendFormat(" @attr 1=7 {0} ", marcFiles[i].Product.Isbn13 ?? marcFiles[i].Product.Isbn10);
                     }
                     queries.Add(sbQuery.ToString());
                 }
