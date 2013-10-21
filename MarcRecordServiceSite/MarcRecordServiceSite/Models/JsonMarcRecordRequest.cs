@@ -11,6 +11,12 @@ namespace MarcRecordServiceSite.Models
         public string Format { get; set; }
         public string AccountNumber { get; set; }
         public List<JsonIsbnAndCustomerField> IsbnAndCustomerFields { get; set; }
+        public bool IsDeleteFile { get; set; }
+        public MarcFtpCredientials FtpCredientials { get; set; }
+        
+        //TODO: Implement this in Rittenhouse.com to minimize how much redundant information we are sending.
+        //TODO: This can be used for all custom fields that are written to EVERY record. 
+        public List<JsonCustomMarcField> CustomMarcFields { get; set; }
     }
 
     [Serializable]
@@ -35,5 +41,13 @@ namespace MarcRecordServiceSite.Models
     {
         public string Subfield { get; set; }
         public string SubfieldValue { get; set; }
+    }
+
+    [Serializable]
+    public class MarcFtpCredientials
+    {
+        public string Host { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }

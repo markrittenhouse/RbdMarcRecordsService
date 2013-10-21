@@ -142,6 +142,7 @@
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderTypeMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Queries\MarcRecordQueries.cs" />
+    <Compile Include="Models\FtpService.cs" />
     <Compile Include="Models\JsonMarcRecordRequest.cs" />
     <Compile Include="Models\MarcRecordRequestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,6 +225,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\MarcRecords\Download.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MarcRecords\Ftp.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MarcRecords\Error.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
