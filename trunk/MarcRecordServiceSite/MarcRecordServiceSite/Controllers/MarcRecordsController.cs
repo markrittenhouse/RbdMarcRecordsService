@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using MARCEngine5;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Queries;
@@ -32,7 +33,7 @@ namespace MarcRecordServiceSite.Controllers
 		/// </summary>
 		/// <returns></returns>
         public ActionResult Index()
-        {
+		{
             return View();
         }
 
@@ -119,334 +120,47 @@ namespace MarcRecordServiceSite.Controllers
 
 			return View(item);
 		}
-#region "Test Area"
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <param name="itemList"></param>
-        ///// <returns></returns>
-        //[HttpPost]
-        //public ActionResult Download5(string itemList)
-        //{
 
-        //    if (itemList != null)
-        //    {
-        //        string workingDirectory =
-        //            System.Configuration.ConfigurationManager.AppSettings["MarcRecordsWorkingDirectory"];
-        //        Log.DebugFormat("workingDirectory: {0}", workingDirectory);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="jsonMarcRecordRequestString"></param>
+        /// <returns></returns>
+        public ActionResult Download2(string jsonMarcRecordRequestString)
+        {
+            if (!string.IsNullOrWhiteSpace(jsonMarcRecordRequestString))
+            {
+                JsonMarcRecordRequest marcRecordRequest = new JavaScriptSerializer().Deserialize<JsonMarcRecordRequest>(jsonMarcRecordRequestString);
+                return Download(marcRecordRequest);
+            }
+            return View("Error");
+        }
 
-        //        MARC21 marc21 = new MARC21();
-
-        //        var files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(new List<string>());
-        //        //var files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(itemList);
-        //        Random random = new Random();
-        //        string filePath = string.Format("{0}\\MarcRecords-{1}_{2}_{3}_{4}.mrk", workingDirectory,
-        //                                        DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-        //                                        random.Next(9999).ToString().Substring(1, 2));
-
-        //        FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-        //        StreamWriter sw = new StreamWriter(aFile);
-
-        //        string lastIsbn = "";
-        //        foreach (MarcRecordFile file in files)
-        //        {
-        //            if (lastIsbn == "" || lastIsbn != file.Provider.MarcRecord.Isbn13)
-        //            {
-        //                lastIsbn = file.Provider.MarcRecord.Isbn13;
-        //                Log.DebugFormat("      Id: {0}, FileData: {1}", file.Id, file.FileData);
-        //                sw.Write(file.FileData);
-        //            }
-
-        //        }
-
-        //        sw.Close();
-        //        aFile.Close();
-
-        //        marc21.Delete_Field(filePath, FieldsToRemove);
-
-        //        var fileStream = filePath;
-        //        var mimeType = "text/plain";
-        //        var fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year,
-        //                                             DateTime.Now.Month, DateTime.Now.Day);
-
-
-        //        return File(fileStream, mimeType, fileDownloadName);
-        //    }
-        //    return null;
-        //}
-
-        ///// <summary>
-        ///// This method Gets the Items to find from the TempData. 
-        ///// </summary>
-        ///// <returns></returns>
-        //public ActionResult Download()
-        //{
-        //    MarcRecordRequestItems itemList = (MarcRecordRequestItems)TempData["MarcRecordRequestItems"];
-
-        //    if (itemList != null)
-        //    {
-        //        string workingDirectory =
-        //            System.Configuration.ConfigurationManager.AppSettings["MarcRecordsWorkingDirectory"];
-        //        Log.DebugFormat("workingDirectory: {0}", workingDirectory);
-
-        //        MARC21 marc21 = new MARC21();
-
-        //        var files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(itemList);
-        //        Random random = new Random();
-        //        string filePath = string.Format("{0}\\MarcRecords-{1}_{2}_{3}_{4}.mrk", workingDirectory,
-        //                                        DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-        //                                        random.Next(9999).ToString().Substring(1, 2));
-
-        //        FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-        //        StreamWriter sw = new StreamWriter(aFile);
-
-        //        string lastIsbn = "";
-        //        foreach (MarcRecordFile file in files)
-        //        {
-        //            if (lastIsbn == "" || lastIsbn != file.Provider.MarcRecord.Isbn13)
-        //            {
-        //                lastIsbn = file.Provider.MarcRecord.Isbn13;
-        //                Log.DebugFormat("      Id: {0}, FileData: {1}", file.Id, file.FileData);
-        //                sw.Write(file.FileData);
-        //            }
-
-        //        }
-
-        //        sw.Close();
-        //        aFile.Close();
-
-        //        marc21.Delete_Field(filePath, FieldsToRemove);
-
-        //        //TODO this is how you add fields
-        //        marc21.Add_Field(filePath, "=999 //$atest");
-                
-
-        //        var fileStream = filePath;
-        //        var mimeType = "text/plain";
-        //        var fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year,
-        //                                             DateTime.Now.Month, DateTime.Now.Day);
-        //        return File(fileStream, mimeType, fileDownloadName);
-        //    }
-        //    return null;
-        //}
-        //public ActionResult GetMarcRecords()
-        //{
-        //    return View();
-        //}
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <param name="item"></param>
-        ///// <returns></returns>
-        //[HttpPost]
-        //public ActionResult GetMarcRecords(MarcRecordsRequest item)
-        //{
-        //    if (item != null)
-        //    {
-        //        if (item.ItemIdentifier != null)
-        //        {
-        //            string[] newItems = item.ItemIdentifier.Replace("\r\n", "").Split(',');
-        //            MarcRecordRequestItems requestItems = new MarcRecordRequestItems {Items = new List<string>()};
-        //            requestItems.Items.AddRange(newItems);
-
-        //            TempData["MarcRecordRequestItems"] = requestItems;
-        //            return RedirectToAction("Download");
-        //        }
-        //    }
-        //    return View();
-        //}
-        //public ActionResult GetKenMarcRecords()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //public ActionResult GetKenMarcRecords(MarcRecordRequestItems2 item)
-        //{
-        //    if (item != null)
-        //    {
-        //        TempData["MarcRecordRequestItems2"] = item;
-        //        return RedirectToAction("Download2");
-        //    }
-        //    return View();
-        //}
-        ///// <summary>
-        ///// This method Gets the Items to find from the TempData. 
-        ///// </summary>
-        ///// <returns></returns>
-        //public ActionResult Download2()
-        //{
-        //    MarcRecordRequestItems2 marcItemList = (MarcRecordRequestItems2)TempData["MarcRecordRequestItems2"];
-
-        //    if (marcItemList != null)
-        //    {
-        //        List<string> isbnsToFind =
-        //            marcItemList.MarcRecordItems.Select(
-        //                marcRecordItem => marcRecordItem.Isbn10 ?? (marcRecordItem.Isbn13 ?? (marcRecordItem.Sku))).
-        //                ToList();
-
-        //        string workingDirectory =
-        //            System.Configuration.ConfigurationManager.AppSettings["MarcRecordsWorkingDirectory"];
-
-        //        IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
-
-        //        string filePath = string.Format("{0}\\MarcRecords-{1}_{2}_{3}_{4}.mrk", workingDirectory,
-        //                                        DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-        //                                        new Random().Next(9999).ToString().Substring(1, 2));
-
-        //        string lastIsbn = "";
-        //        List<string> marcRecordPaths = new List<string>();
-
-
-        //        foreach (MarcRecordFile file in files)
-        //        {
-        //            if (lastIsbn == file.Provider.MarcRecord.Isbn13 || lastIsbn == file.Provider.MarcRecord.Isbn10 ||
-        //                lastIsbn == file.Provider.MarcRecord.Sku) continue;
-
-        //            foreach (MarcRecordItem marcRecordItem in marcItemList.MarcRecordItems)
-        //            {
-        //                if (file.Provider.MarcRecord.Isbn13 == marcRecordItem.Isbn13)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //                else if (file.Provider.MarcRecord.Isbn10 == marcRecordItem.Isbn10)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //                else if (file.Provider.MarcRecord.Isbn10 == marcRecordItem.Isbn10)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //            }
-        //        }
-
-        //        FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-        //        StreamWriter sw = new StreamWriter(aFile);
-        //        foreach (string marcRecordPath in marcRecordPaths)
-        //        {
-        //            sw.WriteLine(string.Format(System.IO.File.ReadAllText(marcRecordPath)));
-        //        }
-        //        sw.Close();
-        //        aFile.Close();
-
-        //        string fileStream = filePath;
-        //        string mimeType = "text/plain";
-        //        string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year,
-        //                                             DateTime.Now.Month, DateTime.Now.Day);
-        //        return File(fileStream, mimeType, fileDownloadName);
-        //    }
-        //    return null;
-        //}        
-        //[HttpPost]
-        //public ActionResult Download3(MarcRecordRequestItems2 marcItemList)
-        //{            
-        //    if (marcItemList != null)
-        //    {
-        //        List<string> isbnsToFind =
-        //            marcItemList.MarcRecordItems.Select(
-        //                marcRecordItem => marcRecordItem.Isbn10 ?? (marcRecordItem.Isbn13 ?? (marcRecordItem.Sku))).
-        //                ToList();
-
-        //        string workingDirectory =
-        //            System.Configuration.ConfigurationManager.AppSettings["MarcRecordsWorkingDirectory"];
-
-        //        IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
-
-        //        string lastIsbn = "";
-        //        List<string> marcRecordPaths = new List<string>();
-
-
-        //        foreach (MarcRecordFile file in files)
-        //        {
-        //            if (lastIsbn == file.Provider.MarcRecord.Isbn13 || lastIsbn == file.Provider.MarcRecord.Isbn10 ||
-        //                lastIsbn == file.Provider.MarcRecord.Sku) continue;
-
-        //            foreach (MarcRecordItem marcRecordItem in marcItemList.MarcRecordItems)
-        //            {
-        //                if (file.Provider.MarcRecord.Isbn13 == marcRecordItem.Isbn13)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //                else if (file.Provider.MarcRecord.Isbn10 == marcRecordItem.Isbn10)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //                else if (file.Provider.MarcRecord.Isbn10 == marcRecordItem.Isbn10)
-        //                {
-        //                    marcRecordPaths.Add(WriteIndividualMarcFile(file, marcRecordItem, out lastIsbn));
-        //                }
-        //            }
-        //        }
-
-        //        string filePath = string.Format("{0}\\MarcRecords-{1}_{2}_{3}_{4}.mrk", workingDirectory,
-        //                        DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-        //                        new Random().Next(9999).ToString().Substring(1, 2));
-
-        //        FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-        //        StreamWriter sw = new StreamWriter(aFile);
-        //        foreach (string marcRecordPath in marcRecordPaths)
-        //        {
-        //            sw.WriteLine(string.Format(System.IO.File.ReadAllText(marcRecordPath)));
-        //        }
-        //        sw.Close();
-        //        aFile.Close();
-
-        //        string fileStream = filePath;
-        //        string mimeType = "text/plain";
-        //        string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year,
-        //                                             DateTime.Now.Month, DateTime.Now.Day);
-        //        return File(fileStream, mimeType, fileDownloadName);
-        //    }
-        //    return null;
-        //}
-        //public string WriteIndividualMarcFile(MarcRecordFile marcRecordFile, MarcRecordItem marcRecordItem, out string lastIsbn)
-        //{
-        //    string workingDirectory =
-        //            System.Configuration.ConfigurationManager.AppSettings["MarcRecordsWorkingDirectory"];
-
-        //    string filePath = string.Format("{0}\\MarcRecords-{1}_{2}_{3}_{4}_{5}.mrk", workingDirectory,
-        //                                        DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day,
-        //                                        marcRecordFile.Provider.MarcRecord.Isbn13, new Random().Next(9999).ToString().Substring(1, 2));
-
-        //    FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-        //    StreamWriter sw = new StreamWriter(aFile);
-
-        //    lastIsbn = marcRecordFile.Provider.MarcRecord.Isbn13;
-        //    Log.DebugFormat("      Id: {0}, FileData: {1}", marcRecordFile.Id, marcRecordFile.FileData);
-        //    sw.Write(marcRecordFile.FileData);
-
-        //    sw.Close();
-        //    aFile.Close();
-
-        //    MARC21 marc21 = new MARC21();
-        //    marc21.Delete_Field(filePath, FieldsToRemove);
-
-        //    foreach (MarcField marcField in marcRecordItem.MarcFields)
-        //    {
-        //        if (marcField.Field != "" && marcField.FieldValue != "")
-        //        {
-        //            marc21.Add_Field(filePath, string.Format("={0} //{1}", marcField.Field, marcField.FieldValue));
-        //        }
-        //    }
-
-        //    return filePath;
-        //}
-#endregion
         /// <summary>
         /// 
         /// </summary>
         /// <param name="marcRecordRequest"></param>
         /// <returns></returns>
-        [HttpPost]
         public ActionResult Download(JsonMarcRecordRequest marcRecordRequest)
-        {
+        {          
             try
             {
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
                 List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
 
-                //IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing(isbnsToFind);
-                IEnumerable<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing2(isbnsToFind);
+                List<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing2(isbnsToFind);
+
+                if (marcRecordRequest.IsDeleteFile)
+                {
+                    foreach (MarcRecordFile marcRecordFile in files)
+                    {
+                        var sb = new StringBuilder(marcRecordFile.FileData);
+                        sb.Remove(11, 12);
+                        sb.Insert(11, 'd');
+                        marcRecordFile.FileData = sb.ToString();
+                    }
+                }
 
                 string lastIsbn = "";
                 List<string> marcRecordPaths = new List<string>();
@@ -455,12 +169,6 @@ namespace MarcRecordServiceSite.Controllers
                 {
                     if (lastIsbn == file.Provider.MarcRecord.Isbn13 || lastIsbn == file.Provider.MarcRecord.Isbn10 || lastIsbn == file.Provider.MarcRecord.Sku) continue;
 
-                    //marcRecordPaths.AddRange(from jsonIsbnAndCustomerFields in marcRecordRequest.IsbnAndCustomerFields
-                    //                         where
-                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn13 ||
-                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Isbn10 ||
-                    //                             jsonIsbnAndCustomerFields.IsbnOrSku == file.Provider.MarcRecord.Sku
-                    //                         select WriteIndividualMarcFile2(file, jsonIsbnAndCustomerFields, marcRecordRequest.AccountNumber, out lastIsbn));
                     foreach (var jsonIsbnAndCustomerField in marcRecordRequest.IsbnAndCustomerFields)
                     {
                         if (jsonIsbnAndCustomerField.IsbnOrSku != file.Provider.MarcRecord.Isbn13 &&
@@ -469,7 +177,15 @@ namespace MarcRecordServiceSite.Controllers
                         {
                             continue;
                         }
-                        marcRecordPaths.Add(WriteIndividualMarcFile2(file, jsonIsbnAndCustomerField, marcRecordRequest.AccountNumber, out lastIsbn));
+                        
+                        marcRecordPaths.Add(WriteIndividualMarcFile2(file, jsonIsbnAndCustomerField,
+                                                                     marcRecordRequest.AccountNumber, out lastIsbn,
+                                                                     new JsonIsbnAndCustomerField
+                                                                         {
+                                                                             CustomMarcFields = marcRecordRequest.CustomMarcFields,
+                                                                             IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
+                                                                         }
+                                                ));
                         break;
                     }
 
@@ -478,7 +194,7 @@ namespace MarcRecordServiceSite.Controllers
                 if (marcRecordPaths.Count == 0)
                 {
                     Log.Debug("Zero Files found");
-                    return null;
+                    return View("Error");
                 }
 
                 Log.Debug("Begin MArC Record Files Merge");
@@ -513,26 +229,47 @@ namespace MarcRecordServiceSite.Controllers
                     }
                 }
 
-                string fileStream = filePath;
-                const string mimeType = "text/plain";
-                string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.{3}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, marcRecordRequest.Format);
-                Log.DebugFormat("File to stream back: {0}", fileDownloadName);
-                return File(fileStream, mimeType, fileDownloadName);
-            
+                //var ftpCredientials = new MarcFtpCredientials
+                //                          {
+                //                              Host = "ftp://technoserv04.technotects.com/Kens_Test_Folder",
+                //                              UserName = "kshaberle",
+                //                              Password = "Techno2008"
+                //                          };
+
+                //marcRecordRequest.FtpCredientials = ftpCredientials;
+
+                if (marcRecordRequest.FtpCredientials != null)
+                {
+                    FtpService ftpService = new FtpService(marcRecordRequest.FtpCredientials);
+
+                    if (ftpService.IsEligibleForFtp)
+                    {
+                        ftpService.UploadFileToFtp(filePath);
+                        return View("Ftp");
+                    }                    
+                }
+                else
+                {
+                    string fileStream = filePath;
+                    const string mimeType = "text/plain";
+                    string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.{3}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, marcRecordRequest.Format);
+                    Log.DebugFormat("File to stream back: {0}", fileDownloadName);
+
+                    return File(fileStream, mimeType, fileDownloadName);
+                }               
             }
             catch (Exception ex)
             {
                 Log.ErrorFormat("Error in Download: {0}", ex);
-                return null;
             }
-            
+            return View("Error");
         }
 
 
-        public ActionResult Download()
-        {
-            return View();
-        }
+        //public ActionResult Download()
+        //{
+        //    return View();
+        //}
 
         /// <summary>
         /// 
@@ -541,8 +278,9 @@ namespace MarcRecordServiceSite.Controllers
         /// <param name="jsonIsbnAndCustomerField"></param>
         /// <param name="accountNumber"></param>
         /// <param name="lastIsbn"></param>
+        /// <param name="commonJsonFields"> </param>
         /// <returns></returns>
-        public string WriteIndividualMarcFile2(MarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn)
+        public string WriteIndividualMarcFile2(MarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonIsbnAndCustomerField commonJsonFields = null)
         {
             string filePath = GetFilePath(accountNumber, marcRecordFile.Provider.MarcRecord.Isbn13);
 
@@ -559,32 +297,41 @@ namespace MarcRecordServiceSite.Controllers
             MARC21 marc21 = new MARC21();
             marc21.Delete_Field(filePath, FieldsToRemove);
 
+            bool isR2LibraryRequest = false;
+            if (HttpContext.Request.UrlReferrer != null)
+            {
+                isR2LibraryRequest = HttpContext.Request.UrlReferrer.ToString().Contains("r2");
+            }
+
+            PopulateUrlInMarcRecord(filePath, isR2LibraryRequest, marcRecordFile);
+
+            if (commonJsonFields != null && commonJsonFields.CustomMarcFields != null && commonJsonFields.CustomMarcFields.Count > 0)
+            {
+                foreach (JsonCustomMarcField jsonCustomMarcField in commonJsonFields.CustomMarcFields)
+                {
+                    var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
+
+                    if (!string.IsNullOrWhiteSpace(marcFieldString))
+                    {
+                        marc21.Add_Field(filePath, marcFieldString);
+                    }
+                }
+            }
+            else
+            {
+                Log.DebugFormat("No MarcFields to add");
+            }
+
+
             if (jsonIsbnAndCustomerField.CustomMarcFields != null && jsonIsbnAndCustomerField.CustomMarcFields.Count > 0)
             {
                 foreach (JsonCustomMarcField jsonCustomMarcField in jsonIsbnAndCustomerField.CustomMarcFields)
                 {
-                    StringBuilder sb = new StringBuilder();
-                    if (jsonCustomMarcField.FieldNumber != 0)
-                    {
-                        if (jsonCustomMarcField.FieldNumber == 856)
-                        {
-                            marc21.Delete_Field(filePath, "=856");
-                        }
+                    var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
 
-                        sb.AppendFormat("={0} {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
-                                        jsonCustomMarcField.FieldIndicator2);
-                        if (jsonCustomMarcField.MarcSubfields.Count > 0)
-                        {
-                            foreach (JsonCustomMarcSubfield jsonCustomMarcSubfield in jsonCustomMarcField.MarcSubfields)
-                            {
-                                sb.AppendFormat("${0}{1}", jsonCustomMarcSubfield.Subfield, jsonCustomMarcSubfield.SubfieldValue);
-                            }
-                        }
-                        else
-                        {
-                            sb.Append(jsonCustomMarcField.FieldValue);
-                        }
-                        marc21.Add_Field(filePath, sb.ToString());
+                    if (!string.IsNullOrWhiteSpace(marcFieldString))
+                    {
+                        marc21.Add_Field(filePath, marcFieldString);
                     }
                 }
             }
@@ -593,6 +340,49 @@ namespace MarcRecordServiceSite.Controllers
                 Log.DebugFormat("No customer specific MarcFields to add");
             }
             return filePath;
+        }
+
+        private string BuildCustomMarcField(JsonCustomMarcField jsonCustomMarcField)
+        {
+            StringBuilder sb = new StringBuilder();
+            if (jsonCustomMarcField.FieldNumber != 0 && jsonCustomMarcField.FieldNumber != 856)
+            {
+                sb.AppendFormat("={0:000} {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
+                                jsonCustomMarcField.FieldIndicator2);
+                if (jsonCustomMarcField.MarcSubfields.Count > 0)
+                {
+                    foreach (JsonCustomMarcSubfield jsonCustomMarcSubfield in jsonCustomMarcField.MarcSubfields)
+                    {
+                        sb.AppendFormat("${0}{1}", jsonCustomMarcSubfield.Subfield, jsonCustomMarcSubfield.SubfieldValue);
+                    }
+                }
+                else
+                {
+                    sb.Append(jsonCustomMarcField.FieldValue);
+                }
+                return sb.ToString();
+            }
+            return null;
+        }
+
+        public void PopulateUrlInMarcRecord(string filePath, bool isR2Library, MarcRecordFile marcRecordFile)
+        {
+            string r2Url = System.Configuration.ConfigurationManager.AppSettings["R2LibraryUrl"];
+            string rittenhouseUrl = System.Configuration.ConfigurationManager.AppSettings["RittenhouseUrl"];
+
+            string bookUrl = isR2Library ? r2Url : rittenhouseUrl;
+
+            MARC21 marc21 = new MARC21();
+            marc21.Delete_Field(filePath, "=856");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("=856  4\\$zConnect to this resource online$u");
+
+            sb.AppendFormat("{0}{1}", bookUrl,
+                            isR2Library
+                                ? marcRecordFile.Provider.MarcRecord.Isbn13 ?? marcRecordFile.Provider.MarcRecord.Isbn10
+                                : marcRecordFile.Provider.MarcRecord.Sku ?? marcRecordFile.Provider.MarcRecord.Isbn10);
+
+            marc21.Add_Field(filePath, sb.ToString());
         }
 
         /// <summary>

@@ -79,11 +79,17 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
         //    return result;
         //}
 
-        public static IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing2(List<string> items)
+        public static List<MarcRecordFile> GetMnemonicMarcFilesForEditing2(List<string> items)
         {
-            List<MarcRecordFile> marcRecordFiles = items.Select(GetMnemonicMarcFileForEditing2).ToList();
+            List<MarcRecordFile> marcRecordFiles2 = new List<MarcRecordFile>();
+            var marcRecordFiles = items.Select(GetMnemonicMarcFileForEditing2).Where(x => x != null);
 
-            return marcRecordFiles;
+            if (marcRecordFiles.Any())
+            {
+                marcRecordFiles2 = marcRecordFiles.ToList();
+            }           
+
+            return marcRecordFiles2;
         }
 
         /// <summary>
