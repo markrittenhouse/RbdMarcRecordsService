@@ -134,6 +134,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\MarcRecordService.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecord.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordFile.cs" />
     <Compile Include="Infrastructure\NHibernate\Entities\MarcRecordProvider.cs" />
