@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
+using System.Net;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using MARCEngine5;
@@ -71,26 +72,28 @@ namespace MarcRecordServiceSite.Controllers
                     file = MarcRecordQueries.GetMnemonicMarcFileForEditing2(item.Sku);
                 }
 
-                Log.DebugFormat("Id: {0}, FileData: {1}", file.Id, file.FileData);
+                if (file != null)
+			    {
+                    Log.DebugFormat("Id: {0}, FileData: {1}", file.Id, file.FileData);
+                    string filePath = string.Format("{0}\\{1}_{2}.{3}", workingDirectory, item.Isbn13, file.Provider.Id,
+                                                    (file.MarcRecordFileTypeId == 1) ? "mrc" : (file.MarcRecordFileTypeId == 2) ? "mrk" : "xml");
 
-                string filePath = string.Format("{0}\\{1}_{2}.{3}", workingDirectory, item.Isbn13, file.Provider.Id,
-                                                (file.MarcRecordFileTypeId == 1) ? "mrc" : (file.MarcRecordFileTypeId == 2) ? "mrk" : "xml");
+                    // Write to file so we can edit the file. 
+                    System.IO.File.WriteAllText(filePath, file.FileData);
 
-                // Write to file so we can edit the file. 
-                System.IO.File.WriteAllText(filePath, file.FileData);
+                    marc21.Delete_Field(filePath, FieldsToRemove);
 
-                marc21.Delete_Field(filePath, FieldsToRemove);
+			        string fileName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
 
-			    string fileName = string.Format("MarcRecords-{0}_{1}_{2}.mrk", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-
-                //Streams back the file to the client
-                Response.Clear();
-                Response.AddHeader("Cache-control", "no-cache");
-                Response.AddHeader("content-disposition", string.Format("attachment; filename={0}", fileName));
-                Response.Charset = "";
-                Response.ContentType = "text/plain";
-                Response.Write(new StreamReader(filePath).ReadToEnd());
-                Response.End();
+                    //Streams back the file to the client
+                    Response.Clear();
+                    Response.AddHeader("Cache-control", "no-cache");
+                    Response.AddHeader("content-disposition", string.Format("attachment; filename={0}", fileName));
+                    Response.Charset = "";
+                    Response.ContentType = "text/plain";
+                    Response.Write(new StreamReader(filePath).ReadToEnd());
+                    Response.End();
+			    }                             
 			}
 
 			return View(item);
@@ -105,8 +108,16 @@ namespace MarcRecordServiceSite.Controllers
         {
             if (!string.IsNullOrWhiteSpace(jsonMarcRecordRequestString))
             {
-                JsonMarcRecordRequest marcRecordRequest = new JavaScriptSerializer().Deserialize<JsonMarcRecordRequest>(jsonMarcRecordRequestString);
-                return Download(marcRecordRequest);
+                try
+                {
+                    JsonMarcRecordRequest marcRecordRequest = new JavaScriptSerializer().Deserialize<JsonMarcRecordRequest>(jsonMarcRecordRequestString);
+                    return Download(marcRecordRequest);
+                }
+                catch (Exception ex)
+                {
+                    Log.DebugFormat("Download2 error: {0}", ex.Message);
+                }
+                
             }
             return View("Error");
         }
@@ -130,8 +141,8 @@ namespace MarcRecordServiceSite.Controllers
                 {
                     files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
                 }
-                Uri urlReferrer = HttpContext.Request.UrlReferrer;
-                List<string> marcRecordPaths = _marcRecordService.WriteMarcRecordFiles(marcRecordRequest, files, urlReferrer);
+
+                List<string> marcRecordPaths = _marcRecordService.WriteMarcRecordFiles(marcRecordRequest, files);
                 
                 if (marcRecordPaths.Count == 0)
                 {
@@ -159,7 +170,7 @@ namespace MarcRecordServiceSite.Controllers
                     {
                         ftpService.UploadFileToFtp(filePath);
                         return View("Ftp");
-                    }                    
+                    }
                 }
                 else
                 {

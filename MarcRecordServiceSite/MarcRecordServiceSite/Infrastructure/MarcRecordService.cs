@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Web;
 using MARCEngine5;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
 using MarcRecordServiceSite.Models;
@@ -24,8 +23,6 @@ namespace MarcRecordServiceSite.Infrastructure
                                               "\t=970\t=971\t=972\t=973\t=974\t=975\t=976\t=977\t=978\t=979",
                                               "\t=980\t=981\t=982\t=983\t=984\t=985\t=986\t=987\t=988\t=989",
                                               "\t=990\t=991\t=992\t=993\t=994\t=995\t=996\t=997\t=998\t=999");
-
-        private Uri _urlReferrer;
         private readonly ILog _log;
 
         public MarcRecordService(ILog log)
@@ -70,9 +67,8 @@ namespace MarcRecordServiceSite.Infrastructure
             return filePath;
         }
 
-        public List<string> WriteMarcRecordFiles(JsonMarcRecordRequest marcRecordRequest, List<MarcRecordFile> files, Uri urlReferrer)
+        public List<string> WriteMarcRecordFiles(JsonMarcRecordRequest marcRecordRequest, List<MarcRecordFile> files)
         {
-            _urlReferrer = urlReferrer;
             string lastIsbn = "";
             List<string> marcRecordPaths = new List<string>();
 
@@ -90,12 +86,14 @@ namespace MarcRecordServiceSite.Infrastructure
                     }
 
                     marcRecordPaths.Add(WriteIndividualMarcFile(file, jsonIsbnAndCustomerField,
-                                                                 marcRecordRequest.AccountNumber, out lastIsbn,
-                                                                 new JsonIsbnAndCustomerField
-                                                                 {
-                                                                     CustomMarcFields = marcRecordRequest.CustomMarcFields,
-                                                                     IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
-                                                                 }
+                                                                marcRecordRequest.AccountNumber, out lastIsbn,
+                                                                marcRecordRequest,
+                                                                new JsonIsbnAndCustomerField
+                                                                    {
+                                                                        CustomMarcFields =
+                                                                            marcRecordRequest.CustomMarcFields,
+                                                                        IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
+                                                                    }
                                             ));
                     break;
                 }
@@ -104,7 +102,7 @@ namespace MarcRecordServiceSite.Infrastructure
             return marcRecordPaths;
         }
 
-        public string WriteIndividualMarcFile(MarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonIsbnAndCustomerField commonJsonFields = null)
+        public string WriteIndividualMarcFile(MarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonMarcRecordRequest marcRecordRequest, JsonIsbnAndCustomerField commonJsonFields = null)
         {
             string filePath = GetFilePath(accountNumber, marcRecordFile.Provider.MarcRecord.Isbn13);
 
@@ -120,14 +118,11 @@ namespace MarcRecordServiceSite.Infrastructure
 
             MARC21 marc21 = new MARC21();
             marc21.Delete_Field(filePath, FieldsToRemove);
-
-            bool isR2LibraryRequest = false;
-            if (_urlReferrer != null)
+            
+            if (marcRecordRequest.IsR2Request || marcRecordRequest.IsRittenhouseRequest)
             {
-                isR2LibraryRequest = _urlReferrer.ToString().Contains("r2");
-            }
-
-            PopulateUrlInMarcRecord(filePath, isR2LibraryRequest, marcRecordFile);
+                PopulateUrlInMarcRecord(filePath, marcRecordRequest.IsR2Request, marcRecordFile);
+            }            
 
             if (commonJsonFields != null && commonJsonFields.CustomMarcFields != null && commonJsonFields.CustomMarcFields.Count > 0)
             {
@@ -151,11 +146,22 @@ namespace MarcRecordServiceSite.Infrastructure
             {
                 foreach (JsonCustomMarcField jsonCustomMarcField in jsonIsbnAndCustomerField.CustomMarcFields)
                 {
+                    //TODO: Can remove once Marc Records has been updated on Rittenhouse and R2library
+                    if (jsonCustomMarcField.FieldNumber == 856)
+                    {
+                        _log.DebugFormat("Deleting Field 856 because a new one was passed in.");
+                        marc21.Delete_Field(filePath, "=856");
+                    }
                     var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
 
                     if (!string.IsNullOrWhiteSpace(marcFieldString))
                     {
+                        _log.DebugFormat("-------Custom Marc Field: {0}", marcFieldString);
                         marc21.Add_Field(filePath, marcFieldString);
+                    }
+                    else
+                    {
+                        _log.Debug("-------Custom Marc Field: WAS NULL!!!");
                     }
                 }
             }
@@ -217,8 +223,8 @@ namespace MarcRecordServiceSite.Infrastructure
         private string BuildCustomMarcField(JsonCustomMarcField jsonCustomMarcField)
         {
             StringBuilder sb = new StringBuilder();
-            if (jsonCustomMarcField.FieldNumber != 0 && jsonCustomMarcField.FieldNumber != 856)
-            {
+            if (jsonCustomMarcField.FieldNumber != 0)
+            {                
                 sb.AppendFormat("={0:000} {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
                                 jsonCustomMarcField.FieldIndicator2);
                 if (jsonCustomMarcField.MarcSubfields.Count > 0)
