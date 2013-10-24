@@ -17,6 +17,9 @@ namespace MarcRecordServiceSite.Models
         //TODO: Implement this in Rittenhouse.com to minimize how much redundant information we are sending.
         //TODO: This can be used for all custom fields that are written to EVERY record. 
         public List<JsonCustomMarcField> CustomMarcFields { get; set; }
+
+        public bool IsR2Request { get; set; }
+        public bool IsRittenhouseRequest { get; set; }
     }
 
     [Serializable]
