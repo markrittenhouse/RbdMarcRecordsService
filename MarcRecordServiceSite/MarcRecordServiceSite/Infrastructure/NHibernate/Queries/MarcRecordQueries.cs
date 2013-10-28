@@ -1,16 +1,24 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
 using NHibernate;
-using NHibernate.Transform;
 using NHibernate.Linq;
+using NHibernate.Transform;
 
 namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
 {
     public class MarcRecordQueries
     {
+        //private readonly IQueryable<DailyMarcRecordFile> _dailyMarcRecordFiles;
+
+        //public MarcRecordQueries(IQueryable<DailyMarcRecordFile> dailyMarcRecordFiles)
+        //{
+        //    _dailyMarcRecordFiles = dailyMarcRecordFiles;
+        //}
+
         public static IEnumerable<MarcRecord> GetMarcRecords(string isbn13)
         {
             var session = MvcApplication.CreateSession();
@@ -87,9 +95,41 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             if (marcRecordFiles.Any())
             {
                 marcRecordFiles2 = marcRecordFiles.ToList();
-            }           
+            }
 
             return marcRecordFiles2;
+        }
+        
+        public static List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items)
+        {
+            //List<DailyMarcRecordFile> dailyMarcRecordFiles = new List<DailyMarcRecordFile>();
+
+            StringBuilder sbItemsToFind = new StringBuilder();
+            foreach (string item in items)
+            {
+                sbItemsToFind.AppendFormat("'{0}',", item);
+            }
+
+            string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
+
+            string sql = new StringBuilder()
+                .Append("SELECT {dmrf.*} ")
+                .Append("FROM [dbo].[DailyMarcRecordFile] as dmrf ")
+                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or sku in ({0})) ", itemsToFind)
+                .Append("and Len(isbn10) = 10 ")
+                .ToString();
+
+            ISession session = MvcApplication.CreateSession();
+
+            IList dailyMarcRecordFilesList = session.CreateSQLQuery(sql)
+                .AddEntity("dmrf", typeof(DailyMarcRecordFile))
+                .SetTimeout(300000)
+                .List()
+                ;
+
+            var dailyMarcRecordFiles = dailyMarcRecordFilesList.Cast<DailyMarcRecordFile>().ToList<DailyMarcRecordFile>();
+
+            return dailyMarcRecordFiles;
         }
 
         /// <summary>
@@ -112,14 +152,10 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             string sql = new StringBuilder()
                 .Append("SELECT     {mrf.*}, {mr.*}, {mrp.*}, {mrpt.*} ")
                 .Append("FROM         MarcRecordFile mrf ")
-                .Append(
-                    "left outer JOIN MarcRecordProvider mrp ON mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
+                .Append("left outer JOIN MarcRecordProvider mrp ON mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
                 .Append("left outer JOIN MarcRecord mr ON mrp.marcRecordId = mr.marcRecordId ")
-                .Append(
-                    "left outer JOIN MarcRecordProviderType mrpt ON mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
-                .AppendFormat(
-                    "where mrf.marcRecordFileTypeId = 2 and (mr.isbn10 in ({0}) or mr.isbn13 in ({0}) or mr.sku in ({0})) ",
-                    test1234)
+                .Append("left outer JOIN MarcRecordProviderType mrpt ON mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
+                .AppendFormat("where mrf.marcRecordFileTypeId = 2 and (mr.isbn10 in ({0}) or mr.isbn13 in ({0}) or mr.sku in ({0})) ", test1234)
                 .Append("order by mr.isbn13, mrpt.priority asc ")
                 .ToString();
 

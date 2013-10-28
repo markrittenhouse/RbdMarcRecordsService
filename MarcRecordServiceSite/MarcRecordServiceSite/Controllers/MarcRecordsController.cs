@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using MARCEngine5;
@@ -31,7 +29,7 @@ namespace MarcRecordServiceSite.Controllers
                                       "\t=980\t=981\t=982\t=983\t=984\t=985\t=986\t=987\t=988\t=989",
                                       "\t=990\t=991\t=992\t=993\t=994\t=995\t=996\t=997\t=998\t=999");
 
-        private readonly MarcRecordService _marcRecordService;        
+        private readonly MarcRecordService _marcRecordService;
 
         public MarcRecordsController()
         {
@@ -128,14 +126,24 @@ namespace MarcRecordServiceSite.Controllers
         /// <param name="marcRecordRequest"></param>
         /// <returns></returns>
         public ActionResult Download(JsonMarcRecordRequest marcRecordRequest)
-        {          
+        {
+            if (marcRecordRequest != null && !string.IsNullOrWhiteSpace(marcRecordRequest.AccountNumber))
+            {
+                //var timeOut = Server.ScriptTimeout;
+                //// 1 hour = 3600 seconds
+                //// 30 minutes = 1800 seconds
+                //// 15 minutes = 900 seconds
+                Server.ScriptTimeout = 900;
+            }
             try
             {
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
                 List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
 
-                List<MarcRecordFile> files = MarcRecordQueries.GetMnemonicMarcFilesForEditing2(isbnsToFind);
+                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(isbnsToFind);
+
+                Log.DebugFormat(">>>>>>>>>>>>Marc files found: {0}", files.Count);
 
                 if (marcRecordRequest.IsDeleteFile)
                 {
