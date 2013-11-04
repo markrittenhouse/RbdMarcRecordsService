@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Web.Mvc;
@@ -141,25 +142,38 @@ namespace MarcRecordServiceSite.Controllers
                 List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
 
-                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(isbnsToFind);
-
-                Log.DebugFormat(">>>>>>>>>>>>Marc files found: {0}", files.Count);
-
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(isbnsToFind, marcRecordRequest.IsR2Request, marcRecordRequest.IsRittenhouseRequest);
+                stopwatch.Stop();
+                Log.DebugFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
+                
                 if (marcRecordRequest.IsDeleteFile)
                 {
                     files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
                 }
 
-                List<string> marcRecordPaths = _marcRecordService.WriteMarcRecordFiles(marcRecordRequest, files);
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
                 
+                List<string> marcRecordPaths = _marcRecordService.WriteMarcRecordFiles(marcRecordRequest, files);
+
+                stopwatch.Stop();
+                Log.DebugFormat(">>>>>>>>>>>>WriteMarcRecordFiles Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
+
                 if (marcRecordPaths.Count == 0)
                 {
                     Log.Debug("Zero Files found");
                     return View("Error");
                 }
 
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+
                 var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths);
-                
+
+                stopwatch.Stop();
+                Log.DebugFormat(">>>>>>>>>>>>GetMergedMarcRecordsFilePath Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
 
                 //var ftpCredientials = new MarcFtpCredientials
                 //                          {
