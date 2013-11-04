@@ -1,6 +1,7 @@
 ﻿
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
@@ -69,24 +70,6 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             return result;
         }
 
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <param name="items"></param>
-        ///// <returns></returns>
-        //public static IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing(MarcRecordRequestItems items)
-        //{
-        //    var session = MvcApplication.CreateSession();
-
-        //    // Works the way I want it. Returns too many results
-        //    var result = (from x in session.Query<MarcRecordFile>()
-        //                  where items.Items.Contains(x.Provider.MarcRecord.Isbn13) || items.Items.Contains(x.Provider.MarcRecord.Isbn10) || items.Items.Contains(x.Provider.MarcRecord.Sku)
-        //                  where x.MarcRecordFileTypeId == 2
-        //                  orderby x.Provider.MarcRecord.Isbn13, x.Provider.ProviderType.Priority ascending
-        //                  select x);
-        //    return result;
-        //}
-
         public static List<MarcRecordFile> GetMnemonicMarcFilesForEditing2(List<string> items)
         {
             List<MarcRecordFile> marcRecordFiles2 = new List<MarcRecordFile>();
@@ -100,10 +83,8 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             return marcRecordFiles2;
         }
         
-        public static List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items)
+        public static List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items, bool isR2Request, bool isRittenhouseRequest)
         {
-            //List<DailyMarcRecordFile> dailyMarcRecordFiles = new List<DailyMarcRecordFile>();
-
             StringBuilder sbItemsToFind = new StringBuilder();
             foreach (string item in items)
             {
@@ -112,11 +93,24 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
 
             string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
 
-            string sql = new StringBuilder()
+            StringBuilder sb = new StringBuilder()
                 .Append("SELECT {dmrf.*} ")
-                .Append("FROM [dbo].[DailyMarcRecordFile] as dmrf ")
-                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or sku in ({0})) ", itemsToFind)
-                .Append("and Len(isbn10) = 10 ")
+                .Append("FROM [dbo].[DailyMarcRecordFile] as dmrf ");
+
+            if (isR2Request)
+            {
+                sb.AppendFormat("where (isbn13 in ({0})) ", itemsToFind);
+            }
+            else if(isRittenhouseRequest)
+            {
+                sb.AppendFormat("where (sku in ({0})) ", itemsToFind);
+            }
+            else
+            {
+                sb.AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or sku in ({0})) ", itemsToFind);
+            }
+
+            var sql = sb.Append("and Len(isbn10) = 10 ")
                 .ToString();
 
             ISession session = MvcApplication.CreateSession();
@@ -128,7 +122,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
                 ;
 
             var dailyMarcRecordFiles = dailyMarcRecordFilesList.Cast<DailyMarcRecordFile>().ToList<DailyMarcRecordFile>();
-
+            
             return dailyMarcRecordFiles;
         }
 

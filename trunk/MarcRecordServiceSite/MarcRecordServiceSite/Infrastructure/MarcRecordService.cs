@@ -27,7 +27,6 @@ namespace MarcRecordServiceSite.Infrastructure
 
         public MarcRecordService(ILog log)
         {
-            //_request = request;
             _log = log;
         }
 
@@ -36,14 +35,16 @@ namespace MarcRecordServiceSite.Infrastructure
             _log.Debug("Begin MArC Record Files Merge");
             string filePath = GetFilePath(marcRecordRequest.AccountNumber, "MarcRecords");
 
-            FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(aFile);
-            foreach (string marcRecordPath in marcRecordPaths.Where(File.Exists))
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
             {
-                sw.WriteLine(File.ReadAllText(marcRecordPath));
+                using (StreamWriter streamWriter = new StreamWriter(fileStream))
+                {
+                    foreach (string marcRecordPath in marcRecordPaths.Where(File.Exists))
+                    {
+                        streamWriter.WriteLine(File.ReadAllText(marcRecordPath));
+                    }
+                }
             }
-            sw.Close();
-            aFile.Close();
 
             _log.Debug("End MArC Record Files Merge");
 
@@ -106,15 +107,15 @@ namespace MarcRecordServiceSite.Infrastructure
         {
             string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
 
-            FileStream aFile = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(aFile);
 
-            lastIsbn = marcRecordFile.Isbn13;
-            _log.DebugFormat("Id: {0} | FileData: {1}", marcRecordFile.Id, marcRecordFile.MarcFile);
-            sw.Write(marcRecordFile.MarcFile);
-
-            sw.Close();
-            aFile.Close();
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            {
+                using (StreamWriter streamWriter = new StreamWriter(fileStream))
+                {
+                    streamWriter.Write(marcRecordFile.MarcFile);   
+                    lastIsbn = marcRecordFile.Isbn13;
+                }
+            }
 
             MARC21 marc21 = new MARC21();
             marc21.Delete_Field(filePath, FieldsToRemove);
@@ -176,10 +177,7 @@ namespace MarcRecordServiceSite.Infrastructure
         {
             foreach (DailyMarcRecordFile marcRecordFile in files)
             {
-                var sb = new StringBuilder(marcRecordFile.MarcFile);
-                sb.Remove(11, 12);
-                sb.Insert(11, 'd');
-                marcRecordFile.MarcFile = sb.ToString();
+                marcRecordFile.MarcFile = marcRecordFile.MarcFile.Remove(11, 1).Insert(11, "d");
             }
             return files;
         }
@@ -195,7 +193,9 @@ namespace MarcRecordServiceSite.Infrastructure
                 Directory.CreateDirectory(testPath);
             }
 
-            string fileName = string.Format("{0}_{1}_{2}_{3}_{4}.mrk", fileNameStart, DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Millisecond);
+            string fileName = string.Format("{0}_{1}_{2}_{3}_{4}_{5}_{6}_{7}.mrk", fileNameStart, DateTime.Now.Year,
+                                            DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute,
+                                            DateTime.Now.Second, DateTime.Now.Millisecond);
 
             return Path.Combine(testPath, fileName);
         }
@@ -220,7 +220,7 @@ namespace MarcRecordServiceSite.Infrastructure
             marc21.Add_Field(filePath, sb.ToString());
         }
 
-        private string BuildCustomMarcField(JsonCustomMarcField jsonCustomMarcField)
+        private static string BuildCustomMarcField(JsonCustomMarcField jsonCustomMarcField)
         {
             StringBuilder sb = new StringBuilder();
             if (jsonCustomMarcField.FieldNumber != 0)
