@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Tasks;
 using MarcRecordServiceApp.Tasks.MarcRecords;
@@ -58,6 +55,7 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("02 = CreateLcMarcRecords ");
                     Console.WriteLine("03 = CreateRbdMarcRecords");
                     Console.WriteLine("04 = CreateMissingRbdMarcRecords");
+                    Console.WriteLine("05 = CreateDailyMarcRecords");
 					Console.WriteLine("");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
@@ -95,7 +93,10 @@ namespace MarcRecordServiceApp
                     case "04":
                         task = new RittenhouseOnlyMarcRecordsTask();
                         break;
-
+                    case "-CreateDailyMarcRecords":
+                    case "05":
+                        task = new DailyMarcRecordsTask();
+                        break;
                     default:
                         Console.WriteLine("INVALID AURGUMENT");
                         break;

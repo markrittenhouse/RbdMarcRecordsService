@@ -35,7 +35,9 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(" mrp.MarcRecordProviderTypeId, mrp.EncodingLevel, mrp.DateCreated, mrp.DateUpdated  ")
             .ToString();
 
-        public static readonly string FromProductAndMarcRecords = new StringBuilder()
+        public static string FromProductAndMarcRecords(int providerId)
+        {
+            var sb =  new StringBuilder()
             .Append("from   RittenhouseWeb.dbo.Product p ")
             .Append(" join  RittenhouseWeb.dbo.Inventory i on i.productId = p.productId ")
             .Append(" join  RittenhouseWeb.dbo.ProductPrice pp on pp.productId = p.productId ")
@@ -44,13 +46,18 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
             .Append(" left join dbo.MarcRecord mr on mr.sku = p.sku ")
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId ")
-            .Append(" and mrp.MarcRecordProviderTypeId = {0} ")
+            .AppendFormat(" and mrp.MarcRecordProviderTypeId = {0} ", providerId)
             .Append(" where p.isAvailableForSale = 1 ")
-            .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) ")
-            .Append(" and  (p.copyright is not null or p.publicationDate is not null) ")
-            .Append(" and  (mrp.DateUpdated is null or mrp.DateUpdated < getdate() - 7) ")
-            .ToString();
+            .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) ");
+            if (providerId == 3)
+            {
+                sb.AppendFormat(" and  (p.copyright is not null or p.publicationDate is not null) ");
+            }
+            sb.Append(" and  (mrp.DateUpdated is null or mrp.DateUpdated < getdate() - 7) ");
 
+            return sb.ToString();
+        }
+                
 
         public static readonly string FromMissingMarcRecordsRittenhouseOnly = new StringBuilder()
             .Append(" from   RittenhouseWeb.dbo.Product p ")
@@ -66,126 +73,19 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .ToString();
 
 
-
-            
-        ///// <summary>
-        ///// Old Marc Record Count
-        ///// </summary>
-        ///// <param name="batchSize"></param>
-        ///// <returns></returns>
-        //public static Product[] GetProductsWithoutMarcRecords(int batchSize)
-        //{
-        //    SqlConnection cnn = null;
-        //    SqlCommand command = null;
-        //    SqlDataReader reader = null;
-
-        //    List<Product> products = new List<Product>();
-
-        //    Stopwatch stopWatch = new Stopwatch();
-        //    stopWatch.Start();
-
-        //    string sql = new StringBuilder()
-        //    .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
-        //    .Append("from   dbo.Product p ")
-        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-        //    .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
-        //    .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
-        //    .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
-        //    .Append("where  p.productId not in (select pmr.productId from ProductMarcRecord pmr) ")
-        //    .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
-        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-        //    .Append("order by orderByDate ")    // process oldest records first
-        //    .ToString();
-
-        //    try
-        //    {
-        //        cnn = GetRittenhouseConnection();
-
-        //        command = cnn.CreateCommand();
-        //        command.CommandText = sql;
-        //        command.CommandTimeout = 15;
-
-        //        reader = command.ExecuteReader();
-
-        //        while (reader.Read())
-        //        {
-        //            //Product product = PopulateProduct(reader, false);
-        //            //products.Add(product);
-        //            ProductEntity productEntity = new ProductEntity();
-        //            productEntity.Populate(reader);
-        //            products.Add(productEntity.GetProduct());
-        //        }
-        //        return products.ToArray();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Log.InfoFormat("sql: {0}", sql);
-        //        Log.Error(ex.Message, ex);
-        //        throw;
-        //    }
-        //    finally
-        //    {
-        //        DisposeConnections(cnn, command, reader);
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Old Marc Record Count
-        ///// </summary>
-        ///// <returns></returns>
-        //public static int GetProductsWithoutMarcRecordsCount()
-        //{
-        //    SqlConnection cnn = null;
-        //    SqlCommand command = null;
-        //    SqlDataReader reader = null;
-
-        //    Stopwatch stopWatch = new Stopwatch();
-        //    stopWatch.Start();
-
-        //    string sql = new StringBuilder()
-        //    .Append("select count(*) ")
-        //    .Append("from   dbo.Product p ")
-        //    .Append(" join  dbo.Inventory i on i.productId = p.productId ")
-        //    .Append(" join  dbo.ProductPrice pp on pp.productId = p.productId ")
-        //    .Append(" left join  dbo.Category cat on p.categoryId = cat.categoryId ")
-        //    .Append(" left join  dbo.Publisher pub on p.publisherId = pub.publisherId ")
-        //    .Append(" left join  dbo.ProductCoverImage pci on p.productId = pci.productId ")
-        //    .Append("where  p.isbn13 not in (select isbn13 from MarcRecords.dbo.MarcRecord) ")
-        //    .Append("  and  p.isAvailableForSale = 1 ")             // only process titles available for sale
-        //    .Append("  and  p.productStatusId not in (3, 6, 7) ")   // don't process OP, PC or PI
-        //    .Append("  and  (p.copyright is not null or p.publicationDate is not null) ")       // only process if a copyright or publication date is available
-        //    .ToString();
-
-        //    try
-        //    {
-        //        cnn = GetRittenhouseConnection();
-
-        //        command = cnn.CreateCommand();
-        //        command.CommandText = sql;
-        //        command.CommandTimeout = 15;
-
-        //        reader = command.ExecuteReader();
-
-        //        int count = -2;
-        //        if (reader.Read())
-        //        {
-        //            count = GetInt32Value(reader, 0, -1);
-        //        }
-        //        return count;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Log.InfoFormat("sql: {0}", sql);
-        //        Log.Error(ex.Message, ex);
-        //        throw;
-        //    }
-        //    finally
-        //    {
-        //        DisposeConnections(cnn, command, reader);
-        //    }
-        //}
+        private static string InsertDailyMarcRecordFiles(int providerId)
+        {
+            return new StringBuilder()
+                .Append("Insert Into DailyMarcRecordFile ")
+                .Append("select mr.isbn10, mr.isbn13, mr.sku, mrp.marcRecordProviderTypeId, mrf.fileData ")
+                .Append("from MarcRecord mr ")
+                .AppendFormat("join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = {0} ", providerId)
+                .Append("join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
+                .Append("join MarcRecordFile mrf on mrp.marcRecordProviderId = mrf.marcRecordProviderId and marcRecordFileTypeId = 2 ")
+                .Append("left join DailyMarcRecordFile dmrf on mr.isbn10 = dmrf.isbn10 and mr.isbn13 = dmrf.isbn13 and mr.sku = dmrf.sku ")
+                .Append("where dmrf.dailyMarcRecordFileId is null ")
+                .ToString();
+        }
 
         /// <summary>
         /// 
@@ -206,7 +106,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
             string sql = new StringBuilder()
             .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
-            .AppendFormat(FromProductAndMarcRecords, (int)providerType)
+            .Append(FromProductAndMarcRecords((int)providerType))
             .Append(" order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate ")
             .ToString();
 
@@ -320,7 +220,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
             string sql = new StringBuilder()
                 .Append("select count(*) ")
-                .AppendFormat(FromProductAndMarcRecords, (int)providerType)
+                .Append(FromProductAndMarcRecords((int)providerType))
                 .ToString();
             
             try
@@ -657,30 +557,120 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         }
        
 
-		///// <summary>
-		///// 
-		///// </summary>
-		///// <param name="productId"></param>
-		///// <param name="mrkFileText"></param>
-		///// <param name="mrcFileText"></param>
-		///// <returns></returns>
-		//public static int UpdateProductmarcRecord(int productId, string mrkFileText, string mrcFileText)
-		//{
-		//    StringBuilder sql = new StringBuilder()
-		//        .Append("update dbo.ProductMarcRecord set dateCreated = getdate(), mrkFileText = @MrkFileText, mrcFileText = @MrcFileText ")
-		//        .Append("where productId = @ProductId; ");
 
-		//    List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>
-		//                                                {
-		//                                                    new Int32Parameter("ProductId", productId),
-		//                                                    new StringParameter("MrkFileText", mrkFileText),
-		//                                                    new StringParameter("MrcFileText", mrcFileText)
-		//                                                };
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static int TruncateDailyMarcRecords()
+        {
+            int rowCount = ExecuteTrancateTable("DailyMarcRecordFile", Settings.Default.RittenhouseMarcDb);
+            return rowCount;
+        }
 
-		//    int rowCount = ExecuteUpdateStatement(sql.ToString(), parameters.ToArray(), true, Settings.Default.RittenhouseWebDb);
-		//    return rowCount;
-		//}
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static int InsertDailyNlmMarcRecords()
+        {
+            var sql = InsertDailyMarcRecordFiles(2);
 
+            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static int InsertDailyLcMarcRecords()
+        {
+            var sql = InsertDailyMarcRecordFiles(1);
+
+            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static int InsertDailyRittenhouseMarcRecords()
+        {
+            var sql = InsertDailyMarcRecordFiles(3);
+
+            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+        }
+
+        public static void ReIndexDailyMarcRecords()
+        {
+            RebuildIndexTable("DailyMarcRecordFile");
+
+            var sql = string.Format(" EXEC sp_updatestats ");
+
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            try
+            {
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+
+                command = cnn.CreateCommand();
+                command.CommandText = sql;
+                command.CommandTimeout = 360;
+
+                command.ExecuteNonQuery();
+
+                stopWatch.Stop();
+                Log.DebugFormat("update stats time: {0}ms", stopWatch.ElapsedMilliseconds);
+
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command);
+            }
+
+        }
+
+        private static void RebuildIndexTable(string tableName)
+        {
+            var sql = string.Format("DBCC DBREINDEX (\"[MarcRecords]..{0}\", \" \", 80);", tableName);
+
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            try
+            {
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+
+                command = cnn.CreateCommand();
+                command.CommandText = sql;
+                command.CommandTimeout = 120;
+
+                command.ExecuteNonQuery();
+
+                stopWatch.Stop();
+                Log.DebugFormat("reindex time: {0}ms", stopWatch.ElapsedMilliseconds);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command);
+            }
+        }
     }
 }
