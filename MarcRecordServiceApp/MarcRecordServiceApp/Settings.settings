@@ -10,7 +10,7 @@
       <Value Profile="(Default)">server=technoserv04\sql2005;database=MarcRecords;Integrated Security=FALSE;user=rbdWebUser;pwd=pwd123;</Value>
     </Setting>
     <Setting Name="EmailConfigDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">F:\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\MarcRecordServiceApp\EmailConfigs</Value>
+      <Value Profile="(Default)">\\technoserv04\d$\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\MarcRecordServiceApp\EmailConfigs</Value>
     </Setting>
     <Setting Name="DatabaseCommandTimeout" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">60</Value>
@@ -28,7 +28,7 @@
       <Value Profile="(Default)">10000</Value>
     </Setting>
     <Setting Name="MarcFilesWorkingDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">F:\Clients\Rittenhouse\MarcProject\MarcRecordsWorking</Value>
+      <Value Profile="(Default)">\\technoserv04\d$\Clients\Rittenhouse\MarcProject\MarcRecordsWorking</Value>
     </Setting>
     <Setting Name="SiteSubDirectory" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://dev21.rittenhouse.com/rbd/</Value>

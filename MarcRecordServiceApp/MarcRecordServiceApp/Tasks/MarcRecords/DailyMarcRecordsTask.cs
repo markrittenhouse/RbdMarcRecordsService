@@ -59,7 +59,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             int rittenhouseCount = MarcRecordsProductFactory.InsertDailyRittenhouseMarcRecords();
             Log.DebugFormat("files added : {0}", rittenhouseCount);
 
-            Log.DebugFormat("files truncated : {0}  ||  files added : {1}", rittenhouseCount, (nlmCount + lcCount + rittenhouseCount));
+            Log.DebugFormat("files truncated : {0}  ||  files added : {1}", originalCount, (nlmCount + lcCount + rittenhouseCount));
 
             MarcRecordsProductFactory.ReIndexDailyMarcRecords();
             return true;

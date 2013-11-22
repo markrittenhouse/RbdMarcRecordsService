@@ -66,7 +66,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(" left join  RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
             .Append(" left join  RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
             .Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
-            .Append(" left join dbo.MarcRecord mr on mr.sku = p.sku ")
+            .Append(" left join dbo.MarcRecord mr on mr.isbn13 = p.isbn13 ")
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3 ")
             .Append(" where (p.copyright is not null or p.publicationDate is not null) ")
             .Append(" and (mrp.dateCreated is null) ")
