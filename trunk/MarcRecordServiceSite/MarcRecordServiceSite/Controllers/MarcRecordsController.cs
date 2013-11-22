@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using MARCEngine5;
@@ -163,7 +164,14 @@ namespace MarcRecordServiceSite.Controllers
 
                 if (marcRecordPaths.Count == 0)
                 {
-                    Log.Debug("Zero Files found");
+                    var sb = new StringBuilder();
+                    foreach (var isbn in isbnsToFind)
+                    {
+                        sb.AppendFormat("{0}||", isbn);
+                    }
+
+                    Log.ErrorFormat("The following ISBNs could not be found : {0}", sb);
+
                     return View("Error");
                 }
 
