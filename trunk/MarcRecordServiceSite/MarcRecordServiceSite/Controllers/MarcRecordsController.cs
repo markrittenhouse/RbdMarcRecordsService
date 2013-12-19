@@ -33,6 +33,8 @@ namespace MarcRecordServiceSite.Controllers
 
         private readonly MarcRecordService _marcRecordService;
 
+        private List<string> IsbnsToFind { get; set; }
+
         public MarcRecordsController()
         {
             _marcRecordService = new MarcRecordService(Log);
@@ -119,7 +121,7 @@ namespace MarcRecordServiceSite.Controllers
                 }
                 
             }
-            return View("Error");
+            return View("Error", new IsbnsNotFound { Isbns = IsbnsToFind });
         }
 
         /// <summary>
@@ -140,12 +142,12 @@ namespace MarcRecordServiceSite.Controllers
             try
             {
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
-                List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
-                Log.DebugFormat("Number of ISBN/Sku to find: {0}", isbnsToFind.Count);
+                IsbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
+                Log.DebugFormat("Number of ISBN/Sku to find: {0}", IsbnsToFind.Count);
 
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
-                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(isbnsToFind, marcRecordRequest.IsR2Request, marcRecordRequest.IsRittenhouseRequest);
+                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(IsbnsToFind, marcRecordRequest.IsR2Request, marcRecordRequest.IsRittenhouseRequest);
                 stopwatch.Stop();
                 Log.DebugFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
                 
@@ -164,15 +166,11 @@ namespace MarcRecordServiceSite.Controllers
 
                 if (marcRecordPaths.Count == 0)
                 {
-                    var sb = new StringBuilder();
-                    foreach (var isbn in isbnsToFind)
-                    {
-                        sb.AppendFormat("{0}||", isbn);
-                    }
+                    var isbnsNotFound = new IsbnsNotFound {Isbns = IsbnsToFind};
 
-                    Log.ErrorFormat("The following ISBNs could not be found : {0}", sb);
+                    Log.ErrorFormat("The following ISBNs could not be found : {0}", isbnsNotFound.ToString());
 
-                    return View("Error");
+                    return View("Error", isbnsNotFound);
                 }
 
                 stopwatch = new Stopwatch();

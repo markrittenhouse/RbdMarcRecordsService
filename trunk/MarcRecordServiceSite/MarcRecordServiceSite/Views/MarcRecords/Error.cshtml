@@ -1,9 +1,24 @@
-﻿@{
+﻿@model MarcRecordServiceSite.Models.IsbnsNotFound
+@{
     ViewBag.Title = "Error";
 }
 
 <p style="text-align: center;">
-There was an error processing your request.<br/><br/>
-    Please close this window and try again. <br/><br/>
+    
+    @if (Model != null && Model.Isbns != null && Model.Isbns.Any())
+    {
+        <label>Sorry for the inconvenience, but we could not find Marc Records for the following:</label><br/>
+        foreach (var isbn in Model.Isbns)
+        {
+            Html.DisplayFor(x => isbn);<br/>
+        }
+        <br/>
+    }
+    else
+    {
+        <label>There was an error processing your request.</label><br/><br/>
+    }
+    <br/>
+    Please close this window and try again later. <br/><br/>
     <button onclick="window.close()">Close</button>
 </p>
