@@ -146,6 +146,7 @@
     <Compile Include="Infrastructure\NHibernate\Mappings\MarcRecordProviderTypeMap.cs" />
     <Compile Include="Infrastructure\NHibernate\Queries\MarcRecordQueries.cs" />
     <Compile Include="Models\FtpService.cs" />
+    <Compile Include="Models\IsbnsNotFound.cs" />
     <Compile Include="Models\JsonMarcRecordRequest.cs" />
     <Compile Include="Models\MarcRecordRequestItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
