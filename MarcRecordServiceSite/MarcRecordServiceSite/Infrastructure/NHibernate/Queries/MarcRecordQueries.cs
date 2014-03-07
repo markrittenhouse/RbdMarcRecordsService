@@ -8,11 +8,19 @@ using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
 using NHibernate;
 using NHibernate.Linq;
 using NHibernate.Transform;
+using log4net;
 
 namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
 {
     public class MarcRecordQueries
     {
+
+        private readonly ILog _log;
+
+        public MarcRecordQueries(ILog log)
+        {
+            _log = log;
+        }
         //private readonly IQueryable<DailyMarcRecordFile> _dailyMarcRecordFiles;
 
         //public MarcRecordQueries(IQueryable<DailyMarcRecordFile> dailyMarcRecordFiles)
@@ -83,7 +91,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             return marcRecordFiles2;
         }
         
-        public static List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items, bool isR2Request, bool isRittenhouseRequest)
+        public List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items, bool isR2Request, bool isRittenhouseRequest)
         {
             StringBuilder sbItemsToFind = new StringBuilder();
             foreach (string item in items)
@@ -113,6 +121,8 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             var sql = sb.Append("and Len(isbn10) = 10 ")
                 .ToString();
 
+            _log.DebugFormat("GetDailyMarcRecordFiles Sql Query : {0}", sql);
+
             ISession session = MvcApplication.CreateSession();
 
             IList dailyMarcRecordFilesList = session.CreateSQLQuery(sql)
@@ -131,7 +141,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
-        public static IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing(List<string> items)
+        public IEnumerable<MarcRecordFile> GetMnemonicMarcFilesForEditing(List<string> items)
         {
             ISession session = MvcApplication.CreateSession();
 
@@ -152,6 +162,8 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
                 .AppendFormat("where mrf.marcRecordFileTypeId = 2 and (mr.isbn10 in ({0}) or mr.isbn13 in ({0}) or mr.sku in ({0})) ", test1234)
                 .Append("order by mr.isbn13, mrpt.priority asc ")
                 .ToString();
+
+            _log.DebugFormat("GetMnemonicMarcFilesForEditing Sql Query : {0}", sql);
 
             IList asdasd = session.CreateSQLQuery(sql)
                 .AddEntity("mrf", typeof (MarcRecordFile))

@@ -22,10 +22,12 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
         private int _recordCountBeingProcessed;
 
+        private readonly bool _onlyMissingFiles;
 
-        public RittenhouseOnlyMarcRecordsTask()
+        public RittenhouseOnlyMarcRecordsTask(bool onlyMissingFiles)
             : base("Generate Missing Rittenhouse Only MArC Records", "CreateMarcRecords")
         {
+            _onlyMissingFiles = onlyMissingFiles;
             BatchSize = Settings.Default.RbdMarcRecordMaxProducts;
         }
 
@@ -73,7 +75,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 Log.InfoFormat("MarcRecordBatchSize: {0}", Settings.Default.MarcRecordBatchSize);
 
                 //Set Marc Records to get
-                _recordCountBeingProcessed = MarcRecordsProductFactory.GetProductsWithoutMarcRecordsCount();
+                _recordCountBeingProcessed = _onlyMissingFiles
+                                                 ? MarcRecordsProductFactory.GetProductsWithoutMarcRecordsCount()
+                                                 : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProductsCount();
+
                 Log.InfoFormat("productsWithoutMarcRecordsCount: {0}", _recordCountBeingProcessed);
 
 
@@ -120,7 +125,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 try
                 {
                     // get next batch to process
-                    List<IMarcFile> marcFiles = MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize);
+                    List<IMarcFile> marcFiles = _onlyMissingFiles ? MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize) : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProducts(batchSize);
 
                     Log.InfoFormat("batch contains {0} products", marcFiles.Count);
                     if (marcFiles.Count == 0)
@@ -324,6 +329,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 Log.DebugFormat("PublicationYearText: {0}, PublicationYear: {1}, sku: {2}", product.PublicationYearText,
                                 product.PublicationYear, product.Sku);
 
+
+                string line001 = string.Format("=001  {0}", product.Sku);
+                string line005 = string.Format("=005  {0:yyyyMMddhhmmss}.0", DateTime.Now);
+
                 string line008 =
                     string.Format("=008  {0:yyMMdd}s{1:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",
                                   _currentDateTime, product.PublicationYear);
@@ -331,6 +340,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 Log.DebugFormat("line008: {0}", line008);
                 Log.DebugFormat("line008.Length: {0}", line008.Length);
 
+                mrkFileText.AppendLine(line001);
+                mrkFileText.AppendLine(line005);
                 mrkFileText.AppendLine(line008);
 
                 //The MRC file requires an additional \\. For some reason it loses when when converted

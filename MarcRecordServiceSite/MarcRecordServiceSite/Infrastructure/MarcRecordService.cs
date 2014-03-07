@@ -123,6 +123,10 @@ namespace MarcRecordServiceSite.Infrastructure
             if (marcRecordRequest.IsR2Request || marcRecordRequest.IsRittenhouseRequest)
             {
                 PopulateUrlInMarcRecord(filePath, marcRecordRequest.IsR2Request, marcRecordFile);
+                if (marcRecordRequest.IsR2Request)
+                {
+                    PopulateStaticR2OnlyFields(filePath);
+                }
             }            
 
             if (commonJsonFields != null && commonJsonFields.CustomMarcFields != null && commonJsonFields.CustomMarcFields.Count > 0)
@@ -218,6 +222,19 @@ namespace MarcRecordServiceSite.Infrastructure
                                 : marcRecordFile.Sku ?? marcRecordFile.Isbn10);
 
             marc21.Add_Field(filePath, sb.ToString());
+        }
+
+        private void PopulateStaticR2OnlyFields(string filePath)
+        {
+            MARC21 marc21 = new MARC21();
+            
+            marc21.Delete_Field(filePath, "=300");
+            marc21.Delete_Field(filePath, "=538");
+            marc21.Delete_Field(filePath, "=655");
+
+            marc21.Add_Field(filePath, "=300  \\\\$a online resource");
+            marc21.Add_Field(filePath, "=538  \\\\$a Mode of Access: World Wide Web");
+            marc21.Add_Field(filePath, "=655  \\4$a Electronic books".Replace(@"\\",@"\"));
         }
 
         private static string BuildCustomMarcField(JsonCustomMarcField jsonCustomMarcField)

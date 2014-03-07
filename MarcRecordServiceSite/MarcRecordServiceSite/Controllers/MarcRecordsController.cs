@@ -145,12 +145,28 @@ namespace MarcRecordServiceSite.Controllers
                 IsbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", IsbnsToFind.Count);
 
+                MarcRecordQueries marcRecordQueries = new MarcRecordQueries(Log);
+
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
-                List<DailyMarcRecordFile> files = MarcRecordQueries.GetDailyMarcRecordFiles(IsbnsToFind, marcRecordRequest.IsR2Request, marcRecordRequest.IsRittenhouseRequest);
+                List<DailyMarcRecordFile> files = marcRecordQueries.GetDailyMarcRecordFiles(IsbnsToFind, marcRecordRequest.IsR2Request, marcRecordRequest.IsRittenhouseRequest);
                 stopwatch.Stop();
                 Log.DebugFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
-                
+
+                if (files.Count == 0)
+                {
+                    var isbnsNotFound = new IsbnsNotFound();
+
+                    if (IsbnsToFind != null && IsbnsToFind.Count > 0)
+                    {
+                        isbnsNotFound.Isbns = IsbnsToFind;
+                    }                    
+
+                    Log.ErrorFormat("The following ISBNs could not be found in the database : {0}", isbnsNotFound.ToString());
+
+                    return View("Error", isbnsNotFound);
+                }
+
                 if (marcRecordRequest.IsDeleteFile)
                 {
                     files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
