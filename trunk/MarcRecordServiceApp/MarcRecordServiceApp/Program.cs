@@ -45,6 +45,7 @@ namespace MarcRecordServiceApp
             Console.WriteLine("");
             Console.WriteLine("Rittenhouse - MARC Record Service");
 
+
 			try
             {
                 string arg;
@@ -56,6 +57,8 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("03 = CreateRbdMarcRecords");
                     Console.WriteLine("04 = CreateMissingRbdMarcRecords");
                     Console.WriteLine("05 = CreateDailyMarcRecords");
+                    Console.WriteLine("06 = RecreateAllRbdMarcRecords");
+                    
 					Console.WriteLine("");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
@@ -91,11 +94,16 @@ namespace MarcRecordServiceApp
 
                     case "-CreateMissingRbdMarcRecords":
                     case "04":
-                        task = new RittenhouseOnlyMarcRecordsTask();
+                        task = new RittenhouseOnlyMarcRecordsTask(true);
                         break;
                     case "-CreateDailyMarcRecords":
                     case "05":
                         task = new DailyMarcRecordsTask();
+                        break;
+
+                    case "-RecreateAllRbdMarcRecords":
+                    case "06":
+                        task = new RittenhouseOnlyMarcRecordsTask(false);
                         break;
                     default:
                         Console.WriteLine("INVALID AURGUMENT");

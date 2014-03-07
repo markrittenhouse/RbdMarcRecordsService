@@ -12,6 +12,10 @@ namespace MarcRecordServiceSite.Models
 
         public new string ToString()
         {
+            if (Isbns == null || !Isbns.Any())
+            {
+                return "Isbns is not populated.";
+            }
             var sb = new StringBuilder();
             foreach (var isbn in Isbns)
             {
