@@ -10,12 +10,12 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
         public int Id { get; set; }
         public string Sku { get; set; }
         public string Isbn10 { get; set; }
-        public string Isbn10Formatted { get; set; }
+        //public string Isbn10Formatted { get; set; }
         public string Isbn13 { get; set; }
         public string Title { get; set; }
-        public string SubTitle { get; set; }
+        //public string SubTitle { get; set; }
         public string Authors { get; set; }
-        public string FirstAuthorLastName { get; set; }
+       // public string FirstAuthorLastName { get; set; }
 
 		public Category Category { get; set; }
 		public Publisher Publisher { get; set; }
@@ -120,16 +120,16 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
         }
 
 
-        /// <summary>
-        /// 
-        /// </summary>
-        public string TitleSubTitleSpacer
-        {
-            get
-            {
-                return string.IsNullOrEmpty(SubTitle) ? "" : ":";
-            }
-        }
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        //public string TitleSubTitleSpacer
+        //{
+        //    get
+        //    {
+        //        return string.IsNullOrEmpty(SubTitle) ? "" : ":";
+        //    }
+        //}
 
 		/// <summary>
 		/// 
@@ -146,20 +146,20 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
 			}
 		}
 
-		/// <summary>
-		/// 
-		/// </summary>
-		public string ProductStatus
-		{
-			get
-			{
-				if ((null != Status) && (!string.IsNullOrEmpty(Status.Description)))
-				{
-					return Status.Description;
-				}
-				return "";
-			}
-		}
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        //public string ProductStatus
+        //{
+        //    get
+        //    {
+        //        if ((null != Status) && (!string.IsNullOrEmpty(Status.Description)))
+        //        {
+        //            return Status.Description;
+        //        }
+        //        return "";
+        //    }
+        //}
 
 		/// <summary>
 		/// 
