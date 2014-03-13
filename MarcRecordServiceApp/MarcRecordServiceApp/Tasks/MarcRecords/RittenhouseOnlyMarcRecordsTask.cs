@@ -383,7 +383,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     Log.InfoFormat("PublicationYearText: {0}", product.PublicationYearText);
                     Log.InfoFormat("PublicationDate: {0}", product.PublicationDate);
                     Log.InfoFormat("Copyright: {0}", product.Copyright);
-                    Log.InfoFormat("PublicationDate: {0}", product.PublicationDate);
                     Log.InfoFormat("Format: {0}", product.Format);
                     Log.InfoFormat("CategoryName: {0}", product.CategoryName);
                 }
