@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
@@ -52,7 +53,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId ")
             .AppendFormat(" and mrp.MarcRecordProviderTypeId = {0} ", providerId)
             .Append(" where p.isAvailableForSale = 1 ")
-            .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) ");
+            .Append(" and  p.productStatusId in (1, 2, 4, 5, 8) and p.sku not like '%R2P%' ");
             if (providerId == 3)
             {
                 sb.AppendFormat(" and  (p.copyright is not null or p.publicationDate is not null) ");
@@ -71,7 +72,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             //.Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
             .Append(" left join dbo.MarcRecord mr on mr.isbn13 = p.isbn13 ")
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3 ")
-            .Append(" where (p.copyright is not null or p.publicationDate is not null) ")
+            .Append(" where (p.copyright is not null or p.publicationDate is not null)  and p.sku not like '%R2P%'")
             .ToString();
 
 
@@ -95,7 +96,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append("join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
                 .Append("join MarcRecordFile mrf on mrp.marcRecordProviderId = mrf.marcRecordProviderId and marcRecordFileTypeId = 2 ")
                 .Append("left join DailyMarcRecordFile dmrf on mr.isbn10 = dmrf.isbn10 and mr.isbn13 = dmrf.isbn13 and mr.sku = dmrf.sku ")
-                .Append("where dmrf.dailyMarcRecordFileId is null ")
+                .Append("where dmrf.dailyMarcRecordFileId is null and mr.sku not like '%R2P%'")
                 .ToString();
         }
 
@@ -394,7 +395,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                     productEntity.Populate(reader);
 
                     marcFiles.Add(new RittenhouseMarcFile(productEntity.GetProduct()));
-                }
+                }                
                 return marcFiles;
             }
             catch (Exception ex)
@@ -480,6 +481,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 {
                     return UpdateMarcRecordFile(marcFile, marcRecordProvider);
                 }
+                Log.DebugFormat("UpdateMarcRecordFile -- marcFile.MrcFileText is null || For MarcRecordId :{0}", marcRecordId);
             }
             else
             {
@@ -488,6 +490,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 {
                     return InsertMarcRecordFile(marcFile, marcRecordProvider);
                 }
+                Log.DebugFormat("InsertMarcRecordFile -- marcFile.MrcFileText is null || For MarcRecordId :{0}", marcRecordId);
             }
             return 0;
         }

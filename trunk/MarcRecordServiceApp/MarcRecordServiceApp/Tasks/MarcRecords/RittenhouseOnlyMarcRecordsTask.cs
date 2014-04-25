@@ -12,8 +12,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
     public class RittenhouseOnlyMarcRecordsTask : TaskBase2
     {
-        private readonly Random _random = new Random();
-        private readonly DateTime _currentDateTime = DateTime.Now;
+        
         private readonly StringBuilder _results = new StringBuilder();
 
         private int BatchSize { get; set; }
@@ -125,7 +124,9 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 try
                 {
                     // get next batch to process
-                    List<IMarcFile> marcFiles = _onlyMissingFiles ? MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize) : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProducts(batchSize);
+                    List<IMarcFile> marcFiles = _onlyMissingFiles
+                                                    ? MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize)
+                                                    : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProducts(batchSize);
 
                     Log.InfoFormat("batch contains {0} products", marcFiles.Count);
                     if (marcFiles.Count == 0)
@@ -273,7 +274,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         private void ClearWorkingDirectory(string workingDirectory)
         {
             string[] filesToDelete = Directory.GetFiles(workingDirectory);
-            foreach (string file in filesToDelete.Where(file => file.EndsWith(".mrk") || file.EndsWith(".mrc") || file.EndsWith(".xml")))
+            foreach (var file in filesToDelete)
             {
                 try
                 {
@@ -284,6 +285,18 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     Log.InfoFormat("Error Deleteing file: {0} || Exception: {1}", file, ex.Message);
                 }
             }
+
+            //foreach (string file in filesToDelete.Where(file => file.EndsWith(".mrk") || file.EndsWith(".mrc") || file.EndsWith(".xml")))
+            //{
+            //    try
+            //    {
+            //        File.Delete(file);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Log.InfoFormat("Error Deleteing file: {0} || Exception: {1}", file, ex.Message);
+            //    }
+            //}
         }
 
         /// <summary>
@@ -304,97 +317,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             return parsedText;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="product"></param>
-        /// <returns></returns>
-        private string GetRbdMrkFileText(Product product)
-        {
-            try
-            {
-                string publicationYearText = product.PublicationYearText;
-
-                if (publicationYearText == "")
-                {
-                    Log.DebugFormat("Id: {0}, Sku: {1}, Isbn13: {2}", product.Id, product.Sku, product.Isbn13);
-                }
-
-                StringBuilder mrkFileText = new StringBuilder();
-                string sitepath = Settings.Default.SiteSubDirectory;
-
-                mrkFileText.AppendFormat("=LDR  {0}nam  22{1}2a 4500", GetNext5DigitRandomNumber(),
-                                         GetNext5DigitRandomNumber()).AppendLine();
-
-                Log.DebugFormat("PublicationYearText: {0}, PublicationYear: {1}, sku: {2}", product.PublicationYearText,
-                                product.PublicationYear, product.Sku);
-
-
-                string line001 = string.Format("=001  {0}", product.Sku);
-                string line005 = string.Format("=005  {0:yyyyMMddhhmmss}.0", DateTime.Now);
-
-                string line008 =
-                    string.Format("=008  {0:yyMMdd}s{1:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",
-                                  _currentDateTime, product.PublicationYear);
-
-                Log.DebugFormat("line008: {0}", line008);
-                Log.DebugFormat("line008.Length: {0}", line008.Length);
-
-                mrkFileText.AppendLine(line001);
-                mrkFileText.AppendLine(line005);
-                mrkFileText.AppendLine(line008);
-
-                //The MRC file requires an additional \\. For some reason it loses when when converted
-                //string extraSlashes = (mrkOnly) ? "" : "\\";
-                const string extraSlashes = "";
-                mrkFileText.AppendFormat("=020  \\\\{1}$a{0}", product.Isbn10, extraSlashes).AppendLine()
-                    .AppendFormat("=020  \\\\{1}$a{0}", product.Isbn13, extraSlashes).AppendLine();
-
-                mrkFileText.AppendLine("=037  \\\\$bRittenhouse Book Distributors, Inc")
-                    .AppendFormat("=100  1\\$a{0}", StripOffCarriageReturnAndLineFeed(product.Authors)).AppendLine()
-                    .AppendFormat("=245  10$a{0}", StripOffCarriageReturnAndLineFeed(product.Title)).AppendLine();
-
-                mrkFileText.AppendFormat("=260  \\\\$b{0},$c{1}", product.PublisherName, publicationYearText).AppendLine
-                    ();
-                mrkFileText.AppendFormat(
-                    "=533  \\\\$a{0}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{1}", product.Format,
-                    publicationYearText)
-                    .AppendLine();
-
-                mrkFileText.AppendFormat("=650  \\0$a{0}.", product.CategoryName).AppendLine()
-                    .AppendFormat("=700  1\\$a{0}", StripOffCarriageReturnAndLineFeed(product.Authors)).AppendLine()
-                    .AppendFormat("=856  4\\$zConnect to this resource online$u{0}Products/Book.aspx?sku={1}", sitepath,
-                                  product.Isbn10).AppendLine()
-                    .AppendLine();
-
-                return mrkFileText.ToString();
-            }
-            catch (Exception ex)
-            {
-                if (product != null)
-                {
-                    Log.Info(product.ToString());
-                    Log.InfoFormat("Id: {0}", product.Id);
-                    Log.InfoFormat("Sku: {0}", product.Sku);
-                    Log.InfoFormat("Isbn10: {0}", product.Isbn10);
-                    Log.InfoFormat("Isbn13: {0}", product.Isbn13);
-                    Log.InfoFormat("Title: {0}", product.Title);
-                    Log.InfoFormat("Authors: {0}", product.Authors);
-                    Log.InfoFormat("PublicationYearText: {0}", product.PublicationYearText);
-                    Log.InfoFormat("PublicationDate: {0}", product.PublicationDate);
-                    Log.InfoFormat("Copyright: {0}", product.Copyright);
-                    Log.InfoFormat("Format: {0}", product.Format);
-                    Log.InfoFormat("CategoryName: {0}", product.CategoryName);
-                }
-                else
-                {
-                    Log.Info("Product is null!");
-                }
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-
-        }
 
         /// <summary>
         /// 
@@ -463,24 +385,13 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        private static string StripOffCarriageReturnAndLineFeed(string value)
-        {
-            if (string.IsNullOrEmpty(value))
-            {
-                return value;
-            }
-            return value.Replace("\r", string.Empty).Replace("\n", string.Empty);
-        }
+
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        private int GetNext5DigitRandomNumber()
-        {
-            int next = _random.Next(10000, 99999);
-            return next;
-        }
+
         /// <summary>
         /// 
         /// </summary>
