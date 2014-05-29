@@ -213,15 +213,15 @@ namespace MarcRecordServiceSite.Infrastructure
 
             MARC21 marc21 = new MARC21();
             marc21.Delete_Field(filePath, "=856");
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("=856  4\\$zConnect to this resource online$u");
 
-            sb.AppendFormat("{0}{1}", bookUrl,
-                            isR2Library
-                                ? marcRecordFile.Isbn13 ?? marcRecordFile.Isbn10
-                                : marcRecordFile.Sku ?? marcRecordFile.Isbn10);
-
-            marc21.Add_Field(filePath, sb.ToString());
+            if (isR2Library)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendFormat("=856  4\\$zConnect to this resource online$u");
+                sb.AppendFormat("{0}{1}", bookUrl, marcRecordFile.Isbn13 ?? marcRecordFile.Isbn10);
+                marc21.Add_Field(filePath, sb.ToString());
+            }
+            
         }
 
         private void PopulateStaticR2OnlyFields(string filePath)

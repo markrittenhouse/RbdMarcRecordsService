@@ -142,7 +142,22 @@ namespace MarcRecordServiceSite.Controllers
             try
             {
                 Log.DebugFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
-                IsbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(jsonIsbnAndCustomerFields => jsonIsbnAndCustomerFields.IsbnOrSku).ToList();
+                IEnumerable<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields != null
+                                      ? marcRecordRequest.IsbnAndCustomerFields.Select(x => x.IsbnOrSku)
+                                      : new List<string>();
+                if (isbnsToFind.Any())
+                {
+                    IsbnsToFind = isbnsToFind.ToList();
+                }
+                else
+                {
+                    var isbnsNotFound = new IsbnsNotFound { Isbns = null };
+
+                    Log.ErrorFormat("The following ISBNs could not be found : {0}", isbnsNotFound.ToString());
+
+                    return View("Error", isbnsNotFound);
+                }
+                //IsbnsToFind = marcRecordRequest.IsbnAndCustomerFields.Select(x => x.IsbnOrSku).ToList();
                 Log.DebugFormat("Number of ISBN/Sku to find: {0}", IsbnsToFind.Count);
 
                 MarcRecordQueries marcRecordQueries = new MarcRecordQueries(Log);
