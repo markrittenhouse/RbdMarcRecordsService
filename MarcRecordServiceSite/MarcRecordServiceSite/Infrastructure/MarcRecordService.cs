@@ -85,17 +85,21 @@ namespace MarcRecordServiceSite.Infrastructure
                     {
                         continue;
                     }
-
-                    marcRecordPaths.Add(WriteIndividualMarcFile(file, jsonIsbnAndCustomerField,
-                                                                marcRecordRequest.AccountNumber, out lastIsbn,
-                                                                marcRecordRequest,
-                                                                new JsonIsbnAndCustomerField
-                                                                    {
-                                                                        CustomMarcFields =
-                                                                            marcRecordRequest.CustomMarcFields,
-                                                                        IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
-                                                                    }
-                                            ));
+                    var marcRecord = WriteIndividualMarcFile(file, jsonIsbnAndCustomerField,
+                                                             marcRecordRequest.AccountNumber, out lastIsbn,
+                                                             marcRecordRequest,
+                                                             new JsonIsbnAndCustomerField
+                                                                 {
+                                                                     CustomMarcFields =
+                                                                         marcRecordRequest.CustomMarcFields,
+                                                                     IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
+                                                                 }
+                        );
+                    if (!string.IsNullOrWhiteSpace(marcRecord))
+                    {
+                        marcRecordPaths.Add(marcRecord);
+                    }
+                    
                     break;
                 }
 
@@ -105,74 +109,88 @@ namespace MarcRecordServiceSite.Infrastructure
 
         public string WriteIndividualMarcFile(DailyMarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonMarcRecordRequest marcRecordRequest, JsonIsbnAndCustomerField commonJsonFields = null)
         {
-            string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
-
-
-            using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-            {
-                using (StreamWriter streamWriter = new StreamWriter(fileStream))
-                {
-                    streamWriter.Write(marcRecordFile.MarcFile);   
-                    lastIsbn = marcRecordFile.Isbn13;
-                }
-            }
-
-            MARC21 marc21 = new MARC21();
-            marc21.Delete_Field(filePath, FieldsToRemove);
             
-            if (marcRecordRequest.IsR2Request || marcRecordRequest.IsRittenhouseRequest)
+            string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
+            lastIsbn = marcRecordFile.Isbn13;
+            try
             {
-                PopulateUrlInMarcRecord(filePath, marcRecordRequest.IsR2Request, marcRecordFile);
-                if (marcRecordRequest.IsR2Request)
-                {
-                    PopulateStaticR2OnlyFields(filePath);
-                }
-            }            
 
-            if (commonJsonFields != null && commonJsonFields.CustomMarcFields != null && commonJsonFields.CustomMarcFields.Count > 0)
-            {
-                foreach (JsonCustomMarcField jsonCustomMarcField in commonJsonFields.CustomMarcFields)
-                {
-                    var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
 
-                    if (!string.IsNullOrWhiteSpace(marcFieldString))
+                _log.Info("Writing File");
+                using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                {
+                    using (StreamWriter streamWriter = new StreamWriter(fileStream))
                     {
-                        marc21.Add_Field(filePath, marcFieldString);
+                        streamWriter.Write(marcRecordFile.MarcFile);
                     }
                 }
-            }
-            else
-            {
-                _log.DebugFormat("No MarcFields to add");
-            }
 
+                _log.Info("Deleting Extra Fields from file");
+                MARC21 marc21 = new MARC21();
+                marc21.Delete_Field(filePath, FieldsToRemove);
 
-            if (jsonIsbnAndCustomerField.CustomMarcFields != null && jsonIsbnAndCustomerField.CustomMarcFields.Count > 0)
-            {
-                foreach (JsonCustomMarcField jsonCustomMarcField in jsonIsbnAndCustomerField.CustomMarcFields)
+                if (marcRecordRequest.IsR2Request || marcRecordRequest.IsRittenhouseRequest)
                 {
-                    //TODO: Can remove once Marc Records has been updated on Rittenhouse and R2library
-                    if (jsonCustomMarcField.FieldNumber == 856)
+                    PopulateUrlInMarcRecord(filePath, marcRecordRequest.IsR2Request, marcRecordFile);
+                    if (marcRecordRequest.IsR2Request)
                     {
-                        _log.DebugFormat("Deleting Field 856 because a new one was passed in.");
-                        marc21.Delete_Field(filePath, "=856");
-                    }
-                    var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
-
-                    if (!string.IsNullOrWhiteSpace(marcFieldString))
-                    {
-                        _log.DebugFormat("-------Custom Marc Field: {0}", marcFieldString);
-                        marc21.Add_Field(filePath, marcFieldString);
-                    }
-                    else
-                    {
-                        _log.Debug("-------Custom Marc Field: WAS NULL!!!");
+                        PopulateStaticR2OnlyFields(filePath);
                     }
                 }
+                _log.Info("Adding common fields to file");
+                if (commonJsonFields != null && commonJsonFields.CustomMarcFields != null &&
+                    commonJsonFields.CustomMarcFields.Count > 0)
+                {
+                    foreach (JsonCustomMarcField jsonCustomMarcField in commonJsonFields.CustomMarcFields)
+                    {
+                        var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
+
+                        if (!string.IsNullOrWhiteSpace(marcFieldString))
+                        {
+                            marc21.Add_Field(filePath, marcFieldString);
+                        }
+                    }
+                }
+                else
+                {
+                    _log.InfoFormat("No MarcFields to add");
+                }
+
+                _log.Info("Adding custom fields to file");
+                if (jsonIsbnAndCustomerField.CustomMarcFields != null &&
+                    jsonIsbnAndCustomerField.CustomMarcFields.Count > 0)
+                {
+                    foreach (JsonCustomMarcField jsonCustomMarcField in jsonIsbnAndCustomerField.CustomMarcFields)
+                    {
+                        //TODO: Can remove once Marc Records has been updated on Rittenhouse and R2library
+                        if (jsonCustomMarcField.FieldNumber == 856)
+                        {
+                            _log.InfoFormat("Deleting Field 856 because a new one was passed in.");
+                            marc21.Delete_Field(filePath, "=856");
+                        }
+                        var marcFieldString = BuildCustomMarcField(jsonCustomMarcField);
+
+                        if (!string.IsNullOrWhiteSpace(marcFieldString))
+                        {
+                            _log.InfoFormat("-------Custom Marc Field: {0}", marcFieldString);
+                            marc21.Add_Field(filePath, marcFieldString);
+                        }
+                        else
+                        {
+                            _log.Info("-------Custom Marc Field: WAS NULL!!!");
+                        }
+                    }
+                }
+                else
+                {
+                    _log.InfoFormat("No customer specific MarcFields to add");
+                }
+                _log.Info("File is Complete");
             }
-            else
+
+            catch (Exception ex)
             {
-                _log.DebugFormat("No customer specific MarcFields to add");
+                _log.Error(ex.Message, ex);
             }
             return filePath;
         }
