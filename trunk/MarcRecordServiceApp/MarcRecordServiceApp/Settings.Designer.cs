@@ -25,8 +25,8 @@ namespace MarcRecordServiceApp {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\\\technoserv04\\d$\\Clients\\Rittenhouse\\MarcProject\\MarcRecordServiceApp\\MarcRecord" +
-            "ServiceApp\\EmailConfigs")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Clients\\Rittenhouse\\MarcProject\\MarcRecordServiceApp\\MarcRecordServiceApp\\Emai" +
+            "lConfigs")]
         public string EmailConfigDirectory {
             get {
                 return ((string)(this["EmailConfigDirectory"]));
@@ -39,15 +39,6 @@ namespace MarcRecordServiceApp {
         public int DatabaseCommandTimeout {
             get {
                 return ((int)(this["DatabaseCommandTimeout"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("250")]
-        public int MarcRecordBatchSize {
-            get {
-                return ((int)(this["MarcRecordBatchSize"]));
             }
         }
         
@@ -80,7 +71,7 @@ namespace MarcRecordServiceApp {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\\\technoserv04\\d$\\Clients\\Rittenhouse\\MarcProject\\MarcRecordsWorking")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Clients\\Rittenhouse\\MarcProject\\MarcRecordServiceApp\\Working")]
         public string MarcFilesWorkingDirectory {
             get {
                 return ((string)(this["MarcFilesWorkingDirectory"]));
@@ -122,6 +113,15 @@ namespace MarcRecordServiceApp {
         public string RittenhouseMarcDb {
             get {
                 return ((string)(this["RittenhouseMarcDb"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public int MarcRecordBatchSize {
+            get {
+                return ((int)(this["MarcRecordBatchSize"]));
             }
         }
     }

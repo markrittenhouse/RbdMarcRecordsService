@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Entities.Base;
 
-namespace MarcRecordServiceApp.Tasks.MarcRecords
+namespace MarcRecordServiceApp.Core.MarcRecord
 {
 	public class MarcFileData : EntityBase
     {

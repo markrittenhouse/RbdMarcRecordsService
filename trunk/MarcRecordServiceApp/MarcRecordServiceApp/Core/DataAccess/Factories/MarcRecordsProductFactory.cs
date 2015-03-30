@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Linq;
 using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
 using MarcRecordServiceApp.Core.DataAccess.SqlCommandParameters;
-using MarcRecordServiceApp.Tasks.MarcRecords;
+using MarcRecordServiceApp.Core.MarcRecord;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Factories
 {
@@ -21,18 +20,6 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(", p.copyright, p.publicationDate, p.format ")
             .Append(", pub.publisherId, pub.publisherName ")
             .Append(", cat.categoryId, cat.categoryName ")
-            //.Append("p.productId, p.sku, p.isbn10, p.isbn13, p.title, p.subTitle, p.authors, p.firstAuthorLastName, p.productStatusId ")
-            //.Append(", p.affiliation, p.copyright, p.publicationDate, p.format, p.edition, p.pages, p.weight, p.length ")
-            //.Append(", p.width, p.thickness, p.cartonQuantity, p.serialName, p.lcCallNumber, p.nlm, p.announcedEdition ")
-            //.Append(", p.announcedDate, p.newEditionIsbn, p.previousEditionIsbn, p.alternateIsbn, p.brandonHillCodes ")
-            //.Append(", p.priceGroup, p.venderNumber, p.venderInfo, p.isReturnable, p.isGsa, p.productType ")
-            //.Append(", p.audiancePrimary, p.audianceSecondary, p.imprint, p.doodyRating, p.publisherPrelude, p.orderBydate ")
-            //.Append(", p.brandonHillOrderBy, p.r2ResourceId, p.countryCode, p.eIsbn, p.isAvailableForSale, p.availabilityCode, p.tocFilename  ")
-            //.Append(", i.quantityOnHand, i.quantityOnOrder, i.inStockOverride ")
-            //.Append(", pp.priceList, pp.priceNet, pp.price2, pp.price3, pp.price4, pp.priceFuture ")
-            //.Append(", cat.categoryId, cat.categoryName, cat.categoryCode ")
-            //.Append(", pub.publisherId, pub.publisherName ")
-            //.Append(", pci.fileName ")
 			.ToString();
 
         public static readonly string SelectMarcRecordandProviderFields = new StringBuilder()
@@ -44,11 +31,8 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         {
             var sb =  new StringBuilder()
             .Append("from   RittenhouseWeb.dbo.Product p ")
-            //.Append(" join  RittenhouseWeb.dbo.Inventory i on i.productId = p.productId ")
-            //.Append(" join  RittenhouseWeb.dbo.ProductPrice pp on pp.productId = p.productId ")
             .Append(" left join  RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
             .Append(" left join  RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            //.Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
             .Append(" left join dbo.MarcRecord mr on mr.sku = p.sku ")
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId ")
             .AppendFormat(" and mrp.MarcRecordProviderTypeId = {0} ", providerId)
@@ -65,11 +49,8 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
         private static readonly string BaseRittenhouseMarcRecords = new StringBuilder()
             .Append(" from   RittenhouseWeb.dbo.Product p ")
-            //.Append(" join  RittenhouseWeb.dbo.Inventory i on i.productId = p.productId ")
-            //.Append(" join  RittenhouseWeb.dbo.ProductPrice pp on pp.productId = p.productId ")
             .Append(" left join  RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
             .Append(" left join  RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
-            //.Append(" left join  RittenhouseWeb.dbo.ProductCoverImage pci on p.productId = pci.productId ")
             .Append(" left join dbo.MarcRecord mr on mr.isbn13 = p.isbn13 ")
             .Append(" left join dbo.MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3 ")
             .Append(" where (p.copyright is not null or p.publicationDate is not null)  and p.sku not like '%R2P%'")

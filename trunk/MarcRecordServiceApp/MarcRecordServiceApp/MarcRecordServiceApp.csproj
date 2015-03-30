@@ -77,6 +77,8 @@
     <Compile Include="Core\DataAccess\Entities\Base\EntityBase.cs" />
     <Compile Include="Core\DataAccess\Entities\Base\IDataEntity.cs" />
     <Compile Include="Core\DataAccess\Entities\Category.cs" />
+    <Compile Include="Core\DataAccess\Entities\LcMarcRecordFile.cs" />
+    <Compile Include="Core\DataAccess\Entities\NlmMarcRecordFile.cs" />
     <Compile Include="Core\DataAccess\Entities\Product.cs" />
     <Compile Include="Core\DataAccess\Entities\ProductEntity.cs" />
     <Compile Include="Core\DataAccess\Entities\ProductStatus\IProductStatus.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Core\DataAccess\Factories\Base\DbReaderHelper.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\EntityFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\FactoryBase.cs" />
+    <Compile Include="Core\DataAccess\Factories\CallNumberFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\MarcRecordsProductFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\TaskResultFactory.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\BooleanParameter.cs" />
@@ -116,6 +119,13 @@
     <Compile Include="Core\DataAccess\SqlCommandParameters\Int64Parameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\ISqlCommandParameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\StringParameter.cs" />
+    <Compile Include="Core\MarcRecord\IMarcFile.cs" />
+    <Compile Include="Core\MarcRecord\LcMarcFile.cs" />
+    <Compile Include="Core\MarcRecord\MARC21slim.cs" />
+    <Compile Include="Core\MarcRecord\MarcFileData.cs" />
+    <Compile Include="Core\MarcRecord\MarcRecordProvider.cs" />
+    <Compile Include="Core\MarcRecord\NlmMarcFile.cs" />
+    <Compile Include="Core\MarcRecord\RittenhouseMarcFile.cs" />
     <Compile Include="Core\RittenhouseException.cs" />
     <Compile Include="Core\Utilities\EmailMessageData.cs" />
     <Compile Include="Core\Utilities\EmailTextAttachment.cs" />
@@ -128,15 +138,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Tasks\CallNumbers\LcCallNumberTask.cs" />
+    <Compile Include="Tasks\CallNumbers\NlmCallNumberTask.cs" />
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="Tasks\MarcRecords\DailyMarcRecordsTask.cs" />
-    <Compile Include="Tasks\MarcRecords\IMarcFile.cs" />
-    <Compile Include="Tasks\MarcRecords\LcMarcFile.cs" />
-    <Compile Include="Tasks\MarcRecords\MarcFileData.cs" />
-    <Compile Include="Tasks\MarcRecords\MarcRecordProvider.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
-    <Compile Include="Tasks\MarcRecords\NlmMarcFile.cs" />
-    <Compile Include="Tasks\MarcRecords\RittenhouseMarcFile.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />
   </ItemGroup>

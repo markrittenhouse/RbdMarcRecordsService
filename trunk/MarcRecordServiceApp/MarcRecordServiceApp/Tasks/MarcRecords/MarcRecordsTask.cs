@@ -8,6 +8,7 @@ using System.Xml;
 using MARCEngine5;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
+using MarcRecordServiceApp.Core.MarcRecord;
 using Zoom.Net;
 using Zoom.Net.YazSharp;
 

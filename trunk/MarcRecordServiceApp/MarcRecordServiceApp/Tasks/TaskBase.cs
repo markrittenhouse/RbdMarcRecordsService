@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
 using MarcRecordServiceApp.Core.Utilities;
@@ -249,6 +253,30 @@ namespace MarcRecordServiceApp.Tasks
         {
             int next = _random.Next(10000, 99999);
             return next;
+        }
+
+        public IEnumerable<XElement> SimpleStreamAxis2(string marcXml, string elementName)
+        {
+            XmlReaderSettings settings = new XmlReaderSettings { DtdProcessing = DtdProcessing.Parse };
+
+            using (XmlReader reader = XmlReader.Create(new StringReader(marcXml), settings))
+            {
+                reader.MoveToContent(); // will not advance reader if already on a content node; if successful, ReadState is Interactive
+                reader.Read();          // this is needed, even with MoveToContent and ReadState.Interactive
+                while (!reader.EOF && reader.ReadState == ReadState.Interactive)
+                {
+                    if (reader.NodeType == XmlNodeType.Element && reader.Name.Equals(elementName))
+                    {
+                        var matchedElement = XNode.ReadFrom(reader) as XElement;
+                        if (matchedElement != null)
+                            yield return matchedElement;
+                    }
+                    else
+                    {
+                        reader.Read();
+                    }
+                }
+            }
         }
 
     }
