@@ -3,13 +3,10 @@
   <Profiles />
   <Settings>
     <Setting Name="EmailConfigDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\technoserv04\d$\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\MarcRecordServiceApp\EmailConfigs</Value>
+      <Value Profile="(Default)">C:\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\MarcRecordServiceApp\EmailConfigs</Value>
     </Setting>
     <Setting Name="DatabaseCommandTimeout" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">60</Value>
-    </Setting>
-    <Setting Name="MarcRecordBatchSize" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">250</Value>
     </Setting>
     <Setting Name="LcMarcRecordMaxProducts" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">10000</Value>
@@ -21,7 +18,7 @@
       <Value Profile="(Default)">1000000</Value>
     </Setting>
     <Setting Name="MarcFilesWorkingDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\technoserv04\d$\Clients\Rittenhouse\MarcProject\MarcRecordsWorking</Value>
+      <Value Profile="(Default)">C:\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\Working</Value>
     </Setting>
     <Setting Name="SiteSubDirectory" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://dev21.rittenhouse.com/rbd/</Value>
@@ -38,6 +35,9 @@
   &lt;ConnectionString&gt;Server=10.0.0.32;Database=MarcRecords;User ID=sa;Password=Techno2012;Trusted_Connection=False&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Server=10.0.0.32;Database=MarcRecords;User ID=sa;Password=Techno2012;Trusted_Connection=False</Value>
+    </Setting>
+    <Setting Name="MarcRecordBatchSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
     </Setting>
   </Settings>
 </SettingsFile>

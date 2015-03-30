@@ -1,6 +1,6 @@
-﻿using MarcRecordServiceApp.Core.DataAccess.Entities;
+using MarcRecordServiceApp.Core.DataAccess.Entities;
 
-namespace MarcRecordServiceApp.Tasks.MarcRecords
+namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public class RittenhouseMarcFile : MarcFileData, IMarcFile
     {

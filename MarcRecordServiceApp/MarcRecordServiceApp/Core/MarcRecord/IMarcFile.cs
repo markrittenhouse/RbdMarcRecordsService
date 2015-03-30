@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
+using MarcRecordServiceApp.Tasks.MarcRecords;
 
-namespace MarcRecordServiceApp.Tasks.MarcRecords
+namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public interface IMarcFile
     {

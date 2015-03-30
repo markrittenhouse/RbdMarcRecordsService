@@ -7,6 +7,7 @@ using System.Xml;
 using MARCEngine5;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
+using MarcRecordServiceApp.Core.MarcRecord;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {

@@ -3,14 +3,12 @@
 	<EmailConfigurations>
 		<EmailConfiguration type="Success" send="true">
 			<ToAddresses>
-				<EmailAddress>rittenhouse@lane4solutions.com</EmailAddress>
-				<!-- EmailAddress>ken-technotects@lane4solutions.com</EmailAddress -->
+				<EmailAddress>Kenhaberle@technotects.com</EmailAddress>
 			</ToAddresses>
 		</EmailConfiguration>
 		<EmailConfiguration type="Error" send="true">
 			<ToAddresses>
-				<EmailAddress>rittenhouse@lane4solutions.com</EmailAddress>
-				<!-- EmailAddress>ken-technotects@lane4solutions.com</EmailAddress -->
+				<EmailAddress>Kenhaberle@technotects.com</EmailAddress>
 				</ToAddresses>
 		</EmailConfiguration>
 	</EmailConfigurations>

@@ -1,4 +1,4 @@
-﻿namespace MarcRecordServiceApp.Tasks.MarcRecords
+namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public enum MarcRecordProvider
     {        
