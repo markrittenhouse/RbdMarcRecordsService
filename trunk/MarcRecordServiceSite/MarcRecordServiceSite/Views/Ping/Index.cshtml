@@ -1,0 +1,16 @@
+﻿@model MarcRecordServiceSite.Models.PingData
+<!doctype html>
+@{
+    Layout = "";
+}
+<head>
+	<title>Ping | R2 Digital Library</title>
+</head>
+<body>		   
+
+<h2>R2 Library - Version 2 - Ping Page</h2>
+<div>Version: @Model.Version</div>
+<div>Client IP Address: @Model.ClientIpAddress</div>
+<div>Database Status: @Model.DatabaseStatus</div>
+<div>Machine Name: @Model.MachineName</div>
+</body>

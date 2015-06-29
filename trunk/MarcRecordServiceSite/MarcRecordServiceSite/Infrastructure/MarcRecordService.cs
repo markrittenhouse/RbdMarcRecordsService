@@ -53,7 +53,7 @@ namespace MarcRecordServiceSite.Infrastructure
                 string newFilePath = string.Format(@"{0}.mrc", filePath.Replace(".mrk", ""));
                 _log.Debug("Changing MRK file to MRC");
                 MARC21 marc21 = new MARC21();
-                marc21.MMaker(filePath, newFilePath);
+                var test = marc21.MMaker(filePath, newFilePath);
 
                 filePath = newFilePath;
 
@@ -68,12 +68,12 @@ namespace MarcRecordServiceSite.Infrastructure
             return filePath;
         }
 
-        public List<string> WriteMarcRecordFiles(JsonMarcRecordRequest marcRecordRequest, List<DailyMarcRecordFile> files)
+        public List<string> WriteMarcRecordFiles(JsonMarcRecordRequest marcRecordRequest, List<PrintMarcRecordFile> files)
         {
             string lastIsbn = "";
             List<string> marcRecordPaths = new List<string>();
 
-            foreach (DailyMarcRecordFile file in files)
+            foreach (PrintMarcRecordFile file in files)
             {
                 if (lastIsbn == file.Isbn13 || lastIsbn == file.Isbn10 || lastIsbn == file.Sku) continue;
 
@@ -89,17 +89,17 @@ namespace MarcRecordServiceSite.Infrastructure
                                                              marcRecordRequest.AccountNumber, out lastIsbn,
                                                              marcRecordRequest,
                                                              new JsonIsbnAndCustomerField
-                                                                 {
-                                                                     CustomMarcFields =
-                                                                         marcRecordRequest.CustomMarcFields,
-                                                                     IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
-                                                                 }
+                                                             {
+                                                                 CustomMarcFields =
+                                                                     marcRecordRequest.CustomMarcFields,
+                                                                 IsbnOrSku = jsonIsbnAndCustomerField.IsbnOrSku
+                                                             }
                         );
                     if (!string.IsNullOrWhiteSpace(marcRecord))
                     {
                         marcRecordPaths.Add(marcRecord);
                     }
-                    
+
                     break;
                 }
 
@@ -107,9 +107,49 @@ namespace MarcRecordServiceSite.Infrastructure
             return marcRecordPaths;
         }
 
-        public string WriteIndividualMarcFile(DailyMarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonMarcRecordRequest marcRecordRequest, JsonIsbnAndCustomerField commonJsonFields = null)
+        public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber)
         {
-            
+            List<string> marcRecordPaths = new List<string>();
+
+            foreach (DigitalMarcRecordFile file in files)
+            {
+                var marcRecord = WriteDigitalMarcRecordFile(file, accountNumber);
+                if (!string.IsNullOrWhiteSpace(marcRecord))
+                {
+                    marcRecordPaths.Add(marcRecord);
+                }
+
+            }
+            return marcRecordPaths;
+        }
+
+        public string WriteDigitalMarcRecordFile(DigitalMarcRecordFile marcRecordFile, string accountNumber)
+        {
+            string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
+            try
+            {
+                _log.Info("Writing File");
+                using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                {
+                    using (StreamWriter streamWriter = new StreamWriter(fileStream))
+                    {
+                        streamWriter.Write(marcRecordFile.MarcFile);
+                    }
+                }
+
+                _log.Info("File is Complete");
+            }
+
+            catch (Exception ex)
+            {
+                _log.Error(ex.Message, ex);
+            }
+            return filePath;
+        }
+
+        public string WriteIndividualMarcFile(PrintMarcRecordFile marcRecordFile, JsonIsbnAndCustomerField jsonIsbnAndCustomerField, string accountNumber, out string lastIsbn, JsonMarcRecordRequest marcRecordRequest, JsonIsbnAndCustomerField commonJsonFields = null)
+        {
+
             string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
             lastIsbn = marcRecordFile.Isbn13;
             try
@@ -195,9 +235,21 @@ namespace MarcRecordServiceSite.Infrastructure
             return filePath;
         }
 
-        public List<DailyMarcRecordFile> CreateDeleteMarcRecordFiles(List<DailyMarcRecordFile> files)
+        
+
+
+        public List<PrintMarcRecordFile> CreateDeleteMarcRecordFiles(List<PrintMarcRecordFile> files)
         {
-            foreach (DailyMarcRecordFile marcRecordFile in files)
+            foreach (PrintMarcRecordFile marcRecordFile in files)
+            {
+                marcRecordFile.MarcFile = marcRecordFile.MarcFile.Remove(11, 1).Insert(11, "d");
+            }
+            return files;
+        }
+
+        public List<DigitalMarcRecordFile> CreateDeleteMarcRecordFiles(List<DigitalMarcRecordFile> files)
+        {
+            foreach (DigitalMarcRecordFile marcRecordFile in files)
             {
                 marcRecordFile.MarcFile = marcRecordFile.MarcFile.Remove(11, 1).Insert(11, "d");
             }
@@ -222,7 +274,7 @@ namespace MarcRecordServiceSite.Infrastructure
             return Path.Combine(testPath, fileName);
         }
 
-        private void PopulateUrlInMarcRecord(string filePath, bool isR2Library, DailyMarcRecordFile marcRecordFile)
+        private void PopulateUrlInMarcRecord(string filePath, bool isR2Library, PrintMarcRecordFile marcRecordFile)
         {
             string r2Url = System.Configuration.ConfigurationManager.AppSettings["R2LibraryUrl"];
             string rittenhouseUrl = System.Configuration.ConfigurationManager.AppSettings["RittenhouseUrl"];

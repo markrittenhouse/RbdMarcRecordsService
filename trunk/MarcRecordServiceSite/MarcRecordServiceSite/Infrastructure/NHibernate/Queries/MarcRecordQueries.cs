@@ -90,8 +90,8 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
 
             return marcRecordFiles2;
         }
-        
-        public List<DailyMarcRecordFile> GetDailyMarcRecordFiles(List<string> items, bool isR2Request, bool isRittenhouseRequest)
+
+        public List<PrintMarcRecordFile> GetDailyMarcRecordFiles(List<string> items, bool isR2Request, bool isRittenhouseRequest)
         {
             StringBuilder sbItemsToFind = new StringBuilder();
             foreach (string item in items)
@@ -109,7 +109,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             {
                 sb.AppendFormat("where (isbn13 in ({0})) ", itemsToFind);
             }
-            else if(isRittenhouseRequest)
+            else if (isRittenhouseRequest)
             {
                 sb.AppendFormat("where (sku in ({0})) ", itemsToFind);
             }
@@ -126,14 +126,43 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             ISession session = MvcApplication.CreateSession();
 
             IList dailyMarcRecordFilesList = session.CreateSQLQuery(sql)
-                .AddEntity("dmrf", typeof(DailyMarcRecordFile))
+                .AddEntity("dmrf", typeof(PrintMarcRecordFile))
                 .SetTimeout(300000)
                 .List()
                 ;
 
-            var dailyMarcRecordFiles = dailyMarcRecordFilesList.Cast<DailyMarcRecordFile>().ToList<DailyMarcRecordFile>();
-            
+            var dailyMarcRecordFiles = dailyMarcRecordFilesList.Cast<PrintMarcRecordFile>().ToList<PrintMarcRecordFile>();
+
             return dailyMarcRecordFiles;
+        }
+
+        public List<DigitalMarcRecordFile> GetEBookMarcRecords(List<string> items)
+        {
+            StringBuilder sbItemsToFind = new StringBuilder();
+            foreach (string item in items)
+            {
+                sbItemsToFind.AppendFormat("'{0}',", item);
+            }
+
+            string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
+
+            var sql = new StringBuilder()
+                .Append("SELECT {wrmr.*} ")
+                .Append("FROM [dbo].[WebR2LibraryMarcRecords] as wrmr ")
+                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+                .ToString();
+
+            _log.DebugFormat("GetDailyMarcRecordFiles Sql Query : {0}", sql);
+
+            ISession session = MvcApplication.CreateSession();
+
+            IList digitalMarcRecordFiles = session.CreateSQLQuery(sql)
+                .AddEntity("wrmr", typeof(DigitalMarcRecordFile))
+                .SetTimeout(300000)
+                .List()
+                ;
+
+            return digitalMarcRecordFiles.Cast<DigitalMarcRecordFile>().ToList<DigitalMarcRecordFile>();
         }
 
         /// <summary>
