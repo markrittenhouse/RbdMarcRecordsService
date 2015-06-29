@@ -17,12 +17,6 @@
     <Setting Name="RbdMarcRecordMaxProducts" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">1000000</Value>
     </Setting>
-    <Setting Name="MarcFilesWorkingDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">C:\Clients\Rittenhouse\MarcProject\MarcRecordServiceApp\Working</Value>
-    </Setting>
-    <Setting Name="SiteSubDirectory" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://dev21.rittenhouse.com/rbd/</Value>
-    </Setting>
     <Setting Name="DefaultFromAddress" Type="System.String" Scope="Application">
       <Value Profile="(Default)">rbd@rittenhouse.com</Value>
     </Setting>
@@ -38,6 +32,18 @@
     </Setting>
     <Setting Name="MarcRecordBatchSize" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="R2DatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Dev2_RIT001</Value>
+    </Setting>
+    <Setting Name="MarcFilesWorkingDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\Rittenhouse\MarcProject\MarcRecordServiceApp\Working</Value>
+    </Setting>
+    <Setting Name="SiteSubDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://dev01.rittenhouse.com/Rbd/</Value>
+    </Setting>
+    <Setting Name="R2WebSite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://dev.r2library.com/Resource/Title/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

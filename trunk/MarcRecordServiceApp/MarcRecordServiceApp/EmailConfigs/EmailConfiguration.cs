@@ -15,10 +15,15 @@ namespace MarcRecordServiceApp.EmailConfigs
         /// </summary>
         public EmailConfiguration()
         {
-            Send = true;
-			ToAddresses = new List<string> { "scottscheider@technotects.com", "KenHaberle@technotects.com" };
-			CcAddresses = new List<string> { "rittenhouse@lane4solutions.com" };
-			BccAddresses = new List<string> { "scott@lane4solutions.com" };
+            // Send = true;
+			// ToAddresses = new List<string> { "scottscheider@technotects.com", "KenHaberle@technotects.com" };
+			// CcAddresses = new List<string> { "rittenhouse@lane4solutions.com" };
+			// BccAddresses = new List<string> { "scott@lane4solutions.com" };
+			
+			Send = true;
+			ToAddresses = new List<string> { "KenHaberle@technotects.com" };
+			CcAddresses = new List<string> { "KenHaberle@technotects.com" };
+			BccAddresses = new List<string> { "KenHaberle@technotects.com" };
 		}
     }
 }

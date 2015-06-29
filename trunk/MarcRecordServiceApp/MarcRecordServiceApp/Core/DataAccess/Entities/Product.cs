@@ -9,7 +9,6 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
         public string Sku { get; set; }
         public string Isbn10 { get; set; }
         public string Isbn13 { get; set; }
-        public string EIsbn { get; set; }
 
         public string Title { get; set; }
         public string SubTitle { get; set; }
