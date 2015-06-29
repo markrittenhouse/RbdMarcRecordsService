@@ -482,7 +482,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories.Base
             try
             {
                 cnn = GetConnection(connectionString);
-                command = GetSqlCommand(cnn, sql, sqlCommandParameters.ToArray());
+                command = GetSqlCommand(cnn, sql, sqlCommandParameters != null ? sqlCommandParameters.ToArray() : null);
 
                 if (logSql)
                 {

@@ -240,7 +240,7 @@ namespace MarcRecordServiceApp.Tasks
 
         }
 
-        private static string StripOffCarriageReturnAndLineFeed(string value)
+        public static string StripOffCarriageReturnAndLineFeed(string value)
         {
             if (string.IsNullOrEmpty(value))
             {
@@ -249,7 +249,7 @@ namespace MarcRecordServiceApp.Tasks
             return value.Replace("\r", string.Empty).Replace("\n", string.Empty);
         }
 
-        private int GetNext5DigitRandomNumber()
+        public int GetNext5DigitRandomNumber()
         {
             int next = _random.Next(10000, 99999);
             return next;
@@ -275,6 +275,18 @@ namespace MarcRecordServiceApp.Tasks
                     {
                         reader.Read();
                     }
+                }
+            }
+        }
+
+        public void ClearWorkingDirectory(string workingDirectory)
+        {
+            string[] filesToDelete = Directory.GetFiles(workingDirectory);
+            foreach (string file in filesToDelete)
+            {
+                if (file.EndsWith(".mrk") || file.EndsWith(".mrc") || file.EndsWith(".xml"))
+                {
+                    File.Delete(file);
                 }
             }
         }

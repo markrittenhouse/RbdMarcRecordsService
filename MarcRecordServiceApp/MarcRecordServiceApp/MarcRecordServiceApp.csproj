@@ -99,6 +99,7 @@
     <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Forthcoming.cs" />
     <Compile Include="Core\DataAccess\Entities\ProductStatus\StatusR2Inactive.cs" />
     <Compile Include="Core\DataAccess\Entities\Publisher.cs" />
+    <Compile Include="Core\DataAccess\Entities\R2Product.cs" />
     <Compile Include="Core\DataAccess\Entities\TaskResult.cs" />
     <Compile Include="Core\DataAccess\Entities\TaskResultStep.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\DbCommandHelper.cs" />
@@ -108,6 +109,7 @@
     <Compile Include="Core\DataAccess\Factories\Base\FactoryBase.cs" />
     <Compile Include="Core\DataAccess\Factories\CallNumberFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\MarcRecordsProductFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\R2ProductFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\TaskResultFactory.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\BooleanParameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\ByteArrayParameter.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="Core\MarcRecord\MarcFileData.cs" />
     <Compile Include="Core\MarcRecord\MarcRecordProvider.cs" />
     <Compile Include="Core\MarcRecord\NlmMarcFile.cs" />
+    <Compile Include="Core\MarcRecord\R2LibraryMarcFile.cs" />
     <Compile Include="Core\MarcRecord\RittenhouseMarcFile.cs" />
     <Compile Include="Core\RittenhouseException.cs" />
     <Compile Include="Core\Utilities\EmailMessageData.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="Tasks\MarcRecords\DailyMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
+    <Compile Include="Tasks\MarcRecords\R2LibraryMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />
   </ItemGroup>

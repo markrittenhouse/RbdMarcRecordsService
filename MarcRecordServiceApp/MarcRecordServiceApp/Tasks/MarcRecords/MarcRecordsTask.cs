@@ -357,17 +357,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// 
         /// </summary>
         /// <param name="workingDirectory"></param>
-        private void ClearWorkingDirectory(string workingDirectory)
-        {
-            string[] filesToDelete = Directory.GetFiles(workingDirectory);
-            foreach (string file in filesToDelete)
-            {
-                if (file.EndsWith(".mrk") || file.EndsWith(".mrc") || file.EndsWith(".xml"))
-                {
-                    File.Delete(file);
-                }
-            }
-        }
+
 
         /// <summary>
         /// 

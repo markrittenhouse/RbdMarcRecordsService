@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Configuration;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
+using MarcRecordServiceApp.Core.DataAccess.Factories;
 using MarcRecordServiceApp.Core.MarcRecord;
 using MarcRecordServiceApp.Tasks;
 using MarcRecordServiceApp.Tasks.CallNumbers;
@@ -47,7 +48,6 @@ namespace MarcRecordServiceApp
             Console.WriteLine("");
             Console.WriteLine("Rittenhouse - MARC Record Service");
 
-
 			try
             {
                 string arg;
@@ -61,11 +61,11 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("05 = CreateDailyMarcRecords");
                     Console.WriteLine("06 = RecreateAllRbdMarcRecords");
                     Console.WriteLine("");
-                    Console.WriteLine("");
                     Console.WriteLine("10 = LcCallNumberTask");
                     Console.WriteLine("11 = NlmCallNumberTask");
-                    
-					Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine("20 = CreateR2libraryMarcRecords");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
                 }
@@ -111,6 +111,7 @@ namespace MarcRecordServiceApp
                     case "06":
                         task = new RittenhouseOnlyMarcRecordsTask(false);
                         break;
+                    
 
                     case "-LcCallNumberTask":
                     case "10":
@@ -122,6 +123,11 @@ namespace MarcRecordServiceApp
                         task = new NlmCallNumberTask();
                         break;
 
+
+                    case "-CreateR2libraryMarcRecords":
+                    case "20":
+                        task = new R2LibraryMarcRecordsTask(new R2ProductFactory());
+                        break;
                         
                     default:
                         Console.WriteLine("INVALID AURGUMENT");
