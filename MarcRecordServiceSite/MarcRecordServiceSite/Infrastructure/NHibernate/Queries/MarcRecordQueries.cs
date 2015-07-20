@@ -165,6 +165,35 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             return digitalMarcRecordFiles.Cast<DigitalMarcRecordFile>().ToList<DigitalMarcRecordFile>();
         }
 
+        public List<DigitalMarcRecordFile> GetOclcEBookMarcRecords(List<string> items)
+        {
+            StringBuilder sbItemsToFind = new StringBuilder();
+            foreach (string item in items)
+            {
+                sbItemsToFind.AppendFormat("'{0}',", item);
+            }
+
+            string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
+
+            var sql = new StringBuilder()
+                .Append("SELECT {wrmr.*} ")
+                .Append("FROM [dbo].[OclcR2LibraryMarcRecords] as wrmr ")
+                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+                .ToString();
+
+            _log.DebugFormat("GetOclcEBookMarcRecords Sql Query : {0}", sql);
+
+            ISession session = MvcApplication.CreateSession();
+
+            IList digitalMarcRecordFiles = session.CreateSQLQuery(sql)
+                .AddEntity("wrmr", typeof(DigitalMarcRecordFile))
+                .SetTimeout(300000)
+                .List()
+                ;
+
+            return digitalMarcRecordFiles.Cast<DigitalMarcRecordFile>().ToList<DigitalMarcRecordFile>();
+        }
+
         /// <summary>
         /// 
         /// </summary>
