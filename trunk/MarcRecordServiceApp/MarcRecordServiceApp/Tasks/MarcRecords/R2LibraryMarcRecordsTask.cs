@@ -140,90 +140,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
         }
 
-        private static void WriteCategories(StringBuilder mrkFileText, R2Resource resource)
-        {
-            if (resource.Categories != null || resource.SubCategories != null)
-            {
-                var categories = resource.Categories != null ? resource.Categories.ToList() : null;
-                var subCategories = resource.SubCategories != null ? resource.SubCategories.ToList() : null;
-                //If categories = subCategories
-                if (categories != null && subCategories != null)
-                {
-                    if (categories.Count == subCategories.Count)
-                    {
-                        for (int i = 0; i < categories.Count; i++)
-                        {
-                            mrkFileText.AppendFormat("=650  {0}4$a{1}$x{2}", GetSpace(1), categories[i].Category, subCategories[i].SubCategory).AppendLine();
-                        }
-
-                    }
-                    else if (categories.Count > subCategories.Count && subCategories.Count == 1)
-                    {
-                        if (subCategories.Count == 1)
-                        {
-                            foreach (var r2Category in categories)
-                            {
-                                mrkFileText.AppendFormat("=650  {0}4$a{1}$x{2}", GetSpace(1), r2Category.Category, subCategories[0].SubCategory).AppendLine();
-                            }
-                        }
-                    }
-                    else
-                    {
-                        foreach (var r2Category in categories)
-                        {
-                            foreach (var r2SubCategory in subCategories)
-                            {
-                                mrkFileText.AppendFormat("=650  {0}4$a{1}$x{2}", GetSpace(1), r2Category.Category,
-                                    r2SubCategory.SubCategory).AppendLine();
-                            }
-                        }
-                    }
-
-                }
-                else if (categories != null) //subCategories == null
-                {
-                    foreach (var r2Category in categories)
-                    {
-                        mrkFileText.AppendFormat("=650  {0}4$a{1}", GetSpace(1), r2Category.Category).AppendLine();
-                    }
-                }
-                else if (subCategories != null)
-                {
-                    foreach (var r2SubCategories in subCategories)
-                    {
-                        mrkFileText.AppendFormat("=650  {0}4$a{1}", GetSpace(1), r2SubCategories.SubCategory).AppendLine();
-                    }
-                }
-            }
-        }
-
-        private static void WriteAuthors(StringBuilder mrkFileText, R2Resource resource)
-        {
-            if (resource.AuthorList != null)
-            {
-                foreach (var r2Author in resource.AuthorList)
-                {
-                    mrkFileText.AppendFormat("=700  1{0}$a{1}", GetSpace(1), r2Author.ToDisplayName()).AppendLine();
-                }
-            }
-            else
-            {
-                mrkFileText.AppendFormat("=700  1{0}$a{1}", GetSpace(1), resource.FirstAuthor).AppendLine();
-            }
-        }
-
-        private static string GetSpace(int count)
-        {
-            var sb = new StringBuilder();
-            for (int i = 0; i < count; i++)
-            {
-                sb.Append("\\");
-            }
-            return sb.ToString();
-        }
+              
 
 
-        private void RemoveFieldsFromExternalMarcFiles(List<R2LibraryMarcFile> nlmandLcR2LibraryMarcFiles)
+        private void RemoveFieldsFromExternalMarcFiles(IEnumerable<R2LibraryMarcFile> nlmandLcR2LibraryMarcFiles)
         {
             string workingDirectory = (Settings.Default.MarcFilesWorkingDirectory.EndsWith(@"\"))
                               ? Settings.Default.MarcFilesWorkingDirectory
@@ -262,16 +182,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             
         }
 
-        private static readonly string FieldsToRemove = string.Format("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}",
-                                      "=900\t=901\t=902\t=903\t=904\t=905\t=906\t=907\t=908\t=909",
-                                      "\t=910\t=911\t=912\t=913\t=914\t=915\t=916\t=917\t=918\t=919",
-                                      "\t=920\t=921\t=922\t=923\t=924\t=925\t=926\t=927\t=928\t=929",
-                                      "\t=930\t=931\t=932\t=933\t=934\t=935\t=936\t=937\t=938\t=939",
-                                      "\t=940\t=941\t=942\t=943\t=944\t=945\t=946\t=947\t=948\t=949",
-                                      "\t=950\t=951\t=952\t=953\t=954\t=955\t=956\t=957\t=958\t=959",
-                                      "\t=960\t=961\t=962\t=963\t=964\t=965\t=966\t=967\t=968\t=969",
-                                      "\t=970\t=971\t=972\t=973\t=974\t=975\t=976\t=977\t=978\t=979",
-                                      "\t=980\t=981\t=982\t=983\t=984\t=985\t=986\t=987\t=988\t=989",
-                                      "\t=990\t=991\t=992\t=993\t=994\t=995\t=996\t=997\t=998\t=999");
+
     }
 }

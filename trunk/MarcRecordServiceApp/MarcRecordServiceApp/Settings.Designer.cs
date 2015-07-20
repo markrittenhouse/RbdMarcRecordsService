@@ -142,5 +142,14 @@ namespace MarcRecordServiceApp {
                 return ((string)(this["R2WebSite"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("7")]
+        public string OclcGetRecordsOlderThanDays {
+            get {
+                return ((string)(this["OclcGetRecordsOlderThanDays"]));
+            }
+        }
     }
 }
