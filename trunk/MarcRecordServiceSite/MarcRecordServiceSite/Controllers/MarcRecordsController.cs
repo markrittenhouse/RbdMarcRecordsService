@@ -144,6 +144,24 @@ namespace MarcRecordServiceSite.Controllers
             return View("Error", new IsbnsNotFound { Isbns = IsbnsToFind });
         }
 
+        public ActionResult OclcEBookDownload(string jsonMarcRecordRequestString)
+        {
+            Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            if (!string.IsNullOrWhiteSpace(jsonMarcRecordRequestString))
+            {
+                try
+                {
+                    JsonMarcRecordRequest marcRecordRequest = new JavaScriptSerializer().Deserialize<JsonMarcRecordRequest>(jsonMarcRecordRequestString);
+                    return OclcEBookDownload(marcRecordRequest);
+                }
+                catch (Exception ex)
+                {
+                    Log.DebugFormat("Download2 error: {0}", ex.Message);
+                }
+
+            }
+            return View("Error", new IsbnsNotFound { Isbns = IsbnsToFind });
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -308,6 +326,129 @@ namespace MarcRecordServiceSite.Controllers
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 List<DigitalMarcRecordFile> files = marcRecordQueries.GetEBookMarcRecords(IsbnsToFind);
+                stopwatch.Stop();
+                Log.InfoFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
+
+                if (files.Count == 0)
+                {
+                    var isbnsNotFound = new IsbnsNotFound();
+
+                    if (IsbnsToFind != null && IsbnsToFind.Count > 0)
+                    {
+                        isbnsNotFound.Isbns = IsbnsToFind;
+                    }
+
+                    Log.ErrorFormat("The following ISBNs could not be found in the database : {0}", isbnsNotFound.ToString());
+
+                    return View("Error", isbnsNotFound);
+                }
+
+                if (marcRecordRequest.IsDeleteFile)
+                {
+                    files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
+                }
+
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+
+                List<string> marcRecordPaths = _marcRecordService.WriteDigitalMarcRecordFiles(files, marcRecordRequest.AccountNumber);
+
+                stopwatch.Stop();
+                Log.InfoFormat(">>>>>>>>>>>>WriteMarcRecordFiles Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
+
+                if (marcRecordPaths.Count == 0)
+                {
+                    var isbnsNotFound = new IsbnsNotFound { Isbns = IsbnsToFind };
+
+                    Log.ErrorFormat("The following ISBNs could not be found : {0}", isbnsNotFound.ToString());
+
+                    return View("Error", isbnsNotFound);
+                }
+
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+
+                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths);
+
+                stopwatch.Stop();
+                Log.InfoFormat(">>>>>>>>>>>>GetMergedMarcRecordsFilePath Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
+
+                //var ftpCredientials = new MarcFtpCredientials
+                //                          {
+                //                              Host = "ftp://technoserv04.technotects.com/Kens_Test_Folder",
+                //                              UserName = "kshaberle",
+                //                              Password = "Techno2008"
+                //                          };
+
+                //marcRecordRequest.FtpCredientials = ftpCredientials;
+
+                if (marcRecordRequest.FtpCredientials != null)
+                {
+                    FtpService ftpService = new FtpService(marcRecordRequest.FtpCredientials);
+
+                    if (ftpService.IsEligibleForFtp)
+                    {
+                        ftpService.UploadFileToFtp(filePath);
+                        return View("Ftp");
+                    }
+                }
+                else
+                {
+                    string fileStream = filePath;
+                    const string mimeType = "text/plain";
+                    string fileDownloadName = string.Format("MarcRecords-{0}_{1}_{2}.{3}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, marcRecordRequest.Format);
+                    Log.InfoFormat("File to stream back: {0}", fileDownloadName);
+
+                    return File(fileStream, mimeType, fileDownloadName);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.ErrorFormat("Error in Download: {0}", ex);
+            }
+            return View("Error");
+        }
+
+        private ActionResult OclcEBookDownload(JsonMarcRecordRequest marcRecordRequest)
+        {
+            if (marcRecordRequest != null && !string.IsNullOrWhiteSpace(marcRecordRequest.AccountNumber))
+            {
+                //var timeOut = Server.ScriptTimeout;
+                //// 1 hour = 3600 seconds
+                //// 30 minutes = 1800 seconds
+                //// 15 minutes = 900 seconds
+                Server.ScriptTimeout = 900;
+            }
+            else
+            {
+                return View("Error");
+            }
+            try
+            {
+                Log.InfoFormat("New JsonMarcRecordRequest-- AccountNumber: {0} | File Format: {1}", marcRecordRequest.AccountNumber, marcRecordRequest.Format);
+                List<string> isbnsToFind = marcRecordRequest.IsbnAndCustomerFields != null
+                                      ? marcRecordRequest.IsbnAndCustomerFields.Select(x => x.IsbnOrSku).ToList()
+                                      : new List<string>();
+                if (isbnsToFind.Any())
+                {
+                    IsbnsToFind = isbnsToFind.ToList();
+                }
+                else
+                {
+                    var isbnsNotFound = new IsbnsNotFound { Isbns = null };
+
+                    Log.ErrorFormat("The following ISBNs could not be found : {0}", isbnsNotFound.ToString());
+
+                    return View("Error", isbnsNotFound);
+                }
+
+                Log.InfoFormat("Number of ISBN/Sku to find: {0}", IsbnsToFind.Count);
+
+                MarcRecordQueries marcRecordQueries = new MarcRecordQueries(Log);
+
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                List<DigitalMarcRecordFile> files = marcRecordQueries.GetOclcEBookMarcRecords(IsbnsToFind);
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
 
