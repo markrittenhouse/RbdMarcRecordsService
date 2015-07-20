@@ -146,6 +146,7 @@
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="Tasks\MarcRecords\DailyMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
+    <Compile Include="Tasks\MarcRecords\OclcR2LibraryMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\R2LibraryMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />
