@@ -37,6 +37,7 @@ namespace MarcRecordServiceSite.Infrastructure
 
             using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
             {
+                fileStream.Position = 0;
                 using (StreamWriter streamWriter = new StreamWriter(fileStream))
                 {
                     foreach (string marcRecordPath in marcRecordPaths.Where(File.Exists))
@@ -131,6 +132,7 @@ namespace MarcRecordServiceSite.Infrastructure
                 _log.Info("Writing File");
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
                 {
+                    fileStream.Position = 0;
                     using (StreamWriter streamWriter = new StreamWriter(fileStream))
                     {
                         streamWriter.Write(marcRecordFile.MarcFile);
@@ -159,6 +161,7 @@ namespace MarcRecordServiceSite.Infrastructure
                 _log.Info("Writing File");
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
                 {
+                    fileStream.Position = 0;
                     using (StreamWriter streamWriter = new StreamWriter(fileStream))
                     {
                         streamWriter.Write(marcRecordFile.MarcFile);
