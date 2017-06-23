@@ -37,7 +37,6 @@ namespace MarcRecordServiceSite.Infrastructure
 
             using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
             {
-                fileStream.Position = 0;
                 using (StreamWriter streamWriter = new StreamWriter(fileStream))
                 {
                     foreach (string marcRecordPath in marcRecordPaths.Where(File.Exists))
@@ -45,6 +44,13 @@ namespace MarcRecordServiceSite.Infrastructure
                         streamWriter.WriteLine(File.ReadAllText(marcRecordPath));
                     }
                 }
+                fileStream.Close();
+                fileStream.Dispose();
+            }
+
+            foreach (var marcRecordPath in marcRecordPaths)
+            {
+                File.Delete(marcRecordPath);
             }
 
             _log.Debug("End MArC Record Files Merge");
@@ -54,8 +60,8 @@ namespace MarcRecordServiceSite.Infrastructure
                 string newFilePath = string.Format(@"{0}.mrc", filePath.Replace(".mrk", ""));
                 _log.Debug("Changing MRK file to MRC");
                 MARC21 marc21 = new MARC21();
-                var test = marc21.MMaker(filePath, newFilePath);
-
+                marc21.MMaker(filePath, newFilePath);
+                var fileToDelete = filePath;
                 filePath = newFilePath;
 
                 if (marcRecordRequest.Format == "xml")
@@ -65,6 +71,63 @@ namespace MarcRecordServiceSite.Infrastructure
                     marc21.MARC2MARC21XML(filePath, newFilePath, false);
                     filePath = newFilePath;
                 }
+
+                File.Delete(fileToDelete);
+            }
+            return filePath;
+        }
+
+        public string GetMergedMarcRecordsFilePath(JsonMarcRecordRequest marcRecordRequest, List<string> marcRecordPaths, bool isMarc8)
+        {
+            _log.Debug("Begin MArC Record Files Merge");
+            string filePath = GetFilePath(marcRecordRequest.AccountNumber, "MarcRecords");
+
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            {
+                using (StreamWriter streamWriter = new StreamWriter(fileStream))
+                {
+                    foreach (string marcRecordPath in marcRecordPaths.Where(File.Exists))
+                    {
+                        streamWriter.WriteLine(File.ReadAllText(marcRecordPath));
+                    }
+                }
+                fileStream.Close();
+                fileStream.Dispose();
+            }
+
+            foreach (var marcRecordPath in marcRecordPaths)
+            {
+                File.Delete(marcRecordPath);
+            }
+
+            _log.Debug("End MArC Record Files Merge");
+
+            if (marcRecordRequest.Format != "mrk")
+            {
+                string newFilePath = string.Format(@"{0}.mrc", filePath.Replace(".mrk", ""));
+                _log.Debug("Changing MRK file to MRC");
+                MARC21 marc21 = new MARC21();
+                if (isMarc8)
+                {
+                    marc21.MMakerEx(filePath, newFilePath, MARC21.DEFAULT_SET);
+                }
+                else
+                {
+                    marc21.MMaker(filePath, newFilePath);
+                }
+
+                var fileToDelete = filePath;
+                filePath = newFilePath;
+
+                if (marcRecordRequest.Format == "xml")
+                {
+                    _log.Debug("Changing MRC file to XML");
+                    newFilePath = string.Format(@"{0}.xml", filePath.Replace(".mrk", ""));
+                    marc21.MARC2MARC21XML(filePath, newFilePath, false);
+                    filePath = newFilePath;
+                }
+
+                File.Delete(fileToDelete);
             }
             return filePath;
         }
@@ -110,11 +173,15 @@ namespace MarcRecordServiceSite.Infrastructure
 
         public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber)
         {
+            return WriteDigitalMarcRecordFiles(files, accountNumber, null);
+        }
+        public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber, string urlPrefix)
+        {
             List<string> marcRecordPaths = new List<string>();
 
             foreach (DigitalMarcRecordFile file in files)
             {
-                var marcRecord = WriteDigitalMarcRecordFile(file, accountNumber);
+                var marcRecord = WriteDigitalMarcRecordFile(file, accountNumber, urlPrefix);
                 if (!string.IsNullOrWhiteSpace(marcRecord))
                 {
                     marcRecordPaths.Add(marcRecord);
@@ -124,7 +191,7 @@ namespace MarcRecordServiceSite.Infrastructure
             return marcRecordPaths;
         }
 
-        public string WriteDigitalMarcRecordFile(DigitalMarcRecordFile marcRecordFile, string accountNumber)
+        public string WriteDigitalMarcRecordFile(DigitalMarcRecordFile marcRecordFile, string accountNumber, string urlPrefix)
         {
             string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
             try
@@ -132,11 +199,17 @@ namespace MarcRecordServiceSite.Infrastructure
                 _log.Info("Writing File");
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
                 {
-                    fileStream.Position = 0;
                     using (StreamWriter streamWriter = new StreamWriter(fileStream))
                     {
-                        streamWriter.Write(marcRecordFile.MarcFile);
+                        var marcFile = marcRecordFile.MarcFile;
+                        if (!string.IsNullOrWhiteSpace(urlPrefix))
+                        {
+                            marcFile = marcFile.Insert((marcFile.IndexOf("online$u", StringComparison.Ordinal) + 8), urlPrefix);
+                        }
+                        streamWriter.Write(marcFile);
                     }
+                    fileStream.Close();
+                    fileStream.Dispose();
                 }
 
                 _log.Info("File is Complete");
@@ -166,6 +239,8 @@ namespace MarcRecordServiceSite.Infrastructure
                     {
                         streamWriter.Write(marcRecordFile.MarcFile);
                     }
+                    fileStream.Close();
+                    fileStream.Dispose();
                 }
 
                 _log.Info("Deleting Extra Fields from file");
@@ -314,8 +389,8 @@ namespace MarcRecordServiceSite.Infrastructure
         {
             StringBuilder sb = new StringBuilder();
             if (jsonCustomMarcField.FieldNumber != 0)
-            {                
-                sb.AppendFormat("={0:000} {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
+            {
+                sb.AppendFormat("={0:000}  {1}{2}", jsonCustomMarcField.FieldNumber, jsonCustomMarcField.FieldIndicator1,
                                 jsonCustomMarcField.FieldIndicator2);
                 if (jsonCustomMarcField.MarcSubfields.Count > 0)
                 {

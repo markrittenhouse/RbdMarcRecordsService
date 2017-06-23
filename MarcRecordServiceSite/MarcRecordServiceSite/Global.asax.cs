@@ -60,6 +60,9 @@ namespace MarcRecordServiceSite
 				new { controller = "Default", action = "Index", id = UrlParameter.Optional } // Parameter defaults
 			);
 
+            routes.MapRoute("Robots.txt",
+                "robots.txt",
+                new { controller = "Default", action = "Robots" });
 		}
 
 		/// <summary>
