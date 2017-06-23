@@ -63,6 +63,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 }
                 else
                 {
+                    //Updates and inserts
                     _r2ProductFactory.UpdateWebR2LibraryMarcRecords(r2LibraryMarcFiles, out recordsUpdated, out recordsInserted);
                 }
                 
@@ -177,6 +178,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 marc21.Add_Field(mrkFilePath, field856);
 
                 var newMrkFile = File.ReadAllText(mrkFilePath);
+                File.Delete(mrkFilePath);
                 nlmandLcR2LibraryMarcFile.MrkText = newMrkFile;
             }
             

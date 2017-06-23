@@ -75,9 +75,10 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append("from MarcRecord mr ")
                 .AppendFormat("join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = {0} ", providerId)
                 .Append("join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
+                .Append("left join ExcludedMarcRecord emr on mr.sku = emr.sku and mrpt.marcRecordProviderTypeId = emr.marcRecordProviderTypeId ")
                 .Append("join MarcRecordFile mrf on mrp.marcRecordProviderId = mrf.marcRecordProviderId and marcRecordFileTypeId = 2 ")
                 .Append("left join DailyMarcRecordFile dmrf on mr.isbn10 = dmrf.isbn10 and mr.isbn13 = dmrf.isbn13 and mr.sku = dmrf.sku ")
-                .Append("where dmrf.dailyMarcRecordFileId is null and mr.sku not like '%R2P%'")
+                .Append("where dmrf.dailyMarcRecordFileId is null and mr.sku not like '%R2P%' and emr.excludedMarcRecordId is null")
                 .ToString();
         }
 
