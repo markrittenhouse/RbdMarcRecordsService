@@ -53,6 +53,7 @@ namespace MarcRecordServiceSite.Controllers
 		/// 
 		/// </summary>
 		/// <returns></returns>
+        [DeleteFileAttribute]
 		public ActionResult Get(MarcRecordRequestItem item)
 		{
 			Log.DebugFormat("isbn10: {0}, isbn13: {1}, sku: {2}", item.Isbn10, item.Isbn13, item.Sku);
@@ -106,6 +107,7 @@ namespace MarcRecordServiceSite.Controllers
         /// </summary>
         /// <param name="jsonMarcRecordRequestString"></param>
         /// <returns></returns>
+        [DeleteFileAttribute]
         public ActionResult Download2(string jsonMarcRecordRequestString)
         {
             Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -124,7 +126,7 @@ namespace MarcRecordServiceSite.Controllers
             }
             return View("Error", new IsbnsNotFound { Isbns = IsbnsToFind });
         }
-
+        [DeleteFileAttribute]
         public ActionResult EbookDownload(string jsonMarcRecordRequestString)
         {
             Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -143,7 +145,7 @@ namespace MarcRecordServiceSite.Controllers
             }
             return View("Error", new IsbnsNotFound { Isbns = IsbnsToFind });
         }
-
+        [DeleteFileAttribute]
         public ActionResult OclcEBookDownload(string jsonMarcRecordRequestString)
         {
             Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
@@ -167,6 +169,7 @@ namespace MarcRecordServiceSite.Controllers
         /// </summary>
         /// <param name="marcRecordRequest"></param>
         /// <returns></returns>
+        [DeleteFileAttribute]
         public ActionResult Download(JsonMarcRecordRequest marcRecordRequest)
         {
             if (marcRecordRequest != null && !string.IsNullOrWhiteSpace(marcRecordRequest.AccountNumber))
@@ -245,7 +248,7 @@ namespace MarcRecordServiceSite.Controllers
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths);
+                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths, false);
 
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>GetMergedMarcRecordsFilePath Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
@@ -285,7 +288,7 @@ namespace MarcRecordServiceSite.Controllers
             }
             return View("Error");
         }
-
+        [DeleteFileAttribute]
         private ActionResult EBookDownload(JsonMarcRecordRequest marcRecordRequest)
         {
             if (marcRecordRequest != null && !string.IsNullOrWhiteSpace(marcRecordRequest.AccountNumber))
@@ -348,10 +351,20 @@ namespace MarcRecordServiceSite.Controllers
                     files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
                 }
 
+                string urlPrefix = null;
+                var customMarcFields = marcRecordRequest.CustomMarcFields;
+                if (customMarcFields != null && customMarcFields.Any())
+                {
+                    foreach (var jsonCustomMarcField in customMarcFields.Where(x => x.FieldNumber == 856))
+                    {
+                        urlPrefix = jsonCustomMarcField.FieldValue;
+                    }
+                }
+
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                List<string> marcRecordPaths = _marcRecordService.WriteDigitalMarcRecordFiles(files, marcRecordRequest.AccountNumber);
+                List<string> marcRecordPaths = _marcRecordService.WriteDigitalMarcRecordFiles(files, marcRecordRequest.AccountNumber, urlPrefix);
 
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>WriteMarcRecordFiles Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
@@ -368,7 +381,7 @@ namespace MarcRecordServiceSite.Controllers
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths);
+                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths, true);
 
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>GetMergedMarcRecordsFilePath Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
@@ -389,6 +402,7 @@ namespace MarcRecordServiceSite.Controllers
                     if (ftpService.IsEligibleForFtp)
                     {
                         ftpService.UploadFileToFtp(filePath);
+                        System.IO.File.Delete(filePath);
                         return View("Ftp");
                     }
                 }
@@ -408,7 +422,7 @@ namespace MarcRecordServiceSite.Controllers
             }
             return View("Error");
         }
-
+        [DeleteFileAttribute]
         private ActionResult OclcEBookDownload(JsonMarcRecordRequest marcRecordRequest)
         {
             if (marcRecordRequest != null && !string.IsNullOrWhiteSpace(marcRecordRequest.AccountNumber))
@@ -491,7 +505,7 @@ namespace MarcRecordServiceSite.Controllers
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths);
+                var filePath = _marcRecordService.GetMergedMarcRecordsFilePath(marcRecordRequest, marcRecordPaths, false);
 
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>GetMergedMarcRecordsFilePath Time it took: {0}ms", stopwatch.ElapsedMilliseconds);

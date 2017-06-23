@@ -147,9 +147,24 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
 
             var sql = new StringBuilder()
-                .Append("SELECT {wrmr.*} ")
-                .Append("FROM [dbo].[WebR2LibraryMarcRecords] as wrmr ")
-                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+
+                .Append("SELECT {wmrOUTER.*} ")
+                .Append("from WebR2LibraryMarcRecords wmrOUTER ")
+                .Append("where wmrOUTER.dailyMarcRecordFileId in ( ")
+                .Append("    select top (1) wmrINNER.dailyMarcRecordFileId ")
+                .Append("    from WebR2LibraryMarcRecords wmrINNER ")
+                .Append("    join MarcRecordProviderType mrpt on wmrINNER.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
+                .Append("    where wmrINNER.isbn = wmrOUTER.isbn ")
+                .Append("    order by mrpt.[priority] ")
+                .Append(") ")
+
+
+
+                //.Append("SELECT {wrmr.*} ")
+                //.Append("FROM [dbo].[WebR2LibraryMarcRecords] as wrmr ")
+//                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+                .AppendFormat("and (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+
                 .ToString();
 
             _log.DebugFormat("GetDailyMarcRecordFiles Sql Query : {0}", sql);
@@ -157,7 +172,7 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
             ISession session = MvcApplication.CreateSession();
 
             IList digitalMarcRecordFiles = session.CreateSQLQuery(sql)
-                .AddEntity("wrmr", typeof(DigitalMarcRecordFile))
+                .AddEntity("wmrOUTER", typeof(DigitalMarcRecordFile))
                 .SetTimeout(300000)
                 .List()
                 ;
