@@ -25,7 +25,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .AppendFormat("left join {0}..tPublisher pub on pub2.iConsolidatedPublisherId = pub.iPublisherId ", Settings.Default.R2DatabaseName)
                 .ToString();
         }
-        private string GetResourcesThatDoNotExist()
+        private string GetWebR2LibraryMarcRecordsThatDoNotExist()
         {
             return new StringBuilder()
                 .Append("select r.iResourceId, r.vchResourceISBN, r.vchIsbn10, r.vchIsbn13, r.vchEIsbn ")
@@ -35,15 +35,15 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .AppendFormat("from {0}..tResource r ", Settings.Default.R2DatabaseName)
                 .AppendFormat("join {0}..tPublisher pub2 on r.iPublisherId = pub2.iPublisherId ", Settings.Default.R2DatabaseName)
                 .AppendFormat("left join {0}..tPublisher pub on pub2.iConsolidatedPublisherId = pub.iPublisherId ", Settings.Default.R2DatabaseName)
-                .Append("where  r.tiRecordStatus = 1 and r.vchResourceISBN not in ( ")
-                .Append("select r.vchResourceISBN ")
-                .Append("from MarcRecordFile mrf ")
-                .Append("join MarcRecordProvider mrp on mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
-                .Append("join MarcRecordProviderType mrpt on mrpt.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId ")
-                .Append("and mrpt.marcRecordProviderTypeId in (1,2) ")
-                .Append("join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId ")
-                .AppendFormat("join {0}..tResource r on mr.isbn10 = r.vchIsbn10 ", Settings.Default.R2DatabaseName)
-                .Append("where marcRecordFileTypeId = 2) ")
+                .Append("where  r.tiRecordStatus = 1 and r.vchResourceISBN not in (select isbn from WebR2LibraryMarcRecords)")
+                //.Append("select r.vchResourceISBN ")
+                //.Append("from MarcRecordFile mrf ")
+                //.Append("join MarcRecordProvider mrp on mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
+                //.Append("join MarcRecordProviderType mrpt on mrpt.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId ")
+                //.Append("and mrpt.marcRecordProviderTypeId in (1,2) ")
+                //.Append("join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId ")
+                //.AppendFormat("join {0}..tResource r on mr.isbn10 = r.vchIsbn10 ", Settings.Default.R2DatabaseName)
+                //.Append("where marcRecordFileTypeId = 2) ")
                 .ToString();
         }
 
@@ -103,7 +103,8 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append("join MarcRecordProviderType mrpt on mrpt.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId and mrpt.marcRecordProviderTypeId in (2) ")
                 .Append("join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId ")
                 .AppendFormat("join {0}..tResource r on mr.isbn10 = r.vchIsbn10 and r.tiRecordStatus = 1 ", Settings.Default.R2DatabaseName)
-                .Append("where marcRecordFileTypeId = 2 ")
+                .Append("left join ExcludedMarcRecord emr on mr.sku = emr.sku and mrpt.marcRecordProviderTypeId = emr.marcRecordProviderTypeId ")
+                .Append("where marcRecordFileTypeId = 2 and emr.excludedMarcRecordId is null ")
                 .Append("union ")
                 .Append("select r.vchResourceISBN, r.vchisbn10, r.vchisbn13, r.vcheIsbn, mrf.fileData, mrpt.marcRecordProviderTypeId ")
                 .Append("from MarcRecordFile mrf ")
@@ -111,14 +112,16 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append("join MarcRecordProviderType mrpt on mrpt.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId and mrpt.marcRecordProviderTypeId in (1) ")
                 .Append("join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId ")
                 .AppendFormat("join {0}..tResource r on mr.isbn10 = r.vchIsbn10 and r.tiRecordStatus = 1 ", Settings.Default.R2DatabaseName)
-                .Append("where marcRecordFileTypeId = 2 and r.vchResourceISBN not in ")
+                .Append("left join ExcludedMarcRecord emr on mr.sku = emr.sku and mrpt.marcRecordProviderTypeId = emr.marcRecordProviderTypeId ")
+                .Append("where marcRecordFileTypeId = 2 and emr.excludedMarcRecordId is null and r.vchResourceISBN not in ")
                 .Append("(select r.vchResourceISBN ")
                 .Append("from MarcRecordFile mrf ")
                 .Append("join MarcRecordProvider mrp on mrf.marcRecordProviderId = mrp.marcRecordProviderId ")
                 .Append("join MarcRecordProviderType mrpt on mrpt.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId and mrpt.marcRecordProviderTypeId in (2) ")
                 .Append("join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId ")
                 .AppendFormat("join {0}..tResource r on mr.isbn10 = r.vchIsbn10 and r.tiRecordStatus = 1 ", Settings.Default.R2DatabaseName)
-                .Append("where marcRecordFileTypeId = 2) ")
+                .Append("left join ExcludedMarcRecord emr on mr.sku = emr.sku and mrpt.marcRecordProviderTypeId = emr.marcRecordProviderTypeId ")
+                .Append("where marcRecordFileTypeId = 2  and emr.excludedMarcRecordId is null) ")
                 .ToString();
         }
 
@@ -221,7 +224,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             stopWatch.Start();
 
             string sql = new StringBuilder()
-                .Append(GetResourcesThatDoNotExist())
+                .Append(GetWebR2LibraryMarcRecordsThatDoNotExist())
                 .Append("; ")
                 .Append(GetAllResourcesAuthors())
                 .Append("; ")
@@ -628,7 +631,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 }
                 if (recordsNotFound.Any())
                 {
-                    totalInserted = InsertWebR2LibraryMarcRecords(recordsNotFound);
+                    totalInserted = InsertOclcR2LibraryMarcRecords(recordsNotFound);
                 }
 
             }

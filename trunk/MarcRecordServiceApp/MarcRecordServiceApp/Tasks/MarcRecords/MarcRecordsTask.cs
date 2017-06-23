@@ -222,6 +222,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 							break;
 						}
 					}
+
+                    File.Delete(mrkFilePath);
+                    File.Delete(mrcFilePath);
+                    File.Delete(xmlFilePath);
+
 				}
 				return marcFiles;
 			}
@@ -267,6 +272,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         lcConnection.Connect();
 
 						Log.Info("Zoom-Connected");
+                        
+                        //TODO: Should determine here if title matches what we have as a title. 
 
 						foreach (string query in queries)
                         {
@@ -302,6 +309,9 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 							marc21.MMaker(mrkFilePath, mrcFilePath);
 
                             mrcStrings.Add(ReadMarcFile(mrcFilePath));
+
+                            File.Delete(mrkFilePath);
+                            File.Delete(mrcFilePath);
                         }
                     }
                     break;
