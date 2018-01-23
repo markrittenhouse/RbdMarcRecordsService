@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using log4net;
 using MarcRecordServiceSite.Infrastructure;
-using MarcRecordServiceSite.Infrastructure.NHibernate.Entities;
+using MarcRecordServiceSite.Infrastructure.NHibernate.Queries;
 using MarcRecordServiceSite.Models;
 
 namespace MarcRecordServiceSite.Controllers
@@ -15,13 +13,6 @@ namespace MarcRecordServiceSite.Controllers
     public class PingController : Controller
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-        private readonly IQueryable<MarcRecordProvider> _marcRecordProviders;
-
-        public PingController(IQueryable<MarcRecordProvider> marcRecordProviders )
-        {
-            _marcRecordProviders = marcRecordProviders;
-        }
 
         //
         // GET: /Ping/
@@ -38,8 +29,9 @@ namespace MarcRecordServiceSite.Controllers
 
                 //Ping ping = _pings.Single(x => x.Id == 1);
 
-                //model.DatabaseStatus = ping.StatusCode;
-
+                
+                var test = MarcRecordQueries.IsDatabaseConnectionWorking();
+                model.DatabaseStatus = test ? "MarcRecordsDbStatusOk" : "MarcRecordsDbStatusException";
                 stopwatch.Stop();
 
                 if (stopwatch.ElapsedMilliseconds > 250)
@@ -53,7 +45,7 @@ namespace MarcRecordServiceSite.Controllers
             }
             catch (Exception ex)
             {
-                model.DatabaseStatus = "R2v2DbStatusException";
+                model.DatabaseStatus = "MarcRecordsDbStatusException";
                 Log.Error(ex.Message, ex);
             }
 

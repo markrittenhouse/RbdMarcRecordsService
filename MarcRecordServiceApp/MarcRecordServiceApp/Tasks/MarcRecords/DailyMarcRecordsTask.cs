@@ -43,23 +43,23 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
         private bool AggregateMarcRecords()
         {
-            Log.Debug(">>>>>>>>Truncating DailyMarcRecordFile");
+            Log.Info(">>>>>>>>Truncating DailyMarcRecordFile");
             int originalCount = MarcRecordsProductFactory.TruncateDailyMarcRecords();
-            Log.DebugFormat("files truncated : {0}", originalCount);
+            Log.InfoFormat("files truncated : {0}", originalCount);
 
-            Log.Debug(">>>>>>>>Adding NLM Marc Records");
+            Log.Info(">>>>>>>>Adding NLM Marc Records");
             int nlmCount = MarcRecordsProductFactory.InsertDailyNlmMarcRecords();
-            Log.DebugFormat("files added : {0}", nlmCount);
+            Log.InfoFormat("files added : {0}", nlmCount);
 
-            Log.Debug(">>>>>>>>Adding LC Marc Records");
+            Log.Info(">>>>>>>>Adding LC Marc Records");
             int lcCount = MarcRecordsProductFactory.InsertDailyLcMarcRecords();
-            Log.DebugFormat("files added : {0}", lcCount);
+            Log.InfoFormat("files added : {0}", lcCount);
 
-            Log.Debug(">>>>>>>>Adding Rittenhouse Marc Records");
+            Log.Info(">>>>>>>>Adding Rittenhouse Marc Records");
             int rittenhouseCount = MarcRecordsProductFactory.InsertDailyRittenhouseMarcRecords();
-            Log.DebugFormat("files added : {0}", rittenhouseCount);
+            Log.InfoFormat("files added : {0}", rittenhouseCount);
 
-            Log.DebugFormat("files truncated : {0}  ||  files added : {1}", originalCount, (nlmCount + lcCount + rittenhouseCount));
+            Log.InfoFormat("files truncated : {0}  ||  files added : {1}", originalCount, (nlmCount + lcCount + rittenhouseCount));
 
             MarcRecordsProductFactory.ReIndexDailyMarcRecords();
             return true;
