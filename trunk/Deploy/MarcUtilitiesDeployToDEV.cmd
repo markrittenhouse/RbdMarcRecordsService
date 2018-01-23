@@ -14,7 +14,7 @@ echo.
 echo MarcUtilities copy has been copied locally, please press any key to deploy this code to DEV
 pause
 
-set destDir=\\technoserv04\d$\Clients\Rittenhouse\MarcRecordService\App
+set destDir=\\technoserv02\d$\Clients\Rittenhouse\MarcRecordService\App
 
 xcopy "%localDir%\*" "%destDir%\" %attributes% /exclude:MarcUtilitiesDeployExcludes.txt
 
