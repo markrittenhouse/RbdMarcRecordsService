@@ -154,6 +154,7 @@ namespace MarcRecordServiceApp.Tasks
         }
 
 
+        //public string GetRbdMrkFileText(Product product, List<ParsedMarcField> marcFieldsToAdd)
         public string GetRbdMrkFileText(Product product)
         {
             try
@@ -162,55 +163,81 @@ namespace MarcRecordServiceApp.Tasks
 
                 if (publicationYearText == "")
                 {
-                    Log.DebugFormat("Id: {0}, Sku: {1}, Isbn13: {2}", product.Id, product.Sku, product.Isbn13);
+                    Log.Debug($"Id: {product.Id}, Sku: {product.Sku}, Isbn13: {product.Isbn13}");
                 }
 
                 StringBuilder mrkFileText = new StringBuilder();
                 string sitepath = Settings.Default.SiteSubDirectory;
 
-                mrkFileText.AppendFormat("=LDR  {0}nam  22{1}2a 4500", GetNext5DigitRandomNumber(),
-                                         GetNext5DigitRandomNumber()).AppendLine();
+                mrkFileText.AppendLine($"=LDR  {GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500");
 
-                Log.DebugFormat("PublicationYearText: {0}, PublicationYear: {1}, sku: {2}", product.PublicationYearText,
-                                product.PublicationYear, product.Sku);
+                Log.Debug($"PublicationYearText: {product.PublicationYearText}, PublicationYear: {product.PublicationYear}, sku: {product.Sku}");
 
 
-                string line001 = string.Format("=001  {0}", product.Sku);
-                string line005 = string.Format("=005  {0:yyyyMMddhhmmss}.0", DateTime.Now);
-
-                string line008 =
-                    string.Format("=008  {0:yyMMdd}s{1:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",
-                                  _currentDateTime, product.PublicationYear);
+                string line008 = $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
 
                 Log.DebugFormat("line008: {0}", line008);
                 Log.DebugFormat("line008.Length: {0}", line008.Length);
 
-                mrkFileText.AppendLine(line001);
-                mrkFileText.AppendLine(line005);
+                mrkFileText.AppendLine($"=001  {product.Sku}");
+                mrkFileText.AppendLine($"=005  {DateTime.Now:yyyyMMddhhmmss}.0");
                 mrkFileText.AppendLine(line008);
 
-                //The MRC file requires an additional \\. For some reason it loses when when converted
-                //string extraSlashes = (mrkOnly) ? "" : "\\";
-                const string extraSlashes = "";
-                mrkFileText.AppendFormat("=020  \\\\{1}$a{0}", product.Isbn10, extraSlashes).AppendLine()
-                    .AppendFormat("=020  \\\\{1}$a{0}", product.Isbn13, extraSlashes).AppendLine();
+                if (!string.IsNullOrWhiteSpace(product.Isbn10))
+                {
+                    mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn10}");
+                }
 
-                mrkFileText.AppendLine("=037  \\\\$bRittenhouse Book Distributors, Inc")
-                    .AppendFormat("=100  1\\$a{0}", StripOffCarriageReturnAndLineFeed(product.Authors)).AppendLine()
-                    .AppendFormat("=245  10$a{0}", StripOffCarriageReturnAndLineFeed(product.Title)).AppendLine();
+                if (!string.IsNullOrWhiteSpace(product.Isbn13))
+                {
+                    mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn13}");
+                }
 
-                mrkFileText.AppendFormat("=260  \\\\$b{0},$c{1}", product.PublisherName, publicationYearText).AppendLine
-                    ();
-                mrkFileText.AppendFormat(
-                    "=533  \\\\$a{0}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{1}", product.Format,
-                    publicationYearText)
-                    .AppendLine();
+                //var parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.OclcNumber).ToList();
+                //if (parsedMarcFields != null && parsedMarcFields.Any())
+                //{
+                //    foreach (var parsedMarcField in parsedMarcFields)
+                //    {
+                //        mrkFileText.AppendLine(parsedMarcField.Value);
+                //    }
+                //}
 
-                mrkFileText.AppendFormat("=650  \\0$a{0}.", product.CategoryName).AppendLine()
-                    .AppendFormat("=700  1\\$a{0}", StripOffCarriageReturnAndLineFeed(product.Authors)).AppendLine()
-                    .AppendFormat("=856  4\\$zConnect to this resource online$u{0}Products/Book.aspx?sku={1}", sitepath,
-                                  product.Isbn10).AppendLine()
-                    .AppendLine();
+                mrkFileText.AppendLine("=037  \\\\$bRittenhouse Book Distributors, Inc");
+
+                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.NlmNumber).ToList();
+                //if (parsedMarcFields != null && parsedMarcFields.Any())
+                //{
+                //    foreach (var parsedMarcField in parsedMarcFields)
+                //    {
+                //        mrkFileText.AppendLine(parsedMarcField.Value);
+                //    }
+                //}
+
+                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.LcNumber).ToList();
+                //if (parsedMarcFields != null && parsedMarcFields.Any())
+                //{
+                //    foreach (var parsedMarcField in parsedMarcFields)
+                //    {
+                //        mrkFileText.AppendLine(parsedMarcField.Value);
+                //    }
+                //}
+                mrkFileText.AppendLine($"=100  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
+                mrkFileText.AppendLine($"=245  10$a{StripOffCarriageReturnAndLineFeed(product.Title)}");
+                mrkFileText.AppendLine($"=260  \\\\$b{product.PublisherName},$c{publicationYearText}");
+                mrkFileText.AppendLine($"=533  \\\\$a{product.Format}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{publicationYearText}");
+                mrkFileText.AppendLine($"=650  \\4$a{product.CategoryName}.");
+
+
+                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.NlmSubject).ToList();
+                //if (parsedMarcFields != null && parsedMarcFields.Any())
+                //{
+                //    foreach (var parsedMarcField in parsedMarcFields)
+                //    {
+                //        mrkFileText.AppendLine(parsedMarcField.Value);
+                //    }
+                //}
+                mrkFileText.AppendLine($"=700  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
+                mrkFileText.AppendLine($"=856  4\\$zConnect to this resource online$u{sitepath}Products/Book.aspx?sku={product.Isbn10}").AppendLine();
 
                 return mrkFileText.ToString();
             }
