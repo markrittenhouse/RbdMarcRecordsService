@@ -16,7 +16,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         
         private readonly StringBuilder _results = new StringBuilder();
 
-        private int BatchSize { get; set; }
+        private int BatchSize { get; }
 
         private int _recordsProcessed;
 
@@ -240,12 +240,22 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             {
                 try
                 {
+                    //MarcFieldParsingFactory marcFieldParsingFactory = new MarcFieldParsingFactory();
+                    //var skuList = marcFiles.Select(x => x.Product.Sku).ToList();
+                    //List<ParsedMarcField> allParsedMarcFields = marcFieldParsingFactory.GetParsedMarcFields(skuList);
+
                     foreach (IMarcFile marcFile in marcFiles)
                     {
+                        //List<ParsedMarcField> parsedMarcFields = allParsedMarcFields?.Where(x => x.Sku == marcFile.Product.Sku).ToList();
+                        //if (parsedMarcFields != null && parsedMarcFields.Any())
+                        //{
+                        //    var test = 1;
+                        //}
                         _recordsProcessed++;
                         Log.InfoFormat("Processing {0} of {1}", _recordsProcessed, _recordCountBeingProcessed);
 
                         Product product = marcFile.Product;
+                        //string mrkFileText = GetRbdMrkFileText(product, parsedMarcFields);
                         string mrkFileText = GetRbdMrkFileText(product);
                         string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, product.Isbn13);
                         Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
@@ -273,38 +283,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             }
             Log.InfoFormat("Created {0} MARC files", mrcStrings.Count);
             return mrcStrings;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="workingDirectory"></param>
-        private void ClearWorkingDirectory(string workingDirectory)
-        {
-            string[] filesToDelete = Directory.GetFiles(workingDirectory);
-            foreach (var file in filesToDelete)
-            {
-                try
-                {
-                    File.Delete(file);
-                }
-                catch (Exception ex)
-                {
-                    Log.InfoFormat("Error Deleteing file: {0} || Exception: {1}", file, ex.Message);
-                }
-            }
-
-            //foreach (string file in filesToDelete.Where(file => file.EndsWith(".mrk") || file.EndsWith(".mrc") || file.EndsWith(".xml")))
-            //{
-            //    try
-            //    {
-            //        File.Delete(file);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Log.InfoFormat("Error Deleteing file: {0} || Exception: {1}", file, ex.Message);
-            //    }
-            //}
         }
 
         /// <summary>
@@ -349,13 +327,13 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         foreach (XmlNode xmlNode in node.ChildNodes)
                         {
                             string nodeInnterText = xmlNode.InnerText.Replace(".", "");
-                            int space = nodeInnterText.IndexOf(" ");
-                            int seperator = nodeInnterText.IndexOf("(");
+                            int space = nodeInnterText.IndexOf(" ", StringComparison.Ordinal);
+                            int seperator = nodeInnterText.IndexOf("(", StringComparison.Ordinal);
                             if (space > 0 || seperator > 0)
                             {
                                 isbns.Add(space > 0
                                           ? nodeInnterText.Substring(0, space)
-                                          : nodeInnterText.Substring(0, nodeInnterText.IndexOf("(")));
+                                          : nodeInnterText.Substring(0, nodeInnterText.IndexOf("(", StringComparison.Ordinal)));
                             }
                             else
                             {
@@ -368,10 +346,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         string nodeInnterText = node.InnerText.Replace(".", "");
                         if (nodeInnterText.Length > 13)
                         {
-                            int space = nodeInnterText.IndexOf(" ");
+                            int space = nodeInnterText.IndexOf(" ", StringComparison.Ordinal);
                             isbns.Add(space > 0
                                           ? nodeInnterText.Substring(0, space)
-                                          : nodeInnterText.Substring(0, node.InnerText.IndexOf("(")));
+                                          : nodeInnterText.Substring(0, node.InnerText.IndexOf("(", StringComparison.Ordinal)));
                         }
                         else
                         {
@@ -388,45 +366,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 throw;
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="file"></param>
-        /// <returns></returns>
-        protected virtual bool IsFileLocked(FileInfo file)
-        {
-            FileStream stream = null;
-            try
-            {
-                stream = file.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.None);
-            }
-            catch (IOException)
-            {
-                //the file is unavailable because it is:             
-                //still being written to             
-                //or being processed by another thread             
-                //or does not exist (has already been processed)             
-                return true;
-            }
-            finally
-            {
-                if (stream != null)
-                    stream.Close();
-            }
-            //file is not locked         
-            return false;
-        }
     }
 }

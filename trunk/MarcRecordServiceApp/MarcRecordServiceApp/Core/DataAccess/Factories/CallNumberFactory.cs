@@ -7,6 +7,7 @@ using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
 using MarcRecordServiceApp.Core.DataAccess.SqlCommandParameters;
+using Rittenhouse.RBD.Core.DataAccess.Entities;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Factories
 {
@@ -256,5 +257,156 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             return ExecuteBasicCountQuery(sql, parameters, false, Settings.Default.RittenhouseMarcDb);
         }
         #endregion
+
+
+
+
+
+        private readonly string InsertNlmFields = @"
+select top {0} mr.marcRecordId, mrf.fileData, par.dateCreated, mrp.dateCreated, mrp.dateUpdated
+from MarcRecordFile mrf
+join MarcRecordProvider mrp on mrf.marcRecordProviderId = mrp.marcRecordProviderId
+join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId
+join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId
+left join MarcRecordDataField par on mr.marcRecordId = par.marcRecordId
+where mrf.marcRecordFileTypeId = 2
+and mrpt.marcRecordProviderTypeId in (1,2)
+--and mrpt.marcRecordProviderTypeId = 1 -- LC
+--and mrpt.marcRecordProviderTypeId = 2	-- NLM
+and par.marcRecordDataFieldId is null
+order by 1
+";
+
+        public List<MarcRecordData> GetNlmAndLcMarcRecords(int batchSize)
+        {
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+            SqlDataReader reader = null;
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+
+            List<MarcRecordData> nlmMarcFields = new List<MarcRecordData>();
+            try
+            {
+                cnn = GetRittenhouseConnection();
+
+                command = cnn.CreateCommand();
+                command.CommandText = string.Format(InsertNlmFields, batchSize);
+                command.CommandTimeout = 150;
+
+                //command.Parameters.AddWithValue("BatchSize", batchSize);
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    MarcRecordData marcRecordData = new MarcRecordData();
+                    marcRecordData.Populate(reader);
+                    nlmMarcFields.Add(marcRecordData);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.InfoFormat("sql: {0}", InsertNlmFields);
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command, reader);
+            }
+            return nlmMarcFields;
+        }
+    }
+
+
+
+
+    public class MarcRecordData : FactoryBase, IDataEntity
+    {
+        public int MarcRecordId { get; set; }
+        public string FileData { get; set; }
+
+        //public List<MarcRecordField> MarcRecordFields { get; set; }
+
+        public void Populate(SqlDataReader reader)
+        {
+            try
+            {
+                MarcRecordId = GetInt32Value(reader, "marcRecordId", -1);
+                FileData = GetStringValue(reader, "fileData");
+            }
+            catch (Exception ex)
+            {
+                Log.ErrorFormat(ex.Message, ex);
+                throw;
+            }
+        }
+    }
+
+    //public class MarcRecordField
+    //{
+    //    public string Identifier { get; set; }
+    //    public string Value { get; set; }
+
+    //    public string EntireField { get; set; }
+    //}
+
+
+    public class MarcRecordDataField : FactoryBase, IDataEntity
+    {
+        public MarcRecordDataField()
+        {
+            MarcRecordDataSubFields = new List<MarcRecordDataSubField>();
+        }
+        public int Id { get; set; }
+        public int MarcRecordId { get; set; }
+        public string FieldNumber { get; set; }
+        public string FieldIndicator { get; set; }
+        public string MarcValue { get; set; }
+        public List<MarcRecordDataSubField> MarcRecordDataSubFields { get; set; }
+        public void Populate(SqlDataReader reader)
+        {
+            try
+            {
+                Id = GetInt32Value(reader, "marcRecordDataFieldId", -1);
+                MarcRecordId = GetInt32Value(reader, "marcRecordId", -1);
+                FieldNumber = GetStringValue(reader, "fieldNumber");
+                FieldIndicator = GetStringValue(reader, "fieldIndicator");
+                MarcValue = GetStringValue(reader, "marcValue");
+            }
+            catch (Exception ex)
+            {
+                Log.ErrorFormat(ex.Message, ex);
+                throw;
+            }
+        }
+    }
+
+    public class MarcRecordDataSubField : FactoryBase, IDataEntity
+    {
+        public int Id { get; set; }
+        public int MarcRecordDataFieldId{ get; set; }
+        public string SubFieldIndicator { get; set; }
+        public string SubFieldValue { get; set; }
+
+
+        public void Populate(SqlDataReader reader)
+        {
+            try
+            {
+                Id = GetInt32Value(reader, "marcRecordDataSubFieldsId", -1);
+                MarcRecordDataFieldId = GetInt32Value(reader, "marcRecordDataFieldId", -1);
+                SubFieldIndicator = GetStringValue(reader, "subFieldIndicator");
+                SubFieldValue = GetStringValue(reader, "subFieldValue");
+            }
+            catch (Exception ex)
+            {
+                Log.ErrorFormat(ex.Message, ex);
+                throw;
+            }
+        }
     }
 }

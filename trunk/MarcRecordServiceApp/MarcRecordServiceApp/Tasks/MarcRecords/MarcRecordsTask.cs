@@ -166,76 +166,114 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             return productProcessedCount;
         }
 
-		/// <summary>
-		/// 
-		/// </summary>
-		/// <param name="marcFiles"></param>
-		/// <param name="workingDirectory"></param>
-		private List<IMarcFile> SetMarcDataForProducts(List<IMarcFile> marcFiles, string workingDirectory)
-		{
-			List<string> mrcStrings = new List<string>(GetMarcRecords(marcFiles, ProviderType, workingDirectory));
+        private int ProcessNextBatchOfNewProducts2(int batchSize, string workingDirectory)
+        {
 
-			try
-			{
-				foreach (string mrcString in mrcStrings)
-				{
-					string batchFileNameBase = string.Format("batch_{0:yyyyMMdd_HHmmssfff}", DateTime.Now);
+            int productProcessedCount = 0;
+            int processedAttempts = 0;
+            //Loop three times if a failure
+            while (processedAttempts < 3)
+            {
+                try
+                {
+                    // get next batch to process
+                    List<IMarcFile> marcFiles = MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize, ProviderType);
 
-					string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, batchFileNameBase);
-					Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
+                    Log.InfoFormat("batch contains {0} products", marcFiles.Count);
+                    if (marcFiles.Count == 0)
+                    {
+                        return 0;
+                    }
 
-					string mrcFilePath = string.Format(@"{0}{1}.mrc", workingDirectory, batchFileNameBase);
-					Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
+                    marcFiles = SetMarcDataForProducts(marcFiles, workingDirectory);
 
-					string xmlFilePath = string.Format(@"{0}{1}.xml", workingDirectory, batchFileNameBase);
-					Log.DebugFormat("xmlFilePath: {0}", xmlFilePath);
+                    foreach (int rowsSaved in marcFiles.Select(MarcRecordsProductFactory.InsertUpdateMarcRecordFile))
+                    {
+                        Log.DebugFormat("rowsSaved: {0}", rowsSaved);
+                        productProcessedCount++;
+                    }
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Log.Error(ex.Message, ex);
+                    processedAttempts++;
+                }
+            }
 
-					File.WriteAllText(mrcFilePath, mrcString);
+            return productProcessedCount;
+        }
 
-					MARC21 marc21 = new MARC21();
-					marc21.MarcFile(mrcFilePath, mrkFilePath);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="marcFiles"></param>
+        /// <param name="workingDirectory"></param>
+        private List<IMarcFile> SetMarcDataForProducts(List<IMarcFile> marcFiles, string workingDirectory)
+        {
+            List<string> mrcStrings = new List<string>(GetMarcRecords(marcFiles, ProviderType, workingDirectory));
 
-					if (new FileInfo(mrkFilePath).Length == 0)
-					{
-						//Indicates an issue with the record or the process
-						continue;
-					}
-					string mrkFileText = ReadMarcFile(mrkFilePath);
-					marc21.MARC2MARC21XML(mrcFilePath, xmlFilePath, false);
+            try
+            {
+                foreach (string mrcString in mrcStrings)
+                {
+                    string batchFileNameBase = string.Format("batch_{0:yyyyMMdd_HHmmssfff}", DateTime.Now);
 
-					if (new FileInfo(xmlFilePath).Length == 0)
-					{
-						//Indicates an issue with the record or the process
-						continue;
-					}
-					string xmlFileText = ReadMarcFile(xmlFilePath);
+                    string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, batchFileNameBase);
+                    Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
 
-					IEnumerable<string> isbns = ExtractIsbnsFromXml(xmlFileText);
+                    string mrcFilePath = string.Format(@"{0}{1}.mrc", workingDirectory, batchFileNameBase);
+                    Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
 
-					foreach (string isbn in isbns)
-					{
-						foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
-						{
-							marcFile.MrcFileText = mrcString;
-							marcFile.XmlFileText = xmlFileText;
-							marcFile.MrkFileText = mrkFileText;
-							break;
-						}
-					}
+                    string xmlFilePath = string.Format(@"{0}{1}.xml", workingDirectory, batchFileNameBase);
+                    Log.DebugFormat("xmlFilePath: {0}", xmlFilePath);
+
+                    File.WriteAllText(mrcFilePath, mrcString);
+
+                    MARC21 marc21 = new MARC21();
+                    marc21.MarcFile(mrcFilePath, mrkFilePath);
+
+                    if (new FileInfo(mrkFilePath).Length == 0)
+                    {
+                        //Indicates an issue with the record or the process
+                        continue;
+                    }
+                    string mrkFileText = ReadMarcFile(mrkFilePath);
+                    marc21.MARC2MARC21XML(mrcFilePath, xmlFilePath, false);
+
+                    if (new FileInfo(xmlFilePath).Length == 0)
+                    {
+                        //Indicates an issue with the record or the process
+                        continue;
+                    }
+                    string xmlFileText = ReadMarcFile(xmlFilePath);
+
+                    IEnumerable<string> isbns = ExtractIsbnsFromXml(xmlFileText);
+
+                    foreach (string isbn in isbns)
+                    {
+                        foreach (IMarcFile marcFile in marcFiles.Where(marcFile => marcFile.Product.Isbn10 == isbn || marcFile.Product.Isbn13 == isbn))
+                        {
+                            marcFile.MrcFileText = mrcString;
+                            marcFile.XmlFileText = xmlFileText;
+                            marcFile.MrkFileText = mrkFileText;
+                            break;
+                        }
+                    }
 
                     File.Delete(mrkFilePath);
                     File.Delete(mrcFilePath);
                     File.Delete(xmlFilePath);
 
-				}
-				return marcFiles;
-			}
-			catch (Exception ex)
-			{
-				Log.Error(ex.Message, ex);
-				throw;
-			}
-		}
+                }
+                return marcFiles;
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+        }
 
         /// <summary>
         /// 
@@ -254,7 +292,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             {
                 try
                 {
-					Log.Info("Pre-Zoom Connection");
+                    Log.Info("Pre-Zoom Connection");
                     if (marcRecordType != MarcRecordProvider.Rbd)
                     {
                         MarcRecordProviderValue serverValue = new MarcRecordProviderValue(marcRecordType);
@@ -271,11 +309,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                         processAttempts++;
                         lcConnection.Connect();
 
-						Log.Info("Zoom-Connected");
+                        Log.Info("Zoom-Connected");
                         
                         //TODO: Should determine here if title matches what we have as a title. 
 
-						foreach (string query in queries)
+                        foreach (string query in queries)
                         {
                             PrefixQuery prefixQuery = new PrefixQuery(query);
                             ResultSet resultSet = (ResultSet)lcConnection.Search(prefixQuery);
@@ -283,7 +321,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                             for (uint i = 0; i < ((IResultSet)resultSet).Size; i++)
                             {
                                 string temp = Encoding.UTF8.GetString(((IResultSet)resultSet)[i].Content);
-                                if (temp.Length <= 0) continue;                                
+                                if (temp.Length <= 0)
+                                {
+                                    continue;
+                                }
                                 mrcStrings.Add(temp);
                                 break;
                             }
@@ -293,9 +334,16 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     }
                     else
                     {
+                        //MarcFieldParsingFactory marcFieldParsingFactory = new MarcFieldParsingFactory();
+                        //var skuList = marcFiles.Select(x => x.Product.Sku).ToList();
+                        //List<ParsedMarcField> allParsedMarcFields = marcFieldParsingFactory.GetParsedMarcFields(skuList);
+
                         foreach (IMarcFile marcFile in marcFiles)
                         {
+                            //List<ParsedMarcField> parsedMarcFields = allParsedMarcFields?.Where(x => x.Sku == marcFile.Product.Sku).ToList();
+
                             Product product = marcFile.Product;
+                            //string mrkFileText = GetRbdMrkFileText(product, parsedMarcFields);
                             string mrkFileText = GetRbdMrkFileText(product);
                             string mrkFilePath = string.Format(@"{0}{1}.mrk", workingDirectory, product.Isbn13);
                             Log.DebugFormat("mrkFilePath: {0}", mrkFilePath);
@@ -304,9 +352,9 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                             Log.DebugFormat("mrcFilePath: {0}", mrcFilePath);
 
                             File.WriteAllText(mrkFilePath, mrkFileText);
-							MARC21 marc21 = new MARC21();
+                            MARC21 marc21 = new MARC21();
 
-							marc21.MMaker(mrkFilePath, mrcFilePath);
+                            marc21.MMaker(mrkFilePath, mrcFilePath);
 
                             mrcStrings.Add(ReadMarcFile(mrcFilePath));
 
@@ -322,11 +370,11 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     processAttempts++;
                 }
             }
-			Log.Info("External Search Complete");
+            Log.Info("External Search Complete");
             return mrcStrings;
         }
 
-		/// <summary>
+        /// <summary>
         /// 
         /// </summary>
         /// <param name="marcFiles"></param>

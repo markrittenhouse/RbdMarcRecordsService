@@ -67,6 +67,8 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("");
                     Console.WriteLine("20 = CreateR2libraryMarcRecords");
                     Console.WriteLine("21 = CreateOclcR2libraryMarcRecords");
+
+                    Console.WriteLine("99 = ParseMarcFieldsTask");
                     Console.WriteLine("");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
@@ -136,6 +138,12 @@ namespace MarcRecordServiceApp
                         task = new OclcR2LibraryMarcRecordsTask(new R2ProductFactory());
                         break;
 
+                    case "-ParseMarcFieldsTask":
+                    case "99":
+                        task = new ParseMarcFieldsTask();
+                        break;
+
+                    
                     default:
                         Console.WriteLine("INVALID AURGUMENT");
                         break;

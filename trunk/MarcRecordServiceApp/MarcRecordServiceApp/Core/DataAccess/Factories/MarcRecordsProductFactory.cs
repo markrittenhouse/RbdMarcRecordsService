@@ -22,6 +22,13 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             .Append(", cat.categoryId, cat.categoryName ")
 			.ToString();
 
+        public static readonly string ProductSelectFields2 = new StringBuilder()
+            .Append("p.productId, p.sku, p.isbn10, p.isbn13, p.title, p.subTitle, p.authors, p.firstAuthorLastName, p.productStatusId ")
+            .Append(", p.copyright, p.publicationDate, p.format ")
+            .Append(", pub.publisherId, pub.publisherName ")
+            .Append(", cat.categoryId, cat.categoryName ")
+            .ToString();
+
         public static readonly string SelectMarcRecordandProviderFields = new StringBuilder()
             .Append("  , mr.MarcRecordId, mr.Isbn10, mr.Isbn13, mr.sku, mrp.MarcRecordProviderId, mrp.MarcRecordId,  ")
             .Append(" mrp.MarcRecordProviderTypeId, mrp.EncodingLevel, mrp.DateCreated, mrp.DateUpdated  ")
