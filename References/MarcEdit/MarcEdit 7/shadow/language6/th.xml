@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>แยกระเบียน</mnuExtract>
+<cmenuClipboard>คัดลอกลงคลิปบอร์ด</cmenuClipboard>
+<cmenuSubfields>จำนวน Subfields</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>วิธีใช้</cmenuHelp>
+<cmd_OK>ปิด</cmd_OK>
+<cmd_Report>สร้างรายงาน</cmd_Report>
+<lb_ReportStyle>รูปแบบรายงาน:</lb_ReportStyle>
+<opt_tab>แท็บคั่นรายงาน</opt_tab>
+<opt_xml>รายงาน XML</opt_xml>
+<opt_html>รายงาน HTML</opt_html>
+<this>ฟิลด์จำนวน</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>ทิศทาง:</groupBox3>
+<rd_down>ลง</rd_down>
+<rd_up>ค่า</rd_up>
+<btn_findall>ค้นหาทั้งหมด</btn_findall>
+<groupBox1>ค้นหาตัวเลือก:</groupBox1>
+<ck_f_whole_word>ค้นหาทั้งคำเท่านั้น</ck_f_whole_word>
+<ck_find_regex>ใช้นิพจน์ทั่วไป</ck_find_regex>
+<ck_f_match_case>ตรงตัวพิมพ์</ck_f_match_case>
+<cmdFClose>ปิด</cmdFClose>
+<cmdFFind>ค้นหา</cmdFFind>
+<lb_FindWhat>สิ่งที่ค้นหา:</lb_FindWhat>
+<cmdNav_Find>ค้นหา</cmdNav_Find>
+<cmdReplaceNav>แทน</cmdReplaceNav>
+<ckReplaceConditional>ทำการค้นหา/แทนหาก...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>ถ้า:</label1>
+<cmd_R_Close>ปิด</cmd_R_Close>
+<cmd_R_All>แทนทั้งหมด</cmd_R_All>
+<cmd_R_Replace>แทน</cmd_R_Replace>
+<groupBox2>ค้นหาตัวเลือก:</groupBox2>
+<ck_Replace_ExactWordMatch>จับคู่คำที่แน่นอน</ck_Replace_ExactWordMatch>
+<ckMultiLine>การประเมินต่อ</ckMultiLine>
+<ckFile>ใช้เกณฑ์ภายนอกค้นหา/แทน</ckFile>
+<ck_R_RegExp>ใช้นิพจน์ทั่วไป</ck_R_RegExp>
+<ck_R_Case>ตรงตัวพิมพ์</ck_R_Case>
+<lb_ReplaceWith>แทน:</lb_ReplaceWith>
+<lb_R_FindWhat>ค้นหา:</lb_R_FindWhat>
+<this>ค้นหา/แทน:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>สถานะ:
+
+</lb_bProccess_status>
+<ck_bTask>โหลดงาน</ck_bTask>
+<ckBatchProcessSubfolders>รวมโฟลเดอร์ย่อย</ckBatchProcessSubfolders>
+<lb_Operation>ฟังก์ชัน:</lb_Operation>
+<cmdBClose>ปิด</cmdBClose>
+<cmdBProcess>กระบวนการ</cmdBProcess>
+<lb_Extensions>ชนิดแฟ้ม:</lb_Extensions>
+<lb_BSource>แหล่งไดเรกทอรี:</lb_BSource>
+<lbBTitle>ชุดระเบียน MARC ของกระบวนการ</lbBTitle>
+<groupBox1>ตัวเลือก</groupBox1>
+<this>ชุดระเบียนกระบวนการ</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>กระบวนการชุดงาน</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>สุดท้ายการเข้ารหัส:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>รหัสต้นฉบับ:</lb_encoding>
+<lb_UTF8_Header>การแปลงอักขระ</lb_UTF8_Header>
+<cmdCancel>ปิด</cmdCancel>
+<cmdOK>กระบวนการ</cmdOK>
+<lb_UTF8_Dest>แฟ้มปลายทาง:</lb_UTF8_Dest>
+<lb_UTF8_Source>แฟ้มต้นฉบับ:</lb_UTF8_Source>
+<groupBox1>การตั้งค่าการเข้ารหัส</groupBox1>
+<this>แปลง Characterset</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>เครื่องมือข้อมูลของคลัสเตอร์</label1>
+<label2>คลัสเตอร์เครื่องมือข้อมูลให้ชุดของตัวเลือกระบบคลัสเตอร์ง่ายสำหรับล้างข้อมูลชุด nced enha  สำหรับขั้นสูงฟังก์ชันคลัสเตอร์ โปรดพิจารณาใช้ OpenRefine</label2>
+<groupBox1>ตัวเลือก</groupBox1>
+<rdCustom>ดัชนีฟิลด์แบบกำหนดเอง</rdCustom>
+<rdControlData>ดัชนีข้อมูลควบคุม (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>จัดทำดัชนีข้อมูลทั้งหมด</rdAll>
+<cmdImport>นำเข้าข้อมูล</cmdImport>
+<label3>แฟ้มต้นฉบับ:</label3>
+<label9>การจัดเรียงข้อมูล:</label9>
+<label8>แสดงคลัสเตอร์:</label8>
+<label7>คลัสเตอร์บน Subfields ต่อไปนี้:</label7>
+<cmbclusteringalgorithm>แหล่ง</cmbclusteringalgorithm>
+<label6>เลือกอัลกอริทึมคลัสเตอร์:</label6>
+<cmbClusterField>ชื่อ (1xx, 7xx)</cmbClusterField>
+<label4>เลือกข้อมูลที่คุณต้องการคลัสเตอร์:</label4>
+<cmdGenerateCluster>สร้างคลัสเตอร์</cmdGenerateCluster>
+<cmbAlg>แหล่ง</cmbAlg>
+<lnkAddCriteria>เพิ่มปรับปรุง</lnkAddCriteria>
+<lnkClose>ปิด</lnkClose>
+<lnkEditCluster>กระบวนการเปลี่ยนแปลงทั้งหมด</lnkEditCluster>
+<label5>ข้อมูลแบบกลุ่ม:</label5>
+<this>คลัสเตอร์เครื่องมือ</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>งานดีบักเกอร์</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>คั่นตามบริบท</label8>
+<lb_Tab_Header>ส่งแท็บคั่นระเบียน</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>ในตัวคั่นเขตข้อมูล</label18>
+<lbdelimiter>เลือกตัวคั่นเขตข้อมูล</lbdelimiter>
+<cmdTClose2>ปิด</cmdTClose2>
+<cmdTNext>ถัดไปอ่าน</cmdTNext>
+<label1>ขั้นตอนที่ 1: ตั้งค่าเส้นทางแฟ้ม</label1>
+<ck_normalize>ปกติข้อมูลของเขตข้อมูล</ck_normalize>
+<cmd_tab2_back>ย้อนกลับ</cmd_tab2_back>
+<lnkSettings>การตั้งค่า</lnkSettings>
+<lnkDeleteField>ลบฟิลด์</lnkDeleteField>
+<lnkAddField>เพิ่มเขตข้อมูล</lnkAddField>
+<label14>ย่อย:</label14>
+<label11>เขตข้อมูล:</label11>
+<cmdTClose>ปิด</cmdTClose>
+<cmdTExport>การส่งออก</cmdTExport>
+<label2>ขั้นตอนที่ 2: กำหนด เขต/Subfields เพื่อส่งออก</label2>
+<label3>ส่งแท็บคั่นระเบียน</label3>
+<mnuLoad>โหลดการตั้งค่า</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>บันทึกการตั้งค่า</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>ล้างการตั้งค่า</menuItem3>
+<this>ส่งแท็บคั่นระเบียน</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>ขนาด:</label4>
+<lb_Example>ตัวอย่างข้อความ</lb_Example>
+<lb_lang_font>เลือกแบบอักษร:</lb_lang_font>
+<cmdOK>ตกลง, ได้</cmdOK>
+<cmdClose>ปิด</cmdClose>
+<this>เลือกแบบอักษร</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>งานที่ต้องการเรียกใช้ในการนำเข้า</groupBox1>
+<lnkSelectPre>เลือกงาน</lnkSelectPre>
+<cname>ชื่อ</cname>
+<cPath>เส้นทางงาน</cPath>
+<groupBox2>งานที่ต้องการเรียกใช้ในการส่งออก</groupBox2>
+<linkLabel1>เลือกงาน</linkLabel1>
+<columnHeader1>ชื่อ</columnHeader1>
+<columnHeader2>เส้นทางงาน</columnHeader2>
+<cmdSave>บันทึก</cmdSave>
+<cmdClose>ปิด</cmdClose>
+<deleteItemToolStripMenuItem>ลบรายการ</deleteItemToolStripMenuItem>
+<this>การตั้งค่ากระบวนการ ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>รวมโฟลเดอร์ย่อย</ckJoinSubfolders>
+<cmdEditFile>แก้ไขแฟ้ม</cmdEditFile>
+<lnkJoinedFiles>แสดงแฟ้มร่วมกับผู้อื่น</lnkJoinedFiles>
+<label19>ชนิดแฟ้ม:</label19>
+<ck_JoinIndividual>เข้าร่วมแต่ละแฟ้ม</ck_JoinIndividual>
+<cmdJoinCancel>ปิด</cmdJoinCancel>
+<cmdJoinProcess>กระบวนการ</cmdJoinProcess>
+<lb_Join_Files>แฟ้มการรวม:</lb_Join_Files>
+<lb_Join_Source>บันทึกแฟ้ม:</lb_Join_Source>
+<lb_Join_Header>โปรแกรมอรรถประโยชน์ MARCJoin</lb_Join_Header>
+<lbJoinStatus>สถานะ:</lbJoinStatus>
+<groupBox1>ตัวเลือก</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>ระเบียนสำหรับแต่ละแฟ้ม:</lb_Split_Records>
+<cmdSplitClose>ปิด</cmdSplitClose>
+<cmdSplitProcess>กระบวนการ</cmdSplitProcess>
+<lb_Split_Folder>โฟลเดอร์ปลายทาง:</lb_Split_Folder>
+<lb_Split_Source>แฟ้มต้นฉบับ:</lb_Split_Source>
+<lb_Split_Header>โปรแกรมอรรถประโยชน์ MARCSplit</lb_Split_Header>
+<groupBox1>ตัวเลือก</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>ชื่อชุดรูปแบบ:</label1>
+<label2>คำอธิบาย:</label2>
+<label3>ค่าส่วนกลาง</label3>
+<label4>สีแบบอักษร</label4>
+<label5>สีพื้นหลัง</label5>
+<label6>สีพื้นหลัง</label6>
+<label7>สีแบบอักษร</label7>
+<label8>MarcEditor ค่า</label8>
+<cmdSave>บันทึก</cmdSave>
+<cmdClose>ปิด</cmdClose>
+<cmdPreview>ดูตัวอย่าง</cmdPreview>
+<richTextBox1>ข้อความตัวอย่าง</richTextBox1>
+<label9>แสดงผล MarcEditor:</label9>
+<cmdOpen>เปิด</cmdOpen>
+<label10>พื้นหลัง Groupbox</label10>
+<groupBox1>Groupbox ตัวอย่าง</groupBox1>
+<this>โปรแกรมสร้างธีม MarcEdit</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>ตัวช่วยสร้างการแก้ไขปัญหา MarcEdit ถูกออกแบบมาเพื่อช่วยผู้ใช้ค้นหาความช่วยเหลือที่ </label1>
+<gpStart>ตัวเลือก</gpStart>
+<rdErrorMessage>มีข้อผิดพลาด</rdErrorMessage>
+<rdErrorNumber>มีหมายเลขข้อผิดพลาด</rdErrorNumber>
+<lbMessage>{ข้อความ}</lbMessage>
+<cmdPage1>ถัดไป</cmdPage1>
+<gpResults>ผลลัพธ์</gpResults>
+<cmdClose>ปิด</cmdClose>
+<lnkCreateDebugPackage>สร้างการตรวจแก้จุดบกพร่องแพคเกจการส่งสำหรับการแก้จุดบกพร่องได้อย่างไร</lnkCreateDebugPackage>
+<label2>ตัวช่วยสร้างการแก้ไขปัญหาไม่สามารถค้นหาบทความในฐานความรู้ </label2>
+<this>ตัวช่วยสร้างการแก้ไขปัญหา MarcEdit</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>XML อื่น</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>มาร์ค</rdMARC>
+<label17>เลือกรูปแบบสุดท้าย</label17>
+<label16>ขั้นตอนที่ 3:</label16>
+<label15>บันทึกแฟ้ม:</label15>
+<label13>ขั้นตอนที่ 2:</label13>
+<label12>ชื่อการแปลง:</label12>
+<lnkNextPg1>ดำเนินการขั้นตอนถัดไป</lnkNextPg1>
+<label4>เลือกแฟ้ม:</label4>
+<label3>ขั้นตอนที่ 1:</label3>
+<label2>ทรัพยากร GetString ("label2 ข้อความ")</label2>
+<label1>สร้างโปรไฟล์ XML/JSON</label1>
+<lbTop>องค์ประกอบของเอกสาร:</lbTop>
+<ckTopLevel>ใช้องค์ประกอบเอกสาร</ckTopLevel>
+<lnkNextPg2>ดำเนินการขั้นตอนถัดไป</lnkNextPg2>
+<label7>เลือกองค์ประกอบบันทึก</label7>
+<label6>ขั้นตอนที่ 3:</label6>
+<label5>สร้างโปรไฟล์ XML/JSON</label5>
+<label14>กำหนดการแม็ป</label14>
+<lnkNextP3>ดำเนินการขั้นตอนถัดไป</lnkNextP3>
+<groupBox2>อาร์กิวเมนต์</groupBox2>
+<ck_filing_characters>คำนวณข้อมูล nonfiling ทั่วไป</ck_filing_characters>
+<ck_sort>เรียงลำดับเขตข้อมูล</ck_sort>
+<button2>แม่โหลด</button2>
+<toolStripMenuItem2>แก้ไขรายการ</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>ลบรายการ</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>เข้าร่วมรายการ</joinItemsToolStripMenuItem>
+<groupBox1>การตั้งค่า</groupBox1>
+<ckTrim>ตัดเครื่องหมายวรรคตอนที่มีอยู่</ckTrim>
+<ck_Repeatable>ฟิลด์ย่อยซ้ำ</ck_Repeatable>
+<P3_ck_constant>ข้อมูลอย่างต่อเนื่อง</P3_ck_constant>
+<P3_cmd_Apply>เพิ่มอาร์กิวเมนต์</P3_cmd_Apply>
+<P3_lb_punct>ระยะ เครื่องหมายวรรคตอน:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Ind.:</P3_lb_indicators>
+<P3_mapto>แผนที่เพื่อ:</P3_mapto>
+<P3_lb_select>เลือก:</P3_lb_select>
+<label9>ขั้นตอนที่ 4:</label9>
+<label8>สร้างโปรไฟล์ XML/JSON</label8>
+<lnkClose>ปิดตัวช่วยสร้าง</lnkClose>
+<label11>การเปลี่ยนแปลงมีการสร้าง และเพิ่มลงในรายการ XML ฟังก์ชัน
+</label11>
+<label10>สร้างโปรไฟล์ XML/JSON</label10>
+<this>สร้างโปรไฟล์ XML/JSON</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>ประเภท: หนังสือ</label11>
+<lbbTitle>ตัวเลือก 006/008:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>เทศกาล:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>ต่อ:</lnkbCont>
+<lnkbForm>แบบฟอร์ม:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Ills:</lnkbIlls>
+<lnkbType>ชนิด:</lnkbType>
+<label12>ประเภท: ทรัพยากรอิเล็กทรอนิกส์</label12>
+<label5>ตัวเลือก 006/008:</label5>
+<lnkcFile>แฟ้ม:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>ชนิด:</lnkcType>
+<label2>,</label2>
+<lnkbDates>วันที่:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>ลัง:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>ตัวเลือก 008:</label1>
+<label13>ชนิด: แผนที่</label13>
+<label3>ตัวเลือก 006/008:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>แบบฟอร์ม:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>โครงการ:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>ชนิด:</lnkmType>
+<label14>ประเภท: วัสดุผสม</label14>
+<label4>ตัวเลือก 006/008:</label4>
+<lnkmmForm>แบบฟอร์ม:</lnkmmForm>
+<lnkmmType>ชนิด:</lnkmmType>
+<label15>ชนิด: คะแนน</label15>
+<label6>ตัวเลือก 006/008:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>แบบฟอร์ม:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>คอมพ์:</lnkscComp>
+<lnkscType>ชนิด:</lnkscType>
+<label10>ชนิด: การดำเนินการต่อทรัพยากร</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>ตัวเลือก 006/008:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>ต่อ:</lnkslCont>
+<lnkslForm>แบบฟอร์ม:</lnkslForm>
+<lnkslOrig>โอริก:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>นอก:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>ความถี่:</lnkslFreq>
+<lnkslType>ชนิด:</lnkslType>
+<label16>ประเภท: บันทึกเสียง</label16>
+<label8>ตัวเลือก 006/008:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>แบบฟอร์ม:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>คอมพ์:</lnksdComp>
+<lnksdType>ชนิด:</lnksdType>
+<label17>ประเภท: ภาพวัสดุ</label17>
+<label9>ตัวเลือก 006/008:</label9>
+<lnkvmTech>ด้านเทคนิค:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>แบบฟอร์ม:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>เวลา:</lnkvmTime>
+<lnkvmType>ชนิด:</lnkvmType>
+<cmd_Ok>ตกลง, ได้</cmd_Ok>
+<cmd_Close>ปิด</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>แบบฟอร์ม:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>ทรัพยากร GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>เกี่ยวกับฉัน:</lb_Authors>
+<lbBuildCode>รหัสการปรับปรุง:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>เว็บไซต์โครงการ:</label5>
+<label2>ถาม-ตอบ:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>แก้ไข:</lbMod>
+<lbMailto>เทอร์รี่สระ</lbMailto>
+<lbAuthor>ผู้เขียน:</lbAuthor>
+<lbVersion>หมายเลขรุ่น:</lbVersion>
+<label4>เกี่ยวกับ MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>รายละเอียดทางเทคนิค:</label1>
+<this>เกี่ยวกับ MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>โหลด</cmdLoad>
+<cmdClose>ปิด</cmdClose>
+<cmdDelete>ลบ</cmdDelete>
+<this>แฟ้มบันทึกอัตโนมัติ:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>แก้ไขฟิลด์</lnk_Edit_Fields>
+<lnkCopy>คัดลอกข้อมูลของเขตข้อมูล</lnkCopy>
+<lnkSwapFields>แลกเปลี่ยนเขตข้อมูล</lnkSwapFields>
+<lnkIndicators>แก้ไขตัวชี้วัด</lnkIndicators>
+<lnkSubfield>แก้ไขข้อมูลย่อย</lnkSubfield>
+<lnkAddDelete>เพิ่มลบฟิลด์</lnkAddDelete>
+<groupBox8>ลบตัวเลือกฟิลด์</groupBox8>
+<ckRemoveByPostition>เอา โดยตำแหน่งฟิลด์</ckRemoveByPostition>
+<ck_RemoveIfNot>เอาข้อมูลของเขตข้อมูลไม่ตรงกับ</ck_RemoveIfNot>
+<ck_dedup>เอาข้อมูลที่ซ้ำกัน</ck_dedup>
+<groupBox7>เพิ่มตัวเลือกฟิลด์</groupBox7>
+<ck_A_addifnotduplicate>เพิ่มฟิลด์เท่านั้นถ้าไม่ซ้ำ</ck_A_addifnotduplicate>
+<ck_A_Insert>ใส่ก่อน</ck_A_Insert>
+<ck_A_not_present>เพิ่มเขตข้อมูลเท่านั้นถ้า ไม่มีปัจจุบัน</ck_A_not_present>
+<ck_AddIfPresent>เพิ่มเขตข้อมูลถ้ามี</ck_AddIfPresent>
+<ck_last>ใส่ล่าสุด</ck_last>
+<groupBox6>ตัวเลือกทั่วไป</groupBox6>
+<ck_delete_batch>กระบวนการชุดงาน</ck_delete_batch>
+<ck_A_Case>ตรงตัวพิมพ์</ck_A_Case>
+<ck_A_regular_Expression>ใช้นิพจน์ทั่วไป</ck_A_regular_Expression>
+<label1>สิ่งที่ค้นหา:</label1>
+<cmd_A_Close>ปิด</cmd_A_Close>
+<cmd_A_Add>เพิ่มเขตข้อมูล</cmd_A_Add>
+<cmd_A_Delete>ลบฟิลด์</cmd_A_Delete>
+<label3>ข้อมูลเขตข้อมูล:</label3>
+<lb_A_Field>เขตข้อมูล:</lb_A_Field>
+<lb_A_Title>เพิ่มลบฟิลด์ยูทิลิตี้</lb_A_Title>
+<cmd_Sub_Close>ปิด</cmd_Sub_Close>
+<cmd_Sub_Remove>ลบข้อความ</cmd_Sub_Remove>
+<cmd_Sub_Replace>แทนที่ข้อความ</cmd_Sub_Replace>
+<groupBox2>ค้นหาตัวเลือก:</groupBox2>
+<ckDeleteDuplicate>ลบฟิลด์ย่อยซ้ำ</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>ลบฟิลด์ย่อย</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>ย้ายข้อมูลย่อย</ck_move_subfield>
+<ck_Reg_Express>ใช้นิพจน์ทั่วไป</ck_Reg_Express>
+<ck_Sub_Case>ตรงตัวพิมพ์</ck_Sub_Case>
+<ck_Sub_New>ฟิลด์ย่อยใหม่เท่านั้น</ck_Sub_New>
+<ck_Sub_NotPresent>เพิ่มฟิลด์ย่อยถ้า ไม่นำเสนอ</ck_Sub_NotPresent>
+<label8>แทนด้วย:</label8>
+<label7>ข้อมูลเขตข้อมูล:</label7>
+<label6>ย่อย:</label6>
+<label5>เขตข้อมูล:</label5>
+<lb_Sub_Title>แก้ไขโปรแกรมย่อย</lb_Sub_Title>
+<cmd_I_Close>ปิด</cmd_I_Close>
+<cmd_I_Replace>แทน</cmd_I_Replace>
+<lb_Ind_Replace>แทน ด้วยตัวชี้วัด</lb_Ind_Replace>
+<label12>ข้อมูลเขตข้อมูล:</label12>
+<label11>ตัวชี้วัด</label11>
+<label10>เขตข้อมูล:</label10>
+<lb_Ind_Title>แก้ไขตัวบ่งชี้ที่โปรแกรมอรรถประโยชน์</lb_Ind_Title>
+<ck_Match_All_Subfields>ตรงทั้งหมด Subfields</ck_Match_All_Subfields>
+<ck_swap_expression>ถือเป็นนิพจน์ทั่วไป</ck_swap_expression>
+<label4>ค้นหา:</label4>
+<cmd_Swap_Close>ปิด</cmd_Swap_Close>
+<cmd_Swap_Process>กระบวนการ</cmd_Swap_Process>
+<groupBox3>เลือกการค้นหา</groupBox3>
+<ck_swap_once_per>ฟิลด์กระบวนการหนึ่งตามสัญญาแลกเปลี่ยน</ck_swap_once_per>
+<ck_swap_sort>จัดเรียงปรับเปลี่ยนเขตข้อมูล</ck_swap_sort>
+<ck_Swap_Override>เพิ่มที่มีอยู่/สร้างใหม่</ck_Swap_Override>
+<ck_Swap_Add>เพิ่มเขตข้อมูลที่อยู่</ck_Swap_Add>
+<ck_Swap_Copy>คัดลอกมา</ck_Swap_Copy>
+<label20>แก้ไขข้อมูล:</label20>
+<label22>Subfields</label22>
+<label23>ตัวชี้วัด</label23>
+<label24>ฟิลด์</label24>
+<label19>ข้อมูลต้นฉบับ:</label19>
+<label18>ค้นหา:</label18>
+<label17>Subfields</label17>
+<label16>ตัวชี้วัด</label16>
+<label15>ฟิลด์</label15>
+<lb_Swap_Title>เปลี่ยนฟิลด์ยูทิลิตี้</lb_Swap_Title>
+<label14>ข้อมูลของเขตข้อมูล</label14>
+<lbFindInField>ค้นหาในฟิลด์</lbFindInField>
+<groupBox4>ตัวเลือก</groupBox4>
+<ck_copy_field_regex>ใช้นิพจน์ทั่วไป</ck_copy_field_regex>
+<ck_copy_delete>ลบเขตข้อมูลต้นฉบับ</ck_copy_delete>
+<label2>ฟิลด์ปลายทาง:</label2>
+<cmdCopyClose>ปิด</cmdCopyClose>
+<cmdCopy>คัดลอก</cmdCopy>
+<label9>เขตข้อมูลต้นฉบับ:</label9>
+<label13>คัดลอกข้อมูลของเขตข้อมูล</label13>
+<label26>ตำแหน่ง:</label26>
+<label21>แทน:</label21>
+<label25>ค้นหา:</label25>
+<groupBox5>ตัวเลือก</groupBox5>
+<ck_editfield_match_case>ตรงตัวพิมพ์</ck_editfield_match_case>
+<ck_UserRegularExpressions>ใช้นิพจน์ทั่วไป</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>ปิด</cmdFieldEdit_Close>
+<cmdEditField_Process>กระบวนการ</cmdEditField_Process>
+<label27>เขตข้อมูล:</label27>
+<label28>แก้ไขข้อมูลเขตข้อมูล</label28>
+<this>MarcEdit.NET ชุดแก้ไขเครื่องมือ</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<label1>BibFrame2 Testbed คือ ง่ายต่อการใช้ยูทิลิตี้ที่ออกแบบให้ข้อมูลเมตา speci </label1>
+<label2>แฟ้มต้นฉบับ:</label2>
+<label3>บันทึกแฟ้ม:</label3>
+<label4>ข้อมูลอนุกรม:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>แปลกฎ:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>แก้ไข</lnkEditXQuery>
+<label7>ชนิดแฟ้ม:</label7>
+<label8>โปรไฟล์:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>ฟิลด์ id:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>บันทึกแฟ้ม:</label3>
+<label2>แฟ้มต้นฉบับ:</label2>
+<label1>เครื่องมือการเชื่อมโยงข้อมูลออกแบบมาเพื่อวนรอบผ่านชุดระเบียน MARC และแก้ไขจุดใน 1xx, 6xx และองค์ประกอบข้อมูล 7xx dat การเชื่อมโยงอุปกรณ์ปลายทางเครื่อง</label1>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdCancel>ปิด</cmdCancel>
+<groupBox1>รหัสบริการ</groupBox1>
+<ckLimiter>ขีดจำกัดความละเอียด:</ckLimiter>
+<ck3xxFields>กระบวนการเขตข้อมูล 3xx</ck3xxFields>
+<label4>OCLC เลขที่:</label4>
+<ckWorkId>ฝังรหัสงาน OCLC</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>ตรวจเรื่อง ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>รายการหลักเพิ่มอัตโนมัติ</ck_loc>
+<label5>แฟ้มกฎ:</label5>
+<cmdStatus>สถานะบริการ</cmdStatus>
+<lbstatus>สถานะ:</lbstatus>
+<this>สร้างระเบียนที่เชื่อมโยง</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>ค้นหา</lnkFind>
+<lbResults>ผลลัพธ์:</lbResults>
+<lnkCatalog>ไคล์ Banerjee แค็ตตาล็อกเครื่องคิดเลข</lnkCatalog>
+<cmdClose>ปิด</cmdClose>
+<label1>ตัด LC</label1>
+<this>จัดแค็ตตาล็อกเครื่องคิดเลข</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>เครื่องมือการตรวจหาอักขระใช้กระบวนการ heuristical เพื่อให้เบการเดาที่ดีที่สุด </label1>
+<cmdDetect>ตรวจหา</cmdDetect>
+<cmdClose>ปิด</cmdClose>
+<label2>ผลลัพธ์:</label2>
+<ckDetailed>ผลลัพธ์ verbose</ckDetailed>
+<this>การตรวจหาอักขระ</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>ทรัพยากร GetString ("label 1 ข้อความ")</label1>
+<lnkClassify>เกี่ยวกับของ OCLC จัดประเภทบริการ</lnkClassify>
+<ck_all>เพิ่มระเบียนทั้งหมด</ck_all>
+<ck_single>เพิ่มเรกคอร์ดที่เลือก</ck_single>
+<ck_lc>หอสมุดรัฐสภา</ck_lc>
+<ck_dewey>Dewey ทศนิยม</ck_dewey>
+<cmdProcess>จัดประเภท</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<label5>ใส่ถ้าฟิลด์ต่อไปนี้ไม่มีอยู่ (ตัวอย่าง: 050, 060, 090, 092)</label5>
+<label4>ใส่ประเภทสร้างลงในฟิลด์ต่อไปนี้:</label4>
+<ck_cutters>คำนวณการตัดและวันที่</ck_cutters>
+<ck_use_z>ใช้ย่อย z สำหรับการจับคู่</ck_use_z>
+<ck_DateMod>ผนวกค่าสถานะวันที่</ck_DateMod>
+<ck_omit_serial>ข้ามวันสำหรับ serials</ck_omit_serial>
+<ck_omit_integrated>ข้ามวันสำหรับทรัพยากรรวม</ck_omit_integrated>
+<ck_omit>ผนวกข้อยกเว้นวันที่</ck_omit>
+<ck_always_fast>เพิ่มส่วนหัวอย่างรวดเร็ว</ck_always_fast>
+<ck_conditional_fast>เพิ่มส่วนหัวอย่างรวดเร็วเมื่อหัวเรื่องไม่มีอยู่</ck_conditional_fast>
+<label6>ตัวชี้วัด:</label6>
+<cmdInsert>แทรกคำแนะนำ</cmdInsert>
+<cmdClassification>การจัดประเภท</cmdClassification>
+<cmdSubjects>หัวเรื่อง</cmdSubjects>
+<lnkClassification>เลือกการจัดประเภท</lnkClassification>
+<lnkSubjects>เลือกตัวเลือกเรื่อง</lnkSubjects>
+<lnkOptions>ตั้งค่าตัวเลือก</lnkOptions>
+<cmdOptions>ตัวเลือก</cmdOptions>
+<label2>ย่อย:</label2>
+<label3>Cuttering ย่อย:</label3>
+<this>สร้างการจัดประเภท</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>ข้อมูลอย่างต่อเนื่อง</columnHeader1>
+<columnHeader3>ทางลัด</columnHeader3>
+<cmdClose>ปิด</cmdClose>
+<lnkKey>กำหนดคีย์</lnkKey>
+<lnkEdit>แก้ไขสายอักขระที่เลือก</lnkEdit>
+<lnkDelete>ลบสายอักขระที่เลือก</lnkDelete>
+<lnkNew>สร้างสายอักขระใหม่</lnkNew>
+<lbActions>การดำเนินการ:</lbActions>
+<lbMacro>ข้อมูลคง:</lbMacro>
+<this>แก้ไขข้อมูลคง</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>นำหน้าหมายเลข:</lb_prefix>
+<lb_digit>เริ่มหลัก:</lb_digit>
+<ck_autogenerate>แทรกในเรกคอร์ดใหม่</ck_autogenerate>
+<button1>ตกลง, ได้</button1>
+<button2>ปิด</button2>
+<lb_length>ความยาวหลัก (เครื่องหมายลบนำหน้า)</lb_length>
+<ckgenerate>สร้างในแฟ้มปัจจุบัน</ckgenerate>
+<ck_label>บันทึกหมายเลข</ck_label>
+<label1>ฟิลด์/ย่อย (ตัวอย่าง: 001, 949$ b)</label1>
+<ck_repeat>แทรกอยู่เสมอ</ck_repeat>
+<this>สร้างหมายเลขควบคุม</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>ใช้จับคู่เลือน</ck_UseFuzzyMatch>
+<ck_save>บันทึกรายการ dedup กำหนดให้:</ck_save>
+<ck_unique>แสดงผลรายการที่ไม่ซ้ำ</ck_unique>
+<ck_remove>ลบรายการซ้ำ</ck_remove>
+<lbOptions>ตัวเลือก:</lbOptions>
+<label1>Dedup กำหนดให้:</label1>
+<lb_Control>ควบคุมเขตข้อมูล:</lb_Control>
+<cmdClose>ปิด</cmdClose>
+<cmdOK>กระบวนการ</cmdOK>
+<btnCancel>ยกเลิก</btnCancel>
+<btnNext>ถัดไป</btnNext>
+<label4>บันทึกแฟ้ม:</label4>
+<label3>พบทอาจจากแฟ้มต่อไปนี้:</label3>
+<label2>เครื่องมือบันทึก Deduplication</label2>
+<label5>ความมั่นใจ:</label5>
+<this>คอร์ด Deduplication</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>เลือกแฟ้มบันทึก:</label1>
+<groupBox1>ตัวเลือก</groupBox1>
+<ckChanged>แยกระเบียนเปลี่ยนแปลง</ckChanged>
+<ckEnhance>เพิ่มบันทึก</ckEnhance>
+<label2>เลือกระเบียน:</label2>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<this>ตัวจัดการแฟ้มบันทึก</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext เป็นพื้นที่ห้องปฏิบัติการเพื่อแนะนำเครื่องมือใหม่ ๆ และแนวคิดที่เกี่ยวข้องกับการ </lbaboutmn>
+<lnkOpenRefine>รวม OpenRefine</lnkOpenRefine>
+<lnkSPARQL>SPARQL เบราว์เซอร์</lnkSPARQL>
+<lnkLinkIds>เชื่อมโยงตัวบ่งชี้</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>ใช้เครื่องมือนี้เพื่อย้ายข้อมูลระหว่างรูปแบบ Mnemonic MARC หรือของ MarcEdit และ OpenRef </label1>
+<label2>แฟ้มต้นฉบับ:</label2>
+<label3>บันทึกแฟ้ม:</label3>
+<rdExport>ส่งออกไป OpenRefine</rdExport>
+<rdImport>นำเข้าจาก OpenRefine</rdImport>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdCancel>ปิด</cmdCancel>
+<lbStatus>สถานะ:</lbStatus>
+<groupBox1>ตัวเลือก</groupBox1>
+<this>เครื่องมือการถ่ายโอนข้อมูล OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>เลือกแฟ้มที่ใช้ร่วมกัน:</label1>
+<ckconfig>เลือกการกำหนดค่า</ckconfig>
+<label2>ส่งออกข้อมูลทั้งหมดในไดเรกทอรีการกำหนดค่าผู้ใช้  ซึ่งรวมถึงข้อมูลการกำหนดค่า </label2>
+<ckXSLT>ฟังก์ชัน XSLT</ckXSLT>
+<label3>ส่งออก stylesheets XSLT ที่กำหนด
+</label3>
+<ckMacros>แมโครที่กำหนดไว้และงาน</ckMacros>
+<label4>ทั้งหมดส่งออกกำหนดแมโครและงาน...
+</label4>
+<label5>ส่งออกแม่แบบประเภทวัสดุ MarcEditor ที่กำหนดทั้งหมด</label5>
+<ckTemplates>แม่แบบ MarcEditor กำหนด</ckTemplates>
+<cmdExport>การส่งออก</cmdExport>
+<cmdClose>ปิด</cmdClose>
+<this>ส่งออกการตั้งค่า</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>การดำเนินการ</columnHeader2>
+<columnHeader1>พบข้อความ</columnHeader1>
+<button1>ปิด</button1>
+<button2>ไปที่หน้า</button2>
+<cmdFindUpdate>แก้ไขแบบสอบถามการค้นหา</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>ค้นหาผลลัพธ์ทั้งหมด</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<lbField>ป้อนฟิลด์หมายเลขในการประเมิน (เช่น 090)</lbField>
+<groupBox1>ตัวเลือก</groupBox1>
+<rdTitle>สั่งตัด (2xx, 1xx)</rdTitle>
+<rdDefault>สั่งตัด (1xx, 2xx)</rdDefault>
+<groupBox2>ตัวเลือก</groupBox2>
+<label1>ค้นหา:</label1>
+<rdCustomField>ฟิลด์แบบกำหนดเอง</rdCustomField>
+<rdMainEntry>ประเมินรายการหลัก (1xx, 245)</rdMainEntry>
+<this>สร้างเครื่องตัด</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>กำหนดค่อนเซิร์ฟเวอร์:</label1>
+<label2>(ใช้กะ/เกียร์ควบคุมเพื่อเลือกหลายรายการ)</label2>
+<ck_date>เก็บเกี่ยวจากการดาวน์โหลดครั้งสุดท้าย</ck_date>
+<cmdCreate>บันทึก</cmdCreate>
+<button1>ปิด</button1>
+<this>สร้างชุดงานการเก็บเกี่ยว</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>ไบต์</BytesGroup>
+<label5>บิต</label5>
+<label4>iso-8859-1</label4>
+<label3>ทศนิยม</label3>
+<label2>ฐานสิบหก</label2>
+<columnHeader1>ตำแหน่ง</columnHeader1>
+<columnHeader2>ไบต์</columnHeader2>
+<columnHeader3>ข้อความ</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>แฟ้ม</menuItem1>
+<openToolStripMenuItem>เปิด</openToolStripMenuItem>
+<ExitProgram>ทางออก</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>หน้าต่างผลลัพธ์ MarcEdit</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>ชื่อฟังก์ชัน (นามแฝง):</lb_Alias>
+<label1>เข้าร่วม:</label1>
+<cmd_ok>บันทึก</cmd_ok>
+<cmd_close>ปิด</cmd_close>
+<this>เข้าร่วมฟังก์ชัน XML</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>ชื่อ</columnHeader1>
+<columnHeader2>เส้นทาง</columnHeader2>
+<cmdOK>ตกลง, ได้</cmdOK>
+<cmdClose>ปิด</cmdClose>
+<this>งานพร้อมใช้งาน</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>เครื่องมือ</mnuTools>
+<mnuAddinsEditLinkedData>แก้ไขข้อมูลกฎ</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>แก้ไขแฟ้ม XML กฎ</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>วิธีทำฉันจะดูรายละเอียดปลายทางใหม่</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>ปรับปรุงแฟ้มกฎ</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>การจัดการบันทึก</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>การจัดการบันทึกขั้นสูง</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>ลบแฟ้มบันทึก</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>ดูแฟ้มบันทึกทั้งหมด</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>แปลข้อความ</mnuAddinTranslator>
+<mnuExportGroup>ส่งออก...</mnuExportGroup>
+<mnuToolsTabbed>ส่งแท็บคั่นระเบียน</mnuToolsTabbed>
+<mnuToolsGateway>ส่งระเบียน MARC</mnuToolsGateway>
+<mnuToolsSelect>เลือกระเบียน MARC</mnuToolsSelect>
+<mnuToolsDelete>ลบเรกคอร์ดที่เลือก</mnuToolsDelete>
+<mnuToolsExtract>แยกเรกคอร์ดที่เลือก</mnuToolsExtract>
+<mnuToolsCharacterConversion>เครื่องมือการแปลงอักขระ</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>แปลง Characterset</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>การตรวจหาอักขระ</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>ตัวช่วยสร้างสคริปต์ MarcEdit</mnuAddScriptWizard>
+<mnuExplorer>Explorer MARC SQL</mnuExplorer>
+<toolStripMenuItem4>เครื่องมือเก็บเกี่ยวค่อน</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>การเก็บเกี่ยวค่อนระเบียน</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>ชุดรถเกี่ยว</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>สร้างชุดงาน</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>เรียกใช้ชุดงานเก็บเกี่ยว</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>การส่งออก</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>นำเข้า</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>เครื่องมือ UNIMARC</mnuToolsUnimarcTools>
+<mnuAddinURL>ตรวจสอบ Url</mnuAddinURL>
+<mnuAddinZ39_50>ไคลเอ็นต์ Z39.50/SRU</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>เครื่องมือการประมวลผลของมาร์ค</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>ชุดระเบียนกระบวนการ</mnuToolsBatch>
+<toolClusterData>คลัสเตอร์เครื่องมือข้อมูล</toolClusterData>
+<mnuToolsDedup>ค้นหาระเบียนที่ซ้ำกัน</mnuToolsDedup>
+<generateToolStripMenuItem>สร้าง...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>หมายเลขโทร</mnuGenerateCallnumber>
+<toolStripMenuItem3>หัวอย่างรวดเร็ว</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>หัวเรื่อง LC</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>ผสานเรกคอร์ด</mnutoolsmerge>
+<toolStripMenuItem5>ผู้ช่วยของ RDA</toolStripMenuItem5>
+<toolStripMenuItem6>การดำเนินงานของ OCLC</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>ดาวน์โหลดคอร์ด OCLC</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>ปรับปรุงบันทึกของ WorldCat โฮลดิ้งส์</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>อัพโหลด Bibliograph ระเบียน WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>ตรวจสอบหัวข้อ</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>สถานะบริการ</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>ตรวจสอบหัวข้อ</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>การตั้งค่า</mnuToolsPreferences>
+<pluginsToolStripMenuItem>ปลั๊กอิน</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>ตัวจัดการปลั๊กอิน</mnuAddinPluginManager>
+<mnuaddincdsisis>ซีดีไอ.iso =&gt;แปล MARC</mnuaddincdsisis>
+<mnuHelp>วิธีใช้</mnuHelp>
+<mnuHelpContents>เนื้อหาและความช่วยเหลือ</mnuHelpContents>
+<mnuHelpTutorials>สอนดู</mnuHelpTutorials>
+<mnuHelpOnline>วิธีใช้แบบออนไลน์</mnuHelpOnline>
+<mnuHelpList>เข้าร่วมรายการการแจ้งเตือน MarcEdit</mnuHelpList>
+<mnuHelpError>รายงานข้อเสนอแนะ/ข้อผิดพลาด</mnuHelpError>
+<mnuBlog>บล็อกของ MarcEdit</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit ปัญหา</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>ข้อมูลระบบ</systemInfoToolStripMenuItem>
+<mnuAddLang>แก้ไขแฟ้มภาษา</mnuAddLang>
+<mnuRestartIn32bitMode>เริ่ม MarcEdit ในโหมด 32 บิต</mnuRestartIn32bitMode>
+<mnuFileShare>ตั้งค่าคอนฟิกที่ใช้ร่วมกัน</mnuFileShare>
+<exportSettingsToolStripMenuItem>ส่งออกการตั้งค่า</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>นำเข้าการตั้งค่า</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>เลือกการแก้ไขปัญหา</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>ล้างแฟ้มชั่วคราว</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>ดาวน์โหลดแบบอักษร Unicode โนโตะ</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>ซ่อมแซมงานแฟ้ม</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>คืนค่าแฟ้มเครือข่ายจากการสำรองข้อมูล</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>เลือกงานใหม่</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>ตั้งค่าข้อมูลการกำหนดค่า</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>เปิด HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>ตัวช่วยสร้างการแก้ไขปัญหา</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>ดาวน์โหลดการปรับปรุง (โหมดการตรวจแก้จุดบกพร่อง)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>ตรวจสอบปรับปรุง</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>ทางลัดของโปรแกรมประยุกต์</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>เส้นทางข้อมูลโปรแกรมประยุกต์</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>เส้นทางข้อมูลภาษา</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>ชุดรูปแบบเส้นทางข้อมูล</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>เส้นทางข้อมูล XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>เกี่ยวกับ...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>ผู้เขียน เทอร์รี่สระ</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>คุณต้องการทำอะไร</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>ผู้ใช้กำหนดเอง 3</lnkUserDefined3>
+<lnkUserDefined1>ข้อมูล OpenRefine</lnkUserDefined1>
+<lnkMarcToolsStart>เครื่องมือของมาร์ค</lnkMarcToolsStart>
+<lnkUserDefined2>ผู้ใช้กำหนดเอง 2</lnkUserDefined2>
+<lnkUserDefined4>ผู้ใช้ Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>ต้องการ:</groupBox1>
+<cmbLastToolUsed>เครื่องมือที่ใช้ครั้งสุดท้าย</cmbLastToolUsed>
+<lnkTopic5>ทำงานกับข้อมูลที่เชื่อมโยง</lnkTopic5>
+<lnkTopic4>แปล Excel ให้มาร์ค</lnkTopic4>
+<lnkTopic3>รวมไฟล์ MARC</lnkTopic3>
+<lnkTopic2>เก็บเกี่ยวข้อมูลค่อน</lnkTopic2>
+<lnkTopic1>แก้ไขไฟล์ MARC</lnkTopic1>
+<this>.Beta MarcEdit {รุ่น} โดยเทอร์รี่สระ</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>เก็บเกี่ยวข้อมูลค่อน</lbTitle>
+<lbServer>ที่อยู่ของเซิร์ฟเวอร์:</lbServer>
+<lbSet>ตั้งชื่อ:</lbSet>
+<lbMetadata>ชนิดของเมตาดาต้า:</lbMetadata>
+<cmdOK>ตกลง, ได้</cmdOK>
+<cmdClose>ปิด</cmdClose>
+<opt_default>ค่าเริ่มต้น</opt_default>
+<opt_saxon>ดาว</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>เครื่องยนต์ XSLT:</label4>
+<ck_Raw>เก็บเกี่ยวข้อมูลดิบ (บันทึกข้อมูลค่อนไประบบไฟล์ในเครื่อง)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>ตั้งค่าขั้นสูง</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>หมดเวลา (เป็นวินาที)</lbTimeout>
+<ck_Translate>แปล MARC-8</ck_Translate>
+<label2>สิ้นสุด:</label2>
+<label1>เริ่มต้น:</label1>
+<lbCrosswalk>เส้นทางของ crosswalk:</lbCrosswalk>
+<cmdSave>บันทึก</cmdSave>
+<lnkDebug>URL การตรวจแก้จุดบกพร่อง</lnkDebug>
+<tabPage1>บ้าน</tabPage1>
+<tabPage2>ตั้งค่าขั้นสูง</tabPage2>
+<this>เก็บเกี่ยวข้อมูลเมตา</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>แฟ้มต้นฉบับของ OCLC เลขที่:</label1>
+<cmdDownload>ดาวน์โหลด</cmdDownload>
+<cmdClose>ปิด</cmdClose>
+<label2>บันทึกแฟ้ม:</label2>
+<this>ระเบียนการดาวน์โหลดจำนวนมากจาก OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>ค้นหา WorldCat:</label1>
+<cmbarg1>คำสำคัญ</cmbarg1>
+<cmbconditional>และ</cmbconditional>
+<cmdSearch>ค้นหา</cmdSearch>
+<cmdClose>ปิด</cmdClose>
+<label2>ผลลัพธ์:</label2>
+<col_oclcnum>หมายเลข OCLC</col_oclcnum>
+<col_title>ชื่อเรื่อง</col_title>
+<ck_LocalBib>ดาวน์โหลดถ้ามีระเบียนบรรณานุกรมที่ท้องถิ่น</ck_LocalBib>
+<lnkAll>เลือกทั้งหมด</lnkAll>
+<label3>|</label3>
+<lnkNone>ไม่มี</lnkNone>
+<this>ค้นหา OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>ปรับปรุงโฮลดิ้งส์ WorldCat ของ OCLC</label1>
+<groupBox1>ตัวเลือก</groupBox1>
+<rdDeleteHoldings>ลบโฮลดิ้งส์</rdDeleteHoldings>
+<rdAddHolding>เพิ่มโฮลดิ้งส์</rdAddHolding>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<label2>รหัสสถาบัน:</label2>
+<label3>แผนการจัดประเภท:</label3>
+<cmb_schema>หอสมุดรัฐสภา</cmb_schema>
+<ck_debug>พิมพ์ข้อมูลการดีบัก</ck_debug>
+<this>ปรับปรุงโฮลดิ้งส์ WorldCat</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>หอสมุดรัฐสภา</cmb_schema>
+<label3>แผนการจัดประเภท:</label3>
+<label2>รหัสสถาบัน:</label2>
+<cmdClose>ปิด</cmdClose>
+<cmdProcess>กระบวนการ</cmdProcess>
+<label4>ระเบียนบรรณานุกรม OCLC เลขจะถูกปรับปรุงใน WorldCat  Bibliograph </label4>
+<label1>กดรหัส:</label1>
+<lnkGetHoldings>รับรหัส</lnkGetHoldings>
+<ckLocalBibData>กระบวนการเป็นระเบียนบรรณานุกรมที่ท้องถิ่น</ckLocalBibData>
+<ck_deleterecords>ลบระเบียน</ck_deleterecords>
+<this>อัปโหลดระเบียน WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>ตกลง, ได้</cmd_options_ok>
+<cmd_options_cancel>ปิด</cmd_options_cancel>
+<cmd_options_apply>นำไปใช้</cmd_options_apply>
+<lnkMainWindow>หน้าต่างหลัก</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>ภาษา</lnkLanguage>
+<lnkEaseOfUse>ใช้งานง่าย</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>การปรับปรุง</lnkUpdates>
+<lnkFileAssociations>ความสัมพันธ์ของแฟ้ม</lnkFileAssociations>
+<lnkOther>อื่น ๆ</lnkOther>
+<lnkILSIntegration>รวม ILS</lnkILSIntegration>
+<lnkOCLCAPI>รวม API OCLC</lnkOCLCAPI>
+<label15>โปรแกรมตั้งค่าเริ่มต้น</label15>
+<ckLogging>เปิดใช้งานการเข้าสู่ระบบ:</ckLogging>
+<ckAutosave>เปิดใช้งานการบันทึกอัตโนมัติ</ckAutosave>
+<ck_enhanced_editor_loading>ใช้การจัดการเพจจิ้งเพิ่มเติม</ck_enhanced_editor_loading>
+<ckRDATemplates>ใช้แม่แบบของ RDA</ckRDATemplates>
+<ckCompileMarc8>รวบรวมคอร์ดเป็น MARC8</ckCompileMarc8>
+<label37>เส้นทางการเข้าสู่ระบบ:</label37>
+<cksaveutf8>รวบรวมคอร์ดเป็น UTF8</cksaveutf8>
+<ck_intellisense>เปิดใช้งาน Intellisense</ck_intellisense>
+<label2>เร็กคอร์ดต่อหน้า</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>เริ่มต้นการเข้ารหัส:</lb_Encoding>
+<ck_nwindow>แฟ้มเปิดในหน้าต่างใหม่</ck_nwindow>
+<ck_append>ผนวกระเบียนใหม่</ck_append>
+<lb_psize>ขนาดตัวอย่าง:</lb_psize>
+<ckUsePreview>ใช้โหมดแสดงตัวอย่าง</ckUsePreview>
+<cmd_editor_font_default>กำหนดค่าเริ่มต้น</cmd_editor_font_default>
+<cmd_editor_set_font>ตั้งค่าแบบอักษร</cmd_editor_set_font>
+<lb_Editor_Font_Props>ตั้งค่าคุณสมบัติ MarcEditor แบบอักษร:</lb_Editor_Font_Props>
+<cmd_editor_template_default>กำหนดค่าเริ่มต้น</cmd_editor_template_default>
+<cmd_editor_modify>ปรับเปลี่ยน</cmd_editor_modify>
+<lb_Current_Template>แม่ปัจจุบัน:</lb_Current_Template>
+<lb_Editor_Template>ตั้งค่าเท็มเพล MarcEditor:</lb_Editor_Template>
+<label9>* จำเป็นต้องรีสตาร์ทโปรแกรม *</label9>
+<label8>pt</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>ขนาดอักษร:</label4>
+<lb_Example>ตัวอย่างข้อความ</lb_Example>
+<lb_lang_font>ตั้งค่าแบบอักษรภาษา:</lb_lang_font>
+<lb_Set_Lang>ตั้งค่าภาษา:</lb_Set_Lang>
+<rd_theme_dark>ชุดรูปแบบกำหนดเอง:</rd_theme_dark>
+<rd_theme_normal>ปกติ (เริ่มต้น)</rd_theme_normal>
+<label39>ตัวเลือกการแสดงประยุกต์</label39>
+<ck_export_output>ส่งออกใบรับ (จับ ILS เอาท์พุท)</ck_export_output>
+<lb_TCP_Timeout>หมดเวลา:</lb_TCP_Timeout>
+<lb_TCP_Port>พอร์ต:</lb_TCP_Port>
+<lb_TCP_Host>ที่อยู่โฮสต์:</lb_TCP_Host>
+<lb_TCPIP_Props>คุณสมบัติ TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>ระเบียนในรูปแบบ MARC21</ck_marc21>
+<ck_marcxml_sax>ใช้ตัวเลือกดั้งเดิม (กระบวนการไม่ใช่ XSLT)</ck_marcxml_sax>
+<groupBox2>เครื่องยนต์ XSLT</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>เกี่ยวกับการปรับสภาพของ Unicode</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>เริ่มต้นการเข้ารหัสอักขระ:</label35>
+<ckC>มาตรฐาน Decomposition (C)</ckC>
+<ckKD>สลายตัวกัน (KD)</ckKD>
+<ck_Diacritics>ใช้อักขระพิเศษเมื่อทำลาย</ck_Diacritics>
+<lb_Diacritics>ตัวเลือกทั่วไป:</lb_Diacritics>
+<lb_Engine_XML_Options>เลือก XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>ใช้ Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>ปรับปรุงอัตโนมัติได้ถูกปิดใช้งาน โดยผู้ดูแลระบบของระบบ</labelAutoUpdateDisabled>
+<ckDetectProxy>ใช้การตั้งค่าพร็อกซีของระบบ</ckDetectProxy>
+<ck_Update_Validator>ตรวจสอบโดยอัตโนมัติสำหรับการปรับปรุงตัวตรวจสอบ</ck_Update_Validator>
+<label3>คุณต้องเป็นสมาชิกของโดเมนนี้เพื่อทำงานในเวลานี้</label3>
+<groupBox4>ข้อมูลผู้ใช้:</groupBox4>
+<lb_domain>โดเมน:</lb_domain>
+<label6>รหัสผ่าน:</label6>
+<label5>ชื่อผู้ใช้:</label5>
+<ckUpdates>ตรวจสอบโดยอัตโนมัติสำหรับการปรับปรุง</ckUpdates>
+<groupBox5>ความสัมพันธ์ของแฟ้มการตั้งค่า</groupBox5>
+<cmd_file_assoc_view>ดูชนิด</cmd_file_assoc_view>
+<cmd_file_assoc_delete>ลบชนิด</cmd_file_assoc_delete>
+<cmd_file_assoc_save>บันทึกชนิด</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>เชื่อมโยง (*                      ) กับชนิดแฟ้มนี้:</label7>
+<ck_mrk8_editor>เชื่อมโยงแฟ้ม (*.mrk8) กับ MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>เชื่อมโยงแฟ้ม (*.mrk) กับ MarcEditor</ck_mrk_editor>
+<ck_mrc>เชื่อมโยงแฟ้ม (*.mrc) กับ MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>เลือก</lnkSelectILS>
+<lnkDeleteProfile>ลบ</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>เพิ่ม</lnkAddProfile>
+<label31>ส่วนกำหนดค่า:</label31>
+<ck_ignore_ssl>ละเว้นข้อผิดพลาดของใบรับรอง SSL</ck_ignore_ssl>
+<lnk_ils_delete>ลบ</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>แก้ไข</lnk_ils_z3950_edit>
+<ck_ils_z3950>ใช้การตั้งค่า Z39.50</ck_ils_z3950>
+<ck_ils_enable>เปิดใช้งานตัวเลือก ILS</ck_ils_enable>
+<label13>ชื่อโฮสต์:</label13>
+<label12>รหัสผ่าน:</label12>
+<label11>ชื่อผู้ใช้:</label11>
+<label10>เลือกระบบ:</label10>
+<lnkGetCodes>รับถือรหัส</lnkGetCodes>
+<label24>กดรหัส:</label24>
+<cmb_schema>หอสมุดรัฐสภา</cmb_schema>
+<label22>แผนการจัดประเภท:</label22>
+<label23>รหัสสถาบัน:</label23>
+<ckshow>แสดงข้อความ</ckshow>
+<cmdValidateKeys>ตรวจสอบคีย์</cmdValidateKeys>
+<linkLabel1>คำขอ/จัดการคีย์การ OCLC (เชื่อมต่อกับ OCLC)</linkLabel1>
+<label21>การตั้งค่าคีย์ API ของ OCLC</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>คีย์ลับ (คู่กับคีย์ API ข้อมูลเมตา)</label18>
+<label17>คีย์ API ข้อมูลเมตาของ OCLC</label17>
+<label16>คีย์ API การค้นหาของ OCLC</label16>
+<lnkFilePaths>ตำแหน่งที่ตั้ง</lnkFilePaths>
+<label38>หมดเวลาของเครือข่าย (300 มิลลิวินาทีค่าเริ่มต้น):</label38>
+<lnkCopyLocalFiles>คัดลอกแฟ้มภายในเครื่องขณะนี้</lnkCopyLocalFiles>
+<label30>เส้นทางไดรฟ์เครื่องมือมาร์คตั้งค่าเริ่มต้น:</label30>
+<label27>เส้นทางของแฟ้ม:</label27>
+<label26>โฟลเดอร์งาน:</label26>
+<label25>โฟลเดอร์เครือข่าย:</label25>
+<lb_mono>เส้นทางโมโน:</lb_mono>
+<lb_temp>กำหนดเส้นทางชั่วคราว:</lb_temp>
+<ck_rss>อ่าน RSS ฟีด</ck_rss>
+<lb_title>ป้ายชื่อ:</lb_title>
+<lb_Author>แท็กผู้เขียน:</lb_Author>
+<lbCall>แท็กหมายเลขโทรศัพท์:</lbCall>
+<label1>ควบคุมหมายเลข Tag:</label1>
+<ck_allow_z3950>เปิดใช้งานฟังก์ชัน Z39.50</ck_allow_z3950>
+<label28>ตัวเลือกเขตข้อมูล:</label28>
+<ck_touch_friendly>ใช้เมนูแบบสัมผัสง่าย</ck_touch_friendly>
+<ck64_bit>ติดตั้ง 64 บิต</ck64_bit>
+<ck_32bit>ติดตั้ง 32 บิต</ck_32bit>
+<label36>รุ่น MS Office:</label36>
+<label34>แท็ก ISBN:</label34>
+<ckSort880>880: ใช้เชื่อมโยงฟิลด์การเรียงลำดับ</ckSort880>
+<ck880Infile>Infile 880 ฟิลด์ฟิลด์คู่</ck880Infile>
+<label29>ตัวเลือกการเรียงลำดับ:</label29>
+<ckShowDescriptionInScreenTips>แสดงคำอธิบายฟังก์ชันในแนะ</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>แสดงแป้นพิมพ์ลัดในแนะ</ckScreenTipShortcuts>
+<label42>ตัวเลือกคีย์บอร์ด</label42>
+<ckProvideSoundAccess>ให้ผลตอบสนองพร้อมเสียง</ckProvideSoundAccess>
+<label41>ตัวเลือกคำติชม</label41>
+<groupBox3>การดำเนินการ:</groupBox3>
+<lnkSearch4Themes>ลบที่เลือกธีม</lnkSearch4Themes>
+<lnkNewTheme>สร้างชุดรูปแบบใหม่</lnkNewTheme>
+<label40>ทำให้ MarcEdit เพิ่มเติม</label40>
+<this>การตั้งค่า MarcEdit</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>ปลั๊กอินพร้อมใช้งาน:</label1>
+<ch1>ชื่อปลั๊กอิน</ch1>
+<ch2>URL</ch2>
+<c3>ขนาดไฟล์</c3>
+<c4>Version #:</c4>
+<cmddownload>ดาวน์โหลด</cmddownload>
+<cmdClose>ปิด</cmdClose>
+<columnHeader1>เอาออกหรือไม่</columnHeader1>
+<columnHeader2>ชื่อปลั๊กอิน</columnHeader2>
+<columnHeader3>ชื่อคลาส</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>ติดตั้งปลั๊กอิน:</label2>
+<cmdRemove>เอา</cmdRemove>
+<c5>หมายเลขรุ่น MarcEdit</c5>
+<this>ตัวจัดการปลั๊กอิน</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>ทรัพยากร GetString ("label 1 ข้อความ")</label1>
+<label2>รูปแบบ:</label2>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdCancel>ยกเลิก</cmdCancel>
+<lbstatus>สถานะ:</lbstatus>
+<ckEscape>ข้อมูลหนีจาก URL</ckEscape>
+<ckAddNew>แทนที่เขตข้อมูลที่อยู่</ckAddNew>
+<ck_addnewfield>เพิ่มเขตข้อมูลใหม่ถ้า ไม่มีปัจจุบัน</ck_addnewfield>
+<ckAlwaysAdd>เพิ่มเขตข้อมูลใหม่</ckAlwaysAdd>
+<groupBox1>ตัวเลือก</groupBox1>
+<this>สร้างเขตข้อมูลใหม่</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>ค้นหาชุดงาน</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>ผลลัพธ์</groupBox3>
+<lnkClearResults>ผลลัพธ์ที่ชัดเจน</lnkClearResults>
+<lnkDownload>ดาวน์โหลดรายการทั้งหมด</lnkDownload>
+<lnkGetNext>รับถัดไป {ข้อจำกัด}</lnkGetNext>
+<lnkDownloadAllHoldings>ดาวน์โหลดทั้งหมดโฮลดิ้งส์จำกัด</lnkDownloadAllHoldings>
+<col1>ตำแหน่ง</col1>
+<col2>ชื่อเรื่อง</col2>
+<columnHeader1>ฐานข้อมูล</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>ดาวน์โหลดรายการที่เลือก</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>ดาวน์โหลดโฮลดิ้งส์ระเบียนที่เลือก</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>ดูเรกคอร์ดที่เลือก</viewSelectedRecordToolStripMenuItem>
+<groupBox1>ตัวเลือก</groupBox1>
+<rdEditDB>เลือกฐานข้อมูล</rdEditDB>
+<rdEditSettings>แก้ไขการตั้งค่า</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>เร็กคอร์ดต่อหน้า</label4>
+<ckUnicode>ดึงข้อมูล Unicode</ckUnicode>
+<lb_encoding_single>ชุดอักขระของเซิร์ฟเวอร์</lb_encoding_single>
+<lbSearchb>ค้นหา:</lbSearchb>
+<lbSearch>แบบสอบถามฐานข้อมูล:</lbSearch>
+<label3>ตั้งค่าฐานข้อมูล:</label3>
+<cmdSelectDatabase>เลือก</cmdSelectDatabase>
+<MCol3>รหัส</MCol3>
+<MCol1>ชื่อ</MCol1>
+<MCol2>ชนิด</MCol2>
+<lb_PModifyTitle>เลือกฐานข้อมูล:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>การดำเนินการ</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>เพิ่มเซิร์ฟเวอร์ใหม่ Z39.50</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>เพิ่มเซิร์ฟเวอร์ใหม่ SRU</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>การตั้งค่า</preferencesToolStripMenuItem>
+<cmdCloseSettings>ปิด</cmdCloseSettings>
+<label5>ควบคุมเขตข้อมูล (สำหรับชุดการประมวลผลมาก)</label5>
+<cmdSaveSettings>บันทึกการตั้งค่า</cmdSaveSettings>
+<rdDownloadPreferred>ดาวน์โหลดจากแหล่งที่ต้องการ</rdDownloadPreferred>
+<rdDownloadMostComplete>ดาวน์โหลดระเบียนที่สมบูรณ์ที่สุด</rdDownloadMostComplete>
+<rdAllRecords>ดาวน์โหลดเรกคอร์ดทั้งหมด</rdAllRecords>
+<label2>ตัวเลือกการประมวลผลชุดงาน</label2>
+<label1>การตั้งค่า</label1>
+<this>ไคลเอ็นต์ MarcEdit Z39.50/SRU</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>กระบวนการ 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>แก้ไขฟิลด์</lnkEditFields>
+<ck_040>040 - ปรับเปลี่ยนเพิ่ม $erda</ck_040>
+<ck_qualifyinginfo>คัดเลือกข้อมูล (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>แก้ไขรายการ</lnkEdit>
+<ck_dgmd>ลบ GMD</ck_dgmd>
+<ckAbbrev>ขยายย่อ</ckAbbrev>
+<ckgmd>สร้าง GMD</ckgmd>
+<ck264>ประเมิน 260/264</ck264>
+<ck_signs>ใช้ ©, สัญลักษณ์℗</ck_signs>
+<ck381>เพิ่ม 381 - อื่น ๆ</ck381>
+<ck380>เพิ่ม 380 - รูปแบบของงาน</ck380>
+<ck347>เพิ่ม 347 - ลักษณะดิจิตอล</ck347>
+<ck346>เพิ่ม 346 - ลักษณะวิดีโอ</ck346>
+<ck345>เพิ่ม 345 - Proj ลักษณะ</ck345>
+<ck344>เพิ่ม 344 - ลักษณะเสียง</ck344>
+<ck337>เพิ่ม 337 - ชนิดของสื่อ
+เพิ่ม 338 - ผู้ให้บริการชนิด</ck337>
+<ck336>336 - เพิ่มชนิดเนื้อหา</ck336>
+<cmdProcess>ตกลง, ได้</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<label1>แหล่งที่มา:</label1>
+<label2>บันทึก:</label2>
+<lnkAll>ทั้งหมด</lnkAll>
+<label3>เลือก:</label3>
+<label4>|</label4>
+<lnkNone>ไม่มี</lnkNone>
+<label7>สถานะ:</label7>
+<this>ผู้ช่วยของ RDA</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>ปิด</cmd_Close>
+<rEdit></rEdit>
+<this>ผลลัพธ์</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>บ้าน</lnkHome>
+<label5>ทรัพยากร GetString ("label5 ข้อความ")</label5>
+<label4>เกี่ยวกับ RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>เกี่ยวกับ RobertCompare</lnkAbout>
+<ckSort>ก่อนเรียงลำดับแฟ้ม</ckSort>
+<cmdClose>ปิด</cmdClose>
+<cmdExecute>การดำเนินการ</cmdExecute>
+<label1>บันทึกแฟ้ม:</label1>
+<label6>เปรียบเทียบแฟ้ม:</label6>
+<label2>ทรัพยากร GetString ("label2 ข้อความ")</label2>
+<lnkPreferences>การตั้งค่า</lnkPreferences>
+<label7>|</label7>
+<lbSortField>ฟิลด์ที่เรียงลำดับ:</lbSortField>
+<lbdelete>ลบ:</lbdelete>
+<lbAddColor>เพิ่มเติม:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>ไม่มี</lnkNone>
+<lnkAll>เลือกทั้งหมด</lnkAll>
+<col_title>ชื่อเรื่อง</col_title>
+<col_id>รหัส</col_id>
+<label3>|</label3>
+<label2>ผลลัพธ์:</label2>
+<cmdClose>ปิด</cmdClose>
+<cmdSearch>ค้นหา</cmdSearch>
+<cmbarg1>ชื่อเรื่อง</cmbarg1>
+<label1>ค้นหาฐานข้อมูล:</label1>
+<ck_batch>ค้นหาชุดงาน</ck_batch>
+<this>ค้นหา</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>เลือก</cmdSelect>
+<this>เลือก ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>หมายเลขเรกคอร์ด</columnHeader1>
+<columnHeader2>แสดงฟิลด์</columnHeader2>
+<selectItemsToolStripMenuItem>เลือกรายการ</selectItemsToolStripMenuItem>
+<cmdImport>แฟ้มนำเข้า</cmdImport>
+<cmdfDelete>ลบรายการที่เลือก</cmdfDelete>
+<cmdExport>เลือกส่งออก</cmdExport>
+<cmdExit>ทางออก</cmdExit>
+<lb_Search>ค้นหา:</lb_Search>
+<lb_DisplayField>แสดงเขตข้อมูล:</lb_DisplayField>
+<lb_SourceFile>แฟ้มต้นฉบับมาร์ค:</lb_SourceFile>
+<ckSource>บันทึกแก้ไขระเบียนในแหล่ง</ckSource>
+<ck_retain>รักษารายการตรวจสอบ</ck_retain>
+<cmd_Generate>สร้างรายงาน</cmd_Generate>
+<ck_find_all>ค้นหาข้อมูลระเบียนทั้งหมด</ck_find_all>
+<ck_use_regex>ใช้นิพจน์ทั่วไป</ck_use_regex>
+<cmdRandomExport>ส่งแบบสุ่ม</cmdRandomExport>
+<lnkDoesNotMatch>ไม่ตรงกับ</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>กลับเลือก</lnkInvert>
+<ckExactWord>จับคู่คำที่แน่นอน</ckExactWord>
+<this>MarcEdit.NET: ปรับเปลี่ยนระเบียนเลือกมาร์ค</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>เลือกเขตข้อมูลที่แยกออกจากการเรียงลำดับ</lb_title>
+<lb_fields>เรียงลำดับเขตข้อมูล:</lb_fields>
+<lbExclude>ยกเว้นเขตข้อมูล:</lbExclude>
+<cmd_OK>ตกลง, ได้</cmd_OK>
+<cmd_Close>ปิด</cmd_Close>
+<this>ตัวช่วยสร้างการเรียงลำดับแบบกำหนดเอง</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL ปลายทาง:</lbsparql>
+<cmdQuery>แบบสอบถาม</cmdQuery>
+<cmdClose>ปิด</cmdClose>
+<lbQuery>SPARQL แบบสอบถาม:</lbQuery>
+<lbresults>ผลลัพธ์:</lbresults>
+<cklocal>โหลดไฟล์ท้องถิ่น</cklocal>
+<lbOutput>เอาท์พุท:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>ตัวอย่างแบบสอบถาม:</groupBox1>
+<lbExample3>แบบสอบถามสำหรับ: 軍事基地</lbExample3>
+<lnkExample3>อาหารญี่ปุ่นไลบรารี</lnkExample3>
+<lbexample2>เก็ตตี้แบบสอบถามสำหรับคอปเปอร์ซัลเฟต</lbexample2>
+<lnkExample2>ตัวอย่างของเก็ตตี้</lnkExample2>
+<label1>สอบถามตาข่ายสำหรับไข้หวัดใหญ่ มนุษย์</label1>
+<lnkExample1>ตาข่ายตัวอย่าง</lnkExample1>
+<label2>Sparql อ้างอิง:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL ปลาย (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (วิกิพีเดีย)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL สอน</lnkTutorials>
+<this>SPARQL เบราว์เซอร์</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>ซีดีไอ=&gt;แปล MARC</lb_title>
+<groupBox1>ป้อนข้อมูลผู้ใช้</groupBox1>
+<lb_output>แฟ้มผลลัพธ์:</lb_output>
+<lb_input>แฟ้มการป้อนข้อมูล:</lb_input>
+<groupBox2>ตัวเลือก:</groupBox2>
+<rd_advanced>การแปลขั้นสูง</rd_advanced>
+<rd_simple>คำแปล</rd_simple>
+<lb_subfield>เครื่องหมายย่อย</lb_subfield>
+<cmd_Ok>ตกลง, ได้</cmd_Ok>
+<cmd_Close>ปิด</cmd_Close>
+<this>ซีดีไอ.iso =&gt;แปล MARC</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>ตัวเลือก:</lb_title>
+<lnkLoad>โหลดการแม็ปของฟิลด์</lnkLoad>
+<ck_indicators>เพิ่มตัวชี้วัด</ck_indicators>
+<ckLDR>LDRs ถูกต้อง</ckLDR>
+<ck_subfield>เพิ่มฟิลด์ย่อยชั้นนำ</ck_subfield>
+<cmdOK>ตกลง, ได้</cmdOK>
+<cmdClose>ปิด</cmdClose>
+<this>ตัวเลือกขั้นสูง</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>label 1</lbCaption>
+<cmdCancel>ยกเลิก</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>อักขระพิเศษ:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>แทรก</cmd_Insert>
+<cmdClose>ปิด</cmdClose>
+<this>ALA MARC-8 Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>ชื่อรายการงาน:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>เพิ่มลบฟิลด์งาน</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>เพิ่มแก้ไขงานย่อย</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>เพิ่มงานแก้ตัวบ่งชี้</addToolStripMenuItem>
+<cmdSave>บันทึก</cmdSave>
+<addNewFieldTaskToolStripMenuItem>เพิ่มงานใหม่ในฟิลด์</addNewFieldTaskToolStripMenuItem>
+<cmdClose>ปิด</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>เพิ่มแทนทั้งหมดของงาน</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>เพิ่มความคิดเห็น</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>เพิ่มฟิลด์แก้ไขงาน</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>เพิ่ม Swap ฟิลด์งาน</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>เพิ่มฟิลด์คัดลอก</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>เพิ่มรายการงาน</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>เพิ่มตัวช่วย RDA</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>เพิ่มข้อมูลที่เชื่อมโยงงาน</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>เพิ่มการสร้างงานฟิลด์ใหม่</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>แก้ไขลัด</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>กรณีงบ</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>พิมพ์เล็ก</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>พิมพ์ใหญ่</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>พิมพ์ชื่อเรื่อง</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>กรณีเริ่มต้น</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>กรณีแรกเป็นตัวพิมพ์ใหญ่</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>แก้ไขเขตข้อมูล</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>ล้างตัวสมาร์ท</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>ฟังก์ชันคณิตศาสตร์</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>แปลงองศาทศนิยมไป</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>ลบบรรทัดที่ว่างเปล่า</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>เครื่องมือตัด</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>สร้างเครื่องตัด</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>สร้างใบมีด Sanborn3</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>คัดลอกการดำเนินงานที่เลือก</mnuCopy>
+<mnuPasteTask>ดำเนินการงานวาง</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>ความคิดเห็นเลือกงาน</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>สำหรับงานที่เลือก</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>งาน:</lbTasks>
+<label1>การดำเนินการ:</label1>
+<label2>คำอธิบาย:</label2>
+<cmdDebug>ตรวจแก้จุดบกพร่อง</cmdDebug>
+<this>แก้ไขรายการงาน</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>ชื่อ</columnHeader1>
+<columnHeader2>เส้นทาง</columnHeader2>
+<columnHeader3>ทางลัด</columnHeader3>
+<columnHeader4>คำอธิบาย</columnHeader4>
+<cmdClose>ปิด</cmdClose>
+<lnkNew>สร้างรายการงานใหม่</lnkNew>
+<lbMacro>รายการงาน:</lbMacro>
+<lnkCloneTask>ลอกแบบรายการงานที่มีอยู่</lnkCloneTask>
+<groupBox1>การดำเนินงาน</groupBox1>
+<lnkRelink>เชื่อมโยงงาน</lnkRelink>
+<lnk_import_task>งานนำเข้า</lnk_import_task>
+<groupBox2>จัดการงานที่มีอยู่</groupBox2>
+<lnkBackup>สำรองข้อมูลงานทั้งหมด</lnkBackup>
+<lnk_export_task>ส่งงานที่เลือก</lnk_export_task>
+<lnkKey>กำหนดคีย์</lnkKey>
+<lnkEdit>แก้ไขรายการงานที่เลือก</lnkEdit>
+<lnkDelete>ลบที่เลือกรายการงาน</lnkDelete>
+<this>ตัวจัดการงาน</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>ตัดยาวระเบียน</ckTruncate>
+<label1>เลือกการดำเนินการ:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>เริ่มต้นการเข้ารหัสอักขระ:</label35>
+<ck_Marc8>แปล MARC-8</ck_Marc8>
+<ck_UTF8>แปลเป็น UTF8</ck_UTF8>
+<lb_OutputFile>บันทึกเป็น...</lb_OutputFile>
+<lb_InputFile>เปิด...</lb_InputFile>
+<cmdCancel>ปิด</cmdCancel>
+<cmdEdit>แก้ไขเรกคอร์ด</cmdEdit>
+<cmdExecute>การดำเนินการ</cmdExecute>
+<lb_Results>ผลลัพธ์:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>เครื่องมือ</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>กลับไปหน้าต่างหลัก</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>แก้ไขรายการฟังก์ชัน XML</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>ชุดระเบียนกระบวนการ</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>แปลง Characterset</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>เครื่องมือ UNIMARC</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>คุณต้องการทำอะไร</mnuContextHelp>
+<lnkTopic1>แปลงแฟ้มการเข้ารหัสอักขระที่แตกต่างกัน</lnkTopic1>
+<lnkTopic2>เพิ่ม/แก้ไขการแปล XML</lnkTopic2>
+<lnkTopic4>สามารถหาข้อผิดพลาดในแฟ้มมาร์คของฉัน</lnkTopic4>
+<groupBox1>ต้องการ:</groupBox1>
+<groupBox2>เลือกข้อมูลกระบวนการ:</groupBox2>
+<groupBox3>ตัวเลือกการเข้ารหัสอักขระ</groupBox3>
+<this>เครื่องมือของมาร์ค</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit มีชุดของเครื่องมือการแปลง UNIMARC น้ำหนัก lite  ถ้าเครื่องมือเหล่านี้คุณสนใจ และคุณอยากจะช่วยให้ดีขึ้น กรุณาให้ f eedback
+
+</label1>
+<label2>แหล่งที่มา</label2>
+<label3>จุดหมายปลายทาง</label3>
+<groupBox1>ตัวเลือก</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<this>เครื่องมือ UNIMARC</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>หมายเหตุโปรแกรมปรับปรุง:</label1>
+<cmd_Update>การปรับปรุง</cmd_Update>
+<cmd_Cancel>ยกเลิก</cmd_Cancel>
+<this>ปรับปรุง MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>การเข้ารหัส Unicode</ckIsUTF8>
+<ck_merge_to_source>ผสานเป็นต้น</ck_merge_to_source>
+<label17>บันทึกแฟ้ม:</label17>
+<label16>จัดแค็ตตาล็อกแหล่งข้อมูล</label16>
+<ck_SameFile>กระบวนการแฟ้มต้นฉบับ</ck_SameFile>
+<cmd_merge_cancel>ยกเลิก</cmd_merge_cancel>
+<cmd_merge_next>=&gt;ถัดไป</cmd_merge_next>
+<lb_merge_title>ผสานระเบียนข้อมูล</lb_merge_title>
+<ck_merge_repeatable>ทำซ้ำ</ck_merge_repeatable>
+<lb_id>ตัวระบุระเบียน:</lb_id>
+<lb_merge>รวมแฟ้ม:</lb_merge>
+<lb_source>แฟ้มต้นฉบับ:</lb_source>
+<ck_overlayexisting>สินค้าที่มีอยู่ซ้อนทับ</ck_overlayexisting>
+<label4>ค่าความเชื่อมั่น:</label4>
+<ck_mergeUnique>ผสานรวมรายการที่ไม่ซ้ำ</ck_mergeUnique>
+<button1>ยกเลิก</button1>
+<cmd_merge_select_fields_next>=&gt;ถัดไป</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; =หลัง</cmd_merge_select_fields_back>
+<label7>ผสานฟิลด์:</label7>
+<label6>เลือกเขตข้อมูล:</label6>
+<label5>ผสานระเบียนข้อมูล: เลือกเขตข้อมูล</label5>
+<button5>ปิด</button5>
+<label15>แฟ้มได้ถูกผสาน  ผลลัพธ์ที่อยู่ใน {merge_results_file }</label15>
+<label13>ผสานเสร็จสมบูรณ์</label13>
+<this>ผสานระเบียน MARC</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>เครื่องมือตรวจสอบส่วนหัวสามารถใช้เพื่อตรวจสอบ 1xx, 6xx, 7xx ฟิลด์  Th e เครื่องมือใช้การรวมกันของเว็บและบริการในท้องถิ่นเพื่อกำหนดถ้ามี g headin ปรากฏในหัวเรื่องที่ได้รับอนุญาต</label1>
+<ck_1xx>อนุญาตเขต 1xx/7xx</ck_1xx>
+<ck_6xx>อนุญาตฟิลด์ 6xx</ck_6xx>
+<cmdProcess>กระบวนการ</cmdProcess>
+<cmdClose>ปิด</cmdClose>
+<label2>แหล่งที่มา:</label2>
+<lbStatus>สถานะ:</lbStatus>
+<cmdExtract>สารสกัดจาก</cmdExtract>
+<ckdeletecache>ลบแคชภายในเครื่อง</ckdeletecache>
+<lnkDelimited>บันทึกคั่น</lnkDelimited>
+<ckonlyA>เฉพาะกระบวนการย่อย A</ckonlyA>
+<ckVariant>ตัวแปรที่ถูกต้องโดยอัตโนมัติ</ckVariant>
+<ckGenerateBriefHeadings>สร้างหน่วยงานชื่อบุคคลโดยย่อ</ckGenerateBriefHeadings>
+<label3>หน่วยงานสร้างขึ้น:</label3>
+<ckAddURIs>ฝัง URIs เมื่อเป็นไปได้</ckAddURIs>
+<ck_download_authorities>ดาวน์โหลดหน่วยงาน LC</ck_download_authorities>
+<this>ตรวจสอบหัวข้อ</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>แฟ้มต้นฉบับ:</lb_Source>
+<lb_Rules>แฟ้มกฎ:</lb_Rules>
+<cmd_Ok>ตกลง, ได้</cmd_Ok>
+<cmd_close>ปิด</cmd_close>
+<groupBox1>ตัวเลือก</groupBox1>
+<optIdentify>ตรวจสอบโครงสร้างระเบียน</optIdentify>
+<opt_remove>เอาระเบียนที่ไม่ถูกต้อง</opt_remove>
+<opt_validate>ตรวจสอบแฟ้มกฎโดยใช้ MARC</opt_validate>
+<rdHex>มุมมองในการ HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>ตกลง, ได้</cmd_Ok>
+<cmdCancel>ปิด</cmdCancel>
+<groupBox1>ตัวเลือกการรายงาน:</groupBox1>
+<lb_MARC_Title>ชื่อเรื่อง:</lb_MARC_Title>
+<lbReport>ชนิดรายงาน:</lbReport>
+<lb_XSLT>ไฟล์ XSLT:</lb_XSLT>
+<lb_Dest>แฟ้มผลลัพธ์:</lb_Dest>
+<lb_MARC>แฟ้มการป้อนข้อมูล:</lb_MARC>
+<lb_Fields>เขตข้อมูล:</lb_Fields>
+<lbTimeout>หมดเวลา (เป็นวินาที)</lbTimeout>
+<this>ตรวจสอบ URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>เกี่ยวกับบริการที่รวดเร็วของ OCLC</lnkClassify>
+<label1>ทรัพยากร GetString ("label 1 ข้อความ")</label1>
+<ck_conditional_fast>เพิ่มส่วนหัวอย่างรวดเร็วเมื่อหัวเรื่องไม่มีอยู่</ck_conditional_fast>
+<ck_always_fast>เพิ่มส่วนหัวอย่างรวดเร็ว</ck_always_fast>
+<label8>หัวเรื่อง:</label8>
+<button1>กระบวนการ</button1>
+<cmd_Close>ปิด</cmd_Close>
+<this>สร้างส่วนหัวอย่างรวดเร็ว</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>บันทึก</cmd_save>
+<cmd_close>ปิด</cmd_close>
+<ck_1xxa>$a: รายการหลัก</ck_1xxa>
+<ck_245p>$p: ชื่อของ pt/วินาที ของการทำงาน</ck_245p>
+<ck_245n>$n: จำนวน pt/วินาที ของการทำงาน</ck_245n>
+<ck_245c>$c: งบถึง</ck_245c>
+<ck_245b>$b: เหลือของชื่อเรื่อง</ck_245b>
+<ck_245a>$a: ชื่อเรื่อง</ck_245a>
+<ck_lang>ภาษา (ตำแหน่ง: 35-37)</ck_lang>
+<ck_dates>วันที่ (ตำแหน่ง: 7-14)</ck_dates>
+<ck_p7>BLvl (7 ตำแหน่ง)</ck_p7>
+<ck_p6>ชนิด (6 ตำแหน่ง)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>หมายเลขควบคุม</label6>
+<ck_form>แบบฟอร์ม (ตำแหน่ง: 23)</ck_form>
+<ck_245_h>$h: กำหนดวัสดุทั่วไป</ck_245_h>
+<label5>เขตข้อมูลเบ็ดเตล็ด:</label5>
+<label4>ฟิลด์ที่ 245:</label4>
+<label3>ฟิลด์ผู้เขียน (1xx)</label3>
+<label2>ตำแหน่ง 008</label2>
+<label1>ตำแหน่ง LDR</label1>
+<this>ตัวเลือกผสาน</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>คุณสมบัติของฐานข้อมูล</tabDBProps>
+<ck_Paused>แทนที่หยุดชั่วคราว (6 วินาที)</ck_Paused>
+<label1>ฐานข้อมูล:</label1>
+<ck_Show>แสดงฐานข้อมูล</ck_Show>
+<lbPassword>รหัสผ่าน:</lbPassword>
+<lbUsername>ชื่อผู้ใช้:</lbUsername>
+<lbSyntax>ไวยากรณ์:</lbSyntax>
+<lbPort>พอร์ต:</lbPort>
+<lbHost>โฮสต์:</lbHost>
+<lbname>ชื่อ:</lbname>
+<tabDBAdvanced>คุณสมบัติขั้นสูง</tabDBAdvanced>
+<label4>หมดเวลา (เป็นวินาที):</label4>
+<label2>ชุดองค์ประกอบ:</label2>
+<label3>ตัวเลือกอื่น ๆ:</label3>
+<lnkftp>http://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>ข้อมูลเพิ่มเติม:</lbInfo>
+<lbISBN>ISBN/นอก:</lbISBN>
+<lbSubject>ชื่อเรื่อง:</lbSubject>
+<lbTitle>ชื่อเรื่อง:</lbTitle>
+<lbAuthor>ผู้เขียน:</lbAuthor>
+<lbadvTitle>แอตทริบิวต์ Z39.50 4: โครงสร้าง</lbadvTitle>
+<cmdSave>บันทึก</cmdSave>
+<cmdClose>ปิด</cmdClose>
+<label17>การตั้งค่าฐานข้อมูล Z39.50:</label17>
+<cmdDeleteZ3950>ลบ</cmdDeleteZ3950>
+<gbCustom>การตั้งค่าแบบกำหนดเอง</gbCustom>
+<label5>ดัชนีชื่อเรื่อง:</label5>
+<label6>ดัชนีผู้เขียน:</label6>
+<label10>ดัชนีคำสำคัญ:</label10>
+<label7>เรื่องดัชนี:</label7>
+<label11>Record # Index:</label11>
+<label8>ดัชนี ISBN:</label8>
+<label12>นอกดัชนี:</label12>
+<cmdDeleteSRU>ลบ</cmdDeleteSRU>
+<ck_SRU_Show>แสดงฐานข้อมูล</ck_SRU_Show>
+<label13>พารามิเตอร์เพิ่มเติม</label13>
+<label14>โพรไฟล์การค้นหา:</label14>
+<lbVersion>เวอร์ชัน:</lbVersion>
+<cmdCloseSRU>ปิด</cmdCloseSRU>
+<cmdSaveSRU>บันทึก</cmdSaveSRU>
+<label15>ชื่อ:</label15>
+<lbMetadata>เค้าร่างข้อมูล Metadata:</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>SRU คุณสมบัติฐานข้อมูล:</lbSRUTitle>
+<this>คุณสมบัติของฐานข้อมูล</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>ค้นหา:</label1>
+<ckMatchCase>ตรงตัวพิมพ์</ckMatchCase>
+<cmdFind>ค้นหา</cmdFind>
+<this>ฐานสิบหก: ค้นหาสายอักขระ</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>แฟ้ม</fileToolStripMenuItem>
+<openToolStripMenuItem>เปิด</openToolStripMenuItem>
+<exitToolStripMenuItem>ทางออก</exitToolStripMenuItem>
+<editToolStripMenuItem>แก้ไข</editToolStripMenuItem>
+<findToolStripMenuItem>ค้นหา</findToolStripMenuItem>
+<findNextToolStripMenuItem>ค้นหาถัดไป</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>ตัด</cutToolStripMenuItem>
+<copyToolStripMenuItem>คัดลอก</copyToolStripMenuItem>
+<pasteToolStripMenuItem>วาง</pasteToolStripMenuItem>
+<clearToolStripMenuItem>ชัดเจน</clearToolStripMenuItem>
+<findToolStripMenuItem>ค้นหา</findToolStripMenuItem>
+<replaceToolStripMenuItem>แทน</replaceToolStripMenuItem>
+<lnkLoadAll>โหลดไฟล์ทั้งหมด</lnkLoadAll>
+<lb_bytes>{loaded_bytes } {file_bytes } ของไบต์มีโหลดแล้ว</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>เรกคอร์ดใหม่</tbNew>
+<mnuCNewWindow>เปิดหน้าต่างใหม่</mnuCNewWindow>
+<ContextAuthority>ผู้มีอำนาจ</ContextAuthority>
+<ContextAuthorityName>ชื่อ</ContextAuthorityName>
+<ContextAuthoritySubject>ชื่อเรื่อง</ContextAuthoritySubject>
+<cBook>หนังสือ</cBook>
+<cSerial>อนุกรม</cSerial>
+<cVisualMat>วัสดุที่มองเห็น</cVisualMat>
+<cMaps>ทรัพยากร cartographic</cMaps>
+<cSoundRec>บันทึกเสียง</cSoundRec>
+<cScore>คะแนน</cScore>
+<cElectMat>ทรัพยากรอิเล็กทรอนิกส์</cElectMat>
+<cMixedMat>วัสดุผสม</cMixedMat>
+<tbOpen>เปิดแฟ้ม</tbOpen>
+<tbSave>บันทึกแฟ้ม</tbSave>
+<tbPrint>พิมพ์ไฟล์</tbPrint>
+<tbCompile>รวบรวมระเบียน</tbCompile>
+<tbCut>ตัด</tbCut>
+<tbCopy>คัดลอก</tbCopy>
+<tbPaste>วาง</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>ลบ</tbDelete>
+<tbFind>ค้นหา</tbFind>
+<tbZ39_50>ไคลเอ็นต์ Z39.50/SRU</tbZ39_50>
+<toolStripSplitButton1>ยูทิลิตี้การแก้ไขสากล MARC</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>เพิ่มลบฟิลด์</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>สร้างฟิลด์ใหม่</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>ฟิลด์การคัดลอก</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>แก้ไขข้อมูลเขตข้อมูล</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>แก้ไขข้อมูลตัวบ่งชี้</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>แก้ไขข้อมูลย่อย</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>แลกเปลี่ยนข้อมูลของเขตข้อมูล</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>แฟ้ม</mnuFile>
+<mnuFileMain>กลับไปหน้าต่างหลัก</mnuFileMain>
+<mnuFileNew>ใหม่</mnuFileNew>
+<mnuFileNewWindow>เปิดหน้าต่างใหม่</mnuFileNewWindow>
+<mnuFileNewDefault>ค่าเริ่มต้น</mnuFileNewDefault>
+<mnuFileNewAuthority>ผู้มีอำนาจ</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>ชื่อ</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>ชื่อเรื่อง</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>หนังสือ</mnuFileNewBook>
+<mnuFileNewSerial>อนุกรม</mnuFileNewSerial>
+<mnuFileVisualMat>วัสดุที่มองเห็น</mnuFileVisualMat>
+<mnuFileNewMap>ทรัพยากร cartographic</mnuFileNewMap>
+<mnuFileNewSound>บันทึกเสียง</mnuFileNewSound>
+<mnuFileNewScore>คะแนน</mnuFileNewScore>
+<mnuFileNewER>ทรัพยากรอิเล็กทรอนิกส์</mnuFileNewER>
+<mnuFileNewMix>วัสดุผสม</mnuFileNewMix>
+<mnuFileOpen>เปิด</mnuFileOpen>
+<mnuFileRecent>แฟ้มล่าสุด</mnuFileRecent>
+<mnunone10>ไม่มี</mnunone10>
+<mnunone9>ไม่มี</mnunone9>
+<mnunone8>ไม่มี</mnunone8>
+<mnunone7>ไม่มี</mnunone7>
+<mnunone6>ไม่มี</mnunone6>
+<mnunone5>ไม่มี</mnunone5>
+<mnunone4>ไม่มี</mnunone4>
+<mnunone3>ไม่มี</mnunone3>
+<mnunone2>ไม่มี</mnunone2>
+<mnunone1>ไม่มี</mnunone1>
+<mnuFileClearHistory>ล้างประวัติ</mnuFileClearHistory>
+<mnuFileClearList>แฟ้มล่าสุด</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>ล้างประวัติการแก้ไข/แทน</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>ปิด</mnuFileClose>
+<mnuFileExportData>ส่งออก...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>นำเข้าจาก...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>บันทึก</mnuFileSave>
+<mnuFileSaveAs>บันทึกเป็น...</mnuFileSaveAs>
+<mnuFilePrint>พิมพ์</mnuFilePrint>
+<toolStripMenuItem34>พิมพ์ระเบียนต่อหนึ่งหน้า</toolStripMenuItem34>
+<FileSelectIndividualMake>เลือกระเบียนสำหรับการแก้ไข</FileSelectIndividualMake>
+<mnuFileCompile>คอมไพล์แฟ้มเป็นมาร์ค</mnuFileCompile>
+<mnuFileExit>ทางออก</mnuFileExit>
+<mnuEdit>แก้ไข</mnuEdit>
+<mnuEditUndo>ยกเลิก</mnuEditUndo>
+<mnuEditRedo>ทำซ้ำ</mnuEditRedo>
+<mnuEditSpecialUndo>เลิกทำพิเศษ</mnuEditSpecialUndo>
+<mnuEditCut>ตัด</mnuEditCut>
+<mnuEditCopy>คัดลอก</mnuEditCopy>
+<mnuEditPaste>วาง</mnuEditPaste>
+<mnuEditDupLines>บรรทัดที่ซ้ำ</mnuEditDupLines>
+<mnuEditClear>ชัดเจน</mnuEditClear>
+<mnuEditFind>ค้นหา</mnuEditFind>
+<mnuEditReplace>แทน</mnuEditReplace>
+<toolStripMenuItem28>แก้ไขลัด</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>กรณีเปลี่ยน</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>พิมพ์เล็ก</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>พิมพ์ใหญ่</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>พิมพ์ชื่อเรื่อง</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>กรณีเริ่มต้น</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>อักษรขึ้นต้นเป็นตัวพิมพ์ใหญ่</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>แก้ไขเขตข้อมูล</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>ล้างตัวสมาร์ท</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>ค้นหาฟิลด์คำที่ขาดหายไป</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>ค้นหาระเบียนที่เขตข้อมูลที่ขาดหายไป</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>ค้นหาระเบียน ด้วยแท็กซ้ำกัน</toolStripMenuItem39>
+<toolStripMenuItem40>ค้นหาระเบียนที่ มีข้อมูลซ้ำในเขตข้อมูล</toolStripMenuItem40>
+<mnuEditLimitFields>จำกัดจำนวนของเขตข้อมูล</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>เปลี่ยนชื่อเรื่อง</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>ฟังก์ชันคณิตศาสตร์</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>แปลงองศาทศนิยมไป</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>ข้ามไปยัง...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>ข้ามไปยัง... คอร์ด</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>ข้ามไปยัง... หน้า</jumpToPageToolStripMenuItem>
+<mnuEditControl>แทรกหมายเลขควบคุมเดียว</mnuEditControl>
+<mnuEdit006>แทรกหรือแก้ไข 006</mnuEdit006>
+<mnuEdit006Edit>แก้ไข</mnuEdit006Edit>
+<mnuEdit006Book>หนังสือ</mnuEdit006Book>
+<mnuEdit006Serial>ทรัพยากรอย่างต่อเนื่อง</mnuEdit006Serial>
+<mnuEdit006Map>ทรัพยากร cartographic</mnuEdit006Map>
+<mnuEdit006Sound>บันทึกเสียง</mnuEdit006Sound>
+<mnuEdit006Score>คะแนน</mnuEdit006Score>
+<mnuEdit006ER>ทรัพยากรอิเล็กทรอนิกส์</mnuEdit006ER>
+<mnuEdit006Visual>วัสดุที่มองเห็น</mnuEdit006Visual>
+<mnuEdit006Mixed>วัสดุผสม</mnuEdit006Mixed>
+<mnuEdit008>แทรกหรือแก้ไข 008</mnuEdit008>
+<mnuEdit008Edit>แก้ไข</mnuEdit008Edit>
+<mnuEdit008Book>หนังสือ</mnuEdit008Book>
+<mnuEdit008Serial>ทรัพยากรอย่างต่อเนื่อง</mnuEdit008Serial>
+<mnuEdit008Map>ทรัพยากร cartographic</mnuEdit008Map>
+<mnuEdit008Sound>บันทึกเสียง</mnuEdit008Sound>
+<mnuEdit008Score>คะแนน</mnuEdit008Score>
+<mnuEdit008ER>ทรัพยากรอิเล็กทรอนิกส์</mnuEdit008ER>
+<mnuEdit008Visual>วัสดุที่มองเห็น</mnuEdit008Visual>
+<mnuEdit008Mixed>วัสดุผสม</mnuEdit008Mixed>
+<toolStripMenuItem27>แปลงเนื้อหาของคลิปบอร์ด</toolStripMenuItem27>
+<mnuEditConverttoUTF8>มาร์ค-8 เป็น utf-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 การมาร์ค-8</mnuEditConvertoMarc8>
+<mnuEditALA>ALA MARC-8 characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>ผังอักขระ UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>เลือกทั้งหมด</mnuEditSelectAll>
+<mnuEditWrap>ตัดคำ</mnuEditWrap>
+<mnuEditRTL>แสดงจากขวาไปซ้าย</mnuEditRTL>
+<mnuFont>แบบอักษร</mnuFont>
+<mnuFontFont>แบบอักษร...</mnuFontFont>
+<mnuFontColor>สี</mnuFontColor>
+<mnuReports>รายงาน</mnuReports>
+<mnuReportsField>ฟิลด์จำนวน</mnuReportsField>
+<tlReportsMaterialReport>รายงานวัสดุชนิด</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>สร้างรายงาน</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>ค้นหาเรกคอร์ดโดยเรียงตามชนิด</findBookToolStripMenuItem>
+<booksToolStripMenuItem>หนังสือ</booksToolStripMenuItem>
+<toolStripMenuItem32>แฟ้มคอมพิวเตอร์</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>ทรัพยากรอย่างต่อเนื่อง</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>แผนที่</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>วัสดุผสม</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>คะแนน</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>สิ่งบันทึกเสียง</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>วัสดุที่มองเห็น</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>ตรวจสอบ ISBNS</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>ตรวจสอบ ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>ตรวจสอบหัวข้อ</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>สถานะบริการ</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>ตรวจสอบหัวข้อ</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>จัดการแฟ้มบันทึก</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>มุมมองแฟ้มบันทึกปัจจุบัน</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>จัดการบันทึกขั้นสูง</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>ลบแฟ้มบันทึก</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>ดูแฟ้มบันทึกทั้งหมด</viewAllLogFilesToolStripMenuItem>
+<mnuTools>เครื่องมือ</mnuTools>
+<mnuToolsCluster>คลัสเตอร์เครื่องมือ</mnuToolsCluster>
+<mnutoolCutters>เครื่องมือ cuttering</mnutoolCutters>
+<mnuToolsCalculator>แคตตาล็อกเครื่องคิดเลข</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>สร้างเครื่องตัด</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>ตัด Sanborn ตารางที่ 3</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>สร้างหมายเลขโทร</mnuToolsCallNum>
+<mnuToolsControlNumber>สร้างหมายเลขควบคุม</mnuToolsControlNumber>
+<toolStripMenuItem33>เครื่องมือเชื่อมโยงข้อมูล</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>สร้างระเบียนที่เชื่อมโยง</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>คอร์ด Deduplication</mnuToolsDedup>
+<mnuToolsRDAHelpers>ผู้ช่วยของ RDA</mnuToolsRDAHelpers>
+<mnuToolsZ3950>ตัวเลือก Z39.50/SRU</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>ไคลเอ็นต์ MarcEdit Z39.50/SRU</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 อัปโหลดบันทึก</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 ลบเรกคอร์ด</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>โฮลดิ้งปรับปรุง Z39.50</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>แก้ไขข้อมูลคง</mnuToolsEditConstant>
+<mnuToolsAssigned>ข้อมูลคงที่กำหนด</mnuToolsAssigned>
+<mnuConstant1>1) สายที่ไม่ได้กำหนด</mnuConstant1>
+<mnuConstant2>2) สายที่ไม่ได้กำหนด</mnuConstant2>
+<mnuConstant3>3) สายที่ไม่ได้กำหนด</mnuConstant3>
+<mnuConstant4>4) สายไม่ได้กำหนด</mnuConstant4>
+<mnuConstant5>5) สายที่ไม่ได้กำหนด</mnuConstant5>
+<mnuConstant6>6) สายที่ไม่ได้กำหนด</mnuConstant6>
+<mnuConstant7>7) สายไม่ได้กำหนด</mnuConstant7>
+<mnuConstant8>8) ไม่ได้กำหนดสายอักขระ</mnuConstant8>
+<mnuConstant9>9) สายไม่ได้กำหนด</mnuConstant9>
+<mnuConstant10>10) สายที่ไม่ได้กำหนด</mnuConstant10>
+<mnutoolmanageAutomate>จัดการงาน</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>งานที่กำหนด</mnuToolsAssignedTasks>
+<mnuDefTask>งานอยู่ในปัจจุบัน</mnuDefTask>
+<task1>1) งานที่ไม่ได้กำหนด</task1>
+<task2>2) งานที่ไม่ได้กำหนด</task2>
+<task3>3) งานที่ไม่ได้กำหนด</task3>
+<task4>4) ไม่ได้กำหนดงาน</task4>
+<task5>5) งานไม่ได้กำหนด</task5>
+<task6>6) งานไม่ได้กำหนด</task6>
+<task7>7) งานไม่ได้กำหนด</task7>
+<task8>8) ไม่ได้กำหนดงาน</task8>
+<task9>9) งานไม่ได้กำหนด</task9>
+<task10>10) งานไม่ได้กำหนด</task10>
+<task11>11) งานที่ไม่ได้กำหนด</task11>
+<task12>12) งานไม่ได้กำหนด</task12>
+<task13>13) งานไม่ได้กำหนด</task13>
+<task14>14) งานที่ไม่ได้กำหนด</task14>
+<task15>15) งานไม่ได้กำหนด</task15>
+<task16>16) งานไม่ได้กำหนด</task16>
+<task17>17) งานที่ไม่ได้กำหนด</task17>
+<task18>18) งานไม่ได้กำหนด</task18>
+<task19>19) งานไม่ได้กำหนด</task19>
+<task20>20) งานไม่ได้กำหนด</task20>
+<mnuToolsValidate>ตรวจสอบระเบียน MARC</mnuToolsValidate>
+<mnuToolsOAI>เก็บเกี่ยวจากค่อน</mnuToolsOAI>
+<mnutoolsurl>สร้าง MARC จาก URL</mnutoolsurl>
+<toolStripMenuItem43>เครื่องมือจัดรูปแบบ mnemonic</toolStripMenuItem43>
+<toolStripMenuItem3>ปกติ...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>ปกติ LC ระเบียน</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>ปกติ Microlif ระเบียน</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>ลบบรรทัดที่ว่างเปล่า</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>เอาเขตข้อมูลที่ ว่าง/Subfields</mnuToolsRemoveEmpty>
+<mnuToolsAdd>เพิ่มลบฟิลด์</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>สร้างฟิลด์ใหม่</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>ฟิลด์การคัดลอก</toolStripMenuItem26>
+<mnuToolsEditField>แก้ไขข้อมูลเขตข้อมูล</mnuToolsEditField>
+<mnuToolsIndicator>แก้ไขข้อมูลตัวบ่งชี้</mnuToolsIndicator>
+<mnuToolsSubfield>แก้ไขข้อมูลย่อย</mnuToolsSubfield>
+<mnuToolsSortby>เรียงตาม...</mnuToolsSortby>
+<toolStripMenuItem41>เรียงลำดับระเบียนโดย...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>ฟิลด์แบบกำหนดเอง</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>ฟิลด์ผู้เขียน</mnuToolsSortAuthor>
+<mnuToolsSortByCall>หมายเลขฟิลด์</mnuToolsSortByCall>
+<mnuToolsSortControl>หมายเลขควบคุม</mnuToolsSortControl>
+<mnuToolsSortbyTitle>ฟิลด์ชื่อเรื่อง</mnuToolsSortbyTitle>
+<toolStripMenuItem42>เรียงลำดับเขตข้อมูล Witin เรกคอร์ดโดย...</toolStripMenuItem42>
+<mnuToolsCustomSort>เรียงลำดับแบบกำหนดเอง</mnuToolsCustomSort>
+<mnuToolsSort2>เรียงลำดับฟิลด์ 0xx</mnuToolsSort2>
+<mnuToolsSort>เรียงลำดับเขตข้อมูลทั้งหมด</mnuToolsSort>
+<mnuToolsSwap>แลกเปลี่ยนข้อมูลของเขตข้อมูล</mnuToolsSwap>
+<mnuToolsOptions>การตั้งค่า</mnuToolsOptions>
+<mnu_ILS>[ILS ชื่อ]</mnu_ILS>
+<mnu_ils_search>ค้นหา</mnu_ils_search>
+<updateCreateToolStripMenuItem>ปรับปรุงสร้าง</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>การตั้งค่ากระบวนการ</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>ค้นหา WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>เพิ่ม/ลบ/ปรับปรุงท้องถิ่นข้อมูลบรรณานุกรม</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>สร้าง/ปรับปรุงข้อมูลบรรณานุกรม</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>ปรับปรุงโฮลดิ้งส์</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>ปลั๊กอิน</pluginsToolStripMenuItem>
+<mnuHelp>วิธีใช้</mnuHelp>
+<mnuHelpContents>เนื้อหาและความช่วยเหลือ</mnuHelpContents>
+<mnuEditInfo>ข้อมูล MARC</mnuEditInfo>
+<mnuEditInfoOCLC>วิธีใช้มาร์คของ OCLC</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>เครื่องมือสำหรับ RDA</mnuHelpRDAToolkit>
+<mnuEditInfoLC>สหรัฐอเมริกาไลบรารีของวิธีใช้ MARC การประชุม</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>แพคเกจแฟ้มสำหรับการดีบัก</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>คุณต้องการทำอะไร</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>เร็กคอร์ดต่อหน้า</label1>
+<lblPage>หน้า</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>ดูแฟ้มบันทึกอัตโนมัติ</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>มีบริการตรวจสอบข้อมูลผ่านทางบริการของ OCLC Termology ประโยชน์จากบริการเหล่านี้ คุณต้องยอมรับปฏิบัติตามข้อกำหนด และเงื่อนไขที่กำหนดไว้ โดย OCLC และเที่ยงตรงของบริการเหล่านี้</lb_text>
+<label1>OCLC เชื่อมโยงข้อตกลง:</label1>
+<lnk_Terms>ดูเงื่อนไขการใช้</lnk_Terms>
+<cmd_Agree>ฉันเห็นด้วย</cmd_Agree>
+<cmd_disagree>ฉันไม่เห็นด้วย</cmd_disagree>
+<this>ข้อตกลงของ OCLC</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>อังกฤษ</comboBox1>
+<linkLabel2>ขอบคุณไม่ เพียงแค่ใช้ค่าเริ่มต้น</linkLabel2>
+<linkLabel1>กันเลย</linkLabel1>
+<label2>ฉันอยู่ที่นี่เพื่อช่วยคุณเริ่มต้น  ฉันจะถามคำถามคุณ และคุณได้รับใน yo </label2>
+<label1>ยินดีต้อนรับสู่ MarcEdit 7</label1>
+<this>MarcEdit 7 เริ่มต้นตัวช่วยสร้าง</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>ไปยังการตั้งค่าข้อมูล... ลูกไม้</linkLabel1>
+<label6>จำเป็น คุณสามารถตั้งค่ารูปแบบ ขนาดอักษร ภาษา และ o ขั้นสูงการเข้าถึง </label6>
+<cmb_theme_picker>ค่าเริ่มต้น</cmb_theme_picker>
+<label5>แนะนำชุดรูปแบบ:</label5>
+<label4>pt</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>แนะนำขนาดแบบอักษร:</label3>
+<cmbFont>โนโตะ Sans</cmbFont>
+<label2>แบบอักษรเริ่มต้น:</label2>
+<label1>ลักษณะ MarcEdit</label1>
+<this>ตัวช่วยสร้างการเริ่มต้น MarcEdit 7: หน้า 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit มาร์ค agnostic ดังนั้นลองบอกมันเล็กน้อยเกี่ยวกับข้อมูลของคุณ</label5>
+<comboBox3>เลือกให้ฉัน</comboBox3>
+<label4>ระบบประมวลผล XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>เข้ารหัสเรกคอร์ดเริ่มต้น:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>รูปแบบ MARC ของฉันคือ:</label2>
+<linkLabel1>เราเกือบเสร็จแล้ว  กระรอก</linkLabel1>
+<label1>การตั้งค่า MarcEdit ข้อมูล</label1>
+<this>ตัวช่วยสร้างการเริ่มต้น MarcEdit 7: หน้า 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>แก้ไขความสุข</linkLabel1>
+<label5>ทรัพยากร GetString ("label5 ข้อความ")</label5>
+<label1>ขอแสดงความยินดี  คุณจะสามารถใช้ MarcEdit 7</label1>
+<this>ตัวช่วยสร้างการเริ่มต้น MarcEdit 7: เสร็จสิ้น</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>ปิด</cmdClose>
+<ck_remote>แก้ไขหน่วยงานระยะไกล</ck_remote>
+<ck_Marc8>แปลงเป็น MARC-8</ck_Marc8>
+<opt_default>ค่าเริ่มต้น</opt_default>
+<opt_saxon>ดาว</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>บันทึก</cmdSave>
+<gp_XSLT>เครื่องยนต์ XSLT</gp_XSLT>
+<label7>รูปสุดท้าย</label7>
+<label6>รูปแบบเดิม</label6>
+<label4>เส้นทาง XSLT/ตอบ</label4>
+<label3>ชื่อฟังก์ชัน (นามแฝง):</label3>
+<label2>ข้อมูลทั่วไป:</label2>
+<lnkXMLFunctionWizard>ตัวช่วยสร้างฟังก์ชัน XML</lnkXMLFunctionWizard>
+<groupBox1>การดำเนินการ</groupBox1>
+<lnkAdd>เพิ่ม</lnkAdd>
+<lnkModify>ปรับเปลี่ยน</lnkModify>
+<lnkDelete>ลบ</lnkDelete>
+<label5>รูปแบบ:</label5>
+<label1>กำหนดฟังก์ชัน:</label1>
+<this>แก้ไขฟังก์ชัน XML</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

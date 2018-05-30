@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Trekke ut poster</mnuExtract>
+<cmenuClipboard>Kopier til utklippstavlen</cmenuClipboard>
+<cmenuSubfields>Antall underfelt</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>hjelp</cmenuHelp>
+<cmd_OK>Lukk</cmd_OK>
+<cmd_Report>Generere rapport</cmd_Report>
+<lb_ReportStyle>Stil:</lb_ReportStyle>
+<opt_tab>Tab skilletegn rapport</opt_tab>
+<opt_xml>XML-rapport</opt_xml>
+<opt_html>HTML-rapport</opt_html>
+<this>Antall metadatafelt</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Retning:</groupBox3>
+<rd_down>Ned</rd_down>
+<rd_up>Opp</rd_up>
+<btn_findall>Finn alle</btn_findall>
+<groupBox1>Søkealternativer:</groupBox1>
+<ck_f_whole_word>Finn bare hele ord</ck_f_whole_word>
+<ck_find_regex>Bruke vanlige uttrykk</ck_find_regex>
+<ck_f_match_case>Store/små bokstaver</ck_f_match_case>
+<cmdFClose>Lukk</cmdFClose>
+<cmdFFind>Finn</cmdFFind>
+<lb_FindWhat>Finn hva:</lb_FindWhat>
+<cmdNav_Find>Finn</cmdNav_Find>
+<cmdReplaceNav>Erstatt</cmdReplaceNav>
+<ckReplaceConditional>Utføre søk/erstatt hvis...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Hvis:</label1>
+<cmd_R_Close>Lukk</cmd_R_Close>
+<cmd_R_All>Erstatt alle</cmd_R_All>
+<cmd_R_Replace>Erstatt</cmd_R_Replace>
+<groupBox2>Søkealternativer:</groupBox2>
+<ck_Replace_ExactWordMatch>Eksakte ordet Match</ck_Replace_ExactWordMatch>
+<ckMultiLine>Flerlinjet evaluering</ckMultiLine>
+<ckFile>Bruke eksterne søk/erstatt vilkår</ckFile>
+<ck_R_RegExp>Bruke vanlige uttrykk</ck_R_RegExp>
+<ck_R_Case>Store/små bokstaver</ck_R_Case>
+<lb_ReplaceWith>Erstatt:</lb_ReplaceWith>
+<lb_R_FindWhat>Finn:</lb_R_FindWhat>
+<this>Søk/erstatt:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Status:
+
+</lb_bProccess_status>
+<ck_bTask>Last oppgaver</ck_bTask>
+<ckBatchProcessSubfolders>Inkluder undermapper</ckBatchProcessSubfolders>
+<lb_Operation>Funksjon:</lb_Operation>
+<cmdBClose>Lukk</cmdBClose>
+<cmdBProcess>Prosessen</cmdBProcess>
+<lb_Extensions>Filtyper:</lb_Extensions>
+<lb_BSource>Kilde adresseliste:</lb_BSource>
+<lbBTitle>Satsvis prosess MARC poster</lbBTitle>
+<groupBox1>Alternativer</groupBox1>
+<this>Satsvis prosess poster</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Satsvis prosess</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Siste koding:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Opprinnelige koding:</lb_encoding>
+<lb_UTF8_Header>Tegnkonvertering</lb_UTF8_Header>
+<cmdCancel>Lukk</cmdCancel>
+<cmdOK>Prosessen</cmdOK>
+<lb_UTF8_Dest>Målfilen:</lb_UTF8_Dest>
+<lb_UTF8_Source>Kildefil:</lb_UTF8_Source>
+<groupBox1>Kodingsinnstillinger</groupBox1>
+<this>Bokstaver konverteringer</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Verktøy for klynger</label1>
+<label2>Dataene klynging verktøy gir et sett med forenklet klynging alternativer for enha nced satsvise dataoppryddingen.  Avansert klynging funksjonalitet, Vurder å bruke OpenRefine.</label2>
+<groupBox1>Alternativer</groupBox1>
+<rdCustom>Indeks egendefinerte felt</rdCustom>
+<rdControlData>Indeksdata kontrollert (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Indeksere alle Data</rdAll>
+<cmdImport>Importere Data</cmdImport>
+<label3>Kildefil:</label3>
+<label9>Sortere Data:</label9>
+<label8>Vise klynger:</label8>
+<label7>Klynge på de følgende Underfeltene:</label7>
+<cmbclusteringalgorithm>Levenshtein avstand</cmbclusteringalgorithm>
+<label6>Velg klynging algoritme:</label6>
+<cmbClusterField>Navn (1xx, 7xx)</cmbClusterField>
+<label4>Velg dataene du vil klynge:</label4>
+<cmdGenerateCluster>Generere klynge</cmdGenerateCluster>
+<cmbAlg>Levenshtein avstand</cmbAlg>
+<lnkAddCriteria>Legge til oppdatering</lnkAddCriteria>
+<lnkClose>Lukk</lnkClose>
+<lnkEditCluster>Behandle alle endringer</lnkEditCluster>
+<label5>Grupperte Data:</label5>
+<this>Klynging verktøy</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Feilsøkingsprogram for aktivitet</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Kontekstuelle skilletegn</label8>
+<lb_Tab_Header>Eksport kategorien skilletegn poster</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>I feltskilletegn</label18>
+<lbdelimiter>Velg feltskilletegn</lbdelimiter>
+<cmdTClose2>Lukk</cmdTClose2>
+<cmdTNext>Neste &gt;&gt;</cmdTNext>
+<label1>Trinn 1: Angi filbaner</label1>
+<ck_normalize>Normalisere feltdata</ck_normalize>
+<cmd_tab2_back>Tilbake</cmd_tab2_back>
+<lnkSettings>Innstillinger...</lnkSettings>
+<lnkDeleteField>Slette felt</lnkDeleteField>
+<lnkAddField>Legg feltet</lnkAddField>
+<label14>Underfeltet:</label14>
+<label11>Felt:</label11>
+<cmdTClose>Lukk</cmdTClose>
+<cmdTExport>Eksportere</cmdTExport>
+<label2>Trinn 2: Define felt/underfelt eksport</label2>
+<label3>Eksport kategorien skilletegn poster</label3>
+<mnuLoad>Laste inn innstillinger</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Lagre innstillinger</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Fjern innstillingene</menuItem3>
+<this>Eksport kategorien skilletegn poster</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Størrelse:</label4>
+<lb_Example>Eksempeltekst</lb_Example>
+<lb_lang_font>Velg skriften:</lb_lang_font>
+<cmdOK>ok</cmdOK>
+<cmdClose>Lukk</cmdClose>
+<this>Velg skrift</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Oppgaver som kjøres på Import</groupBox1>
+<lnkSelectPre>Merk aktivitet</lnkSelectPre>
+<cname>navn</cname>
+<cPath>Oppgavebanen</cPath>
+<groupBox2>Oppgaver som kjøres på eksport</groupBox2>
+<linkLabel1>Merk aktivitet</linkLabel1>
+<columnHeader1>navn</columnHeader1>
+<columnHeader2>Oppgavebanen</columnHeader2>
+<cmdSave>Lagre</cmdSave>
+<cmdClose>Lukk</cmdClose>
+<deleteItemToolStripMenuItem>Slette element</deleteItemToolStripMenuItem>
+<this>ILS innstillinger</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Inkluder undermapper</ckJoinSubfolders>
+<cmdEditFile>Redigere filen</cmdEditFile>
+<lnkJoinedFiles>Vis sluttet filer</lnkJoinedFiles>
+<label19>Filtyper:</label19>
+<ck_JoinIndividual>Delta enkelte filer</ck_JoinIndividual>
+<cmdJoinCancel>Lukk</cmdJoinCancel>
+<cmdJoinProcess>Prosessen</cmdJoinProcess>
+<lb_Join_Files>Fil(er) delta:</lb_Join_Files>
+<lb_Join_Source>Lagre filen:</lb_Join_Source>
+<lb_Join_Header>MARCJoin verktøy</lb_Join_Header>
+<lbJoinStatus>Status:</lbJoinStatus>
+<groupBox1>Alternativer</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Poster Per fil:</lb_Split_Records>
+<cmdSplitClose>Lukk</cmdSplitClose>
+<cmdSplitProcess>Prosessen</cmdSplitProcess>
+<lb_Split_Folder>Målmappen:</lb_Split_Folder>
+<lb_Split_Source>Kildefil:</lb_Split_Source>
+<lb_Split_Header>MARCSplit verktøy</lb_Split_Header>
+<groupBox1>Alternativer</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Theme navn:</label1>
+<label2>Beskrivelse:</label2>
+<label3>Globale verdier</label3>
+<label4>Skriftfarge</label4>
+<label5>Bakgrunnsfarge</label5>
+<label6>Bakgrunnsfarge</label6>
+<label7>Skriftfarge</label7>
+<label8>MarcEditor verdier</label8>
+<cmdSave>Lagre</cmdSave>
+<cmdClose>Lukk</cmdClose>
+<cmdPreview>Forhåndsvisning</cmdPreview>
+<richTextBox1>Eksempeltekst</richTextBox1>
+<label9>MarcEditor skjerm:</label9>
+<cmdOpen>Åpne</cmdOpen>
+<label10>GROUPBOX bakgrunn</label10>
+<groupBox1>GROUPBOX eksempel</groupBox1>
+<this>MarcEdit tema Builder</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>Veiviseren for feilsøking av MarcEdit var beregnet på hjelpe brukernes finner hjelpen som </label1>
+<gpStart>Alternativer</gpStart>
+<rdErrorMessage>Jeg har en feilmelding</rdErrorMessage>
+<rdErrorNumber>Jeg har et feilnummer</rdErrorNumber>
+<lbMessage>{meldingen}</lbMessage>
+<cmdPage1>Neste</cmdPage1>
+<gpResults>Resultater</gpResults>
+<cmdClose>Lukk</cmdClose>
+<lnkCreateDebugPackage>Opprette en Debug pakke å sende for Debugging?</lnkCreateDebugPackage>
+<label2>Veiviseren for feilsøking kunne ikke finne en artikkel i kunnskapsbasen- </label2>
+<this>MarcEdit feilsøkingsveiviser</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Andre XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Velg siste Format</label17>
+<label16>Trinn 3:</label16>
+<label15>Lagre filen:</label15>
+<label13>Trinn 2:</label13>
+<label12>Transformasjon navn:</label12>
+<lnkNextPg1>Videre til neste trinn</lnkNextPg1>
+<label4>Velg fil:</label4>
+<label3>Trinn 1:</label3>
+<label2>ressurser. GetString ("label2. Tekst")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Dokumentelementet:</lbTop>
+<ckTopLevel>Bruk Document-elementet</ckTopLevel>
+<lnkNextPg2>Videre til neste trinn</lnkNextPg2>
+<label7>Merk posten elementet</label7>
+<label6>Trinn 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Definere tilordninger</label14>
+<lnkNextP3>Videre til neste trinn</lnkNextP3>
+<groupBox2>Argumenter</groupBox2>
+<ck_filing_characters>Beregne felles nonfiling data</ck_filing_characters>
+<ck_sort>Sorteringsfelt</ck_sort>
+<button2>Last mal</button2>
+<toolStripMenuItem2>Redigere elementet</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Slette elementer</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Bli med elementer</joinItemsToolStripMenuItem>
+<groupBox1>Innstillinger</groupBox1>
+<ckTrim>Trimme eksisterende tegnsetting</ckTrim>
+<ck_Repeatable>Repeterbare underfelt</ck_Repeatable>
+<P3_ck_constant>Konstant-Data</P3_ck_constant>
+<P3_cmd_Apply>Legge til argumentet</P3_cmd_Apply>
+<P3_lb_punct>Begrepet. Skilletegn:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Ind:</P3_lb_indicators>
+<P3_mapto>Tilordnet:</P3_mapto>
+<P3_lb_select>Velg:</P3_lb_select>
+<label9>Trinn 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Lukke veiviseren</lnkClose>
+<label11>Transformasjon er opprettet og lagt til XML-funksjoner-listen.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Type: bok</label11>
+<lbbTitle>006/008 alternativer:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>Fest:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>CONT:</lnkbCont>
+<lnkbForm>Skjema:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Sykdommer:</lnkbIlls>
+<lnkbType>Type:</lnkbType>
+<label12>Type: Elektronisk ressurs</label12>
+<label5>006/008 alternativer:</label5>
+<lnkcFile>Fil:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Type:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Datoer:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>CtrY:</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 alternativer:</label1>
+<label13>Type: kart</label13>
+<label3>006/008 alternativer:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>Skjema:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>Proj:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Type:</lnkmType>
+<label14>Type: Blandet materiale</label14>
+<label4>006/008 alternativer:</label4>
+<lnkmmForm>Skjema:</lnkmmForm>
+<lnkmmType>Type:</lnkmmType>
+<label15>Type: Score</label15>
+<label6>006/008 alternativer:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Skjema:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>Type:</lnkscType>
+<label10>Type: Fortsetter ressurs</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 alternativer:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>CONT:</lnkslCont>
+<lnkslForm>Skjema:</lnkslForm>
+<lnkslOrig>Orig.:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>Freq:</lnkslFreq>
+<lnkslType>Type:</lnkslType>
+<label16>Type: Lydopptak</label16>
+<label8>006/008 alternativer:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Skjema:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>Type:</lnksdType>
+<label17>Type: Visuelle materialer</label17>
+<label9>006/008 alternativer:</label9>
+<lnkvmTech>Tech:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Skjema:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Tid:</lnkvmTime>
+<lnkvmType>Type:</lnkvmType>
+<cmd_Ok>ok</cmd_Ok>
+<cmd_Close>Lukk</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Skjema:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>ressurser. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>Om meg:</lb_Authors>
+<lbBuildCode>Oppdatere koden:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>Prosjektets webside:</label5>
+<label2>Takk:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Endret:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Forfatter:</lbAuthor>
+<lbVersion>Bygge antallet:</lbVersion>
+<label4>Om MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/Technical-details</linkLabel1>
+<label1>Tekniske detaljer:</label1>
+<this>Om MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Last</cmdLoad>
+<cmdClose>Lukk</cmdClose>
+<cmdDelete>Slette</cmdDelete>
+<this>Autolagring:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Rediger felt</lnk_Edit_Fields>
+<lnkCopy>Kopiere feltdata</lnkCopy>
+<lnkSwapFields>Bytte felt</lnkSwapFields>
+<lnkIndicators>Redigere indikatorer</lnkIndicators>
+<lnkSubfield>Redigere underfelt Data</lnkSubfield>
+<lnkAddDelete>Legge til/slette felt</lnkAddDelete>
+<groupBox8>Slette alternativer</groupBox8>
+<ckRemoveByPostition>Fjerne ved posisjon</ckRemoveByPostition>
+<ck_RemoveIfNot>Fjerne hvis feltdata ikke samsvarer</ck_RemoveIfNot>
+<ck_dedup>Fjern like Data</ck_dedup>
+<groupBox7>Legge til alternativer</groupBox7>
+<ck_A_addifnotduplicate>Legg til feltet bare hvis ikke en kopi</ck_A_addifnotduplicate>
+<ck_A_Insert>Sette inn før</ck_A_Insert>
+<ck_A_not_present>Legg feltet bare dersom ikke tilstede</ck_A_not_present>
+<ck_AddIfPresent>Legg feltet hvis det finnes</ck_AddIfPresent>
+<ck_last>Sett inn sist</ck_last>
+<groupBox6>Generelle alternativer</groupBox6>
+<ck_delete_batch>Behandle batch drift</ck_delete_batch>
+<ck_A_Case>Store/små bokstaver</ck_A_Case>
+<ck_A_regular_Expression>Bruke vanlige uttrykk</ck_A_regular_Expression>
+<label1>Finn hva:</label1>
+<cmd_A_Close>Lukk</cmd_A_Close>
+<cmd_A_Add>Legg feltet</cmd_A_Add>
+<cmd_A_Delete>Slette felt</cmd_A_Delete>
+<label3>Feltdata:</label3>
+<lb_A_Field>Felt:</lb_A_Field>
+<lb_A_Title>Legge til/slette felt-verktøyet</lb_A_Title>
+<cmd_Sub_Close>Lukk</cmd_Sub_Close>
+<cmd_Sub_Remove>Fjern tekst</cmd_Sub_Remove>
+<cmd_Sub_Replace>Erstatt teksten</cmd_Sub_Replace>
+<groupBox2>Søkealternativer:</groupBox2>
+<ckDeleteDuplicate>Slette like underfelt</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Slette underfelt</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Flytte underfelt data</ck_move_subfield>
+<ck_Reg_Express>Bruke vanlige uttrykk</ck_Reg_Express>
+<ck_Sub_Case>Store/små bokstaver</ck_Sub_Case>
+<ck_Sub_New>Nye underfelt bare</ck_Sub_New>
+<ck_Sub_NotPresent>Legge til underfelt hvis ikke er tilstede</ck_Sub_NotPresent>
+<label8>Erstatt med:</label8>
+<label7>Feltdata:</label7>
+<label6>Underfeltet:</label6>
+<label5>Felt:</label5>
+<lb_Sub_Title>Redigere underfelt verktøyet</lb_Sub_Title>
+<cmd_I_Close>Lukk</cmd_I_Close>
+<cmd_I_Replace>Erstatt</cmd_I_Replace>
+<lb_Ind_Replace>Erstatt med indikatorer</lb_Ind_Replace>
+<label12>Feltdata:</label12>
+<label11>Indikatorer</label11>
+<label10>Felt:</label10>
+<lb_Ind_Title>Rediger indikator-verktøy</lb_Ind_Title>
+<ck_Match_All_Subfields>Matche alle underfelt</ck_Match_All_Subfields>
+<ck_swap_expression>Behandle som vanlig uttrykk</ck_swap_expression>
+<label4>Finn:</label4>
+<cmd_Swap_Close>Lukk</cmd_Swap_Close>
+<cmd_Swap_Process>Prosessen</cmd_Swap_Process>
+<groupBox3>Søkealternativer</groupBox3>
+<ck_swap_once_per>Behandle ett felt per bytte</ck_swap_once_per>
+<ck_swap_sort>Sorter endret felt</ck_swap_sort>
+<ck_Swap_Override>Legge til eksisterende/opprette nye</ck_Swap_Override>
+<ck_Swap_Add>Legg til eksisterende felt</ck_Swap_Add>
+<ck_Swap_Copy>Kopiere kilden</ck_Swap_Copy>
+<label20>Endrede Data:</label20>
+<label22>Underfelt</label22>
+<label23>Indikatorer</label23>
+<label24>Feltet</label24>
+<label19>Originaldataene:</label19>
+<label18>Finn:</label18>
+<label17>Underfelt</label17>
+<label16>Indikatorer</label16>
+<label15>Feltet</label15>
+<lb_Swap_Title>Bytte feltet verktøyet</lb_Swap_Title>
+<label14>Feltdata</label14>
+<lbFindInField>Søke i felt</lbFindInField>
+<groupBox4>Alternativer</groupBox4>
+<ck_copy_field_regex>Bruke vanlige uttrykk</ck_copy_field_regex>
+<ck_copy_delete>Slette kildefeltet</ck_copy_delete>
+<label2>Målfeltet:</label2>
+<cmdCopyClose>Lukk</cmdCopyClose>
+<cmdCopy>Kopier</cmdCopy>
+<label9>Kilde-feltet:</label9>
+<label13>Kopiere feltdata</label13>
+<label26>Stilling:</label26>
+<label21>Erstatt:</label21>
+<label25>Finn:</label25>
+<groupBox5>Alternativer</groupBox5>
+<ck_editfield_match_case>Store/små bokstaver</ck_editfield_match_case>
+<ck_UserRegularExpressions>Bruke vanlige uttrykk</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Lukk</cmdFieldEdit_Close>
+<cmdEditField_Process>Prosessen</cmdEditField_Process>
+<label27>Felt:</label27>
+<label28>Redigere feltdata</label28>
+<this>MarcEdit.NET Batch redigeringsverktøy</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<label1>Den BibFrame2 Serbia og MontenegroGenericName er en enkel å bruke verktøy utviklet for å tillate metadata speci </label1>
+<label2>Kildefil:</label2>
+<label3>Lagre filen:</label3>
+<label4>Dataserialisering:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Oversettelsesregler:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Rediger</lnkEditXQuery>
+<label7>Filtypen:</label7>
+<label8>Profil:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>ID-feltet:</label9>
+<this>BibFrame Serbia og MontenegroGenericName</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Lagre filen:</label3>
+<label2>Kildefil:</label2>
+<label1>Verktøyet for koblede Data er designet for å gå gjennom et sett med MARC poster og løse tilgangspunkter i 1xx, 6xx og 7xx dataelementer til sin koblede dat en end-meningene.</label1>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdCancel>Lukk</cmdCancel>
+<groupBox1>ID-tjenester</groupBox1>
+<ckLimiter>Grense løsning:</ckLimiter>
+<ck3xxFields>Prosessen 3xx felt</ck3xxFields>
+<label4>OCLC nummer:</label4>
+<ckWorkId>Bygge inn IDen for OCLC</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>Identifiser emne ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>Identifiser Main/ekstra oppføring</ck_loc>
+<label5>Filen:</label5>
+<cmdStatus>Tjenestestatus</cmdStatus>
+<lbstatus>Status:</lbstatus>
+<this>Bygge koblede oppføringer</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Finn</lnkFind>
+<lbResults>Resultatene:</lbResults>
+<lnkCatalog>Kyle Banerjee katalogen kalkulator</lnkCatalog>
+<cmdClose>Lukk</cmdClose>
+<label1>LC kniver</label1>
+<this>Katalogisering kalkulator</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>Tegn oppdagelsen verktøyet bruker en heuristical prosess for å gi en beste gjetning avslapning </label1>
+<cmdDetect>Oppdage</cmdDetect>
+<cmdClose>Lukk</cmdClose>
+<label2>Resultatene:</label2>
+<ckDetailed>Detaljert resultater</ckDetailed>
+<this>Tegn gjenkjenning</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>ressurser. GetString ("label1. Tekst")</label1>
+<lnkClassify>Om OCLCS klassifisere Service</lnkClassify>
+<ck_all>Legge til alle poster</ck_all>
+<ck_single>Legg til valgte posten</ck_single>
+<ck_lc>Library of Congress</ck_lc>
+<ck_dewey>Dewey desimal</ck_dewey>
+<cmdProcess>Klassifisere</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<label5>Sett hvis følgende felt ikke finnes (eksempel: 050, 060, 090, 092)</label5>
+<label4>Sette inn generert klassifiseringer i følgende felt:</label4>
+<ck_cutters>Beregne kniver og datoer</ck_cutters>
+<ck_use_z>Bruk underfelt z for samsvarende</ck_use_z>
+<ck_DateMod>Tilføye flagget til dato</ck_DateMod>
+<ck_omit_serial>Utelat dato for føljetong</ck_omit_serial>
+<ck_omit_integrated>Utelat dato for integrert ressurser</ck_omit_integrated>
+<ck_omit>Tilføye datounntakene</ck_omit>
+<ck_always_fast>Legge til rask overskrifter</ck_always_fast>
+<ck_conditional_fast>Legge til rask overskriftene når ingen emneoverskrifter finnes</ck_conditional_fast>
+<label6>Indikatorer:</label6>
+<cmdInsert>Instruksjoner for innsetting</cmdInsert>
+<cmdClassification>Klassifikasjoner</cmdClassification>
+<cmdSubjects>Emneoverskrifter</cmdSubjects>
+<lnkClassification>Velg klassifisering</lnkClassification>
+<lnkSubjects>Velg alternativer for emne</lnkSubjects>
+<lnkOptions>Angi alternativer for</lnkOptions>
+<cmdOptions>Alternativer</cmdOptions>
+<label2>Underfeltet:</label2>
+<label3>Cuttering underfelt:</label3>
+<this>Generere klassifisering</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Konstant-Data</columnHeader1>
+<columnHeader3>Snarvei</columnHeader3>
+<cmdClose>Lukk</cmdClose>
+<lnkKey>Nøkkeltildeling</lnkKey>
+<lnkEdit>Rediger valgte streng</lnkEdit>
+<lnkDelete>Slett valgte streng</lnkDelete>
+<lnkNew>Opprette ny hyssing</lnkNew>
+<lbActions>Handlinger:</lbActions>
+<lbMacro>Konstant-Data:</lbMacro>
+<this>Redigere konstante Data</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Nummerprefiks:</lb_prefix>
+<lb_digit>Starte siffer:</lb_digit>
+<ck_autogenerate>Sette inn nye poster</ck_autogenerate>
+<button1>ok</button1>
+<button2>Lukk</button2>
+<lb_length>Siffer lengde (minus prefiks)</lb_length>
+<ckgenerate>Generere i gjeldende fil</ckgenerate>
+<ck_label>Merk poster tall</ck_label>
+<label1>Feltet/underfelt (eksempel: 001, 949$ b)</label1>
+<ck_repeat>Alltid sette inn</ck_repeat>
+<this>Generere kontroll tall</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Bruke Fuzzy matchende</ck_UseFuzzyMatch>
+<ck_save>Lagre Dedup elementer:</ck_save>
+<ck_unique>Utgang unike elementer</ck_unique>
+<ck_remove>Fjern like elementer</ck_remove>
+<lbOptions>Alternativer:</lbOptions>
+<label1>Dedup holder:</label1>
+<lb_Control>Felt:</lb_Control>
+<cmdClose>Lukk</cmdClose>
+<cmdOK>Prosessen</cmdOK>
+<btnCancel>Avbryt</btnCancel>
+<btnNext>Neste</btnNext>
+<label4>Lagre filen:</label4>
+<label3>Finn duplikasjoner fra følgende filer:</label3>
+<label2>Registrere duplikatfjerning verktøyet</label2>
+<label5>Tillit:</label5>
+<this>Registrere duplikatfjerning</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Velg loggfil:</label1>
+<groupBox1>Alternativer</groupBox1>
+<ckChanged>Trekke ut endrede poster</ckChanged>
+<ckEnhance>Forbedre logger</ckEnhance>
+<label2>Velg poster:</label2>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<this>Loggbehandling</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext er en laboratoriet plass å introdusere nye verktøy og begreper relatert til de </lbaboutmn>
+<lnkOpenRefine>OpenRefine integrering</lnkOpenRefine>
+<lnkSPARQL>SPARQL leseren</lnkSPARQL>
+<lnkLinkIds>Koblingsidentifikatorer</lnkLinkIds>
+<lnkBibframe>BibFrame Serbia og MontenegroGenericName</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Bruk dette verktøyet til å flytte data mellom MARC eller Marcedit's Mnemonic Format og OpenRef </label1>
+<label2>Kildefil:</label2>
+<label3>Lagre filen:</label3>
+<rdExport>Eksporter til OpenRefine</rdExport>
+<rdImport>Import fra OpenRefine</rdImport>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdCancel>Lukk</cmdCancel>
+<lbStatus>Status:</lbStatus>
+<groupBox1>Alternativer</groupBox1>
+<this>OpenRefine Data overføring verktøyet</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Velg filer til aksje:</label1>
+<ckconfig>Konfigurasjonsalternativer</ckconfig>
+<label2>Eksporterer alle data i config brukerkatalogen.  Dette inkluderer konfigurasjonsdata, </label2>
+<ckXSLT>XSLT-funksjoner</ckXSLT>
+<label3>Eksportere den definerte XSLT-stilark
+</label3>
+<ckMacros>Definerte makroer og oppgaver</ckMacros>
+<label4>Eksportere alle definerte makroer og oppgaver.
+</label4>
+<label5>Eksportere alle definerte MarcEditor materialtype maler.</label5>
+<ckTemplates>Definert MarcEditor maler</ckTemplates>
+<cmdExport>Eksportere</cmdExport>
+<cmdClose>Lukk</cmdClose>
+<this>Eksportinnstillingene</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Handlingen</columnHeader2>
+<columnHeader1>Funnet tekst</columnHeader1>
+<button1>Lukk</button1>
+<button2>Gå til side</button2>
+<cmdFindUpdate>Redigere finne spørring</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Finne alle resultater</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<lbField>Angi feltet servicehenvendelse evaluere. (ex. 090)</lbField>
+<groupBox1>Alternativer</groupBox1>
+<rdTitle>Kutter rekkefølgen (2xx, 1xx)</rdTitle>
+<rdDefault>Kutter rekkefølgen (1xx, 2xx)</rdDefault>
+<groupBox2>Alternativer</groupBox2>
+<label1>Finn:</label1>
+<rdCustomField>Egendefinert felt</rdCustomField>
+<rdMainEntry>Evaluere hovedoppføringen (1xx, 245)</rdMainEntry>
+<this>Generere kniver</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Definerte OAI-servere:</label1>
+<label2>(Bruk SKIFT/SKIFT CTRL for å velge flere elementer)</label2>
+<ck_date>Høste fra siste nedlasting</ck_date>
+<cmdCreate>Lagre</cmdCreate>
+<button1>Lukk</button1>
+<this>Opprette Harvest kjørselen</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Byte</BytesGroup>
+<label5>Biter</label5>
+<label4>ISO-8859-1</label4>
+<label3>Desimaltall</label3>
+<label2>Hex</label2>
+<columnHeader1>Posisjon</columnHeader1>
+<columnHeader2>Byte</columnHeader2>
+<columnHeader3>Tekst</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Filen</menuItem1>
+<openToolStripMenuItem>Åpne</openToolStripMenuItem>
+<ExitProgram>Avslutt</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit resultatvinduet</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Funksjonsnavn (Alias):</lb_Alias>
+<label1>Bli med:</label1>
+<cmd_ok>Lagre</cmd_ok>
+<cmd_close>Lukk</cmd_close>
+<this>Bli med XML-funksjoner</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>navn</columnHeader1>
+<columnHeader2>Bane</columnHeader2>
+<cmdOK>ok</cmdOK>
+<cmdClose>Lukk</cmdClose>
+<this>Tilgjengelige oppgaver</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Verktøy</mnuTools>
+<mnuAddinsEditLinkedData>Redigere regler koblede Data</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Redigere XML-filen</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Hvordan jeg profil nye endepunktene?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Oppdatere filen</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Loggbehandling</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Avansert loggbehandling</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Slett loggfiler</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Vise alle loggfiler</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Tekstfil oversetter</mnuAddinTranslator>
+<mnuExportGroup>Eksport...</mnuExportGroup>
+<mnuToolsTabbed>Eksport kategorien skilletegn poster</mnuToolsTabbed>
+<mnuToolsGateway>Eksportere MARC post</mnuToolsGateway>
+<mnuToolsSelect>Velg MARC poster</mnuToolsSelect>
+<mnuToolsDelete>Slette valgte oppføringer</mnuToolsDelete>
+<mnuToolsExtract>Pakk ut merkede poster</mnuToolsExtract>
+<mnuToolsCharacterConversion>Tegn konverteringsverktøy</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>Bokstaver konverteringer</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Tegn gjenkjenning</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit skriptveiviseren</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL Explorer</mnuExplorer>
+<toolStripMenuItem4>OAI innhøsting verktøy</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Harvest OAI Records</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Satsvise innhøsting</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Opprette satsvis jobb</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Kjøre Batch Harvest</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Eksportere</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Import</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC verktøy</mnuToolsUnimarcTools>
+<mnuAddinURL>Kontroller URL-adresser</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU-klient</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>MARC bildebehandling verktøy</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Satsvis prosess poster</mnuToolsBatch>
+<toolClusterData>Klynge verktøy</toolClusterData>
+<mnuToolsDedup>Finn duplikatoppføringer</mnuToolsDedup>
+<generateToolStripMenuItem>Generere...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Ringe numre</mnuGenerateCallnumber>
+<toolStripMenuItem3>RASK overskrifter</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC emneoverskrifter</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Slå sammen oppføringer</mnutoolsmerge>
+<toolStripMenuItem5>RDA Helper</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC operasjoner</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC posten dataoverførte</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Oppdatere verden posten Holdings</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Laste opp Bibliograph poster til verden</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Validere overskrifter</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Tjenestestatus</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Validere overskrifter</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Innstillinger</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Pluginmoduler</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>CD-ISIS ISO =&gt; MARC oversettelse</mnuaddincdsisis>
+<mnuHelp>hjelp</mnuHelp>
+<mnuHelpContents>Innholdet og hjelp</mnuHelpContents>
+<mnuHelpTutorials>Vis opplæring</mnuHelpTutorials>
+<mnuHelpOnline>Hjelp</mnuHelpOnline>
+<mnuHelpList>Delta MarcEdit varslingslisten</mnuHelpList>
+<mnuHelpError>Forslag/feilrapport</mnuHelpError>
+<mnuBlog>MarcEdit blogg</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit kjente problemer</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Systeminfo</systemInfoToolStripMenuItem>
+<mnuAddLang>Redigere språkfiler</mnuAddLang>
+<mnuRestartIn32bitMode>Starte MarcEdit i 32-biters modus</mnuRestartIn32bitMode>
+<mnuFileShare>Dele konfigurasjonsinnstillinger</mnuFileShare>
+<exportSettingsToolStripMenuItem>Eksportinnstillingene</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Importinnstillinger</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Feilsøkingsalternativer</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Fjerne midlertidige filer</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Last ned Noto Unicode</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Reparasjon oppgavefilen</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Gjenopprette filer fra sikkerhetskopien</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Merk aktiviteter koble til</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Tilbakestille konfigurasjonsdata</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Åpne HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Veiviseren for feilsøking</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Laste ned oppdateringen (debug modus)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Se etter oppdateringer</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Programsnarveier</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Databanen for programmet</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Språk Databanen</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Tema Databanen</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT Databanen</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>Om...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>Forfatteren, Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit lisensavtalen</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Hva vil du gjøre?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>Brukerdefinerte 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine Data</lnkUserDefined1>
+<lnkMarcToolsStart>MARC verktøy</lnkMarcToolsStart>
+<lnkUserDefined2>Brukerdefinerte 2</lnkUserDefined2>
+<lnkUserDefined4>Bruker Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Jeg vil gjerne:</groupBox1>
+<cmbLastToolUsed>Siste brukte verktøy</cmbLastToolUsed>
+<lnkTopic5>Arbeide med koblede Data</lnkTopic5>
+<lnkTopic4>Oversette Excel MARC</lnkTopic4>
+<lnkTopic3>Flett MARC filer</lnkTopic3>
+<lnkTopic2>Harvest OAI Data</lnkTopic2>
+<lnkTopic1>Redigere en MARC fil</lnkTopic1>
+<this>MarcEdit {versjon} .beta av Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Harvest OAI Data</lbTitle>
+<lbServer>Serveradresse:</lbServer>
+<lbSet>Angi navnet:</lbSet>
+<lbMetadata>Metadata Type:</lbMetadata>
+<cmdOK>ok</cmdOK>
+<cmdClose>Lukk</cmdClose>
+<opt_default>Standard</opt_default>
+<opt_saxon>ANGELSAKSISK</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT-motoren:</label4>
+<ck_Raw>Høste rådata (lagre OAI data til lokale filsystemet)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Avanserte innstillinger</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Tidsavbrudd (i sekunder).</lbTimeout>
+<ck_Translate>Oversette til MARC-8</ck_Translate>
+<label2>Slutten:</label2>
+<label1>Start:</label1>
+<lbCrosswalk>Crosswalk bane:</lbCrosswalk>
+<cmdSave>Lagre</cmdSave>
+<lnkDebug>Feilsøke URL</lnkDebug>
+<tabPage1>Hjem</tabPage1>
+<tabPage2>Avanserte innstillinger</tabPage2>
+<this>Metadata innhøsting</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Kildefilen OCLC tall:</label1>
+<cmdDownload>Last ned</cmdDownload>
+<cmdClose>Lukk</cmdClose>
+<label2>Lagre filen:</label2>
+<this>Last ned masseoppføringer fra OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>Søk verden:</label1>
+<cmbarg1>søkeord</cmbarg1>
+<cmbconditional>og</cmbconditional>
+<cmdSearch>Søk</cmdSearch>
+<cmdClose>Lukk</cmdClose>
+<label2>Resultatene:</label2>
+<col_oclcnum>OCLC nummer</col_oclcnum>
+<col_title>Tittel</col_title>
+<ck_LocalBib>Last ned lokale bibliografiske posten hvis</ck_LocalBib>
+<lnkAll>Velg alle</lnkAll>
+<label3>|</label3>
+<lnkNone>Ingen</lnkNone>
+<this>Søk OCLC verden</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Oppdatere din OCLC WorldCat Holdings</label1>
+<groupBox1>Alternativer</groupBox1>
+<rdDeleteHoldings>Slette Holdings</rdDeleteHoldings>
+<rdAddHolding>Legge til Holdings</rdAddHolding>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<label2>Institusjon kode:</label2>
+<label3>Klassifisering skjema:</label3>
+<cmb_schema>Library Of Congress</cmb_schema>
+<ck_debug>Skrive feilsøkingsinfo</ck_debug>
+<this>Oppdatere WorldCat Holdings</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Library Of Congress</cmb_schema>
+<label3>Klassifisering skjema:</label3>
+<label2>Institusjon kode:</label2>
+<cmdClose>Lukk</cmdClose>
+<cmdProcess>Prosessen</cmdProcess>
+<label4>Bibliografisk poster med OCLC tall blir oppdatert i verden.  Bibliograph </label4>
+<label1>Holde koden:</label1>
+<lnkGetHoldings>Få koder</lnkGetHoldings>
+<ckLocalBibData>Prosessen som lokale bibliografisk poster</ckLocalBibData>
+<ck_deleterecords>Slette poster</ck_deleterecords>
+<this>Laste opp poster til verden</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>ok</cmd_options_ok>
+<cmd_options_cancel>Lukk</cmd_options_cancel>
+<cmd_options_apply>Bruke</cmd_options_apply>
+<lnkMainWindow>Hovedvinduet</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Språk</lnkLanguage>
+<lnkEaseOfUse>Brukervennlighet</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Oppdateringer</lnkUpdates>
+<lnkFileAssociations>Filtilknytninger</lnkFileAssociations>
+<lnkOther>Andre</lnkOther>
+<lnkILSIntegration>ILS integrering</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API-integrering</lnkOCLCAPI>
+<label15>Oppgi standardprogram</label15>
+<ckLogging>Aktivere Logging:</ckLogging>
+<ckAutosave>Aktiver automatisk lagring</ckAutosave>
+<ck_enhanced_editor_loading>Bruke forbedret paginerer administrasjon</ck_enhanced_editor_loading>
+<ckRDATemplates>RDA maler</ckRDATemplates>
+<ckCompileMarc8>Kompilere poster som MARC8</ckCompileMarc8>
+<label37>Påloggingsbane:</label37>
+<cksaveutf8>Kompilere poster som UTF8</cksaveutf8>
+<ck_intellisense>Aktiver Intellisense</ck_intellisense>
+<label2>Poster per side</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Standard koding:</lb_Encoding>
+<ck_nwindow>Åpne filer i nytt vindu</ck_nwindow>
+<ck_append>Legge til nye poster</ck_append>
+<lb_psize>Forhåndsvisningsstørrelse:</lb_psize>
+<ckUsePreview>Bruk modusen forhåndsvisning</ckUsePreview>
+<cmd_editor_font_default>Angi standardinnstillinger</cmd_editor_font_default>
+<cmd_editor_set_font>Angi skrift</cmd_editor_set_font>
+<lb_Editor_Font_Props>Angi skriftegenskaper for MarcEditor:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Angi standardinnstillinger</cmd_editor_template_default>
+<cmd_editor_modify>Endre</cmd_editor_modify>
+<lb_Current_Template>Gjeldende mal:</lb_Current_Template>
+<lb_Editor_Template>MarcEditor mal:</lb_Editor_Template>
+<label9>* Krever programmet starte *</label9>
+<label8>pt.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Skriftstørrelse:</label4>
+<lb_Example>Eksempeltekst</lb_Example>
+<lb_lang_font>Angi språk skrift:</lb_lang_font>
+<lb_Set_Lang>Angi språkpakke:</lb_Set_Lang>
+<rd_theme_dark>Egendefinerte temaer:</rd_theme_dark>
+<rd_theme_normal>Normal (standard)</rd_theme_normal>
+<label39>Programmet visningsalternativer</label39>
+<ck_export_output>Eksportere mottak (fange ILS utgang)</ck_export_output>
+<lb_TCP_Timeout>Tidsavbrudd:</lb_TCP_Timeout>
+<lb_TCP_Port>Port:</lb_TCP_Port>
+<lb_TCP_Host>Vertsadresse:</lb_TCP_Host>
+<lb_TCPIP_Props>TCP:</lb_TCPIP_Props>
+<ck_marc21>Oppføringer i MARC21-format</ck_marc21>
+<ck_marcxml_sax>Bruk innfødt alternativet (ikke-XSLT prosess)</ck_marcxml_sax>
+<groupBox2>XSLT-motoren</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode normalisering</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Standard tegnkoding:</label35>
+<ckC>Kanoniske Decomposition (C)</ckC>
+<ckKD>Kompatibilitet nedbryting (KD)</ckKD>
+<ck_Diacritics>Bruke diakritiske tegn når bryte</ck_Diacritics>
+<lb_Diacritics>Generelle alternativer:</lb_Diacritics>
+<lb_Engine_XML_Options>XML-alternativer:</lb_Engine_XML_Options>
+<ck_engine_namespace>Bruk Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Automatiske oppdateringer er deaktivert av systemansvarlig</labelAutoUpdateDisabled>
+<ckDetectProxy>Bruk proxy systeminnstillinger</ckDetectProxy>
+<ck_Update_Validator>Automatisk se etter Validator oppdateringer</ck_Update_Validator>
+<label3>Du må tilhøre et domene for denne å arbeide på dette tidspunktet.</label3>
+<groupBox4>Brukerinformasjon:</groupBox4>
+<lb_domain>Domene:</lb_domain>
+<label6>Passord:</label6>
+<label5>Brukernavn:</label5>
+<ckUpdates>Automatisk se etter oppdateringer</ckUpdates>
+<groupBox5>Angi filtilknytninger</groupBox5>
+<cmd_file_assoc_view>Visningstyper</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Slette</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Lagre Type</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Knytte (*.                      )-filtypen med den:</label7>
+<ck_mrk8_editor>Knytte (*.mrk8) filer til MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Knytte (*.mrk) filer til MarcEditor</ck_mrk_editor>
+<ck_mrc>Knytte (*.mrc) filer til MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Velg</lnkSelectILS>
+<lnkDeleteProfile>Slette</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Legge til</lnkAddProfile>
+<label31>Profiler:</label31>
+<ck_ignore_ssl>Ignorer SSL sertifikatfeil</ck_ignore_ssl>
+<lnk_ils_delete>Slette</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Rediger</lnk_ils_z3950_edit>
+<ck_ils_z3950>Bruk innstillinger for Z39.50</ck_ils_z3950>
+<ck_ils_enable>Aktiver ILS alternativer</ck_ils_enable>
+<label13>Vertsnavn:</label13>
+<label12>Passord:</label12>
+<label11>Brukernavn:</label11>
+<label10>Velg System:</label10>
+<lnkGetCodes>Få holde koder</lnkGetCodes>
+<label24>Holde koden:</label24>
+<cmb_schema>Library Of Congress</cmb_schema>
+<label22>Klassifisering skjema:</label22>
+<label23>Institusjon kode:</label23>
+<ckshow>Vis tekst</ckshow>
+<cmdValidateKeys>Validere nøkler</cmdValidateKeys>
+<linkLabel1>Forespørsel/behandle en OCLC nøkkel (kobler til OCLC)</linkLabel1>
+<label21>Innstillinger for OCLC-API-nøkkel</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Hemmelig nøkkel (forbundet med Metadata-API-nøkkel)</label18>
+<label17>OCLC Metadata API-nøkkel</label17>
+<label16>OCLC søk API-nøkkel</label16>
+<lnkFilePaths>Steder</lnkFilePaths>
+<label38>Nettverk tidsavbrudd (300 millisekund standard):</label38>
+<lnkCopyLocalFiles>Kopier lokale filer nå</lnkCopyLocalFiles>
+<label30>Angi standard MARC verktøy stasjonsbane:</label30>
+<label27>Filbaner:</label27>
+<label26>Oppgavemappen:</label26>
+<label25>Nettverksmapper:</label25>
+<lb_mono>MONO bane:</lb_mono>
+<lb_temp>Sette midlertidig bane:</lb_temp>
+<ck_rss>Les RSS-Feed</ck_rss>
+<lb_title>Tittel Tag:</lb_title>
+<lb_Author>Forfatteren Tag:</lb_Author>
+<lbCall>Ringe nummeret Tag:</lbCall>
+<label1>Kontrollkoden for nummer:</label1>
+<ck_allow_z3950>Aktivere Z39.50</ck_allow_z3950>
+<label28>Alternativer:</label28>
+<ck_touch_friendly>Bruke Touch vennlig menyer</ck_touch_friendly>
+<ck64_bit>64-bit installert</ck64_bit>
+<ck_32bit>32-bit installert</ck_32bit>
+<label36>MS Office-versjon:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: bruke koblingsfelt for sortering</ckSort880>
+<ck880Infile>InFile 880 felt med feltet par</ck880Infile>
+<label29>Sorteringsalternativer:</label29>
+<ckShowDescriptionInScreenTips>Vis funksjonsbeskrivelser i skjermtips</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Vis hurtigtastar i skjermtips</ckScreenTipShortcuts>
+<label42>Tastaturalternativer</label42>
+<ckProvideSoundAccess>Gi tilbakemelding med lyd</ckProvideSoundAccess>
+<label41>Alternativer for tilbakemelding</label41>
+<groupBox3>Handlinger:</groupBox3>
+<lnkSearch4Themes>Slett valgt tema</lnkSearch4Themes>
+<lnkNewTheme>Opprette nytt tema</lnkNewTheme>
+<label40>Gjør MarcEdit mer tilgjengelig</label40>
+<this>MarcEdit innstillinger</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Tilgjengelige Plugins:</label1>
+<ch1>Plugin navn</ch1>
+<ch2>URL</ch2>
+<c3>Filstørrelse</c3>
+<c4>Version #:</c4>
+<cmddownload>Last ned</cmddownload>
+<cmdClose>Lukk</cmdClose>
+<columnHeader1>Fjerne?</columnHeader1>
+<columnHeader2>Plugin navn</columnHeader2>
+<columnHeader3>Klassenavn</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Programtillegg:</label2>
+<cmdRemove>Fjerne</cmdRemove>
+<c5>MarcEdit versjon nummer</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>ressurser. GetString ("label1. Tekst")</label1>
+<label2>Mønster:</label2>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdCancel>Avbryt</cmdCancel>
+<lbstatus>Status:</lbstatus>
+<ckEscape>Unnslippe data fra URL</ckEscape>
+<ckAddNew>Erstatte eksisterende felt</ckAddNew>
+<ck_addnewfield>Legge til et nytt felt hvis ikke er tilstede</ck_addnewfield>
+<ckAlwaysAdd>Legge til nytt felt</ckAlwaysAdd>
+<groupBox1>Alternativer</groupBox1>
+<this>Bygge nye felt</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Satsvise søk</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Resultater</groupBox3>
+<lnkClearResults>Klare resultater</lnkClearResults>
+<lnkDownload>Laste ned alle elementene</lnkDownload>
+<lnkGetNext>Få neste {grense}</lnkGetNext>
+<lnkDownloadAllHoldings>Last ned alle Holdings</lnkDownloadAllHoldings>
+<col1>Posisjon</col1>
+<col2>Tittel</col2>
+<columnHeader1>Databasen</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Last ned valgte elementer</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Last ned valgte Holdings poster</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Vis valgte posten</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Alternativer</groupBox1>
+<rdEditDB>Velg Database</rdEditDB>
+<rdEditSettings>Rediger innstillinger</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Poster per side</label4>
+<ckUnicode>Hente Unicode</ckUnicode>
+<lb_encoding_single>Serveren tegnsett</lb_encoding_single>
+<lbSearchb>Søk:</lbSearchb>
+<lbSearch>Spørringen Database:</lbSearch>
+<label3>Database-innstilling:</label3>
+<cmdSelectDatabase>Velg</cmdSelectDatabase>
+<MCol3>ID</MCol3>
+<MCol1>navn</MCol1>
+<MCol2>Type</MCol2>
+<lb_PModifyTitle>Velg databasen:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Handlinger</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Legg til Z39.50</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Legg til ny SRU-Server</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Innstillinger</preferencesToolStripMenuItem>
+<cmdCloseSettings>Lukk</cmdCloseSettings>
+<label5>Kontrollere feltene (for satsvis behandling duplikatfjerning)</label5>
+<cmdSaveSettings>Lagre innstillinger</cmdSaveSettings>
+<rdDownloadPreferred>Last ned fra foretrukket kilde</rdDownloadPreferred>
+<rdDownloadMostComplete>Laste ned de mest komplette postene</rdDownloadMostComplete>
+<rdAllRecords>Last ned alle poster</rdAllRecords>
+<label2>Alternativer for satsvis behandling</label2>
+<label1>Innstillinger</label1>
+<this>MarcEdit Z39.50/SRU-klient</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Prosessen i 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Rediger felt</lnkEditFields>
+<ck_040>Endre 040 - legge til $erda</ck_040>
+<ck_qualifyinginfo>Kvalifiserende informasjon (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Rediger liste</lnkEdit>
+<ck_dgmd>Slette GMD</ck_dgmd>
+<ckAbbrev>Erstatte forkortelser</ckAbbrev>
+<ckgmd>Generere GMD</ckgmd>
+<ck264>Evaluere 260/264</ck264>
+<ck_signs>Bruk alltid ©, ℗ symboler</ck_signs>
+<ck381>Legge til 381 - andre</ck381>
+<ck380>Legge til 380 - Form for arbeid</ck380>
+<ck347>Legge til 347 - Digital egenskaper</ck347>
+<ck346>Legge til 346 - Video egenskaper</ck346>
+<ck345>Legge til 345 - Proj. Egenskaper</ck345>
+<ck344>Legge til 344 - lydegenskaper</ck344>
+<ck337>Legge til 337 - medietype
+Legg til 338 - Carrier-Type</ck337>
+<ck336>Legge til 336 - innholdstype</ck336>
+<cmdProcess>ok</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<label1>Kilde:</label1>
+<label2>Lagre:</label2>
+<lnkAll>Alle</lnkAll>
+<label3>Velg:</label3>
+<label4>|</label4>
+<lnkNone>Ingen</lnkNone>
+<label7>Status:</label7>
+<this>RDA Helper</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Lukk</cmd_Close>
+<rEdit></rEdit>
+<this>Resultater</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Hjem</lnkHome>
+<label5>ressurser. GetString ("label5. Tekst")</label5>
+<label4>Om RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>Om RobertCompare</lnkAbout>
+<ckSort>Før sortering filer</ckSort>
+<cmdClose>Lukk</cmdClose>
+<cmdExecute>Kjøre</cmdExecute>
+<label1>Lagre filen:</label1>
+<label6>Sammenligne filer:</label6>
+<label2>ressurser. GetString ("label2. Tekst")</label2>
+<lnkPreferences>Innstillinger</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Sorteringsfelt:</lbSortField>
+<lbdelete>Sletting:</lbdelete>
+<lbAddColor>Tillegg:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Ingen</lnkNone>
+<lnkAll>Velg alle</lnkAll>
+<col_title>Tittel</col_title>
+<col_id>ID</col_id>
+<label3>|</label3>
+<label2>Resultatene:</label2>
+<cmdClose>Lukk</cmdClose>
+<cmdSearch>Søk</cmdSearch>
+<cmbarg1>tittel</cmbarg1>
+<label1>Søkedatabasen:</label1>
+<ck_batch>Satsvise søk</ck_batch>
+<this>Søk</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Velg</cmdSelect>
+<this>Velg ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Rekordmange</columnHeader1>
+<columnHeader2>Visningsfeltet</columnHeader2>
+<selectItemsToolStripMenuItem>Velge elementer</selectItemsToolStripMenuItem>
+<cmdImport>Importfilen</cmdImport>
+<cmdfDelete>Slett valgte</cmdfDelete>
+<cmdExport>Eksporter valgt</cmdExport>
+<cmdExit>Avslutt</cmdExit>
+<lb_Search>Søk:</lb_Search>
+<lb_DisplayField>Vise felt:</lb_DisplayField>
+<lb_SourceFile>MARC kildefilen:</lb_SourceFile>
+<ckSource>Lagre endrede poster i kilde</ckSource>
+<ck_retain>Beholde merkede elementer</ck_retain>
+<cmd_Generate>Generere rapport</cmd_Generate>
+<ck_find_all>Søk alle postdataene</ck_find_all>
+<ck_use_regex>Bruke vanlige uttrykk</ck_use_regex>
+<cmdRandomExport>Eksport tilfeldig</cmdRandomExport>
+<lnkDoesNotMatch>Samsvarer ikke</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Inverter valg</lnkInvert>
+<ckExactWord>Eksakte ordet Match</ckExactWord>
+<this>MarcEdit.NET: Endre valgte MARC poster</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Velg feltene som skal utelates fra sortering</lb_title>
+<lb_fields>Sorteringsfelt:</lb_fields>
+<lbExclude>Utelate felt:</lbExclude>
+<cmd_OK>ok</cmd_OK>
+<cmd_Close>Lukk</cmd_Close>
+<this>Sorteringsrekkefølger veiviseren</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>Endepunkt for SPARQL:</lbsparql>
+<cmdQuery>Spørring</cmdQuery>
+<cmdClose>Lukk</cmdClose>
+<lbQuery>SPARQL spørring:</lbQuery>
+<lbresults>Resultatene:</lbresults>
+<cklocal>Last lokal fil</cklocal>
+<lbOutput>Utdata:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Eksempler på spørringer:</groupBox1>
+<lbExample3>Spørring for: 軍事基地</lbExample3>
+<lnkExample3>Japanske DIETTEN bibliotek</lnkExample3>
+<lbexample2>Getty spørringen for kobber sulfat</lbexample2>
+<lnkExample2>Getty eksempel</lnkExample2>
+<label1>MESH spørringen for influensa, menneskelige</label1>
+<lnkExample1>MESH eksempel</lnkExample1>
+<label2>Sparql referanser:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL endepunkt (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Wikipedia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL opplæring</lnkTutorials>
+<this>SPARQL leseren</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CD-ISIS =&gt; MARC oversettelse</lb_title>
+<groupBox1>Brukerinndata</groupBox1>
+<lb_output>Utdatafilen:</lb_output>
+<lb_input>Inndatafilen:</lb_input>
+<groupBox2>Alternativer:</groupBox2>
+<rd_advanced>Avansert oversettelse</rd_advanced>
+<rd_simple>Enkel oversettelse</rd_simple>
+<lb_subfield>Underfeltet markør</lb_subfield>
+<cmd_Ok>ok</cmd_Ok>
+<cmd_Close>Lukk</cmd_Close>
+<this>CD-ISIS ISO =&gt; MARC oversettelse</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Alternativer:</lb_title>
+<lnkLoad>Last felttilordninger</lnkLoad>
+<ck_indicators>Legge til indikatorer</ck_indicators>
+<ckLDR>Riktig LDRs</ckLDR>
+<ck_subfield>Legge til ledende underfelt</ck_subfield>
+<cmdOK>ok</cmdOK>
+<cmdClose>Lukk</cmdClose>
+<this>Avanserte alternativer</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Avbryt</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Spesialtegn:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Sett inn</cmd_Insert>
+<cmdClose>Lukk</cmdClose>
+<this>MARC-8 ALA bokstaver</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Listen aktivitetsnavnet:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Legge til slette feltet oppgave</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Legge til Rediger underfelt oppgave</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Legge til Rediger indikator oppgave</addToolStripMenuItem>
+<cmdSave>Lagre</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Legge til nye felt aktiviteten</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Lukk</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Legge til Erstatt alle</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Legg til kommentar</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Legge til feltet Rediger oppgave</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Legge til Swap feltet oppgave</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Legg Kopier feltet aktivitet</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Legge til aktivitetslisten</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Add RDA Helper</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Legg til koblede Data aktivitet</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Legge til bygge nye feltet aktiviteten</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Redigere snarveier</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Saken uttalelser</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>små bokstaver</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>STORE BOKSTAVER</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Store bokstaver</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Første tilfelle</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Kapitalisere første tilfelle</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Feltet redigeringer</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Rengjør Smart tegn</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matematiske funksjoner</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Konvertere desimalgrader til</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Fjern tomme linjer</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Kutter verktøy</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Generere kniver</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Generere Sanborn3 kniver</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Kopier merkede oppgavehandling</mnuCopy>
+<mnuPasteTask>Oppgave innliming</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Kommentar valgt oppgave</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>UnComment merkede aktiviteter</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Aktiviteter:</lbTasks>
+<label1>Handlinger:</label1>
+<label2>Beskrivelse:</label2>
+<cmdDebug>Feilsøke</cmdDebug>
+<this>Redigere oppgaveliste</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>navn</columnHeader1>
+<columnHeader2>Bane</columnHeader2>
+<columnHeader3>Snarvei</columnHeader3>
+<columnHeader4>Beskrivelse</columnHeader4>
+<cmdClose>Lukk</cmdClose>
+<lnkNew>Opprette ny oppgaveliste</lnkNew>
+<lbMacro>Oppgavelister:</lbMacro>
+<lnkCloneTask>Klone eksisterende oppgaveliste</lnkCloneTask>
+<groupBox1>Oppgavehandlinger</groupBox1>
+<lnkRelink>Koble aktiviteter</lnkRelink>
+<lnk_import_task>Importoppgaven</lnk_import_task>
+<groupBox2>Administrere eksisterende oppgaver</groupBox2>
+<lnkBackup>Sikkerhetskopiere alle aktiviteter</lnkBackup>
+<lnk_export_task>Eksporter merket aktivitet</lnk_export_task>
+<lnkKey>Nøkkeltildeling</lnkKey>
+<lnkEdit>Rediger valgte oppgaveliste</lnkEdit>
+<lnkDelete>Slett valgte oppgaveliste</lnkDelete>
+<this>Oppgavebehandling</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Avkortes lange poster</ckTruncate>
+<label1>Velg operasjon:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Standard tegnkoding:</label35>
+<ck_Marc8>Oversette til MARC-8</ck_Marc8>
+<ck_UTF8>Oversette til UTF8</ck_UTF8>
+<lb_OutputFile>Lagre som...</lb_OutputFile>
+<lb_InputFile>Åpne...</lb_InputFile>
+<cmdCancel>Lukk</cmdCancel>
+<cmdEdit>Redigere poster</cmdEdit>
+<cmdExecute>Kjøre</cmdExecute>
+<lb_Results>Resultatene:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Verktøy</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Gå tilbake til hovedvinduet</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Rediger XML-funksjon</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Satsvis prosess poster</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>Bokstaver konvertering</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC verktøy</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Hva vil du gjøre?</mnuContextHelp>
+<lnkTopic1>Konvertere filen til et annet tegnkoding</lnkTopic1>
+<lnkTopic2>Legg til/endre XML-oversettelser</lnkTopic2>
+<lnkTopic4>Hvordan kan jeg finne en feil i min MARC fil?</lnkTopic4>
+<groupBox1>Jeg vil gjerne:</groupBox1>
+<groupBox2>Velg Data til prosessen:</groupBox2>
+<groupBox3>Tegn Kodingsalternativene</groupBox3>
+<this>MARC verktøy</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit inneholder et sett med lite vekt UNIMARC konvertering verktøy.  Hvis disse verktøyene er av interesse for deg og du ønsker å gjøre dem bedre, vennligst oppgi f eedback.
+
+</label1>
+<label2>Kilde</label2>
+<label3>Destinasjon</label3>
+<groupBox1>Alternativer</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<this>UNIMARC verktøy</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Oppdateringen notater:</label1>
+<cmd_Update>Oppdatering</cmd_Update>
+<cmd_Cancel>Avbryt</cmd_Cancel>
+<this>Oppdatere MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode kodet</ckIsUTF8>
+<ck_merge_to_source>Flette inn kilde</ck_merge_to_source>
+<label17>Lagre filen:</label17>
+<label16>Katalogisering kilde</label16>
+<ck_SameFile>Prosessen kildefilen</ck_SameFile>
+<cmd_merge_cancel>Avbryt</cmd_merge_cancel>
+<cmd_merge_next>Neste =&gt;</cmd_merge_next>
+<lb_merge_title>Flette postdataene</lb_merge_title>
+<ck_merge_repeatable>Er repeterbare</ck_merge_repeatable>
+<lb_id>Postidentifikator:</lb_id>
+<lb_merge>Flett fil:</lb_merge>
+<lb_source>Kildefil:</lb_source>
+<ck_overlayexisting>Overlappe eksisterende elementer</ck_overlayexisting>
+<label4>Tillit verdi:</label4>
+<ck_mergeUnique>Flette unike elementer</ck_mergeUnique>
+<button1>Avbryt</button1>
+<cmd_merge_select_fields_next>Neste =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Tilbake</cmd_merge_select_fields_back>
+<label7>Flettefelt:</label7>
+<label6>Velg feltet:</label6>
+<label5>Flett postdataene: Velg felt</label5>
+<button5>Lukk</button5>
+<label15>Filer er slått sammen.  Resultater i {merge_results_file}.</label15>
+<label13>Sammenslåing fullført</label13>
+<this>Flette MARC poster</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Det overskrifter godkjenningen verktøyet kan brukes til å validere 1xx, 6xx eller 7xx felt.  Th e verktøyet benytter en kombinasjon av Internett og lokale tjenester å avgjøre hvis en headin g vises i en autorisert overskrift.</label1>
+<ck_1xx>Godkjenne 1xx/7xx felt</ck_1xx>
+<ck_6xx>Godkjenne 6xx-feltet</ck_6xx>
+<cmdProcess>Prosessen</cmdProcess>
+<cmdClose>Lukk</cmdClose>
+<label2>Kilde:</label2>
+<lbStatus>Status:</lbStatus>
+<cmdExtract>Trekke ut</cmdExtract>
+<ckdeletecache>Slett den lokale hurtigbufferen</ckdeletecache>
+<lnkDelimited>Lagre med skilletegn</lnkDelimited>
+<ckonlyA>Bare behandle underfelt A</ckonlyA>
+<ckVariant>Automatisk riktig varianter</ckVariant>
+<ckGenerateBriefHeadings>Generere kort navn myndigheter</ckGenerateBriefHeadings>
+<label3>Genererte myndigheter:</label3>
+<ckAddURIs>Bygge inn URIer når mulig</ckAddURIs>
+<ck_download_authorities>Last ned LC myndigheter</ck_download_authorities>
+<this>Validere overskrifter</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Kildefil:</lb_Source>
+<lb_Rules>Filen:</lb_Rules>
+<cmd_Ok>ok</cmd_Ok>
+<cmd_close>Lukk</cmd_close>
+<groupBox1>Alternativer</groupBox1>
+<optIdentify>Validere posten struktur</optIdentify>
+<opt_remove>Fjerne ugyldige oppføringer</opt_remove>
+<opt_validate>Sjekk MARC bruker regler fil</opt_validate>
+<rdHex>Visningen i en HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>ok</cmd_Ok>
+<cmdCancel>Lukk</cmdCancel>
+<groupBox1>Rapportalternativene:</groupBox1>
+<lb_MARC_Title>Tittel:</lb_MARC_Title>
+<lbReport>Rapporttype:</lbReport>
+<lb_XSLT>XSLT-filen:</lb_XSLT>
+<lb_Dest>Utdatafilen:</lb_Dest>
+<lb_MARC>Inndatafilen:</lb_MARC>
+<lb_Fields>Felt:</lb_Fields>
+<lbTimeout>Tidsavbrudd (i sekunder)</lbTimeout>
+<this>Kontroller URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>Om OCLCS rask Service</lnkClassify>
+<label1>ressurser. GetString ("label1. Tekst")</label1>
+<ck_conditional_fast>Legge til rask overskriftene når ingen emneoverskrifter finnes</ck_conditional_fast>
+<ck_always_fast>Legge til rask overskrifter</ck_always_fast>
+<label8>Emneoverskrifter:</label8>
+<button1>Prosessen</button1>
+<cmd_Close>Lukk</cmd_Close>
+<this>Generere rask overskrifter</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Lagre</cmd_save>
+<cmd_close>Lukk</cmd_close>
+<ck_1xxa>$a: hovedoppføringen</ck_1xxa>
+<ck_245p>$p: navnet på pt/sek arbeid</ck_245p>
+<ck_245n>$n: antall pt/sek arbeid</ck_245n>
+<ck_245c>$c: av Responsiblity</ck_245c>
+<ck_245b>$b: resten av tittel</ck_245b>
+<ck_245a>$a: tittel</ck_245a>
+<ck_lang>Språk (stillinger: 35-37)</ck_lang>
+<ck_dates>Datoer (stillinger: 7-14)</ck_dates>
+<ck_p7>BLvl (posisjon 7)</ck_p7>
+<ck_p6>Type (posisjon 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Kontroll tall</label6>
+<ck_form>Skjema (stillinger: 23)</ck_form>
+<ck_245_h>$h: general materiale betegnelse</ck_245_h>
+<label5>Diverse felt:</label5>
+<label4>Feltet 245:</label4>
+<label3>Forfatter (1xx)-feltet</label3>
+<label2>008 posisjoner</label2>
+<label1>LDR posisjon</label1>
+<this>Alternativer for fletting</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Databaseegenskaper</tabDBProps>
+<ck_Paused>Overstyre pause (6 sek.)</ck_Paused>
+<label1>Database:</label1>
+<ck_Show>Show Database</ck_Show>
+<lbPassword>Passord:</lbPassword>
+<lbUsername>Brukernavn:</lbUsername>
+<lbSyntax>Syntaks:</lbSyntax>
+<lbPort>Port:</lbPort>
+<lbHost>Vert:</lbHost>
+<lbname>navn:</lbname>
+<tabDBAdvanced>Avanserte egenskaper</tabDBAdvanced>
+<label4>Tidsavbrudd (i sekunder):</label4>
+<label2>Elementsett:</label2>
+<label3>Andre alternativer:</label3>
+<lnkftp>http://www.loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Mer informasjon:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Subject:</lbSubject>
+<lbTitle>Tittel:</lbTitle>
+<lbAuthor>Forfatter:</lbAuthor>
+<lbadvTitle>Z39.50-attributtet 4: struktur</lbadvTitle>
+<cmdSave>Lagre</cmdSave>
+<cmdClose>Lukk</cmdClose>
+<label17>Z39.50 innstillinger:</label17>
+<cmdDeleteZ3950>Slette</cmdDeleteZ3950>
+<gbCustom>Egendefinerte Profilinnstillinger</gbCustom>
+<label5>Tittelindeksen:</label5>
+<label6>Forfatteren indeks:</label6>
+<label10>Stikkordregister:</label10>
+<label7>Faget indeksen:</label7>
+<label11>Record # Index:</label11>
+<label8>ISBN indeks:</label8>
+<label12>ISSN indeks:</label12>
+<cmdDeleteSRU>Slette</cmdDeleteSRU>
+<ck_SRU_Show>Show Database</ck_SRU_Show>
+<label13>Tilleggsparametere</label13>
+<label14>Søkeprofil:</label14>
+<lbVersion>Versjon:</lbVersion>
+<cmdCloseSRU>Lukk</cmdCloseSRU>
+<cmdSaveSRU>Lagre</cmdSaveSRU>
+<label15>navn:</label15>
+<lbMetadata>Metadata-skjemaet:</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>SRU Databaseegenskaper:</lbSRUTitle>
+<this>Databaseegenskaper</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Finn:</label1>
+<ckMatchCase>Store/små bokstaver</ckMatchCase>
+<cmdFind>Finn</cmdFind>
+<this>Hex: Finner hyssing</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Filen</fileToolStripMenuItem>
+<openToolStripMenuItem>Åpne</openToolStripMenuItem>
+<exitToolStripMenuItem>Avslutt</exitToolStripMenuItem>
+<editToolStripMenuItem>Rediger</editToolStripMenuItem>
+<findToolStripMenuItem>Finn</findToolStripMenuItem>
+<findNextToolStripMenuItem>Søk etter neste</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Kutt</cutToolStripMenuItem>
+<copyToolStripMenuItem>Kopier</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Lim inn</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Klart</clearToolStripMenuItem>
+<findToolStripMenuItem>Finn</findToolStripMenuItem>
+<replaceToolStripMenuItem>Erstatt</replaceToolStripMenuItem>
+<lnkLoadAll>Laste hele filen</lnkLoadAll>
+<lb_bytes>{loaded_bytes} av {file_bytes} byte er lastet.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Ny post</tbNew>
+<mnuCNewWindow>Åpne nytt vindu</mnuCNewWindow>
+<ContextAuthority>Autoritet</ContextAuthority>
+<ContextAuthorityName>navn</ContextAuthorityName>
+<ContextAuthoritySubject>Emne</ContextAuthoritySubject>
+<cBook>Bok</cBook>
+<cSerial>Føljetong</cSerial>
+<cVisualMat>Visuelle materialer</cVisualMat>
+<cMaps>Kartografiske ressurs</cMaps>
+<cSoundRec>Lydopptak</cSoundRec>
+<cScore>Poengsum</cScore>
+<cElectMat>Elektronisk ressurs</cElectMat>
+<cMixedMat>Blandet materiale</cMixedMat>
+<tbOpen>Åpne fil</tbOpen>
+<tbSave>Lagre filen</tbSave>
+<tbPrint>Utskriftsfilen</tbPrint>
+<tbCompile>Kompilere poster</tbCompile>
+<tbCut>Kutt</tbCut>
+<tbCopy>Kopier</tbCopy>
+<tbPaste>Lim inn</tbPaste>
+<tbALA>MARC8 ALA bokstaver</tbALA>
+<tbDelete>Slette</tbDelete>
+<tbFind>Finn</tbFind>
+<tbZ39_50>Z39.50/SRU-klient</tbZ39_50>
+<toolStripSplitButton1>Globale MARC redigering verktøy</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Legge til/slette felt</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Bygge nytt felt</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Kopier felt</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Redigere feltdata</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Redigere indikatordata</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Redigere underfelt Data</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Bytte feltdata</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Filen</mnuFile>
+<mnuFileMain>Gå tilbake til hovedvinduet</mnuFileMain>
+<mnuFileNew>Nye</mnuFileNew>
+<mnuFileNewWindow>Åpne nytt vindu</mnuFileNewWindow>
+<mnuFileNewDefault>standard</mnuFileNewDefault>
+<mnuFileNewAuthority>Autoritet</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>navn</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Emne</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Bok</mnuFileNewBook>
+<mnuFileNewSerial>Føljetong</mnuFileNewSerial>
+<mnuFileVisualMat>Visuelle materialer</mnuFileVisualMat>
+<mnuFileNewMap>Kartografiske ressurs</mnuFileNewMap>
+<mnuFileNewSound>Lydopptak</mnuFileNewSound>
+<mnuFileNewScore>Poengsum</mnuFileNewScore>
+<mnuFileNewER>Elektronisk ressurs</mnuFileNewER>
+<mnuFileNewMix>Blandet materiale</mnuFileNewMix>
+<mnuFileOpen>Åpne</mnuFileOpen>
+<mnuFileRecent>Siste filer</mnuFileRecent>
+<mnunone10>ingen</mnunone10>
+<mnunone9>ingen</mnunone9>
+<mnunone8>ingen</mnunone8>
+<mnunone7>ingen</mnunone7>
+<mnunone6>ingen</mnunone6>
+<mnunone5>ingen</mnunone5>
+<mnunone4>ingen</mnunone4>
+<mnunone3>ingen</mnunone3>
+<mnunone2>ingen</mnunone2>
+<mnunone1>ingen</mnunone1>
+<mnuFileClearHistory>Slett logg</mnuFileClearHistory>
+<mnuFileClearList>Slett nylig filer</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Fjern Erstatt på Rediger-historie</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Lukk</mnuFileClose>
+<mnuFileExportData>Eksport...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Importere fra...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Lagre</mnuFileSave>
+<mnuFileSaveAs>Lagre som...</mnuFileSaveAs>
+<mnuFilePrint>Skriv ut</mnuFilePrint>
+<toolStripMenuItem34>Skrive ut en post Per side</toolStripMenuItem34>
+<FileSelectIndividualMake>Velg poster for redigering</FileSelectIndividualMake>
+<mnuFileCompile>Kompilere filen til MARC</mnuFileCompile>
+<mnuFileExit>Avslutt</mnuFileExit>
+<mnuEdit>Rediger</mnuEdit>
+<mnuEditUndo>Angre</mnuEditUndo>
+<mnuEditRedo>Gjør om</mnuEditRedo>
+<mnuEditSpecialUndo>Spesielle angre</mnuEditSpecialUndo>
+<mnuEditCut>Kutt</mnuEditCut>
+<mnuEditCopy>Kopier</mnuEditCopy>
+<mnuEditPaste>Lim inn</mnuEditPaste>
+<mnuEditDupLines>Duplikate linjer</mnuEditDupLines>
+<mnuEditClear>Klart</mnuEditClear>
+<mnuEditFind>Finn</mnuEditFind>
+<mnuEditReplace>Erstatt</mnuEditReplace>
+<toolStripMenuItem28>Redigere snarveier</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Endre bokstavtype</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>små bokstaver</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>STORE BOKSTAVER</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Store bokstaver</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Første tilfelle</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Kapitalisere figur</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Feltet redigeringer</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Rengjør Smart tegn</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Finne felt mangler et ord</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Finne poster mangler felt</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Finne poster med identiske koder</toolStripMenuItem39>
+<toolStripMenuItem40>Finn poster med dupliserte feltdata</toolStripMenuItem40>
+<mnuEditLimitFields>Begrens antall felt</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Bytte tittel</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matematiske funksjoner</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Konvertere desimalgrader til</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Gå til...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Gå til... Post</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Gå til... Siden</jumpToPageToolStripMenuItem>
+<mnuEditControl>Sette inn enkelt kontroll</mnuEditControl>
+<mnuEdit006>Sett inn/Rediger 006</mnuEdit006>
+<mnuEdit006Edit>Rediger</mnuEdit006Edit>
+<mnuEdit006Book>Bok</mnuEdit006Book>
+<mnuEdit006Serial>Fortsetter ressurs</mnuEdit006Serial>
+<mnuEdit006Map>Kartografiske ressurs</mnuEdit006Map>
+<mnuEdit006Sound>Lydopptak</mnuEdit006Sound>
+<mnuEdit006Score>Poengsum</mnuEdit006Score>
+<mnuEdit006ER>Elektronisk ressurs</mnuEdit006ER>
+<mnuEdit006Visual>Visuelle materialer</mnuEdit006Visual>
+<mnuEdit006Mixed>Blandet materiale</mnuEdit006Mixed>
+<mnuEdit008>Sett inn/Rediger 008</mnuEdit008>
+<mnuEdit008Edit>Rediger</mnuEdit008Edit>
+<mnuEdit008Book>Bok</mnuEdit008Book>
+<mnuEdit008Serial>Fortsetter ressurs</mnuEdit008Serial>
+<mnuEdit008Map>Kartografiske ressurs</mnuEdit008Map>
+<mnuEdit008Sound>Lydopptak</mnuEdit008Sound>
+<mnuEdit008Score>Poengsum</mnuEdit008Score>
+<mnuEdit008ER>Elektronisk ressurs</mnuEdit008ER>
+<mnuEdit008Visual>Visuelle materialer</mnuEdit008Visual>
+<mnuEdit008Mixed>Blandet materiale</mnuEdit008Mixed>
+<toolStripMenuItem27>Konvertere utklippstavleinnhold</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8 til UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 til MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA bokstaver</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8 blokkannulleringstegn kart</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Velg alle</mnuEditSelectAll>
+<mnuEditWrap>Tekstbryting</mnuEditWrap>
+<mnuEditRTL>Vise høyre mot venstre</mnuEditRTL>
+<mnuFont>Skrifter</mnuFont>
+<mnuFontFont>Skrift...</mnuFontFont>
+<mnuFontColor>Farge...</mnuFontColor>
+<mnuReports>Rapporter</mnuReports>
+<mnuReportsField>Antall metadatafelt</mnuReportsField>
+<tlReportsMaterialReport>Materialet Type rapport</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Generere rapport</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Finne poster etter Type</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Bøker</booksToolStripMenuItem>
+<toolStripMenuItem32>Datafiler</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Vedvarende ressurser</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Kart</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Blandet materialer</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Score</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Lydopptak</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Visuelle materialer</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Validere ISBN-NUMRE</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Validere ISSN</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Validere overskrifter</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Tjenestestatus</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Validere overskrifter</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Administrere loggfiler</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Vis gjeldende loggfil</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Avansert Log Management</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Slett loggfiler</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Vise alle loggfiler</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Verktøy</mnuTools>
+<mnuToolsCluster>Klynging verktøy</mnuToolsCluster>
+<mnutoolCutters>Cuttering verktøy</mnutoolCutters>
+<mnuToolsCalculator>Katalogen kalkulator</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Generere kniver</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn tabell 3 kniver</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Generere ringe numre</mnuToolsCallNum>
+<mnuToolsControlNumber>Generere kontroll tall</mnuToolsControlNumber>
+<toolStripMenuItem33>Koblede Dataverktøy</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Bygge koblede oppføringer</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Registrere duplikatfjerning</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA Helper</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU alternativer</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU-klient</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 laste opp posten</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 Slett post</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 oppdatering Holdings</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Redigere konstante Data</mnuToolsEditConstant>
+<mnuToolsAssigned>Tildelte konstant-Data</mnuToolsAssigned>
+<mnuConstant1>1) udefinert streng</mnuConstant1>
+<mnuConstant2>2) udefinert streng</mnuConstant2>
+<mnuConstant3>3) udefinert streng</mnuConstant3>
+<mnuConstant4>4) udefinert streng</mnuConstant4>
+<mnuConstant5>5) udefinert streng</mnuConstant5>
+<mnuConstant6>6) udefinert streng</mnuConstant6>
+<mnuConstant7>7) udefinert streng</mnuConstant7>
+<mnuConstant8>8) udefinert streng</mnuConstant8>
+<mnuConstant9>9) udefinert streng</mnuConstant9>
+<mnuConstant10>10) udefinert streng</mnuConstant10>
+<mnutoolmanageAutomate>Administrere oppgaver</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Tildelte aktiviteter</mnuToolsAssignedTasks>
+<mnuDefTask>Tilgjengelige oppgaver</mnuDefTask>
+<task1>1) udefinerte aktivitet</task1>
+<task2>2) udefinerte aktivitet</task2>
+<task3>3) udefinerte aktivitet</task3>
+<task4>4) udefinerte aktivitet</task4>
+<task5>5) udefinerte aktivitet</task5>
+<task6>6) udefinerte aktivitet</task6>
+<task7>7) udefinerte aktivitet</task7>
+<task8>8) udefinerte aktivitet</task8>
+<task9>9) udefinerte aktivitet</task9>
+<task10>10) udefinerte aktivitet</task10>
+<task11>11) udefinerte aktivitet</task11>
+<task12>12) udefinerte aktivitet</task12>
+<task13>13) udefinerte aktivitet</task13>
+<task14>14) udefinerte aktivitet</task14>
+<task15>15) udefinerte aktivitet</task15>
+<task16>16) udefinerte aktivitet</task16>
+<task17>17) udefinerte aktivitet</task17>
+<task18>18) udefinerte aktivitet</task18>
+<task19>19) udefinerte aktivitet</task19>
+<task20>20) udefinerte aktivitet</task20>
+<mnuToolsValidate>Validere MARC poster</mnuToolsValidate>
+<mnuToolsOAI>Harvest fra OAI</mnuToolsOAI>
+<mnutoolsurl>Generere MARC fra URL</mnutoolsurl>
+<toolStripMenuItem43>Mnemonic formateringsverktøyene</toolStripMenuItem43>
+<toolStripMenuItem3>Normalisere...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normalisere LC poster</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normalisere Microlif poster</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Fjern tomme linjer</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Fjern tomme felt/underfelt</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Legge til/slette felt</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Bygge nytt felt</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Kopier felt</toolStripMenuItem26>
+<mnuToolsEditField>Redigere feltdata</mnuToolsEditField>
+<mnuToolsIndicator>Redigere indikatordata</mnuToolsIndicator>
+<mnuToolsSubfield>Redigere underfelt Data</mnuToolsSubfield>
+<mnuToolsSortby>Sorter etter...</mnuToolsSortby>
+<toolStripMenuItem41>Registrere rekkefølge av...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Egendefinert felt</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Forfatter-feltet</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Samtale tallfelt</mnuToolsSortByCall>
+<mnuToolsSortControl>Antall felt</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Tittelfeltet</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Sorter felt Witin posten av...</toolStripMenuItem42>
+<mnuToolsCustomSort>Sorteringsrekkefølger</mnuToolsCustomSort>
+<mnuToolsSort2>0xx sorteringsfelt</mnuToolsSort2>
+<mnuToolsSort>Sortere alle felt</mnuToolsSort>
+<mnuToolsSwap>Bytte feltdata</mnuToolsSwap>
+<mnuToolsOptions>Innstillinger</mnuToolsOptions>
+<mnu_ILS>[ILS navn]</mnu_ILS>
+<mnu_ils_search>Søk</mnu_ils_search>
+<updateCreateToolStripMenuItem>Oppdatering/opprette</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Innstillinger</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC verden</mnuOCLC>
+<toolStripMenuItem31>Søk verden</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Legge til/slette/Oppdater lokal bibliografiske Data</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Opprett/oppdater bibliografiske Data</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Oppdatere Holdings</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Pluginmoduler</pluginsToolStripMenuItem>
+<mnuHelp>hjelp</mnuHelp>
+<mnuHelpContents>Innholdet og hjelp</mnuHelpContents>
+<mnuEditInfo>MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC hjelp</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>Amerikanske Library of Congress MARC hjelp</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Pakkefiler for feilsøking</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Hva vil du gjøre?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Poster per side</label1>
+<lblPage>sider</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Vis Autolagring</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Validering datatjenester gis gjennom OCLC'S Termology tjenester. For å benytte disse tjenestene må du godtar og overholde vilkårene og vilkår fastsatt av OCLC om bruk og gjengivelse av disse tjenestene.</lb_text>
+<label1>OCLC avtalen Link:</label1>
+<lnk_Terms>Se vilkårene for bruk</lnk_Terms>
+<cmd_Agree>enig</cmd_Agree>
+<cmd_disagree>Ikke godtatt</cmd_disagree>
+<this>OCLC avtale</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Engelsk</comboBox1>
+<linkLabel2>Nei takk, bruke bare standardinnstillingene</linkLabel2>
+<linkLabel1>La oss komme i gang!</linkLabel1>
+<label2>Jeg er her for å komme i gang!  Jeg vil stille deg noen spørsmål, og få deg på yo </label2>
+<label1>Velkommen til MarcEdit 7!</label1>
+<this>MarcEdit 7 oppstartsveiviseren</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>På innstillingene... Ruff!</linkLabel1>
+<label6>Husk, du kan angi temaer, størrelser, språk og avanserte tilgjengelighet o </label6>
+<cmb_theme_picker>Standard</cmb_theme_picker>
+<label5>Anbefalte tema:</label5>
+<label4>pt.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Anbefalt skriftstørrelse:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Standardskrift:</label2>
+<label1>MarcEdit utseende</label1>
+<this>MarcEdit 7 oppstartsveiviseren: Side 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit er MARC agnostiker, så la oss si det litt om dataene.</label5>
+<comboBox3>Velg For meg</comboBox3>
+<label4>Behandlingsmotoren for XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Standard posten koding:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>Min MARC formatet er:</label2>
+<linkLabel1>Vi er nesten ferdig.  Ekorn!</linkLabel1>
+<label1>Innstillingene for MarcEdit</label1>
+<this>MarcEdit 7 oppstartsveiviseren: Side 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Happy redigering!</linkLabel1>
+<label5>ressurser. GetString ("label5. Tekst")</label5>
+<label1>Gratulerer!  Du bruker MarcEdit 7</label1>
+<this>MarcEdit 7 oppstartsveiviseren: ferdig</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Lukk</cmdClose>
+<ck_remote>Løse eksterne enheter</ck_remote>
+<ck_Marc8>Konvertere til MARC-8</ck_Marc8>
+<opt_default>Standard</opt_default>
+<opt_saxon>ANGELSAKSISK</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Lagre</cmdSave>
+<gp_XSLT>XSLT-motoren</gp_XSLT>
+<label7>Endelige formatet</label7>
+<label6>Originalt Format</label6>
+<label4>XSLT/XQuery banen</label4>
+<label3>Funksjonsnavn (Alias):</label3>
+<label2>Generell informasjon:</label2>
+<lnkXMLFunctionWizard>XML-funksjonsveiviseren</lnkXMLFunctionWizard>
+<groupBox1>Handlinger</groupBox1>
+<lnkAdd>Legge til</lnkAdd>
+<lnkModify>Endre</lnkModify>
+<lnkDelete>Slette</lnkDelete>
+<label5>Formatering:</label5>
+<label1>Definerte funksjoner:</label1>
+<this>Redigere XML-funksjoner</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Извличане на записи</mnuExtract>
+<cmenuClipboard>Копиране в клипборда</cmenuClipboard>
+<cmenuSubfields>Брой подполета</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Помощ</cmenuHelp>
+<cmd_OK>Затвори</cmd_OK>
+<cmd_Report>Генериране на отчет</cmd_Report>
+<lb_ReportStyle>Стил на отчет:</lb_ReportStyle>
+<opt_tab>С разделители доклад раздела</opt_tab>
+<opt_xml>XML отчет</opt_xml>
+<opt_html>HTML отчет</opt_html>
+<this>Поле брой</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Посока:</groupBox3>
+<rd_down>Надолу</rd_down>
+<rd_up>Нагоре</rd_up>
+<btn_findall>Намери всички</btn_findall>
+<groupBox1>Опции за търсене:</groupBox1>
+<ck_f_whole_word>Търси само цяла дума</ck_f_whole_word>
+<ck_find_regex>Използване на регулярни изрази</ck_find_regex>
+<ck_f_match_case>Главни/малки букви</ck_f_match_case>
+<cmdFClose>Затвори</cmdFClose>
+<cmdFFind>Намери</cmdFFind>
+<lb_FindWhat>Намери какво:</lb_FindWhat>
+<cmdNav_Find>Намери</cmdNav_Find>
+<cmdReplaceNav>Замени</cmdReplaceNav>
+<ckReplaceConditional>Търсене/заместване се изпълнява, ако...</ckReplaceConditional>
+<cmbCondOpt>РЕГУЛЯРЕН ИЗРАЗ</cmbCondOpt>
+<label1>Ако:</label1>
+<cmd_R_Close>Затвори</cmd_R_Close>
+<cmd_R_All>Замести всички</cmd_R_All>
+<cmd_R_Replace>Замени</cmd_R_Replace>
+<groupBox2>Опции за търсене:</groupBox2>
+<ck_Replace_ExactWordMatch>Точната дума мач</ck_Replace_ExactWordMatch>
+<ckMultiLine>Многоредово оценка</ckMultiLine>
+<ckFile>Използвайте критерии за външно търсене и заместване</ckFile>
+<ck_R_RegExp>Използване на регулярни изрази</ck_R_RegExp>
+<ck_R_Case>Главни/малки букви</ck_R_Case>
+<lb_ReplaceWith>Замени:</lb_ReplaceWith>
+<lb_R_FindWhat>Намери:</lb_R_FindWhat>
+<this>Търсене/заместване:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Статус:
+
+</lb_bProccess_status>
+<ck_bTask>Зареди задачи</ck_bTask>
+<ckBatchProcessSubfolders>Включи подпапките</ckBatchProcessSubfolders>
+<lb_Operation>Функция:</lb_Operation>
+<cmdBClose>Затвори</cmdBClose>
+<cmdBProcess>Процес</cmdBProcess>
+<lb_Extensions>Типове файлове:</lb_Extensions>
+<lb_BSource>Източник директория:</lb_BSource>
+<lbBTitle>Пакетно процес MARC записи</lbBTitle>
+<groupBox1>Опции</groupBox1>
+<this>Пакетно процес записи</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Пакетно процес</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Окончателно кодиране:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Оригинален кодиране:</lb_encoding>
+<lb_UTF8_Header>Конвертиране на знак</lb_UTF8_Header>
+<cmdCancel>Затвори</cmdCancel>
+<cmdOK>Процес</cmdOK>
+<lb_UTF8_Dest>Целевият файл:</lb_UTF8_Dest>
+<lb_UTF8_Source>Файл източник:</lb_UTF8_Source>
+<groupBox1>Настройки на кодирането</groupBox1>
+<this>Характер реализации</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Инструменти за групиране на данни</label1>
+<label2>Данни за групиране инструменти предоставят набор от опростени клъстериране опции за enha зширени пакетни данни чист.  За напреднали клъстериране функционалност, моля, помисли за използване OpenRefine.</label2>
+<groupBox1>Опции</groupBox1>
+<rdCustom>Индекс на потребителски полета</rdCustom>
+<rdControlData>Индекс контролирани данни (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Индекс на всички данни</rdAll>
+<cmdImport>Импортиране на данни</cmdImport>
+<label3>Файл източник:</label3>
+<label9>Сортиране на данни:</label9>
+<label8>Показване на клъстери:</label8>
+<label7>Клъстер на следните подполета:</label7>
+<cmbclusteringalgorithm>Левенщайн разстояние</cmbclusteringalgorithm>
+<label6>Изберете групиране алгоритъм:</label6>
+<cmbClusterField>Имена (1xx, 7xx)</cmbClusterField>
+<label4>Изберете данните, които искате да:</label4>
+<cmdGenerateCluster>Генериране на клъстер</cmdGenerateCluster>
+<cmbAlg>Левенщайн разстояние</cmbAlg>
+<lnkAddCriteria>Добавяне на актуализация</lnkAddCriteria>
+<lnkClose>Затвори</lnkClose>
+<lnkEditCluster>Обработва всички промени</lnkEditCluster>
+<label5>Групирани данни:</label5>
+<this>Клъстериране инструменти</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Задача дебъгер</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Контекстуални разделител</label8>
+<lb_Tab_Header>Износ Tab разделители записи</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>В полето разделител</label18>
+<lbdelimiter>Изберете разделител на полета</lbdelimiter>
+<cmdTClose2>Затвори</cmdTClose2>
+<cmdTNext>Следващата &gt;&gt;</cmdTNext>
+<label1>Стъпка 1: Задайте файлови пътища</label1>
+<ck_normalize>Нормализиране на поле с данни</ck_normalize>
+<cmd_tab2_back>Назад</cmd_tab2_back>
+<lnkSettings>Настройки...</lnkSettings>
+<lnkDeleteField>Изтриване на поле</lnkDeleteField>
+<lnkAddField>Добавяне на поле</lnkAddField>
+<label14>Подобласт:</label14>
+<label11>Поле:</label11>
+<cmdTClose>Затвори</cmdTClose>
+<cmdTExport>Износ</cmdTExport>
+<label2>Стъпка 2: Определяне полета и подполета за експортиране</label2>
+<label3>Износ Tab разделители записи</label3>
+<mnuLoad>Зареждане на настройките</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Запиши настройките</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Изчистване на настройките</menuItem3>
+<this>Износ Tab разделители записи</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Размер:</label4>
+<lb_Example>Примерен текст</lb_Example>
+<lb_lang_font>Изберете шрифт:</lb_lang_font>
+<cmdOK>OK</cmdOK>
+<cmdClose>Затвори</cmdClose>
+<this>Изберете шрифт</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Задачи за изпълнение на импортиране</groupBox1>
+<lnkSelectPre>Изберете задача</lnkSelectPre>
+<cname>Име</cname>
+<cPath>Задача пътя</cPath>
+<groupBox2>Задачи за изпълнение при износ</groupBox2>
+<linkLabel1>Изберете задача</linkLabel1>
+<columnHeader1>Име</columnHeader1>
+<columnHeader2>Задача пътя</columnHeader2>
+<cmdSave>Запиши</cmdSave>
+<cmdClose>Затвори</cmdClose>
+<deleteItemToolStripMenuItem>Изтриване на елемент</deleteItemToolStripMenuItem>
+<this>Настройки на ILS процес</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Включи подпапките</ckJoinSubfolders>
+<cmdEditFile>Редактиране на файл</cmdEditFile>
+<lnkJoinedFiles>Шоуто се присъединява към файлове</lnkJoinedFiles>
+<label19>Типове файлове:</label19>
+<ck_JoinIndividual>Присъединете се към индивидуални файлове</ck_JoinIndividual>
+<cmdJoinCancel>Затвори</cmdJoinCancel>
+<cmdJoinProcess>Процес</cmdJoinProcess>
+<lb_Join_Files>Файловете да се присъединят:</lb_Join_Files>
+<lb_Join_Source>Запишете файла:</lb_Join_Source>
+<lb_Join_Header>MARCJoin програма</lb_Join_Header>
+<lbJoinStatus>Статус:</lbJoinStatus>
+<groupBox1>Опции</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Записи на файл:</lb_Split_Records>
+<cmdSplitClose>Затвори</cmdSplitClose>
+<cmdSplitProcess>Процес</cmdSplitProcess>
+<lb_Split_Folder>Папка местоназначение:</lb_Split_Folder>
+<lb_Split_Source>Файл източник:</lb_Split_Source>
+<lb_Split_Header>MARCSplit програма</lb_Split_Header>
+<groupBox1>Опции</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Име на тема:</label1>
+<label2>Описание/Контрол:</label2>
+<label3>Стойности за глобално</label3>
+<label4>Цвят на шрифта</label4>
+<label5>Цвят на фона</label5>
+<label6>Цвят на фона</label6>
+<label7>Цвят на шрифта</label7>
+<label8>MarcEditor стойности</label8>
+<cmdSave>Запиши</cmdSave>
+<cmdClose>Затвори</cmdClose>
+<cmdPreview>Визуализация</cmdPreview>
+<richTextBox1>Примерен текст</richTextBox1>
+<label9>MarcEditor дисплей:</label9>
+<cmdOpen>Отворен</cmdOpen>
+<label10>Групово поле фон</label10>
+<groupBox1>Групово поле пример</groupBox1>
+<this>MarcEdit тема строител</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>Съветникът за отстраняване на MarcEdit е проектиран да помогне на потребителите да намерят помощ, която </label1>
+<gpStart>Опции</gpStart>
+<rdErrorMessage>Имам съобщение за грешка</rdErrorMessage>
+<rdErrorNumber>Имам номер на грешка</rdErrorNumber>
+<lbMessage>{съобщение}</lbMessage>
+<cmdPage1>Следваща</cmdPage1>
+<gpResults>Резултати</gpResults>
+<cmdClose>Затвори</cmdClose>
+<lnkCreateDebugPackage>Създайте развенчава пакет за изпращане за отстраняване на грешки?</lnkCreateDebugPackage>
+<label2>Отстраняване на Съветникът не можа да намери една статия в базата знания </label2>
+<this>MarcEdit съветник за отстраняване на неизправности</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Други XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>МАРК</rdMARC>
+<label17>Изберете краен формат</label17>
+<label16>Стъпка 3:</label16>
+<label15>Запишете файла:</label15>
+<label13>Стъпка 2:</label13>
+<label12>Име на трансформация:</label12>
+<lnkNextPg1>Продължете към следващата стъпка</lnkNextPg1>
+<label4>Изберете файл:</label4>
+<label3>Стъпка 1:</label3>
+<label2>ресурси. GetString ("label2. Текст")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Елемент на документа:</lbTop>
+<ckTopLevel>Използвайте елемента на документа</ckTopLevel>
+<lnkNextPg2>Продължете към следващата стъпка</lnkNextPg2>
+<label7>Изберете запис елемент</label7>
+<label6>Стъпка 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Дефиниране на съпоставяния</label14>
+<lnkNextP3>Продължете към следващата стъпка</lnkNextP3>
+<groupBox2>Аргументи</groupBox2>
+<ck_filing_characters>Изчисляване на общата nonfiling данни</ck_filing_characters>
+<ck_sort>Полета за сортиране</ck_sort>
+<button2>Шаблон за натоварване</button2>
+<toolStripMenuItem2>Редактиране на елемент</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Изтриване на елементи</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Обединяване на елементи</joinItemsToolStripMenuItem>
+<groupBox1>Настройки</groupBox1>
+<ckTrim>Отрежете съществуващите пунктуация</ckTrim>
+<ck_Repeatable>Възпроизводими подобласт</ck_Repeatable>
+<P3_ck_constant>Постоянни данни</P3_ck_constant>
+<P3_cmd_Apply>Добавяне на аргумент</P3_cmd_Apply>
+<P3_lb_punct>Термин. Пунктуация:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Индиана:</P3_lb_indicators>
+<P3_mapto>Карта:</P3_mapto>
+<P3_lb_select>Изберете:</P3_lb_select>
+<label9>Стъпка 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Затвори съветника</lnkClose>
+<label11>Трансформацията е създадена и добавя към списъка XML функции.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Тип: книга</label11>
+<lbbTitle>006/008 опции:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>Фест:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>CONT:</lnkbCont>
+<lnkbForm>Форма:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Злини:</lnkbIlls>
+<lnkbType>Тип:</lnkbType>
+<label12>Тип: Електронни ресурси</label12>
+<label5>006/008 опции:</label5>
+<lnkcFile>Файл:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Тип:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Дати:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>CtrY:</lnkbCtry>
+<lnkbLang>Ланг:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 опции:</label1>
+<label13>Тип: карта</label13>
+<label3>006/008 опции:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>Форма:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>Иновационни:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Тип:</lnkmType>
+<label14>Тип: Смесени материали</label14>
+<label4>006/008 опции:</label4>
+<lnkmmForm>Форма:</lnkmmForm>
+<lnkmmType>Тип:</lnkmmType>
+<label15>Тип: резултат</label15>
+<label6>006/008 опции:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Форма:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>Тип:</lnkscType>
+<label10>Тип: Продължаване на ресурс</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 опции:</label7>
+<lnkslAlph>Йорданка:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>CONT:</lnkslCont>
+<lnkslForm>Форма:</lnkslForm>
+<lnkslOrig>Orig:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>REGL:</lnkslRegl>
+<lnkslFreq>Freq:</lnkslFreq>
+<lnkslType>Тип:</lnkslType>
+<label16>Тип: Звукозапис</label16>
+<label8>006/008 опции:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Форма:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>Тип:</lnksdType>
+<label17>Тип: Визуални материали</label17>
+<label9>006/008 опции:</label9>
+<lnkvmTech>Технологии:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Форма:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Време:</lnkvmTime>
+<lnkvmType>Тип:</lnkvmType>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_Close>Затвори</cmd_Close>
+<lnkSrce>Текста:</lnkSrce>
+<linkLabel1>Форма:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>ресурси. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>За мен:</lb_Authors>
+<lbBuildCode>Актуализиране на код:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>Проект уебсайт:</label5>
+<label2>Потвърждения:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Модифицирани:</lbMod>
+<lbMailto>Тери Рийз</lbMailto>
+<lbAuthor>Автор:</lbAuthor>
+<lbVersion>Изграждане номер:</lbVersion>
+<label4>За MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/Technical-details</linkLabel1>
+<label1>Технически данни:</label1>
+<this>За MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Натоварване</cmdLoad>
+<cmdClose>Затвори</cmdClose>
+<cmdDelete>Изтриване</cmdDelete>
+<this>Автоматично записване на файлове:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Редактиране на полета</lnk_Edit_Fields>
+<lnkCopy>Копиране на данни от полета</lnkCopy>
+<lnkSwapFields>Суап полета</lnkSwapFields>
+<lnkIndicators>Редактиране на индикатори</lnkIndicators>
+<lnkSubfield>Редактиране на данни като клон</lnkSubfield>
+<lnkAddDelete>Добавяне/изтриване на поле</lnkAddDelete>
+<groupBox8>Изтриване на опции за поле</groupBox8>
+<ckRemoveByPostition>Премахнете от полето позиция</ckRemoveByPostition>
+<ck_RemoveIfNot>Премахнете ако не съвпада с полета с данни</ck_RemoveIfNot>
+<ck_dedup>Премахване на дублирани данни</ck_dedup>
+<groupBox7>Добавяне на опции за поле</groupBox7>
+<ck_A_addifnotduplicate>Добавяне на поле само, ако не е дубликат</ck_A_addifnotduplicate>
+<ck_A_Insert>Вмъкни преди</ck_A_Insert>
+<ck_A_not_present>Добавяне на поле само, ако не представи</ck_A_not_present>
+<ck_AddIfPresent>Добавяне на поле, ако има такива</ck_AddIfPresent>
+<ck_last>Вмъкване на последно</ck_last>
+<groupBox6>Общи опции</groupBox6>
+<ck_delete_batch>Процесът партида операция</ck_delete_batch>
+<ck_A_Case>Главни/малки букви</ck_A_Case>
+<ck_A_regular_Expression>Използвате регулярен израз</ck_A_regular_Expression>
+<label1>Намери какво:</label1>
+<cmd_A_Close>Затвори</cmd_A_Close>
+<cmd_A_Add>Добавяне на поле</cmd_A_Add>
+<cmd_A_Delete>Изтриване на поле</cmd_A_Delete>
+<label3>Полета с данни:</label3>
+<lb_A_Field>Поле:</lb_A_Field>
+<lb_A_Title>Добавяне/изтриване полезност поле</lb_A_Title>
+<cmd_Sub_Close>Затвори</cmd_Sub_Close>
+<cmd_Sub_Remove>Премахване на текст</cmd_Sub_Remove>
+<cmd_Sub_Replace>Заместване на текст</cmd_Sub_Replace>
+<groupBox2>Опции за търсене:</groupBox2>
+<ckDeleteDuplicate>Изтриване на дублирани подобласт</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Изтриване на подобласт</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Преместване на данни като клон</ck_move_subfield>
+<ck_Reg_Express>Използвате регулярен израз</ck_Reg_Express>
+<ck_Sub_Case>Главни/малки букви</ck_Sub_Case>
+<ck_Sub_New>Нови подобласт само</ck_Sub_New>
+<ck_Sub_NotPresent>Добави като клон, ако не представи</ck_Sub_NotPresent>
+<label8>Заменете с:</label8>
+<label7>Полета с данни:</label7>
+<label6>Подобласт:</label6>
+<label5>Поле:</label5>
+<lb_Sub_Title>Редактиране на подобласт полезност</lb_Sub_Title>
+<cmd_I_Close>Затвори</cmd_I_Close>
+<cmd_I_Replace>Замени</cmd_I_Replace>
+<lb_Ind_Replace>Замени с индикатори</lb_Ind_Replace>
+<label12>Полета с данни:</label12>
+<label11>Индикатори</label11>
+<label10>Поле:</label10>
+<lb_Ind_Title>Редактиране на индикатор Ютилитис</lb_Ind_Title>
+<ck_Match_All_Subfields>Съвпадение всички подполета</ck_Match_All_Subfields>
+<ck_swap_expression>Третирай като регулярен израз</ck_swap_expression>
+<label4>Намери:</label4>
+<cmd_Swap_Close>Затвори</cmd_Swap_Close>
+<cmd_Swap_Process>Процес</cmd_Swap_Process>
+<groupBox3>Опции за търсене</groupBox3>
+<ck_swap_once_per>Обработва едно поле на суап</ck_swap_once_per>
+<ck_swap_sort>Сортиране модифицирани поле</ck_swap_sort>
+<ck_Swap_Override>Добавяне към съществуваща/създаване на нов</ck_Swap_Override>
+<ck_Swap_Add>Добави към съществуващо поле</ck_Swap_Add>
+<ck_Swap_Copy>Копиране на източник</ck_Swap_Copy>
+<label20>Модифицирани данни:</label20>
+<label22>Подполета</label22>
+<label23>Индикатори</label23>
+<label24>Поле</label24>
+<label19>Първоначалните данни:</label19>
+<label18>Намери:</label18>
+<label17>Подполета</label17>
+<label16>Индикатори</label16>
+<label15>Поле</label15>
+<lb_Swap_Title>Суап поле полезност</lb_Swap_Title>
+<label14>Поле с данни</label14>
+<lbFindInField>Намери в полето</lbFindInField>
+<groupBox4>Опции</groupBox4>
+<ck_copy_field_regex>Използване на регулярни изрази</ck_copy_field_regex>
+<ck_copy_delete>Изтриване на поле за източник</ck_copy_delete>
+<label2>Поле за местоназначение:</label2>
+<cmdCopyClose>Затвори</cmdCopyClose>
+<cmdCopy>Копие</cmdCopy>
+<label9>Поле източник:</label9>
+<label13>Копиране на данни от полета</label13>
+<label26>Позиция:</label26>
+<label21>Замени:</label21>
+<label25>Намери:</label25>
+<groupBox5>Опции</groupBox5>
+<ck_editfield_match_case>Главни/малки букви</ck_editfield_match_case>
+<ck_UserRegularExpressions>Използване на регулярни изрази</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Затвори</cmdFieldEdit_Close>
+<cmdEditField_Process>Процес</cmdEditField_Process>
+<label27>Поле:</label27>
+<label28>Редактиране на поле с данни</label28>
+<this>MarcEdit.NET пакетно редактиране инструменти</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<label1>Testbed BibFrame2 е лесен за използване полезност за цел да позволи метаданни спе­ </label1>
+<label2>Файл източник:</label2>
+<label3>Запишете файла:</label3>
+<label4>Сериализация на данни:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Правила за превод:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Редактиране</lnkEditXQuery>
+<label7>Тип на файл:</label7>
+<label8>Профил:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>ИД на поле:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Запишете файла:</label3>
+<label2>Файл източник:</label2>
+<label1>Свързаните данни инструмент е предназначен да линия през набор от MARC записи и разрешаване на точки за достъп в 1xx, 6xx и 7xx данни елементи за техните свързани dat крайните точки.</label1>
+<cmdProcess>Процес</cmdProcess>
+<cmdCancel>Затвори</cmdCancel>
+<groupBox1>ID услуги</groupBox1>
+<ckLimiter>Граница резолюция:</ckLimiter>
+<ck3xxFields>Процес 3xx полета</ck3xxFields>
+<label4>OCLC номер:</label4>
+<ckWorkId>Вграждане OCLC работа ИД</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>AutoDetect предмет ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>Автоматично главна/добави запис</ck_loc>
+<label5>Файл с правила:</label5>
+<cmdStatus>Състояние на услугата</cmdStatus>
+<lbstatus>Статус:</lbstatus>
+<this>Изграждане на свързани записи</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Намери</lnkFind>
+<lbResults>Резултати:</lbResults>
+<lnkCatalog>Кайл Банерджи каталог калкулатор</lnkCatalog>
+<cmdClose>Затвори</cmdClose>
+<label1>LC Фрези</label1>
+<this>Каталогизиране калкулатор</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>Инструмент за откриване на знак използва heuristical процес да даде най-добър предположение за недвижими </label1>
+<cmdDetect>Откриване</cmdDetect>
+<cmdClose>Затвори</cmdClose>
+<label2>Резултати:</label2>
+<ckDetailed>Многословен резултати</ckDetailed>
+<this>Откриване на знак</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>ресурси. GetString ("label1. Текст")</label1>
+<lnkClassify>За OCLC's класифицира услуга</lnkClassify>
+<ck_all>Добави към всички записи</ck_all>
+<ck_single>Добави към избрания запис</ck_single>
+<ck_lc>Библиотеката на Конгреса</ck_lc>
+<ck_dewey>Дюи десетична</ck_dewey>
+<cmdProcess>Класифицира</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<label5>Вмъкни ако не присъстват следните полета (пример: 050 060; 090; 092)</label5>
+<label4>Поставете генерирания класификации в следното поле:</label4>
+<ck_cutters>Изчисляване на ножове и дати</ck_cutters>
+<ck_use_z>Използвайте подобласт z за съвпадение</ck_use_z>
+<ck_DateMod>Добавяне на флаг към дата</ck_DateMod>
+<ck_omit_serial>Пропуснат срок за сериали</ck_omit_serial>
+<ck_omit_integrated>Пропуснат срок за интегрирани ресурси</ck_omit_integrated>
+<ck_omit>Добавяне на дата изключения</ck_omit>
+<ck_always_fast>Винаги добавите бързо заглавия</ck_always_fast>
+<ck_conditional_fast>Добавете заглавия на бързо, когато няма тема заглавия са налице</ck_conditional_fast>
+<label6>Показатели:</label6>
+<cmdInsert>Инструкции за вмъкване</cmdInsert>
+<cmdClassification>Класификации</cmdClassification>
+<cmdSubjects>Заглавията на темите</cmdSubjects>
+<lnkClassification>Изберете класификация</lnkClassification>
+<lnkSubjects>Изберете Опции за темата</lnkSubjects>
+<lnkOptions>Задаване на опции</lnkOptions>
+<cmdOptions>Опции</cmdOptions>
+<label2>Подобласт:</label2>
+<label3>Cuttering подобласт:</label3>
+<this>Генериране на класификация</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Постоянни данни</columnHeader1>
+<columnHeader3>Пряк път</columnHeader3>
+<cmdClose>Затвори</cmdClose>
+<lnkKey>Присвояване на ключ</lnkKey>
+<lnkEdit>Редактиране на избрания низ</lnkEdit>
+<lnkDelete>Изтриване на избраните низ</lnkDelete>
+<lnkNew>Създаване на нов низ</lnkNew>
+<lbActions>Действия:</lbActions>
+<lbMacro>Данни:</lbMacro>
+<this>Редактиране на данни</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Брой префикс:</lb_prefix>
+<lb_digit>Започнете цифра:</lb_digit>
+<ck_autogenerate>Вмъкване в нови записи</ck_autogenerate>
+<button1>OK</button1>
+<button2>Затвори</button2>
+<lb_length>Цифра дължина (минус префикс)</lb_length>
+<ckgenerate>Генериране в текущия файл</ckgenerate>
+<ck_label>Марк рекорден брой</ck_label>
+<label1>Поле/подобласт (пример: 001 949$ b)</label1>
+<ck_repeat>Винаги Вмъкване</ck_repeat>
+<this>Генериране на контролните номера</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Използвайте размита съвпадение</ck_UseFuzzyMatch>
+<ck_save>Запиши Dedup елементи, за да:</ck_save>
+<ck_unique>Изход уникални елементи</ck_unique>
+<ck_remove>Премахване на дублиращи елементи</ck_remove>
+<lbOptions>Опции:</lbOptions>
+<label1>Dedup водене:</label1>
+<lb_Control>Контролното поле:</lb_Control>
+<cmdClose>Затвори</cmdClose>
+<cmdOK>Процес</cmdOK>
+<btnCancel>Отказ</btnCancel>
+<btnNext>Следваща</btnNext>
+<label4>Запишете файла:</label4>
+<label3>Намери дублиране от следните файлове:</label3>
+<label2>Запис дедупликация инструмент</label2>
+<label5>Доверие:</label5>
+<this>Запис дедупликация</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Изберете регистрационния файл:</label1>
+<groupBox1>Опции</groupBox1>
+<ckChanged>Извличане на променени записи</ckChanged>
+<ckEnhance>Подобряване на трупи</ckEnhance>
+<label2>Изберете записи:</label2>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<this>Дънер Ръководител</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext е лаборатория пространство да се въведат нови инструменти и концепции, свързани с </lbaboutmn>
+<lnkOpenRefine>OpenRefine интеграция</lnkOpenRefine>
+<lnkSPARQL>SPARQL браузър</lnkSPARQL>
+<lnkLinkIds>Идентификатори на връзки</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Използвайте този инструмент за преместване на данни между ДЖИБРИ или на MarcEdit в мнемоничен формат и OpenRef </label1>
+<label2>Файл източник:</label2>
+<label3>Запишете файла:</label3>
+<rdExport>Експортиране в OpenRefine</rdExport>
+<rdImport>Внос от OpenRefine</rdImport>
+<cmdProcess>Процес</cmdProcess>
+<cmdCancel>Затвори</cmdCancel>
+<lbStatus>Статус:</lbStatus>
+<groupBox1>Опции</groupBox1>
+<this>Инструмент за прехвърляне на данни от OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Изберете файлове за споделяне:</label1>
+<ckconfig>Опции за конфигуриране</ckconfig>
+<label2>Износ на всички данни в потребител довереник директория.  Това включва данни за конфигурация, </label2>
+<ckXSLT>XSLT функции</ckXSLT>
+<label3>Експортиране на дефинирани XSLT стилове
+</label3>
+<ckMacros>Дефинирани макроси и задачи</ckMacros>
+<label4>Експортиране всички дефинирани задачи и макроси...
+</label4>
+<label5>Експортиране на всички определени шаблони за материала на MarcEditor.</label5>
+<ckTemplates>Дефинирани MarcEditor шаблони</ckTemplates>
+<cmdExport>Износ</cmdExport>
+<cmdClose>Затвори</cmdClose>
+<this>Експортиране на настройки</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Действие</columnHeader2>
+<columnHeader1>Намерени текст</columnHeader1>
+<button1>Затвори</button1>
+<button2>Направо към страница</button2>
+<cmdFindUpdate>Редактиране на заявка за търсене</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Намери всички резултати</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<lbField>Въведете поле повикване номер да се оцени. (напр. 090.)</lbField>
+<groupBox1>Опции</groupBox1>
+<rdTitle>Кътър ред (2xx, 1xx)</rdTitle>
+<rdDefault>Кътър ред (1xx, 2xx)</rdDefault>
+<groupBox2>Опции</groupBox2>
+<label1>Намери:</label1>
+<rdCustomField>Поле по избор</rdCustomField>
+<rdMainEntry>Оценка на главния елемент (1xx 245)</rdMainEntry>
+<this>Генериране на ножове</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Дефинирани OAI сървъри:</label1>
+<label2>(Използвайте shift/shift контрол да изберете няколко елемента)</label2>
+<ck_date>Реколтата от миналата изтегляне</ck_date>
+<cmdCreate>Запиши</cmdCreate>
+<button1>Затвори</button1>
+<this>Създаване на задание реколта</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Байтове</BytesGroup>
+<label5>Бита</label5>
+<label4>ISO-8859-1</label4>
+<label3>Десетичен знак</label3>
+<label2>Hex</label2>
+<columnHeader1>Позиция</columnHeader1>
+<columnHeader2>Байтове</columnHeader2>
+<columnHeader3>Текст</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Файл</menuItem1>
+<openToolStripMenuItem>Отворен</openToolStripMenuItem>
+<ExitProgram>Изход</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit резултатите прозорец</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Функция име (псевдоним):</lb_Alias>
+<label1>Присъединете се с:</label1>
+<cmd_ok>Запиши</cmd_ok>
+<cmd_close>Затвори</cmd_close>
+<this>Присъединете се към XML функции</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Име</columnHeader1>
+<columnHeader2>Път</columnHeader2>
+<cmdOK>OK</cmdOK>
+<cmdClose>Затвори</cmdClose>
+<this>Наличните задачи</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Инструменти</mnuTools>
+<mnuAddinsEditLinkedData>Редактиране на свързани данни правила</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Редактиране на файл с XML правила</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Как профил нови крайни точки?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Актуализиране на файл с правила</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Управление на регистър</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Управление на Разширено регистър</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Изтриване на регистрационни файлове</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Покажи всички регистрационни файлове</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Текст с разделители преводач</mnuAddinTranslator>
+<mnuExportGroup>Експортиране...</mnuExportGroup>
+<mnuToolsTabbed>Износ Tab разделители записи</mnuToolsTabbed>
+<mnuToolsGateway>Експортиране на Марк запис</mnuToolsGateway>
+<mnuToolsSelect>Изберете MARC записи</mnuToolsSelect>
+<mnuToolsDelete>Изтриване на избраните записи</mnuToolsDelete>
+<mnuToolsExtract>Извличане на избраните записи</mnuToolsExtract>
+<mnuToolsCharacterConversion>Инструменти за преобразуване на знаци</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>Характер реализации</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Откриване на знак</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>Съветник за MarcEdit скрипт</mnuAddScriptWizard>
+<mnuExplorer>Марк SQL изследовател</mnuExplorer>
+<toolStripMenuItem4>OAI Жетвар инструменти</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Реколта OAI записи</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Пакетно Жетвар</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Създаване на пакетно задание</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Изпълнете пакетното реколта</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Износ</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Импортиране</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC инструменти</mnuToolsUnimarcTools>
+<mnuAddinURL>Проверка на URL адреси</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU клиент</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>Инструменти за обработка на Марк</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Пакетно процес записи</mnuToolsBatch>
+<toolClusterData>Инструменти за данни на клъстера</toolClusterData>
+<mnuToolsDedup>Намери дублиращи се записи</mnuToolsDedup>
+<generateToolStripMenuItem>Генериране на...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Повикване номера</mnuGenerateCallnumber>
+<toolStripMenuItem3>БЪРЗО заглавия</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC заглавия</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Обединяване на записи</mnutoolsmerge>
+<toolStripMenuItem5>ПДП помощник</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC операции</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC запис изтегляне</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Актуализиране на WorldCat запис стопанства</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Качване на Bibliograph записи WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Проверка на заглавия</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Състояние на услугата</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Проверка на заглавия</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Предпочитания</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Добавки</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Плъгин мениджър</mnuAddinPluginManager>
+<mnuaddincdsisis>Компактдискове-Изида .iso =&gt; Марк превод</mnuaddincdsisis>
+<mnuHelp>Помощ</mnuHelp>
+<mnuHelpContents>Съдържанието и помощ</mnuHelpContents>
+<mnuHelpTutorials>Преглед уроци</mnuHelpTutorials>
+<mnuHelpOnline>Онлайн помощ</mnuHelpOnline>
+<mnuHelpList>Присъединете се към MarcEdit нотификационен списък</mnuHelpList>
+<mnuHelpError>Предложения/грешка доклад</mnuHelpError>
+<mnuBlog>MarcEdit блог</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit известни проблеми</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Информация за системата</systemInfoToolStripMenuItem>
+<mnuAddLang>Редактиране на езикови файлове</mnuAddLang>
+<mnuRestartIn32bitMode>Рестартирайте MarcEdit в 32-битов режим</mnuRestartIn32bitMode>
+<mnuFileShare>Споделяне на настройки за конфигурация</mnuFileShare>
+<exportSettingsToolStripMenuItem>Експортиране на настройки</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Импортиране на настройки</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Опции за отстраняване на неизправности</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Изчистете временните файлове</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Ното Unicode шрифтове за изтегляне</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Ремонт задача файл</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Възстановяване на мрежовите файлове от Архив</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Изберете задачи за повторно свързване</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Начално състояние на конфигурацията</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Отвори HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Отстраняване на съветник</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Изтегляне актуализация (debug режим)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Проверка за актуализации</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Преки пътища за приложения</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Път за данни на приложение</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Езикови данни пътека</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Тематични данни пътека</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT данни пътека</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>За...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>Авторът, Тери Рийз</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit ЛСКП</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Какво бихте искали да направите?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>3, дефинирани от потребителя</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine данни</lnkUserDefined1>
+<lnkMarcToolsStart>Марк инструменти</lnkMarcToolsStart>
+<lnkUserDefined2>2, дефинирани от потребителя</lnkUserDefined2>
+<lnkUserDefined4>Потребител Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Бих искал да:</groupBox1>
+<cmbLastToolUsed>Последно използвани инструменти</cmbLastToolUsed>
+<lnkTopic5>Работа със свързани данни</lnkTopic5>
+<lnkTopic4>Превод на Excel за Марк</lnkTopic4>
+<lnkTopic3>Марк файлове обединяване</lnkTopic3>
+<lnkTopic2>Реколта OAI данни</lnkTopic2>
+<lnkTopic1>Редактиране на MARC файл</lnkTopic1>
+<this>MarcEdit {версия} .beta от Тери Рийз</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Реколта OAI данни</lbTitle>
+<lbServer>Адрес на сървър:</lbServer>
+<lbSet>Задайте име:</lbSet>
+<lbMetadata>Метаданни тип:</lbMetadata>
+<cmdOK>OK</cmdOK>
+<cmdClose>Затвори</cmdClose>
+<opt_default>По подразбиране</opt_default>
+<opt_saxon>САКСОНСКА</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT модула:</label4>
+<ck_Raw>Реколта сурови данни (запишете OAI данни към локалната файлова система)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Разширени настройки</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Време на изчакване (в сек.)</lbTimeout>
+<ck_Translate>Превод на Марк-8</ck_Translate>
+<label2>Край:</label2>
+<label1>Начало:</label1>
+<lbCrosswalk>Crosswalk път:</lbCrosswalk>
+<cmdSave>Запиши</cmdSave>
+<lnkDebug>Debug URL</lnkDebug>
+<tabPage1>Начало</tabPage1>
+<tabPage2>Разширени настройки</tabPage2>
+<this>Метаданни за прибиране</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Източник файл на OCLC номера:</label1>
+<cmdDownload>Изтегляне</cmdDownload>
+<cmdClose>Затвори</cmdClose>
+<label2>Запишете файла:</label2>
+<this>Насипни изтегляне записи от OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>Търсене WorldCat:</label1>
+<cmbarg1>ключова дума</cmbarg1>
+<cmbconditional>and</cmbconditional>
+<cmdSearch>Търсене</cmdSearch>
+<cmdClose>Затвори</cmdClose>
+<label2>Резултати:</label2>
+<col_oclcnum>OCLC номер</col_oclcnum>
+<col_title>Заглавие</col_title>
+<ck_LocalBib>Изтегляне местни библиографски запис, ако има такива</ck_LocalBib>
+<lnkAll>Избери всички</lnkAll>
+<label3>|</label3>
+<lnkNone>Няма</lnkNone>
+<this>Търсене WorldCat OCLC</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Актуализиране на вашите OCLC WorldCat стопанства</label1>
+<groupBox1>Опции</groupBox1>
+<rdDeleteHoldings>Изтриване на стопанства</rdDeleteHoldings>
+<rdAddHolding>Добави стопанства</rdAddHolding>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<label2>Институция код:</label2>
+<label3>Схемата за класификация:</label3>
+<cmb_schema>Библиотеката на Конгреса</cmb_schema>
+<ck_debug>Печат, отстраняване на грешки информация</ck_debug>
+<this>Актуализация WorldCat стопанства</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Библиотеката на Конгреса</cmb_schema>
+<label3>Схемата за класификация:</label3>
+<label2>Институция код:</label2>
+<cmdClose>Затвори</cmdClose>
+<cmdProcess>Процес</cmdProcess>
+<label4>Библиографски записи с OCLC номера ще бъдат актуализирани в WorldCat.  Bibliograph </label4>
+<label1>Провеждане на код:</label1>
+<lnkGetHoldings>Получаване на кодове</lnkGetHoldings>
+<ckLocalBibData>Процес като местни библиографски записи</ckLocalBibData>
+<ck_deleterecords>Изтриване на записи</ck_deleterecords>
+<this>Качване на записи WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>OK</cmd_options_ok>
+<cmd_options_cancel>Затвори</cmd_options_cancel>
+<cmd_options_apply>Приложи</cmd_options_apply>
+<lnkMainWindow>Главния прозорец</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Език</lnkLanguage>
+<lnkEaseOfUse>Лекота на употреба</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Актуализации</lnkUpdates>
+<lnkFileAssociations>Файлови асоциации</lnkFileAssociations>
+<lnkOther>Други</lnkOther>
+<lnkILSIntegration>ILS интеграция</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API интеграция</lnkOCLCAPI>
+<label15>Задай по подразбиране програми</label15>
+<ckLogging>Разреши регистрирането:</ckLogging>
+<ckAutosave>Разреши автоматичното</ckAutosave>
+<ck_enhanced_editor_loading>Използвайте засилено управление на виртуалната памет</ck_enhanced_editor_loading>
+<ckRDATemplates>Използвайте шаблони на ПДП</ckRDATemplates>
+<ckCompileMarc8>Събира записи като MARC8</ckCompileMarc8>
+<label37>Регистриране на път:</label37>
+<cksaveutf8>Събира записи като UTF8</cksaveutf8>
+<ck_intellisense>Разреши Intellisense</ck_intellisense>
+<label2>Записи на страница</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Кодиране по подразбиране:</lb_Encoding>
+<ck_nwindow>Отваряйте файлове в нов прозорец</ck_nwindow>
+<ck_append>Добавяне на нови записи</ck_append>
+<lb_psize>Размер на визуализацията:</lb_psize>
+<ckUsePreview>Използвайте режима за визуализация</ckUsePreview>
+<cmd_editor_font_default>Задай по подразбиране</cmd_editor_font_default>
+<cmd_editor_set_font>Задаване шрифт</cmd_editor_set_font>
+<lb_Editor_Font_Props>Задаване на свойствата на MarcEditor шрифт:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Задай по подразбиране</cmd_editor_template_default>
+<cmd_editor_modify>Модифициране</cmd_editor_modify>
+<lb_Current_Template>Текущ шаблон:</lb_Current_Template>
+<lb_Editor_Template>Задайте шаблон на MarcEditor:</lb_Editor_Template>
+<label9>* Изисква рестартиране на програма *</label9>
+<label8>PT.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Размер на шрифта:</label4>
+<lb_Example>Примерен текст</lb_Example>
+<lb_lang_font>Задаване на език шрифт:</lb_lang_font>
+<lb_Set_Lang>Задайте езиков пакет:</lb_Set_Lang>
+<rd_theme_dark>Потребителски теми:</rd_theme_dark>
+<rd_theme_normal>Нормален (по подразбиране)</rd_theme_normal>
+<label39>Опции за показване на приложение</label39>
+<ck_export_output>Експортиране на разписка (плен ILS изход)</ck_export_output>
+<lb_TCP_Timeout>Време на изчакване:</lb_TCP_Timeout>
+<lb_TCP_Port>Порт:</lb_TCP_Port>
+<lb_TCP_Host>Домакин на адрес:</lb_TCP_Host>
+<lb_TCPIP_Props>TCP/IP свойствата:</lb_TCPIP_Props>
+<ck_marc21>Записи във формат на MARC21</ck_marc21>
+<ck_marcxml_sax>Използва родния вариант (без XSLT процес)</ck_marcxml_sax>
+<groupBox2>XSLT модула</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode нормализиране</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Характер кодиране по подразбиране:</label35>
+<ckC>Canonical Decomposition (C)</ckC>
+<ckKD>Съвместимост разлагане (КД)</ckKD>
+<ck_Diacritics>Използване на диакритични знаци при спиране</ck_Diacritics>
+<lb_Diacritics>Общи опции:</lb_Diacritics>
+<lb_Engine_XML_Options>XML опции:</lb_Engine_XML_Options>
+<ck_engine_namespace>Използвайте Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Автоматизирани актуализации са забранени от вашия системен администратор</labelAutoUpdateDisabled>
+<ckDetectProxy>Използвайте прокси настройки на системата</ckDetectProxy>
+<ck_Update_Validator>Автоматична проверка за актуализации на валидатора</ck_Update_Validator>
+<label3>Вие трябва да принадлежи към домейн за това да работят по това време.</label3>
+<groupBox4>Информация за потребителя:</groupBox4>
+<lb_domain>Домейн:</lb_domain>
+<label6>Парола:</label6>
+<label5>Потребителско име:</label5>
+<ckUpdates>Автоматична проверка за актуализации</ckUpdates>
+<groupBox5>Задаване файлови асоциации</groupBox5>
+<cmd_file_assoc_view>Показване на типове</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Изтриване на тип</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Запиши тип</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Сътрудник (*.                      ) файлов тип с:</label7>
+<ck_mrk8_editor>Сътрудник (*.mrk8) файлове с MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Сътрудник (*.mrk) файлове с MarcEditor</ck_mrk_editor>
+<ck_mrc>Сътрудник (*.mrc) файлове с MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Изберете</lnkSelectILS>
+<lnkDeleteProfile>Изтриване</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Добавяне</lnkAddProfile>
+<label31>Профили:</label31>
+<ck_ignore_ssl>Игнорирай SSL сертификат грешките</ck_ignore_ssl>
+<lnk_ils_delete>Изтриване</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Редактиране</lnk_ils_z3950_edit>
+<ck_ils_z3950>Използвай Z39.50 настройки</ck_ils_z3950>
+<ck_ils_enable>Разреши ILS опции</ck_ils_enable>
+<label13>Име на хост:</label13>
+<label12>Парола:</label12>
+<label11>Потребителско име:</label11>
+<label10>Изберете система:</label10>
+<lnkGetCodes>Вземи Холдинг кодове</lnkGetCodes>
+<label24>Провеждане на код:</label24>
+<cmb_schema>Библиотеката на Конгреса</cmb_schema>
+<label22>Схемата за класификация:</label22>
+<label23>Институция код:</label23>
+<ckshow>Показване на текст</ckshow>
+<cmdValidateKeys>Проверка на ключове</cmdValidateKeys>
+<linkLabel1>Заявка/управление OCLC ключ (свързва към OCLC)</linkLabel1>
+<label21>OCLC API ключ настройки</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Секретен ключ (двойка с метаданни API ключ)</label18>
+<label17>OCLC метаданни API ключ</label17>
+<label16>OCLC търсене API ключ</label16>
+<lnkFilePaths>Места</lnkFilePaths>
+<label38>Време на изчакване на мрежата (300 милисекунда по подразбиране):</label38>
+<lnkCopyLocalFiles>Копирате локални файлове сега</lnkCopyLocalFiles>
+<label30>Задай по подразбиране Марк инструменти диск път:</label30>
+<label27>Файлови пътища:</label27>
+<label26>Задача папка:</label26>
+<label25>Мрежови папки:</label25>
+<lb_mono>МОНО път:</lb_mono>
+<lb_temp>Задайте временен път:</lb_temp>
+<ck_rss>Прочетете RSS емисия</ck_rss>
+<lb_title>Заглавието маркер:</lb_title>
+<lb_Author>Автор етикет:</lb_Author>
+<lbCall>Телефонен етикет:</lbCall>
+<label1>Контролен номер етикет:</label1>
+<ck_allow_z3950>Разреши Z39.50 функции</ck_allow_z3950>
+<label28>Опции за поле:</label28>
+<ck_touch_friendly>Използвайте докосване приятелски менюта</ck_touch_friendly>
+<ck64_bit>Инсталирана 64-битова</ck64_bit>
+<ck_32bit>32-късче настанявам</ck_32bit>
+<label36>Версия на MS Office:</label36>
+<label34>ISBN етикет:</label34>
+<ckSort880>880: използвайте свързване поле за сортиране</ckSort880>
+<ck880Infile>Infile 880 полета с поле двойки</ck880Infile>
+<label29>Опции за сортиране:</label29>
+<ckShowDescriptionInScreenTips>Показвай функция описание в екранните пояснения</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Показвай клавишни комбинации в екранните пояснения</ckScreenTipShortcuts>
+<label42>Клавиатурни опции</label42>
+<ckProvideSoundAccess>Осигури звукова обратна връзка</ckProvideSoundAccess>
+<label41>Опции за обратна информация</label41>
+<groupBox3>Действия:</groupBox3>
+<lnkSearch4Themes>Изтриване на избраната тема</lnkSearch4Themes>
+<lnkNewTheme>Създаване на нова тема</lnkNewTheme>
+<label40>Направи MarcEdit по-достъпни</label40>
+<this>Предпочитания за MarcEdit</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Налични добавки:</label1>
+<ch1>Плъгин име</ch1>
+<ch2>URL</ch2>
+<c3>Размер на файла</c3>
+<c4>Version #:</c4>
+<cmddownload>Изтегляне</cmddownload>
+<cmdClose>Затвори</cmdClose>
+<columnHeader1>Премахнете?</columnHeader1>
+<columnHeader2>Плъгин име</columnHeader2>
+<columnHeader3>Име на класа</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Инсталирани приставки:</label2>
+<cmdRemove>Премахване на</cmdRemove>
+<c5>Номер на версия MarcEdit</c5>
+<this>Плъгин мениджър</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>ресурси. GetString ("label1. Текст")</label1>
+<label2>Модел:</label2>
+<cmdProcess>Процес</cmdProcess>
+<cmdCancel>Отказ</cmdCancel>
+<lbstatus>Статус:</lbstatus>
+<ckEscape>Бягство данни от URL адрес</ckEscape>
+<ckAddNew>Замести съществуващо поле</ckAddNew>
+<ck_addnewfield>Добавяне на ново поле, ако не представи</ck_addnewfield>
+<ckAlwaysAdd>Винаги Добавяне на ново поле</ckAlwaysAdd>
+<groupBox1>Опции</groupBox1>
+<this>Изграждане на нови полета</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Папка за търсене</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>Резултати</groupBox3>
+<lnkClearResults>Ясни резултати</lnkClearResults>
+<lnkDownload>Изтегляне на всички елементи</lnkDownload>
+<lnkGetNext>Вземи напред {граница}</lnkGetNext>
+<lnkDownloadAllHoldings>Изтегли всички свиневъдни обекти</lnkDownloadAllHoldings>
+<col1>Позиция</col1>
+<col2>Заглавие</col2>
+<columnHeader1>База данни</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Изтегляне на избраните елементи</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Изтегляне на избраните стопанства записи</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Преглед на избрания запис</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Опции</groupBox1>
+<rdEditDB>Изберете база данни</rdEditDB>
+<rdEditSettings>Редактиране на настройки</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Записи на страница</label4>
+<ckUnicode>Извличане на Unicode</ckUnicode>
+<lb_encoding_single>Сървъра набор от знаци</lb_encoding_single>
+<lbSearchb>Търсене за:</lbSearchb>
+<lbSearch>База данни за заявки:</lbSearch>
+<label3>Задайте базата данни предпочитание:</label3>
+<cmdSelectDatabase>Изберете</cmdSelectDatabase>
+<MCol3>ИД</MCol3>
+<MCol1>Име</MCol1>
+<MCol2>Тип</MCol2>
+<lb_PModifyTitle>Изберете база данни:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Действия</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Добавяне на нов Z39.50 сървър</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Добавяне на нов SRU сървър</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Предпочитания</preferencesToolStripMenuItem>
+<cmdCloseSettings>Затвори</cmdCloseSettings>
+<label5>Контрол на полета (за партида обработка дедупликация)</label5>
+<cmdSaveSettings>Запиши настройките</cmdSaveSettings>
+<rdDownloadPreferred>Изтегляне от предпочитан източник</rdDownloadPreferred>
+<rdDownloadMostComplete>Изтегляне на най-пълната документация</rdDownloadMostComplete>
+<rdAllRecords>Изтегляне на всички записи</rdAllRecords>
+<label2>Партида обработка опции</label2>
+<label1>Предпочитания</label1>
+<this>MarcEdit Z39.50/SRU клиент</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Процес 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Редактиране на полета</lnkEditFields>
+<ck_040>Модифициране 040--добавяне $erda</ck_040>
+<ck_qualifyinginfo>Квалификациите информация (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Редактиране на списък</lnkEdit>
+<ck_dgmd>Изтрий GMD</ck_dgmd>
+<ckAbbrev>Разгънете съкращения</ckAbbrev>
+<ckgmd>Генерира GMD</ckgmd>
+<ck264>Оцени 260/264</ck264>
+<ck_signs>Винаги използвайте ©, ℗ символи</ck_signs>
+<ck381>Добавете 381--други</ck381>
+<ck380>Добавете 380--форма на работа</ck380>
+<ck347>Добавете 347--цифрови характеристики</ck347>
+<ck346>Добавете 346--видео характеристики</ck346>
+<ck345>Добавяне на 345--Proj. Характеристики</ck345>
+<ck344>Добавете 344--звукови характеристики</ck344>
+<ck337>Добавете 337--медиите тип
+Добавете 338--превозвач тип</ck337>
+<ck336>Добавете 336--тип съдържание</ck336>
+<cmdProcess>OK</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<label1>Източник:</label1>
+<label2>Запиши:</label2>
+<lnkAll>Всички</lnkAll>
+<label3>Изберете:</label3>
+<label4>|</label4>
+<lnkNone>Няма</lnkNone>
+<label7>Статус:</label7>
+<this>ПДП помощник</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Затвори</cmd_Close>
+<rEdit></rEdit>
+<this>Резултати</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Начало</lnkHome>
+<label5>ресурси. GetString ("label5. Текст")</label5>
+<label4>За RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>За RobertCompare</lnkAbout>
+<ckSort>Предварително сортиране на файлове</ckSort>
+<cmdClose>Затвори</cmdClose>
+<cmdExecute>Изпълнение</cmdExecute>
+<label1>Запишете файла:</label1>
+<label6>Сравнение на файлове:</label6>
+<label2>ресурси. GetString ("label2. Текст")</label2>
+<lnkPreferences>Предпочитания</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Поле за сортиране:</lbSortField>
+<lbdelete>Заличавания:</lbdelete>
+<lbAddColor>Допълнения:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Няма</lnkNone>
+<lnkAll>Избери всички</lnkAll>
+<col_title>Заглавие</col_title>
+<col_id>ИД</col_id>
+<label3>|</label3>
+<label2>Резултати:</label2>
+<cmdClose>Затвори</cmdClose>
+<cmdSearch>Търсене</cmdSearch>
+<cmbarg1>Заглавие</cmbarg1>
+<label1>База данни за търсене:</label1>
+<ck_batch>Папка за търсене</ck_batch>
+<this>Търсене</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Изберете</cmdSelect>
+<this>Изберете ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Номер на запис</columnHeader1>
+<columnHeader2>Показване на поле</columnHeader2>
+<selectItemsToolStripMenuItem>Избор на елементи</selectItemsToolStripMenuItem>
+<cmdImport>Импортиране на файл</cmdImport>
+<cmdfDelete>Изтриване на избраните</cmdfDelete>
+<cmdExport>Експортиране на избран</cmdExport>
+<cmdExit>Изход</cmdExit>
+<lb_Search>Търсене за:</lb_Search>
+<lb_DisplayField>Показване на поле:</lb_DisplayField>
+<lb_SourceFile>Марк файл източник:</lb_SourceFile>
+<ckSource>Resave променените записи в източника</ckSource>
+<ck_retain>Запази Отметнатите елементи</ck_retain>
+<cmd_Generate>Генериране на отчет</cmd_Generate>
+<ck_find_all>Всички запис данни за търсене</ck_find_all>
+<ck_use_regex>Използване на регулярни изрази</ck_use_regex>
+<cmdRandomExport>Износ случайни</cmdRandomExport>
+<lnkDoesNotMatch>Не съвпада</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Инвертирай селекцията</lnkInvert>
+<ckExactWord>Точната дума мач</ckExactWord>
+<this>MarcEdit.NET: Промяна на отбран MARC записи</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Изберете полета, за да се изключат от сортиране</lb_title>
+<lb_fields>Полета за сортиране:</lb_fields>
+<lbExclude>Изключване на полета:</lbExclude>
+<cmd_OK>OK</cmd_OK>
+<cmd_Close>Затвори</cmd_Close>
+<this>Съветник за персонализирано сортиране</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL крайна точка:</lbsparql>
+<cmdQuery>Заявка</cmdQuery>
+<cmdClose>Затвори</cmdClose>
+<lbQuery>SPARQL заявка:</lbQuery>
+<lbresults>Резултати:</lbresults>
+<cklocal>Натоварване на локален файл</cklocal>
+<lbOutput>Изход:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Примерни въпроси:</groupBox1>
+<lbExample3>Заявка за търсене: 軍事基地</lbExample3>
+<lnkExample3>Японската диета библиотека</lnkExample3>
+<lbexample2>Гети заявка за Кадмий серокиселинен</lbexample2>
+<lnkExample2>Гети пример</lnkExample2>
+<label1>ОКОТО заявка за птиците, човека</label1>
+<lnkExample1>Пример за окото</lnkExample1>
+<label2>Sparql препратки:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL крайни точки (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Уикипедия)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL уроци</lnkTutorials>
+<this>SPARQL браузър</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>Компактдискове-Изида =&gt; Марк превод</lb_title>
+<groupBox1>Потребителски вход</groupBox1>
+<lb_output>Изходен файл:</lb_output>
+<lb_input>Входният файл:</lb_input>
+<groupBox2>Опции:</groupBox2>
+<rd_advanced>Разширено превод</rd_advanced>
+<rd_simple>Просто превод</rd_simple>
+<lb_subfield>Подобласт маркер</lb_subfield>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_Close>Затвори</cmd_Close>
+<this>Компактдискове-Изида .iso =&gt; Марк превод</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Опции:</lb_title>
+<lnkLoad>Съпоставяния на натоварване</lnkLoad>
+<ck_indicators>Добавяне на индикатори</ck_indicators>
+<ckLDR>Правилни LDRs</ckLDR>
+<ck_subfield>Добавяне на водещи подобласт</ck_subfield>
+<cmdOK>OK</cmdOK>
+<cmdClose>Затвори</cmdClose>
+<this>Разширени опции</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Отказ</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Специални знаци:</Label1>
+<_CharC_0>А</_CharC_0>
+<_CharC_1>А</_CharC_1>
+<_CharC_2>А</_CharC_2>
+<_CharC_3>А</_CharC_3>
+<_CharC_4>А</_CharC_4>
+<_CharC_5>А</_CharC_5>
+<_CharC_6>А</_CharC_6>
+<_CharC_7>А</_CharC_7>
+<_CharC_8>А</_CharC_8>
+<_CharC_9>А</_CharC_9>
+<_CharC_10>А</_CharC_10>
+<_CharC_11>А</_CharC_11>
+<_CharC_12>А</_CharC_12>
+<_CharC_13>А</_CharC_13>
+<_CharC_14>А</_CharC_14>
+<_CharC_15>А</_CharC_15>
+<_CharC_16>А</_CharC_16>
+<_CharC_17>А</_CharC_17>
+<_CharC_18>А</_CharC_18>
+<_CharC_19>А</_CharC_19>
+<_CharC_20>А</_CharC_20>
+<_CharC_21>А</_CharC_21>
+<_CharC_22>А</_CharC_22>
+<_CharC_23>А</_CharC_23>
+<_CharC_24>А</_CharC_24>
+<_CharC_25>А</_CharC_25>
+<_CharC_26>А</_CharC_26>
+<_CharC_27>А</_CharC_27>
+<_CharC_28>А</_CharC_28>
+<_CharC_29>А</_CharC_29>
+<_CharC_30>А</_CharC_30>
+<_CharC_31>А</_CharC_31>
+<_CharC_32>А</_CharC_32>
+<_CharC_33>А</_CharC_33>
+<_CharC_34>А</_CharC_34>
+<_CharC_35>А</_CharC_35>
+<_CharC_36>А</_CharC_36>
+<_CharC_37>А</_CharC_37>
+<_CharC_38>А</_CharC_38>
+<_CharC_39>А</_CharC_39>
+<_CharC_40>А</_CharC_40>
+<_CharC_41>А</_CharC_41>
+<_CharC_42>А</_CharC_42>
+<_CharC_43>А</_CharC_43>
+<_CharC_44>А</_CharC_44>
+<_CharC_45>А</_CharC_45>
+<_CharC_46>А</_CharC_46>
+<_CharC_47>А</_CharC_47>
+<_CharC_48>А</_CharC_48>
+<_CharC_49>А</_CharC_49>
+<_CharC_50>А</_CharC_50>
+<_CharC_51>А</_CharC_51>
+<_CharC_52>А</_CharC_52>
+<_CharC_53>А</_CharC_53>
+<_CharC_54>А</_CharC_54>
+<_CharC_55>А</_CharC_55>
+<_CharC_56>А</_CharC_56>
+<_CharC_57>А</_CharC_57>
+<_CharC_58>А</_CharC_58>
+<_CharC_59>А</_CharC_59>
+<_CharC_60>А</_CharC_60>
+<_CharC_61>А</_CharC_61>
+<_CharC_62>А</_CharC_62>
+<_CharC_63>А</_CharC_63>
+<_CharC_64>А</_CharC_64>
+<_CharC_65>А</_CharC_65>
+<_CharC_66>А</_CharC_66>
+<_CharC_67>А</_CharC_67>
+<_CharC_68>А</_CharC_68>
+<_CharC_69>А</_CharC_69>
+<_CharC_70>А</_CharC_70>
+<_CharC_71>А</_CharC_71>
+<_CharC_72>А</_CharC_72>
+<_CharC_73>А</_CharC_73>
+<_CharC_74>А</_CharC_74>
+<_CharC_75>А</_CharC_75>
+<_CharC_76>А</_CharC_76>
+<_CharC_77>А</_CharC_77>
+<_CharC_78>А</_CharC_78>
+<_CharC_79>А</_CharC_79>
+<_CharC_80>А</_CharC_80>
+<_CharC_81>А</_CharC_81>
+<_CharC_82>А</_CharC_82>
+<_CharC_83>А</_CharC_83>
+<_CharC_84>А</_CharC_84>
+<_CharC_85>А</_CharC_85>
+<_CharC_86>А</_CharC_86>
+<_CharC_87>А</_CharC_87>
+<_CharC_88>А</_CharC_88>
+<_CharC_89>А</_CharC_89>
+<_CharC_90>А</_CharC_90>
+<_CharC_91>А</_CharC_91>
+<_CharC_92>А</_CharC_92>
+<_CharC_93>А</_CharC_93>
+<_CharC_94>А</_CharC_94>
+<_CharC_95>А</_CharC_95>
+<_CharC_96>А</_CharC_96>
+<_CharC_97>А</_CharC_97>
+<_CharC_98>А</_CharC_98>
+<_CharC_99>А</_CharC_99>
+<_CharC_100>А</_CharC_100>
+<_CharC_101>А</_CharC_101>
+<_CharC_102>А</_CharC_102>
+<_CharC_103>А</_CharC_103>
+<_CharC_104>А</_CharC_104>
+<_CharC_105>А</_CharC_105>
+<_CharC_106>А</_CharC_106>
+<_CharC_107>А</_CharC_107>
+<_CharC_108>А</_CharC_108>
+<_CharC_109>А</_CharC_109>
+<_CharC_110>А</_CharC_110>
+<_CharC_111>А</_CharC_111>
+<_CharC_112>А</_CharC_112>
+<_CharC_113>А</_CharC_113>
+<_CharC_114>А</_CharC_114>
+<_CharC_115>А</_CharC_115>
+<_CharC_116>А</_CharC_116>
+<_CharC_117>А</_CharC_117>
+<_CharC_118>А</_CharC_118>
+<_CharC_119>А</_CharC_119>
+<_CharC_120>А</_CharC_120>
+<_CharC_121>А</_CharC_121>
+<_CharC_122>А</_CharC_122>
+<_CharC_123>А</_CharC_123>
+<_CharC_124>А</_CharC_124>
+<_CharC_125>А</_CharC_125>
+<_CharC_126>А</_CharC_126>
+<_CharC_127>А</_CharC_127>
+<_CharC_128>А</_CharC_128>
+<_CharC_129>А</_CharC_129>
+<_CharC_130>А</_CharC_130>
+<_CharC_131>А</_CharC_131>
+<_CharC_132>А</_CharC_132>
+<_CharC_133>А</_CharC_133>
+<_CharC_134>А</_CharC_134>
+<_CharC_135>А</_CharC_135>
+<_CharC_136>А</_CharC_136>
+<_CharC_137>А</_CharC_137>
+<_CharC_138>А</_CharC_138>
+<_CharC_139>А</_CharC_139>
+<_CharC_140>А</_CharC_140>
+<_CharC_141>А</_CharC_141>
+<_CharC_142>А</_CharC_142>
+<_CharC_143>А</_CharC_143>
+<_CharC_144>А</_CharC_144>
+<_CharC_145>А</_CharC_145>
+<_CharC_146>А</_CharC_146>
+<_CharC_147>А</_CharC_147>
+<_CharC_148>А</_CharC_148>
+<_CharC_154>А</_CharC_154>
+<_CharC_155>А</_CharC_155>
+<_CharC_160>А</_CharC_160>
+<_CharC_161>А</_CharC_161>
+<_CharC_162>А</_CharC_162>
+<_CharC_163>А</_CharC_163>
+<_CharC_164>А</_CharC_164>
+<_CharC_165>А</_CharC_165>
+<_CharC_166>А</_CharC_166>
+<_CharC_149>А</_CharC_149>
+<_CharC_150>А</_CharC_150>
+<_CharC_151>А</_CharC_151>
+<_CharC_152>А</_CharC_152>
+<_CharC_153>А</_CharC_153>
+<_CharC_156>А</_CharC_156>
+<_CharC_157>А</_CharC_157>
+<_CharC_158>А</_CharC_158>
+<_CharC_159>А</_CharC_159>
+<_CharC_167>А</_CharC_167>
+<_CharC_168>А</_CharC_168>
+<_CharC_169>А</_CharC_169>
+<_CharC_170>А</_CharC_170>
+<_CharC_171>А</_CharC_171>
+<_CharC_172>А</_CharC_172>
+<_CharC_173>А</_CharC_173>
+<_CharC_174>А</_CharC_174>
+<_CharC_175>А</_CharC_175>
+<_CharC_176>А</_CharC_176>
+<_CharC_177>А</_CharC_177>
+<_CharC_178>А</_CharC_178>
+<_CharC_179>А</_CharC_179>
+<_CharC_180>А</_CharC_180>
+<_CharC_181>А</_CharC_181>
+<_CharC_182>А</_CharC_182>
+<_CharC_183>А</_CharC_183>
+<_CharC_184>А</_CharC_184>
+<_CharC_185>А</_CharC_185>
+<_CharC_186>А</_CharC_186>
+<_CharC_187>А</_CharC_187>
+<_CharC_188>А</_CharC_188>
+<_CharC_189>А</_CharC_189>
+<_CharC_190>А</_CharC_190>
+<_CharC_191>А</_CharC_191>
+<_CharC_192>А</_CharC_192>
+<_CharC_193>А</_CharC_193>
+<_CharC_194>А</_CharC_194>
+<_CharC_195>А</_CharC_195>
+<_CharC_196>А</_CharC_196>
+<_CharC_197>А</_CharC_197>
+<_CharC_198>А</_CharC_198>
+<_CharC_199>А</_CharC_199>
+<_CharC_200>А</_CharC_200>
+<_CharC_201>А</_CharC_201>
+<_CharC_202>А</_CharC_202>
+<_CharC_203>А</_CharC_203>
+<_CharC_204>А</_CharC_204>
+<_CharC_205>А</_CharC_205>
+<_CharC_206>А</_CharC_206>
+<_CharC_207>А</_CharC_207>
+<_CharC_208>А</_CharC_208>
+<_CharC_209>А</_CharC_209>
+<_CharC_210>А</_CharC_210>
+<_CharC_211>А</_CharC_211>
+<_CharC_212>А</_CharC_212>
+<_CharC_213>А</_CharC_213>
+<_CharC_214>А</_CharC_214>
+<_CharC_215>А</_CharC_215>
+<_CharC_216>А</_CharC_216>
+<_CharC_217>А</_CharC_217>
+<_CharC_218>А</_CharC_218>
+<_CharC_219>А</_CharC_219>
+<_CharC_220>А</_CharC_220>
+<_CharC_221>А</_CharC_221>
+<_CharC_222>А</_CharC_222>
+<_CharC_223>А</_CharC_223>
+<_CharC_224>А</_CharC_224>
+<_CharC_225>А</_CharC_225>
+<_CharC_226>А</_CharC_226>
+<_CharC_227>А</_CharC_227>
+<_CharC_228>А</_CharC_228>
+<_CharC_229>А</_CharC_229>
+<_CharC_230>А</_CharC_230>
+<_CharC_231>А</_CharC_231>
+<_CharC_232>А</_CharC_232>
+<_CharC_233>А</_CharC_233>
+<_CharC_234>А</_CharC_234>
+<_CharC_235>А</_CharC_235>
+<_CharC_236>А</_CharC_236>
+<_CharC_237>А</_CharC_237>
+<_CharC_238>А</_CharC_238>
+<_CharC_239>А</_CharC_239>
+<_CharC_240>А</_CharC_240>
+<_CharC_241>А</_CharC_241>
+<_CharC_242>А</_CharC_242>
+<_CharC_243>А</_CharC_243>
+<_CharC_244>А</_CharC_244>
+<_CharC_245>А</_CharC_245>
+<_CharC_246>А</_CharC_246>
+<_CharC_247>А</_CharC_247>
+<_CharC_248>А</_CharC_248>
+<_CharC_249>А</_CharC_249>
+<_CharC_250>А</_CharC_250>
+<_CharC_251>А</_CharC_251>
+<_CharC_252>А</_CharC_252>
+<_CharC_253>А</_CharC_253>
+<_CharC_254>А</_CharC_254>
+<_CharC_255>А</_CharC_255>
+<cmd_Insert>Вмъкване</cmd_Insert>
+<cmdClose>Затвори</cmdClose>
+<this>Марк-8 ала характер</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Име на списък на задачи:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Добавяне изтриване на поле за задача</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Добави редактиране подобласт задача</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Добави редактиране индикатор задача</addToolStripMenuItem>
+<cmdSave>Запиши</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Добавяне на ново поле за задача</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Затвори</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Добави замени всички задачи</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Добави коментар</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Добавяне на поле за редактиране на задача</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Добави суап поле задача</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Добави копие поле задача</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Добавяне на списък със задачи</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Добавяне на ПДП помощник</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Добави свързани данни задача</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Добавяне на нова задача изграждане поле</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Редактиране на клавишни комбинации</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Дело изявления</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>малки букви</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>ГЛАВНИ</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Заглавия на английски</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Първоначалното дело</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Първоначалното дело с главна буква</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Редактиране на поле</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Чисти интелигентни знаци</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Математически функции</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Конвертиране в десетични градуси</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Премахване на празни редове</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Режещи инструменти</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Генериране на ножове</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Генериране на Sanborn3 ножове</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Копиране на избраната задача действие</mnuCopy>
+<mnuPasteTask>Постави задача действие</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Коментар избраните задача</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>UnComment избраните задачи</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Задачи:</lbTasks>
+<label1>Действия:</label1>
+<label2>Описание/Контрол:</label2>
+<cmdDebug>Отстраняване на грешки</cmdDebug>
+<this>Редактиране на списък със задачи</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Име</columnHeader1>
+<columnHeader2>Път</columnHeader2>
+<columnHeader3>Пряк път</columnHeader3>
+<columnHeader4>Описание</columnHeader4>
+<cmdClose>Затвори</cmdClose>
+<lnkNew>Създайте нов списък със задачи</lnkNew>
+<lbMacro>Списъци със задачи:</lbMacro>
+<lnkCloneTask>Клонинг съществуващ списък със задачи</lnkCloneTask>
+<groupBox1>Задача действия</groupBox1>
+<lnkRelink>Повторно свързване на задачи</lnkRelink>
+<lnk_import_task>Задача за импортиране</lnk_import_task>
+<groupBox2>Управление на съществуващите задачи</groupBox2>
+<lnkBackup>Архивиране на всички задачи</lnkBackup>
+<lnk_export_task>Експортиране на избраната задача</lnk_export_task>
+<lnkKey>Присвояване на ключ</lnkKey>
+<lnkEdit>Редактиране на избраната задача списък</lnkEdit>
+<lnkDelete>Изтриване на избраната задача списък</lnkDelete>
+<this>Диспечер на задачите</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Съкрати дълги записи</ckTruncate>
+<label1>Изберете операция:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Характер кодиране по подразбиране:</label35>
+<ck_Marc8>Превод на Марк-8</ck_Marc8>
+<ck_UTF8>Превод към UTF8</ck_UTF8>
+<lb_OutputFile>Запиши като...</lb_OutputFile>
+<lb_InputFile>Отворен...</lb_InputFile>
+<cmdCancel>Затвори</cmdCancel>
+<cmdEdit>Редактиране на записи</cmdEdit>
+<cmdExecute>Изпълнение</cmdExecute>
+<lb_Results>Резултати:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Инструменти</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Се върнете към главния прозорец</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Редактиране на XML функцията списък</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Пакетно процес записи</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>Характер конвертиране</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC инструменти</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Какво бихте искали да направите?</mnuContextHelp>
+<lnkTopic1>Конвертиране на моя файл с различен характер кодиране</lnkTopic1>
+<lnkTopic2>Добавяне/промяна на XML преводи</lnkTopic2>
+<lnkTopic4>Как да намери грешка във файла ми Марк?</lnkTopic4>
+<groupBox1>Бих искал да:</groupBox1>
+<groupBox2>Изберете данни за процес:</groupBox2>
+<groupBox3>Опции за кодиране на знаци</groupBox3>
+<this>Марк инструменти</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit предоставя набор от lite тегло UNIMARC преобразуване инструменти.  Ако тези инструменти са от интерес за вас и желаете да помогнете да ги направим по-добре, моля представете f обратна информация.
+
+</label1>
+<label2>Източник</label2>
+<label3>Местоназначение</label3>
+<groupBox1>Опции</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<this>UNIMARC инструменти</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Актуализация бележки:</label1>
+<cmd_Update>Актуализация</cmd_Update>
+<cmd_Cancel>Отказ</cmd_Cancel>
+<this>Актуализация MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode кодирани</ckIsUTF8>
+<ck_merge_to_source>Обединяване в източник</ck_merge_to_source>
+<label17>Запишете файла:</label17>
+<label16>Каталогизиране на източник</label16>
+<ck_SameFile>Процес източник файл</ck_SameFile>
+<cmd_merge_cancel>Отказ</cmd_merge_cancel>
+<cmd_merge_next>Следваща =&gt;</cmd_merge_next>
+<lb_merge_title>Обединяване на запис данни</lb_merge_title>
+<ck_merge_repeatable>Е повторяеми</ck_merge_repeatable>
+<lb_id>Идентификатор на запис:</lb_id>
+<lb_merge>Обединяване на файл:</lb_merge>
+<lb_source>Файл източник:</lb_source>
+<ck_overlayexisting>Наслагване на съществуващи елементи</ck_overlayexisting>
+<label4>Доверието на стойност:</label4>
+<ck_mergeUnique>Обединяване на уникални елементи</ck_mergeUnique>
+<button1>Отказ</button1>
+<cmd_merge_select_fields_next>Следваща =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Назад</cmd_merge_select_fields_back>
+<label7>Променливи полета:</label7>
+<label6>Изберете поле:</label6>
+<label5>Обединяване на запис данни: Изберете полета</label5>
+<button5>Затвори</button5>
+<label15>Файлове са били обединени.  Резултатите в {merge_results_file}.</label15>
+<label13>Сливането е завършено</label13>
+<this>Обединяване на MARC записи</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Инструмента за проверка на заглавията може да се използва за валидиране 1xx, 6xx или 7xx полета.  Th д Инструментът използва комбинация от уеб и местни услуги да се определи дали headin g се появява в оторизиран заглавие.</label1>
+<ck_1xx>Разреши 1xx/7xx полета</ck_1xx>
+<ck_6xx>Разреши 6xx поле</ck_6xx>
+<cmdProcess>Процес</cmdProcess>
+<cmdClose>Затвори</cmdClose>
+<label2>Източник:</label2>
+<lbStatus>Статус:</lbStatus>
+<cmdExtract>Екстракт</cmdExtract>
+<ckdeletecache>Изтриване на кеша</ckdeletecache>
+<lnkDelimited>Запиши с разделители</lnkDelimited>
+<ckonlyA>Обработва само подобласт А</ckonlyA>
+<ckVariant>Автоматично коригиране на варианти</ckVariant>
+<ckGenerateBriefHeadings>Генериране на кратко име на лични органи</ckGenerateBriefHeadings>
+<label3>Генерирани органи:</label3>
+<ckAddURIs>Вграждане URIs, когато е възможно</ckAddURIs>
+<ck_download_authorities>Изтегляне LC органи</ck_download_authorities>
+<this>Проверка на заглавия</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Файл източник:</lb_Source>
+<lb_Rules>Файл с правила:</lb_Rules>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_close>Затвори</cmd_close>
+<groupBox1>Опции</groupBox1>
+<optIdentify>Утвърждава структурата записите</optIdentify>
+<opt_remove>Премахване на невалидни записи</opt_remove>
+<opt_validate>Проверете Марк използване правила файл</opt_validate>
+<rdHex>Изглед в HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>OK</cmd_Ok>
+<cmdCancel>Затвори</cmdCancel>
+<groupBox1>Опции за отчет:</groupBox1>
+<lb_MARC_Title>Заглавие:</lb_MARC_Title>
+<lbReport>Тип на справката:</lbReport>
+<lb_XSLT>XSLT файл:</lb_XSLT>
+<lb_Dest>Изходен файл:</lb_Dest>
+<lb_MARC>Входният файл:</lb_MARC>
+<lb_Fields>Полета:</lb_Fields>
+<lbTimeout>Време на изчакване (в секунди)</lbTimeout>
+<this>Проверка на URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>За OCLC бързо обслужване</lnkClassify>
+<label1>ресурси. GetString ("label1. Текст")</label1>
+<ck_conditional_fast>Добавете заглавия на бързо, когато няма тема заглавия са налице</ck_conditional_fast>
+<ck_always_fast>Винаги добавите бързо заглавия</ck_always_fast>
+<label8>Заглавията на темите:</label8>
+<button1>Процес</button1>
+<cmd_Close>Затвори</cmd_Close>
+<this>Генериране на бързо заглавия</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Запиши</cmd_save>
+<cmd_close>Затвори</cmd_close>
+<ck_1xxa>$a: главния елемент</ck_1xxa>
+<ck_245p>$p: името на pt/sec. на работа</ck_245p>
+<ck_245n>$n: брой на pt/sec. на работа</ck_245n>
+<ck_245c>$c: отчет на реагиране</ck_245c>
+<ck_245b>$b: останалата част от титлата</ck_245b>
+<ck_245a>$a: заглавие</ck_245a>
+<ck_lang>Език (позиции: 35-37)</ck_lang>
+<ck_dates>Дати (позиции: 7-14)</ck_dates>
+<ck_p7>BLvl (позиция 7)</ck_p7>
+<ck_p6>Тип (позиция 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Контролните номера</label6>
+<ck_form>Форма (позиции: 23)</ck_form>
+<ck_245_h>$h: генерал материал наименование</ck_245_h>
+<label5>Разни полета:</label5>
+<label4>Поле 245:</label4>
+<label3>Автор (1xx) поле</label3>
+<label2>008 позиции</label2>
+<label1>LDR позиция</label1>
+<this>Опции за обединяване</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Свойства на базата данни</tabDBProps>
+<ck_Paused>Замени пауза (6 сек.)</ck_Paused>
+<label1>База данни:</label1>
+<ck_Show>Показване на базата данни</ck_Show>
+<lbPassword>Парола:</lbPassword>
+<lbUsername>Потребителско име:</lbUsername>
+<lbSyntax>Синтаксис:</lbSyntax>
+<lbPort>Порт:</lbPort>
+<lbHost>Водещ:</lbHost>
+<lbname>Име:</lbname>
+<tabDBAdvanced>Разширени свойства</tabDBAdvanced>
+<label4>Време на изчакване (в секунди):</label4>
+<label2>Елемент набор:</label2>
+<label3>Други опции:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.HTML</lnkftp>
+<lbInfo>Повече информация:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Тема:</lbSubject>
+<lbTitle>Заглавие:</lbTitle>
+<lbAuthor>Автор:</lbAuthor>
+<lbadvTitle>Z39.50 атрибут 4: структура</lbadvTitle>
+<cmdSave>Запиши</cmdSave>
+<cmdClose>Затвори</cmdClose>
+<label17>Z39.50 база данни настройки:</label17>
+<cmdDeleteZ3950>Изтриване</cmdDeleteZ3950>
+<gbCustom>Настройки за потребителски профил</gbCustom>
+<label5>Индекс на заглавие:</label5>
+<label6>Индекс на автора:</label6>
+<label10>Ключова дума индекс:</label10>
+<label7>Тематичен указател:</label7>
+<label11>Record # Index:</label11>
+<label8>Индекс на ISBN:</label8>
+<label12>Индекс на ISSN:</label12>
+<cmdDeleteSRU>Изтриване</cmdDeleteSRU>
+<ck_SRU_Show>Показване на базата данни</ck_SRU_Show>
+<label13>Допълнителни параметри</label13>
+<label14>Профил за търсене:</label14>
+<lbVersion>Версия:</lbVersion>
+<cmdCloseSRU>Затвори</cmdCloseSRU>
+<cmdSaveSRU>Запиши</cmdSaveSRU>
+<label15>Име:</label15>
+<lbMetadata>Схема от метаданни:</lbMetadata>
+<label16>URL АДРЕС:</label16>
+<lbSRUTitle>SRU свойства на базата данни:</lbSRUTitle>
+<this>Свойства на базата данни</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Намери:</label1>
+<ckMatchCase>Главни/малки букви</ckMatchCase>
+<cmdFind>Намери</cmdFind>
+<this>Шестнадесетичен: Намери низ</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Файл</fileToolStripMenuItem>
+<openToolStripMenuItem>Отворен</openToolStripMenuItem>
+<exitToolStripMenuItem>Изход</exitToolStripMenuItem>
+<editToolStripMenuItem>Редактиране</editToolStripMenuItem>
+<findToolStripMenuItem>Намери</findToolStripMenuItem>
+<findNextToolStripMenuItem>Намери следващ</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Изрежи</cutToolStripMenuItem>
+<copyToolStripMenuItem>Копие</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Паста</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Изчисти</clearToolStripMenuItem>
+<findToolStripMenuItem>Намери</findToolStripMenuItem>
+<replaceToolStripMenuItem>Замени</replaceToolStripMenuItem>
+<lnkLoadAll>Натоварване на целия файл</lnkLoadAll>
+<lb_bytes>{loaded_bytes} на {file_bytes} са били натоварени байта.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Нов запис</tbNew>
+<mnuCNewWindow>Отвори нов прозорец</mnuCNewWindow>
+<ContextAuthority>Орган</ContextAuthority>
+<ContextAuthorityName>Име</ContextAuthorityName>
+<ContextAuthoritySubject>Темата</ContextAuthoritySubject>
+<cBook>Книга</cBook>
+<cSerial>Сериен</cSerial>
+<cVisualMat>Визуален материал</cVisualMat>
+<cMaps>Картографски ресурс</cMaps>
+<cSoundRec>Звукозапис</cSoundRec>
+<cScore>Резултат</cScore>
+<cElectMat>Електронни ресурси</cElectMat>
+<cMixedMat>Смесен материал</cMixedMat>
+<tbOpen>Отваряне на файл</tbOpen>
+<tbSave>Запишете файла</tbSave>
+<tbPrint>Файл за печат</tbPrint>
+<tbCompile>Събира записи</tbCompile>
+<tbCut>Изрежи</tbCut>
+<tbCopy>Копие</tbCopy>
+<tbPaste>Паста</tbPaste>
+<tbALA>MARC8 Ала характер</tbALA>
+<tbDelete>Изтриване</tbDelete>
+<tbFind>Намери</tbFind>
+<tbZ39_50>Z39.50/SRU клиент</tbZ39_50>
+<toolStripSplitButton1>Глобални Марк редактиране Ютилитис</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Добавяне/изтриване на поле</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Изграждане на ново поле</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Поле за копиране</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Редактиране на поле с данни</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Редактиране на индикатор данни</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Редактиране на данни като клон</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Суап полета с данни</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Файл</mnuFile>
+<mnuFileMain>Се върнете към главния прозорец</mnuFileMain>
+<mnuFileNew>Нов</mnuFileNew>
+<mnuFileNewWindow>Отвори нов прозорец</mnuFileNewWindow>
+<mnuFileNewDefault>по подразбиране</mnuFileNewDefault>
+<mnuFileNewAuthority>Орган</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Име</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Темата</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Книга</mnuFileNewBook>
+<mnuFileNewSerial>Сериен</mnuFileNewSerial>
+<mnuFileVisualMat>Визуален материал</mnuFileVisualMat>
+<mnuFileNewMap>Картографски ресурс</mnuFileNewMap>
+<mnuFileNewSound>Звукозапис</mnuFileNewSound>
+<mnuFileNewScore>Резултат</mnuFileNewScore>
+<mnuFileNewER>Електронни ресурси</mnuFileNewER>
+<mnuFileNewMix>Смесен материал</mnuFileNewMix>
+<mnuFileOpen>Отворен</mnuFileOpen>
+<mnuFileRecent>Последни файлове</mnuFileRecent>
+<mnunone10>няма</mnunone10>
+<mnunone9>няма</mnunone9>
+<mnunone8>няма</mnunone8>
+<mnunone7>няма</mnunone7>
+<mnunone6>няма</mnunone6>
+<mnunone5>няма</mnunone5>
+<mnunone4>няма</mnunone4>
+<mnunone3>няма</mnunone3>
+<mnunone2>няма</mnunone2>
+<mnunone1>няма</mnunone1>
+<mnuFileClearHistory>Изчисти хронологията</mnuFileClearHistory>
+<mnuFileClearList>Изчистване на последно използваните файлове</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Изчистване на историята на редактиране и заместване</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Затвори</mnuFileClose>
+<mnuFileExportData>Износ за...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Импортиране от...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Запиши</mnuFileSave>
+<mnuFileSaveAs>Запиши като...</mnuFileSaveAs>
+<mnuFilePrint>Печат</mnuFilePrint>
+<toolStripMenuItem34>Запис на страница за печат</toolStripMenuItem34>
+<FileSelectIndividualMake>Изберете записа за редактиране</FileSelectIndividualMake>
+<mnuFileCompile>Съставят досие в Марк</mnuFileCompile>
+<mnuFileExit>Изход</mnuFileExit>
+<mnuEdit>Редактиране</mnuEdit>
+<mnuEditUndo>Отмени</mnuEditUndo>
+<mnuEditRedo>Върни</mnuEditRedo>
+<mnuEditSpecialUndo>Специални отмени</mnuEditSpecialUndo>
+<mnuEditCut>Изрежи</mnuEditCut>
+<mnuEditCopy>Копие</mnuEditCopy>
+<mnuEditPaste>Паста</mnuEditPaste>
+<mnuEditDupLines>Дублирани редове</mnuEditDupLines>
+<mnuEditClear>Изчисти</mnuEditClear>
+<mnuEditFind>Намери</mnuEditFind>
+<mnuEditReplace>Замени</mnuEditReplace>
+<toolStripMenuItem28>Редактиране на клавишни комбинации</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Смяна на регистъра</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>малки букви</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>ГЛАВНИ</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Заглавия на английски</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Първоначалното дело</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Началният знак с главна буква</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Редактиране на поле</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Чисти интелигентни знаци</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Намери полета липсват дума</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Търсене на записи, липсва поле</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Търсене на записи с дубликат Тагове</toolStripMenuItem39>
+<toolStripMenuItem40>Намери записи с дублирани полета с данни</toolStripMenuItem40>
+<mnuEditLimitFields>Ограничи броя на полетата</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Суап дял</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Математически функции</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Конвертиране в десетични градуси</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Направо към...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Направо към... Запис</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Направо към... Страница</jumpToPageToolStripMenuItem>
+<mnuEditControl>Вмъкване на номер на единично устройство за управление</mnuEditControl>
+<mnuEdit006>Вмъкване/редактиране 006</mnuEdit006>
+<mnuEdit006Edit>Редактиране</mnuEdit006Edit>
+<mnuEdit006Book>Книга</mnuEdit006Book>
+<mnuEdit006Serial>Продължаващ ресурс</mnuEdit006Serial>
+<mnuEdit006Map>Картографски ресурс</mnuEdit006Map>
+<mnuEdit006Sound>Звукозапис</mnuEdit006Sound>
+<mnuEdit006Score>Резултат</mnuEdit006Score>
+<mnuEdit006ER>Електронни ресурси</mnuEdit006ER>
+<mnuEdit006Visual>Визуален материал</mnuEdit006Visual>
+<mnuEdit006Mixed>Смесен материал</mnuEdit006Mixed>
+<mnuEdit008>Вмъкване/редактиране 008</mnuEdit008>
+<mnuEdit008Edit>Редактиране</mnuEdit008Edit>
+<mnuEdit008Book>Книга</mnuEdit008Book>
+<mnuEdit008Serial>Продължаващ ресурс</mnuEdit008Serial>
+<mnuEdit008Map>Картографски ресурс</mnuEdit008Map>
+<mnuEdit008Sound>Звукозапис</mnuEdit008Sound>
+<mnuEdit008Score>Резултат</mnuEdit008Score>
+<mnuEdit008ER>Електронни ресурси</mnuEdit008ER>
+<mnuEdit008Visual>Визуален материал</mnuEdit008Visual>
+<mnuEdit008Mixed>Смесен материал</mnuEdit008Mixed>
+<toolStripMenuItem27>Конвертиране на клипборда съдържание</toolStripMenuItem27>
+<mnuEditConverttoUTF8>Марк-8 UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 към Марк-8</mnuEditConvertoMarc8>
+<mnuEditALA>Марк-8 ала характер</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8 характер географска карта</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Избери всички</mnuEditSelectAll>
+<mnuEditWrap>Дума обвивам</mnuEditWrap>
+<mnuEditRTL>Показване на дясно на ляво</mnuEditRTL>
+<mnuFont>Шрифтове</mnuFont>
+<mnuFontFont>Шрифт...</mnuFontFont>
+<mnuFontColor>Цвят...</mnuFontColor>
+<mnuReports>Доклади</mnuReports>
+<mnuReportsField>Поле брой</mnuReportsField>
+<tlReportsMaterialReport>Материал тип отчет</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Генериране на отчет</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Търсене на записи по тип</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Книги</booksToolStripMenuItem>
+<toolStripMenuItem32>Компютърни файлове</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Продължаващите ресурси</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Карти</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Смесени материали</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Резултати</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Звукови записи</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Визуални материали</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Проверка на ISBN номера</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Проверка на ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Проверка на заглавия</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Състояние на услугата</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Проверка на заглавия</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Управление на регистрационните файлове</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Изглед на текущия регистрационен файл</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Управление на Разширено регистър</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Изтриване на регистрационни файлове</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Покажи всички регистрационни файлове</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Инструменти</mnuTools>
+<mnuToolsCluster>Клъстериране инструменти</mnuToolsCluster>
+<mnutoolCutters>Cuttering инструменти</mnutoolCutters>
+<mnuToolsCalculator>Каталог калкулатор</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Генериране на ножове</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Санборн таблица 3 Фрези</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Генериране на номера повикване</mnuToolsCallNum>
+<mnuToolsControlNumber>Генериране на контролните номера</mnuToolsControlNumber>
+<toolStripMenuItem33>Свързаните данни инструменти</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Изграждане на свързани записи</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Запис дедупликация</mnuToolsDedup>
+<mnuToolsRDAHelpers>ПДП помощник</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU опции</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU клиент</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 качване на запис</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 Изтрий записа</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 актуализация стопанства</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Редактиране на данни</mnuToolsEditConstant>
+<mnuToolsAssigned>Присвоените постоянни данни</mnuToolsAssigned>
+<mnuConstant1>1) недефиниран низ</mnuConstant1>
+<mnuConstant2>2) недефиниран низ</mnuConstant2>
+<mnuConstant3>3) недефиниран низ</mnuConstant3>
+<mnuConstant4>4) недефиниран низ</mnuConstant4>
+<mnuConstant5>5) недефиниран низ</mnuConstant5>
+<mnuConstant6>6) недефиниран низ</mnuConstant6>
+<mnuConstant7>7) недефиниран низ</mnuConstant7>
+<mnuConstant8>8) недефиниран низ</mnuConstant8>
+<mnuConstant9>9) недефиниран низ</mnuConstant9>
+<mnuConstant10>10) недефиниран низ</mnuConstant10>
+<mnutoolmanageAutomate>Управление на задачи</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Възложените задачи</mnuToolsAssignedTasks>
+<mnuDefTask>В момента наличните задачи</mnuDefTask>
+<task1>1) недефиниран задача</task1>
+<task2>2) недефиниран задача</task2>
+<task3>3) недефиниран задача</task3>
+<task4>4) недефиниран задача</task4>
+<task5>5) недефиниран задача</task5>
+<task6>6) недефиниран задача</task6>
+<task7>7) недефиниран задача</task7>
+<task8>8) недефиниран задача</task8>
+<task9>9) недефиниран задача</task9>
+<task10>10) недефиниран задача</task10>
+<task11>11) недефиниран задача</task11>
+<task12>12) недефиниран задача</task12>
+<task13>13) недефиниран задача</task13>
+<task14>14) недефиниран задача</task14>
+<task15>15) недефиниран задача</task15>
+<task16>16) недефиниран задача</task16>
+<task17>17) недефиниран задача</task17>
+<task18>18) недефиниран задача</task18>
+<task19>19) недефиниран задача</task19>
+<task20>20) недефиниран задача</task20>
+<mnuToolsValidate>Проверка на MARC записи</mnuToolsValidate>
+<mnuToolsOAI>Реколтата от OAI</mnuToolsOAI>
+<mnutoolsurl>Генериране на ДЖИБРИ от URL</mnutoolsurl>
+<toolStripMenuItem43>Мнемоничен инструменти за форматиране</toolStripMenuItem43>
+<toolStripMenuItem3>Нормализиране на...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Нормализиране на LC записи</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Нормализиране на Microlif записи</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Премахване на празни редове</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Премахване на празните полета и подполета</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Добавяне/изтриване на поле</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Изграждане на ново поле</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Поле за копиране</toolStripMenuItem26>
+<mnuToolsEditField>Редактиране на поле с данни</mnuToolsEditField>
+<mnuToolsIndicator>Редактиране на индикатор данни</mnuToolsIndicator>
+<mnuToolsSubfield>Редактиране на данни като клон</mnuToolsSubfield>
+<mnuToolsSortby>Сортирай по...</mnuToolsSortby>
+<toolStripMenuItem41>Запис ред на сортиране по...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Поле по избор</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Автор поле</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Поле повикване номер</mnuToolsSortByCall>
+<mnuToolsSortControl>Контрол в полето за номер</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Заглавие поле</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Сортирай полета Witin записа от...</toolStripMenuItem42>
+<mnuToolsCustomSort>Персонализирано сортиране</mnuToolsCustomSort>
+<mnuToolsSort2>0xx полета за сортиране</mnuToolsSort2>
+<mnuToolsSort>Сортиране на всички полета</mnuToolsSort>
+<mnuToolsSwap>Суап полета с данни</mnuToolsSwap>
+<mnuToolsOptions>Предпочитания</mnuToolsOptions>
+<mnu_ILS>[ILS име]</mnu_ILS>
+<mnu_ils_search>Търсене</mnu_ils_search>
+<updateCreateToolStripMenuItem>Актуализация/създаване</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Настройки на процес</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>Търсене WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Добавяне/изтриване/обновяване местни библиографски данни</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Създаване/актуализиране на библиографски данни</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Актуализиране на стопанства</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Добавки</pluginsToolStripMenuItem>
+<mnuHelp>Помощ</mnuHelp>
+<mnuHelpContents>Съдържанието и помощ</mnuHelpContents>
+<mnuEditInfo>Марк информация</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC помощ</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>ПДП инструментариум</mnuHelpRDAToolkit>
+<mnuEditInfoLC>Американската библиотека на Конгреса MARC помощ</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Пакет файлове за отстраняване на грешки</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Какво бихте искали да направите?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Записи на страница</label1>
+<lblPage>страници</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Преглед автоматично записване на файлове</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Услуги по проверка на данни се предоставят чрез OCLC Termology услуги. За да използвате тези услуги, вие трябва да се съгласите да следват и спазват реда и условията, изложени от OCLC по отношение на използването и верността на тези услуги.</lb_text>
+<label1>OCLC споразумение връзка:</label1>
+<lnk_Terms>Преглед на условията за ползване</lnk_Terms>
+<cmd_Agree>Приемам</cmd_Agree>
+<cmd_disagree>Не съм съгласен</cmd_disagree>
+<this>OCLC споразумение</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Английски</comboBox1>
+<linkLabel2>Не, благодаря, просто използвайте настройките по подразбиране</linkLabel2>
+<linkLabel1>Нека да започнем!</linkLabel1>
+<label2>Аз съм тук, за да помогне да започнете!  Аз ще ви зададе някои въпроси и да получите Йо </label2>
+<label1>Добре дошли в MarcEdit 7!</label1>
+<this>Съветникът за стартиране на MarcEdit 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>В настройките на данни... Грива!</linkLabel1>
+<label6>Не забравяйте, че можете да зададете теми, размери на шрифтове, езици и напреднали достъпност о </label6>
+<cmb_theme_picker>По подразбиране</cmb_theme_picker>
+<label5>Препоръчани тема:</label5>
+<label4>PT.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Препоръчителни размер на шрифта:</label3>
+<cmbFont>Ното ДАНС</cmbFont>
+<label2>По подразбиране шрифт:</label2>
+<label1>MarcEdit облик</label1>
+<this>Съветникът за стартиране на MarcEdit 7: Страница 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit е Марк агностик, така че нека да кажа малко за вашите данни.</label5>
+<comboBox3>Изберете за мен</comboBox3>
+<label4>XML обработка на двигателя:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Запис кодиране по подразбиране:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>Моят MARC форматът е:</label2>
+<linkLabel1>Ние сме почти готови!  Катерица!</linkLabel1>
+<label1>MarcEdit данни настройки</label1>
+<this>Съветникът за стартиране на MarcEdit 7: Страница 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Честит редактиране!</linkLabel1>
+<label5>ресурси. GetString ("label5. Текст")</label5>
+<label1>Поздравления!  Вие сте готови да използвате MarcEdit 7</label1>
+<this>Съветникът за стартиране на MarcEdit 7: завършен</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Затвори</cmdClose>
+<ck_remote>Разрешаване на отдалечени обекти</ck_remote>
+<ck_Marc8>Преобразуване в Марк-8</ck_Marc8>
+<opt_default>По подразбиране</opt_default>
+<opt_saxon>САКСОНСКА</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Запиши</cmdSave>
+<gp_XSLT>XSLT модула</gp_XSLT>
+<label7>Краен формат</label7>
+<label6>Оригинален формат</label6>
+<label4>XSLT/като XQuery път</label4>
+<label3>Функция име (псевдоним):</label3>
+<label2>Обща информация:</label2>
+<lnkXMLFunctionWizard>XML функцията съветника</lnkXMLFunctionWizard>
+<groupBox1>Действия</groupBox1>
+<lnkAdd>Добавяне</lnkAdd>
+<lnkModify>Модифициране</lnkModify>
+<lnkDelete>Изтриване</lnkDelete>
+<label5>Форматиране:</label5>
+<label1>Определени функции:</label1>
+<this>Редактиране на XML функции</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

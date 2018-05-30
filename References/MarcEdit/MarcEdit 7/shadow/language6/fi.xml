@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Pura tietueet</mnuExtract>
+<cmenuClipboard>Kopioi leikepöydälle</cmenuClipboard>
+<cmenuSubfields>Määrä alikenttien</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Apua</cmenuHelp>
+<cmd_OK>Sulje</cmd_OK>
+<cmd_Report>Luo raportti</cmd_Report>
+<lb_ReportStyle>Mietinnön Tyyli:</lb_ReportStyle>
+<opt_tab>Sarkaimella erotellut raportti</opt_tab>
+<opt_xml>XML-raportin</opt_xml>
+<opt_html>HTML-raportti</opt_html>
+<this>Kenttäpelaajat huomioidaan</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Suunta:</groupBox3>
+<rd_down>Alas</rd_down>
+<rd_up>Ylös</rd_up>
+<btn_findall>Etsi kaikki</btn_findall>
+<groupBox1>Etsimisen optiot:</groupBox1>
+<ck_f_whole_word>Etsi vain kokonaiset sanat</ck_f_whole_word>
+<ck_find_regex>Käytä säännöllisiä lausekkeita</ck_find_regex>
+<ck_f_match_case>Sama kirjainkoko</ck_f_match_case>
+<cmdFClose>Sulje</cmdFClose>
+<cmdFFind>Etsi</cmdFFind>
+<lb_FindWhat>Etsittävä kohde:</lb_FindWhat>
+<cmdNav_Find>Etsi</cmdNav_Find>
+<cmdReplaceNav>Korvaa</cmdReplaceNav>
+<ckReplaceConditional>Suorita Etsi ja korvaa, jos...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Jos:</label1>
+<cmd_R_Close>Sulje</cmd_R_Close>
+<cmd_R_All>Korvaa kaikki</cmd_R_All>
+<cmd_R_Replace>Korvaa</cmd_R_Replace>
+<groupBox2>Etsimisen optiot:</groupBox2>
+<ck_Replace_ExactWordMatch>Sana ottelun</ck_Replace_ExactWordMatch>
+<ckMultiLine>Monirivisen arviointi</ckMultiLine>
+<ckFile>Käyttää ulkoista Etsi/korvaa</ckFile>
+<ck_R_RegExp>Käytä säännöllisiä lausekkeita</ck_R_RegExp>
+<ck_R_Case>Sama kirjainkoko</ck_R_Case>
+<lb_ReplaceWith>Korvaa:</lb_ReplaceWith>
+<lb_R_FindWhat>Etsi:</lb_R_FindWhat>
+<this>Etsi ja korvaa:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Tila:
+
+</lb_bProccess_status>
+<ck_bTask>Lataa tehtävät</ck_bTask>
+<ckBatchProcessSubfolders>Sisällytä alikansiot</ckBatchProcessSubfolders>
+<lb_Operation>Tehtävä:</lb_Operation>
+<cmdBClose>Sulje</cmdBClose>
+<cmdBProcess>Prosessi</cmdBProcess>
+<lb_Extensions>Tiedostotyypit:</lb_Extensions>
+<lb_BSource>Aiheuttaja osoitekalenteri:</lb_BSource>
+<lbBTitle>Erän prosessin MARC-tietueista</lbBTitle>
+<groupBox1>Asetukset</groupBox1>
+<this>Erä prosessi kirjaa</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Eräkäsittely</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Lopullinen koodaus:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Alkuperäinen koodaus:</lb_encoding>
+<lb_UTF8_Header>Merkki tuloksia</lb_UTF8_Header>
+<cmdCancel>Sulje</cmdCancel>
+<cmdOK>Prosessi</cmdOK>
+<lb_UTF8_Dest>Kohdetiedosto:</lb_UTF8_Dest>
+<lb_UTF8_Source>Lähdetiedosto:</lb_UTF8_Source>
+<groupBox1>Koodauksen asetukset</groupBox1>
+<this>CharacterSet tuloksia</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Tietojen klusterointi työkaluja</label1>
+<label2>Tietojen ryhmittely työkaluja antaa yksinkertaistettu klustereiden vaihtoehtoja enha Lisäasetukset erän tietojen tyhjennykseen.  Pitkälle klusterointi toimivuus kannattaa ehkä käyttää OpenRefine.</label2>
+<groupBox1>Asetukset</groupBox1>
+<rdCustom>Indeksi mukautetut kentät</rdCustom>
+<rdControlData>Indeksi tiedon hallittu (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Indeksoi kaikki tiedot</rdAll>
+<cmdImport>Tietojen tuominen</cmdImport>
+<label3>Lähdetiedosto:</label3>
+<label9>Tietojen lajitteleminen:</label9>
+<label8>Näytä klusterit:</label8>
+<label7>Klusterin seuraavat alikenttiä:</label7>
+<cmbclusteringalgorithm>Levenšteinin etäisyys</cmbclusteringalgorithm>
+<label6>Valitse klusterointi algoritmi:</label6>
+<cmbClusterField>Nimet (1xx, 7xx)</cmbClusterField>
+<label4>Valita klusterin tiedot:</label4>
+<cmdGenerateCluster>Luo Cluster</cmdGenerateCluster>
+<cmbAlg>Levenšteinin etäisyys</cmbAlg>
+<lnkAddCriteria>Lisää päivitys</lnkAddCriteria>
+<lnkClose>Sulje</lnkClose>
+<lnkEditCluster>Käsitellä kaikki muutokset</lnkEditCluster>
+<label5>Aihekokonaisuuksien tiedot:</label5>
+<this>Klusterointi työkalut</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Tehtävän virheenkorjaus</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Asiayhteyteen erotin</label8>
+<lb_Tab_Header>Vienti välilehti erotinmerkkejä sisältävät tietueet</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>Tässä kenttäerotin</label18>
+<lbdelimiter>Valitse kenttäerotin</lbdelimiter>
+<cmdTClose2>Sulje</cmdTClose2>
+<cmdTNext>Seuraava &gt;&gt;</cmdTNext>
+<label1>Vaihe 1: Määritä tiedostopolut</label1>
+<ck_normalize>Normalisoida kenttätiedot</ck_normalize>
+<cmd_tab2_back>Takaisin</cmd_tab2_back>
+<lnkSettings>Asetukset...</lnkSettings>
+<lnkDeleteField>Poista kenttä</lnkDeleteField>
+<lnkAddField>Lisää kenttä</lnkAddField>
+<label14>Alikenttä:</label14>
+<label11>Kenttä:</label11>
+<cmdTClose>Sulje</cmdTClose>
+<cmdTExport>Vienti</cmdTExport>
+<label2>Vaihe 2: Määritä kenttien ja alikenttien vienti</label2>
+<label3>Vienti välilehti erotinmerkkejä sisältävät tietueet</label3>
+<mnuLoad>Lataa asetukset</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Tallenna asetukset</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Tyhjennä asetukset</menuItem3>
+<this>Vienti välilehti erotinmerkkejä sisältävät tietueet</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Pinta-ala:</label4>
+<lb_Example>Esimerkkiteksti</lb_Example>
+<lb_lang_font>Valitse fontti:</lb_lang_font>
+<cmdOK>Okei</cmdOK>
+<cmdClose>Sulje</cmdClose>
+<this>Valitse fontti</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Tehtäviä Suorita tuonti</groupBox1>
+<lnkSelectPre>Valitse tehtävä</lnkSelectPre>
+<cname>Nimi</cname>
+<cPath>Polun</cPath>
+<groupBox2>Tehtäviä Suorita vienti</groupBox2>
+<linkLabel1>Valitse tehtävä</linkLabel1>
+<columnHeader1>Nimi</columnHeader1>
+<columnHeader2>Polun</columnHeader2>
+<cmdSave>Tallenna</cmdSave>
+<cmdClose>Sulje</cmdClose>
+<deleteItemToolStripMenuItem>Poista kohde</deleteItemToolStripMenuItem>
+<this>ILS asetukset</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Sisällytä alikansiot</ckJoinSubfolders>
+<cmdEditFile>Muokkaa tiedostoa</cmdEditFile>
+<lnkJoinedFiles>Näytä yhdistetyt tiedostot</lnkJoinedFiles>
+<label19>Tiedostotyypit:</label19>
+<ck_JoinIndividual>Liity yksittäisiä tiedostoja</ck_JoinIndividual>
+<cmdJoinCancel>Sulje</cmdJoinCancel>
+<cmdJoinProcess>Prosessi</cmdJoinProcess>
+<lb_Join_Files>Jotta liittyä:</lb_Join_Files>
+<lb_Join_Source>Tallenna tiedosto:</lb_Join_Source>
+<lb_Join_Header>MARCJoin hyödyllisyys</lb_Join_Header>
+<lbJoinStatus>Tila:</lbJoinStatus>
+<groupBox1>Asetukset</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Tietueiden Per tiedosto:</lb_Split_Records>
+<cmdSplitClose>Sulje</cmdSplitClose>
+<cmdSplitProcess>Prosessi</cmdSplitProcess>
+<lb_Split_Folder>Kohdekansio:</lb_Split_Folder>
+<lb_Split_Source>Lähdetiedosto:</lb_Split_Source>
+<lb_Split_Header>MARCSplit hyödyllisyys</lb_Split_Header>
+<groupBox1>Asetukset</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Teema nimi:</label1>
+<label2>Kuvauksessa/valvonta:</label2>
+<label3>Globaali arvot</label3>
+<label4>Fonttiväri</label4>
+<label5>Taustaväri</label5>
+<label6>Taustaväri</label6>
+<label7>Fonttiväri</label7>
+<label8>MarcEditor arvot</label8>
+<cmdSave>Tallenna</cmdSave>
+<cmdClose>Sulje</cmdClose>
+<cmdPreview>Esikatselu</cmdPreview>
+<richTextBox1>Näyte teksti</richTextBox1>
+<label9>MarcEditor näyttö:</label9>
+<cmdOpen>Avoinna</cmdOpen>
+<label10>GroupBox tausta</label10>
+<groupBox1>GroupBox esimerkki</groupBox1>
+<this>MarcEdit aine rakennusmestari</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>MarcEdit Ohjattu vianmääritystoiminto on suunniteltu auttamaan käyttäjiä löytämään apua, että </label1>
+<gpStart>Asetukset</gpStart>
+<rdErrorMessage>I-kirjain hankkia by erehdys asia</rdErrorMessage>
+<rdErrorNumber>Olen virhenumero</rdErrorNumber>
+<lbMessage>{viestin}</lbMessage>
+<cmdPage1>Seuraava</cmdPage1>
+<gpResults>Tulokset</gpResults>
+<cmdClose>Sulje</cmdClose>
+<lnkCreateDebugPackage>Luoda Debug paketti voit lähettää Debugging?</lnkCreateDebugPackage>
+<label2>Ohjattu vianmääritystoiminto ei löytänyt artikkeli tietopohjaa </label2>
+<this>MarcEdit Ohjattu vianmääritystoiminto</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Muut XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Valitse lopullinen muoto</label17>
+<label16>Vaihe 3:</label16>
+<label15>Tallenna tiedosto:</label15>
+<label13>Vaihe 2:</label13>
+<label12>Muunnoksen nimi:</label12>
+<lnkNextPg1>Edetä jotta lähinnä astua</lnkNextPg1>
+<label4>Valitse tiedosto:</label4>
+<label3>Vaihe 1:</label3>
+<label2>resursseja. GetString (”label2. Teksti ”)</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Asiakirjan osa:</lbTop>
+<ckTopLevel>Käytä asiakirjan elementtiä</ckTopLevel>
+<lnkNextPg2>Edetä jotta lähinnä astua</lnkNextPg2>
+<label7>Valitse tietueen osa</label7>
+<label6>Vaihe 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Määritä yhdistämismääritykset</label14>
+<lnkNextP3>Edetä jotta lähinnä astua</lnkNextP3>
+<groupBox2>Perustelut</groupBox2>
+<ck_filing_characters>Yhteisen nonfiling laskutoimituksia</ck_filing_characters>
+<ck_sort>Lajittelukentät</ck_sort>
+<button2>Lataa malli</button2>
+<toolStripMenuItem2>Muokkaa kohdetta</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Kohteiden poistaminen</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Liity kohteet</joinItemsToolStripMenuItem>
+<groupBox1>Asetukset</groupBox1>
+<ckTrim>Leikkaa nykyisen välimerkit</ckTrim>
+<ck_Repeatable>Toistettavissa alikenttä</ck_Repeatable>
+<P3_ck_constant>Jatkuvasti tietoja</P3_ck_constant>
+<P3_cmd_Apply>Lisää argumentti</P3_cmd_Apply>
+<P3_lb_punct>Termi. Välimerkit:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>IND.:</P3_lb_indicators>
+<P3_mapto>Yhdistä:</P3_mapto>
+<P3_lb_select>Valitse:</P3_lb_select>
+<label9>Vaihe 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Sulje ohjattu toiminto</lnkClose>
+<label11>Muutos on luotu ja lisätty XML-toimintolista.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Tyyppi: kirja</label11>
+<lbbTitle>006/008 vaihtoehdot:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>INDX:</lnkbIndx>
+<lnkbFest>Fest:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>CONT:</lnkbCont>
+<lnkbForm>Lomake:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Epäkohtia:</lnkbIlls>
+<lnkbType>Tyyppi:</lnkbType>
+<label12>Tyyppi: Elektroninen resurssi</label12>
+<label5>006/008 vaihtoehdot:</label5>
+<lnkcFile>Tiedosto:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Tyyppi:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Päivämäärät:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>CtrY:</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008-asetukset:</label1>
+<label13>Tyyppi: kartta</label13>
+<label3>006/008 vaihtoehdot:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>INDX:</lnkmIndx>
+<lnkmForm>Lomake:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>Proj:</lnkmProj>
+<lnkmRelf>Davies:</lnkmRelf>
+<lnkmType>Tyyppi:</lnkmType>
+<label14>Tyyppi: Eri aineista</label14>
+<label4>006/008 vaihtoehdot:</label4>
+<lnkmmForm>Lomake:</lnkmmForm>
+<lnkmmType>Tyyppi:</lnkmmType>
+<label15>Tyyppi: Pisteet</label15>
+<label6>006/008 vaihtoehdot:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Lomake:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>Tyyppi:</lnkscType>
+<label10>Tyyppi: Jatkuva resurssi</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 vaihtoehdot:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>CONT:</lnkslCont>
+<lnkslForm>Lomake:</lnkslForm>
+<lnkslOrig>Orig:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>REGL:</lnkslRegl>
+<lnkslFreq>Taajuus:</lnkslFreq>
+<lnkslType>Tyyppi:</lnkslType>
+<label16>Tyyppi: Äänitys</label16>
+<label8>006/008 vaihtoehdot:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Lomake:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>Tyyppi:</lnksdType>
+<label17>Tyyppi: Visuaalisesta aineistosta</label17>
+<label9>006/008 vaihtoehdot:</label9>
+<lnkvmTech>Tech:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Lomake:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Aika:</lnkvmTime>
+<lnkvmType>Tyyppi:</lnkvmType>
+<cmd_Ok>Okei</cmd_Ok>
+<cmd_Close>Sulje</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Lomake:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>resursseja. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>Tietoja minusta:</lb_Authors>
+<lbBuildCode>Päivitä koodi:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>Hankkeen kotisivut:</label5>
+<label2>Kiitokset:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Muutettu:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Kirjoittaja:</lbAuthor>
+<lbVersion>Muodostaa joukko:</lbVersion>
+<label4>Tietoja MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/Technical-Details</linkLabel1>
+<label1>Tekniset tiedot:</label1>
+<this>Tietoja MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Kuormitus</cmdLoad>
+<cmdClose>Sulje</cmdClose>
+<cmdDelete>Poista</cmdDelete>
+<this>Automaattisen tallennuksen tiedostot:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Muokkaa kenttiä</lnk_Edit_Fields>
+<lnkCopy>Kentän tietojen kopioiminen</lnkCopy>
+<lnkSwapFields>Vaihda kentät</lnkSwapFields>
+<lnkIndicators>Muokkaa indikaattorit</lnkIndicators>
+<lnkSubfield>Alikenttien tietojen muokkaaminen</lnkSubfield>
+<lnkAddDelete>Lisää tai poista kenttä</lnkAddDelete>
+<groupBox8>Poista asetukset</groupBox8>
+<ckRemoveByPostition>Poistaa kentän sijainti</ckRemoveByPostition>
+<ck_RemoveIfNot>Poistaa, jos kenttätiedot eivät vastaa</ck_RemoveIfNot>
+<ck_dedup>Poistaa päällekkäisiä tietoja</ck_dedup>
+<groupBox7>Lisää kenttäasetukset</groupBox7>
+<ck_A_addifnotduplicate>Lisää kenttä vain, jos ei ole kaksoiskappale</ck_A_addifnotduplicate>
+<ck_A_Insert>Lisää ennen</ck_A_Insert>
+<ck_A_not_present>Lisää kenttä vain, jos ei ole</ck_A_not_present>
+<ck_AddIfPresent>Lisää kenttä, jos nykyinen</ck_AddIfPresent>
+<ck_last>Lisää viimeksi</ck_last>
+<groupBox6>Yleiset asetukset</groupBox6>
+<ck_delete_batch>Käsittele erän toiminnassa</ck_delete_batch>
+<ck_A_Case>Sama kirjainkoko</ck_A_Case>
+<ck_A_regular_Expression>Voit käyttää säännöllistä lauseketta</ck_A_regular_Expression>
+<label1>Etsittävä kohde:</label1>
+<cmd_A_Close>Sulje</cmd_A_Close>
+<cmd_A_Add>Lisää kenttä</cmd_A_Add>
+<cmd_A_Delete>Poista kenttä</cmd_A_Delete>
+<label3>Kenttätiedot:</label3>
+<lb_A_Field>Kenttä:</lb_A_Field>
+<lb_A_Title>Lisää tai poista kentän apuohjelma</lb_A_Title>
+<cmd_Sub_Close>Sulje</cmd_Sub_Close>
+<cmd_Sub_Remove>Poista teksti</cmd_Sub_Remove>
+<cmd_Sub_Replace>Korvaa teksti</cmd_Sub_Replace>
+<groupBox2>Etsimisen optiot:</groupBox2>
+<ckDeleteDuplicate>Poista kaksoiskappaleet alikenttä</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Poistaa alakentän</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Alikenttien tietojen siirto</ck_move_subfield>
+<ck_Reg_Express>Voit käyttää säännöllistä lauseketta</ck_Reg_Express>
+<ck_Sub_Case>Sama kirjainkoko</ck_Sub_Case>
+<ck_Sub_New>Uusia alikenttien vain</ck_Sub_New>
+<ck_Sub_NotPresent>Lisää alikenttä jos ei ole</ck_Sub_NotPresent>
+<label8>Korvaa:</label8>
+<label7>Kenttätiedot:</label7>
+<label6>Alikenttä:</label6>
+<label5>Kenttä:</label5>
+<lb_Sub_Title>Muokkaa alikenttä apuohjelma</lb_Sub_Title>
+<cmd_I_Close>Sulje</cmd_I_Close>
+<cmd_I_Replace>Korvaa</cmd_I_Replace>
+<lb_Ind_Replace>Korvaa indikaattorit</lb_Ind_Replace>
+<label12>Kenttätiedot:</label12>
+<label11>Indikaattorit</label11>
+<label10>Kenttä:</label10>
+<lb_Ind_Title>Muokkaa ilmaisinta Utilities</lb_Ind_Title>
+<ck_Match_All_Subfields>Vastaa kaikkien alikenttien</ck_Match_All_Subfields>
+<ck_swap_expression>Rinnastaa säännöllinen lauseke</ck_swap_expression>
+<label4>Etsi:</label4>
+<cmd_Swap_Close>Sulje</cmd_Swap_Close>
+<cmd_Swap_Process>Prosessi</cmd_Swap_Process>
+<groupBox3>Etsinnän asetukset</groupBox3>
+<ck_swap_once_per>Käsittele yhden kentän kohti swap</ck_swap_once_per>
+<ck_swap_sort>Lajittele muutettu kenttä</ck_swap_sort>
+<ck_Swap_Override>Lisää olemassa/luoda uusia</ck_Swap_Override>
+<ck_Swap_Add>Lisää aiemmin luotu kenttä</ck_Swap_Add>
+<ck_Swap_Copy>Copy lähde</ck_Swap_Copy>
+<label20>Muutetut tiedot:</label20>
+<label22>Alikenttien</label22>
+<label23>Indikaattorit</label23>
+<label24>Kenttä</label24>
+<label19>Alkuperäiset tiedot:</label19>
+<label18>Etsi:</label18>
+<label17>Alikenttien</label17>
+<label16>Indikaattorit</label16>
+<label15>Kenttä</label15>
+<lb_Swap_Title>Vaihtaa kentän apuohjelma</lb_Swap_Title>
+<label14>Kenttätiedot</label14>
+<lbFindInField>Etsi kentästä</lbFindInField>
+<groupBox4>Asetukset</groupBox4>
+<ck_copy_field_regex>Käytä säännöllisiä lausekkeita</ck_copy_field_regex>
+<ck_copy_delete>Lähdekentän poistaminen</ck_copy_delete>
+<label2>Kohdekentän:</label2>
+<cmdCopyClose>Sulje</cmdCopyClose>
+<cmdCopy>Kopioi</cmdCopy>
+<label9>Tietolähteen kenttä:</label9>
+<label13>Kentän tietojen kopioiminen</label13>
+<label26>Asema:</label26>
+<label21>Korvaa:</label21>
+<label25>Etsi:</label25>
+<groupBox5>Asetukset</groupBox5>
+<ck_editfield_match_case>Sama kirjainkoko</ck_editfield_match_case>
+<ck_UserRegularExpressions>Käytä säännöllisiä lausekkeita</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Sulje</cmdFieldEdit_Close>
+<cmdEditField_Process>Prosessi</cmdEditField_Process>
+<label27>Kenttä:</label27>
+<label28>Kentän tietojen muokkaaminen</label28>
+<this>MarcEdit.NET erä painos koristella</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<label1>BibFrame2 Testbed on helppokäyttöinen apuohjelma on suunniteltu sallimaan metatietojen speci </label1>
+<label2>Lähdetiedosto:</label2>
+<label3>Tallenna tiedosto:</label3>
+<label4>Tietojen sarjoitusta:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Käännös säännöt:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Muokkaa</lnkEditXQuery>
+<label7>Tiedostotyyppi:</label7>
+<label8>Profiili:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Tunnus-kenttä:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Tallenna tiedosto:</label3>
+<label2>Lähdetiedosto:</label2>
+<label1>Linkitettyjen tietojen työkalu on suunniteltu silmukan läpi joukko MARC-tietueista ja ratkaista tukiasemat 1xx, 6xx ja 7xx tietoelementit linkitetyn dat häntäpää-vaihde.</label1>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdCancel>Sulje</cmdCancel>
+<groupBox1>ID palveluja</groupBox1>
+<ckLimiter>Raja päätöslauselman:</ckLimiter>
+<ck3xxFields>Prosessin 3xx kentät</ck3xxFields>
+<label4>OCLC numero:</label4>
+<ckWorkId>Upottaa OCLC työn tunnus</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>Tunnista Aihe tunnus</ckAutodetect>
+<ck_viaf>OCLC: VIAF</ck_viaf>
+<ck_loc>Tunnista Main/lisätty merkintä</ck_loc>
+<label5>Tiedoston:</label5>
+<cmdStatus>Palvelutila</cmdStatus>
+<lbstatus>Tila:</lbstatus>
+<this>Rakentaa linkitetyt tietueet</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Etsi</lnkFind>
+<lbResults>Tulokset:</lbResults>
+<lnkCatalog>Kyle Banerjee Verkkokauppa Laskin</lnkCatalog>
+<cmdClose>Sulje</cmdClose>
+<label1>LC leikkureita</label1>
+<this>Luetteloinnin Laskin</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>Merkin työkalu käyttää heuristinen prosessi antaa paras arvaus paika </label1>
+<cmdDetect>Havaita</cmdDetect>
+<cmdClose>Sulje</cmdClose>
+<label2>Tulokset:</label2>
+<ckDetailed>Yksityiskohtaiset tulokset</ckDetailed>
+<this>Merkkien tunnistus</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>resursseja. GetString (”label1. Teksti ”)</label1>
+<lnkClassify>Tietoja OCLC: n luokitella palvelu</lnkClassify>
+<ck_all>Lisää kaikki tietueet</ck_all>
+<ck_single>Lisää valittu tietue</ck_single>
+<ck_lc>Yalen yliopisto</ck_lc>
+<ck_dewey>Deweyn</ck_dewey>
+<cmdProcess>Luokitella</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<label5>Lisää, jos seuraavat kentät eivät ole läsnä (esimerkki: 092; 090, 050; 060)</label5>
+<label4>Lisää luotu luokitukset seuraava kenttä:</label4>
+<ck_cutters>Laske leikkureita ja päivämäärät</ck_cutters>
+<ck_use_z>Käytettävä alikenttä z</ck_use_z>
+<ck_DateMod>Lisää lippu päivämäärä</ck_DateMod>
+<ck_omit_serial>Määritä päivämäärä sarja</ck_omit_serial>
+<ck_omit_integrated>Määritä määräpäivä integroidut resurssit</ck_omit_integrated>
+<ck_omit>Lisää päivämäärä poikkeukset</ck_omit>
+<ck_always_fast>Aina lisätä nopeasti otsikot</ck_always_fast>
+<ck_conditional_fast>Lisää nopeasti otsikot, kun ei ole aiheiden otsikot eivät läsnä</ck_conditional_fast>
+<label6>Indikaattorit:</label6>
+<cmdInsert>Lisäys ohjeet</cmdInsert>
+<cmdClassification>Luokitukset</cmdClassification>
+<cmdSubjects>Asiasanat</cmdSubjects>
+<lnkClassification>Valitse Luokitus</lnkClassification>
+<lnkSubjects>Valitse aihe asetukset</lnkSubjects>
+<lnkOptions>Asetusten määrittäminen</lnkOptions>
+<cmdOptions>Asetukset</cmdOptions>
+<label2>Alikenttä:</label2>
+<label3>Cuttering Alikenttä:</label3>
+<this>Luo luokittelu</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Jatkuvasti tietoja</columnHeader1>
+<columnHeader3>Pikakuvake</columnHeader3>
+<cmdClose>Sulje</cmdClose>
+<lnkKey>Näppäinmääritykset</lnkKey>
+<lnkEdit>Muokkaa valittua merkkijono</lnkEdit>
+<lnkDelete>Poista valitut merkkijono</lnkDelete>
+<lnkNew>Luo uusi merkkijono</lnkNew>
+<lbActions>Toimet:</lbActions>
+<lbMacro>Jatkuva tiedot:</lbMacro>
+<this>Jatkuvaa tietojen muokkaaminen</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Numeron etuliite:</lb_prefix>
+<lb_digit>Aloita numeron:</lb_digit>
+<ck_autogenerate>Lisätä uusia tietueita</ck_autogenerate>
+<button1>Okei</button1>
+<button2>Sulje</button2>
+<lb_length>Numeron pituus (miinus etuliite)</lb_length>
+<ckgenerate>Luo tiedosto</ckgenerate>
+<ck_label>Merkitse tietue numerot</ck_label>
+<label1>Kentän ja alakentän (esimerkki: 001, 949$ b)</label1>
+<ck_repeat>Aseta aina</ck_repeat>
+<this>Luo verrattavien</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Käyttää sumeaa vastaavia</ck_UseFuzzyMatch>
+<ck_save>Tallenna Dedup kohteet:</ck_save>
+<ck_unique>Lähtö ainutlaatuisia kohteita</ck_unique>
+<ck_remove>Poistaa kaksoiskappaleet</ck_remove>
+<lbOptions>Vaihtoehdot:</lbOptions>
+<label1>Dedup kirjaaminen:</label1>
+<lb_Control>Valvonnan alalla:</lb_Control>
+<cmdClose>Sulje</cmdClose>
+<cmdOK>Prosessi</cmdOK>
+<btnCancel>Peruuta</btnCancel>
+<btnNext>Seuraava</btnNext>
+<label4>Tallenna tiedosto:</label4>
+<label3>Etsi päällekkäisyydet seuraavat tiedostot:</label3>
+<label2>Tietueen Deduplication työkalu</label2>
+<label5>Luottamus:</label5>
+<this>Tietueen Deduplication</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Valitse lokitiedosto:</label1>
+<groupBox1>Asetukset</groupBox1>
+<ckChanged>Pura muutetut tietueet</ckChanged>
+<ckEnhance>Parantaa lokit</ckEnhance>
+<label2>Valitse tietueet:</label2>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<this>Halko emäntä</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext on laboratoriotiloja ottaa käyttöön uusia välineitä ja käsitteitä </lbaboutmn>
+<lnkOpenRefine>OpenRefine integraatio</lnkOpenRefine>
+<lnkSPARQL>SPARQL selaimen</lnkSPARQL>
+<lnkLinkIds>Linkki Tunnisteet</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Tämän työkalun avulla voit siirtää tietoja MARC tai MarcEdit n muistisääntö ja OpenRef välillä </label1>
+<label2>Lähdetiedosto:</label2>
+<label3>Tallenna tiedosto:</label3>
+<rdExport>Vieminen OpenRefine</rdExport>
+<rdImport>Tuo OpenRefine</rdImport>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdCancel>Sulje</cmdCancel>
+<lbStatus>Tila:</lbStatus>
+<groupBox1>Asetukset</groupBox1>
+<this>OpenRefine tietojen siirto väline</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Valitse tiedostot jakaa:</label1>
+<ckconfig>Asetuksia</ckconfig>
+<label2>Vie kaikki tiedot käyttäjän config-hakemistoon.  Tämä sisältää asetustiedot, </label2>
+<ckXSLT>XSLT-toiminnot</ckXSLT>
+<label3>Vie määritettyä XSLT-tyylisivut
+</label3>
+<ckMacros>Määritetyt makrot ja tehtävät</ckMacros>
+<label4>Vie kaikki määritetyt makrot ja tehtävät...
+</label4>
+<label5>Vie kaikki määriteltyjä MarcEditor materiaalin tyyppi malleja.</label5>
+<ckTemplates>Määritelty MarcEditor mallit</ckTemplates>
+<cmdExport>Vienti</cmdExport>
+<cmdClose>Sulje</cmdClose>
+<this>Vie asetuksia</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Toiminta</columnHeader2>
+<columnHeader1>Löytyy</columnHeader1>
+<button1>Sulje</button1>
+<button2>Siirry sivulle</button2>
+<cmdFindUpdate>Muokkaa Etsi kyselyä</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Etsi kaikki tulokset</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<lbField>Syötä puhelinnumero alalla arvioidaan. (ex. 090)</lbField>
+<groupBox1>Asetukset</groupBox1>
+<rdTitle>Leikkuri järjestyksessä (2xx, 1xx)</rdTitle>
+<rdDefault>Leikkuri järjestyksessä (1xx, 2xx)</rdDefault>
+<groupBox2>Asetukset</groupBox2>
+<label1>Etsi:</label1>
+<rdCustomField>Mukautettu kenttä</rdCustomField>
+<rdMainEntry>Arvioida päähakusanan (1xx, 245)</rdMainEntry>
+<this>Luo leikkureita</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Määritelty OAI-palvelimet:</label1>
+<label2>(Käytä vaihto/shift control voit valita useita kohteita)</label2>
+<ck_date>Sadonkorjuun viime download</ck_date>
+<cmdCreate>Tallenna</cmdCreate>
+<button1>Sulje</button1>
+<this>Luo erätyö Harvest</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Tavua</BytesGroup>
+<label5>Bittiä</label5>
+<label4>ISO-8859-1</label4>
+<label3>Desimaali</label3>
+<label2>Hex</label2>
+<columnHeader1>Sijainti</columnHeader1>
+<columnHeader2>Tavua</columnHeader2>
+<columnHeader3>Teksti</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Tiedosto</menuItem1>
+<openToolStripMenuItem>Avoinna</openToolStripMenuItem>
+<ExitProgram>Exit</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit tulokset-ikkunassa</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Funktionimi (Alias):</lb_Alias>
+<label1>Liittyä:</label1>
+<cmd_ok>Tallenna</cmd_ok>
+<cmd_close>Sulje</cmd_close>
+<this>Liity XML toiminnot</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Nimi</columnHeader1>
+<columnHeader2>Polku</columnHeader2>
+<cmdOK>Okei</cmdOK>
+<cmdClose>Sulje</cmdClose>
+<this>Avoinna olevat tehtävät</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Työkalut</mnuTools>
+<mnuAddinsEditLinkedData>Linkitetyt tiedot sääntöjen muokkaaminen</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Muokkaa XML-sääntötiedostossa</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Miten uusi päätepisteet profiili?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Päivittää tiedoston</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Seurantalokien hallinta</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Kehittynyt hallinta</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Lokitiedostojen poistaminen</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Katso kaikki lokitiedostot</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Erotinmerkkejä Kääntäjä</mnuAddinTranslator>
+<mnuExportGroup>Vie...</mnuExportGroup>
+<mnuToolsTabbed>Vienti välilehti erotinmerkkejä sisältävät tietueet</mnuToolsTabbed>
+<mnuToolsGateway>Viedä Marc-esitystapa</mnuToolsGateway>
+<mnuToolsSelect>Valitse MARC-tietueista</mnuToolsSelect>
+<mnuToolsDelete>Poista valitut tietueet</mnuToolsDelete>
+<mnuToolsExtract>Purkaa valitut tietueet</mnuToolsExtract>
+<mnuToolsCharacterConversion>Merkin muuntaminen työkalut</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>CharacterSet tuloksia</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Merkkien tunnistus</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit ohjattu toiminto</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL Explorerissa</mnuExplorer>
+<toolStripMenuItem4>OAI Elonkorjuu työkalut</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Harvest OAI tietueet</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Erän Elonkorjuu</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Luo erätyö</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Suorita erän Harvest</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Vienti</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Tuonti</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC työkalut</mnuToolsUnimarcTools>
+<mnuAddinURL>Tarkista URL</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU asiakas</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>MARC työkalut</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Erä prosessi kirjaa</mnuToolsBatch>
+<toolClusterData>Klusterin tiedot työkalut</toolClusterData>
+<mnuToolsDedup>Etsi kaksoiskappaleet</mnuToolsDedup>
+<generateToolStripMenuItem>Luo...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Call-numerot</mnuGenerateCallnumber>
+<toolStripMenuItem3>Nopea otsikot</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC Asiasanat</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Tietueiden yhdistäminen</mnutoolsmerge>
+<toolStripMenuItem5>RDA Helper</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC toiminnot</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC levy Downloader</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Päivitä WorldCat tietueen tilojen</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Lataa Bibliograph tietueet WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Vahvista otsikot</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Palvelutila</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Vahvista otsikot</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Asetukset</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Laajennukset</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>CD-levyt ISIS .iso =&gt; MARC käännös</mnuaddincdsisis>
+<mnuHelp>Apua</mnuHelp>
+<mnuHelpContents>Sisällys ja ohje</mnuHelpContents>
+<mnuHelpTutorials>Näytä oppaat</mnuHelpTutorials>
+<mnuHelpOnline>Online-ohje</mnuHelpOnline>
+<mnuHelpList>Liity MarcEdit ilmoitusluettelo</mnuHelpList>
+<mnuHelpError>Ehdotuksia/virheraportti</mnuHelpError>
+<mnuBlog>MarcEdit blogi</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit tunnetut ongelmat</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Järjestelmätiedot</systemInfoToolStripMenuItem>
+<mnuAddLang>Muokkaa kielitiedostoja</mnuAddLang>
+<mnuRestartIn32bitMode>Käynnistä MarcEdit 32-bittisessä tilassa</mnuRestartIn32bitMode>
+<mnuFileShare>Jaa kokoonpanoasetukset</mnuFileShare>
+<exportSettingsToolStripMenuItem>Vie asetuksia</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Tuontiasetusten</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Tietoja vianmäärityksestä</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Poista tilapäistiedostot</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Imuroi Noto Unicode-fontteja</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Korjaus koetella arkistoida</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Verkkotiedostojen palauttaminen varmuuskopiosta</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Valitse tehtävät, voit linkittää</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Palauta määritystiedot</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Avaa HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Troubleshooting noita</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Lataa päivitys (debug mode)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Tarkista päivitykset</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Sovellusten pikakuvakkeiden</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Hakemuksen tiedot polku</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Kieli tietojen polku</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Teema tiedot polku</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT tietojen polku</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>Tietoja...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit-7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>Kirjoittaja Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit käyttöoikeussopimus</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Mitä haluaisit tehdä?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>Käyttäjän määrittämä 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine tiedot</lnkUserDefined1>
+<lnkMarcToolsStart>MARC työkalut</lnkMarcToolsStart>
+<lnkUserDefined2>Käyttäjän määrittämä 2</lnkUserDefined2>
+<lnkUserDefined4>Käyttäjä Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Haluaisin:</groupBox1>
+<cmbLastToolUsed>Viimeksi käytetyt työkalut</cmbLastToolUsed>
+<lnkTopic5>Linkitettyjen tietojen käsitteleminen</lnkTopic5>
+<lnkTopic4>Kääntää Excel Marc</lnkTopic4>
+<lnkTopic3>Yhdistä MARC tiedostot</lnkTopic3>
+<lnkTopic2>Harvest OAI tiedot</lnkTopic2>
+<lnkTopic1>MARC-tiedoston muokkaaminen</lnkTopic1>
+<this>MarcEdit {käännös} .beta Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Harvest OAI tiedot</lbTitle>
+<lbServer>Palvelimen osoite:</lbServer>
+<lbSet>Nimi:</lbSet>
+<lbMetadata>Metatietojen tyyppi:</lbMetadata>
+<cmdOK>Okei</cmdOK>
+<cmdClose>Sulje</cmdClose>
+<opt_default>Oletus</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT-moottorin:</label4>
+<ck_Raw>Harvest raakatietoja (tallentaa OAI-tiedot paikalliseen tiedostojärjestelmään)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Lisäasetukset</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Aikakatkaisu (s)</lbTimeout>
+<ck_Translate>Kääntää MARC-8</ck_Translate>
+<label2>Loppu:</label2>
+<label1>Aloita:</label1>
+<lbCrosswalk>Suojatie polku:</lbCrosswalk>
+<cmdSave>Tallenna</cmdSave>
+<lnkDebug>Debug URL</lnkDebug>
+<tabPage1>Etusivu</tabPage1>
+<tabPage2>Lisäasetukset</tabPage2>
+<this>Metatietojen Elonkorjuu</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Lähdetiedosto OCLC numerot:</label1>
+<cmdDownload>Lataa</cmdDownload>
+<cmdClose>Sulje</cmdClose>
+<label2>Tallenna tiedosto:</label2>
+<this>Bulk Lataa tietueet OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>Etsi maailma:</label1>
+<cmbarg1>Avainsana</cmbarg1>
+<cmbconditional>ja</cmbconditional>
+<cmdSearch>Etsi</cmdSearch>
+<cmdClose>Sulje</cmdClose>
+<label2>Tulokset:</label2>
+<col_oclcnum>OCLC numero</col_oclcnum>
+<col_title>Otsikko</col_title>
+<ck_LocalBib>Lataa paikallinen bibliografinen tietue, jos nykyinen</ck_LocalBib>
+<lnkAll>Valitse kaikki</lnkAll>
+<label3>|</label3>
+<lnkNone>Ei mitään</lnkNone>
+<this>Etsi OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Päivitä OCLC WorldCat tilojen</label1>
+<groupBox1>Asetukset</groupBox1>
+<rdDeleteHoldings>Poista tilojen</rdDeleteHoldings>
+<rdAddHolding>Lisää tilojen</rdAddHolding>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<label2>Laitoksen koodi:</label2>
+<label3>Luokituksen rakenne:</label3>
+<cmb_schema>Yalen yliopisto</cmb_schema>
+<ck_debug>Tulostaa virheenjäljitystiedot</ck_debug>
+<this>Päivitä WorldCat tilojen</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Yalen yliopisto</cmb_schema>
+<label3>Luokituksen rakenne:</label3>
+<label2>Laitoksen koodi:</label2>
+<cmdClose>Sulje</cmdClose>
+<cmdProcess>Prosessi</cmdProcess>
+<label4>Bibliografisia OCLC numerot päivitetään poliittisia pilapiirroksia.  Bibliograph </label4>
+<label1>Holding koodi:</label1>
+<lnkGetHoldings>Panna ilmaista koodikielellä</lnkGetHoldings>
+<ckLocalBibData>Prosessin paikallisen bibliografiset tiedot</ckLocalBibData>
+<ck_deleterecords>Tietueiden poistaminen</ck_deleterecords>
+<this>Lataa Records WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>Okei</cmd_options_ok>
+<cmd_options_cancel>Sulje</cmd_options_cancel>
+<cmd_options_apply>Sovelletaan</cmd_options_apply>
+<lnkMainWindow>Pääikkunan</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Kieli</lnkLanguage>
+<lnkEaseOfUse>Helppokäyttöisyys</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Päivitykset</lnkUpdates>
+<lnkFileAssociations>Tiedostojen kytkennät</lnkFileAssociations>
+<lnkOther>Muut</lnkOther>
+<lnkILSIntegration>ILS integraatio</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API integraatio</lnkOCLCAPI>
+<label15>Oletusohjelmien määrittäminen</label15>
+<ckLogging>Kirjaaminen:</ckLogging>
+<ckAutosave>Ota käyttöön automaattinen tallennus</ckAutosave>
+<ck_enhanced_editor_loading>Käytä tehostettua sivutuksen hallinta</ck_enhanced_editor_loading>
+<ckRDATemplates>Mallien käyttö RDA</ckRDATemplates>
+<ckCompileMarc8>Kääntää kirjaa MARC8</ckCompileMarc8>
+<label37>Lokikansion polkua:</label37>
+<cksaveutf8>Kääntää kirjaa kuin UTF8</cksaveutf8>
+<ck_intellisense>Ota Intellisense</ck_intellisense>
+<label2>Viitettä / sivu</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Oletuskoodaus:</lb_Encoding>
+<ck_nwindow>Avaa tiedostot uudessa ikkunassa</ck_nwindow>
+<ck_append>Uudet tietueet</ck_append>
+<lb_psize>Esikatselun koko:</lb_psize>
+<ckUsePreview>Käytä esikatselu-tilassa</ckUsePreview>
+<cmd_editor_font_default>Valitse oletusasetukset</cmd_editor_font_default>
+<cmd_editor_set_font>Aseta fontti</cmd_editor_set_font>
+<lb_Editor_Font_Props>Määrittää MarcEditor fontin ominaisuudet:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Valitse oletusasetukset</cmd_editor_template_default>
+<cmd_editor_modify>Muokkaa</cmd_editor_modify>
+<lb_Current_Template>Malliin:</lb_Current_Template>
+<lb_Editor_Template>Aseta MarcEditor malli:</lb_Editor_Template>
+<label9>* Edellyttää ohjelma uudelleen *</label9>
+<label8>PT.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Fonttikoko:</label4>
+<lb_Example>Esimerkkiteksti</lb_Example>
+<lb_lang_font>Kieli fontti:</lb_lang_font>
+<lb_Set_Lang>Asettaa kielenkäyttö ahtaa:</lb_Set_Lang>
+<rd_theme_dark>Mukautettuja teemoja:</rd_theme_dark>
+<rd_theme_normal>Normaali (oletus)</rd_theme_normal>
+<label39>Sovelluksen näyttöasetukset</label39>
+<ck_export_output>Viedä kuitin (kaapata ILS output)</ck_export_output>
+<lb_TCP_Timeout>Aikakatkaisu:</lb_TCP_Timeout>
+<lb_TCP_Port>Portti:</lb_TCP_Port>
+<lb_TCP_Host>Palvelimen osoite:</lb_TCP_Host>
+<lb_TCPIP_Props>TCP/IP ominaisuudet:</lb_TCPIP_Props>
+<ck_marc21>MARC21 tietueet</ck_marc21>
+<ck_marcxml_sax>Käytä kotimainen vaihtoehto (-XSLT prosessi)</ck_marcxml_sax>
+<groupBox2>XSLT-moottorin</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode normalisointi</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Oletusarvoinen Merkistö:</label35>
+<ckC>Kanoninen Decomposition (C)</ckC>
+<ckKD>Yhteensopivuus hajoaminen (KD)</ckKD>
+<ck_Diacritics>Diakriittisten merkkien käyttäminen, kun rikkovat</ck_Diacritics>
+<lb_Diacritics>Yleiset asetukset:</lb_Diacritics>
+<lb_Engine_XML_Options>XML-asetukset:</lb_Engine_XML_Options>
+<ck_engine_namespace>Käytä Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Automaattiset päivitykset on poistettu käytöstä järjestelmänvalvojaan</labelAutoUpdateDisabled>
+<ckDetectProxy>Käytä järjestelmän välityspalvelinasetuksia</ckDetectProxy>
+<ck_Update_Validator>Tarkista Validator päivitykset automaattisesti</ck_Update_Validator>
+<label3>Sinun täytyy kuulua toimialueeseen tämän työskentelevät tällä hetkellä.</label3>
+<groupBox4>Käyttäjätiedot:</groupBox4>
+<lb_domain>Toimialue:</lb_domain>
+<label6>Salasana:</label6>
+<label5>Käyttäjätunnus:</label5>
+<ckUpdates>Tarkista päivitykset automaattisesti</ckUpdates>
+<groupBox5>Määritä tiedoston yhdistykset</groupBox5>
+<cmd_file_assoc_view>Näytä tyypit</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Poista tyyppi</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Tallenna tyyppi</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Liittää (*.                      ) tiedostotyyppitunnus:</label7>
+<ck_mrk8_editor>Liitä tiedostot (*.mrk8) MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Liitä tiedostot (*.mrk) MarcEditor</ck_mrk_editor>
+<ck_mrc>Liitä tiedostot (*.mrc) MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Valitse</lnkSelectILS>
+<lnkDeleteProfile>Poista</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Lisää</lnkAddProfile>
+<label31>Profiilit:</label31>
+<ck_ignore_ssl>Ohita SSL varmennevirheistä</ck_ignore_ssl>
+<lnk_ils_delete>Poista</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Muokkaa</lnk_ils_z3950_edit>
+<ck_ils_z3950>Käytä Z39.50 asetuksia</ck_ils_z3950>
+<ck_ils_enable>ILS-asetusten ottaminen käyttöön</ck_ils_enable>
+<label13>Host Name:</label13>
+<label12>Salasana:</label12>
+<label11>Käyttäjätunnus:</label11>
+<label10>Valitse järjestelmän:</label10>
+<lnkGetCodes>Saada tilan koodit</lnkGetCodes>
+<label24>Holding koodi:</label24>
+<cmb_schema>Yalen yliopisto</cmb_schema>
+<label22>Luokituksen rakenne:</label22>
+<label23>Laitoksen koodi:</label23>
+<ckshow>Näytä teksti</ckshow>
+<cmdValidateKeys>Vahvista avaimet</cmdValidateKeys>
+<linkLabel1>Pyyntö/Hallitse OCLC avain (yhdistää OCLC)</linkLabel1>
+<label21>OCLC API avain asetukset</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Salainen avain (parillinen metatietojen API-avain)</label18>
+<label17>OCLC metatietojen API-avain</label17>
+<label16>OCLC Search API-avain</label16>
+<lnkFilePaths>Sijainnit</lnkFilePaths>
+<label38>Yhteyden aikakatkaisu (300 millisekunnin oletus):</label38>
+<lnkCopyLocalFiles>Jäljentää ammattiosasto arkistoida nyt</lnkCopyLocalFiles>
+<label30>Aseta oletus MARC työkalut polku:</label30>
+<label27>Tiedostopolut:</label27>
+<label26>Tehtävät-kansio:</label26>
+<label25>Verkko kansio:</label25>
+<lb_mono>MONO polku:</lb_mono>
+<lb_temp>Määritä tilapäistiedostojen polku:</lb_temp>
+<ck_rss>Lue RSS-syöte</ck_rss>
+<lb_title>Otsikoista:</lb_title>
+<lb_Author>Kirjoittaja Tag:</lb_Author>
+<lbCall>Soita numeroon Tag:</lbCall>
+<label1>Control numero Tag:</label1>
+<ck_allow_z3950>Z39.50-toiminnot</ck_allow_z3950>
+<label28>Asetukset:</label28>
+<ck_touch_friendly>Touch ystävällinen valikoiden</ck_touch_friendly>
+<ck64_bit>64-bittinen asennettu</ck64_bit>
+<ck_32bit>32-bittinen asennettu</ck_32bit>
+<label36>MS Office-versio:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: Käytä linkityskenttä sellainen</ckSort880>
+<ck880Infile>Infile 880 kenttien kentän paria</ck880Infile>
+<label29>Lajitteluasetukset:</label29>
+<ckShowDescriptionInScreenTips>Näytä toiminto kuvaukset kohdeohjeissa</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Näytä pikanäppäimet kohdeohjeissa</ckScreenTipShortcuts>
+<label42>Näppäimistö vaihtoehtoja</label42>
+<ckProvideSoundAccess>Anna äänimerkki toiminnon yhteydessä</ckProvideSoundAccess>
+<label41>Asiakaspalautteen asetukset</label41>
+<groupBox3>Toimet:</groupBox3>
+<lnkSearch4Themes>Poista valittu teema</lnkSearch4Themes>
+<lnkNewTheme>Uuden teeman</lnkNewTheme>
+<label40>Saataville MarcEdit lisää</label40>
+<this>MarcEdit asetukset</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Käytettävissä olevat laajennukset:</label1>
+<ch1>Plugin nimi</ch1>
+<ch2>URL-OSOITE</ch2>
+<c3>Tiedostokoko</c3>
+<c4>Version #:</c4>
+<cmddownload>Lataa</cmddownload>
+<cmdClose>Sulje</cmdClose>
+<columnHeader1>Poistaa?</columnHeader1>
+<columnHeader2>Plugin nimi</columnHeader2>
+<columnHeader3>Luokkanimi</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Asennettu Plugins:</label2>
+<cmdRemove>Poista</cmdRemove>
+<c5>MarcEdit versionumero</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>resursseja. GetString (”label1. Teksti ”)</label1>
+<label2>Kuvio:</label2>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdCancel>Peruuta</cmdCancel>
+<lbstatus>Tila:</lbstatus>
+<ckEscape>Paeta tiedot URL-Polusta</ckEscape>
+<ckAddNew>Korvaa aiemmin luotu kenttä</ckAddNew>
+<ck_addnewfield>Jos Lisää uusi kenttä ei ole</ck_addnewfield>
+<ckAlwaysAdd>Aina lisää uusi kenttä</ckAlwaysAdd>
+<groupBox1>Asetukset</groupBox1>
+<this>Rakenna uusia kenttiä</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Erä Search</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Tulokset</groupBox3>
+<lnkClearResults>Selviä tuloksia</lnkClearResults>
+<lnkDownload>Kaikkien kohteiden lataaminen</lnkDownload>
+<lnkGetNext>Saada seuraava {raja}</lnkGetNext>
+<lnkDownloadAllHoldings>Lataa kaikkien tilojen</lnkDownloadAllHoldings>
+<col1>Sijainti</col1>
+<col2>Otsikko</col2>
+<columnHeader1>Tietokanta</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Valittujen kohteiden lataaminen</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Lataa valituista tiloista tietueet</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Näytä valittu tietue</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Asetukset</groupBox1>
+<rdEditDB>Valitse tietokanta</rdEditDB>
+<rdEditSettings>Muokkaa asetuksia</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Viitettä / sivu</label4>
+<ckUnicode>Hakea Unicode</ckUnicode>
+<lb_encoding_single>Palvelimen merkistö</lb_encoding_single>
+<lbSearchb>Haku:</lbSearchb>
+<lbSearch>Kyselyn tietokanta:</lbSearch>
+<label3>Aseta tietokannan mieluummin:</label3>
+<cmdSelectDatabase>Valitse</cmdSelectDatabase>
+<MCol3>TUNNUS</MCol3>
+<MCol1>Nimi</MCol1>
+<MCol2>Tyyppi</MCol2>
+<lb_PModifyTitle>Valitse tietokanta:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Toiminnot</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Lisää uusi Z39.50-palvelin</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Lisää uusi SRU palvelin</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Asetukset</preferencesToolStripMenuItem>
+<cmdCloseSettings>Sulje</cmdCloseSettings>
+<label5>Hallita kentät (erä jalostus deduplication)</label5>
+<cmdSaveSettings>Tallenna asetukset</cmdSaveSettings>
+<rdDownloadPreferred>Lataa ensisijainen lähteestä</rdDownloadPreferred>
+<rdDownloadMostComplete>Lataa täydellinen tietueet</rdDownloadMostComplete>
+<rdAllRecords>Lataa kaikki tietueet</rdAllRecords>
+<label2>Eräkäsittelyn asetukset</label2>
+<label1>Asetukset</label1>
+<this>MarcEdit Z39.50/SRU asiakas</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Prosessin 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Muokkaa kenttiä</lnkEditFields>
+<ck_040>Muokkaa 040--lisää $erda</ck_040>
+<ck_qualifyinginfo>Täyttäviä tietoja (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Muokkaa luetteloa</lnkEdit>
+<ck_dgmd>Poista GMD</ck_dgmd>
+<ckAbbrev>Laajenna lyhenteitä</ckAbbrev>
+<ckgmd>Luo GMD</ckgmd>
+<ck264>Arvioida 260/264</ck264>
+<ck_signs>Käytä aina ©, ℗ symbolit</ck_signs>
+<ck381>Lisää 381--muut</ck381>
+<ck380>Lisätä 380 - työn muodossa</ck380>
+<ck347>Lisää 347--Digitaali ominaisuudet</ck347>
+<ck346>Lisää 346--Video ominaisuudet</ck346>
+<ck345>Lisää 345 - Proj. Ominaisuudet</ck345>
+<ck344>Lisää 344 - ominaisuudet</ck344>
+<ck337>Lisää 337--mediatyyppi
+Lisää 338--operaattorin tyyppi</ck337>
+<ck336>Lisää 336--sisällön tyyppi</ck336>
+<cmdProcess>Okei</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<label1>Lähde:</label1>
+<label2>Tallenna:</label2>
+<lnkAll>Kaikki</lnkAll>
+<label3>Valitse:</label3>
+<label4>|</label4>
+<lnkNone>Ei mitään</lnkNone>
+<label7>Tila:</label7>
+<this>RDA Helper</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Sulje</cmd_Close>
+<rEdit></rEdit>
+<this>Tulokset</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Etusivu</lnkHome>
+<label5>resursseja. GetString (”label5. Teksti ”)</label5>
+<label4>Tietoja RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>Tietoja RobertCompare</lnkAbout>
+<ckSort>Valmiiksi lajitella tiedostot</ckSort>
+<cmdClose>Sulje</cmdClose>
+<cmdExecute>Suorittaa</cmdExecute>
+<label1>Tallenna tiedosto:</label1>
+<label6>Vertaa tiedostoja:</label6>
+<label2>resursseja. GetString (”label2. Teksti ”)</label2>
+<lnkPreferences>Asetukset</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Lajittele kentän:</lbSortField>
+<lbdelete>Poistot:</lbdelete>
+<lbAddColor>Lisäykset:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Ei mitään</lnkNone>
+<lnkAll>Valitse kaikki</lnkAll>
+<col_title>Otsikko</col_title>
+<col_id>TUNNUS</col_id>
+<label3>|</label3>
+<label2>Tulokset:</label2>
+<cmdClose>Sulje</cmdClose>
+<cmdSearch>Etsi</cmdSearch>
+<cmbarg1>otsikko</cmbarg1>
+<label1>Etsi tietokanta:</label1>
+<ck_batch>Erä Search</ck_batch>
+<this>Etsi</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Valitse</cmdSelect>
+<this>Valitse ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Tietueen numero</columnHeader1>
+<columnHeader2>Näyttökenttä</columnHeader2>
+<selectItemsToolStripMenuItem>Valitse kohteet</selectItemsToolStripMenuItem>
+<cmdImport>Tuontitiedosto</cmdImport>
+<cmdfDelete>Poista valittu</cmdfDelete>
+<cmdExport>Vienti valittu</cmdExport>
+<cmdExit>Exit</cmdExit>
+<lb_Search>Haku:</lb_Search>
+<lb_DisplayField>Näytä kenttä:</lb_DisplayField>
+<lb_SourceFile>MARC lähdetiedosto:</lb_SourceFile>
+<ckSource>Tallenna muokatut tietueet lähde</ckSource>
+<ck_retain>Säilytä valitut kohteet</ck_retain>
+<cmd_Generate>Luo raportti</cmd_Generate>
+<ck_find_all>Haku kaikki tietueen tiedot</ck_find_all>
+<ck_use_regex>Käytä säännöllisiä lausekkeita</ck_use_regex>
+<cmdRandomExport>Vienti satunnainen</cmdRandomExport>
+<lnkDoesNotMatch>Ei vastaa</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Käännä valinnat</lnkInvert>
+<ckExactWord>Sana ottelun</ckExactWord>
+<this>MarcEdit.NET: Muuttaa valitun MARC-tietueista</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Valitse kentät pois lajittelu</lb_title>
+<lb_fields>Kentät:</lb_fields>
+<lbExclude>Jättää kenttiä:</lbExclude>
+<cmd_OK>Okei</cmd_OK>
+<cmd_Close>Sulje</cmd_Close>
+<this>Mukautetun lajittelun Ohjattu</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL päätepiste:</lbsparql>
+<cmdQuery>Kysely</cmdQuery>
+<cmdClose>Sulje</cmdClose>
+<lbQuery>SPARQL-kysely:</lbQuery>
+<lbresults>Tulokset:</lbresults>
+<cklocal>Lataa paikallinen tiedosto</cklocal>
+<lbOutput>Lähtö:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Näyte kyselyt:</groupBox1>
+<lbExample3>Kysely: 軍事基地</lbExample3>
+<lnkExample3>Japanin parlamentin Kirjasto</lnkExample3>
+<lbexample2>Getty kyselyn kupari sulfaatti</lbexample2>
+<lnkExample2>Getty esimerkki</lnkExample2>
+<label1>MESH kyselyn influenssa, ihmisen</label1>
+<lnkExample1>MESH-esimerkki</lnkExample1>
+<label2>Sparql viitteet:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL päätepisteet (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Wikipedia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL Tutorials</lnkTutorials>
+<this>SPARQL selaimen</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CD-levyt ISIS =&gt; MARC käännös</lb_title>
+<groupBox1>Syöttötapa</groupBox1>
+<lb_output>Tulostiedosto:</lb_output>
+<lb_input>Lähdetiedosto:</lb_input>
+<groupBox2>Vaihtoehdot:</groupBox2>
+<rd_advanced>Edistynyt käännöstoiminto</rd_advanced>
+<rd_simple>Yksinkertainen käännös</rd_simple>
+<lb_subfield>Alikenttä merkki</lb_subfield>
+<cmd_Ok>Okei</cmd_Ok>
+<cmd_Close>Sulje</cmd_Close>
+<this>CD-levyt ISIS .iso =&gt; MARC käännös</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Vaihtoehdot:</lb_title>
+<lnkLoad>Lataa kenttien yhdistämismääritykset</lnkLoad>
+<ck_indicators>Lisää mittareita</ck_indicators>
+<ckLDR>Oikea LDRs</ckLDR>
+<ck_subfield>Lisää johtava alikenttä</ck_subfield>
+<cmdOK>Okei</cmdOK>
+<cmdClose>Sulje</cmdClose>
+<this>Lisäasetukset</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Peruuta</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Erikoismerkkejä:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Lisää</cmd_Insert>
+<cmdClose>Sulje</cmdClose>
+<this>MARC-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Tehtäväluettelon nimi:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Poista kentän tehtävän lisääminen</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Muokkaa alikenttä tehtävän lisääminen</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Muokkaa ilmaisinta tehtävän lisääminen</addToolStripMenuItem>
+<cmdSave>Tallenna</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Lisää uusi kenttä-tehtävä</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Sulje</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Lisää korvaa kaikki tehtävän</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Lisää kommentti</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Lisää kentän Muokkaa tehtävää</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Swap kentän tehtävän lisääminen</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Kopioi kentän tehtävän lisääminen</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Lisää tehtäväluettelo</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Add RDA Helper</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Linkitetyt tiedot tehtävän lisääminen</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Lisää rakentaa uusi kentän tehtävä</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Muokkaaminen pikanäppäimet</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Jos lausunnot</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>pienet kirjaimet</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>ISOT KIRJAIMET</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Otsikon kirjainkoko</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Alkuperäisessä</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Hyödyntää alkuperäisen tapauksessa</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Kentän muokkaaminen</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Puhdista Smart merkkiä</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matemaattiset funktiot</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Muuntaa Desimaaliasteet</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Tyhjien rivien poistaminen</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Leikkuri työkalut</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Luo leikkureita</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Luo Sanborn3 leikkureita</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Kopioi valitut tehtävän suorittaminen</mnuCopy>
+<mnuPasteTask>Liitä tehtävän suorittaminen</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Kommentti valittu tehtävä</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>UnComment valitut tehtävät</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Tehtävät:</lbTasks>
+<label1>Toimet:</label1>
+<label2>Kuvauksessa/valvonta:</label2>
+<cmdDebug>Debug</cmdDebug>
+<this>Muokata tehtäväluettelon</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Nimi</columnHeader1>
+<columnHeader2>Polku</columnHeader2>
+<columnHeader3>Pikakuvake</columnHeader3>
+<columnHeader4>Kuvaus</columnHeader4>
+<cmdClose>Sulje</cmdClose>
+<lnkNew>Luodaanko uusi tehtäväluettelo</lnkNew>
+<lbMacro>Tehtäväluetteloita:</lbMacro>
+<lnkCloneTask>Klooni luodun tehtäväluettelon</lnkCloneTask>
+<groupBox1>Tehtävien toimintojen</groupBox1>
+<lnkRelink>Linkitä tehtävät</lnkRelink>
+<lnk_import_task>Tuo tehtävä</lnk_import_task>
+<groupBox2>Nykyisten tehtävien hallinta</groupBox2>
+<lnkBackup>Varmuuskopioida kaikki tehtävät</lnkBackup>
+<lnk_export_task>Vie valitun tehtävän</lnk_export_task>
+<lnkKey>Näppäinmääritykset</lnkKey>
+<lnkEdit>Muokkaa valitun luettelon</lnkEdit>
+<lnkDelete>Poistaa valitun luettelon</lnkDelete>
+<this>Koetella emäntä</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Katkaista pitkien tietueiden</ckTruncate>
+<label1>Valitse toiminto:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Oletusarvoinen Merkistö:</label35>
+<ck_Marc8>Kääntää MARC-8</ck_Marc8>
+<ck_UTF8>Kääntää utf8</ck_UTF8>
+<lb_OutputFile>Tallenna nimellä...</lb_OutputFile>
+<lb_InputFile>Avoinna...</lb_InputFile>
+<cmdCancel>Sulje</cmdCancel>
+<cmdEdit>Tietueiden muokkaaminen</cmdEdit>
+<cmdExecute>Suorittaa</cmdExecute>
+<lb_Results>Tulokset:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Työkalut</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Palaa pääikkunaan</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Muokkaa XML-toiminto luetteloon</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Erä prosessi kirjaa</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>CharacterSet muuntaminen</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC työkalut</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Mitä haluaisit tehdä?</mnuContextHelp>
+<lnkTopic1>Eri merkkikoodauksen tiedoston muuntaminen</lnkTopic1>
+<lnkTopic2>Lisää tai muuta XML-käännökset</lnkTopic2>
+<lnkTopic4>Missä virhe MARC tiedoston?</lnkTopic4>
+<groupBox1>Haluaisin:</groupBox1>
+<groupBox2>Valitse tietojen prosessi:</groupBox2>
+<groupBox3>Merkkien koodaus vaihtoehtoja</groupBox3>
+<this>MARC työkalut</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit tarjoaa lite paino UNIMARC muuntotyökaluja.  Jos nämä työkalut ovat kiinnostaa sinua ja haluat auttaa tekemään parempia, antakaa f eedback.
+
+</label1>
+<label2>Lähde</label2>
+<label3>Kohde</label3>
+<groupBox1>Asetukset</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<this>UNIMARC työkalut</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Päivitys toteaa:</label1>
+<cmd_Update>Päivitys</cmd_Update>
+<cmd_Cancel>Peruuta</cmd_Cancel>
+<this>Päivitä MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Koodattu Unicode</ckIsUTF8>
+<ck_merge_to_source>Yhdistä lähde</ck_merge_to_source>
+<label17>Tallenna tiedosto:</label17>
+<label16>Luettelointi lähde</label16>
+<ck_SameFile>Prosessin lähdetiedosto</ck_SameFile>
+<cmd_merge_cancel>Peruuta</cmd_merge_cancel>
+<cmd_merge_next>Seuraava =&gt;</cmd_merge_next>
+<lb_merge_title>Tietueen tietojen yhdistäminen</lb_merge_title>
+<ck_merge_repeatable>Ei toistettavissa</ck_merge_repeatable>
+<lb_id>Tietueen tunniste:</lb_id>
+<lb_merge>Yhdistä tiedosto:</lb_merge>
+<lb_source>Lähdetiedosto:</lb_source>
+<ck_overlayexisting>Päällekkäin olevia kohteita</ck_overlayexisting>
+<label4>Luottamus arvo:</label4>
+<ck_mergeUnique>Yhdistä ainutlaatuisia kohteita</ck_mergeUnique>
+<button1>Peruuta</button1>
+<cmd_merge_select_fields_next>Seuraava =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Takaisin</cmd_merge_select_fields_back>
+<label7>Yhdistä kentät:</label7>
+<label6>Valitse kenttä:</label6>
+<label5>Yhdistä tallentaa tietoja: Valitse kentät</label5>
+<button5>Sulje</button5>
+<label15>Tiedostot on yhdistetty.  Tulokset sijaitsee {merge_results_file}.</label15>
+<label13>Yhdistäminen on valmis</label13>
+<this>MARC tietueiden yhdistäminen</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Otsikot vahvistustyökalu voidaan vahvistaa 1xx, 6xx tai 7xx kentät.  Th e työkalu hyödyntää web ja Lähipalvelujen määrittää, näkyykö headin g valtuutettu nimikkeeseen.</label1>
+<ck_1xx>Sallia 1xx/7xx kentät</ck_1xx>
+<ck_6xx>Sallia 6xx kenttä</ck_6xx>
+<cmdProcess>Prosessi</cmdProcess>
+<cmdClose>Sulje</cmdClose>
+<label2>Lähde:</label2>
+<lbStatus>Tila:</lbStatus>
+<cmdExtract>Ote</cmdExtract>
+<ckdeletecache>Poista paikallinen välimuisti</ckdeletecache>
+<lnkDelimited>Tallenna rajattua</lnkDelimited>
+<ckonlyA>Käsitellä alikenttä A</ckonlyA>
+<ckVariant>Korjaa automaattisesti vaihtoehdot</ckVariant>
+<ckGenerateBriefHeadings>Luo lyhyt henkilökohtainen nimi viranomaisten</ckGenerateBriefHeadings>
+<label3>Luotu viranomaiset:</label3>
+<ckAddURIs>Upottaa URI mahdollisuuksien</ckAddURIs>
+<ck_download_authorities>Imuroi LC viranomaisten</ck_download_authorities>
+<this>Vahvista otsikot</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Lähdetiedosto:</lb_Source>
+<lb_Rules>Tiedoston:</lb_Rules>
+<cmd_Ok>Okei</cmd_Ok>
+<cmd_close>Sulje</cmd_close>
+<groupBox1>Asetukset</groupBox1>
+<optIdentify>Tarkista tietueen rakenne</optIdentify>
+<opt_remove>Poista virheelliset tietueet</opt_remove>
+<opt_validate>Tarkista MARC käyttäen sääntöjä tiedosto</opt_validate>
+<rdHex>Katso HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>Okei</cmd_Ok>
+<cmdCancel>Sulje</cmdCancel>
+<groupBox1>Asetukset:</groupBox1>
+<lb_MARC_Title>Otsikko:</lb_MARC_Title>
+<lbReport>Raporttityyppi:</lbReport>
+<lb_XSLT>XSLT-tiedosto:</lb_XSLT>
+<lb_Dest>Tulostiedosto:</lb_Dest>
+<lb_MARC>Lähdetiedosto:</lb_MARC>
+<lb_Fields>Kentät:</lb_Fields>
+<lbTimeout>Aikakatkaisu (sekuntia)</lbTimeout>
+<this>Tarkista URL-osoite</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>Tietoja OCLC: n NOPEAA palvelua</lnkClassify>
+<label1>resursseja. GetString (”label1. Teksti ”)</label1>
+<ck_conditional_fast>Lisää nopeasti otsikot, kun ei ole aiheiden otsikot eivät läsnä</ck_conditional_fast>
+<ck_always_fast>Aina lisätä nopeasti otsikot</ck_always_fast>
+<label8>Asiasanat:</label8>
+<button1>Prosessi</button1>
+<cmd_Close>Sulje</cmd_Close>
+<this>Luo nopeasti otsikot</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Tallenna</cmd_save>
+<cmd_close>Sulje</cmd_close>
+<ck_1xxa>$a: päähakusanan</ck_1xxa>
+<ck_245p>$p: pt/s työn nimi</ck_245p>
+<ck_245n>$n: pt/s työn määrä</ck_245n>
+<ck_245c>$c: selvitys Responsiblity</ck_245c>
+<ck_245b>$b: loput otsikko</ck_245b>
+<ck_245a>$a: otsikko</ck_245a>
+<ck_lang>Kieli (kannat: 35-37)</ck_lang>
+<ck_dates>Päivämäärät (kannat: 7-14)</ck_dates>
+<ck_p7>BLvl (kanta 7)</ck_p7>
+<ck_p6>Tyyppi (kanta 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Verrattavien</label6>
+<ck_form>Lomake (kannat: 23)</ck_form>
+<ck_245_h>$h: yleinen materiaali nimeäminen</ck_245_h>
+<label5>Muut kentät:</label5>
+<label4>Kenttä 245:</label4>
+<label3>Author (1xx)-kenttä</label3>
+<label2>008 kannat</label2>
+<label1>LDR-asema</label1>
+<this>Yhdistämisen asetukset</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Tietokannan ominaisuudet</tabDBProps>
+<ck_Paused>Ohittaa tauko (6 s)</ck_Paused>
+<label1>Tietokanta:</label1>
+<ck_Show>Näytä tietokannan</ck_Show>
+<lbPassword>Salasana:</lbPassword>
+<lbUsername>Käyttäjätunnus:</lbUsername>
+<lbSyntax>Syntaksi:</lbSyntax>
+<lbPort>Portti:</lbPort>
+<lbHost>Isäntä:</lbHost>
+<lbname>Nimi:</lbname>
+<tabDBAdvanced>Lisäasetusten määrittäminen</tabDBAdvanced>
+<label4>Aikakatkaisu (sekunteina):</label4>
+<label2>Joukko:</label2>
+<label3>Muut valinnat:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Lisätietoa:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Aihe:</lbSubject>
+<lbTitle>Otsikko:</lbTitle>
+<lbAuthor>Kirjoittaja:</lbAuthor>
+<lbadvTitle>Z39.50 määrite 4: rakenne</lbadvTitle>
+<cmdSave>Tallenna</cmdSave>
+<cmdClose>Sulje</cmdClose>
+<label17>Z39.50 tietokanta-asetukset:</label17>
+<cmdDeleteZ3950>Poista</cmdDeleteZ3950>
+<gbCustom>Mukautetun profiiliasetukset</gbCustom>
+<label5>Nimi Index:</label5>
+<label6>Tekijä Index:</label6>
+<label10>Avainsana Index:</label10>
+<label7>Hakemisto:</label7>
+<label11>Record # Index:</label11>
+<label8>ISBN hakemisto:</label8>
+<label12>ISSN hakemisto:</label12>
+<cmdDeleteSRU>Poista</cmdDeleteSRU>
+<ck_SRU_Show>Näytä tietokannan</ck_SRU_Show>
+<label13>Lisäparametrit</label13>
+<label14>Etsi profiili:</label14>
+<lbVersion>Versio:</lbVersion>
+<cmdCloseSRU>Sulje</cmdCloseSRU>
+<cmdSaveSRU>Tallenna</cmdSaveSRU>
+<label15>Nimi:</label15>
+<lbMetadata>Metatietojen rakenne:</lbMetadata>
+<label16>URL-OSOITE:</label16>
+<lbSRUTitle>SRU palvelintietokannan ominaisuudet:</lbSRUTitle>
+<this>Tietokannan ominaisuudet</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Etsi:</label1>
+<ckMatchCase>Sama kirjainkoko</ckMatchCase>
+<cmdFind>Etsi</cmdFind>
+<this>Hex: Etsi merkkijono</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Tiedosto</fileToolStripMenuItem>
+<openToolStripMenuItem>Avoinna</openToolStripMenuItem>
+<exitToolStripMenuItem>Exit</exitToolStripMenuItem>
+<editToolStripMenuItem>Muokkaa</editToolStripMenuItem>
+<findToolStripMenuItem>Etsi</findToolStripMenuItem>
+<findNextToolStripMenuItem>Etsi seuraava</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Leikkaa</cutToolStripMenuItem>
+<copyToolStripMenuItem>Kopioi</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Liitä</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Selkeä</clearToolStripMenuItem>
+<findToolStripMenuItem>Etsi</findToolStripMenuItem>
+<replaceToolStripMenuItem>Korvaa</replaceToolStripMenuItem>
+<lnkLoadAll>Lataa koko tiedosto</lnkLoadAll>
+<lb_bytes>{loaded_bytes} {file_bytes} tavua on ladattu.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Uusi tietue</tbNew>
+<mnuCNewWindow>Avaa uusi ikkuna</mnuCNewWindow>
+<ContextAuthority>Viranomainen</ContextAuthority>
+<ContextAuthorityName>Nimi</ContextAuthorityName>
+<ContextAuthoritySubject>Aihe</ContextAuthoritySubject>
+<cBook>Kirja</cBook>
+<cSerial>Sarja</cSerial>
+<cVisualMat>Visuaalista materiaalia</cVisualMat>
+<cMaps>Kartografiset resursseja</cMaps>
+<cSoundRec>Äänitys</cSoundRec>
+<cScore>Pisteet</cScore>
+<cElectMat>Elektroninen resurssi</cElectMat>
+<cMixedMat>Sekoitettu aine</cMixedMat>
+<tbOpen>Avaa tiedosto</tbOpen>
+<tbSave>Tallenna tiedosto</tbSave>
+<tbPrint>Tulosta tiedosto</tbPrint>
+<tbCompile>Kääntää tietueet</tbCompile>
+<tbCut>Leikkaa</tbCut>
+<tbCopy>Kopioi</tbCopy>
+<tbPaste>Liitä</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>Poista</tbDelete>
+<tbFind>Etsi</tbFind>
+<tbZ39_50>Z39.50/SRU asiakas</tbZ39_50>
+<toolStripSplitButton1>Global MARC muokkaaminen Utilities</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Lisää tai poista kenttä</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Rakentaa uusi kenttä</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Kopioi kenttä</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Kentän tietojen muokkaaminen</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Muokkaa indikaattoritiedot</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Alikenttien tietojen muokkaaminen</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Vaihda kenttätiedot</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Tiedosto</mnuFile>
+<mnuFileMain>Palaa pääikkunaan</mnuFileMain>
+<mnuFileNew>Uusi</mnuFileNew>
+<mnuFileNewWindow>Avaa uusi ikkuna</mnuFileNewWindow>
+<mnuFileNewDefault>oletus</mnuFileNewDefault>
+<mnuFileNewAuthority>Viranomainen</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Nimi</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Aihe</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Kirja</mnuFileNewBook>
+<mnuFileNewSerial>Sarja</mnuFileNewSerial>
+<mnuFileVisualMat>Visuaalista materiaalia</mnuFileVisualMat>
+<mnuFileNewMap>Kartografiset resursseja</mnuFileNewMap>
+<mnuFileNewSound>Äänitys</mnuFileNewSound>
+<mnuFileNewScore>Pisteet</mnuFileNewScore>
+<mnuFileNewER>Elektroninen resurssi</mnuFileNewER>
+<mnuFileNewMix>Sekoitettu aine</mnuFileNewMix>
+<mnuFileOpen>Avoinna</mnuFileOpen>
+<mnuFileRecent>Uusia tiedostoja</mnuFileRecent>
+<mnunone10>ei mitään</mnunone10>
+<mnunone9>ei mitään</mnunone9>
+<mnunone8>ei mitään</mnunone8>
+<mnunone7>ei mitään</mnunone7>
+<mnunone6>ei mitään</mnunone6>
+<mnunone5>ei mitään</mnunone5>
+<mnunone4>ei mitään</mnunone4>
+<mnunone3>ei mitään</mnunone3>
+<mnunone2>ei mitään</mnunone2>
+<mnunone1>ei mitään</mnunone1>
+<mnuFileClearHistory>Tyhjennä historia</mnuFileClearHistory>
+<mnuFileClearList>Avoin Taannoinen arkistoida</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Muokkaa ja korvaa tyhjentäminen</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Sulje</mnuFileClose>
+<mnuFileExportData>Vie...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Tuo...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Tallenna</mnuFileSave>
+<mnuFileSaveAs>Tallenna nimellä...</mnuFileSaveAs>
+<mnuFilePrint>Tulosta</mnuFilePrint>
+<toolStripMenuItem34>Tulosta / sivu</toolStripMenuItem34>
+<FileSelectIndividualMake>Valitse tietueet muokattavaksi</FileSelectIndividualMake>
+<mnuFileCompile>Käännä tiedosto MARC</mnuFileCompile>
+<mnuFileExit>Exit</mnuFileExit>
+<mnuEdit>Muokkaa</mnuEdit>
+<mnuEditUndo>Kumoa</mnuEditUndo>
+<mnuEditRedo>Tee uudelleen</mnuEditRedo>
+<mnuEditSpecialUndo>Erityinen Kumoa</mnuEditSpecialUndo>
+<mnuEditCut>Leikkaa</mnuEditCut>
+<mnuEditCopy>Kopioi</mnuEditCopy>
+<mnuEditPaste>Liitä</mnuEditPaste>
+<mnuEditDupLines>Toistuvia rivejä</mnuEditDupLines>
+<mnuEditClear>Selkeä</mnuEditClear>
+<mnuEditFind>Etsi</mnuEditFind>
+<mnuEditReplace>Korvaa</mnuEditReplace>
+<toolStripMenuItem28>Muokkaaminen pikanäppäimet</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Kirjainkoon muuttaminen</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>pienet kirjaimet</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>ISOT KIRJAIMET</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Otsikon kirjainkoko</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Alkuperäisessä</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Alkukirjain isolla</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Kentän muokkaaminen</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Puhdista Smart merkkiä</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Mene sanaakaan kenttien etsiminen</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Puuttuu kentän tietueiden etsiminen</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Etsi tietueita kanssa päällekkäisiä Tunnisteet</toolStripMenuItem39>
+<toolStripMenuItem40>Kenttien kaksoisarvoja tietoja sisältävien tietueiden etsiminen</toolStripMenuItem40>
+<mnuEditLimitFields>Kenttien määrän rajoittaminen</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Vaihda otsikko</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matemaattiset funktiot</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Muuntaa Desimaaliasteet</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Siirry...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Siirry... Ennätys</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Siirry... Sivu</jumpToPageToolStripMenuItem>
+<mnuEditControl>Yksittäisen ohjausobjektin numero</mnuEditControl>
+<mnuEdit006>Lisää/Muokkaa 006</mnuEdit006>
+<mnuEdit006Edit>Muokkaa</mnuEdit006Edit>
+<mnuEdit006Book>Kirja</mnuEdit006Book>
+<mnuEdit006Serial>Jatkuvalle julkaisulle</mnuEdit006Serial>
+<mnuEdit006Map>Kartografiset resursseja</mnuEdit006Map>
+<mnuEdit006Sound>Äänitys</mnuEdit006Sound>
+<mnuEdit006Score>Pisteet</mnuEdit006Score>
+<mnuEdit006ER>Elektroninen resurssi</mnuEdit006ER>
+<mnuEdit006Visual>Visuaalista materiaalia</mnuEdit006Visual>
+<mnuEdit006Mixed>Sekoitettu aine</mnuEdit006Mixed>
+<mnuEdit008>Lisää/Muokkaa 008</mnuEdit008>
+<mnuEdit008Edit>Muokkaa</mnuEdit008Edit>
+<mnuEdit008Book>Kirja</mnuEdit008Book>
+<mnuEdit008Serial>Jatkuvalle julkaisulle</mnuEdit008Serial>
+<mnuEdit008Map>Kartografiset resursseja</mnuEdit008Map>
+<mnuEdit008Sound>Äänitys</mnuEdit008Sound>
+<mnuEdit008Score>Pisteet</mnuEdit008Score>
+<mnuEdit008ER>Elektroninen resurssi</mnuEdit008ER>
+<mnuEdit008Visual>Visuaalista materiaalia</mnuEdit008Visual>
+<mnuEdit008Mixed>Sekoitettu aine</mnuEdit008Mixed>
+<toolStripMenuItem27>Muuntaa Leikepöydän sisällön</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8 UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8 merkistö</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Valitse kaikki</mnuEditSelectAll>
+<mnuEditWrap>Rivitys</mnuEditWrap>
+<mnuEditRTL>Näytä oikealta vasemmalle</mnuEditRTL>
+<mnuFont>Fontit</mnuFont>
+<mnuFontFont>Fontti...</mnuFontFont>
+<mnuFontColor>Väri...</mnuFontColor>
+<mnuReports>Raportit</mnuReports>
+<mnuReportsField>Kenttäpelaajat huomioidaan</mnuReportsField>
+<tlReportsMaterialReport>Materiaalin tyyppi raportti</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Luo raportti</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Etsiä tietueita lajin mukaan</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Kirjat</booksToolStripMenuItem>
+<toolStripMenuItem32>Tietokoneen tiedostojen</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Jatkuvia julkaisuja</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Kartat</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Eri aineista</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Tulokset</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Äänitteet</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Visuaalisesta aineistosta</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Vahvista ISBN</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Vahvista ISSN</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Vahvista otsikot</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Palvelutila</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Vahvista otsikot</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Hallita lokitiedostoja</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Näytä nykyinen lokitiedosto</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Kehittynyt Log Management</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Lokitiedostojen poistaminen</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Katso kaikki lokitiedostot</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Työkalut</mnuTools>
+<mnuToolsCluster>Klusterointi työkalut</mnuToolsCluster>
+<mnutoolCutters>Cuttering työkalut</mnutoolCutters>
+<mnuToolsCalculator>Luettelo Laskin</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Luo leikkureita</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn taulukko 3 leikkureita</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Luo Call-numerot</mnuToolsCallNum>
+<mnuToolsControlNumber>Luo verrattavien</mnuToolsControlNumber>
+<toolStripMenuItem33>Linkitetyt tiedot työkalut</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Rakentaa linkitetyt tietueet</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Tietueen Deduplication</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA Helper</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU asetukset</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU asiakas</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 ladata ennätys</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 Poista tietue</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 päivitys tilojen</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Jatkuvaa tietojen muokkaaminen</mnuToolsEditConstant>
+<mnuToolsAssigned>Määritetty jatkuvaa tietojen</mnuToolsAssigned>
+<mnuConstant1>1) Määrittämätön merkkijono</mnuConstant1>
+<mnuConstant2>2) Määrittämätön merkkijono</mnuConstant2>
+<mnuConstant3>3) Määrittämätön merkkijono</mnuConstant3>
+<mnuConstant4>4) Määrittämätön merkkijono</mnuConstant4>
+<mnuConstant5>5) Määrittämätön merkkijono</mnuConstant5>
+<mnuConstant6>6) Määrittämätön merkkijono</mnuConstant6>
+<mnuConstant7>7) Määrittämätön merkkijono</mnuConstant7>
+<mnuConstant8>8) Määrittämätön merkkijono</mnuConstant8>
+<mnuConstant9>9) Määrittämätön merkkijono</mnuConstant9>
+<mnuConstant10>10) Määrittämätön merkkijono</mnuConstant10>
+<mnutoolmanageAutomate>Tehtävien hallinta</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Varatut tehtävät</mnuToolsAssignedTasks>
+<mnuDefTask>Tällä hetkellä saatavilla tehtävät</mnuDefTask>
+<task1>1) Määrittämätön tehtävä</task1>
+<task2>2) Määrittämätön tehtävä</task2>
+<task3>3) Määrittämätön tehtävä</task3>
+<task4>4) Määrittämätön tehtävä</task4>
+<task5>5) Määrittämätön tehtävä</task5>
+<task6>6) Määrittämätön tehtävä</task6>
+<task7>7) Määrittämätön tehtävä</task7>
+<task8>8) Määrittämätön tehtävä</task8>
+<task9>9) Määrittämätön tehtävä</task9>
+<task10>10) Määrittämätön tehtävä</task10>
+<task11>11) Määrittämätön tehtävä</task11>
+<task12>12) Määrittämätön tehtävä</task12>
+<task13>13) Määrittämätön tehtävä</task13>
+<task14>14) Määrittämätön tehtävä</task14>
+<task15>15) Määrittämätön tehtävä</task15>
+<task16>16) Määrittämätön tehtävä</task16>
+<task17>17) Määrittämätön tehtävä</task17>
+<task18>18) Määrittämätön tehtävä</task18>
+<task19>19) Määrittämätön tehtävä</task19>
+<task20>20) Määrittämätön tehtävä</task20>
+<mnuToolsValidate>Vahvista MARC-tietueista</mnuToolsValidate>
+<mnuToolsOAI>Harvest OAI</mnuToolsOAI>
+<mnutoolsurl>Luo MARC URL</mnutoolsurl>
+<toolStripMenuItem43>Muistisääntö muotoilutyökalut</toolStripMenuItem43>
+<toolStripMenuItem3>Normalisoida...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normalisoida LC tietueet</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normalisoi Microlif Records</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Tyhjien rivien poistaminen</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Poista tyhjät kentät ja osakentät</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Lisää tai poista kenttä</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Rakentaa uusi kenttä</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Kopioi kenttä</toolStripMenuItem26>
+<mnuToolsEditField>Kentän tietojen muokkaaminen</mnuToolsEditField>
+<mnuToolsIndicator>Muokkaa indikaattoritiedot</mnuToolsIndicator>
+<mnuToolsSubfield>Alikenttien tietojen muokkaaminen</mnuToolsSubfield>
+<mnuToolsSortby>Lajittele...</mnuToolsSortby>
+<toolStripMenuItem41>Lajittele tietueen järjestys...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Mukautettu kenttä</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Author-kenttä</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Puhelinnumero-kenttä</mnuToolsSortByCall>
+<mnuToolsSortControl>Numero ohjauskenttä</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Title-kenttä</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Lajittele kentät budjettiisi tallentaa...</toolStripMenuItem42>
+<mnuToolsCustomSort>Mukautettu lajittelu</mnuToolsCustomSort>
+<mnuToolsSort2>0xx lajittelukentät</mnuToolsSort2>
+<mnuToolsSort>Kaikki lajittelukentät</mnuToolsSort>
+<mnuToolsSwap>Vaihda kenttätiedot</mnuToolsSwap>
+<mnuToolsOptions>Asetukset</mnuToolsOptions>
+<mnu_ILS>[ILS nimi]</mnu_ILS>
+<mnu_ils_search>Etsi</mnu_ils_search>
+<updateCreateToolStripMenuItem>Päivitä/luo</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Asetukset</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>Etsi WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Lisää/Poista/Päivitä paikalliset bibliografiset tiedot</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Luo/päivitä bibliografiset tiedot</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Päivitä tilojen</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Laajennukset</pluginsToolStripMenuItem>
+<mnuHelp>Apua</mnuHelp>
+<mnuHelpContents>Sisällys ja ohje</mnuHelpContents>
+<mnuEditInfo>MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC ohje</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>US Kirjasto kongressin MARC apua</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Pakkaa tiedostot virheenkorjausta varten</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Mitä haluaisit tehdä?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Viitettä / sivu</label1>
+<lblPage>sivut</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Katso automaattisen tallennuksen tiedostot</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Tietojen vahvistus on saatavilla OCLC: n Termology palveluissa. Voidaksemme hyödyntää nämä palvelut, sinun on hyväksyttävä seurata ja noudattaa ja edellytykset asettamaa OCLC käyttöä ja uskollisuutta näistä palveluista.</lb_text>
+<label1>OCLC sopimuksen linkki:</label1>
+<lnk_Terms>Katso käyttöehdot</lnk_Terms>
+<cmd_Agree>Olen samaa mieltä</cmd_Agree>
+<cmd_disagree>Olen eri mieltä</cmd_disagree>
+<this>OCLC sopimuksen</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>englanti</comboBox1>
+<linkLabel2>Ei kiitos, vain käyttää oletusasetuksia</linkLabel2>
+<linkLabel1>Ryhdytään toimeen!</linkLabel1>
+<label2>Olen täällä auttaa sinua pääsemään alkuun!  Minä kysyä muutamia kysymyksiä ja saada sinut yo </label2>
+<label1>Tervetuloa MarcEdit 7!</label1>
+<this>MarcEdit 7 asennustoiminto</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>Edelleen tietojen asetukset... Suokukko!</linkLabel1>
+<label6>Muista, voit asettaa teemoja, fonttikoot, kielet ja käytön o </label6>
+<cmb_theme_picker>Oletus</cmb_theme_picker>
+<label5>Suositellut teema:</label5>
+<label4>PT.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Suositeltava fonttikoko:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Oletusfontti:</label2>
+<label1>MarcEdit ulkonäkö</label1>
+<this>Ohjattu käynnistystoiminto MarcEdit 7: Sivu 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit on MARC agnostikko, joten kerro vähän tietoja.</label5>
+<comboBox3>Valitse minulle</comboBox3>
+<label4>XML Processing Engine:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Oletuskoodaus levy:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>MARC muoto on:</label2>
+<linkLabel1>Olemme melkein valmis!  Orava!</linkLabel1>
+<label1>MarcEdit asetukset</label1>
+<this>Ohjattu käynnistystoiminto MarcEdit 7: Sivu 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Hauskaa muokkaamista!</linkLabel1>
+<label5>resursseja. GetString (”label5. Teksti ”)</label5>
+<label1>Onnittelen!  Voit käyttää MarcEdit 7</label1>
+<this>Ohjattu käynnistystoiminto MarcEdit 7: valmis</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Sulje</cmdClose>
+<ck_remote>Ratkaista kauko yksiköt</ck_remote>
+<ck_Marc8>Muuntaa MARC-8</ck_Marc8>
+<opt_default>Oletus</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Tallenna</cmdSave>
+<gp_XSLT>XSLT-moottorin</gp_XSLT>
+<label7>Lopullinen muoto</label7>
+<label6>Alkuperäinen muoto</label6>
+<label4>XSLT/XQuery polku</label4>
+<label3>Funktionimi (Alias):</label3>
+<label2>Yleistä:</label2>
+<lnkXMLFunctionWizard>Ohjattu toiminto XML</lnkXMLFunctionWizard>
+<groupBox1>Toiminnot</groupBox1>
+<lnkAdd>Lisää</lnkAdd>
+<lnkModify>Muokkaa</lnkModify>
+<lnkDelete>Poista</lnkDelete>
+<label5>Muotoilu:</label5>
+<label1>Määriteltyjä toimintoja:</label1>
+<this>Muokkaa XML toiminnot</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

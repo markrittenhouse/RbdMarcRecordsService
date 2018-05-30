@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarcRecordServiceApp</RootNamespace>
     <AssemblyName>MarcRecordServiceApp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -39,6 +39,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -48,6 +49,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
@@ -55,7 +57,8 @@
     </Reference>
     <Reference Include="MARCEngine, Version=1.2.18.0, Culture=neutral, PublicKeyToken=d91fa60ef56a91bc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\MarcEdit\5.6-32bit\MARCEngine.dll</HintPath>
+      <HintPath>..\..\References\MarcEdit\MarcEdit 7\MARCEngine.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SqlBulkCopy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=51331b1e3402a75f, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlBulkCopy.1.0.0\lib\net40\SqlBulkCopy.dll</HintPath>
@@ -69,11 +72,13 @@
     <Reference Include="System.Xml" />
     <Reference Include="Zoom.Net, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Zoom.net.Debug\Zoom.Net.dll</HintPath>
+      <HintPath>..\..\References\MarcEdit\MarcEdit 7\Zoom.Net.DLL</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Zoom.Net.YazSharp, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9a1d511dc9c6e010, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\References\Zoom.net.Debug\Zoom.Net.YazSharp.dll</HintPath>
+      <HintPath>..\..\References\MarcEdit\MarcEdit 7\Zoom.Net.YazSharp.DLL</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -112,8 +117,10 @@
     <Compile Include="Core\DataAccess\Factories\Base\FactoryBase.cs" />
     <Compile Include="Core\DataAccess\Factories\CallNumberFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\MarcFieldParsingFactory.cs" />
-    <Compile Include="Core\DataAccess\Factories\MarcRecordsProductFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\MarcRecordFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\DailyMarcRecordFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\R2ProductFactory.cs" />
+    <Compile Include="Core\DataAccess\Factories\SqlBulkCopyFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\TaskResultFactory.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\BooleanParameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\ByteArrayParameter.cs" />
@@ -129,7 +136,8 @@
     <Compile Include="Core\MarcRecord\LcMarcFile.cs" />
     <Compile Include="Core\MarcRecord\MARC21slim.cs" />
     <Compile Include="Core\MarcRecord\MarcFileData.cs" />
-    <Compile Include="Core\MarcRecord\MarcRecordProvider.cs" />
+    <Compile Include="Core\MarcRecord\MarcRecordProviderType.cs" />
+    <Compile Include="Core\MarcRecord\MarcRecordService.cs" />
     <Compile Include="Core\MarcRecord\NlmMarcFile.cs" />
     <Compile Include="Core\MarcRecord\R2LibraryMarcFile.cs" />
     <Compile Include="Core\MarcRecord\RittenhouseMarcFile.cs" />

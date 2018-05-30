@@ -12,8 +12,14 @@ namespace MarcRecordServiceApp.Core.MarcRecord
         string EncodingLevel { get;}
         string MrcFileText { get; set; }
 
-        MarcRecordProvider RecordProvider { get; }
+        MarcRecordProviderType RecordProviderType { get; }
         Product Product { get; }
         DateTime ProcessedDate { get; }
+
+        int? MarcRecordId { get; set; }
+        int? MarcRecordProviderId{ get; set; }
+
+        bool IsProviderUpdate { get; set; }
+        bool IsFileUpdate { get; set; }
     }
 }

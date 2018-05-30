@@ -4,18 +4,26 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public class RittenhouseMarcFile : MarcFileData, IMarcFile
     {
-        private readonly MarcRecordProvider _marcRecordProvider;
-
         public RittenhouseMarcFile(Product product)
             : base(product)
         {
-            _marcRecordProvider = MarcRecordProvider.Rbd;
+            RecordProviderType = MarcRecordProviderType.Rbd;
         }
 
-        public MarcRecordProvider RecordProvider
+        public RittenhouseMarcFile(Product product, int? marcRecordId, int? marcRecordProviderId)
+            : base(product)
         {
-            get { return _marcRecordProvider; }
+            RecordProviderType = MarcRecordProviderType.Rbd;
+            MarcRecordId = marcRecordId;
+            MarcRecordProviderId = marcRecordProviderId;
         }
+
+        public MarcRecordProviderType RecordProviderType { get; }
+
+        public int? MarcRecordId { get; set; }
+        public int? MarcRecordProviderId { get; set; }
+        public bool IsProviderUpdate { get; set; }
+        public bool IsFileUpdate { get; set; }
     }
 }
 

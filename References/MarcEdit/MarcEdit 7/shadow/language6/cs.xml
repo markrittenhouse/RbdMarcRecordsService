@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Extrahovat záznamy</mnuExtract>
+<cmenuClipboard>Kopírovat do schránky</cmenuClipboard>
+<cmenuSubfields>Počet dílčích polí</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Pomoc</cmenuHelp>
+<cmd_OK>Zavřít</cmd_OK>
+<cmd_Report>Generovat sestavu</cmd_Report>
+<lb_ReportStyle>Zpráva styl:</lb_ReportStyle>
+<opt_tab>Karta zpráva s oddělovači</opt_tab>
+<opt_xml>Zpráva XML</opt_xml>
+<opt_html>Zpráva HTML</opt_html>
+<this>Počet polí</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Směr:</groupBox3>
+<rd_down>Dolů</rd_down>
+<rd_up>Nahoru</rd_up>
+<btn_findall>Najít vše</btn_findall>
+<groupBox1>Možnosti hledání:</groupBox1>
+<ck_f_whole_word>Hledat jen celá slova</ck_f_whole_word>
+<ck_find_regex>Použít regulární výrazy</ck_find_regex>
+<ck_f_match_case>Rozlišovat malá/velká</ck_f_match_case>
+<cmdFClose>Zavřít</cmdFClose>
+<cmdFFind>Najít</cmdFFind>
+<lb_FindWhat>Co hledat:</lb_FindWhat>
+<cmdNav_Find>Najít</cmdNav_Find>
+<cmdReplaceNav>Nahradit</cmdReplaceNav>
+<ckReplaceConditional>Provádět hledání a nahrazení, pokud...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Jestliže:</label1>
+<cmd_R_Close>Zavřít</cmd_R_Close>
+<cmd_R_All>Nahradit vše</cmd_R_All>
+<cmd_R_Replace>Nahradit</cmd_R_Replace>
+<groupBox2>Možnosti hledání:</groupBox2>
+<ck_Replace_ExactWordMatch>Shoda přesné slovo</ck_Replace_ExactWordMatch>
+<ckMultiLine>Víceřádkové hodnocení</ckMultiLine>
+<ckFile>Použít externí hledání/nahrazení kritéria</ckFile>
+<ck_R_RegExp>Použít regulární výrazy</ck_R_RegExp>
+<ck_R_Case>Rozlišovat malá/velká</ck_R_Case>
+<lb_ReplaceWith>Nahradíte:</lb_ReplaceWith>
+<lb_R_FindWhat>Najdete:</lb_R_FindWhat>
+<this>Najít/nahradit:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Stav:
+
+</lb_bProccess_status>
+<ck_bTask>Načítání úkolů</ck_bTask>
+<ckBatchProcessSubfolders>Včetně podsložek</ckBatchProcessSubfolders>
+<lb_Operation>Funkce:</lb_Operation>
+<cmdBClose>Zavřít</cmdBClose>
+<cmdBProcess>Proces</cmdBProcess>
+<lb_Extensions>Typy souborů:</lb_Extensions>
+<lb_BSource>Zdrojový adresář:</lb_BSource>
+<lbBTitle>Dávkové zpracování MARC záznamů</lbBTitle>
+<groupBox1>Možnosti</groupBox1>
+<this>Dávkové zpracování záznamů</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Dávkové zpracování</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Finální kódování:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Původní kódování:</lb_encoding>
+<lb_UTF8_Header>Převod znaků</lb_UTF8_Header>
+<cmdCancel>Zavřít</cmdCancel>
+<cmdOK>Proces</cmdOK>
+<lb_UTF8_Dest>Cílový soubor:</lb_UTF8_Dest>
+<lb_UTF8_Source>Zdrojový soubor:</lb_UTF8_Source>
+<groupBox1>Nastavení kódování</groupBox1>
+<this>CharacterSet převody</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Nástroje pro Clustering dat</label1>
+<label2>Datové služby clusterů nástroje poskytují sadu zjednodušené clustering možností pro vyčištění dat rozšířeného dávkové pøíslu¹enství.  Pro pokročilé, clustering funkce, zvažte použití OpenRefine.</label2>
+<groupBox1>Možnosti</groupBox1>
+<rdCustom>Vlastní pole index</rdCustom>
+<rdControlData>Indexovat řízené Data (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Indexujte všechna Data</rdAll>
+<cmdImport>Importovat Data</cmdImport>
+<label3>Zdrojový soubor:</label3>
+<label9>Seřadit Data:</label9>
+<label8>Zobrazení clusterů:</label8>
+<label7>Clusteru na následující dílčí pole:</label7>
+<cmbclusteringalgorithm>Levenshtein vzdálenost</cmbclusteringalgorithm>
+<label6>Vyberte Clustering algoritmus:</label6>
+<cmbClusterField>Názvy (1xx, 7xx)</cmbClusterField>
+<label4>Vyberte data, která chcete zahrnout do clusteru:</label4>
+<cmdGenerateCluster>Vytvoření clusteru</cmdGenerateCluster>
+<cmbAlg>Levenshtein vzdálenost</cmbAlg>
+<lnkAddCriteria>Přidání aktualizace</lnkAddCriteria>
+<lnkClose>Zavřít</lnkClose>
+<lnkEditCluster>Zpracovat všechny změny</lnkEditCluster>
+<label5>Údaje o clusteru:</label5>
+<this>Nástroje pro clustering</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Úkolu Debugger</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Kontextová oddělovač</label8>
+<lb_Tab_Header>Exportní Tab oddělovači záznamy</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>V poli oddělovač</label18>
+<lbdelimiter>Vyberte oddělovač polí</lbdelimiter>
+<cmdTClose2>Zavřít</cmdTClose2>
+<cmdTNext>Další &gt;&gt;</cmdTNext>
+<label1>Krok 1: Nastavení cesty k souboru</label1>
+<ck_normalize>Normalizovat data polí</ck_normalize>
+<cmd_tab2_back>Zpět</cmd_tab2_back>
+<lnkSettings>Nastavení...</lnkSettings>
+<lnkDeleteField>Odstranit pole</lnkDeleteField>
+<lnkAddField>Přidat pole</lnkAddField>
+<label14>Sekundární pole:</label14>
+<label11>Obor:</label11>
+<cmdTClose>Zavřít</cmdTClose>
+<cmdTExport>Exportovat</cmdTExport>
+<label2>Krok 2: Definice pole/dílčí pole pro Export</label2>
+<label3>Exportní Tab oddělovači záznamy</label3>
+<mnuLoad>Načíst nastavení</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Uložit nastavení</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Vymazat nastavení</menuItem3>
+<this>Exportní Tab oddělovači záznamy</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Velikost:</label4>
+<lb_Example>Vzorový Text</lb_Example>
+<lb_lang_font>Zvolte písmo:</lb_lang_font>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zavřít</cmdClose>
+<this>Vybrat písmo</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Úlohy pro spuštění importu</groupBox1>
+<lnkSelectPre>Vyberte úkol</lnkSelectPre>
+<cname>Jméno</cname>
+<cPath>Cesty</cPath>
+<groupBox2>Úlohy ke spuštění exportu</groupBox2>
+<linkLabel1>Vyberte úkol</linkLabel1>
+<columnHeader1>Jméno</columnHeader1>
+<columnHeader2>Cesty</columnHeader2>
+<cmdSave>Uložit</cmdSave>
+<cmdClose>Zavřít</cmdClose>
+<deleteItemToolStripMenuItem>Odstranit položku</deleteItemToolStripMenuItem>
+<this>Nastavení procesu ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Včetně podsložek</ckJoinSubfolders>
+<cmdEditFile>Upravit soubor</cmdEditFile>
+<lnkJoinedFiles>Zobrazit připojené soubory</lnkJoinedFiles>
+<label19>Typy souborů:</label19>
+<ck_JoinIndividual>Připojte se do jednotlivých souborů</ck_JoinIndividual>
+<cmdJoinCancel>Zavřít</cmdJoinCancel>
+<cmdJoinProcess>Proces</cmdJoinProcess>
+<lb_Join_Files>Soubory, které chcete připojit:</lb_Join_Files>
+<lb_Join_Source>Uložte soubor:</lb_Join_Source>
+<lb_Join_Header>MARCJoin nástroj</lb_Join_Header>
+<lbJoinStatus>Stav:</lbJoinStatus>
+<groupBox1>Možnosti</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Záznamů na soubor:</lb_Split_Records>
+<cmdSplitClose>Zavřít</cmdSplitClose>
+<cmdSplitProcess>Proces</cmdSplitProcess>
+<lb_Split_Folder>Cílová složka:</lb_Split_Folder>
+<lb_Split_Source>Zdrojový soubor:</lb_Split_Source>
+<lb_Split_Header>MARCSplit nástroj</lb_Split_Header>
+<groupBox1>Možnosti</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Název tématu:</label1>
+<label2>Popis:</label2>
+<label3>Globální hodnoty</label3>
+<label4>Barva písma</label4>
+<label5>Barva pozadí</label5>
+<label6>Barva pozadí</label6>
+<label7>Barva písma</label7>
+<label8>MarcEditor hodnoty</label8>
+<cmdSave>Uložit</cmdSave>
+<cmdClose>Zavřít</cmdClose>
+<cmdPreview>Náhled</cmdPreview>
+<richTextBox1>Vzorový Text</richTextBox1>
+<label9>MarcEditor displej:</label9>
+<cmdOpen>Otevřené</cmdOpen>
+<label10>Skupinový rámeček pozadí</label10>
+<groupBox1>Skupinový rámeček příklad</groupBox1>
+<this>Tvůrce MarcEdit</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>Průvodce řešením potíží MarcEdit byl navržen tak, aby pomoci uživatelům najít pomoc </label1>
+<gpStart>Možnosti</gpStart>
+<rdErrorMessage>Mám chybová zpráva</rdErrorMessage>
+<rdErrorNumber>Mám číslo chyby</rdErrorNumber>
+<lbMessage>{Zpráva}</lbMessage>
+<cmdPage1>Další</cmdPage1>
+<gpResults>Výsledky</gpResults>
+<cmdClose>Zavřít</cmdClose>
+<lnkCreateDebugPackage>Vytvoření ladění balíčku k odeslání pro ladění?</lnkCreateDebugPackage>
+<label2>Poradce při potížích nemohl najít článek v databázi knowledge base </label2>
+<this>Poradce při potížích s MarcEdit</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Další XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Vyberte konečný formát</label17>
+<label16>Krok 3:</label16>
+<label15>Uložte soubor:</label15>
+<label13>Krok 2:</label13>
+<label12>Název transformace:</label12>
+<lnkNextPg1>Přejděte k dalšímu kroku</lnkNextPg1>
+<label4>Vyberte soubor:</label4>
+<label3>Krok 1:</label3>
+<label2>zdroje. GetString ("label2. Text")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Prvek dokumentu:</lbTop>
+<ckTopLevel>Použít prvek dokumentu</ckTopLevel>
+<lnkNextPg2>Přejděte k dalšímu kroku</lnkNextPg2>
+<label7>Vyberte prvek záznamu</label7>
+<label6>Krok 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Definovat mapování</label14>
+<lnkNextP3>Přejděte k dalšímu kroku</lnkNextP3>
+<groupBox2>Argumenty</groupBox2>
+<ck_filing_characters>Výpočet společné nonfiling údajů</ck_filing_characters>
+<ck_sort>Třídící pole</ck_sort>
+<button2>Načíst šablonu</button2>
+<toolStripMenuItem2>Upravit položku</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Odstranit položky</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Připojit položky</joinItemsToolStripMenuItem>
+<groupBox1>Nastavení</groupBox1>
+<ckTrim>Ořízněte existující interpunkce</ckTrim>
+<ck_Repeatable>Opakovatelné dílčí pole</ck_Repeatable>
+<P3_ck_constant>Stálé údaje</P3_ck_constant>
+<P3_cmd_Apply>Přidat Argument</P3_cmd_Apply>
+<P3_lb_punct>Termín. Interpunkce:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Ind.:</P3_lb_indicators>
+<P3_mapto>Mapa pro:</P3_mapto>
+<P3_lb_select>Vyberte:</P3_lb_select>
+<label9>Krok 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Zavřít průvodce</lnkClose>
+<label11>Transformace byla vytvořena a přidána do seznamu XML funkce.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Typ: kniha</label11>
+<lbbTitle>006/008 možnosti:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>Fest:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>Pokr:</lnkbCont>
+<lnkbForm>Forma:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Neduhy:</lnkbIlls>
+<lnkbType>Typ:</lnkbType>
+<label12>Typ: Elektronický zdroj</label12>
+<label5>006/008 možnosti:</label5>
+<lnkcFile>Soubor:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Typ:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Termíny:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Možnosti ctrY:</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 možnosti:</label1>
+<label13>Typ: mapa</label13>
+<label3>006/008 možnosti:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>Forma:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>PROJ:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Typ:</lnkmType>
+<label14>Typ: Smíšené materiály</label14>
+<label4>006/008 možnosti:</label4>
+<lnkmmForm>Forma:</lnkmmForm>
+<lnkmmType>Typ:</lnkmmType>
+<label15>Typ: skóre</label15>
+<label6>006/008 možnosti:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Forma:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Kompozice:</lnkscComp>
+<lnkscType>Typ:</lnkscType>
+<label10>Typ: Pokračující zdroj</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 možnosti:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>Pokr:</lnkslCont>
+<lnkslForm>Forma:</lnkslForm>
+<lnkslOrig>Orig.:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>REGL:</lnkslRegl>
+<lnkslFreq>Frekvence:</lnkslFreq>
+<lnkslType>Typ:</lnkslType>
+<label16>Typ: Zvukový záznam</label16>
+<label8>006/008 možnosti:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Forma:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Kompozice:</lnksdComp>
+<lnksdType>Typ:</lnksdType>
+<label17>Typ: Vizuální materiály</label17>
+<label9>006/008 možnosti:</label9>
+<lnkvmTech>Tech:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Forma:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Čas:</lnkvmTime>
+<lnkvmType>Typ:</lnkvmType>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_Close>Zavřít</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Forma:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>zdroje. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>O mně:</lb_Authors>
+<lbBuildCode>Aktualizujte kód:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.NET</lnkHomepage>
+<label5>Webové stránky projektu:</label5>
+<label2>Poděkování:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Změněno:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Autor:</lbAuthor>
+<lbVersion>Číslo sestavení:</lbVersion>
+<label4>O MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.NET/Technical-details</linkLabel1>
+<label1>Technické detaily:</label1>
+<this>O MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Zatížení</cmdLoad>
+<cmdClose>Zavřít</cmdClose>
+<cmdDelete>Odstranit</cmdDelete>
+<this>Automatické ukládání souborů:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Upravit pole</lnk_Edit_Fields>
+<lnkCopy>Kopírovat Data polí</lnkCopy>
+<lnkSwapFields>Odkládací pole</lnkSwapFields>
+<lnkIndicators>Upravit ukazatele</lnkIndicators>
+<lnkSubfield>Upravit Data dílčího pole.</lnkSubfield>
+<lnkAddDelete>Přidat či odstranit pole</lnkAddDelete>
+<groupBox8>Odstranit pole možností</groupBox8>
+<ckRemoveByPostition>Odstranit pozici pole</ckRemoveByPostition>
+<ck_RemoveIfNot>Odstranit pole data neodpovídají-li</ck_RemoveIfNot>
+<ck_dedup>Odstranění duplicitních dat</ck_dedup>
+<groupBox7>Přidat možnosti pole</groupBox7>
+<ck_A_addifnotduplicate>Přidejte pouze pole, ne-li duplicitní</ck_A_addifnotduplicate>
+<ck_A_Insert>Vložit před</ck_A_Insert>
+<ck_A_not_present>Přidání pole pouze, není-li přítomen</ck_A_not_present>
+<ck_AddIfPresent>Pokud je k dispozici, přidejte pole</ck_AddIfPresent>
+<ck_last>Vložte poslední</ck_last>
+<groupBox6>Obecné možnosti</groupBox6>
+<ck_delete_batch>Zpracování dávkové operace</ck_delete_batch>
+<ck_A_Case>Rozlišovat malá/velká</ck_A_Case>
+<ck_A_regular_Expression>Použít regulární výraz</ck_A_regular_Expression>
+<label1>Co hledat:</label1>
+<cmd_A_Close>Zavřít</cmd_A_Close>
+<cmd_A_Add>Přidat pole</cmd_A_Add>
+<cmd_A_Delete>Odstranit pole</cmd_A_Delete>
+<label3>Datové pole:</label3>
+<lb_A_Field>Obor:</lb_A_Field>
+<lb_A_Title>Přidat či odstranit pole nástroj</lb_A_Title>
+<cmd_Sub_Close>Zavřít</cmd_Sub_Close>
+<cmd_Sub_Remove>Odstranit Text</cmd_Sub_Remove>
+<cmd_Sub_Replace>Nahradit Text</cmd_Sub_Replace>
+<groupBox2>Možnosti hledání:</groupBox2>
+<ckDeleteDuplicate>Odstranit duplicitní dílčí pole</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Odstranit dílčí pole</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Přesunout data dílčího pole.</ck_move_subfield>
+<ck_Reg_Express>Použít regulární výraz</ck_Reg_Express>
+<ck_Sub_Case>Rozlišovat malá/velká</ck_Sub_Case>
+<ck_Sub_New>Pouze nové dílčí pole</ck_Sub_New>
+<ck_Sub_NotPresent>Přidat dílčí pole, není-li přítomen</ck_Sub_NotPresent>
+<label8>Nahradíte:</label8>
+<label7>Datové pole:</label7>
+<label6>Sekundární pole:</label6>
+<label5>Obor:</label5>
+<lb_Sub_Title>Upravit nástroj dílčí pole</lb_Sub_Title>
+<cmd_I_Close>Zavřít</cmd_I_Close>
+<cmd_I_Replace>Nahradit</cmd_I_Replace>
+<lb_Ind_Replace>Nahradit s indikátory</lb_Ind_Replace>
+<label12>Datové pole:</label12>
+<label11>Indikátory</label11>
+<label10>Obor:</label10>
+<lb_Ind_Title>Upravit ukazatel nástroje</lb_Ind_Title>
+<ck_Match_All_Subfields>Odpovídají všechny dílčí pole</ck_Match_All_Subfields>
+<ck_swap_expression>Považovat za regulární výraz</ck_swap_expression>
+<label4>Najdete:</label4>
+<cmd_Swap_Close>Zavřít</cmd_Swap_Close>
+<cmd_Swap_Process>Proces</cmd_Swap_Process>
+<groupBox3>Možnosti hledání</groupBox3>
+<ck_swap_once_per>Zpracovat jedno pole na swap</ck_swap_once_per>
+<ck_swap_sort>Řazení změněno pole</ck_swap_sort>
+<ck_Swap_Override>Přidat do existující/vytvořit nový</ck_Swap_Override>
+<ck_Swap_Add>Přidat do existujícího pole</ck_Swap_Add>
+<ck_Swap_Copy>Zkopírovat zdroj</ck_Swap_Copy>
+<label20>Upravené údaje:</label20>
+<label22>Dílčí pole</label22>
+<label23>Indikátory</label23>
+<label24>Pole</label24>
+<label19>Původní údaje:</label19>
+<label18>Najdete:</label18>
+<label17>Dílčí pole</label17>
+<label16>Indikátory</label16>
+<label15>Pole</label15>
+<lb_Swap_Title>Odkládací pole nástroj</lb_Swap_Title>
+<label14>Pole Data</label14>
+<lbFindInField>Najít v poli</lbFindInField>
+<groupBox4>Možnosti</groupBox4>
+<ck_copy_field_regex>Použít regulární výrazy</ck_copy_field_regex>
+<ck_copy_delete>Odstranit pole zdroje</ck_copy_delete>
+<label2>Cílové pole:</label2>
+<cmdCopyClose>Zavřít</cmdCopyClose>
+<cmdCopy>Kopírovat</cmdCopy>
+<label9>Zdrojové pole:</label9>
+<label13>Kopírovat Data polí</label13>
+<label26>Pozice:</label26>
+<label21>Nahradíte:</label21>
+<label25>Najdete:</label25>
+<groupBox5>Možnosti</groupBox5>
+<ck_editfield_match_case>Rozlišovat malá/velká</ck_editfield_match_case>
+<ck_UserRegularExpressions>Použít regulární výrazy</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Zavřít</cmdFieldEdit_Close>
+<cmdEditField_Process>Proces</cmdEditField_Process>
+<label27>Obor:</label27>
+<label28>Upravit Data polí</label28>
+<this>Nástroje pro úpravu dávky MarcEdit.NET</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<label1>Testovací BibFrame2 je snadno použitelný nástroj, který umožňuje metadat speci </label1>
+<label2>Zdrojový soubor:</label2>
+<label3>Uložte soubor:</label3>
+<label4>Serializace dat:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Pravidla pro převod:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Úpravy</lnkEditXQuery>
+<label7>Typ souboru:</label7>
+<label8>Profil:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Pole ID:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Uložte soubor:</label3>
+<label2>Zdrojový soubor:</label2>
+<label1>Propojených dat nástroj byl navržen k Procházet sadu záznamů MARC a řešení Přístupové body v 1xx, 6xx a 7xx datové prvky do jejich propojených dat ukazatelích.</label1>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Zavřít</cmdCancel>
+<groupBox1>ID služby</groupBox1>
+<ckLimiter>Limit rozlišení:</ckLimiter>
+<ck3xxFields>Proces 3xx pole</ck3xxFields>
+<label4>OCLC číslo:</label4>
+<ckWorkId>Vložit ID práce OCLC</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>Automatická detekce předmětu ID</ckAutodetect>
+<ck_viaf>OCLC PORTÁLY</ck_viaf>
+<ck_loc>Autodetekce Main/přidána položka</ck_loc>
+<label5>Soubor pravidel:</label5>
+<cmdStatus>Stav služby</cmdStatus>
+<lbstatus>Stav:</lbstatus>
+<this>Vytvoření propojené záznamy</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Najít</lnkFind>
+<lbResults>Výsledky:</lbResults>
+<lnkCatalog>Kyle Banerjee katalogu kalkulačka</lnkCatalog>
+<cmdClose>Zavřít</cmdClose>
+<label1>LC Cutters</label1>
+<this>Katalogizaci kalkulačka</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>Nástroj pro rozpoznávání znaků používá heuristical proces dát nejlepší odhad relaxa </label1>
+<cmdDetect>Detekovat</cmdDetect>
+<cmdClose>Zavřít</cmdClose>
+<label2>Výsledky:</label2>
+<ckDetailed>Podrobné výsledky</ckDetailed>
+<this>Rozpoznávání znaků</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>zdroje. GetString ("label1. Text")</label1>
+<lnkClassify>O OCLC klasifikovat služby</lnkClassify>
+<ck_all>Přidat do všech záznamů</ck_all>
+<ck_single>Přidat vybraného záznamu</ck_single>
+<ck_lc>Knihovna Kongresu</ck_lc>
+<ck_dewey>Dewey Decimal</ck_dewey>
+<cmdProcess>Klasifikovat</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<label5>Pokud tato pole nejsou k dispozici (příklad: 050 060; 090; 092)</label5>
+<label4>Vložte vygenerovaný klasifikace do následujícího pole:</label4>
+<ck_cutters>Výpočet řezačky a data</ck_cutters>
+<ck_use_z>Použít z dílčího pole pro odpovídající</ck_use_z>
+<ck_DateMod>Přidat příznak k datu</ck_DateMod>
+<ck_omit_serial>Vynechat datum pro seriály</ck_omit_serial>
+<ck_omit_integrated>Vynechat datum pro integrované prostředky</ck_omit_integrated>
+<ck_omit>Připojovat data výjimky</ck_omit>
+<ck_always_fast>Vždy přidat rychle nadpisy</ck_always_fast>
+<ck_conditional_fast>Přidejte rychlé záhlaví, když není rubrik jsou k dispozici</ck_conditional_fast>
+<label6>Indikátory:</label6>
+<cmdInsert>Vkládání instrukce</cmdInsert>
+<cmdClassification>Klasifikace</cmdClassification>
+<cmdSubjects>Rubrik</cmdSubjects>
+<lnkClassification>Vyberte klasifikaci</lnkClassification>
+<lnkSubjects>Zvolte téma možnosti</lnkSubjects>
+<lnkOptions>Nastavit možnosti</lnkOptions>
+<cmdOptions>Možnosti</cmdOptions>
+<label2>Sekundární pole:</label2>
+<label3>Dílčí pole cuttering:</label3>
+<this>Generovat klasifikace</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Stálé údaje</columnHeader1>
+<columnHeader3>Zástupce</columnHeader3>
+<cmdClose>Zavřít</cmdClose>
+<lnkKey>Přiřazení kláves</lnkKey>
+<lnkEdit>Upravit vybraný řetězec</lnkEdit>
+<lnkDelete>Odstranit vybraný řetězec</lnkDelete>
+<lnkNew>Vytvořit nový řetězec</lnkNew>
+<lbActions>Akce:</lbActions>
+<lbMacro>Stálé údaje:</lbMacro>
+<this>Upravit konstantní Data</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Předpona čísla:</lb_prefix>
+<lb_digit>Úvodní číslice:</lb_digit>
+<ck_autogenerate>Vložení nových záznamů</ck_autogenerate>
+<button1>Ok</button1>
+<button2>Zavřít</button2>
+<lb_length>Délka číslice (bez předpony)</lb_length>
+<ckgenerate>Generování aktuálního souboru</ckgenerate>
+<ck_label>Označit záznam čísla</ck_label>
+<label1>Pole/parametru Dílčí_pole (příklad: 001, 949$ b)</label1>
+<ck_repeat>Vždy vložit</ck_repeat>
+<this>Generování kontrolních čísel</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Použít odpovídající rozmazaný</ck_UseFuzzyMatch>
+<ck_save>Odstraňování duplicitních dat položky, které chcete uložte:</ck_save>
+<ck_unique>Jedinečné položky výstupu</ck_unique>
+<ck_remove>Odebrat duplicitní položky</ck_remove>
+<lbOptions>Možnosti:</lbOptions>
+<label1>Dedup vedení:</label1>
+<lb_Control>Ovládací prvek pole:</lb_Control>
+<cmdClose>Zavřít</cmdClose>
+<cmdOK>Proces</cmdOK>
+<btnCancel>Zrušit</btnCancel>
+<btnNext>Další</btnNext>
+<label4>Uložte soubor:</label4>
+<label3>Vyhledání duplicit z následujících souborů:</label3>
+<label2>Nástroj pro odstranění duplicitních záznamů</label2>
+<label5>Důvěra:</label5>
+<this>Odstranění duplicitních záznamů</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Vyberte soubor protokolu:</label1>
+<groupBox1>Možnosti</groupBox1>
+<ckChanged>Extrahování změněné záznamy</ckChanged>
+<ckEnhance>Zvýšit protokolování</ckEnhance>
+<label2>Vyberte záznamy:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<this>Správce protokolů</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext je laboratorní prostor k zavedení nové nástroje a pojmy související s </lbaboutmn>
+<lnkOpenRefine>OpenRefine integrace</lnkOpenRefine>
+<lnkSPARQL>SPARQL prohlížeč</lnkSPARQL>
+<lnkLinkIds>Identifikátory propojení</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Tento nástroj použít k přesunu dat mezi MARC nebo si MarcEdit symbolický formát a OpenRef </label1>
+<label2>Zdrojový soubor:</label2>
+<label3>Uložte soubor:</label3>
+<rdExport>Export do OpenRefine</rdExport>
+<rdImport>Importovat z OpenRefine</rdImport>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Zavřít</cmdCancel>
+<lbStatus>Stav:</lbStatus>
+<groupBox1>Možnosti</groupBox1>
+<this>Nástroj pro přenos dat OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Vyberte soubory do sdílené složky:</label1>
+<ckconfig>Možnosti konfigurace</ckconfig>
+<label2>Exportuje všechna data v adresáři config uživatele.  To zahrnuje konfigurační data, </label2>
+<ckXSLT>Funkce XSLT</ckXSLT>
+<label3>Exportujte definice stylů XSLT
+</label3>
+<ckMacros>Definovaná makra a úkoly</ckMacros>
+<label4>Exportovat všechny definované makra a úkoly...
+</label4>
+<label5>Exportujte všechny definované šablony typu materiálu MarcEditor.</label5>
+<ckTemplates>Šablony definované MarcEditor</ckTemplates>
+<cmdExport>Exportovat</cmdExport>
+<cmdClose>Zavřít</cmdClose>
+<this>Nastavení exportu</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Akce</columnHeader2>
+<columnHeader1>Nalezený Text</columnHeader1>
+<button1>Zavřít</button1>
+<button2>Přejít na stránku</button2>
+<cmdFindUpdate>Upravit dotaz hledání</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Najít všechny výsledky</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<lbField>Zadejte pole číslo volání k vyhodnocení. (např. 090)</lbField>
+<groupBox1>Možnosti</groupBox1>
+<rdTitle>Cutter pořadí (2xx, 1xx)</rdTitle>
+<rdDefault>Cutter pořadí (1xx, 2xx)</rdDefault>
+<groupBox2>Možnosti</groupBox2>
+<label1>Najdete:</label1>
+<rdCustomField>Vlastní pole</rdCustomField>
+<rdMainEntry>Vyhodnotit hlavní vstup (1xx, 245)</rdMainEntry>
+<this>Generovat řezačky</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Definovaná OAI servery:</label1>
+<label2>(Použijte shift/řazení převodů pro výběr více položek)</label2>
+<ck_date>Sklizeň od posledního stahování</ck_date>
+<cmdCreate>Uložit</cmdCreate>
+<button1>Zavřít</button1>
+<this>Vytvořit dávkovou úlohu sklizeň</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Bajtů</BytesGroup>
+<label5>Bity</label5>
+<label4>ISO-8859-1</label4>
+<label3>Desítkové</label3>
+<label2>Hex</label2>
+<columnHeader1>Pozice</columnHeader1>
+<columnHeader2>Bajtů</columnHeader2>
+<columnHeader3>Text</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Soubor</menuItem1>
+<openToolStripMenuItem>Otevřené</openToolStripMenuItem>
+<ExitProgram>Ukončit</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>Okno výsledky MarcEdit</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Funkce název (Alias):</lb_Alias>
+<label1>Spojit se s:</label1>
+<cmd_ok>Uložit</cmd_ok>
+<cmd_close>Zavřít</cmd_close>
+<this>Připojte se k XML funkce</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Jméno</columnHeader1>
+<columnHeader2>Cesta</columnHeader2>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zavřít</cmdClose>
+<this>Dostupné úlohy</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Nástroje</mnuTools>
+<mnuAddinsEditLinkedData>Upravit pravidla propojených dat</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Upravit soubor pravidel XML</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Jak profil nové koncové body?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Aktualizovat soubor pravidel</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Správa protokolu</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Rozšířeného protokolu řízení</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Odstranit soubory protokolu</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Zobrazení všech souborů protokolů</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Text s oddělovači Překladatel</mnuAddinTranslator>
+<mnuExportGroup>Exportujte...</mnuExportGroup>
+<mnuToolsTabbed>Exportní Tab oddělovači záznamy</mnuToolsTabbed>
+<mnuToolsGateway>Exportovat záznamy MARC</mnuToolsGateway>
+<mnuToolsSelect>Vyberte záznamy, MARC</mnuToolsSelect>
+<mnuToolsDelete>Odstranit vybrané záznamy</mnuToolsDelete>
+<mnuToolsExtract>Extrahovat vybrané záznamy</mnuToolsExtract>
+<mnuToolsCharacterConversion>Nástroje pro převod znaků</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>CharacterSet převody</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Rozpoznávání znaků</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>Průvodce skriptu MarcEdit</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL Explorer</mnuExplorer>
+<toolStripMenuItem4>OAI Harvester nástroje</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Sklizeň OAI záznamy</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Dávkový kombajn</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Vytvořit dávkovou úlohu</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Spustit dávkové sklizeň</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Exportovat</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Importovat</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC nástroje</mnuToolsUnimarcTools>
+<mnuAddinURL>Ověření adresy URL</mnuAddinURL>
+<mnuAddinZ39_50>Klient Z39.50/SRU</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>Nástroje pro zpracování MARC</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Dávkové zpracování záznamů</mnuToolsBatch>
+<toolClusterData>Datové nástroje clusteru</toolClusterData>
+<mnuToolsDedup>Najít duplicitní záznamy</mnuToolsDedup>
+<generateToolStripMenuItem>Generovat...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Volat na telefonní čísla</mnuGenerateCallnumber>
+<toolStripMenuItem3>RYCHLÝ nadpisy</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC rubrik</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Sloučit záznamy</mnutoolsmerge>
+<toolStripMenuItem5>RDA Pomocník</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC operace</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC rekordní Downloader</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Aktualizovat záznam WorldCat hospodářství</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Nahrát Bibliograph záznamů na WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Ověření hlavičky</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Stav služby</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Ověření hlavičky</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Předvolby</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Moduly plug-in</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>CD ISIS ISO =&gt; MARC překlad</mnuaddincdsisis>
+<mnuHelp>Pomoc</mnuHelp>
+<mnuHelpContents>Obsah a pomoc</mnuHelpContents>
+<mnuHelpTutorials>Zobrazit kurzy</mnuHelpTutorials>
+<mnuHelpOnline>Online Nápověda</mnuHelpOnline>
+<mnuHelpList>Připojte se k seznamu oznámení MarcEdit</mnuHelpList>
+<mnuHelpError>Návrhy/chybová zpráva</mnuHelpError>
+<mnuBlog>MarcEdit Blog</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit známé problémy</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Systémové informace</systemInfoToolStripMenuItem>
+<mnuAddLang>Upravit jazykové soubory</mnuAddLang>
+<mnuRestartIn32bitMode>Restartujte MarcEdit v 32bitovém režimu</mnuRestartIn32bitMode>
+<mnuFileShare>Konfigurace nastavení sdílení</mnuFileShare>
+<exportSettingsToolStripMenuItem>Nastavení exportu</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Nastavení importu</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Možnosti řešení problémů</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Vymazat dočasné soubory</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Stáhnout písma Noto Unicode</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Oprava úkol soubor</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Obnovení síťových souborů ze zálohy</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Vyberte úkoly příslušné vazby</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Obnovit Data konfigurace</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Otevřené HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Průvodce řešením problémů</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Stáhnout aktualizaci (režim ladění)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Vyhledat aktualizace</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Zástupci aplikací</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Cesta dat aplikace</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Cesta k datům jazyk</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Motiv cesta dat</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>Cesta dat XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>O...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>Autor Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit smlouvu EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Co chcete udělat?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>Uživatelem definované 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine Data</lnkUserDefined1>
+<lnkMarcToolsStart>MARC nástroje</lnkMarcToolsStart>
+<lnkUserDefined2>Uživatelem definované 2</lnkUserDefined2>
+<lnkUserDefined4>Uživatele Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Chtěl bych:</groupBox1>
+<cmbLastToolUsed>Poslední použité nástroje</cmbLastToolUsed>
+<lnkTopic5>Práce s datovými</lnkTopic5>
+<lnkTopic4>Přeložit Excel Marc</lnkTopic4>
+<lnkTopic3>Sloučení souborů MARC</lnkTopic3>
+<lnkTopic2>Sklizeň OAI údaje</lnkTopic2>
+<lnkTopic1>Úprava souboru MARC</lnkTopic1>
+<this>.Beta MarcEdit {verze} By Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Sklizeň OAI údaje</lbTitle>
+<lbServer>Adresa serveru:</lbServer>
+<lbSet>Název sady:</lbSet>
+<lbMetadata>Typ metadat:</lbMetadata>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zavřít</cmdClose>
+<opt_default>Výchozí</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT motor:</label4>
+<ck_Raw>Nezpracovaná Data sklizně (OAI data uložit do místního systému souborů)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Upřesnit nastavení</lnkAdvanced>
+<lbGetRecord>Metody GetRecord:</lbGetRecord>
+<lbTimeout>Časový limit (v sekundách).</lbTimeout>
+<ck_Translate>Přeložit do MARC-8</ck_Translate>
+<label2>Konec:</label2>
+<label1>Začátek:</label1>
+<lbCrosswalk>Cesta přechod pro chodce:</lbCrosswalk>
+<cmdSave>Uložit</cmdSave>
+<lnkDebug>Ladit URL</lnkDebug>
+<tabPage1>Domů</tabPage1>
+<tabPage2>Upřesnit nastavení</tabPage2>
+<this>Kombajn na sběr metadat</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Zdrojový soubor OCLC čísel:</label1>
+<cmdDownload>Stáhnout</cmdDownload>
+<cmdClose>Zavřít</cmdClose>
+<label2>Uložte soubor:</label2>
+<this>Hromadné stahování záznamů z OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>WorldCat hledat:</label1>
+<cmbarg1>klíčové slovo</cmbarg1>
+<cmbconditional>a</cmbconditional>
+<cmdSearch>Hledat</cmdSearch>
+<cmdClose>Zavřít</cmdClose>
+<label2>Výsledky:</label2>
+<col_oclcnum>OCLC číslo</col_oclcnum>
+<col_title>Titul</col_title>
+<ck_LocalBib>Stáhnout místní bibliografického záznamu, pokud je k dispozici</ck_LocalBib>
+<lnkAll>Vybrat vše</lnkAll>
+<label3>|</label3>
+<lnkNone>Žádný</lnkNone>
+<this>OCLC WorldCat Hledat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Aktualizovat váš OCLC WorldCat hospodářství</label1>
+<groupBox1>Možnosti</groupBox1>
+<rdDeleteHoldings>Odstranit hospodářství</rdDeleteHoldings>
+<rdAddHolding>Přidat hospodářství</rdAddHolding>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<label2>Kód instituce:</label2>
+<label3>Klasifikační schéma:</label3>
+<cmb_schema>Knihovna Kongresu</cmb_schema>
+<ck_debug>Tisknout informace o ladění</ck_debug>
+<this>Aktualizovat databázi hospodářství</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Knihovna Kongresu</cmb_schema>
+<label3>Klasifikační schéma:</label3>
+<label2>Kód instituce:</label2>
+<cmdClose>Zavřít</cmdClose>
+<cmdProcess>Proces</cmdProcess>
+<label4>Bibliografické záznamy s OCLC čísla budou aktualizovány v databázi.  Bibliograph </label4>
+<label1>Držení kód:</label1>
+<lnkGetHoldings>Získejte kódy</lnkGetHoldings>
+<ckLocalBibData>Proces jako místní bibliografické záznamy</ckLocalBibData>
+<ck_deleterecords>Odstranit záznamy</ck_deleterecords>
+<this>Odeslat záznamy WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>Ok</cmd_options_ok>
+<cmd_options_cancel>Zavřít</cmd_options_cancel>
+<cmd_options_apply>Použít</cmd_options_apply>
+<lnkMainWindow>Hlavní okno</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Jazyk</lnkLanguage>
+<lnkEaseOfUse>Snadné používání</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Aktualizace</lnkUpdates>
+<lnkFileAssociations>Asociace souborů</lnkFileAssociations>
+<lnkOther>Ostatní</lnkOther>
+<lnkILSIntegration>ILS integrace</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API integrace</lnkOCLCAPI>
+<label15>Nastavit výchozí programy</label15>
+<ckLogging>Povolení protokolování:</ckLogging>
+<ckAutosave>Povolit automatické ukládání</ckAutosave>
+<ck_enhanced_editor_loading>Použít rozšířené řízení stránkování</ck_enhanced_editor_loading>
+<ckRDATemplates>Použít šablony RDA</ckRDATemplates>
+<ckCompileMarc8>Kompilace záznamů jako MARC8</ckCompileMarc8>
+<label37>Cesta k protokolování:</label37>
+<cksaveutf8>Kompilovat Records jako UTF8</cksaveutf8>
+<ck_intellisense>Povolení technologie Intellisense</ck_intellisense>
+<label2>Záznamů na stránku</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Výchozí kódování:</lb_Encoding>
+<ck_nwindow>Otevřené soubory v novém okně</ck_nwindow>
+<ck_append>Přidat nové záznamy</ck_append>
+<lb_psize>Velikost náhledu:</lb_psize>
+<ckUsePreview>Použít režim náhled</ckUsePreview>
+<cmd_editor_font_default>Nastavit výchozí hodnoty</cmd_editor_font_default>
+<cmd_editor_set_font>Nastavit písmo</cmd_editor_set_font>
+<lb_Editor_Font_Props>Nastavit vlastnosti MarcEditor písma:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Nastavit výchozí hodnoty</cmd_editor_template_default>
+<cmd_editor_modify>Změnit</cmd_editor_modify>
+<lb_Current_Template>Aktuální šablona:</lb_Current_Template>
+<lb_Editor_Template>Nastavte MarcEditor Šablona:</lb_Editor_Template>
+<label9>* Vyžaduje restartování programu *</label9>
+<label8>PT.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Velikost písma:</label4>
+<lb_Example>Vzorový Text</lb_Example>
+<lb_lang_font>Nastavit jazyk písmo:</lb_lang_font>
+<lb_Set_Lang>Nastavit jazykové sady:</lb_Set_Lang>
+<rd_theme_dark>Vlastní motivy:</rd_theme_dark>
+<rd_theme_normal>Normální (výchozí)</rd_theme_normal>
+<label39>Možnosti zobrazení aplikace</label39>
+<ck_export_output>Exportovat příjem (výstup zachycení ILS)</ck_export_output>
+<lb_TCP_Timeout>Časový limit:</lb_TCP_Timeout>
+<lb_TCP_Port>Přístav:</lb_TCP_Port>
+<lb_TCP_Host>Adresa hostitele:</lb_TCP_Host>
+<lb_TCPIP_Props>Vlastnosti protokolu TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>Záznamy ve formátu MARC21</ck_marc21>
+<ck_marcxml_sax>Možnost použít nativní (bez XSLT proces)</ck_marcxml_sax>
+<groupBox2>XSLT motor</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Normalizace Unicode</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Výchozí kódování znaků:</label35>
+<ckC>Kanonické Decomposition (C)</ckC>
+<ckKD>Kompatibilita rozložené (KD)</ckKD>
+<ck_Diacritics>Používání diakritiky při lámání</ck_Diacritics>
+<lb_Diacritics>Obecné možnosti:</lb_Diacritics>
+<lb_Engine_XML_Options>Možnosti XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>Použít Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Byly zakázány automatické aktualizace správce systému.</labelAutoUpdateDisabled>
+<ckDetectProxy>Použít systémové nastavení proxy</ckDetectProxy>
+<ck_Update_Validator>Automaticky zjišťovat aktualizace Validator</ck_Update_Validator>
+<label3>Musí patřit do domény pro to pracovat v tuto chvíli.</label3>
+<groupBox4>Informace o uživateli:</groupBox4>
+<lb_domain>Doména:</lb_domain>
+<label6>Heslo:</label6>
+<label5>Uživatelské jméno:</label5>
+<ckUpdates>Automatická kontrola aktualizací</ckUpdates>
+<groupBox5>Přidružení sady souborů</groupBox5>
+<cmd_file_assoc_view>Typy zobrazení</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Odstranit typ</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Uložit typ</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Spojit (*.                      ) s typ souboru:</label7>
+<ck_mrk8_editor>Přidružit soubory (*.mrk8) MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Přidružit soubory (*.mrk) MarcEditor</ck_mrk_editor>
+<ck_mrc>Přidružit soubory (*.mrc) MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Vybrat</lnkSelectILS>
+<lnkDeleteProfile>Odstranit</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Přidat</lnkAddProfile>
+<label31>Profily:</label31>
+<ck_ignore_ssl>Ignorovat chyby certifikátu SSL</ck_ignore_ssl>
+<lnk_ils_delete>Odstranit</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Úpravy</lnk_ils_z3950_edit>
+<ck_ils_z3950>Použít nastavení Z39.50</ck_ils_z3950>
+<ck_ils_enable>Povolení možností ILS</ck_ils_enable>
+<label13>Název hostitele:</label13>
+<label12>Heslo:</label12>
+<label11>Uživatelské jméno:</label11>
+<label10>Vyberte systém:</label10>
+<lnkGetCodes>Získejte drží kódy</lnkGetCodes>
+<label24>Držení kód:</label24>
+<cmb_schema>Knihovna Kongresu</cmb_schema>
+<label22>Klasifikační schéma:</label22>
+<label23>Kód instituce:</label23>
+<ckshow>Zobrazit Text</ckshow>
+<cmdValidateKeys>Ověření klíče</cmdValidateKeys>
+<linkLabel1>Požadavek/spravovat OCLC klíč (připojí k OCLC)</linkLabel1>
+<label21>OCLC API klíč nastavení</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Tajný klíč (párován s Metadata rozhraní API Key)</label18>
+<label17>OCLC Metadata rozhraní API klíč</label17>
+<label16>OCLC Search API klíč</label16>
+<lnkFilePaths>Umístění</lnkFilePaths>
+<label38>Sítě časový limit (300 milisekund výchozí):</label38>
+<lnkCopyLocalFiles>Kopírovat místní soubory</lnkCopyLocalFiles>
+<label30>Nastavit výchozí MARC nástroje diskovou cestu:</label30>
+<label27>Cesty k souboru:</label27>
+<label26>Složka úkoly:</label26>
+<label25>Síťové složky:</label25>
+<lb_mono>Cesta k MONO:</lb_mono>
+<lb_temp>Nastavení dočasné cesty:</lb_temp>
+<ck_rss>Číst RSS kanál</ck_rss>
+<lb_title>Název značky:</lb_title>
+<lb_Author>Autor značky:</lb_Author>
+<lbCall>Volejte číslo Tag:</lbCall>
+<label1>Prvek číslo Tag:</label1>
+<ck_allow_z3950>Povolit funkce Z39.50</ck_allow_z3950>
+<label28>Možnosti pole:</label28>
+<ck_touch_friendly>Použití dotykové přátelské menu</ck_touch_friendly>
+<ck64_bit>64-bit nainstalované</ck64_bit>
+<ck_32bit>32-bit nainstalované</ck_32bit>
+<label36>Verze MS Office:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: použít propojovací pole pro řazení</ckSort880>
+<ck880Infile>Vstupní_soubor 880 pole s dvojice polí</ck880Infile>
+<label29>Možnosti řazení:</label29>
+<ckShowDescriptionInScreenTips>Zobrazovat popisy funkcí v komentářích:</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Zobrazení klávesových zkratek v komentářích.</ckScreenTipShortcuts>
+<label42>Možnosti klávesnice</label42>
+<ckProvideSoundAccess>Zvuková signalizace</ckProvideSoundAccess>
+<label41>Volby zpětné vazby</label41>
+<groupBox3>Akce:</groupBox3>
+<lnkSearch4Themes>Odstranit vybrané téma</lnkSearch4Themes>
+<lnkNewTheme>Vytvořit nové téma</lnkNewTheme>
+<label40>Zpřístupnit MarcEdit více</label40>
+<this>MarcEdit předvolby</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Dostupné pluginy:</label1>
+<ch1>Plugin jméno</ch1>
+<ch2>ADRESA URL</ch2>
+<c3>Velikost souboru</c3>
+<c4>Version #:</c4>
+<cmddownload>Stáhnout</cmddownload>
+<cmdClose>Zavřít</cmdClose>
+<columnHeader1>Odstranit?</columnHeader1>
+<columnHeader2>Plugin jméno</columnHeader2>
+<columnHeader3>Název třídy</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Nainstalované moduly:</label2>
+<cmdRemove>Odstranit</cmdRemove>
+<c5>Číslo verze MarcEdit</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>zdroje. GetString ("label1. Text")</label1>
+<label2>Vzorek:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Zrušit</cmdCancel>
+<lbstatus>Stav:</lbstatus>
+<ckEscape>Řídicí data z adresy URL</ckEscape>
+<ckAddNew>Nahradit existující pole</ckAddNew>
+<ck_addnewfield>Přidat nové pole, není-li přítomen</ck_addnewfield>
+<ckAlwaysAdd>Vždy přidat nové pole</ckAlwaysAdd>
+<groupBox1>Možnosti</groupBox1>
+<this>Vytvořit nové pole</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Dávkové hledání</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Výsledky</groupBox3>
+<lnkClearResults>Vymazat výsledky</lnkClearResults>
+<lnkDownload>Stáhnout všechny položky</lnkDownload>
+<lnkGetNext>Získat další {limit}</lnkGetNext>
+<lnkDownloadAllHoldings>Stáhnout všechny podniky</lnkDownloadAllHoldings>
+<col1>Pozice</col1>
+<col2>Titul</col2>
+<columnHeader1>Databáze</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Stáhnout vybrané položky</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Stáhnout vybrané záznamy hospodářství</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Zobrazit vybraný záznam</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Možnosti</groupBox1>
+<rdEditDB>Vybrat databázi</rdEditDB>
+<rdEditSettings>Upravit nastavení</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Záznamů na stránku</label4>
+<ckUnicode>Načíst Unicode</ckUnicode>
+<lb_encoding_single>Server znaková sada</lb_encoding_single>
+<lbSearchb>Hledat:</lbSearchb>
+<lbSearch>Dotaz do databáze:</lbSearch>
+<label3>Nastavení předvoleb databáze:</label3>
+<cmdSelectDatabase>Vybrat</cmdSelectDatabase>
+<MCol3>ID</MCol3>
+<MCol1>Jméno</MCol1>
+<MCol2>Typ</MCol2>
+<lb_PModifyTitle>Vyberte databázi:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Akce</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Přidat nový Server Z39.50</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Přidat nový Server SRU</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Předvolby</preferencesToolStripMenuItem>
+<cmdCloseSettings>Zavřít</cmdCloseSettings>
+<label5>Ovládací pole (pro dávkové zpracování odstranění duplicit)</label5>
+<cmdSaveSettings>Uložit nastavení</cmdSaveSettings>
+<rdDownloadPreferred>Stáhnout z zdroj:</rdDownloadPreferred>
+<rdDownloadMostComplete>Stáhnout kompletní záznamy</rdDownloadMostComplete>
+<rdAllRecords>Stáhnout všechny záznamy</rdAllRecords>
+<label2>Možnosti dávkového zpracování</label2>
+<label1>Předvolby</label1>
+<this>MarcEdit Z39.50/SRU klient</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Proces 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Upravit pole</lnkEditFields>
+<ck_040>Upravit 040 – přidat $erda</ck_040>
+<ck_qualifyinginfo>Kvalifikační informace (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Upravit seznam</lnkEdit>
+<ck_dgmd>Odstranit GMD</ck_dgmd>
+<ckAbbrev>Zkratky</ckAbbrev>
+<ckgmd>Generovat GMD</ckgmd>
+<ck264>Vyhodnotit 260/264</ck264>
+<ck_signs>Vždy používejte ©, ℗ symboly</ck_signs>
+<ck381>Přidat 381 – ostatní</ck381>
+<ck380>Přidat 380 – forma práce</ck380>
+<ck347>Přidat 347 – digitální charakteristiky</ck347>
+<ck346>Přidat 346 – Video charakteristiky</ck346>
+<ck345>Přidáte 345 – Proj. Charakteristiky</ck345>
+<ck344>Přidat 344 – zvukové charakteristiky</ck344>
+<ck337>Přidat 337 – typ média
+Přidat 338 – typ dopravce</ck337>
+<ck336>336 – přidat Typ obsahu</ck336>
+<cmdProcess>Ok</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<label1>Zdroj:</label1>
+<label2>Ušetříte:</label2>
+<lnkAll>Všechny</lnkAll>
+<label3>Vyberte:</label3>
+<label4>|</label4>
+<lnkNone>Žádný</lnkNone>
+<label7>Stav:</label7>
+<this>RDA Pomocník</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Zavřít</cmd_Close>
+<rEdit></rEdit>
+<this>Výsledky</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Domů</lnkHome>
+<label5>zdroje. GetString ("label5. Text")</label5>
+<label4>O RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>O RobertCompare</lnkAbout>
+<ckSort>Pre-řadit soubory</ckSort>
+<cmdClose>Zavřít</cmdClose>
+<cmdExecute>Spustit</cmdExecute>
+<label1>Uložte soubor:</label1>
+<label6>Porovnání souborů:</label6>
+<label2>zdroje. GetString ("label2. Text")</label2>
+<lnkPreferences>Předvolby</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Třídící pole:</lbSortField>
+<lbdelete>Odstraněné položky:</lbdelete>
+<lbAddColor>Dodatky:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Žádný</lnkNone>
+<lnkAll>Vybrat vše</lnkAll>
+<col_title>Titul</col_title>
+<col_id>ID</col_id>
+<label3>|</label3>
+<label2>Výsledky:</label2>
+<cmdClose>Zavřít</cmdClose>
+<cmdSearch>Hledat</cmdSearch>
+<cmbarg1>titul</cmbarg1>
+<label1>Vyhledávací databáze:</label1>
+<ck_batch>Dávkové hledání</ck_batch>
+<this>Hledat</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Vybrat</cmdSelect>
+<this>Vyberte ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Číslo záznamu</columnHeader1>
+<columnHeader2>Zobrazit pole</columnHeader2>
+<selectItemsToolStripMenuItem>Výběr položek</selectItemsToolStripMenuItem>
+<cmdImport>Importovat soubor</cmdImport>
+<cmdfDelete>Smazat vybrané</cmdfDelete>
+<cmdExport>Exportovat vybrané</cmdExport>
+<cmdExit>Ukončit</cmdExit>
+<lb_Search>Hledat:</lb_Search>
+<lb_DisplayField>Zobrazte pole:</lb_DisplayField>
+<lb_SourceFile>Zdrojový soubor MARC:</lb_SourceFile>
+<ckSource>Znovu uložte změněné záznamy ve zdroji</ckSource>
+<ck_retain>Zachovat označené položky</ck_retain>
+<cmd_Generate>Generovat sestavu</cmd_Generate>
+<ck_find_all>Hledat všechna data záznamu</ck_find_all>
+<ck_use_regex>Použít regulární výrazy</ck_use_regex>
+<cmdRandomExport>Exportní náhodné</cmdRandomExport>
+<lnkDoesNotMatch>Se neshoduje</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Invertovat výběr</lnkInvert>
+<ckExactWord>Shoda přesné slovo</ckExactWord>
+<this>MarcEdit.NET: Upravit vybrané MARC záznamů</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Vyberte pole, které chcete vyloučit z řazení</lb_title>
+<lb_fields>Třídící pole:</lb_fields>
+<lbExclude>Pole vyloučit:</lbExclude>
+<cmd_OK>Ok</cmd_OK>
+<cmd_Close>Zavřít</cmd_Close>
+<this>Průvodce vlastní řazení</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL koncový bod:</lbsparql>
+<cmdQuery>Dotaz</cmdQuery>
+<cmdClose>Zavřít</cmdClose>
+<lbQuery>SPARQL dotaz:</lbQuery>
+<lbresults>Výsledky:</lbresults>
+<cklocal>Načíst místní soubor</cklocal>
+<lbOutput>Výstup:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Ukázkové dotazy:</groupBox1>
+<lbExample3>Dotaz na: 軍事基地</lbExample3>
+<lnkExample3>Japonská strava knihovna</lnkExample3>
+<lbexample2>Getty dotaz na síran měďnatý</lbexample2>
+<lnkExample2>Getty příklad</lnkExample2>
+<label1>MESH dotaz na chřipky, lidská</label1>
+<lnkExample1>Příklad sítě</lnkExample1>
+<label2>SPARQL odkazy:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL koncové body (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Wikipedia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL návody</lnkTutorials>
+<this>SPARQL prohlížeč</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CD ISIS =&gt; MARC překlad</lb_title>
+<groupBox1>Vstup uživatele</groupBox1>
+<lb_output>Výstupní soubor:</lb_output>
+<lb_input>Vstupní soubor:</lb_input>
+<groupBox2>Možnosti:</groupBox2>
+<rd_advanced>Moderní překlad</rd_advanced>
+<rd_simple>Jednoduchý překlad</rd_simple>
+<lb_subfield>Dílčí pole značka</lb_subfield>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_Close>Zavřít</cmd_Close>
+<this>CD ISIS ISO =&gt; MARC překlad</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Možnosti:</lb_title>
+<lnkLoad>Nahrát mapování polí</lnkLoad>
+<ck_indicators>Přidat indikátory</ck_indicators>
+<ckLDR>Správné LDRs</ckLDR>
+<ck_subfield>Přidat hlavní dílčí pole</ck_subfield>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zavřít</cmdClose>
+<this>Upřesnit možnosti</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Zrušit</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Speciální znaky:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Vložit</cmd_Insert>
+<cmdClose>Zavřít</cmdClose>
+<this>MARC-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Název seznamu úkolů:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Přidat úkol odstranit pole</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Přidat úkol dílčího pole Edit</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Přidat upravit ukazatel úkol</addToolStripMenuItem>
+<cmdSave>Uložit</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Přidání nového pole úkolu</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Zavřít</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Přidat nahradit všechny úkolů</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Přidat komentář</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Přidat pole upravit úkol</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Přidat úkol pole odkládací</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Přidat úkol pole kopie</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Přidat seznam úkolů</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Add RDA Helper</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Přidat úkol propojených dat</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Přidání nového pole úkol sestavení</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Upravit zástupce</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Case příkazy</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>malá písmena</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>VELKÁ PÍSMENA</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Všechna první velká</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>První případ</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Velká počáteční případ</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Úpravy pole</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Vyčistit inteligentní znaky</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matematické funkce</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Převod do desítkové stupňů</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Odstranit prázdné řádky</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Řezací nástroje</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Generovat řezačky</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Generování Sanborn3 řezačky</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Kopírovat vybrané akce úlohy</mnuCopy>
+<mnuPasteTask>Vložit úkol akce</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Komentář vybranou úlohu</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>Vložte vybrané úkoly</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Úkoly:</lbTasks>
+<label1>Akce:</label1>
+<label2>Popis:</label2>
+<cmdDebug>Ladění</cmdDebug>
+<this>Upravit seznam úkolů</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Jméno</columnHeader1>
+<columnHeader2>Cesta</columnHeader2>
+<columnHeader3>Zástupce</columnHeader3>
+<columnHeader4>Popis</columnHeader4>
+<cmdClose>Zavřít</cmdClose>
+<lnkNew>Vytvořit nový seznam úkolů</lnkNew>
+<lbMacro>Seznamy úkolů:</lbMacro>
+<lnkCloneTask>Klon stávající seznam úkolů</lnkCloneTask>
+<groupBox1>Akce úkolu</groupBox1>
+<lnkRelink>Propojit úkoly</lnkRelink>
+<lnk_import_task>Importovat úlohu</lnk_import_task>
+<groupBox2>Spravovat existující úkoly</groupBox2>
+<lnkBackup>Zálohovat všechny úkoly</lnkBackup>
+<lnk_export_task>Exportovat vybraný úkol</lnk_export_task>
+<lnkKey>Přiřazení kláves</lnkKey>
+<lnkEdit>Upravit vybraný seznam úkolů</lnkEdit>
+<lnkDelete>Odstranit vybraný seznam úkolů</lnkDelete>
+<this>Správce úloh</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Zkracování dlouhých záznamů</ckTruncate>
+<label1>Vyberte operaci:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Výchozí kódování znaků:</label35>
+<ck_Marc8>Přeložit do MARC-8</ck_Marc8>
+<ck_UTF8>Přeložit do UTF8</ck_UTF8>
+<lb_OutputFile>Uložit jako...</lb_OutputFile>
+<lb_InputFile>Otevřené...</lb_InputFile>
+<cmdCancel>Zavřít</cmdCancel>
+<cmdEdit>Upravit záznamy</cmdEdit>
+<cmdExecute>Spustit</cmdExecute>
+<lb_Results>Výsledky:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Nástroje</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Návrat do hlavního okna</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Upravit XML funkce seznam</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Dávkové zpracování záznamů</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>CharacterSet konverze</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC nástroje</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Co chcete udělat?</mnuContextHelp>
+<lnkTopic1>Převést soubor do jiného kódování</lnkTopic1>
+<lnkTopic2>Přidat/upravit XML překlady</lnkTopic2>
+<lnkTopic4>Jak lze najít chybu v mém MARC souboru?</lnkTopic4>
+<groupBox1>Chtěl bych:</groupBox1>
+<groupBox2>Vyberte Data k procesu:</groupBox2>
+<groupBox3>Možnosti kódování znaků</groupBox3>
+<this>MARC nástroje</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit poskytuje sadu nástrojů pro konverzi UNIMARC lite váha.  Tyto nástroje jsou pro vás zajímavé a chcete napomoci tomu, aby jim lépe, uveďte f eedback.
+
+</label1>
+<label2>Zdroj</label2>
+<label3>Cíl</label3>
+<groupBox1>Možnosti</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<this>UNIMARC nástroje</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Seznam změn:</label1>
+<cmd_Update>Aktualizace</cmd_Update>
+<cmd_Cancel>Zrušit</cmd_Cancel>
+<this>Aktualizovat MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Kódování Unicode</ckIsUTF8>
+<ck_merge_to_source>Sloučit do zdroj</ck_merge_to_source>
+<label17>Uložte soubor:</label17>
+<label16>Katalogizaci zdroj</label16>
+<ck_SameFile>Zpracovat zdrojový soubor</ck_SameFile>
+<cmd_merge_cancel>Zrušit</cmd_merge_cancel>
+<cmd_merge_next>Další =&gt;</cmd_merge_next>
+<lb_merge_title>Sloučení záznamu dat</lb_merge_title>
+<ck_merge_repeatable>Je opakovatelné</ck_merge_repeatable>
+<lb_id>Identifikátor záznamu:</lb_id>
+<lb_merge>Sloučit soubor:</lb_merge>
+<lb_source>Zdrojový soubor:</lb_source>
+<ck_overlayexisting>Překrytí stávající položky</ck_overlayexisting>
+<label4>Hodnota spolehlivosti:</label4>
+<ck_mergeUnique>Sloučení jedinečné položky</ck_mergeUnique>
+<button1>Zrušit</button1>
+<cmd_merge_select_fields_next>Další =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Zpět</cmd_merge_select_fields_back>
+<label7>Slučovací pole:</label7>
+<label6>Vyberte pole:</label6>
+<label5>Sloučení záznamu dat: Vyberte pole</label5>
+<button5>Zavřít</button5>
+<label15>Soubory byly sloučeny.  Výsledky v {merge_results_file}.</label15>
+<label13>Sloučení bylo dokončeno</label13>
+<this>Sloučit záznamy MARC</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Záhlaví ověření nástroj lze použít k ověření 1xx, 6xx a 7xx pole.  Th e nástroj využívá kombinaci webových a místních služeb k určení, pokud se objeví headin g do autorizovaného čísla.</label1>
+<ck_1xx>Ověřit pole 1xx/7xx</ck_1xx>
+<ck_6xx>Ověřit pole 6xx</ck_6xx>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zavřít</cmdClose>
+<label2>Zdroj:</label2>
+<lbStatus>Stav:</lbStatus>
+<cmdExtract>Extrahovat</cmdExtract>
+<ckdeletecache>Odstranit místní mezipaměť</ckdeletecache>
+<lnkDelimited>Ušetřete s oddělovači</lnkDelimited>
+<ckonlyA>Zpracovat pouze dílčí pole A</ckonlyA>
+<ckVariant>Automaticky opravovat varianty</ckVariant>
+<ckGenerateBriefHeadings>Generují krátké osobní jméno úřady</ckGenerateBriefHeadings>
+<label3>Generované úřady:</label3>
+<ckAddURIs>Vložit identifikátory URI, pokud je to možné</ckAddURIs>
+<ck_download_authorities>Ke stažení LC úřady</ck_download_authorities>
+<this>Ověření hlavičky</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Zdrojový soubor:</lb_Source>
+<lb_Rules>Soubor pravidel:</lb_Rules>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_close>Zavřít</cmd_close>
+<groupBox1>Možnosti</groupBox1>
+<optIdentify>Ověření záznamu struktury</optIdentify>
+<opt_remove>Odstranit neplatné záznamy</opt_remove>
+<opt_validate>Podívejte, MARC pomocí pravidla souboru</opt_validate>
+<rdHex>Pohled v HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>Ok</cmd_Ok>
+<cmdCancel>Zavřít</cmdCancel>
+<groupBox1>Možnosti sestavy:</groupBox1>
+<lb_MARC_Title>Název:</lb_MARC_Title>
+<lbReport>Typ sestavy:</lbReport>
+<lb_XSLT>Soubor XSLT:</lb_XSLT>
+<lb_Dest>Výstupní soubor:</lb_Dest>
+<lb_MARC>Vstupní soubor:</lb_MARC>
+<lb_Fields>Pole:</lb_Fields>
+<lbTimeout>Časový limit (v sekundách)</lbTimeout>
+<this>Ověřit adresu URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>O službě rychlé OCLC</lnkClassify>
+<label1>zdroje. GetString ("label1. Text")</label1>
+<ck_conditional_fast>Přidejte rychlé záhlaví, když není rubrik jsou k dispozici</ck_conditional_fast>
+<ck_always_fast>Vždy přidat rychle nadpisy</ck_always_fast>
+<label8>Rubrik:</label8>
+<button1>Proces</button1>
+<cmd_Close>Zavřít</cmd_Close>
+<this>Generovat rychlý nadpisy</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Uložit</cmd_save>
+<cmd_close>Zavřít</cmd_close>
+<ck_1xxa>$a: hlavní vstup</ck_1xxa>
+<ck_245p>$p: jméno pt/sec. práce</ck_245p>
+<ck_245n>$n: počet pt/sec. práce</ck_245n>
+<ck_245c>$c: prohlášení o zodpovědnost</ck_245c>
+<ck_245b>$b: zbývající část názvu</ck_245b>
+<ck_245a>$a: titul</ck_245a>
+<ck_lang>Jazyk (pozice: 35-37)</ck_lang>
+<ck_dates>Data (pozice: 7-14)</ck_dates>
+<ck_p7>BLvl (pozice 7)</ck_p7>
+<ck_p6>Typ (poloha 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Kontrolních čísel</label6>
+<ck_form>Formulář (pozice: 23)</ck_form>
+<ck_245_h>$h: general materiál označení</ck_245_h>
+<label5>Různé obory:</label5>
+<label4>Pole 245:</label4>
+<label3>Autor (1xx) pole</label3>
+<label2>008 pozice</label2>
+<label1>LDR pozice</label1>
+<this>Možnosti sloučení</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Vlastnosti databáze</tabDBProps>
+<ck_Paused>Přepsat pozastavení (6 sekund).</ck_Paused>
+<label1>Databáze:</label1>
+<ck_Show>Zobrazit databáze</ck_Show>
+<lbPassword>Heslo:</lbPassword>
+<lbUsername>Uživatelské jméno:</lbUsername>
+<lbSyntax>Syntaxe:</lbSyntax>
+<lbPort>Přístav:</lbPort>
+<lbHost>Hostitel:</lbHost>
+<lbname>Jméno:</lbname>
+<tabDBAdvanced>Upřesnit vlastnosti</tabDBAdvanced>
+<label4>Časový limit (v sekundách):</label4>
+<label2>Sada prvků:</label2>
+<label3>Další možnosti:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Další informace:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Předmět:</lbSubject>
+<lbTitle>Název:</lbTitle>
+<lbAuthor>Autor:</lbAuthor>
+<lbadvTitle>Z39.50 atributů 4: struktura</lbadvTitle>
+<cmdSave>Uložit</cmdSave>
+<cmdClose>Zavřít</cmdClose>
+<label17>Z39.50 nastavení databáze:</label17>
+<cmdDeleteZ3950>Odstranit</cmdDeleteZ3950>
+<gbCustom>Nastavení vlastního profilu</gbCustom>
+<label5>Název indexu:</label5>
+<label6>Autor Index:</label6>
+<label10>Rejstřík klíčových slov:</label10>
+<label7>Index předmětu:</label7>
+<label11>Record # Index:</label11>
+<label8>ISBN Index:</label8>
+<label12>Rejstřík ISSN:</label12>
+<cmdDeleteSRU>Odstranit</cmdDeleteSRU>
+<ck_SRU_Show>Zobrazit databáze</ck_SRU_Show>
+<label13>Další parametry</label13>
+<label14>Hledání profilu:</label14>
+<lbVersion>Verze:</lbVersion>
+<cmdCloseSRU>Zavřít</cmdCloseSRU>
+<cmdSaveSRU>Uložit</cmdSaveSRU>
+<label15>Jméno:</label15>
+<lbMetadata>Schématu metadat:</lbMetadata>
+<label16>ADRESA URL:</label16>
+<lbSRUTitle>SRU vlastnosti databáze:</lbSRUTitle>
+<this>Vlastnosti databáze</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Najdete:</label1>
+<ckMatchCase>Rozlišovat malá/velká</ckMatchCase>
+<cmdFind>Najít</cmdFind>
+<this>Hex: Najít řetězec</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Soubor</fileToolStripMenuItem>
+<openToolStripMenuItem>Otevřené</openToolStripMenuItem>
+<exitToolStripMenuItem>Ukončit</exitToolStripMenuItem>
+<editToolStripMenuItem>Úpravy</editToolStripMenuItem>
+<findToolStripMenuItem>Najít</findToolStripMenuItem>
+<findNextToolStripMenuItem>Hledat další</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Řez</cutToolStripMenuItem>
+<copyToolStripMenuItem>Kopírovat</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Vložit</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Vymazat</clearToolStripMenuItem>
+<findToolStripMenuItem>Najít</findToolStripMenuItem>
+<replaceToolStripMenuItem>Nahradit</replaceToolStripMenuItem>
+<lnkLoadAll>Načtení celého souboru</lnkLoadAll>
+<lb_bytes>{loaded_bytes} z {file_bytes} bajtů načtených.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Nový záznam</tbNew>
+<mnuCNewWindow>Otevřít nové okno</mnuCNewWindow>
+<ContextAuthority>Úřad</ContextAuthority>
+<ContextAuthorityName>Jméno</ContextAuthorityName>
+<ContextAuthoritySubject>Předmět</ContextAuthoritySubject>
+<cBook>Kniha</cBook>
+<cSerial>Sériové</cSerial>
+<cVisualMat>Obrazový materiál</cVisualMat>
+<cMaps>Kartografické zdroje</cMaps>
+<cSoundRec>Zvukový záznam</cSoundRec>
+<cScore>Skóre</cScore>
+<cElectMat>Elektronické zdroje</cElectMat>
+<cMixedMat>Smíšený materiál</cMixedMat>
+<tbOpen>Otevřít soubor</tbOpen>
+<tbSave>Uložení souboru</tbSave>
+<tbPrint>Tisk souboru</tbPrint>
+<tbCompile>Kompilace záznamů</tbCompile>
+<tbCut>Řez</tbCut>
+<tbCopy>Kopírovat</tbCopy>
+<tbPaste>Vložit</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>Odstranit</tbDelete>
+<tbFind>Najít</tbFind>
+<tbZ39_50>Klient Z39.50/SRU</tbZ39_50>
+<toolStripSplitButton1>Nástroje pro úpravy globální MARC</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Přidat či odstranit pole</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Vytvořit nové pole</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Kopírovat pole</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Upravit Data polí</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Upravit ukazatel Data</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Upravit Data dílčího pole.</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Prohodit Data polí</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Soubor</mnuFile>
+<mnuFileMain>Návrat do hlavního okna</mnuFileMain>
+<mnuFileNew>Nové</mnuFileNew>
+<mnuFileNewWindow>Otevřít nové okno</mnuFileNewWindow>
+<mnuFileNewDefault>výchozí</mnuFileNewDefault>
+<mnuFileNewAuthority>Úřad</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Jméno</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Předmět</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Kniha</mnuFileNewBook>
+<mnuFileNewSerial>Sériové</mnuFileNewSerial>
+<mnuFileVisualMat>Obrazový materiál</mnuFileVisualMat>
+<mnuFileNewMap>Kartografické zdroje</mnuFileNewMap>
+<mnuFileNewSound>Zvukový záznam</mnuFileNewSound>
+<mnuFileNewScore>Skóre</mnuFileNewScore>
+<mnuFileNewER>Elektronické zdroje</mnuFileNewER>
+<mnuFileNewMix>Smíšený materiál</mnuFileNewMix>
+<mnuFileOpen>Otevřené</mnuFileOpen>
+<mnuFileRecent>Naposledy otevřené soubory</mnuFileRecent>
+<mnunone10>žádný</mnunone10>
+<mnunone9>žádný</mnunone9>
+<mnunone8>žádný</mnunone8>
+<mnunone7>žádný</mnunone7>
+<mnunone6>žádný</mnunone6>
+<mnunone5>žádný</mnunone5>
+<mnunone4>žádný</mnunone4>
+<mnunone3>žádný</mnunone3>
+<mnunone2>žádný</mnunone2>
+<mnunone1>žádný</mnunone1>
+<mnuFileClearHistory>Vymazat historii</mnuFileClearHistory>
+<mnuFileClearList>Vymazat nedávné soubory</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Vymazat historii úpravy a nahrazení</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Zavřít</mnuFileClose>
+<mnuFileExportData>Exportovat pro...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Importujte z...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Uložit</mnuFileSave>
+<mnuFileSaveAs>Uložit jako...</mnuFileSaveAs>
+<mnuFilePrint>Tisk</mnuFilePrint>
+<toolStripMenuItem34>Tisk záznamu na stránce</toolStripMenuItem34>
+<FileSelectIndividualMake>Vyberte záznamy pro úpravy</FileSelectIndividualMake>
+<mnuFileCompile>Zkompilujte soubor do MARC</mnuFileCompile>
+<mnuFileExit>Ukončit</mnuFileExit>
+<mnuEdit>Úpravy</mnuEdit>
+<mnuEditUndo>Zpět:</mnuEditUndo>
+<mnuEditRedo>Znovu:</mnuEditRedo>
+<mnuEditSpecialUndo>Speciální zpět</mnuEditSpecialUndo>
+<mnuEditCut>Řez</mnuEditCut>
+<mnuEditCopy>Kopírovat</mnuEditCopy>
+<mnuEditPaste>Vložit</mnuEditPaste>
+<mnuEditDupLines>Duplicitní řádky</mnuEditDupLines>
+<mnuEditClear>Vymazat</mnuEditClear>
+<mnuEditFind>Najít</mnuEditFind>
+<mnuEditReplace>Nahradit</mnuEditReplace>
+<toolStripMenuItem28>Upravit zástupce</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Změnit velikost písmen</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>malá písmena</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>VELKÁ PÍSMENA</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Všechna první velká</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>První případ</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Velká počáteční znak</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Úpravy pole</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Vyčistit inteligentní znaky</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Najít pole chybí slovo</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Najít chybějící pole záznamy</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Vyhledat záznamy s duplicitní značky</toolStripMenuItem39>
+<toolStripMenuItem40>Vyhledat záznamy s duplicitními daty</toolStripMenuItem40>
+<mnuEditLimitFields>Omezit počet polí</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Prohodit titul</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Matematické funkce</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Převod do desítkové stupňů</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Přejít na...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Přejít na... Záznam</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Přejít na... Stránka</jumpToPageToolStripMenuItem>
+<mnuEditControl>Vložit jeden kontrolní číslo</mnuEditControl>
+<mnuEdit006>Vložit/upravit 006</mnuEdit006>
+<mnuEdit006Edit>Úpravy</mnuEdit006Edit>
+<mnuEdit006Book>Kniha</mnuEdit006Book>
+<mnuEdit006Serial>Pokračující zdroj</mnuEdit006Serial>
+<mnuEdit006Map>Kartografické zdroje</mnuEdit006Map>
+<mnuEdit006Sound>Zvukový záznam</mnuEdit006Sound>
+<mnuEdit006Score>Skóre</mnuEdit006Score>
+<mnuEdit006ER>Elektronické zdroje</mnuEdit006ER>
+<mnuEdit006Visual>Obrazový materiál</mnuEdit006Visual>
+<mnuEdit006Mixed>Smíšený materiál</mnuEdit006Mixed>
+<mnuEdit008>Vložit/upravit 008</mnuEdit008>
+<mnuEdit008Edit>Úpravy</mnuEdit008Edit>
+<mnuEdit008Book>Kniha</mnuEdit008Book>
+<mnuEdit008Serial>Pokračující zdroj</mnuEdit008Serial>
+<mnuEdit008Map>Kartografické zdroje</mnuEdit008Map>
+<mnuEdit008Sound>Zvukový záznam</mnuEdit008Sound>
+<mnuEdit008Score>Skóre</mnuEdit008Score>
+<mnuEdit008ER>Elektronické zdroje</mnuEdit008ER>
+<mnuEdit008Visual>Obrazový materiál</mnuEdit008Visual>
+<mnuEdit008Mixed>Smíšený materiál</mnuEdit008Mixed>
+<toolStripMenuItem27>Převod obsahu schránky</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8, UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 na MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>Mapa znaků UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Vybrat vše</mnuEditSelectAll>
+<mnuEditWrap>Zalamování řádků</mnuEditWrap>
+<mnuEditRTL>Zobrazit vpravo vlevo</mnuEditRTL>
+<mnuFont>Písma</mnuFont>
+<mnuFontFont>Písmo...</mnuFontFont>
+<mnuFontColor>Barva...</mnuFontColor>
+<mnuReports>Zprávy</mnuReports>
+<mnuReportsField>Počet polí</mnuReportsField>
+<tlReportsMaterialReport>Zpráva typu materiálu</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Generovat sestavu</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Vyhledat záznamy podle typu</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Knihy</booksToolStripMenuItem>
+<toolStripMenuItem32>Počítač a soubory</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Pokračující zdroje</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Mapy</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Kombinované materiály</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Skóre</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Zvukové nahrávky</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Vizuální materiály</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Ověřit čísla ISBN</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Ověřit ISSN</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Ověření hlavičky</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Stav služby</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Ověření hlavičky</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Spravovat soubory protokolů</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Zobrazit aktuální soubor protokolu</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Správa rozšířeného protokolu</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Odstranit soubory protokolu</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Zobrazení všech souborů protokolů</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Nástroje</mnuTools>
+<mnuToolsCluster>Nástroje pro clustering</mnuToolsCluster>
+<mnutoolCutters>Cuttering nástroje</mnutoolCutters>
+<mnuToolsCalculator>Katalog kalkulačka</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Generovat řezačky</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn tabulka 3 nože</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Generovat volání čísla</mnuToolsCallNum>
+<mnuToolsControlNumber>Generování kontrolních čísel</mnuToolsControlNumber>
+<toolStripMenuItem33>Propojená Data nástroje</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Vytvoření propojené záznamy</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Odstranění duplicitních záznamů</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA Pomocník</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU možnosti</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU klient</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 nahrát záznam</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 odstranit záznam</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Hospodářstvích aktualizací Z39.50</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Upravit konstantní Data</mnuToolsEditConstant>
+<mnuToolsAssigned>Přiřazené konstantní Data</mnuToolsAssigned>
+<mnuConstant1>(1) nedefinovaný řetězec</mnuConstant1>
+<mnuConstant2>(2) nedefinovaný řetězec</mnuConstant2>
+<mnuConstant3>(3) nedefinovaný řetězec</mnuConstant3>
+<mnuConstant4>(4) nedefinovaný řetězec</mnuConstant4>
+<mnuConstant5>(5) nedefinovaný řetězec</mnuConstant5>
+<mnuConstant6>6) nedefinovaný řetězec</mnuConstant6>
+<mnuConstant7>7) nedefinovaný řetězec</mnuConstant7>
+<mnuConstant8>8) nedefinovaný řetězec</mnuConstant8>
+<mnuConstant9>9) nedefinovaný řetězec</mnuConstant9>
+<mnuConstant10>10) nedefinovaný řetězec</mnuConstant10>
+<mnutoolmanageAutomate>Správa úkolů</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Přiřazené úkoly</mnuToolsAssignedTasks>
+<mnuDefTask>V současné době dostupné úlohy</mnuDefTask>
+<task1>(1) nedefinovaný úkol</task1>
+<task2>(2) nedefinovaný úkol</task2>
+<task3>(3) nedefinovaný úkol</task3>
+<task4>(4) nedefinovaný úkol</task4>
+<task5>(5) nedefinovaný úkol</task5>
+<task6>6) nedefinovaný úkol</task6>
+<task7>7) nedefinovaný úkol</task7>
+<task8>8) nedefinovaný úkol</task8>
+<task9>9) nedefinovaný úkol</task9>
+<task10>10) nedefinovaný úkol</task10>
+<task11>11) nedefinovaný úkol</task11>
+<task12>12) nedefinovaný úkol</task12>
+<task13>13) nedefinovaný úkol</task13>
+<task14>14) nedefinovaný úkol</task14>
+<task15>15) nedefinovaný úkol</task15>
+<task16>16) nedefinovaný úkol</task16>
+<task17>17) nedefinovaný úkol</task17>
+<task18>18) nedefinovaný úkol</task18>
+<task19>19) nedefinovaný úkol</task19>
+<task20>20) nedefinovaný úkol</task20>
+<mnuToolsValidate>Ověřit záznamy MARC</mnuToolsValidate>
+<mnuToolsOAI>Sklizeň od OAI</mnuToolsOAI>
+<mnutoolsurl>Generovat MARC z adresy URL</mnutoolsurl>
+<toolStripMenuItem43>Symbolický formátovací nástroje</toolStripMenuItem43>
+<toolStripMenuItem3>Normalizovat...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normalizovat LC záznamy</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normalizovat Microlif záznamy</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Odstranit prázdné řádky</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Odstranit prázdné pole/dílčí pole</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Přidat či odstranit pole</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Vytvořit nové pole</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Kopírovat pole</toolStripMenuItem26>
+<mnuToolsEditField>Upravit Data polí</mnuToolsEditField>
+<mnuToolsIndicator>Upravit ukazatel Data</mnuToolsIndicator>
+<mnuToolsSubfield>Upravit Data dílčího pole.</mnuToolsSubfield>
+<mnuToolsSortby>Seřadit podle...</mnuToolsSortby>
+<toolStripMenuItem41>Řazení záznamů podle...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Vlastní pole</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Autor pole</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Číslo pole</mnuToolsSortByCall>
+<mnuToolsSortControl>Pole číslo řízení</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Pole title</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Seřadit pole v rámci záznamu podle...</toolStripMenuItem42>
+<mnuToolsCustomSort>Vlastní řazení</mnuToolsCustomSort>
+<mnuToolsSort2>Třídicí pole 0xx</mnuToolsSort2>
+<mnuToolsSort>Seřazení všech polí</mnuToolsSort>
+<mnuToolsSwap>Prohodit Data polí</mnuToolsSwap>
+<mnuToolsOptions>Předvolby</mnuToolsOptions>
+<mnu_ILS>[ILS název]</mnu_ILS>
+<mnu_ils_search>Hledat</mnu_ils_search>
+<updateCreateToolStripMenuItem>Aktualizace/vytvoření</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Nastavení procesu</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>WorldCat Hledat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Přidat/odstranit/aktualizovat místní bibliografické údaje</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Vytvořit/aktualizovat bibliografické údaje</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Aktualizace hospodářství</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Moduly plug-in</pluginsToolStripMenuItem>
+<mnuHelp>Pomoc</mnuHelp>
+<mnuHelpContents>Obsah a pomoc</mnuHelpContents>
+<mnuEditInfo>MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC Nápověda</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>Americké knihovny kongresu MARC pomoci</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Soubory balíčku pro ladění</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Co chcete udělat?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Záznamů na stránku</label1>
+<lblPage>stránky</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Zobrazit automaticky ukládat soubory</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Služby ověření dat jsou k dispozici prostřednictvím OCLC Termology služeb. Využívat těchto služeb musíte souhlasit a dodržovat podmínky a ujednání stanovené OCLC týkající se používání a věrnost těchto služeb.</lb_text>
+<label1>OCLC dohody odkaz:</label1>
+<lnk_Terms>Zobrazit podmínky použití</lnk_Terms>
+<cmd_Agree>Souhlasím</cmd_Agree>
+<cmd_disagree>Nesouhlasím</cmd_disagree>
+<this>OCLC dohoda</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Angličtina</comboBox1>
+<linkLabel2>Ne, díky, stačí použít výchozí nastavení</linkLabel2>
+<linkLabel1>Pojďme začít!</linkLabel1>
+<label2>Jsem zde, abych vám pomohou začít!  Budu vám položit pár otázek a dostat vás na yo </label2>
+<label1>Vítejte v MarcEdit 7!</label1>
+<this>Průvodce spuštěním MarcEdit 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>K nastavení dat... Ruff!</linkLabel1>
+<label6>Nezapomeňte, že můžete nastavit motivy, velikosti písem, jazyků a pokročilé přístupnost o </label6>
+<cmb_theme_picker>Výchozí</cmb_theme_picker>
+<label5>Doporučené téma:</label5>
+<label4>PT.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Doporučená velikost písma:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Výchozí písmo:</label2>
+<label1>MarcEdit vzhled</label1>
+<this>Průvodce spuštěním MarcEdit 7: Strana 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit je MARC agnostik, tak řekněte něco o svá data.</label5>
+<comboBox3>Vyberte si pro mě</comboBox3>
+<label4>XML zpracování motor:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Výchozí kódování záznamu:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>Moje MARC formát je:</label2>
+<linkLabel1>Jsme skoro hotoví!  Veverka!</linkLabel1>
+<label1>Nastavení dat MarcEdit</label1>
+<this>Průvodce spuštěním MarcEdit 7: Strana 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Přeji!</linkLabel1>
+<label5>zdroje. GetString ("label5. Text")</label5>
+<label1>Blahopřejeme!  Jste připraveni k použití MarcEdit 7</label1>
+<this>Průvodce spuštěním MarcEdit 7: dokončeno</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Zavřít</cmdClose>
+<ck_remote>Vyřešit vzdálené subjekty</ck_remote>
+<ck_Marc8>Převést na MARC-8</ck_Marc8>
+<opt_default>Výchozí</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Uložit</cmdSave>
+<gp_XSLT>XSLT motor</gp_XSLT>
+<label7>Finální formát</label7>
+<label6>Původní formát</label6>
+<label4>XSLT/XQuery cesta</label4>
+<label3>Funkce název (Alias):</label3>
+<label2>Obecné informace:</label2>
+<lnkXMLFunctionWizard>Průvodce funkcí XML</lnkXMLFunctionWizard>
+<groupBox1>Akce</groupBox1>
+<lnkAdd>Přidat</lnkAdd>
+<lnkModify>Změnit</lnkModify>
+<lnkDelete>Odstranit</lnkDelete>
+<label5>Formátování:</label5>
+<label1>Definované funkce:</label1>
+<this>Upravit XML funkce</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
     {
         
         private readonly StringBuilder _results = new StringBuilder();
-
+        private readonly MarcRecordService _marcRecordService;
+        private readonly MarcRecordFactory _marcRecordProductFactory;
         private int BatchSize { get; }
 
         private int _recordsProcessed;
@@ -29,6 +31,8 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         {
             _onlyMissingFiles = onlyMissingFiles;
             BatchSize = Settings.Default.RbdMarcRecordMaxProducts;
+            _marcRecordService = new MarcRecordService(MarcRecordProviderType.Rbd);
+            _marcRecordProductFactory = new MarcRecordFactory();
         }
 
         public override void Run()
@@ -65,29 +69,17 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         {
             try
             {
-                //Set workingDirectory
-                string workingDirectory = (Settings.Default.MarcFilesWorkingDirectory.EndsWith(@"\"))
-                                              ? Settings.Default.MarcFilesWorkingDirectory
-                                              : string.Format(@"{0}\",
-                                                              Settings.Default.MarcFilesWorkingDirectory);
-                Log.InfoFormat("workingDirectory:\n{0}", workingDirectory);
                 Log.InfoFormat("MarcRecordGeneratorMaxProducts: {0}", BatchSize);
                 Log.InfoFormat("MarcRecordBatchSize: {0}", Settings.Default.MarcRecordBatchSize);
 
                 //Set Marc Records to get
-                _recordCountBeingProcessed = _onlyMissingFiles
-                                                 ? MarcRecordsProductFactory.GetProductsWithoutMarcRecordsCount()
-                                                 : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProductsCount();
-
+                _recordCountBeingProcessed = _marcRecordProductFactory.GetRittenhouseOnlyMarcFilesCount(_onlyMissingFiles);
                 Log.InfoFormat("productsWithoutMarcRecordsCount: {0}", _recordCountBeingProcessed);
-
-
-                ClearWorkingDirectory(workingDirectory);
 
 
                 int newProductsProcessed = 0;
                 int batchProductProcessed;
-                while ((batchProductProcessed = ProcessNextBatchOfNewProducts(Settings.Default.MarcRecordBatchSize, workingDirectory)) > 0)
+                while ((batchProductProcessed = ProcessNextBatchOfNewProducts(Settings.Default.MarcRecordBatchSize)) > 0)
                 {
                     Log.InfoFormat("batchProductProcessed: {0}", batchProductProcessed);
                     newProductsProcessed += batchProductProcessed;
@@ -97,7 +89,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     {
                         break;
                     }
-                    ClearWorkingDirectory(workingDirectory);
                 }
 
                 return true;
@@ -114,7 +105,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// 
         /// </summary>
         /// <returns></returns>
-        private int ProcessNextBatchOfNewProducts(int batchSize, string workingDirectory)
+        private int ProcessNextBatchOfNewProducts(int batchSize)
         {
 
             int productProcessedCount = 0;
@@ -125,23 +116,31 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 try
                 {
                     // get next batch to process
-                    List<IMarcFile> marcFiles = _onlyMissingFiles
-                                                    ? MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize)
-                                                    : MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProducts(batchSize);
+                    List<IMarcFile> marcFiles = _marcRecordProductFactory.GetRittenhouseOnlyMarcFiles(batchSize, _onlyMissingFiles);
 
                     Log.InfoFormat("batch contains {0} products", marcFiles.Count);
                     if (marcFiles.Count == 0)
                     {
                         return 0;
                     }
+                    var timer = new Stopwatch();
+                    timer.Start();
+                    _marcRecordService.SetMarcRecords(marcFiles);
+                    Log.Info($"_marcRecordService.SetMarcRecords. It took {timer.ElapsedMilliseconds}ms");
 
-                    marcFiles = SetMarcDataForProducts(marcFiles, workingDirectory);
+                    timer = new Stopwatch();
+                    timer.Start();
+                    _marcRecordProductFactory.InsertUpdateMarcRecordFiles(marcFiles, MarcRecordProviderType.Rbd);
+                    Log.Info($"_marcRecordProductFactory.InsertUpdateMarcRecordFile. It took {timer.ElapsedMilliseconds}ms");
 
-                    foreach (int rowsSaved in marcFiles.Select(MarcRecordsProductFactory.InsertUpdateMarcRecordFile))
-                    {
-                        Log.DebugFormat("rowsSaved: {0}", rowsSaved);
-                        productProcessedCount++;
-                    }
+                    productProcessedCount = marcFiles.Count;
+
+
+                //    foreach (int rowsSaved in marcFiles.Select(MarcRecordsProductFactory.InsertUpdateMarcRecordFile))
+                //    {
+                //        Log.DebugFormat("rowsSaved: {0}", rowsSaved);
+                //        productProcessedCount++;
+                //    }
                     break;
                 }
                 catch (Exception ex)

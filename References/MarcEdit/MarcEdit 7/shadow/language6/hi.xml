@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>अभिलेख निकालें</mnuExtract>
+<cmenuClipboard>क्लिपबोर्ड पर प्रतिलिपि बनाएँ</cmenuClipboard>
+<cmenuSubfields>उपफ़ील्ड गिनें</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>मदद</cmenuHelp>
+<cmd_OK>बंद</cmd_OK>
+<cmd_Report>रिपोर्ट जनरेट</cmd_Report>
+<lb_ReportStyle>रिपोर्ट शैली:</lb_ReportStyle>
+<opt_tab>टैब सीमांकित रिपोर्ट</opt_tab>
+<opt_xml>XML रिपोर्ट</opt_xml>
+<opt_html>HTML रिपोर्ट</opt_html>
+<this>फ़ील्ड गणना</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>दिशा:</groupBox3>
+<rd_down>नीचे</rd_down>
+<rd_up>अप</rd_up>
+<btn_findall>सभी ढूँढें</btn_findall>
+<groupBox1>खोज विकल्प:</groupBox1>
+<ck_f_whole_word>केवल पूरे शब्द ढूँढें</ck_f_whole_word>
+<ck_find_regex>नियमित एक्सप्रेशंस का उपयोग करें</ck_find_regex>
+<ck_f_match_case>केस मिलाएँ</ck_f_match_case>
+<cmdFClose>बंद</cmdFClose>
+<cmdFFind>मिल</cmdFFind>
+<lb_FindWhat>क्या खोजें:</lb_FindWhat>
+<cmdNav_Find>मिल</cmdNav_Find>
+<cmdReplaceNav>बदलें</cmdReplaceNav>
+<ckReplaceConditional>यदि ढूँढें/</ckReplaceConditional>
+<cmbCondOpt>regex</cmbCondOpt>
+<label1>यदि:</label1>
+<cmd_R_Close>बंद</cmd_R_Close>
+<cmd_R_All>सभी बदलें</cmd_R_All>
+<cmd_R_Replace>बदलें</cmd_R_Replace>
+<groupBox2>खोज विकल्प:</groupBox2>
+<ck_Replace_ExactWordMatch>सटीक शब्द मैच</ck_Replace_ExactWordMatch>
+<ckMultiLine>बहु-रेखीय मूल्यांकन</ckMultiLine>
+<ckFile>बाहरी खोज/मापदंड का उपयोग करें</ckFile>
+<ck_R_RegExp>नियमित एक्सप्रेशंस का उपयोग करें</ck_R_RegExp>
+<ck_R_Case>केस मिलाएँ</ck_R_Case>
+<lb_ReplaceWith>बदलें:</lb_ReplaceWith>
+<lb_R_FindWhat>मिल:</lb_R_FindWhat>
+<this>ढूँढें/बदलें:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>स्थिति:
+
+</lb_bProccess_status>
+<ck_bTask>कार्य लोड</ck_bTask>
+<ckBatchProcessSubfolders>सबफ़ोल्डर शामिल करें</ckBatchProcessSubfolders>
+<lb_Operation>समारोह:</lb_Operation>
+<cmdBClose>बंद</cmdBClose>
+<cmdBProcess>प्रक्रिया</cmdBProcess>
+<lb_Extensions>फ़ाइल प्रकार:</lb_Extensions>
+<lb_BSource>स्रोत निर्देशिका:</lb_BSource>
+<lbBTitle>बैच प्रक्रिया मार्क रिकॉर्ड</lbBTitle>
+<groupBox1>विकल्प</groupBox1>
+<this>बैच प्रक्रिया रिकॉर्ड</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>बैच प्रक्रिया</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>अंतिम एन्कोडिंग:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>मूल एनकोडिंग:</lb_encoding>
+<lb_UTF8_Header>वर्ण कनवर्ज़न</lb_UTF8_Header>
+<cmdCancel>बंद</cmdCancel>
+<cmdOK>प्रक्रिया</cmdOK>
+<lb_UTF8_Dest>गंतव्य फ़ाइल:</lb_UTF8_Dest>
+<lb_UTF8_Source>स्रोत फ़ाइल:</lb_UTF8_Source>
+<groupBox1>एन्कोडिंग सेटिंग्स</groupBox1>
+<this>Characterset रूपांतरण</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>डेटा clustering उपकरण</label1>
+<label2>डेटा clustering उपकरण enha nced बैच डेटा क्लीनअप के लिए सरलीकृत clustering विकल्पों का एक सेट प्रदान करते हैं ।  उन्नत clustering कार्यक्षमता के लिए, कृपया OpenRefine का उपयोग करने पर विचार करें.</label2>
+<groupBox1>विकल्प</groupBox1>
+<rdCustom>अनुक्रमणिका कस्टम फ़ील्ड</rdCustom>
+<rdControlData>इंडेक्स नियंत्रित डेटा (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>सभी डेटा अनुक्रमणिका</rdAll>
+<cmdImport>डेटा आयात करें</cmdImport>
+<label3>स्रोत फ़ाइल:</label3>
+<label9>डेटा सॉर्ट करें:</label9>
+<label8>प्रदर्शन क्लस्टर्स:</label8>
+<label7>निम्न उपफ़ील्ड पर क्लस्टर:</label7>
+<cmbclusteringalgorithm>Levenshtein दूरी</cmbclusteringalgorithm>
+<label6>clustering एल्गोरिथ्म का चयन करें:</label6>
+<cmbClusterField>नाम (1xx, 7xx)</cmbClusterField>
+<label4>उस डेटा का चयन करें जिसे आप क्लस्टर करना चाहते हैं:</label4>
+<cmdGenerateCluster>क्लस्टर जनरेट</cmdGenerateCluster>
+<cmbAlg>Levenshtein दूरी</cmbAlg>
+<lnkAddCriteria>अद्यतन जोड़ें</lnkAddCriteria>
+<lnkClose>बंद</lnkClose>
+<lnkEditCluster>सभी परिवर्तन संसाधित</lnkEditCluster>
+<label5>संकुल डेटा:</label5>
+<this>clustering उपकरण</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>कार्य डीबगर</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>प्रासंगिक सीमांकक</label8>
+<lb_Tab_Header>टैब सीमांकित अभिलेख निर्यात करें</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>फ़ील्ड सीमांकक में</label18>
+<lbdelimiter>फ़ील्ड सीमांकक का चयन करें</lbdelimiter>
+<cmdTClose2>बंद</cmdTClose2>
+<cmdTNext>अगला &gt; &gt;</cmdTNext>
+<label1>चरण 1: फ़ाइल पथ सेट करें</label1>
+<ck_normalize>फ़ील्ड डेटा सामान्य बनाएँ</ck_normalize>
+<cmd_tab2_back>वापस</cmd_tab2_back>
+<lnkSettings>सेटिंग्स...</lnkSettings>
+<lnkDeleteField>फ़ील्ड हटाएँ</lnkDeleteField>
+<lnkAddField>फ़ील्ड जोड़ें</lnkAddField>
+<label14>उपक्षेत्र:</label14>
+<label11>फ़ील्ड:</label11>
+<cmdTClose>बंद</cmdTClose>
+<cmdTExport>निर्यात</cmdTExport>
+<label2>चरण 2: फ़ील्ड/उपफ़ील्ड को निर्यात करने के लिए निर्धारित करें</label2>
+<label3>टैब सीमांकित अभिलेख निर्यात करें</label3>
+<mnuLoad>लोड सेटिंग्स</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>सेटिंग्स सहेजें</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>सेटिंग्स साफ़ करें</menuItem3>
+<this>टैब सीमांकित अभिलेख निर्यात करें</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>आकार:</label4>
+<lb_Example>उदाहरण पाठ</lb_Example>
+<lb_lang_font>फ़ॉन्ट का चयन करें:</lb_lang_font>
+<cmdOK>ठीक है</cmdOK>
+<cmdClose>बंद</cmdClose>
+<this>फ़ॉन्ट का चयन करें</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>आयात पर चलाने के लिए कार्य</groupBox1>
+<lnkSelectPre>कार्य का चयन करें</lnkSelectPre>
+<cname>नाम</cname>
+<cPath>कार्य पथ</cPath>
+<groupBox2>निर्यात पर चलाने के लिए कार्य</groupBox2>
+<linkLabel1>कार्य का चयन करें</linkLabel1>
+<columnHeader1>नाम</columnHeader1>
+<columnHeader2>कार्य पथ</columnHeader2>
+<cmdSave>सहेजें</cmdSave>
+<cmdClose>बंद</cmdClose>
+<deleteItemToolStripMenuItem>आइटम हटाएँ</deleteItemToolStripMenuItem>
+<this>ILS प्रक्रिया सेटिंग्स</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>सबफ़ोल्डर शामिल करें</ckJoinSubfolders>
+<cmdEditFile>फ़ाइल संपादित करें</cmdEditFile>
+<lnkJoinedFiles>शामिल हो गए फ़ाइलें दिखाएँ</lnkJoinedFiles>
+<label19>फ़ाइल प्रकार:</label19>
+<ck_JoinIndividual>व्यक्तिगत फ़ाइलों में शामिल हों</ck_JoinIndividual>
+<cmdJoinCancel>बंद</cmdJoinCancel>
+<cmdJoinProcess>प्रक्रिया</cmdJoinProcess>
+<lb_Join_Files>शामिल होने के लिए फ़ाइल (फ़ाइलें):</lb_Join_Files>
+<lb_Join_Source>फ़ाइल सहेजें:</lb_Join_Source>
+<lb_Join_Header>MARCJoin उपयोगिता</lb_Join_Header>
+<lbJoinStatus>स्थिति:</lbJoinStatus>
+<groupBox1>विकल्प</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>प्रति फ़ाइल रिकॉर्ड करता है:</lb_Split_Records>
+<cmdSplitClose>बंद</cmdSplitClose>
+<cmdSplitProcess>प्रक्रिया</cmdSplitProcess>
+<lb_Split_Folder>गंतव्य फ़ोल्डर:</lb_Split_Folder>
+<lb_Split_Source>स्रोत फ़ाइल:</lb_Split_Source>
+<lb_Split_Header>MARCSplit उपयोगिता</lb_Split_Header>
+<groupBox1>विकल्प</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>विषयवस्तु नाम:</label1>
+<label2>विवरण:</label2>
+<label3>वैश्विक मान</label3>
+<label4>फ़ॉन्ट रंग</label4>
+<label5>पृष्ठभूमि रंग</label5>
+<label6>पृष्ठभूमि रंग</label6>
+<label7>फ़ॉन्ट रंग</label7>
+<label8>MarcEditor मान</label8>
+<cmdSave>सहेजें</cmdSave>
+<cmdClose>बंद</cmdClose>
+<cmdPreview>पूर्वावलोकन</cmdPreview>
+<richTextBox1>नमूना पाठ</richTextBox1>
+<label9>MarcEditor प्रदर्शन:</label9>
+<cmdOpen>खोलें</cmdOpen>
+<label10>Groupbox पृष्ठभूमि</label10>
+<groupBox1>Groupbox उदाहरण</groupBox1>
+<this>MarcEdit थीम बिल्डर</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>MarcEdit समस्या निवारण विज़ार्ड मदद उपयोगकर्ताओं को मदद ढूँढने के लिए डिज़ाइन किया गया था </label1>
+<gpStart>विकल्प</gpStart>
+<rdErrorMessage>मैं एक त्रुटि संदेश है</rdErrorMessage>
+<rdErrorNumber>मैं एक त्रुटि संख्या है</rdErrorNumber>
+<lbMessage>संदेश}</lbMessage>
+<cmdPage1>अगले</cmdPage1>
+<gpResults>परिणाम</gpResults>
+<cmdClose>बंद</cmdClose>
+<lnkCreateDebugPackage>डिबगिंग के लिए भेजने के लिए एक डीबग पैकेज बनाएँ?</lnkCreateDebugPackage>
+<label2>समस्या निवारण विज़ार्ड नॉलेज-बेस में किसी आलेख का पता लगाने में अक्षम था </label2>
+<this>MarcEdit समस्या निवारण विज़ार्ड</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>अन्य XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>मार्क</rdMARC>
+<label17>अंतिम स्वरूप का चयन करें</label17>
+<label16>चरण 3:</label16>
+<label15>फ़ाइल सहेजें:</label15>
+<label13>चरण 2:</label13>
+<label12>ट्रांस्फ़ॉर्मर नाम:</label12>
+<lnkNextPg1>अगले चरण पर जाएँ</lnkNextPg1>
+<label4>फ़ाइल का चयन करें:</label4>
+<label3>चरण 1:</label3>
+<label2>संसाधनों. GetString ("label2. पाठ ")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>दस्तावेज़ तत्व:</lbTop>
+<ckTopLevel>दस्तावेज़ तत्व का उपयोग करें</ckTopLevel>
+<lnkNextPg2>अगले चरण पर जाएँ</lnkNextPg2>
+<label7>रिकॉर्ड तत्व का चयन करें</label7>
+<label6>चरण 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>मैपिंग निर्धारित करें</label14>
+<lnkNextP3>अगले चरण पर जाएँ</lnkNextP3>
+<groupBox2>तर्क</groupBox2>
+<ck_filing_characters>सामान्य फ़ाइल डेटा की गणना करें</ck_filing_characters>
+<ck_sort>फ़ील्ड्स सॉर्ट करें</ck_sort>
+<button2>लोड टेम्पलेट</button2>
+<toolStripMenuItem2>आइटम संपादित करें</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>आइटम हटाएँ</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>आइटम सम्मिलित हों</joinItemsToolStripMenuItem>
+<groupBox1>सेटिंग्स</groupBox1>
+<ckTrim>मौजूदा विराम चिह्न ट्रिम करे</ckTrim>
+<ck_Repeatable>पुनरावर्तन उपक्षेत्र</ck_Repeatable>
+<P3_ck_constant>निरंतर डेटा</P3_ck_constant>
+<P3_cmd_Apply>तर्क जोड़ें</P3_cmd_Apply>
+<P3_lb_punct>शब्द. विराम:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>इंडस्ट्रीज़:</P3_lb_indicators>
+<P3_mapto>इस पर मैप करें:</P3_mapto>
+<P3_lb_select>चयन:</P3_lb_select>
+<label9>चरण 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>विज़ार्ड बंद करें</lnkClose>
+<label11>ट्रांस्फ़ॉर्मेशन को XML फ़ंक्शंस सूची में बनाया और जोड़ा गया है.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>प्रकार: पुस्तक</label11>
+<lbbTitle>006/008 विकल्प:</lbbTitle>
+<lnkbBiog>biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>उत्सव:</lnkbFest>
+<lnkbConf>conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>निरंतरता:</lnkbCont>
+<lnkbForm>प्रपत्र:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>बीमारियों:</lnkbIlls>
+<lnkbType>प्रकार:</lnkbType>
+<label12>प्रकार: इलेक्ट्रॉनिक संसाधन</label12>
+<label5>006/008 विकल्प:</label5>
+<lnkcFile>फ़ाइल:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>प्रकार:</lnkcType>
+<label2>,</label2>
+<lnkbDates>दिनांकों:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 विकल्प:</label1>
+<label13>प्रकार: मानचित्र</label13>
+<label3>006/008 विकल्प:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>प्रपत्र:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>proj:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>प्रकार:</lnkmType>
+<label14>प्रकार: मिश्रित सामग्री</label14>
+<label4>006/008 विकल्प:</label4>
+<lnkmmForm>प्रपत्र:</lnkmmForm>
+<lnkmmType>प्रकार:</lnkmmType>
+<label15>प्रकार: स्कोर</label15>
+<label6>006/008 विकल्प:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>accm:</lnkscAccM>
+<lnkscForm>प्रपत्र:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>comp:</lnkscComp>
+<lnkscType>प्रकार:</lnkscType>
+<label10>प्रकार: सतत संसाधन</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 विकल्प:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>निरंतरता:</lnkslCont>
+<lnkslForm>प्रपत्र:</lnkslForm>
+<lnkslOrig>orig:</lnkslOrig>
+<lnkslSrTp>srtp:</lnkslSrTp>
+<lnkslISSN>issn:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>freq:</lnkslFreq>
+<lnkslType>प्रकार:</lnkslType>
+<label16>प्रकार: ध्वनि रिकॉर्डिंग</label16>
+<label8>006/008 विकल्प:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>accm:</lnksdAccM>
+<lnksdForm>प्रपत्र:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>comp:</lnksdComp>
+<lnksdType>प्रकार:</lnksdType>
+<label17>प्रकार: दृश्य सामग्री</label17>
+<label9>006/008 विकल्प:</label9>
+<lnkvmTech>टेक:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>प्रपत्र:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>समय:</lnkvmTime>
+<lnkvmType>प्रकार:</lnkvmType>
+<cmd_Ok>ठीक है</cmd_Ok>
+<cmd_Close>बंद</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>प्रपत्र:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>संसाधनों. GetString ("lb_AboutDesc. Text")</lb_AboutDesc>
+<lb_Authors>मेरे बारे में:</lb_Authors>
+<lbBuildCode>अद्यतन कोड:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>परियोजना वेबसाइट:</label5>
+<label2>acknowledgements:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>संशोधित:</lbMod>
+<lbMailto>टेरी रीज़</lbMailto>
+<lbAuthor>लेखक:</lbAuthor>
+<lbVersion>निर्माण संख्या:</lbVersion>
+<label4>MarcEdit के बारे में</label4>
+<linkLabel1>http://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>तकनीकी विवरण:</label1>
+<this>MarcEdit के बारे में</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>लोड</cmdLoad>
+<cmdClose>बंद</cmdClose>
+<cmdDelete>हटाएँ</cmdDelete>
+<this>फ़ाइलें स्वतः सहेजें:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>फ़ील्ड संपादित करें</lnk_Edit_Fields>
+<lnkCopy>फ़ील्ड डेटा की प्रतिलिपि बनाएँ</lnkCopy>
+<lnkSwapFields>स्वैप फ़ील्ड</lnkSwapFields>
+<lnkIndicators>संकेतक संपादित करें</lnkIndicators>
+<lnkSubfield>उपफ़ील्ड डेटा संपादित करें</lnkSubfield>
+<lnkAddDelete>फ़ील्ड जोड़ें/</lnkAddDelete>
+<groupBox8>फ़ील्ड विकल्प हटाएँ</groupBox8>
+<ckRemoveByPostition>फ़ील्ड स्थिति से निकालें</ckRemoveByPostition>
+<ck_RemoveIfNot>यदि फ़ील्ड डेटा मेल नहीं खाता है तो निकालें</ck_RemoveIfNot>
+<ck_dedup>डुप्लिकेट डेटा निकालें</ck_dedup>
+<groupBox7>फ़ील्ड विकल्प जोड़ें</groupBox7>
+<ck_A_addifnotduplicate>केवल तब फ़ील्ड जोड़ें जब कोई डुप्लिकेट न हो</ck_A_addifnotduplicate>
+<ck_A_Insert>इससे पहले सम्मिलित करें</ck_A_Insert>
+<ck_A_not_present>फ़ील्ड जोड़ें केवल तभी मौजूद नहीं है</ck_A_not_present>
+<ck_AddIfPresent>फ़ील्ड जोड़ें यदि वर्तमान</ck_AddIfPresent>
+<ck_last>अंतिम सम्मिलित करें</ck_last>
+<groupBox6>सामान्य विकल्प</groupBox6>
+<ck_delete_batch>प्रक्रिया बैच कार्रवाई</ck_delete_batch>
+<ck_A_Case>केस मिलाएँ</ck_A_Case>
+<ck_A_regular_Expression>नियमित व्यंजक का उपयोग करें</ck_A_regular_Expression>
+<label1>क्या खोजें:</label1>
+<cmd_A_Close>बंद</cmd_A_Close>
+<cmd_A_Add>फ़ील्ड जोड़ें</cmd_A_Add>
+<cmd_A_Delete>फ़ील्ड हटाएँ</cmd_A_Delete>
+<label3>फ़ील्ड डेटा:</label3>
+<lb_A_Field>फ़ील्ड:</lb_A_Field>
+<lb_A_Title>फ़ील्ड उपयोगिता जोड़ें/</lb_A_Title>
+<cmd_Sub_Close>बंद</cmd_Sub_Close>
+<cmd_Sub_Remove>पाठ निकालें</cmd_Sub_Remove>
+<cmd_Sub_Replace>पाठ बदलें</cmd_Sub_Replace>
+<groupBox2>खोज विकल्प:</groupBox2>
+<ckDeleteDuplicate>डुप्लिकेट उपफ़ील्ड हटाएँ</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>उपफ़ील्ड हटाएँ</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>उपफ़ील्ड डेटा ले जाएँ</ck_move_subfield>
+<ck_Reg_Express>नियमित व्यंजक का उपयोग करें</ck_Reg_Express>
+<ck_Sub_Case>केस मिलाएँ</ck_Sub_Case>
+<ck_Sub_New>केवल नए उपफ़ील्ड</ck_Sub_New>
+<ck_Sub_NotPresent>उपफ़ील्ड जोड़ें यदि मौजूद नहीं है</ck_Sub_NotPresent>
+<label8>इससे बदलें:</label8>
+<label7>फ़ील्ड डेटा:</label7>
+<label6>उपक्षेत्र:</label6>
+<label5>फ़ील्ड:</label5>
+<lb_Sub_Title>उपफ़ील्ड उपयोगिता संपादित करें</lb_Sub_Title>
+<cmd_I_Close>बंद</cmd_I_Close>
+<cmd_I_Replace>बदलें</cmd_I_Replace>
+<lb_Ind_Replace>संकेतकों से बदलें</lb_Ind_Replace>
+<label12>फ़ील्ड डेटा:</label12>
+<label11>संकेतक</label11>
+<label10>फ़ील्ड:</label10>
+<lb_Ind_Title>संकेतक उपयोगिताएँ संपादित करें</lb_Ind_Title>
+<ck_Match_All_Subfields>सभी उपफ़ील्डों को मिलाएँ</ck_Match_All_Subfields>
+<ck_swap_expression>नियमित अभिव्यक्ति के रूप में समझो</ck_swap_expression>
+<label4>मिल:</label4>
+<cmd_Swap_Close>बंद</cmd_Swap_Close>
+<cmd_Swap_Process>प्रक्रिया</cmd_Swap_Process>
+<groupBox3>खोज विकल्प</groupBox3>
+<ck_swap_once_per>स्वैप प्रति एक फ़ील्ड संसाधित</ck_swap_once_per>
+<ck_swap_sort>सॉर्ट संशोधित फ़ील्ड</ck_swap_sort>
+<ck_Swap_Override>मौजूदा/बनाएँ नई जोड़ें</ck_Swap_Override>
+<ck_Swap_Add>मौजूदा फ़ील्ड में जोड़ें</ck_Swap_Add>
+<ck_Swap_Copy>प्रतिलिपि स्रोत</ck_Swap_Copy>
+<label20>संशोधित डेटा:</label20>
+<label22>subfields</label22>
+<label23>संकेतक</label23>
+<label24>फ़ील्ड</label24>
+<label19>मूल डेटा:</label19>
+<label18>मिल:</label18>
+<label17>subfields</label17>
+<label16>संकेतक</label16>
+<label15>फ़ील्ड</label15>
+<lb_Swap_Title>स्वैप फील्ड उपयोगिता</lb_Swap_Title>
+<label14>फ़ील्ड डेटा</label14>
+<lbFindInField>फ़ील्ड में ढूँढें</lbFindInField>
+<groupBox4>विकल्प</groupBox4>
+<ck_copy_field_regex>नियमित एक्सप्रेशंस का उपयोग करें</ck_copy_field_regex>
+<ck_copy_delete>स्रोत फ़ील्ड हटाएँ</ck_copy_delete>
+<label2>गंतव्य फ़ील्ड:</label2>
+<cmdCopyClose>बंद</cmdCopyClose>
+<cmdCopy>प्रतिलिपि</cmdCopy>
+<label9>स्रोत फ़ील्ड:</label9>
+<label13>फ़ील्ड डेटा की प्रतिलिपि बनाएँ</label13>
+<label26>स्थिति:</label26>
+<label21>बदलें:</label21>
+<label25>मिल:</label25>
+<groupBox5>विकल्प</groupBox5>
+<ck_editfield_match_case>केस मिलाएँ</ck_editfield_match_case>
+<ck_UserRegularExpressions>नियमित एक्सप्रेशंस का उपयोग करें</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>बंद</cmdFieldEdit_Close>
+<cmdEditField_Process>प्रक्रिया</cmdEditField_Process>
+<label27>फ़ील्ड:</label27>
+<label28>फ़ील्ड डेटा संपादित करें</label28>
+<this>MarcEdit.NET बैच संपादन उपकरण</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<label1>BibFrame2 Testbed एक सरल के लिए metadata speci की अनुमति के लिए डिज़ाइन उपयोगिता का उपयोग करने के लिए है </label1>
+<label2>स्रोत फ़ाइल:</label2>
+<label3>फ़ाइल सहेजें:</label3>
+<label4>डेटा क्रमांकन:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>अनुवाद नियम:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>संपादित</lnkEditXQuery>
+<label7>फ़ाइल प्रकार:</label7>
+<label8>प्रोफ़ाइल:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Id फ़ील्ड:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>फ़ाइल सहेजें:</label3>
+<label2>स्रोत फ़ाइल:</label2>
+<label1>लिंक डेटा उपकरण को मार्क रिकॉर्ड के एक सेट के माध्यम से पाश के लिए डिज़ाइन किया गया है और 1xx, 6xx, और 7xx डेटा तत्वों में उनके लिंक dat एक अंत अंक के लिए उपयोग अंक का समाधान.</label1>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdCancel>बंद</cmdCancel>
+<groupBox1>आईडी सेवा</groupBox1>
+<ckLimiter>इस पर रिज़ॉल्यूशन सीमित करें:</ckLimiter>
+<ck3xxFields>प्रक्रिया 3xx फ़ील्ड</ck3xxFields>
+<label4>OCLC संख्या:</label4>
+<ckWorkId>OCLC कार्य ID एम्बेड करें</ckWorkId>
+<cmb_viaf_index>LC (नाको)</cmb_viaf_index>
+<ckAutodetect>विषय ID स्वतः पहचानें</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>स्वतः पता लगाएँ मुख्य/</ck_loc>
+<label5>नियम फ़ाइल:</label5>
+<cmdStatus>सेवा स्थिति</cmdStatus>
+<lbstatus>स्थिति:</lbstatus>
+<this>लिंक किए गए रिकॉर्ड बनाएँ</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>मिल</lnkFind>
+<lbResults>परिणाम:</lbResults>
+<lnkCatalog>केली है बनर्जी सूची कैलक्यूलेटर</lnkCatalog>
+<cmdClose>बंद</cmdClose>
+<label1>LC कटर</label1>
+<this>कैटलॉगिंग कैलक्यूलेटर</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>चरित्र जांच उपकरण एक अनुमानात्मक प्रक्रिया का उपयोग करता है एक अच्छा अनुमान रियल देने के लिए </label1>
+<cmdDetect>पता</cmdDetect>
+<cmdClose>बंद</cmdClose>
+<label2>परिणाम:</label2>
+<ckDetailed>वर्बोज़ परिणाम</ckDetailed>
+<this>वर्ण पहचान</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>संसाधनों. GetString ("label1. पाठ ")</label1>
+<lnkClassify>OCLC की वर्गीकृत सेवा के बारे में</lnkClassify>
+<ck_all>सभी रिकॉर्ड में जोड़ें</ck_all>
+<ck_single>चयनित रिकॉर्ड में जोड़ें</ck_single>
+<ck_lc>कांग्रेस की लाइब्रेरी</ck_lc>
+<ck_dewey>डेवी दशमलव</ck_dewey>
+<cmdProcess>वर्गीकृत</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<label5>यदि निम्न फ़ील्ड मौजूद नहीं हैं, तो सम्मिलित करें (उदाहरण: 050; 060; 090; 092)</label5>
+<label4>जनरेटेड वर्गीकरण निम्न फ़ील्ड में सम्मिलित करें:</label4>
+<ck_cutters>कटर और तिथियाँ परिकलित करें</ck_cutters>
+<ck_use_z>मेल खाने के लिए उपफ़ील्ड z का उपयोग करें</ck_use_z>
+<ck_DateMod>दिनांक के लिए ध्वज जोड़ें</ck_DateMod>
+<ck_omit_serial>धारावाहिकों के लिए तिथि छोड़ें</ck_omit_serial>
+<ck_omit_integrated>एकीकृत संसाधनों के लिए दिनांक छोड़ें</ck_omit_integrated>
+<ck_omit>दिनांक अपवाद जोड़ें</ck_omit>
+<ck_always_fast>हमेशा तेज़ शीर्ष जोड़ें</ck_always_fast>
+<ck_conditional_fast>जब कोई विषय शीर्षक मौजूद नहीं हैं, तो तेज़ शीर्ष जोड़ें</ck_conditional_fast>
+<label6>संकेतक:</label6>
+<cmdInsert>सम्मिलन निर्देश</cmdInsert>
+<cmdClassification>वर्गीकरण</cmdClassification>
+<cmdSubjects>विषय शीर्षक</cmdSubjects>
+<lnkClassification>वर्गीकरण चुनें</lnkClassification>
+<lnkSubjects>विषय विकल्प चुनें</lnkSubjects>
+<lnkOptions>सेट विकल्प</lnkOptions>
+<cmdOptions>विकल्प</cmdOptions>
+<label2>उपक्षेत्र:</label2>
+<label3>कटर उपक्षेत्र:</label3>
+<this>वर्गीकरण उत्पन्न</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>निरंतर डेटा</columnHeader1>
+<columnHeader3>शॉर्टकट</columnHeader3>
+<cmdClose>बंद</cmdClose>
+<lnkKey>कुंजी असाइनमेंट</lnkKey>
+<lnkEdit>चयनित स्ट्रिंग संपादित करें</lnkEdit>
+<lnkDelete>चयनित स्ट्रिंग हटाएँ</lnkDelete>
+<lnkNew>नई स्ट्रिंग बनाएँ</lnkNew>
+<lbActions>क्रियाएँ:</lbActions>
+<lbMacro>निरंतर डेटा:</lbMacro>
+<this>निरंतर डेटा संपादित करें</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>संख्या उपसर्ग:</lb_prefix>
+<lb_digit>अंक शुरू:</lb_digit>
+<ck_autogenerate>नए रिकॉर्ड में सम्मिलित करें</ck_autogenerate>
+<button1>ठीक है</button1>
+<button2>बंद</button2>
+<lb_length>अंकीय लंबाई (शून्य उपसर्ग)</lb_length>
+<ckgenerate>वर्तमान फ़ाइल में जनरेट</ckgenerate>
+<ck_label>अभिलेख क्रमांक चिह्नित करें</ck_label>
+<label1>फ़ील्ड/उपफ़ील्ड (उदाहरण: 001, 949 $ b)</label1>
+<ck_repeat>हमेशा सम्मिलित करें</ck_repeat>
+<this>नियंत्रण संख्या जनरेट</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>फजी मिलान का उपयोग करें</ck_UseFuzzyMatch>
+<ck_save>Dedup आइटम यहाँ सहेजें:</ck_save>
+<ck_unique>आउटपुट अनन्य आइटम</ck_unique>
+<ck_remove>डुप्लिकेट आइटम निकालें</ck_remove>
+<lbOptions>विकल्प:</lbOptions>
+<label1>Dedup रखते हुए:</label1>
+<lb_Control>नियंत्रण फ़ील्ड:</lb_Control>
+<cmdClose>बंद</cmdClose>
+<cmdOK>प्रक्रिया</cmdOK>
+<btnCancel>रद्द करना</btnCancel>
+<btnNext>अगले</btnNext>
+<label4>फ़ाइल सहेजें:</label4>
+<label3>निम्न फ़ाइलों से डुप्लिकेशन प्राप्त करें:</label3>
+<label2>रिकॉर्ड डुप्लिकेशन उपकरण</label2>
+<label5>विश्वास:</label5>
+<this>रिकॉर्ड डुप्लिकेशन रद्द करना</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>लॉग फ़ाइल का चयन करें:</label1>
+<groupBox1>विकल्प</groupBox1>
+<ckChanged>परिवर्तित रिकॉर्ड निकालें</ckChanged>
+<ckEnhance>लॉग्स बढ़ाएँ</ckEnhance>
+<label2>रिकॉर्ड्स का चयन करें:</label2>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<this>लॉग प्रबंधक</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext एक प्रयोगशाला अंतरिक्ष के लिए नए उपकरणों और अवधारणाओं से संबंधित परिचय है </lbaboutmn>
+<lnkOpenRefine>OpenRefine एकीकरण</lnkOpenRefine>
+<lnkSPARQL>SPARQL ब्राउज़र</lnkSPARQL>
+<lnkLinkIds>लिंक पहचानकर्ता</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>इस उपकरण का प्रयोग करें मार्क या MarcEdit के स्मरक प्रारूप और OpenRef के बीच डेटा ले जाने के लिए </label1>
+<label2>स्रोत फ़ाइल:</label2>
+<label3>फ़ाइल सहेजें:</label3>
+<rdExport>निर्यात करने के लिए OpenRefine</rdExport>
+<rdImport>OpenRefine से आयात करें</rdImport>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdCancel>बंद</cmdCancel>
+<lbStatus>स्थिति:</lbStatus>
+<groupBox1>विकल्प</groupBox1>
+<this>OpenRefine डेटा स्थानांतरण उपकरण</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>साझा करने के लिए फ़ाइलों का चयन करें:</label1>
+<ckconfig>कॉन्फ़िगरेशन विकल्प</ckconfig>
+<label2>उपयोगकर्ता कॉन्फ़िग निर्देशिका में सभी डेटा निर्यात करता है ।  इसमें कॉन्फ़िगरेशन डेटा शामिल है, </label2>
+<ckXSLT>XSLT फ़ंक्शंस</ckXSLT>
+<label3>निर्धारित XSLT stylesheets निर्यात करें
+</label3>
+<ckMacros>निर्धारित मैक्रोज़ और कार्य</ckMacros>
+<label4>सभी निर्धारित मैक्रोज़ और कार्य निर्यात करें..
+</label4>
+<label5>सभी निर्धारित MarcEditor सामग्री प्रकार टेम्पलेट निर्यात करें.</label5>
+<ckTemplates>डिफ़ाइंड MarcEditor टेम्पलेट्स</ckTemplates>
+<cmdExport>निर्यात</cmdExport>
+<cmdClose>बंद</cmdClose>
+<this>निर्यात सेटिंग्स</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>कार्रवाई</columnHeader2>
+<columnHeader1>पाठ मिला</columnHeader1>
+<button1>बंद</button1>
+<button2>पृष्ठ पर जाएँ</button2>
+<cmdFindUpdate>ढूँढें क्वेरी संपादित करें</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>सभी परिणाम ढूँढें</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<lbField>मूल्यांकित करने के लिए कॉल नंबर फ़ील्ड दर्ज करें. (उदा. ०९०)</lbField>
+<groupBox1>विकल्प</groupBox1>
+<rdTitle>कटर आदेश (2xx, 1xx)</rdTitle>
+<rdDefault>कटर आदेश (1xx, 2xx)</rdDefault>
+<groupBox2>विकल्प</groupBox2>
+<label1>मिल:</label1>
+<rdCustomField>कस्टम फ़ील्ड</rdCustomField>
+<rdMainEntry>मूल्यांकन मुख्य प्रविष्टि (1xx, २४५)</rdMainEntry>
+<this>कटर उत्पन्न</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>परिभाषित OAI सर्वर:</label1>
+<label2>(एकाधिक आइटम्स का चयन करने के लिए shift/</label2>
+<ck_date>पिछले डाउनलोड से हार्वेस्ट</ck_date>
+<cmdCreate>सहेजें</cmdCreate>
+<button1>बंद</button1>
+<this>बैच हार्वेस्ट जॉब बनाएँ</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>बाइट्स</BytesGroup>
+<label5>बिट्स</label5>
+<label4>iso-8859-1</label4>
+<label3>दशमलव</label3>
+<label2>हेक्स</label2>
+<columnHeader1>स्थिति</columnHeader1>
+<columnHeader2>बाइट्स</columnHeader2>
+<columnHeader3>पाठ</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>फ़ाइल</menuItem1>
+<openToolStripMenuItem>खोलें</openToolStripMenuItem>
+<ExitProgram>बाहर</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit परिणाम विंडो</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>फ़ंक्शन नाम (उपनाम):</lb_Alias>
+<label1>इसमें शामिल हों:</label1>
+<cmd_ok>सहेजें</cmd_ok>
+<cmd_close>बंद</cmd_close>
+<this>XML फ़ंक्शंस में शामिल हों</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>नाम</columnHeader1>
+<columnHeader2>पथ</columnHeader2>
+<cmdOK>ठीक है</cmdOK>
+<cmdClose>बंद</cmdClose>
+<this>उपलब्ध कार्य</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>उपकरण</mnuTools>
+<mnuAddinsEditLinkedData>लिंक्ड डेटा नियम संपादित करें</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>XML नियम फ़ाइल संपादित करें</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>मैं कैसे नई अंतिमबिंदु प्रोफ़ाइल करते हैं?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>नियम फ़ाइल अद्यतन</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>लॉग प्रबंधन</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>उन्नत लॉग प्रबंधन</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>लॉग फ़ाइलों को हटाएँ</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>सभी लॉग फ़ाइलें देखें</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>सीमांकित पाठ अनुवादक</mnuAddinTranslator>
+<mnuExportGroup>निर्यात करें...</mnuExportGroup>
+<mnuToolsTabbed>टैब सीमांकित अभिलेख निर्यात करें</mnuToolsTabbed>
+<mnuToolsGateway>मार्क रिकॉर्ड निर्यात करें</mnuToolsGateway>
+<mnuToolsSelect>मार्क रिकॉर्ड्स का चयन करें</mnuToolsSelect>
+<mnuToolsDelete>चयनित रिकॉर्ड हटाएँ</mnuToolsDelete>
+<mnuToolsExtract>चयनित रिकॉर्ड्स निकालें</mnuToolsExtract>
+<mnuToolsCharacterConversion>वर्ण कनवर्ज़न उपकरण</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>Characterset रूपांतरण</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>वर्ण पहचान</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit स्क्रिप्ट विज़ार्ड</mnuAddScriptWizard>
+<mnuExplorer>मार्क एसक्यूएल एक्सप्लोरर</mnuExplorer>
+<toolStripMenuItem4>OAI हार्वेस्टर उपकरण</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>हार्वेस्ट OAI रिकॉर्ड</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>बैच हार्वेस्टर</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>बैच कार्य बनाएँ</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>बैच हार्वेस्ट चलाएँ</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>निर्यात</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>आयात</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC उपकरण</mnuToolsUnimarcTools>
+<mnuAddinURL>url सत्यापित करें</mnuAddinURL>
+<mnuAddinZ39_50>z 39.50/एसआरयू क्लाइंट</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>मार्क प्रसंस्करण उपकरण</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>बैच प्रक्रिया रिकॉर्ड</mnuToolsBatch>
+<toolClusterData>क्लस्टर डेटा उपकरण</toolClusterData>
+<mnuToolsDedup>डुप्लिकेट रिकॉर्ड ढूँढें</mnuToolsDedup>
+<generateToolStripMenuItem>उत्पन्न...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>कॉल नंबर</mnuGenerateCallnumber>
+<toolStripMenuItem3>तेजी से शीर्षकों</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC विषय शीर्षक</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>अभिलेख मर्ज करें</mnutoolsmerge>
+<toolStripMenuItem5>RDA सहायक</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC आपरेशन</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC रिकॉर्ड डाउनलोडर</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>अद्यतन WorldCat रिकॉर्ड होल्डिंग्स</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>WorldCat के लिए Bibliograph रिकॉर्ड अपलोड करें</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>शीर्ष मान्य करें</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>सेवा स्थिति</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>शीर्ष मान्य करें</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>प्राथमिकताएँ</mnuToolsPreferences>
+<pluginsToolStripMenuItem>प्लग इन</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>प्लगइन प्रबंधक</mnuAddinPluginManager>
+<mnuaddincdsisis>सीडीएस-ISIS. iso = &gt; मार्क अनुवाद</mnuaddincdsisis>
+<mnuHelp>मदद</mnuHelp>
+<mnuHelpContents>सामग्री और मदद</mnuHelpContents>
+<mnuHelpTutorials>ट्यूटोरियल देखें</mnuHelpTutorials>
+<mnuHelpOnline>ऑनलाइन मदद</mnuHelpOnline>
+<mnuHelpList>MarcEdit अधिसूचना सूची में शामिल हों</mnuHelpList>
+<mnuHelpError>सुझाव/त्रुटि रिपोर्ट</mnuHelpError>
+<mnuBlog>MarcEdit ब्लॉग</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit ज्ञात समस्याएँ</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>सिस्टम जानकारी</systemInfoToolStripMenuItem>
+<mnuAddLang>भाषा फ़ाइलें संपादित करें</mnuAddLang>
+<mnuRestartIn32bitMode>३२-बिट मोड में MarcEdit पुनरारंभ करें</mnuRestartIn32bitMode>
+<mnuFileShare>कॉन्फ़िगरेशन सेटिंग्स साझा करें</mnuFileShare>
+<exportSettingsToolStripMenuItem>निर्यात सेटिंग्स</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>आयात सेटिंग्स</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>समस्या निवारण विकल्प</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>अस्थायी फ़ाइलें साफ़ करें</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Noto यूनिकोड फ़ॉन्ट डाउनलोड करें</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>कार्य फ़ाइल सुधारें</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>बैकअप से नेटवर्क फ़ाइलें पुनर्स्थापित करें</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>पुनः लिंक करने के लिए कार्यों का चयन करें</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>कॉन्फ़िगरेशन डेटा रीसेट करें</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>ओपन HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>समस्या निवारण विज़ार्ड</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>अद्यतन (डीबग मोड) डाउनलोड करें</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>अद्यतनों के लिए जाँचें</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>अनुप्रयोग शॉर्टकट</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>अनुप्रयोग डेटा पथ</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>भाषा डेटा पथ</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>विषयवस्तु डेटा पथ</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT डेटा पथ</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>के बारे में....</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>लेखक, टेरी रीज़</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>आप क्या करना चाहेंगे?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>उपयोगकर्ता द्वारा निर्धारित 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine डेटा</lnkUserDefined1>
+<lnkMarcToolsStart>मार्क उपकरण</lnkMarcToolsStart>
+<lnkUserDefined2>उपयोगकर्ता 2 निर्धारित</lnkUserDefined2>
+<lnkUserDefined4>उपयोगकर्ता Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>मैं चाहूँगा:</groupBox1>
+<cmbLastToolUsed>अंतिम प्रयुक्त उपकरण</cmbLastToolUsed>
+<lnkTopic5>लिंक किए गए डेटा के साथ कार्य</lnkTopic5>
+<lnkTopic4>अनुवाद एक्सेल को मार्क</lnkTopic4>
+<lnkTopic3>मार्क फ़ाइलें मर्ज करें</lnkTopic3>
+<lnkTopic2>हार्वेस्ट OAI डेटा</lnkTopic2>
+<lnkTopic1>कोई मार्क फ़ाइल संपादित करें</lnkTopic1>
+<this>MarcEdit {संस्करण}. टेरी रीज़ द्वारा बीटा</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>हार्वेस्ट OAI डेटा</lbTitle>
+<lbServer>सर्वर पता:</lbServer>
+<lbSet>नाम सेट करें:</lbSet>
+<lbMetadata>मेटाडेटा प्रकार:</lbMetadata>
+<cmdOK>ठीक है</cmdOK>
+<cmdClose>बंद</cmdClose>
+<opt_default>डिफ़ॉल्ट</opt_default>
+<opt_saxon>सक्सोन</opt_saxon>
+<opt_msxml>msxml</opt_msxml>
+<label4>XSLT इंजिन:</label4>
+<ck_Raw>हार्वेस्ट रॉ डेटा (OAI डेटा को स्थानीय फ़ाइल सिस्टम में सहेजें)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>उन्नत सेटिंग्स</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>समयबाह्य (सेकेंड्स में.)</lbTimeout>
+<ck_Translate>अनुवाद करने के लिए मार्क-8</ck_Translate>
+<label2>अंत:</label2>
+<label1>प्रारंभ:</label1>
+<lbCrosswalk>Crosswalk पथ:</lbCrosswalk>
+<cmdSave>सहेजें</cmdSave>
+<lnkDebug>डीबग URL</lnkDebug>
+<tabPage1>घर</tabPage1>
+<tabPage2>उन्नत सेटिंग्स</tabPage2>
+<this>मेटाडेटा हार्वेस्टर</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>OCLC संख्या की स्रोत फ़ाइल:</label1>
+<cmdDownload>डाउनलोड</cmdDownload>
+<cmdClose>बंद</cmdClose>
+<label2>फ़ाइल सहेजें:</label2>
+<this>थोक OCLC से डाउनलोड रिकॉर्ड</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>खोज WorldCat:</label1>
+<cmbarg1>खोजशब्द</cmbarg1>
+<cmbconditional>और</cmbconditional>
+<cmdSearch>खोज</cmdSearch>
+<cmdClose>बंद</cmdClose>
+<label2>परिणाम:</label2>
+<col_oclcnum>OCLC संख्या</col_oclcnum>
+<col_title>शीर्षक</col_title>
+<ck_LocalBib>स्थानीय ग्रंथि रिकॉर्ड डाउनलोड करें यदि वर्तमान</ck_LocalBib>
+<lnkAll>सभी का चयन</lnkAll>
+<label3>|</label3>
+<lnkNone>कोई</lnkNone>
+<this>खोज OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>अपने OCLC WorldCat होल्डिंग्स का अद्यतन</label1>
+<groupBox1>विकल्प</groupBox1>
+<rdDeleteHoldings>होल्डिंग्स हटाएँ</rdDeleteHoldings>
+<rdAddHolding>होल्डिंग्स जोड़ें</rdAddHolding>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<label2>संस्था कोड:</label2>
+<label3>वर्गीकरण स्कीमा:</label3>
+<cmb_schema>कांग्रेस की लाइब्रेरी</cmb_schema>
+<ck_debug>डीबगिंग जानकारी मुद्रित करें</ck_debug>
+<this>अद्यतन WorldCat होल्डिंग्स</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>कांग्रेस की लाइब्रेरी</cmb_schema>
+<label3>वर्गीकरण स्कीमा:</label3>
+<label2>संस्था कोड:</label2>
+<cmdClose>बंद</cmdClose>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<label4>OCLC संख्या के साथ ग्रंथि रिकॉर्ड WorldCat में अद्यतन किया जाएगा.  Bibliograph </label4>
+<label1>होल्डिंग कोड:</label1>
+<lnkGetHoldings>कोड प्राप्त करें</lnkGetHoldings>
+<ckLocalBibData>स्थानीय ग्रंथि रिकॉर्ड के रूप में प्रक्रिया</ckLocalBibData>
+<ck_deleterecords>अभिलेख हटाएँ</ck_deleterecords>
+<this>WorldCat के लिए रिकॉर्ड अपलोड करें</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>ठीक है</cmd_options_ok>
+<cmd_options_cancel>बंद</cmd_options_cancel>
+<cmd_options_apply>लागू</cmd_options_apply>
+<lnkMainWindow>मुख्य विंडो</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>भाषा</lnkLanguage>
+<lnkEaseOfUse>उपयोग में आसानी</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>अद्यतन</lnkUpdates>
+<lnkFileAssociations>फ़ाइल संबद्धताएँ</lnkFileAssociations>
+<lnkOther>अन्य</lnkOther>
+<lnkILSIntegration>ILS एकीकरण</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API एकीकरण</lnkOCLCAPI>
+<label15>डिफ़ॉल्ट प्रोग्राम सेट करें</label15>
+<ckLogging>लॉगिंग सक्षम करें:</ckLogging>
+<ckAutosave>स्वतः सहेजें सक्षम करें</ckAutosave>
+<ck_enhanced_editor_loading>एन्हांस्ड पेजिंग प्रबंधन का उपयोग करें</ck_enhanced_editor_loading>
+<ckRDATemplates>RDA टेम्पलेट का उपयोग करें</ckRDATemplates>
+<ckCompileMarc8>रिकॉर्ड को MARC8 के रूप में संकलित करें</ckCompileMarc8>
+<label37>लॉगिंग पथ:</label37>
+<cksaveutf8>रिकॉर्ड को UTF8 के रूप में संकलित करें</cksaveutf8>
+<ck_intellisense>Intellisense सक्षम करें</ck_intellisense>
+<label2>प्रति पृष्ठ रिकॉर्ड</label2>
+<cmb_encoding>utf8</cmb_encoding>
+<lb_Encoding>डिफ़ॉल्ट एनकोडिंग:</lb_Encoding>
+<ck_nwindow>नई विंडो में फ़ाइलें खोलें</ck_nwindow>
+<ck_append>नए रिकॉर्ड जोड़ें</ck_append>
+<lb_psize>पूर्वावलोकन आकार:</lb_psize>
+<ckUsePreview>पूर्वावलोकन मोड का उपयोग करें</ckUsePreview>
+<cmd_editor_font_default>डिफ़ॉल्ट सेट करें</cmd_editor_font_default>
+<cmd_editor_set_font>फ़ॉन्ट सेट करें</cmd_editor_set_font>
+<lb_Editor_Font_Props>MarcEditor फ़ॉन्ट गुण सेट करें:</lb_Editor_Font_Props>
+<cmd_editor_template_default>डिफ़ॉल्ट सेट करें</cmd_editor_template_default>
+<cmd_editor_modify>संशोधित</cmd_editor_modify>
+<lb_Current_Template>वर्तमान टेम्पलेट:</lb_Current_Template>
+<lb_Editor_Template>MarcEditor टेम्पलेट सेट करें:</lb_Editor_Template>
+<label9>* प्रोग्राम पुनरारंभ की आवश्यकता है *</label9>
+<label8>pt.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>फ़ॉन्ट आकार:</label4>
+<lb_Example>उदाहरण पाठ</lb_Example>
+<lb_lang_font>भाषा फ़ॉन्ट सेट करें:</lb_lang_font>
+<lb_Set_Lang>भाषा पैक सेट करें:</lb_Set_Lang>
+<rd_theme_dark>कस्टम थीम्स:</rd_theme_dark>
+<rd_theme_normal>सामान्य (डिफ़ॉल्ट)</rd_theme_normal>
+<label39>अनुप्रयोग प्रदर्शन विकल्प</label39>
+<ck_export_output>निर्यात रसीद (कैप्चर ILS आउटपुट)</ck_export_output>
+<lb_TCP_Timeout>समयबाह्य:</lb_TCP_Timeout>
+<lb_TCP_Port>पोर्ट:</lb_TCP_Port>
+<lb_TCP_Host>होस्ट पता:</lb_TCP_Host>
+<lb_TCPIP_Props>TCP/IP गुण:</lb_TCPIP_Props>
+<ck_marc21>MARC21 स्वरूप में रिकॉर्ड</ck_marc21>
+<ck_marcxml_sax>मूल विकल्प (नॉन-XSLT प्रक्रिया) का उपयोग करें</ck_marcxml_sax>
+<groupBox2>XSLT इंजिन</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>msxml</rd_MSXML>
+<groupBox1>यूनिकोड सामान्यीकरण</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>डिफ़ॉल्ट वर्ण एनकोडिंग:</label35>
+<ckC>विहित अपघटन (C)</ckC>
+<ckKD>संगतता अपघटन (केडी)</ckKD>
+<ck_Diacritics>जब विराम चिह्नों का उपयोग करें</ck_Diacritics>
+<lb_Diacritics>सामान्य विकल्प:</lb_Diacritics>
+<lb_Engine_XML_Options>XML विकल्प:</lb_Engine_XML_Options>
+<ck_engine_namespace>नाम स्थान का उपयोग करें</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>स्वचालित अद्यतन आपके सिस्टम प्रशासक द्वारा अक्षम किए गए हैं</labelAutoUpdateDisabled>
+<ckDetectProxy>सिस्टम प्रॉक्सी सेटिंग्स का उपयोग करें</ckDetectProxy>
+<ck_Update_Validator>validator अद्यतनों के लिए स्वत: जाँचें</ck_Update_Validator>
+<label3>इस समय कार्य करने के लिए आपको इस डोमेन से संबंधित होना आवश्यक है.</label3>
+<groupBox4>उपयोगकर्ता जानकारी:</groupBox4>
+<lb_domain>डोमेन:</lb_domain>
+<label6>पासवर्ड:</label6>
+<label5>नाम:</label5>
+<ckUpdates>अद्यतनों के लिए स्वत: जाँचें</ckUpdates>
+<groupBox5>फ़ाइल संबद्धताएँ सेट करें</groupBox5>
+<cmd_file_assoc_view>दृश्य प्रकार</cmd_file_assoc_view>
+<cmd_file_assoc_delete>प्रकार हटाएँ</cmd_file_assoc_delete>
+<cmd_file_assoc_save>प्रकार सहेजें</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>एसोसिएट (*.                      ) के साथ फ़ाइल प्रकार:</label7>
+<ck_mrk8_editor>एसोसिएट (*. mrk8) MarcEditor के साथ फ़ाइलें</ck_mrk8_editor>
+<ck_mrk_editor>एसोसिएट (*. mrk) MarcEditor के साथ फ़ाइलें</ck_mrk_editor>
+<ck_mrc>एसोसिएट (*. अनुसंधान) MarcBreaker के साथ फ़ाइलें</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>चयन</lnkSelectILS>
+<lnkDeleteProfile>हटाएँ</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>जोड़ें</lnkAddProfile>
+<label31>प्रोफ़ाइल:</label31>
+<ck_ignore_ssl>SSL प्रमाणपत्र त्रुटियों पर ध्यान न दें</ck_ignore_ssl>
+<lnk_ils_delete>हटाएँ</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>संपादित</lnk_ils_z3950_edit>
+<ck_ils_z3950>z 39.50 सेटिंग्स का उपयोग करें</ck_ils_z3950>
+<ck_ils_enable>ILS विकल्प सक्षम करें</ck_ils_enable>
+<label13>होस्ट नाम:</label13>
+<label12>पासवर्ड:</label12>
+<label11>नाम:</label11>
+<label10>सिस्टम का चयन करें:</label10>
+<lnkGetCodes>होल्डिंग कोड प्राप्त करें</lnkGetCodes>
+<label24>होल्डिंग कोड:</label24>
+<cmb_schema>कांग्रेस की लाइब्रेरी</cmb_schema>
+<label22>वर्गीकरण स्कीमा:</label22>
+<label23>संस्था कोड:</label23>
+<ckshow>पाठ दिखाएँ</ckshow>
+<cmdValidateKeys>मान्य कुंजियाँ</cmdValidateKeys>
+<linkLabel1>अनुरोध/OCLC कुंजी प्रबंधित करें (OCLC से कनेक्ट करता है)</linkLabel1>
+<label21>OCLC API कुंजी सेटिंग्स</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>गुप्त कुंजी (मेटाडेटा API कुंजी के साथ युग्मित)</label18>
+<label17>OCLC मेटाडेटा API कुंजी</label17>
+<label16>OCLC खोज API कुंजी</label16>
+<lnkFilePaths>स्थानों</lnkFilePaths>
+<label38>नेटवर्क समयबाह्य (३०० मिलीसेकंड डिफ़ॉल्ट):</label38>
+<lnkCopyLocalFiles>अब स्थानीय फ़ाइलों की प्रतिलिपि बनाएँ</lnkCopyLocalFiles>
+<label30>डिफ़ॉल्ट मार्क उपकरण ड्राइव पथ सेट करें:</label30>
+<label27>फ़ाइल पथ:</label27>
+<label26>कार्य फ़ोल्डर:</label26>
+<label25>नेटवर्क फ़ोल्डर:</label25>
+<lb_mono>मोनो पथ:</lb_mono>
+<lb_temp>अस्थायी पथ सेट करें:</lb_temp>
+<ck_rss>आरएसएस फ़ीड पढ़ें</ck_rss>
+<lb_title>शीर्षक टैग:</lb_title>
+<lb_Author>लेखक टैग:</lb_Author>
+<lbCall>कॉल नंबर टैग:</lbCall>
+<label1>नियंत्रण संख्या टैग:</label1>
+<ck_allow_z3950>z 39.50 फ़ंक्शंस सक्षम करें</ck_allow_z3950>
+<label28>फ़ील्ड विकल्प:</label28>
+<ck_touch_friendly>स्पर्श के अनुकूल मेनू का उपयोग करें</ck_touch_friendly>
+<ck64_bit>६४-बिट स्थापित</ck64_bit>
+<ck_32bit>३२-बिट स्थापित</ck_32bit>
+<label36>एमएस ऑफ़िस संस्करण:</label36>
+<label34>ISBN टैग:</label34>
+<ckSort880>८८०: सॉर्ट करने के लिए जोड़ने फ़ील्ड का उपयोग करें</ckSort880>
+<ck880Infile>फ़ील्ड जोड़ों के साथ फ़ाइल ८८० फ़ील्ड</ck880Infile>
+<label29>सॉर्ट विकल्प:</label29>
+<ckShowDescriptionInScreenTips>स्क्रीन टिप्स में फ़ंक्शन वर्णन दिखाएँ</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>स्क्रीन टिप्स में शॉर्टकट कुंजियाँ दिखाएँ</ckScreenTipShortcuts>
+<label42>कुंजीपटल विकल्प</label42>
+<ckProvideSoundAccess>ध्वनि के साथ प्रतिक्रिया दें</ckProvideSoundAccess>
+<label41>फ़ीडबैक विकल्प</label41>
+<groupBox3>क्रियाएँ:</groupBox3>
+<lnkSearch4Themes>चयनित विषयवस्तु हटाएँ</lnkSearch4Themes>
+<lnkNewTheme>नया विषयवस्तु बनाएँ</lnkNewTheme>
+<label40>MarcEdit अधिक पहुँच योग्य बनाएँ</label40>
+<this>MarcEdit वरीयताएँ</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>उपलब्ध प्लगइन्स:</label1>
+<ch1>प्लगइन का नाम</ch1>
+<ch2>url</ch2>
+<c3>फ़ाइल आकार</c3>
+<c4>Version #:</c4>
+<cmddownload>डाउनलोड</cmddownload>
+<cmdClose>बंद</cmdClose>
+<columnHeader1>निकालें?</columnHeader1>
+<columnHeader2>प्लगइन का नाम</columnHeader2>
+<columnHeader3>वर्ग नाम</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>स्थापित प्लगइन्स:</label2>
+<cmdRemove>निकालें</cmdRemove>
+<c5>MarcEdit संस्करण क्रमांक</c5>
+<this>प्लगइन प्रबंधक</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>संसाधनों. GetString ("label1. पाठ ")</label1>
+<label2>पैटर्न:</label2>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdCancel>रद्द करना</cmdCancel>
+<lbstatus>स्थिति:</lbstatus>
+<ckEscape>URL से डेटा एस्केप</ckEscape>
+<ckAddNew>मौजूदा फ़ील्ड बदलें</ckAddNew>
+<ck_addnewfield>कोई नया फ़ील्ड जोड़ें यदि मौजूद नहीं है</ck_addnewfield>
+<ckAlwaysAdd>हमेशा नई फ़ील्ड जोड़ें</ckAlwaysAdd>
+<groupBox1>विकल्प</groupBox1>
+<this>नए फ़ील्ड बनाएँ</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>बैच खोज</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>परिणाम</groupBox3>
+<lnkClearResults>स्पष्ट परिणाम</lnkClearResults>
+<lnkDownload>सभी आइटम्स डाउनलोड करें</lnkDownload>
+<lnkGetNext>अगला {सीमा} प्राप्त करें</lnkGetNext>
+<lnkDownloadAllHoldings>सभी होल्डिंग्स डाउनलोड करें</lnkDownloadAllHoldings>
+<col1>स्थिति</col1>
+<col2>शीर्षक</col2>
+<columnHeader1>डेटाबेस</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>चयनित आइटम्स डाउनलोड करें</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>चयनित होल्डिंग्स रिकॉर्ड डाउनलोड करें</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>चयनित रिकॉर्ड देखें</viewSelectedRecordToolStripMenuItem>
+<groupBox1>विकल्प</groupBox1>
+<rdEditDB>डेटाबेस का चयन करें</rdEditDB>
+<rdEditSettings>सेटिंग्स संपादित करें</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>प्रति पृष्ठ रिकॉर्ड</label4>
+<ckUnicode>यूनिकोड पुनर्प्राप्त करें</ckUnicode>
+<lb_encoding_single>सर्वर वर्ण सेट</lb_encoding_single>
+<lbSearchb>खोज:</lbSearchb>
+<lbSearch>क्वेरी डेटाबेस:</lbSearch>
+<label3>डेटाबेस वरीयता सेट करें:</label3>
+<cmdSelectDatabase>चयन</cmdSelectDatabase>
+<MCol3>id</MCol3>
+<MCol1>नाम</MCol1>
+<MCol2>प्रकार</MCol2>
+<lb_PModifyTitle>डेटाबेस का चयन करें:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>क्रियाएँ</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>नया z 39.50 सर्वर जोड़ें</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>नया एसआरयू सर्वर जोड़ें</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>प्राथमिकताएँ</preferencesToolStripMenuItem>
+<cmdCloseSettings>बंद</cmdCloseSettings>
+<label5>नियंत्रण फ़ील्ड (बैच प्रक्रिया डुप्लिकेशन के लिए)</label5>
+<cmdSaveSettings>सेटिंग्स सहेजें</cmdSaveSettings>
+<rdDownloadPreferred>पसंदीदा स्रोत से डाउनलोड करें</rdDownloadPreferred>
+<rdDownloadMostComplete>सबसे पूरा रिकॉर्ड डाउनलोड करें</rdDownloadMostComplete>
+<rdAllRecords>सभी रिकॉर्ड डाउनलोड करें</rdAllRecords>
+<label2>बैच संसाधन विकल्प</label2>
+<label1>प्राथमिकताएँ</label1>
+<this>MarcEdit z 39.50/एसआरयू क्लाइंट</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>प्रक्रिया ५०२</ck_502>
+<label6>|</label6>
+<lnkEditFields>फ़ील्ड संपादित करें</lnkEditFields>
+<ck_040>संशोधित करें ०४०--$erda जोड़ें</ck_040>
+<ck_qualifyinginfo>योग्यता सूचना 015/020/024/027/</ck_qualifyinginfo>
+<lnkEdit>सूची संपादित करें</lnkEdit>
+<ck_dgmd>GMD हटाएँ</ck_dgmd>
+<ckAbbrev>विस्तृत करें संक्षिप्त नाम</ckAbbrev>
+<ckgmd>जनरेट GMD</ckgmd>
+<ck264>मूल्यांकन 260/264</ck264>
+<ck_signs>हमेशा प्रयोग करें ©, ℗ प्रतीक</ck_signs>
+<ck381>३८१ जोड़ें-अन्य</ck381>
+<ck380>३८०-कार्य के रूप में जोड़ें</ck380>
+<ck347>३४७ जोड़ें-डिजिटल विशेषताएँ</ck347>
+<ck346>जोड़ें ३४६-वीडियो विशेषताएँ</ck346>
+<ck345>जोड़ें ३४५--Proj. लक्षण</ck345>
+<ck344>३४४ जोड़ें--ध्वनि विशेषताएँ</ck344>
+<ck337>३३७ जोड़ें--मीडिया प्रकार
+३३८ जोड़ें--वाहक प्रकार</ck337>
+<ck336>३३६-सामग्री प्रकार जोड़ें</ck336>
+<cmdProcess>ठीक है</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<label1>स्रोत:</label1>
+<label2>सहेजें:</label2>
+<lnkAll>सभी</lnkAll>
+<label3>चयन:</label3>
+<label4>|</label4>
+<lnkNone>कोई</lnkNone>
+<label7>स्थिति:</label7>
+<this>RDA सहायक</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>बंद</cmd_Close>
+<rEdit></rEdit>
+<this>परिणाम</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>घर</lnkHome>
+<label5>संसाधनों. GetString ("label5. पाठ ")</label5>
+<label4>RobertCompare के बारे में</label4>
+<label3>|</label3>
+<lnkAbout>RobertCompare के बारे में</lnkAbout>
+<ckSort>पूर्व-सॉर्ट फ़ाइलें</ckSort>
+<cmdClose>बंद</cmdClose>
+<cmdExecute>निष्पादित</cmdExecute>
+<label1>फ़ाइल सहेजें:</label1>
+<label6>फ़ाइलों की तुलना करें:</label6>
+<label2>संसाधनों. GetString ("label2. पाठ ")</label2>
+<lnkPreferences>प्राथमिकताएँ</lnkPreferences>
+<label7>|</label7>
+<lbSortField>सॉर्ट फ़ील्ड:</lbSortField>
+<lbdelete>गए:</lbdelete>
+<lbAddColor>अतिरिक्त:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>कोई</lnkNone>
+<lnkAll>सभी का चयन</lnkAll>
+<col_title>शीर्षक</col_title>
+<col_id>id</col_id>
+<label3>|</label3>
+<label2>परिणाम:</label2>
+<cmdClose>बंद</cmdClose>
+<cmdSearch>खोज</cmdSearch>
+<cmbarg1>शीर्षक</cmbarg1>
+<label1>खोज डेटाबेस:</label1>
+<ck_batch>बैच खोज</ck_batch>
+<this>खोज</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>चयन</cmdSelect>
+<this>ILS चयन करें</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>अभिलेख क्रमांक</columnHeader1>
+<columnHeader2>प्रदर्शन फ़ील्ड</columnHeader2>
+<selectItemsToolStripMenuItem>आइटम्स का चयन करें</selectItemsToolStripMenuItem>
+<cmdImport>आयात फ़ाइल</cmdImport>
+<cmdfDelete>चयनित हटाएँ</cmdfDelete>
+<cmdExport>निर्यात चयनित</cmdExport>
+<cmdExit>बाहर</cmdExit>
+<lb_Search>खोज:</lb_Search>
+<lb_DisplayField>प्रदर्शन फ़ील्ड:</lb_DisplayField>
+<lb_SourceFile>स्रोत मार्क फ़ाइल:</lb_SourceFile>
+<ckSource>संशोधित रिकॉर्ड्स को स्रोत में फिर से सहेजें</ckSource>
+<ck_retain>चेक आइटम बनाए रखें</ck_retain>
+<cmd_Generate>रिपोर्ट जनरेट</cmd_Generate>
+<ck_find_all>सभी रिकॉर्ड डेटा खोजें</ck_find_all>
+<ck_use_regex>नियमित एक्सप्रेशंस का उपयोग करें</ck_use_regex>
+<cmdRandomExport>निर्यात यादृच्छिक</cmdRandomExport>
+<lnkDoesNotMatch>मेल नहीं खाती</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>औंधा चयन</lnkInvert>
+<ckExactWord>सटीक शब्द मैच</ckExactWord>
+<this>MarcEdit.NET: चयनित मार्क रिकॉर्ड्स संशोधित करें</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>सॉर्टिंग से छोड़ने के लिए फ़ील्ड्स का चयन करें</lb_title>
+<lb_fields>फ़ील्ड्स सॉर्ट करें:</lb_fields>
+<lbExclude>फ़ील्ड्स छोड़ें:</lbExclude>
+<cmd_OK>ठीक है</cmd_OK>
+<cmd_Close>बंद</cmd_Close>
+<this>कस्टम सॉर्ट विज़ार्ड</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL समापन बिंदु:</lbsparql>
+<cmdQuery>क्वेरी</cmdQuery>
+<cmdClose>बंद</cmdClose>
+<lbQuery>SPARQL क्वेरी:</lbQuery>
+<lbresults>परिणाम:</lbresults>
+<cklocal>स्थानीय फ़ाइल लोड</cklocal>
+<lbOutput>आउटपुट:</lbOutput>
+<cmbOutput>xml</cmbOutput>
+<groupBox1>नमूना क्वेरी:</groupBox1>
+<lbExample3>के लिए क्वेरी: 軍事基地</lbExample3>
+<lnkExample3>जापानी आहार पुस्तकालय</lnkExample3>
+<lbexample2>गेट्टी कॉपर सल्फेट के लिए क्वेरी</lbexample2>
+<lnkExample2>गेट्टी उदाहरण</lnkExample2>
+<label1>इन्फ्लूएंजा, मानव के लिए मेष क्वेरी</label1>
+<lnkExample1>मेष उदाहरण</lnkExample1>
+<label2>Sparql संदर्भ:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL अंतिमबिंदु (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (विकिपीडिया)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL ट्यूटोरियल</lnkTutorials>
+<this>SPARQL ब्राउज़र</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>सीडीएस-ISIS = &gt; मार्क अनुवाद</lb_title>
+<groupBox1>उपयोगकर्ता इनपुट</groupBox1>
+<lb_output>आउटपुट फ़ाइल:</lb_output>
+<lb_input>इनपुट फ़ाइल:</lb_input>
+<groupBox2>विकल्प:</groupBox2>
+<rd_advanced>उन्नत अनुवाद</rd_advanced>
+<rd_simple>सरल अनुवाद</rd_simple>
+<lb_subfield>उपफ़ील्ड मार्कर</lb_subfield>
+<cmd_Ok>ठीक है</cmd_Ok>
+<cmd_Close>बंद</cmd_Close>
+<this>सीडीएस-ISIS. iso = &gt; मार्क अनुवाद</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>विकल्प:</lb_title>
+<lnkLoad>फ़ील्ड मैपिंग लोड करना</lnkLoad>
+<ck_indicators>संकेतक जोड़ें</ck_indicators>
+<ckLDR>सही LDRs</ckLDR>
+<ck_subfield>अग्रणी उपफ़ील्ड जोड़ें</ck_subfield>
+<cmdOK>ठीक है</cmdOK>
+<cmdClose>बंद</cmdClose>
+<this>उन्नत विकल्प</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>label1</lbCaption>
+<cmdCancel>रद्द करना</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>विशेष वर्ण:</Label1>
+<_CharC_0>एक</_CharC_0>
+<_CharC_1>एक</_CharC_1>
+<_CharC_2>एक</_CharC_2>
+<_CharC_3>एक</_CharC_3>
+<_CharC_4>एक</_CharC_4>
+<_CharC_5>एक</_CharC_5>
+<_CharC_6>एक</_CharC_6>
+<_CharC_7>एक</_CharC_7>
+<_CharC_8>एक</_CharC_8>
+<_CharC_9>एक</_CharC_9>
+<_CharC_10>एक</_CharC_10>
+<_CharC_11>एक</_CharC_11>
+<_CharC_12>एक</_CharC_12>
+<_CharC_13>एक</_CharC_13>
+<_CharC_14>एक</_CharC_14>
+<_CharC_15>एक</_CharC_15>
+<_CharC_16>एक</_CharC_16>
+<_CharC_17>एक</_CharC_17>
+<_CharC_18>एक</_CharC_18>
+<_CharC_19>एक</_CharC_19>
+<_CharC_20>एक</_CharC_20>
+<_CharC_21>एक</_CharC_21>
+<_CharC_22>एक</_CharC_22>
+<_CharC_23>एक</_CharC_23>
+<_CharC_24>एक</_CharC_24>
+<_CharC_25>एक</_CharC_25>
+<_CharC_26>एक</_CharC_26>
+<_CharC_27>एक</_CharC_27>
+<_CharC_28>एक</_CharC_28>
+<_CharC_29>एक</_CharC_29>
+<_CharC_30>एक</_CharC_30>
+<_CharC_31>एक</_CharC_31>
+<_CharC_32>एक</_CharC_32>
+<_CharC_33>एक</_CharC_33>
+<_CharC_34>एक</_CharC_34>
+<_CharC_35>एक</_CharC_35>
+<_CharC_36>एक</_CharC_36>
+<_CharC_37>एक</_CharC_37>
+<_CharC_38>एक</_CharC_38>
+<_CharC_39>एक</_CharC_39>
+<_CharC_40>एक</_CharC_40>
+<_CharC_41>एक</_CharC_41>
+<_CharC_42>एक</_CharC_42>
+<_CharC_43>एक</_CharC_43>
+<_CharC_44>एक</_CharC_44>
+<_CharC_45>एक</_CharC_45>
+<_CharC_46>एक</_CharC_46>
+<_CharC_47>एक</_CharC_47>
+<_CharC_48>एक</_CharC_48>
+<_CharC_49>एक</_CharC_49>
+<_CharC_50>एक</_CharC_50>
+<_CharC_51>एक</_CharC_51>
+<_CharC_52>एक</_CharC_52>
+<_CharC_53>एक</_CharC_53>
+<_CharC_54>एक</_CharC_54>
+<_CharC_55>एक</_CharC_55>
+<_CharC_56>एक</_CharC_56>
+<_CharC_57>एक</_CharC_57>
+<_CharC_58>एक</_CharC_58>
+<_CharC_59>एक</_CharC_59>
+<_CharC_60>एक</_CharC_60>
+<_CharC_61>एक</_CharC_61>
+<_CharC_62>एक</_CharC_62>
+<_CharC_63>एक</_CharC_63>
+<_CharC_64>एक</_CharC_64>
+<_CharC_65>एक</_CharC_65>
+<_CharC_66>एक</_CharC_66>
+<_CharC_67>एक</_CharC_67>
+<_CharC_68>एक</_CharC_68>
+<_CharC_69>एक</_CharC_69>
+<_CharC_70>एक</_CharC_70>
+<_CharC_71>एक</_CharC_71>
+<_CharC_72>एक</_CharC_72>
+<_CharC_73>एक</_CharC_73>
+<_CharC_74>एक</_CharC_74>
+<_CharC_75>एक</_CharC_75>
+<_CharC_76>एक</_CharC_76>
+<_CharC_77>एक</_CharC_77>
+<_CharC_78>एक</_CharC_78>
+<_CharC_79>एक</_CharC_79>
+<_CharC_80>एक</_CharC_80>
+<_CharC_81>एक</_CharC_81>
+<_CharC_82>एक</_CharC_82>
+<_CharC_83>एक</_CharC_83>
+<_CharC_84>एक</_CharC_84>
+<_CharC_85>एक</_CharC_85>
+<_CharC_86>एक</_CharC_86>
+<_CharC_87>एक</_CharC_87>
+<_CharC_88>एक</_CharC_88>
+<_CharC_89>एक</_CharC_89>
+<_CharC_90>एक</_CharC_90>
+<_CharC_91>एक</_CharC_91>
+<_CharC_92>एक</_CharC_92>
+<_CharC_93>एक</_CharC_93>
+<_CharC_94>एक</_CharC_94>
+<_CharC_95>एक</_CharC_95>
+<_CharC_96>एक</_CharC_96>
+<_CharC_97>एक</_CharC_97>
+<_CharC_98>एक</_CharC_98>
+<_CharC_99>एक</_CharC_99>
+<_CharC_100>एक</_CharC_100>
+<_CharC_101>एक</_CharC_101>
+<_CharC_102>एक</_CharC_102>
+<_CharC_103>एक</_CharC_103>
+<_CharC_104>एक</_CharC_104>
+<_CharC_105>एक</_CharC_105>
+<_CharC_106>एक</_CharC_106>
+<_CharC_107>एक</_CharC_107>
+<_CharC_108>एक</_CharC_108>
+<_CharC_109>एक</_CharC_109>
+<_CharC_110>एक</_CharC_110>
+<_CharC_111>एक</_CharC_111>
+<_CharC_112>एक</_CharC_112>
+<_CharC_113>एक</_CharC_113>
+<_CharC_114>एक</_CharC_114>
+<_CharC_115>एक</_CharC_115>
+<_CharC_116>एक</_CharC_116>
+<_CharC_117>एक</_CharC_117>
+<_CharC_118>एक</_CharC_118>
+<_CharC_119>एक</_CharC_119>
+<_CharC_120>एक</_CharC_120>
+<_CharC_121>एक</_CharC_121>
+<_CharC_122>एक</_CharC_122>
+<_CharC_123>एक</_CharC_123>
+<_CharC_124>एक</_CharC_124>
+<_CharC_125>एक</_CharC_125>
+<_CharC_126>एक</_CharC_126>
+<_CharC_127>एक</_CharC_127>
+<_CharC_128>एक</_CharC_128>
+<_CharC_129>एक</_CharC_129>
+<_CharC_130>एक</_CharC_130>
+<_CharC_131>एक</_CharC_131>
+<_CharC_132>एक</_CharC_132>
+<_CharC_133>एक</_CharC_133>
+<_CharC_134>एक</_CharC_134>
+<_CharC_135>एक</_CharC_135>
+<_CharC_136>एक</_CharC_136>
+<_CharC_137>एक</_CharC_137>
+<_CharC_138>एक</_CharC_138>
+<_CharC_139>एक</_CharC_139>
+<_CharC_140>एक</_CharC_140>
+<_CharC_141>एक</_CharC_141>
+<_CharC_142>एक</_CharC_142>
+<_CharC_143>एक</_CharC_143>
+<_CharC_144>एक</_CharC_144>
+<_CharC_145>एक</_CharC_145>
+<_CharC_146>एक</_CharC_146>
+<_CharC_147>एक</_CharC_147>
+<_CharC_148>एक</_CharC_148>
+<_CharC_154>एक</_CharC_154>
+<_CharC_155>एक</_CharC_155>
+<_CharC_160>एक</_CharC_160>
+<_CharC_161>एक</_CharC_161>
+<_CharC_162>एक</_CharC_162>
+<_CharC_163>एक</_CharC_163>
+<_CharC_164>एक</_CharC_164>
+<_CharC_165>एक</_CharC_165>
+<_CharC_166>एक</_CharC_166>
+<_CharC_149>एक</_CharC_149>
+<_CharC_150>एक</_CharC_150>
+<_CharC_151>एक</_CharC_151>
+<_CharC_152>एक</_CharC_152>
+<_CharC_153>एक</_CharC_153>
+<_CharC_156>एक</_CharC_156>
+<_CharC_157>एक</_CharC_157>
+<_CharC_158>एक</_CharC_158>
+<_CharC_159>एक</_CharC_159>
+<_CharC_167>एक</_CharC_167>
+<_CharC_168>एक</_CharC_168>
+<_CharC_169>एक</_CharC_169>
+<_CharC_170>एक</_CharC_170>
+<_CharC_171>एक</_CharC_171>
+<_CharC_172>एक</_CharC_172>
+<_CharC_173>एक</_CharC_173>
+<_CharC_174>एक</_CharC_174>
+<_CharC_175>एक</_CharC_175>
+<_CharC_176>एक</_CharC_176>
+<_CharC_177>एक</_CharC_177>
+<_CharC_178>एक</_CharC_178>
+<_CharC_179>एक</_CharC_179>
+<_CharC_180>एक</_CharC_180>
+<_CharC_181>एक</_CharC_181>
+<_CharC_182>एक</_CharC_182>
+<_CharC_183>एक</_CharC_183>
+<_CharC_184>एक</_CharC_184>
+<_CharC_185>एक</_CharC_185>
+<_CharC_186>एक</_CharC_186>
+<_CharC_187>एक</_CharC_187>
+<_CharC_188>एक</_CharC_188>
+<_CharC_189>एक</_CharC_189>
+<_CharC_190>एक</_CharC_190>
+<_CharC_191>एक</_CharC_191>
+<_CharC_192>एक</_CharC_192>
+<_CharC_193>एक</_CharC_193>
+<_CharC_194>एक</_CharC_194>
+<_CharC_195>एक</_CharC_195>
+<_CharC_196>एक</_CharC_196>
+<_CharC_197>एक</_CharC_197>
+<_CharC_198>एक</_CharC_198>
+<_CharC_199>एक</_CharC_199>
+<_CharC_200>एक</_CharC_200>
+<_CharC_201>एक</_CharC_201>
+<_CharC_202>एक</_CharC_202>
+<_CharC_203>एक</_CharC_203>
+<_CharC_204>एक</_CharC_204>
+<_CharC_205>एक</_CharC_205>
+<_CharC_206>एक</_CharC_206>
+<_CharC_207>एक</_CharC_207>
+<_CharC_208>एक</_CharC_208>
+<_CharC_209>एक</_CharC_209>
+<_CharC_210>एक</_CharC_210>
+<_CharC_211>एक</_CharC_211>
+<_CharC_212>एक</_CharC_212>
+<_CharC_213>एक</_CharC_213>
+<_CharC_214>एक</_CharC_214>
+<_CharC_215>एक</_CharC_215>
+<_CharC_216>एक</_CharC_216>
+<_CharC_217>एक</_CharC_217>
+<_CharC_218>एक</_CharC_218>
+<_CharC_219>एक</_CharC_219>
+<_CharC_220>एक</_CharC_220>
+<_CharC_221>एक</_CharC_221>
+<_CharC_222>एक</_CharC_222>
+<_CharC_223>एक</_CharC_223>
+<_CharC_224>एक</_CharC_224>
+<_CharC_225>एक</_CharC_225>
+<_CharC_226>एक</_CharC_226>
+<_CharC_227>एक</_CharC_227>
+<_CharC_228>एक</_CharC_228>
+<_CharC_229>एक</_CharC_229>
+<_CharC_230>एक</_CharC_230>
+<_CharC_231>एक</_CharC_231>
+<_CharC_232>एक</_CharC_232>
+<_CharC_233>एक</_CharC_233>
+<_CharC_234>एक</_CharC_234>
+<_CharC_235>एक</_CharC_235>
+<_CharC_236>एक</_CharC_236>
+<_CharC_237>एक</_CharC_237>
+<_CharC_238>एक</_CharC_238>
+<_CharC_239>एक</_CharC_239>
+<_CharC_240>एक</_CharC_240>
+<_CharC_241>एक</_CharC_241>
+<_CharC_242>एक</_CharC_242>
+<_CharC_243>एक</_CharC_243>
+<_CharC_244>एक</_CharC_244>
+<_CharC_245>एक</_CharC_245>
+<_CharC_246>एक</_CharC_246>
+<_CharC_247>एक</_CharC_247>
+<_CharC_248>एक</_CharC_248>
+<_CharC_249>एक</_CharC_249>
+<_CharC_250>एक</_CharC_250>
+<_CharC_251>एक</_CharC_251>
+<_CharC_252>एक</_CharC_252>
+<_CharC_253>एक</_CharC_253>
+<_CharC_254>एक</_CharC_254>
+<_CharC_255>एक</_CharC_255>
+<cmd_Insert>सम्मिलित</cmd_Insert>
+<cmdClose>बंद</cmdClose>
+<this>मार्क-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>कार्य सूची नाम:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>हटाएँ फ़ील्ड कार्य जोड़ें</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>फ़ील्ड संपादन कार्य जोड़ें</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>संपादन संकेतक कार्य जोड़ें</addToolStripMenuItem>
+<cmdSave>सहेजें</cmdSave>
+<addNewFieldTaskToolStripMenuItem>नया फ़ील्ड कार्य जोड़ें</addNewFieldTaskToolStripMenuItem>
+<cmdClose>बंद</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>सभी कार्य बदलें जोड़ें</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>टिप्पणी जोड़ें</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>फ़ील्ड संपादन कार्य जोड़ें</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>स्वैप फ़ील्ड कार्य जोड़ें</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>प्रतिलिपि फ़ील्ड कार्य जोड़ें</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>कार्य सूची जोड़ें</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>RDA हेल्पर जोड़ें</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>लिंक्ड डेटा कार्य जोड़ें</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>निर्माण नया फ़ील्ड कार्य जोड़ें</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>शॉर्टकट संपादित करें</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>मामला बयान</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>लोअर केस</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>ऊपरी मामले</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>शीर्षक प्रकरण</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>प्रारंभिक स्थिति</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>प्रारंभिक केस कैपिटल बनाएँ</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>फ़ील्ड संपादन</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>स्मार्ट वर्ण साफ़</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>गणित कार्य</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>दशमलव अंश में कनवर्ट करें</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>रिक्त पंक्तियाँ निकालें</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>कटर उपकरण</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>कटर उत्पन्न</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Sanborn3 कटर उत्पन्न</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>चयनित कार्य क्रिया की प्रतिलिपि बनाएँ</mnuCopy>
+<mnuPasteTask>कार्य क्रिया चिपकाएँ</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>चयनित कार्य टिप्पणी</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>चयनित कार्य टिप्पणी नहीं</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>कार्य:</lbTasks>
+<label1>क्रियाएँ:</label1>
+<label2>विवरण:</label2>
+<cmdDebug>डीबग</cmdDebug>
+<this>कार्य सूची संपादित करें</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>नाम</columnHeader1>
+<columnHeader2>पथ</columnHeader2>
+<columnHeader3>शॉर्टकट</columnHeader3>
+<columnHeader4>विवरण</columnHeader4>
+<cmdClose>बंद</cmdClose>
+<lnkNew>नई कार्य सूची बनाएँ</lnkNew>
+<lbMacro>कार्य सूचियाँ:</lbMacro>
+<lnkCloneTask>मौजूदा कार्य सूची क्लोन</lnkCloneTask>
+<groupBox1>कार्य क्रियाएँ</groupBox1>
+<lnkRelink>कार्य फिर से लिंक करना</lnkRelink>
+<lnk_import_task>कार्य आयात करें</lnk_import_task>
+<groupBox2>मौजूदा कार्य प्रबंधित करें</groupBox2>
+<lnkBackup>सभी कार्य बैकअप</lnkBackup>
+<lnk_export_task>चयनित कार्य निर्यात करें</lnk_export_task>
+<lnkKey>कुंजी असाइनमेंट</lnkKey>
+<lnkEdit>चयनित कार्य सूची संपादित करें</lnkEdit>
+<lnkDelete>चयनित कार्य सूची हटाएँ</lnkDelete>
+<this>कार्य प्रबंधक</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>लंबा अभिलेख छोटा</ckTruncate>
+<label1>कार्रवाई चुनें:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>डिफ़ॉल्ट वर्ण एनकोडिंग:</label35>
+<ck_Marc8>अनुवाद करने के लिए मार्क-8</ck_Marc8>
+<ck_UTF8>अनुवाद करने के लिए UTF8</ck_UTF8>
+<lb_OutputFile>इस रूप में सहेजें...</lb_OutputFile>
+<lb_InputFile>खोलें...</lb_InputFile>
+<cmdCancel>बंद</cmdCancel>
+<cmdEdit>रिकॉर्ड संपादित करें</cmdEdit>
+<cmdExecute>निष्पादित</cmdExecute>
+<lb_Results>परिणाम:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>उपकरण</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>मुख्य विंडो पर लौटें</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>XML फ़ंक्शन सूची संपादित करें</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>बैच प्रक्रिया रिकॉर्ड</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>Characterset रूपांतरण</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC उपकरण</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>आप क्या करना चाहेंगे?</mnuContextHelp>
+<lnkTopic1>मेरी फ़ाइल को किसी भिन्न वर्ण एन्कोडिंग में कनवर्ट करें</lnkTopic1>
+<lnkTopic2>XML अनुवादों को जोड़ें/</lnkTopic2>
+<lnkTopic4>मैं अपनी मार्क फ़ाइल में कोई त्रुटि कैसे ढूँढ सकता हूँ?</lnkTopic4>
+<groupBox1>मैं चाहूँगा:</groupBox1>
+<groupBox2>प्रक्रिया के लिए डेटा का चयन करें:</groupBox2>
+<groupBox3>वर्ण एनकोडिंग विकल्प</groupBox3>
+<this>मार्क उपकरण</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit लाइट-वेट UNIMARC रूपांतरण उपकरणों का एक सेट प्रदान करता है.  यदि इन उपकरणों आप के लिए ब्याज के हैं और आप उन्हें बेहतर बनाने में मदद करना चाहते हैं, तो कृपया एफ eedback प्रदान करते हैं.
+
+</label1>
+<label2>स्रोत</label2>
+<label3>गंतव्य</label3>
+<groupBox1>विकल्प</groupBox1>
+<rdUNIMARC>UNIMARC = &gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 = &gt; UNIMARC</rdMARC21>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<this>UNIMARC उपकरण</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>अद्यतन नोट्स:</label1>
+<cmd_Update>अद्यतन</cmd_Update>
+<cmd_Cancel>रद्द करना</cmd_Cancel>
+<this>अद्यतन MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>यूनिकोड एन्कोडेड</ckIsUTF8>
+<ck_merge_to_source>स्रोत में मर्ज करें</ck_merge_to_source>
+<label17>फ़ाइल सहेजें:</label17>
+<label16>कैटलॉगिंग स्रोत</label16>
+<ck_SameFile>प्रक्रिया स्रोत फ़ाइल</ck_SameFile>
+<cmd_merge_cancel>रद्द करना</cmd_merge_cancel>
+<cmd_merge_next>अगला = &gt;</cmd_merge_next>
+<lb_merge_title>अभिलेख डेटा मर्ज करें</lb_merge_title>
+<ck_merge_repeatable>repeatable है</ck_merge_repeatable>
+<lb_id>अभिलेख पहचानकर्ता:</lb_id>
+<lb_merge>मर्ज फ़ाइल:</lb_merge>
+<lb_source>स्रोत फ़ाइल:</lb_source>
+<ck_overlayexisting>मौजूदा आइटम्स को अधिव्याप्त</ck_overlayexisting>
+<label4>विश्वास मान:</label4>
+<ck_mergeUnique>अनन्य आइटम मर्ज करें</ck_mergeUnique>
+<button1>रद्द करना</button1>
+<cmd_merge_select_fields_next>अगला = &gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = वापस</cmd_merge_select_fields_back>
+<label7>फ़ील्ड मर्ज करें:</label7>
+<label6>फ़ील्ड का चयन करें:</label6>
+<label5>अभिलेख डेटा मर्ज करें: फ़ील्ड चुनें</label5>
+<button5>बंद</button5>
+<label15>फ़ाइलें मर्ज की गई हैं.  {merge_results_file} में स्थित परिणाम.</label15>
+<label13>मर्ज पूर्ण</label13>
+<this>मार्क रिकॉर्ड मर्ज करें</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>शीर्ष मान्यता उपकरण 1xx, 6xx, या 7xx फ़ील्ड को मान्य करने के लिए उपयोग किया जा सकता है ।  गु ई उपकरण एक headin जी एक अधिकृत शीर्षक में प्रकट होता है अगर यह निर्धारित करने के लिए वेब और स्थानीय सेवाओं का एक संयोजन का उपयोग करता है ।</label1>
+<ck_1xx>प्राधिकृत 1xx/7xx फील्ड्स</ck_1xx>
+<ck_6xx>अधिकृत 6xx फ़ील्ड</ck_6xx>
+<cmdProcess>प्रक्रिया</cmdProcess>
+<cmdClose>बंद</cmdClose>
+<label2>स्रोत:</label2>
+<lbStatus>स्थिति:</lbStatus>
+<cmdExtract>निकालने</cmdExtract>
+<ckdeletecache>स्थानीय कैश हटाएँ</ckdeletecache>
+<lnkDelimited>सीमांकित सहेजें</lnkDelimited>
+<ckonlyA>केवल प्रक्रिया उपफ़ील्ड A</ckonlyA>
+<ckVariant>स्वचालित रूप से सही संस्करण</ckVariant>
+<ckGenerateBriefHeadings>संक्षिप्त व्यक्तिगत नाम अधिकारी उत्पन्न</ckGenerateBriefHeadings>
+<label3>उत्पन्न प्राधिकारी:</label3>
+<ckAddURIs>जब संभव हो URIs एम्बेड करें</ckAddURIs>
+<ck_download_authorities>नियंत्रण रेखा प्राधिकारी डाउनलोड करें</ck_download_authorities>
+<this>शीर्ष मान्य करें</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>स्रोत फ़ाइल:</lb_Source>
+<lb_Rules>नियम फ़ाइल:</lb_Rules>
+<cmd_Ok>ठीक है</cmd_Ok>
+<cmd_close>बंद</cmd_close>
+<groupBox1>विकल्प</groupBox1>
+<optIdentify>रिकॉर्ड संरचना मान्य करें</optIdentify>
+<opt_remove>अमान्य रिकॉर्ड निकालें</opt_remove>
+<opt_validate>चेक मार्क नियम फ़ाइल का उपयोग</opt_validate>
+<rdHex>एक HexEditor में देखें</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>ठीक है</cmd_Ok>
+<cmdCancel>बंद</cmdCancel>
+<groupBox1>रिपोर्ट विकल्प:</groupBox1>
+<lb_MARC_Title>शीर्षक:</lb_MARC_Title>
+<lbReport>रिपोर्ट प्रकार:</lbReport>
+<lb_XSLT>XSLT फ़ाइल:</lb_XSLT>
+<lb_Dest>आउटपुट फ़ाइल:</lb_Dest>
+<lb_MARC>इनपुट फ़ाइल:</lb_MARC>
+<lb_Fields>फ़ील्ड:</lb_Fields>
+<lbTimeout>समयबाह्य (सेकंड में)</lbTimeout>
+<this>URL सत्यापित करें</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>OCLC की तेज सेवा के बारे में</lnkClassify>
+<label1>संसाधनों. GetString ("label1. पाठ ")</label1>
+<ck_conditional_fast>जब कोई विषय शीर्षक मौजूद नहीं हैं, तो तेज़ शीर्ष जोड़ें</ck_conditional_fast>
+<ck_always_fast>हमेशा तेज़ शीर्ष जोड़ें</ck_always_fast>
+<label8>विषय शीर्षक:</label8>
+<button1>प्रक्रिया</button1>
+<cmd_Close>बंद</cmd_Close>
+<this>तेजी से शीर्षकों को उत्पन्न</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>सहेजें</cmd_save>
+<cmd_close>बंद</cmd_close>
+<ck_1xxa>$a: मुख्य प्रवेश</ck_1xxa>
+<ck_245p>$p: पीटी का नाम/</ck_245p>
+<ck_245n>$n: कार्य की संख्या pt/</ck_245n>
+<ck_245c>$c: जिम्मेदारी का विवरण</ck_245c>
+<ck_245b>$b: शीर्षक के शेष</ck_245b>
+<ck_245a>$a: शीर्षक</ck_245a>
+<ck_lang>भाषा (स्थिति: 35-37)</ck_lang>
+<ck_dates>दिनांक (स्थिति: 7-14)</ck_dates>
+<ck_p7>BLvl (स्थिति 7)</ck_p7>
+<ck_p6>प्रकार (स्थिति 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>नियंत्रण संख्या</label6>
+<ck_form>फार्म (स्थान: 23)</ck_form>
+<ck_245_h>$h: सामान्य सामग्री पदनाम</ck_245_h>
+<label5>Misc. फ़ील्ड:</label5>
+<label4>फ़ील्ड २४५:</label4>
+<label3>लेखक (1xx) फ़ील्ड</label3>
+<label2>008 पदों</label2>
+<label1>LDR स्थिति</label1>
+<this>मर्ज विकल्प</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>डेटाबेस गुण</tabDBProps>
+<ck_Paused>ओवरराइड रोकें (6 सेकेंड.)</ck_Paused>
+<label1>डेटाबेस:</label1>
+<ck_Show>डेटाबेस दिखाएँ</ck_Show>
+<lbPassword>पासवर्ड:</lbPassword>
+<lbUsername>नाम:</lbUsername>
+<lbSyntax>सिंटैक्स:</lbSyntax>
+<lbPort>पोर्ट:</lbPort>
+<lbHost>होस्ट:</lbHost>
+<lbname>नाम:</lbname>
+<tabDBAdvanced>उन्नत गुण</tabDBAdvanced>
+<label4>समयबाह्य (सेकंड में):</label4>
+<label2>तत्व सेट:</label2>
+<label3>अन्य विकल्प:</label3>
+<lnkftp>http://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>अधिक जानकारी:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>विषय:</lbSubject>
+<lbTitle>शीर्षक:</lbTitle>
+<lbAuthor>लेखक:</lbAuthor>
+<lbadvTitle>z 39.50 विशेषता 4: संरचना</lbadvTitle>
+<cmdSave>सहेजें</cmdSave>
+<cmdClose>बंद</cmdClose>
+<label17>z 39.50 डेटाबेस सेटिंग्स:</label17>
+<cmdDeleteZ3950>हटाएँ</cmdDeleteZ3950>
+<gbCustom>कस्टम प्रोफ़ाइल सेटिंग्स</gbCustom>
+<label5>शीर्षक सूचकांक:</label5>
+<label6>लेखक सूचकांक:</label6>
+<label10>कीवर्ड अनुक्रमणिका:</label10>
+<label7>विषय सूचकांक:</label7>
+<label11>Record # Index:</label11>
+<label8>ISBN सूचकांक:</label8>
+<label12>ISSN सूचकांक:</label12>
+<cmdDeleteSRU>हटाएँ</cmdDeleteSRU>
+<ck_SRU_Show>डेटाबेस दिखाएँ</ck_SRU_Show>
+<label13>अतिरिक्त पैरामीटर</label13>
+<label14>खोज प्रोफ़ाइल:</label14>
+<lbVersion>संस्करण:</lbVersion>
+<cmdCloseSRU>बंद</cmdCloseSRU>
+<cmdSaveSRU>सहेजें</cmdSaveSRU>
+<label15>नाम:</label15>
+<lbMetadata>मेटाडेटा स्कीमा:</lbMetadata>
+<label16>url:</label16>
+<lbSRUTitle>एसआरयू डेटाबेस गुण:</lbSRUTitle>
+<this>डेटाबेस गुण</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>मिल:</label1>
+<ckMatchCase>केस मिलाएँ</ckMatchCase>
+<cmdFind>मिल</cmdFind>
+<this>हेक्स: स्ट्रिंग ढूँढें</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>फ़ाइल</fileToolStripMenuItem>
+<openToolStripMenuItem>खोलें</openToolStripMenuItem>
+<exitToolStripMenuItem>बाहर</exitToolStripMenuItem>
+<editToolStripMenuItem>संपादित</editToolStripMenuItem>
+<findToolStripMenuItem>मिल</findToolStripMenuItem>
+<findNextToolStripMenuItem>अगला ढूँढें</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>कटौती</cutToolStripMenuItem>
+<copyToolStripMenuItem>प्रतिलिपि</copyToolStripMenuItem>
+<pasteToolStripMenuItem>चिपकाएँ</pasteToolStripMenuItem>
+<clearToolStripMenuItem>स्पष्ट</clearToolStripMenuItem>
+<findToolStripMenuItem>मिल</findToolStripMenuItem>
+<replaceToolStripMenuItem>बदलें</replaceToolStripMenuItem>
+<lnkLoadAll>संपूर्ण फ़ाइल लोड</lnkLoadAll>
+<lb_bytes>{file_bytes} बाइट्स का {loaded_bytes} लोड किया गया है.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>नया रिकॉर्ड</tbNew>
+<mnuCNewWindow>नई विंडो खोलें</mnuCNewWindow>
+<ContextAuthority>प्राधिकारी</ContextAuthority>
+<ContextAuthorityName>नाम</ContextAuthorityName>
+<ContextAuthoritySubject>विषय</ContextAuthoritySubject>
+<cBook>पुस्तक</cBook>
+<cSerial>सीरियल</cSerial>
+<cVisualMat>दृश्य सामग्री</cVisualMat>
+<cMaps>Cartographic संसाधन</cMaps>
+<cSoundRec>ध्वनि रिकॉर्डिंग</cSoundRec>
+<cScore>कुल</cScore>
+<cElectMat>इलेक्ट्रॉनिक संसाधन</cElectMat>
+<cMixedMat>मिश्रित सामग्री</cMixedMat>
+<tbOpen>फ़ाइल खोलें</tbOpen>
+<tbSave>फ़ाइल सहेजें</tbSave>
+<tbPrint>मुद्रण फ़ाइल</tbPrint>
+<tbCompile>अभिलेख संकलित करें</tbCompile>
+<tbCut>कटौती</tbCut>
+<tbCopy>प्रतिलिपि</tbCopy>
+<tbPaste>चिपकाएँ</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>हटाएँ</tbDelete>
+<tbFind>मिल</tbFind>
+<tbZ39_50>z 39.50/एसआरयू क्लाइंट</tbZ39_50>
+<toolStripSplitButton1>वैश्विक मार्क संपादन उपयोगिताएँ</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>फ़ील्ड जोड़ें/</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>नया फ़ील्ड बनाएँ</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>प्रतिलिपि फ़ील्ड</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>फ़ील्ड डेटा संपादित करें</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>संकेतक डेटा संपादित करें</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>उपफ़ील्ड डेटा संपादित करें</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>स्वैप फ़ील्ड डेटा</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>utf8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>फ़ाइल</mnuFile>
+<mnuFileMain>मुख्य विंडो पर लौटें</mnuFileMain>
+<mnuFileNew>नया</mnuFileNew>
+<mnuFileNewWindow>नई विंडो खोलें</mnuFileNewWindow>
+<mnuFileNewDefault>डिफ़ॉल्ट</mnuFileNewDefault>
+<mnuFileNewAuthority>प्राधिकारी</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>नाम</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>विषय</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>पुस्तक</mnuFileNewBook>
+<mnuFileNewSerial>सीरियल</mnuFileNewSerial>
+<mnuFileVisualMat>दृश्य सामग्री</mnuFileVisualMat>
+<mnuFileNewMap>Cartographic संसाधन</mnuFileNewMap>
+<mnuFileNewSound>ध्वनि रिकॉर्डिंग</mnuFileNewSound>
+<mnuFileNewScore>कुल</mnuFileNewScore>
+<mnuFileNewER>इलेक्ट्रॉनिक संसाधन</mnuFileNewER>
+<mnuFileNewMix>मिश्रित सामग्री</mnuFileNewMix>
+<mnuFileOpen>खोलें</mnuFileOpen>
+<mnuFileRecent>ताज़ा फ़ाइलें</mnuFileRecent>
+<mnunone10>कोई</mnunone10>
+<mnunone9>कोई</mnunone9>
+<mnunone8>कोई</mnunone8>
+<mnunone7>कोई</mnunone7>
+<mnunone6>कोई</mnunone6>
+<mnunone5>कोई</mnunone5>
+<mnunone4>कोई</mnunone4>
+<mnunone3>कोई</mnunone3>
+<mnunone2>कोई</mnunone2>
+<mnunone1>कोई</mnunone1>
+<mnuFileClearHistory>इतिहास साफ़ करें</mnuFileClearHistory>
+<mnuFileClearList>ताज़ा फ़ाइलें साफ़ करें</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>इतिहास साफ़ करें/</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>बंद</mnuFileClose>
+<mnuFileExportData>के लिए निर्यात...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>से आयात करें...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>सहेजें</mnuFileSave>
+<mnuFileSaveAs>इस रूप में सहेजें...</mnuFileSaveAs>
+<mnuFilePrint>प्रिंट</mnuFilePrint>
+<toolStripMenuItem34>प्रति पृष्ठ रिकॉर्ड मुद्रित करें</toolStripMenuItem34>
+<FileSelectIndividualMake>संपादन के लिए रिकॉर्ड्स का चयन करें</FileSelectIndividualMake>
+<mnuFileCompile>फ़ाइल को मार्क में संकलित करें</mnuFileCompile>
+<mnuFileExit>बाहर</mnuFileExit>
+<mnuEdit>संपादित</mnuEdit>
+<mnuEditUndo>पूर्ववत्</mnuEditUndo>
+<mnuEditRedo>से</mnuEditRedo>
+<mnuEditSpecialUndo>विशेष पूर्ववत् करें</mnuEditSpecialUndo>
+<mnuEditCut>कटौती</mnuEditCut>
+<mnuEditCopy>प्रतिलिपि</mnuEditCopy>
+<mnuEditPaste>चिपकाएँ</mnuEditPaste>
+<mnuEditDupLines>डुप्लिकेट रेखाएँ</mnuEditDupLines>
+<mnuEditClear>स्पष्ट</mnuEditClear>
+<mnuEditFind>मिल</mnuEditFind>
+<mnuEditReplace>बदलें</mnuEditReplace>
+<toolStripMenuItem28>शॉर्टकट संपादित करें</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>केस बदलें</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>लोअर केस</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>ऊपरी मामले</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>शीर्षक प्रकरण</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>प्रारंभिक स्थिति</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>प्रारंभिक वर्ण कैपिटल बनाएँ</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>फ़ील्ड संपादन</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>स्मार्ट वर्ण साफ़</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>कोई शब्द गुम फ़ील्ड ढूँढें</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>अभिलेख गुम फ़ील्ड ढूँढें</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>डुप्लिकेट टैग के साथ रिकॉर्ड ढूँढ़ें</toolStripMenuItem39>
+<toolStripMenuItem40>डुप्लिकेट फ़ील्ड डेटा के साथ रिकॉर्ड ढूँढ़ें</toolStripMenuItem40>
+<mnuEditLimitFields>फ़ील्ड्स की संख्या सीमित</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>स्वैप शीर्षक</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>गणित कार्य</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>दशमलव अंश में कनवर्ट करें</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>कूद करने के लिए...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>कूद करने के लिए... रिकॉर्ड</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>कूद करने के लिए... पृष्ठ</jumpToPageToolStripMenuItem>
+<mnuEditControl>एकल नियंत्रण संख्या सम्मिलित करें</mnuEditControl>
+<mnuEdit006>006 सम्मिलित करें/</mnuEdit006>
+<mnuEdit006Edit>संपादित</mnuEdit006Edit>
+<mnuEdit006Book>पुस्तक</mnuEdit006Book>
+<mnuEdit006Serial>सतत संसाधन</mnuEdit006Serial>
+<mnuEdit006Map>Cartographic संसाधन</mnuEdit006Map>
+<mnuEdit006Sound>ध्वनि रिकॉर्डिंग</mnuEdit006Sound>
+<mnuEdit006Score>कुल</mnuEdit006Score>
+<mnuEdit006ER>इलेक्ट्रॉनिक संसाधन</mnuEdit006ER>
+<mnuEdit006Visual>दृश्य सामग्री</mnuEdit006Visual>
+<mnuEdit006Mixed>मिश्रित सामग्री</mnuEdit006Mixed>
+<mnuEdit008>सम्मिलित करें/</mnuEdit008>
+<mnuEdit008Edit>संपादित</mnuEdit008Edit>
+<mnuEdit008Book>पुस्तक</mnuEdit008Book>
+<mnuEdit008Serial>सतत संसाधन</mnuEdit008Serial>
+<mnuEdit008Map>Cartographic संसाधन</mnuEdit008Map>
+<mnuEdit008Sound>ध्वनि रिकॉर्डिंग</mnuEdit008Sound>
+<mnuEdit008Score>कुल</mnuEdit008Score>
+<mnuEdit008ER>इलेक्ट्रॉनिक संसाधन</mnuEdit008ER>
+<mnuEdit008Visual>दृश्य सामग्री</mnuEdit008Visual>
+<mnuEdit008Mixed>मिश्रित सामग्री</mnuEdit008Mixed>
+<toolStripMenuItem27>क्लिपबोर्ड सामग्री कनवर्ट करें</toolStripMenuItem27>
+<mnuEditConverttoUTF8>मार्क-8 से UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 से मार्क-8</mnuEditConvertoMarc8>
+<mnuEditALA>मार्क-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8 वर्ण मैप</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>सभी का चयन</mnuEditSelectAll>
+<mnuEditWrap>शब्द लपेटें</mnuEditWrap>
+<mnuEditRTL>दाएँ से बाएँ प्रदर्शित करें</mnuEditRTL>
+<mnuFont>फ़ॉन्ट</mnuFont>
+<mnuFontFont>फ़ॉन्ट...</mnuFontFont>
+<mnuFontColor>रंग...</mnuFontColor>
+<mnuReports>रिपोर्ट</mnuReports>
+<mnuReportsField>फ़ील्ड गणना</mnuReportsField>
+<tlReportsMaterialReport>सामग्री प्रकार रिपोर्ट</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>रिपोर्ट जनरेट</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>प्रकार के आधार पर रिकॉर्ड ढूँढ़ें</findBookToolStripMenuItem>
+<booksToolStripMenuItem>किताबें</booksToolStripMenuItem>
+<toolStripMenuItem32>कंप्यूटर फ़ाइलें</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>सतत संसाधन</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>नक्शे</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>मिश्रित सामग्री</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>स्कोर</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>ध्वनि रिकॉर्डिंग</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>दृश्य सामग्री</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>सत्यापित isbn</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>मान्य ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>शीर्ष मान्य करें</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>सेवा स्थिति</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>शीर्ष मान्य करें</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>लॉग फ़ाइलें प्रबंधित करें</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>वर्तमान लॉग फ़ाइल देखें</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>उन्नत लॉग प्रबंधन</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>लॉग फ़ाइलों को हटाएँ</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>सभी लॉग फ़ाइलें देखें</viewAllLogFilesToolStripMenuItem>
+<mnuTools>उपकरण</mnuTools>
+<mnuToolsCluster>clustering उपकरण</mnuToolsCluster>
+<mnutoolCutters>उपकरण कटर</mnutoolCutters>
+<mnuToolsCalculator>कैटलॉग कैलक्यूलेटर</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>कटर उत्पन्न</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn तालिका 3 कटर</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>कॉल नंबर उत्पन्न</mnuToolsCallNum>
+<mnuToolsControlNumber>नियंत्रण संख्या जनरेट</mnuToolsControlNumber>
+<toolStripMenuItem33>लिंक्ड डेटा उपकरण</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>लिंक किए गए रिकॉर्ड बनाएँ</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>रिकॉर्ड डुप्लिकेशन रद्द करना</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA सहायक</mnuToolsRDAHelpers>
+<mnuToolsZ3950>z 39.50/एसआरयू विकल्प</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit z 39.50/एसआरयू क्लाइंट</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>z 39.50 अपलोड रिकॉर्ड</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>z 39.50 अभिलेख हटाएँ</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>z 39.50 अद्यतन होल्डिंग्स</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>निरंतर डेटा संपादित करें</mnuToolsEditConstant>
+<mnuToolsAssigned>असाइन किया गया स्थिर डेटा</mnuToolsAssigned>
+<mnuConstant1>1) अनिर्धारित स्ट्रिंग</mnuConstant1>
+<mnuConstant2>2) अनिर्धारित स्ट्रिंग</mnuConstant2>
+<mnuConstant3>3) अनिर्धारित स्ट्रिंग</mnuConstant3>
+<mnuConstant4>4) अनिर्धारित स्ट्रिंग</mnuConstant4>
+<mnuConstant5>5) अनिर्धारित स्ट्रिंग</mnuConstant5>
+<mnuConstant6>6) अनिर्धारित स्ट्रिंग</mnuConstant6>
+<mnuConstant7>7) अनिर्धारित स्ट्रिंग</mnuConstant7>
+<mnuConstant8>8) अनिर्धारित स्ट्रिंग</mnuConstant8>
+<mnuConstant9>9) अनिर्धारित स्ट्रिंग</mnuConstant9>
+<mnuConstant10>10) अनिर्धारित स्ट्रिंग</mnuConstant10>
+<mnutoolmanageAutomate>कार्य प्रबंधित करें</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>असाइन किए गए कार्य</mnuToolsAssignedTasks>
+<mnuDefTask>वर्तमान में उपलब्ध कार्य</mnuDefTask>
+<task1>1) अनिर्धारित कार्य</task1>
+<task2>2) अनिर्धारित कार्य</task2>
+<task3>3) अनिर्धारित कार्य</task3>
+<task4>4) अनिर्धारित कार्य</task4>
+<task5>5) अनिर्धारित कार्य</task5>
+<task6>6) अनिर्धारित कार्य</task6>
+<task7>7) अनिर्धारित कार्य</task7>
+<task8>8) अनिर्धारित कार्य</task8>
+<task9>9) अनिर्धारित कार्य</task9>
+<task10>10) अनिर्धारित कार्य</task10>
+<task11>11) अपरिभाषित कार्य</task11>
+<task12>12) अनिर्धारित कार्य</task12>
+<task13>13) अनिर्धारित कार्य</task13>
+<task14>14) अनिर्धारित कार्य</task14>
+<task15>15) अनिर्धारित कार्य</task15>
+<task16>16) अनिर्धारित कार्य</task16>
+<task17>17) अनिर्धारित कार्य</task17>
+<task18>18) अपरिभाषित कार्य</task18>
+<task19>19) अनिर्धारित कार्य</task19>
+<task20>20) अनिर्धारित कार्य</task20>
+<mnuToolsValidate>मार्क रिकॉर्ड्स मान्य करें</mnuToolsValidate>
+<mnuToolsOAI>OAI से हार्वेस्ट</mnuToolsOAI>
+<mnutoolsurl>यूआरएल से मार्क उत्पन्न</mnutoolsurl>
+<toolStripMenuItem43>स्मरक स्वरूपण उपकरण</toolStripMenuItem43>
+<toolStripMenuItem3>सामान्य...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>सामान्य नियंत्रण रेखा रिकॉर्ड</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Microlif रिकॉर्ड को सामान्य बनाएँ</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>रिक्त पंक्तियाँ निकालें</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>खाली फ़ील्ड/</mnuToolsRemoveEmpty>
+<mnuToolsAdd>फ़ील्ड जोड़ें/</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>नया फ़ील्ड बनाएँ</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>प्रतिलिपि फ़ील्ड</toolStripMenuItem26>
+<mnuToolsEditField>फ़ील्ड डेटा संपादित करें</mnuToolsEditField>
+<mnuToolsIndicator>संकेतक डेटा संपादित करें</mnuToolsIndicator>
+<mnuToolsSubfield>उपफ़ील्ड डेटा संपादित करें</mnuToolsSubfield>
+<mnuToolsSortby>इसके आधार पर क्रमबद्ध करें...</mnuToolsSortby>
+<toolStripMenuItem41>इसके आधार पर रिकॉर्ड क्रम सॉर्ट करें...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>कस्टम फ़ील्ड</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>लेखक फ़ील्ड</mnuToolsSortAuthor>
+<mnuToolsSortByCall>कॉल नंबर फ़ील्ड</mnuToolsSortByCall>
+<mnuToolsSortControl>नियंत्रण संख्या फ़ील्ड</mnuToolsSortControl>
+<mnuToolsSortbyTitle>शीर्षक फ़ील्ड</mnuToolsSortbyTitle>
+<toolStripMenuItem42>फ़ील्ड को इससे रिकॉर्ड Witin सॉर्ट करें...</toolStripMenuItem42>
+<mnuToolsCustomSort>कस्टम सॉर्ट</mnuToolsCustomSort>
+<mnuToolsSort2>0xx फ़ील्ड सॉर्ट करें</mnuToolsSort2>
+<mnuToolsSort>सभी फ़ील्ड सॉर्ट करें</mnuToolsSort>
+<mnuToolsSwap>स्वैप फ़ील्ड डेटा</mnuToolsSwap>
+<mnuToolsOptions>प्राथमिकताएँ</mnuToolsOptions>
+<mnu_ILS>[ILS नाम]</mnu_ILS>
+<mnu_ils_search>खोज</mnu_ils_search>
+<updateCreateToolStripMenuItem>अद्यतन बनाएँ/</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>प्रक्रिया सेटिंग्स</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>खोज WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>स्थानीय ग्रंथि डेटा जोड़ें/</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>//अद्यतन ग्रंथि डेटा बनाएँ</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>अद्यतन होल्डिंग्स</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>प्लग इन</pluginsToolStripMenuItem>
+<mnuHelp>मदद</mnuHelp>
+<mnuHelpContents>सामग्री और मदद</mnuHelpContents>
+<mnuEditInfo>मार्क जानकारी</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC मार्क मदद</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>अमेरिकी कांग्रेस मार्क मदद की लाइब्रेरी</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>डीबगिंग के लिए पैकेज फ़ाइलें</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>आप क्या करना चाहेंगे?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>प्रति पृष्ठ रिकॉर्ड</label1>
+<lblPage>पृष्ठों</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>स्वतः सहेजें फ़ाइलें देखें</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>OCLC की Termology सेवाओं के माध्यम से डेटा मान्यता सेवाएँ प्रदान की जाती हैं. आदेश में इन सेवाओं का उपयोग करने के लिए, आप का पालन करें और नियमों और इन सेवाओं के उपयोग और निष्ठा के बारे में OCLC द्वारा निर्धारित शर्तों द्वारा पालन सहमत होना चाहिए.</lb_text>
+<label1>OCLC करार लिंक:</label1>
+<lnk_Terms>उपयोग की शर्तें देखें</lnk_Terms>
+<cmd_Agree>मैं सहमत हूँ</cmd_Agree>
+<cmd_disagree>मैं असहमत हूं</cmd_disagree>
+<this>OCLC करार</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>अंग्रेज़ी</comboBox1>
+<linkLabel2>कोई धन्यवाद, बस डिफ़ॉल्ट सेटिंग्स का उपयोग करें</linkLabel2>
+<linkLabel1>चलो शुरू हो जाओ!</linkLabel1>
+<label2>मैं यहाँ हूँ मदद करने के लिए आप शुरू कर दिया!  मैं तुम्हें कुछ सवाल पूछना होगा, और तुम यो पर मिल </label2>
+<label1>MarcEdit 7 में आपका स्वागत है!</label1>
+<this>MarcEdit 7 स्टार्टअप जादूगर</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>डेटा सेटिंग्स पर... Ruff!</linkLabel1>
+<label6>याद रखें, आप विषयवस्तु, फ़ॉन्ट आकार, भाषा, और उन्नत पहुँच क्षमता o सेट कर सकते हैं </label6>
+<cmb_theme_picker>डिफ़ॉल्ट</cmb_theme_picker>
+<label5>अनुशंसित थीम:</label5>
+<label4>pt.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>अनुशंसित फ़ॉन्ट आकार:</label3>
+<cmbFont>Noto संस</cmbFont>
+<label2>डिफ़ॉल्ट फ़ॉन्ट:</label2>
+<label1>MarcEdit सूरत</label1>
+<this>MarcEdit 7 स्टार्टअप जादूगर: पृष्ठ 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit मार्क नास्तिक है, तो हम इसे अपने डेटा के बारे में थोड़ा बताना.</label5>
+<comboBox3>मेरे लिए चुनें</comboBox3>
+<label4>XML संसाधन इंजिन:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>डिफ़ॉल्ट अभिलेख एनकोडिंग:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>मेरा मार्क प्रारूप है:</label2>
+<linkLabel1>हम लगभग किया हो!  गिलहरी!</linkLabel1>
+<label1>MarcEdit डेटा सेटिंग्स</label1>
+<this>MarcEdit 7 स्टार्टअप जादूगर: पृष्ठ 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>खुश संपादन!</linkLabel1>
+<label5>संसाधनों. GetString ("label5. पाठ ")</label5>
+<label1>बधाइयाँ!  आप MarcEdit 7 का उपयोग करने के लिए तैयार हैं</label1>
+<this>MarcEdit 7 स्टार्टअप जादूगर: समाप्त</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>बंद</cmdClose>
+<ck_remote>दूरस्थ निकायों को हल</ck_remote>
+<ck_Marc8>मार्क-8 में कनवर्ट करें</ck_Marc8>
+<opt_default>डिफ़ॉल्ट</opt_default>
+<opt_saxon>सक्सोन</opt_saxon>
+<opt_msxml>msxml</opt_msxml>
+<cmdSave>सहेजें</cmdSave>
+<gp_XSLT>XSLT इंजिन</gp_XSLT>
+<label7>अंतिम स्वरूप</label7>
+<label6>मूल स्वरूप</label6>
+<label4>XSLT/XQuery पथ</label4>
+<label3>फ़ंक्शन नाम (उपनाम):</label3>
+<label2>सामान्य जानकारी:</label2>
+<lnkXMLFunctionWizard>XML फ़ंक्शन विज़ार्ड</lnkXMLFunctionWizard>
+<groupBox1>क्रियाएँ</groupBox1>
+<lnkAdd>जोड़ें</lnkAdd>
+<lnkModify>संशोधित</lnkModify>
+<lnkDelete>हटाएँ</lnkDelete>
+<label5>स्वरूपण:</label5>
+<label1>निर्धारित फ़ंक्शंस:</label1>
+<this>XML फ़ंक्शंस संपादित करें</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

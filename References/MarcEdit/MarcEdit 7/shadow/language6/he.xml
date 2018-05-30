@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>לחלץ רשומות</mnuExtract>
+<cmenuClipboard>העתק ללוח</cmenuClipboard>
+<cmenuSubfields>לספור תחומים</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>עזרה</cmenuHelp>
+<cmd_OK>סגור</cmd_OK>
+<cmd_Report>דוח</cmd_Report>
+<lb_ReportStyle>סגנון דוח:</lb_ReportStyle>
+<opt_tab>הכרטיסיה ' ח מופרד</opt_tab>
+<opt_xml>דו ח ה-XML</opt_xml>
+<opt_html>דוח HTML</opt_html>
+<this>ספירת שדות</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>כיוון:</groupBox3>
+<rd_down>למטה</rd_down>
+<rd_up>למעלה</rd_up>
+<btn_findall>למצוא את כל</btn_findall>
+<groupBox1>אפשרויות חיפוש:</groupBox1>
+<ck_f_whole_word>למצוא מילים שלמות בלבד</ck_f_whole_word>
+<ck_find_regex>שימוש בביטויים רגילים</ck_find_regex>
+<ck_f_match_case>התאם רישיות</ck_f_match_case>
+<cmdFClose>סגור</cmdFClose>
+<cmdFFind>למצוא</cmdFFind>
+<lb_FindWhat>למצוא מה:</lb_FindWhat>
+<cmdNav_Find>למצוא</cmdNav_Find>
+<cmdReplaceNav>החלף</cmdReplaceNav>
+<ckReplaceConditional>בצע חיפוש/החלפה אם.</ckReplaceConditional>
+<cmbCondOpt>REGEX של האימות</cmbCondOpt>
+<label1>אם:</label1>
+<cmd_R_Close>סגור</cmd_R_Close>
+<cmd_R_All>החלף את כל</cmd_R_All>
+<cmd_R_Replace>החלף</cmd_R_Replace>
+<groupBox2>אפשרויות חיפוש:</groupBox2>
+<ck_Replace_ExactWordMatch>משחק במילים מדויקות</ck_Replace_ExactWordMatch>
+<ckMultiLine>הערכה מרובת שורות</ckMultiLine>
+<ckFile>השתמש בקריטריוני חיפוש חיצוני/החלפה</ckFile>
+<ck_R_RegExp>שימוש בביטויים רגילים</ck_R_RegExp>
+<ck_R_Case>התאם רישיות</ck_R_Case>
+<lb_ReplaceWith>חיפוש והחלפה:</lb_ReplaceWith>
+<lb_R_FindWhat>מצא:</lb_R_FindWhat>
+<this>חיפוש/החלפה:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>מצב:
+
+</lb_bProccess_status>
+<ck_bTask>עומס משימות</ck_bTask>
+<ckBatchProcessSubfolders>כלול תיקיות משנה</ckBatchProcessSubfolders>
+<lb_Operation>פונקציה:</lb_Operation>
+<cmdBClose>סגור</cmdBClose>
+<cmdBProcess>תהליך</cmdBProcess>
+<lb_Extensions>סוגי קבצים:</lb_Extensions>
+<lb_BSource>ספריית המקור:</lb_BSource>
+<lbBTitle>רשומות מארק תהליך אצווה</lbBTitle>
+<groupBox1>אפשרויות</groupBox1>
+<this>רשומות תהליך אצווה</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>תהליך האצווה</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>קידוד הסופי:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>קידוד המקורי:</lb_encoding>
+<lb_UTF8_Header>המרות תו</lb_UTF8_Header>
+<cmdCancel>סגור</cmdCancel>
+<cmdOK>תהליך</cmdOK>
+<lb_UTF8_Dest>קובץ היעד:</lb_UTF8_Dest>
+<lb_UTF8_Source>קובץ המקור:</lb_UTF8_Source>
+<groupBox1>הגדרות קידוד</groupBox1>
+<this>המרות Characterset</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>הכלים נתונים קיבוץ באשכולות</label1>
+<label2>הנתונים קיבוץ באשכולות כלים לספק ערכה של אפשרויות קיבוץ באשכולות מפושט עבור ניקוי נתוני אצווה של nced enha.  לקבלת מתקדם clustering פונקציונליות, אנא שקול להשתמש OpenRefine.</label2>
+<groupBox1>אפשרויות</groupBox1>
+<rdCustom>אינדקס עבור שדות מותאמים אישית</rdCustom>
+<rdControlData>אינדקס נתונים מבוקרים (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>אינדקס כל הנתונים</rdAll>
+<cmdImport>ייבוא נתונים</cmdImport>
+<label3>קובץ המקור:</label3>
+<label9>סוג נתונים:</label9>
+<label8>הצג אשכולות:</label8>
+<label7>אשכול על תחומים הבאים:</label7>
+<cmbclusteringalgorithm>מרחק לוינשטיין</cmbclusteringalgorithm>
+<label6>בחר קיבוץ באשכולות אלגוריתם:</label6>
+<cmbClusterField>שמות (1xx, 7xx)</cmbClusterField>
+<label4>בחר את הנתונים שברצונך אשכול:</label4>
+<cmdGenerateCluster>צור אשכול</cmdGenerateCluster>
+<cmbAlg>מרחק לוינשטיין</cmbAlg>
+<lnkAddCriteria>הוספת עדכון</lnkAddCriteria>
+<lnkClose>סגור</lnkClose>
+<lnkEditCluster>לעבד את כל השינויים</lnkEditCluster>
+<label5>נתונים מקובצים באשכולות:</label5>
+<this>קיבוץ באשכולות כלים</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>מאתר באגים של פעילות</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>מפריד הקשרית</label8>
+<lb_Tab_Header>ייצוא בכרטיסיה רשומות מופרד</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>במפריד שדה</label18>
+<lbdelimiter>בחר מפריד שדה</lbdelimiter>
+<cmdTClose2>סגור</cmdTClose2>
+<cmdTNext>הבא &gt;&gt;</cmdTNext>
+<label1>שלב 1: הגדרת נתיבי קבצים</label1>
+<ck_normalize>לנרמל את נתוני השדה</ck_normalize>
+<cmd_tab2_back>בחזרה</cmd_tab2_back>
+<lnkSettings>הגדרות...</lnkSettings>
+<lnkDeleteField>למחוק שדה</lnkDeleteField>
+<lnkAddField>הוסף שדה</lnkAddField>
+<label14>שדה:</label14>
+<label11>שדה:</label11>
+<cmdTClose>סגור</cmdTClose>
+<cmdTExport>ייצוא</cmdTExport>
+<label2>שלב 2: הגדרת שדות/תחומים לייצוא</label2>
+<label3>ייצוא בכרטיסיה רשומות מופרד</label3>
+<mnuLoad>לטעון הגדרות</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>שמירת הגדרות</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>נקה הגדרות</menuItem3>
+<this>ייצוא בכרטיסיה רשומות מופרד</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>גודל:</label4>
+<lb_Example>טקסט לדוגמה</lb_Example>
+<lb_lang_font>בחר גופן:</lb_lang_font>
+<cmdOK>אוקיי</cmdOK>
+<cmdClose>סגור</cmdClose>
+<this>בחר גופן</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>פעילויות כדי לרוץ על יבוא</groupBox1>
+<lnkSelectPre>בחר משימה</lnkSelectPre>
+<cname>שם</cname>
+<cPath>פעילות נתיב</cPath>
+<groupBox2>פעילויות כדי לרוץ על ייצוא</groupBox2>
+<linkLabel1>בחר משימה</linkLabel1>
+<columnHeader1>שם</columnHeader1>
+<columnHeader2>פעילות נתיב</columnHeader2>
+<cmdSave>שמור</cmdSave>
+<cmdClose>סגור</cmdClose>
+<deleteItemToolStripMenuItem>מחיקת פריט</deleteItemToolStripMenuItem>
+<this>הגדרות תהליך ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>כלול תיקיות משנה</ckJoinSubfolders>
+<cmdEditFile>ערוך קובץ</cmdEditFile>
+<lnkJoinedFiles>הצג קבצים מצורפים</lnkJoinedFiles>
+<label19>סוגי קבצים:</label19>
+<ck_JoinIndividual>להצטרף קבצים בודדים</ck_JoinIndividual>
+<cmdJoinCancel>סגור</cmdJoinCancel>
+<cmdJoinProcess>תהליך</cmdJoinProcess>
+<lb_Join_Files>קבצים להצטרף:</lb_Join_Files>
+<lb_Join_Source>שמור קובץ:</lb_Join_Source>
+<lb_Join_Header>השירות MARCJoin</lb_Join_Header>
+<lbJoinStatus>מצב:</lbJoinStatus>
+<groupBox1>אפשרויות</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>רשומות לקובץ:</lb_Split_Records>
+<cmdSplitClose>סגור</cmdSplitClose>
+<cmdSplitProcess>תהליך</cmdSplitProcess>
+<lb_Split_Folder>תיקיית היעד:</lb_Split_Folder>
+<lb_Split_Source>קובץ המקור:</lb_Split_Source>
+<lb_Split_Header>השירות MARCSplit</lb_Split_Header>
+<groupBox1>אפשרויות</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>שם ערכת הנושא:</label1>
+<label2>תיאור/הוראות:</label2>
+<label3>הערכים העולמי</label3>
+<label4>צבע גופן</label4>
+<label5>צבע רקע</label5>
+<label6>צבע רקע</label6>
+<label7>צבע גופן</label7>
+<label8>ערכים MarcEditor</label8>
+<cmdSave>שמור</cmdSave>
+<cmdClose>סגור</cmdClose>
+<cmdPreview>תצוגה מקדימה</cmdPreview>
+<richTextBox1>טקסט לדוגמה</richTextBox1>
+<label9>MarcEditor תצוגה:</label9>
+<cmdOpen>פתוח</cmdOpen>
+<label10>תיבת קבוצה רקע</label10>
+<groupBox1>דוגמה תיבת קבוצה</groupBox1>
+<this>דירוג MarcEdit בונה</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>אשף פתרון בעיות MarcEdit תוכנן כדי לעזור למשתמשים למצוא את העזרה אשר </label1>
+<gpStart>אפשרויות</gpStart>
+<rdErrorMessage>יש לי הודעת שגיאה</rdErrorMessage>
+<rdErrorNumber>יש לי מספר שגיאה</rdErrorNumber>
+<lbMessage>{ההודעה}</lbMessage>
+<cmdPage1>הבא</cmdPage1>
+<gpResults>תוצאות</gpResults>
+<cmdClose>סגור</cmdClose>
+<lnkCreateDebugPackage>ליצור של שליחה באגים החבילה כדי Debugging?</lnkCreateDebugPackage>
+<label2>אשף פתרון בעיות לא היתה אפשרות לאתר מאמר של מאגר הידע knowledge base </label2>
+<this>אשף פתרון בעיות MarcEdit</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>XML אחרים</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>מארק</rdMARC>
+<label17>בחר תבנית הסופי</label17>
+<label16>שלב 3:</label16>
+<label15>שמור קובץ:</label15>
+<label13>שלב 2:</label13>
+<label12>שינוי שם:</label12>
+<lnkNextPg1>המשך לשלב הבא</lnkNextPg1>
+<label4>בחר קובץ:</label4>
+<label3>שלב 1:</label3>
+<label2>משאבים. GetString ("label2. טקסט")</label2>
+<label1>XML/JSON פרופיילר</label1>
+<lbTop>רכיב המסמך:</lbTop>
+<ckTopLevel>השתמש ברכיב המסמך</ckTopLevel>
+<lnkNextPg2>המשך לשלב הבא</lnkNextPg2>
+<label7>בחר ברכיב הרשומה</label7>
+<label6>שלב 3:</label6>
+<label5>XML/JSON פרופיילר</label5>
+<label14>הגדר מיפוי</label14>
+<lnkNextP3>המשך לשלב הבא</lnkNextP3>
+<groupBox2>ארגומנטים</groupBox2>
+<ck_filing_characters>דוגמאות לנוסחאות נפוצות nonfiling</ck_filing_characters>
+<ck_sort>שדות מיון</ck_sort>
+<button2>טעינת תבנית</button2>
+<toolStripMenuItem2>עריכת פריט</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>מחק פריטים</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>הצטרפות פריטים</joinItemsToolStripMenuItem>
+<groupBox1>הגדרות</groupBox1>
+<ckTrim>לקצץ קיימים סימני פיסוק</ckTrim>
+<ck_Repeatable>כתת-תחום הדיר</ck_Repeatable>
+<P3_ck_constant>נתונים קבוע</P3_ck_constant>
+<P3_cmd_Apply>להוסיף טיעון</P3_cmd_Apply>
+<P3_lb_punct>המונח. סימני פיסוק:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>ת:</P3_lb_indicators>
+<P3_mapto>מפה כדי:</P3_mapto>
+<P3_lb_select>בחר:</P3_lb_select>
+<label9>שלב 4:</label9>
+<label8>XML/JSON פרופיילר</label8>
+<lnkClose>לסגור את האשף</lnkClose>
+<label11>השינוי נוצרת ונוספת לרשימת XML פונקציות.
+</label11>
+<label10>XML/JSON פרופיילר</label10>
+<this>XML/JSON פרופיילר</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>סוג: ספר</label11>
+<lbbTitle>006/008 אפשרויות:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>פסט:</lnkbFest>
+<lnkbConf>סדנאות:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>המשך:</lnkbCont>
+<lnkbForm>טופס:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>המחלות:</lnkbIlls>
+<lnkbType>סוג:</lnkbType>
+<label12>סוג: משאבים אלקטרוניים</label12>
+<label5>006/008 אפשרויות:</label5>
+<lnkcFile>קובץ:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>סוג:</lnkcType>
+<label2>,</label2>
+<lnkbDates>תאריכים:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>לאנג:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 אפשרויות:</label1>
+<label13>סוג: מפה</label13>
+<label3>006/008 אפשרויות:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>טופס:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>פרוייקט:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>סוג:</lnkmType>
+<label14>סוג: מעורבת חומרים</label14>
+<label4>006/008 אפשרויות:</label4>
+<lnkmmForm>טופס:</lnkmmForm>
+<lnkmmType>סוג:</lnkmmType>
+<label15>סוג: ציון</label15>
+<label6>006/008 אפשרויות:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>טופס:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>מבנה שכבות:</lnkscComp>
+<lnkscType>סוג:</lnkscType>
+<label10>סוג: המשך משאבים</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 אפשרויות:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>סדנאות:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>המשך:</lnkslCont>
+<lnkslForm>טופס:</lnkslForm>
+<lnkslOrig>: טנק רוחו המקורית...</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>תדירות:</lnkslFreq>
+<lnkslType>סוג:</lnkslType>
+<label16>סוג: הקלטת צליל</label16>
+<label8>006/008 אפשרויות:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>טופס:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>מבנה שכבות:</lnksdComp>
+<lnksdType>סוג:</lnksdType>
+<label17>סוג: חומרים ויזואליים</label17>
+<label9>006/008 אפשרויות:</label9>
+<lnkvmTech>טק:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>טופס:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>זמן:</lnkvmTime>
+<lnkvmType>סוג:</lnkvmType>
+<cmd_Ok>אוקיי</cmd_Ok>
+<cmd_Close>סגור</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>טופס:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>משאבים. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>עלי:</lb_Authors>
+<lbBuildCode>עדכון קוד:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>אתר האינטרנט של הפרויקט:</label5>
+<label2>תודות:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>שונה:</lbMod>
+<lbMailto>טרי ריס</lbMailto>
+<lbAuthor>מחבר:</lbAuthor>
+<lbVersion>לבנות מספר:</lbVersion>
+<label4>אודות MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>פרטים טכניים:</label1>
+<this>אודות MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>עומס</cmdLoad>
+<cmdClose>סגור</cmdClose>
+<cmdDelete>מחק</cmdDelete>
+<this>שמירה אוטומטית של קבצים:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>לערוך שדות</lnk_Edit_Fields>
+<lnkCopy>להעתיק נתוני שדה</lnkCopy>
+<lnkSwapFields>להחליף שדות</lnkSwapFields>
+<lnkIndicators>עריכת אינדיקטורים</lnkIndicators>
+<lnkSubfield>לערוך שדה נתונים</lnkSubfield>
+<lnkAddDelete>הוספה/מחיקה של שדה</lnkAddDelete>
+<groupBox8>למחוק את אפשרויות שדה</groupBox8>
+<ckRemoveByPostition>להסיר על-ידי מיקום שדה</ckRemoveByPostition>
+<ck_RemoveIfNot>להסיר אם שדה הנתונים אינם תואמים</ck_RemoveIfNot>
+<ck_dedup>הסר נתונים כפולים</ck_dedup>
+<groupBox7>להוסיף אפשרויות שדה</groupBox7>
+<ck_A_addifnotduplicate>הוסף שדה רק אם לא כפיל</ck_A_addifnotduplicate>
+<ck_A_Insert>הוסף לפני</ck_A_Insert>
+<ck_A_not_present>הוסף שדה רק אם לא להציג</ck_A_not_present>
+<ck_AddIfPresent>הוסף את השדה אם קיים</ck_AddIfPresent>
+<ck_last>הוספה אחרונה</ck_last>
+<groupBox6>אפשרויות כלליות</groupBox6>
+<ck_delete_batch>מבצע תהליך אצווה</ck_delete_batch>
+<ck_A_Case>התאם רישיות</ck_A_Case>
+<ck_A_regular_Expression>השתמש בביטוי רגיל</ck_A_regular_Expression>
+<label1>למצוא מה:</label1>
+<cmd_A_Close>סגור</cmd_A_Close>
+<cmd_A_Add>הוסף שדה</cmd_A_Add>
+<cmd_A_Delete>למחוק שדה</cmd_A_Delete>
+<label3>שדה נתונים:</label3>
+<lb_A_Field>שדה:</lb_A_Field>
+<lb_A_Title>הוספה/מחיקה של שדה השירות</lb_A_Title>
+<cmd_Sub_Close>סגור</cmd_Sub_Close>
+<cmd_Sub_Remove>להסיר את הטקסט</cmd_Sub_Remove>
+<cmd_Sub_Replace>החלף טקסט</cmd_Sub_Replace>
+<groupBox2>אפשרויות חיפוש:</groupBox2>
+<ckDeleteDuplicate>למחוק שדה כפולים</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>מחק שדה</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>העברת שדה נתונים</ck_move_subfield>
+<ck_Reg_Express>השתמש בביטוי רגיל</ck_Reg_Express>
+<ck_Sub_Case>התאם רישיות</ck_Sub_Case>
+<ck_Sub_New>שדה חדש בלבד</ck_Sub_New>
+<ck_Sub_NotPresent>הוסף שדה אם לא להציג</ck_Sub_NotPresent>
+<label8>החלף:</label8>
+<label7>שדה נתונים:</label7>
+<label6>שדה:</label6>
+<label5>שדה:</label5>
+<lb_Sub_Title>עריכת כתת-תחום השירות</lb_Sub_Title>
+<cmd_I_Close>סגור</cmd_I_Close>
+<cmd_I_Replace>החלף</cmd_I_Replace>
+<lb_Ind_Replace>להחליף עם אינדיקטורים</lb_Ind_Replace>
+<label12>שדה נתונים:</label12>
+<label11>אינדיקטורים</label11>
+<label10>שדה:</label10>
+<lb_Ind_Title>עריכת מחוון עזרי</lb_Ind_Title>
+<ck_Match_All_Subfields>להתאים כל תחומים</ck_Match_All_Subfields>
+<ck_swap_expression>להתייחס כאל ביטוי רגולרי</ck_swap_expression>
+<label4>מצא:</label4>
+<cmd_Swap_Close>סגור</cmd_Swap_Close>
+<cmd_Swap_Process>תהליך</cmd_Swap_Process>
+<groupBox3>אפשרויות החיפוש</groupBox3>
+<ck_swap_once_per>תהליך שדה אחד בכל החלפה</ck_swap_once_per>
+<ck_swap_sort>מיון שונה שדה</ck_swap_sort>
+<ck_Swap_Override>להוסיף ליצירת קיים/חדש</ck_Swap_Override>
+<ck_Swap_Add>הוסף שדה קיים</ck_Swap_Add>
+<ck_Swap_Copy>להעתיק את המקור</ck_Swap_Copy>
+<label20>נתונים ששונו:</label20>
+<label22>תחומים</label22>
+<label23>אינדיקטורים</label23>
+<label24>שדה</label24>
+<label19>הנתונים המקוריים:</label19>
+<label18>מצא:</label18>
+<label17>תחומים</label17>
+<label16>אינדיקטורים</label16>
+<label15>שדה</label15>
+<lb_Swap_Title>להחליף כלי שדה</lb_Swap_Title>
+<label14>נתוני שדה</label14>
+<lbFindInField>למצוא בשדה</lbFindInField>
+<groupBox4>אפשרויות</groupBox4>
+<ck_copy_field_regex>שימוש בביטויים רגילים</ck_copy_field_regex>
+<ck_copy_delete>למחוק שדה המקור</ck_copy_delete>
+<label2>שדה היעד:</label2>
+<cmdCopyClose>סגור</cmdCopyClose>
+<cmdCopy>העתק</cmdCopy>
+<label9>שדה המקור:</label9>
+<label13>להעתיק נתוני שדה</label13>
+<label26>תפקיד:</label26>
+<label21>חיפוש והחלפה:</label21>
+<label25>מצא:</label25>
+<groupBox5>אפשרויות</groupBox5>
+<ck_editfield_match_case>התאם רישיות</ck_editfield_match_case>
+<ck_UserRegularExpressions>שימוש בביטויים רגילים</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>סגור</cmdFieldEdit_Close>
+<cmdEditField_Process>תהליך</cmdEditField_Process>
+<label27>שדה:</label27>
+<label28>עריכת נתוני שדה</label28>
+<this>כלי עריכת אצווה MarcEdit.NET</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<label1>Testbed BibFrame2 הוא פשוט כדי להשתמש השירות נועד לאפשר מטה-נתונים מיוחד ביום ההו </label1>
+<label2>קובץ המקור:</label2>
+<label3>שמור קובץ:</label3>
+<label4>נתוני עריכה בסידרה:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>תרגום כללי:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>עריכה</lnkEditXQuery>
+<label7>סוג קובץ:</label7>
+<label8>פרופיל:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>מזהה שדה:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>שמור קובץ:</label3>
+<label2>קובץ המקור:</label2>
+<label1>הכלי נתונים מקושרים תוכנן לולאה דרך ערכת רשומות מארק ולפתור נקודות הגישה 1xx, 6xx ורכיבי 7xx נתונים כדי שלהם dat מקושרים והגישור.</label1>
+<cmdProcess>תהליך</cmdProcess>
+<cmdCancel>סגור</cmdCancel>
+<groupBox1>שירותי מזהה</groupBox1>
+<ckLimiter>מגבלת רזולוציה:</ckLimiter>
+<ck3xxFields>תהליך 3xx שדות</ck3xxFields>
+<label4>איכון מספר:</label4>
+<ckWorkId>להטביע מזהה עבודה איכון</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>מזהה נושא זיהוי אוטומטי</ckAutodetect>
+<ck_viaf>דניאל כהנמן איכון</ck_viaf>
+<ck_loc>ערך ראשי או שנוספו זיהוי אוטומטי</ck_loc>
+<label5>קובץ החוקים:</label5>
+<cmdStatus>מצב שירות</cmdStatus>
+<lbstatus>מצב:</lbstatus>
+<this>לבנות רשומות מקושרות</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>למצוא</lnkFind>
+<lbResults>תוצאות:</lbResults>
+<lnkCatalog>מחשבון קטלוג של קייל בנרג'י</lnkCatalog>
+<cmdClose>סגור</cmdClose>
+<label1>חותכי LC</label1>
+<this>קיטלוג מחשבון</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>כלי הזיהוי של הדמות עושה שימוש בתהליך heuristical לתת רלה הניחוש הטוב ביותר </label1>
+<cmdDetect>לזהות</cmdDetect>
+<cmdClose>סגור</cmdClose>
+<label2>תוצאות:</label2>
+<ckDetailed>תוצאות מפורט</ckDetailed>
+<this>זיהוי תווים</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>משאבים. GetString ("label1. טקסט")</label1>
+<lnkClassify>בקשר של איכון לסווג שירות</lnkClassify>
+<ck_all>להוסיף את כל הרשומות</ck_all>
+<ck_single>הוספת הרשומה שנבחרה</ck_single>
+<ck_lc>ספריית הקונגרס</ck_lc>
+<ck_dewey>דולנ</ck_dewey>
+<cmdProcess>לסווג</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<label5>הכנס אם השדות הבאים אינם קיימים (לדוגמה: 050 060; 090; 092)</label5>
+<label4>הוסף סיווגים שנוצר לתוך השדה הבא:</label4>
+<ck_cutters>לחשב חותכני ותאריכים</ck_cutters>
+<ck_use_z>השתמש בשדה משנה z עבור התאמה</ck_use_z>
+<ck_DateMod>צרף דגל לתאריך</ck_DateMod>
+<ck_omit_serial>להשמיט תאריך עבור סדרות</ck_omit_serial>
+<ck_omit_integrated>להשמיט תאריך עבור משאבים משולבים</ck_omit_integrated>
+<ck_omit>צרף התאריכים החריגים</ck_omit>
+<ck_always_fast>תמיד להוסיף כותרות מהר</ck_always_fast>
+<ck_conditional_fast>להוסיף כותרות מהיר כאשר אין כותרות נושאים קיימים</ck_conditional_fast>
+<label6>אינדיקטורים:</label6>
+<cmdInsert>הכניסה הוראות</cmdInsert>
+<cmdClassification>סיווגים</cmdClassification>
+<cmdSubjects>כותרות נושאים</cmdSubjects>
+<lnkClassification>בחר סיווג</lnkClassification>
+<lnkSubjects>בחר אפשרויות הנושא</lnkSubjects>
+<lnkOptions>הגדרת אפשרויות</lnkOptions>
+<cmdOptions>אפשרויות</cmdOptions>
+<label2>שדה:</label2>
+<label3>Cuttering שדה:</label3>
+<this>ליצור סיווג</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>נתונים קבוע</columnHeader1>
+<columnHeader3>קיצור דרך</columnHeader3>
+<cmdClose>סגור</cmdClose>
+<lnkKey>מפתח הקצאה</lnkKey>
+<lnkEdit>עריכת מחרוזת שנבחרה</lnkEdit>
+<lnkDelete>מחיקת המחרוזת שנבחרה</lnkDelete>
+<lnkNew>צור מחרוזת חדשה</lnkNew>
+<lbActions>פעולות:</lbActions>
+<lbMacro>נתונים קבוע:</lbMacro>
+<this>ערוך נתונים קבוע</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>קידומת המספר:</lb_prefix>
+<lb_digit>התחל ספרות:</lb_digit>
+<ck_autogenerate>הוספת רשומות חדשות</ck_autogenerate>
+<button1>אוקיי</button1>
+<button2>סגור</button2>
+<lb_length>ספרות אורך (מינוס קידומת)</lb_length>
+<ckgenerate>ליצור בקובץ הנוכחי</ckgenerate>
+<ck_label>מארק רשומה מספרים</ck_label>
+<label1>שדה/שדה (דוגמה: 001, 949$ b)</label1>
+<ck_repeat>תמיד להוסיף</ck_repeat>
+<this>להפיק מספרי בקרת</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>השתמש התאמת מטושטש</ck_UseFuzzyMatch>
+<ck_save>שמור פריטים Dedup:</ck_save>
+<ck_unique>פריטים ייחודיים פלט</ck_unique>
+<ck_remove>להסיר פריטים כפולים</ck_remove>
+<lbOptions>אפשרויות:</lbOptions>
+<label1>שמירה על Dedup:</label1>
+<lb_Control>שדה פקד:</lb_Control>
+<cmdClose>סגור</cmdClose>
+<cmdOK>תהליך</cmdOK>
+<btnCancel>ביטול</btnCancel>
+<btnNext>הבא</btnNext>
+<label4>שמור קובץ:</label4>
+<label3>חפש כפילויות מן הקבצים הבאים:</label3>
+<label2>מניעת כפילויות הרשומה כלי</label2>
+<label5>ביטחון עצמי:</label5>
+<this>מניעת כפילויות הרשומה</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>בחר קובץ יומן הרישום:</label1>
+<groupBox1>אפשרויות</groupBox1>
+<ckChanged>לחלץ רשומות שהשתנו</ckChanged>
+<ckEnhance>לשפר את יומני</ckEnhance>
+<label2>בחר רשומות:</label2>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<this>מנהל יומן</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext הוא מקום מעבדה להכיר כלים חדשים, מושגים הקשורים </lbaboutmn>
+<lnkOpenRefine>OpenRefine אינטגרציה</lnkOpenRefine>
+<lnkSPARQL>דפדפן SPARQL</lnkSPARQL>
+<lnkLinkIds>מזהי קישורים</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>השתמש בכלי זה כדי להעביר נתונים בין מרק או של MarcEdit עיצוב זכרון OpenRef </label1>
+<label2>קובץ המקור:</label2>
+<label3>שמור קובץ:</label3>
+<rdExport>ייצוא ל- OpenRefine</rdExport>
+<rdImport>ייבוא OpenRefine</rdImport>
+<cmdProcess>תהליך</cmdProcess>
+<cmdCancel>סגור</cmdCancel>
+<lbStatus>מצב:</lbStatus>
+<groupBox1>אפשרויות</groupBox1>
+<this>כלי העברת נתונים OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>בחר קבצים לשיתוף:</label1>
+<ckconfig>אפשרויות תצורה</ckconfig>
+<label2>ייצוא כל נתוני הספריה config המשתמש.  זה כולל נתוני תצורה. </label2>
+<ckXSLT>מפונקציות XSLT</ckXSLT>
+<label3>ייצוא גליונות סגנונות מוגדרים של XSLT
+</label3>
+<ckMacros>פקודות מאקרו מוגדרים ומשימות</ckMacros>
+<label4>ייצוא כל מוגדרת פקודות מאקרו של משימות.
+</label4>
+<label5>ייצוא כל להגדיר תבניות סוג של חומר MarcEditor.</label5>
+<ckTemplates>תבניות מוגדרות MarcEditor</ckTemplates>
+<cmdExport>ייצוא</cmdExport>
+<cmdClose>סגור</cmdClose>
+<this>ייצוא הגדרות</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>פעולה</columnHeader2>
+<columnHeader1>מצא טקסט</columnHeader1>
+<button1>סגור</button1>
+<button2>קפיצה אל הדף</button2>
+<cmdFindUpdate>לערוך חיפוש השאילתה</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>למצוא את כל התוצאות</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<lbField>הזן את השדה מספר להעריך. (דוגמה 090)</lbField>
+<groupBox1>אפשרויות</groupBox1>
+<rdTitle>סדר חותך (2xx, 1xx)</rdTitle>
+<rdDefault>סדר חותך (1xx, 2xx)</rdDefault>
+<groupBox2>אפשרויות</groupBox2>
+<label1>מצא:</label1>
+<rdCustomField>שדה מותאם אישית</rdCustomField>
+<rdMainEntry>להעריך את הערך הראשי (1xx, 245)</rdMainEntry>
+<this>צור מחתך</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>שרתים OAI מוגדרים:</label1>
+<label2>(השתמש שליטה shift/shift כדי לבחור פריטים מרובים)</label2>
+<ck_date>הקציר של האחרון להורדה</ck_date>
+<cmdCreate>שמור</cmdCreate>
+<button1>סגור</button1>
+<this>צור משימת אצווה קציר</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>בתים</BytesGroup>
+<label5>Bits</label5>
+<label4>iso-8859-1</label4>
+<label3>עשרוני</label3>
+<label2>הקס</label2>
+<columnHeader1>מיקום</columnHeader1>
+<columnHeader2>בתים</columnHeader2>
+<columnHeader3>טקסט</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>קובץ</menuItem1>
+<openToolStripMenuItem>פתוח</openToolStripMenuItem>
+<ExitProgram>יציאה</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>חלון תוצאות MarcEdit</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>שם הפונקציה (כינוי):</lb_Alias>
+<label1>הצטרפו:</label1>
+<cmd_ok>שמור</cmd_ok>
+<cmd_close>סגור</cmd_close>
+<this>הצטרפות XML פונקציות</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>שם</columnHeader1>
+<columnHeader2>נתיב</columnHeader2>
+<cmdOK>אוקיי</cmdOK>
+<cmdClose>סגור</cmdClose>
+<this>פעילויות זמינות</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>כלים</mnuTools>
+<mnuAddinsEditLinkedData>לערוך כללים נתונים מקושרים</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>עריכת קובץ ה-XML כללים</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>איך פרופיל קצה חדשים?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>עדכון קובץ כללים</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>ניהול יומן</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>ניהול יומן מתקדם</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>מחק קבצי יומן רישום</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>הצג את כל קבצי יומן רישום</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>תרגום טקסט מופרד</mnuAddinTranslator>
+<mnuExportGroup>ייצוא...</mnuExportGroup>
+<mnuToolsTabbed>ייצוא בכרטיסיה רשומות מופרד</mnuToolsTabbed>
+<mnuToolsGateway>ייצוא מארק שיא</mnuToolsGateway>
+<mnuToolsSelect>בחר רשומות מרק</mnuToolsSelect>
+<mnuToolsDelete>מחיקת רשומות נבחרות</mnuToolsDelete>
+<mnuToolsExtract>לחלץ רשומות נבחרות</mnuToolsExtract>
+<mnuToolsCharacterConversion>כלי ההמרה תו</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>המרות Characterset</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>זיהוי תווים</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>אשף MarcEdit סקריפט</mnuAddScriptWizard>
+<mnuExplorer>מארק SQL Explorer</mnuExplorer>
+<toolStripMenuItem4>OAI המקצרה כלים</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>קציר OAI רשומות</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>המקצרה אצווה</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>צור משימת אצווה</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>הפעלת אצווה קציר</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>ייצוא</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>ייבוא</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC כלים</mnuToolsUnimarcTools>
+<mnuAddinURL>ודא כתובות Url</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/אס לקוח</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>מארק עיבוד כלים</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>רשומות תהליך אצווה</mnuToolsBatch>
+<toolClusterData>הכלים נתונים אשכול</toolClusterData>
+<mnuToolsDedup>למצוא רשומות כפולות</mnuToolsDedup>
+<generateToolStripMenuItem>צור...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>מספרי טלפון</mnuGenerateCallnumber>
+<toolStripMenuItem3>כותרות מהר</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>נושא הכותרות</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>למזג את הרשומות</mnutoolsmerge>
+<toolStripMenuItem5>RDA עוזר</toolStripMenuItem5>
+<toolStripMenuItem6>פעולות איכון</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>ההורדה הרשומה איכון</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>עדכון רשומה WorldCat אחזקות</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>להעלות Bibliograph רשומות WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>לאימות כותרות</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>מצב שירות</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>לאימות כותרות</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>העדפות</mnuToolsPreferences>
+<pluginsToolStripMenuItem>יישומי plug-in</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>מנהל</mnuAddinPluginManager>
+<mnuaddincdsisis>תקליטורים-איזיס. iso =&gt; מארק תרגום</mnuaddincdsisis>
+<mnuHelp>עזרה</mnuHelp>
+<mnuHelpContents>התוכן של עזרה</mnuHelpContents>
+<mnuHelpTutorials>הדרכות תצוגה</mnuHelpTutorials>
+<mnuHelpOnline>עזרה מקוונת</mnuHelpOnline>
+<mnuHelpList>הצטרפו לרשימת ההודעות MarcEdit</mnuHelpList>
+<mnuHelpError>דוח הצעות/שגיאות</mnuHelpError>
+<mnuBlog>בלוג MarcEdit</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>בעיות ידועות MarcEdit</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>מידע מערכת</systemInfoToolStripMenuItem>
+<mnuAddLang>עריכת קבצי שפה</mnuAddLang>
+<mnuRestartIn32bitMode>מחדש MarcEdit במצב 32 סיביות</mnuRestartIn32bitMode>
+<mnuFileShare>הגדרות תצורת שיתוף</mnuFileShare>
+<exportSettingsToolStripMenuItem>ייצוא הגדרות</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>ייבוא הגדרות</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>אפשרויות לפתרון בעיות</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>לנקות קבצים זמניים</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>הורד גופנים Noto Unicode</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>תיקון משימה קובץ</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>שחזור קבצי רשת מגיבוי</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>בחר את הפעילויות לקישור מחדש</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>אפס את נתוני התצורה</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>HexEditor פתוח</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>אשף פתרון בעיות</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>הורד עדכון (מצב איתור באגים)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>בדוק אם קיימים עדכונים</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>קיצורי דרך יישום</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>נתיב הנתונים ביישום</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>נתיב הנתונים שפה</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>נתיב הנתונים דירוג</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>נתיב הנתונים XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>על...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>המחבר, טרי ריס</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit הסכם הרשיון למשתמש הקצה</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>מה אתה רוצה לעשות?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>3 המוגדרים על ידי המשתמש</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine נתונים</lnkUserDefined1>
+<lnkMarcToolsStart>מארק כלים</lnkMarcToolsStart>
+<lnkUserDefined2>2 המוגדרים על ידי המשתמש</lnkUserDefined2>
+<lnkUserDefined4>המשתמש Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>. ארצה:</groupBox1>
+<cmbLastToolUsed>לכלים הנמצאים בשימוש האחרון</cmbLastToolUsed>
+<lnkTopic5>עבודה עם נתונים מקושרים</lnkTopic5>
+<lnkTopic4>לתרגם ל- Excel מרק</lnkTopic4>
+<lnkTopic3>למזג קבצים מרק</lnkTopic3>
+<lnkTopic2>קציר OAI נתונים</lnkTopic2>
+<lnkTopic1>לערוך קובץ מרק</lnkTopic1>
+<this>.Beta MarcEdit {גרסה} מאת טרי ריס</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>קציר OAI נתונים</lbTitle>
+<lbServer>כתובת שרת:</lbServer>
+<lbSet>שם סדרה:</lbSet>
+<lbMetadata>סוג מטא-נתונים:</lbMetadata>
+<cmdOK>אוקיי</cmdOK>
+<cmdClose>סגור</cmdClose>
+<opt_default>ברירת מחדל</opt_default>
+<opt_saxon>סקסון</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>מנוע ה-XSLT:</label4>
+<ck_Raw>הנתונים הגולמיים הקציר (לשמור נתונים OAI שמערכת הקבצים המקומית)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>הגדרות מתקדמות</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>זמן קצוב (שניות)</lbTimeout>
+<ck_Translate>לתרגם מרק-8</ck_Translate>
+<label2>סוף:</label2>
+<label1>התחל:</label1>
+<lbCrosswalk>החצייה נתיב:</lbCrosswalk>
+<cmdSave>שמור</cmdSave>
+<lnkDebug>איתור באגים URL</lnkDebug>
+<tabPage1>הבית</tabPage1>
+<tabPage2>הגדרות מתקדמות</tabPage2>
+<this>המקצרה מטא-נתונים</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>קובץ המקור של איכון מספרים:</label1>
+<cmdDownload>להורדה</cmdDownload>
+<cmdClose>סגור</cmdClose>
+<label2>שמור קובץ:</label2>
+<this>רשומות בצובר להורדה איכון</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>WorldCat חיפוש:</label1>
+<cmbarg1>מילת מפתח</cmbarg1>
+<cmbconditional>ו</cmbconditional>
+<cmdSearch>חיפוש</cmdSearch>
+<cmdClose>סגור</cmdClose>
+<label2>תוצאות:</label2>
+<col_oclcnum>איכון מספר</col_oclcnum>
+<col_title>כותרת</col_title>
+<ck_LocalBib>הורד רשומה ביבליוגרפית המקומי אם קיים</ck_LocalBib>
+<lnkAll>בחר את כל</lnkAll>
+<label3>|</label3>
+<lnkNone>אף אחד</lnkNone>
+<this>חיפוש איכון WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>עדכון אחזקותיך WorldCat איכון</label1>
+<groupBox1>אפשרויות</groupBox1>
+<rdDeleteHoldings>מחיקת אחזקות</rdDeleteHoldings>
+<rdAddHolding>להוסיף אחזקות</rdAddHolding>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<label2>קוד המוסד:</label2>
+<label3>סיווג סכימה:</label3>
+<cmb_schema>ספריית הקונגרס</cmb_schema>
+<ck_debug>הדפס מידע איתור באגים</ck_debug>
+<this>עדכון WorldCat אחזקות</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>ספריית הקונגרס</cmb_schema>
+<label3>סיווג סכימה:</label3>
+<label2>קוד המוסד:</label2>
+<cmdClose>סגור</cmdClose>
+<cmdProcess>תהליך</cmdProcess>
+<label4>רשומות ביבליוגרפיות במספרים איכון יעודכנו ב- WorldCat.  Bibliograph </label4>
+<label1>החזקת קוד:</label1>
+<lnkGetHoldings>לקבל קודים</lnkGetHoldings>
+<ckLocalBibData>תהליך כמו מקומי רשומות ביבליוגרפיות</ckLocalBibData>
+<ck_deleterecords>מחיקת רשומות</ck_deleterecords>
+<this>להעלות רשומות WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>אוקיי</cmd_options_ok>
+<cmd_options_cancel>סגור</cmd_options_cancel>
+<cmd_options_apply>החל</cmd_options_apply>
+<lnkMainWindow>החלון הראשי</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>שפה</lnkLanguage>
+<lnkEaseOfUse>קלות שימוש</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>עדכונים</lnkUpdates>
+<lnkFileAssociations>שיוכי קבצים</lnkFileAssociations>
+<lnkOther>אחרים</lnkOther>
+<lnkILSIntegration>שילוב ש ח</lnkILSIntegration>
+<lnkOCLCAPI>איכון API האינטגרציה</lnkOCLCAPI>
+<label15>הגדרת תוכניותברירתמחדל</label15>
+<ckLogging>הפעל רישום:</ckLogging>
+<ckAutosave>לאפשר שמירה אוטומטית</ckAutosave>
+<ck_enhanced_editor_loading>השתמש בניהול ההחלפה משופרת</ck_enhanced_editor_loading>
+<ckRDATemplates>השתמש בתבניות RDA</ckRDATemplates>
+<ckCompileMarc8>בצע הידור רשומות כמו MARC8</ckCompileMarc8>
+<label37>רישום נתיב:</label37>
+<cksaveutf8>בצע הידור רשומות כמו UTF8</cksaveutf8>
+<ck_intellisense>לאפשר Intellisense</ck_intellisense>
+<label2>רשומות בכל עמוד</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>קידוד ברירת מחדל:</lb_Encoding>
+<ck_nwindow>קבצים פתוחים בחלון חדש</ck_nwindow>
+<ck_append>הוספת רשומות חדשות</ck_append>
+<lb_psize>גודל תצוגה מקדימה:</lb_psize>
+<ckUsePreview>השתמשו במצב תצוגה מקדימה</ckUsePreview>
+<cmd_editor_font_default>הגדרת ברירות מחדל</cmd_editor_font_default>
+<cmd_editor_set_font>הגדרת גופן</cmd_editor_set_font>
+<lb_Editor_Font_Props>הגדרת מאפייני גופן MarcEditor:</lb_Editor_Font_Props>
+<cmd_editor_template_default>הגדרת ברירות מחדל</cmd_editor_template_default>
+<cmd_editor_modify>לשנות</cmd_editor_modify>
+<lb_Current_Template>תבנית הנוכחית:</lb_Current_Template>
+<lb_Editor_Template>הגדר את תבנית MarcEditor:</lb_Editor_Template>
+<label9>* דורש הפעלה מחדש של תוכנית *</label9>
+<label8>pt.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>גודל גופן:</label4>
+<lb_Example>טקסט לדוגמה</lb_Example>
+<lb_lang_font>להגדיר גופן השפה:</lb_lang_font>
+<lb_Set_Lang>הגדר ערכת שפה:</lb_Set_Lang>
+<rd_theme_dark>ערכות נושא מותאמות אישית:</rd_theme_dark>
+<rd_theme_normal>רגיל (ברירת מחדל)</rd_theme_normal>
+<label39>אפשרויות תצוגת יישום</label39>
+<ck_export_output>ייצוא קבלה (פלט לכידת ILS)</ck_export_output>
+<lb_TCP_Timeout>פסק זמן:</lb_TCP_Timeout>
+<lb_TCP_Port>יציאה:</lb_TCP_Port>
+<lb_TCP_Host>כתובת מחשב מארח:</lb_TCP_Host>
+<lb_TCPIP_Props>מאפייני tcp/IP:</lb_TCPIP_Props>
+<ck_marc21>רשומות בתבנית MARC21</ck_marc21>
+<ck_marcxml_sax>השתמש באפשרות מקורי (תהליך שאינו-XSLT)</ck_marcxml_sax>
+<groupBox2>מנוע ה-XSLT</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode נורמליזציה</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>תו קידוד ברירת מחדל:</label35>
+<ckC>קנוניקל Decomposition (C)</ckC>
+<ckKD>תאימות הפירוק (KD)</ckKD>
+<ck_Diacritics>נעשה שימוש בסימני ניקוד בעת פריצה</ck_Diacritics>
+<lb_Diacritics>אפשרויות כלליות:</lb_Diacritics>
+<lb_Engine_XML_Options>אפשרויות ה-XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>השתמש Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>עדכונים אוטומטיים בוטלו על-ידי מנהל המערכת שלך</labelAutoUpdateDisabled>
+<ckDetectProxy>השתמש בהגדרות proxy של המערכת</ckDetectProxy>
+<ck_Update_Validator>יבדוק באופן אוטומטי אם יש עדכונים המאמת</ck_Update_Validator>
+<label3>אתה בטח שייך תחום עבור זה לעבוד בזמן הזה.</label3>
+<groupBox4>פרטי משתמש:</groupBox4>
+<lb_domain>תחום:</lb_domain>
+<label6>סיסמה:</label6>
+<label5>שם משתמש:</label5>
+<ckUpdates>יבדוק באופן אוטומטי אם יש עדכונים</ckUpdates>
+<groupBox5>שיוכי קבצים קבע</groupBox5>
+<cmd_file_assoc_view>סוגי התצוגה</cmd_file_assoc_view>
+<cmd_file_assoc_delete>למחוק סוג</cmd_file_assoc_delete>
+<cmd_file_assoc_save>לשמור סוג</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>עמית (*.                      ) קובץ סוג עם:</label7>
+<ck_mrk8_editor>לשייך קבצים (*.mrk8) MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>לשייך קבצים (*.mrk) MarcEditor</ck_mrk_editor>
+<ck_mrc>לשייך קבצים (*.mrc) MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>בחר</lnkSelectILS>
+<lnkDeleteProfile>מחק</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>להוסיף</lnkAddProfile>
+<label31>פרופילים:</label31>
+<ck_ignore_ssl>להתעלם שגיאות אישור SSL</ck_ignore_ssl>
+<lnk_ils_delete>מחק</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>עריכה</lnk_ils_z3950_edit>
+<ck_ils_z3950>השתמש בהגדרות Z39.50</ck_ils_z3950>
+<ck_ils_enable>הפעלת אפשרויות ILS</ck_ils_enable>
+<label13>שם מחשב מארח:</label13>
+<label12>סיסמה:</label12>
+<label11>שם משתמש:</label11>
+<label10>בחירת המערכת:</label10>
+<lnkGetCodes>מקבל מחזיק קודים</lnkGetCodes>
+<label24>החזקת קוד:</label24>
+<cmb_schema>ספריית הקונגרס</cmb_schema>
+<label22>סיווג סכימה:</label22>
+<label23>קוד המוסד:</label23>
+<ckshow>הצג טקסט</ckshow>
+<cmdValidateKeys>לאמת את המפתחות</cmdValidateKeys>
+<linkLabel1>בקשה/ניהול מפתח איכון (מתחבר איכון)</linkLabel1>
+<label21>איכון API Key Settings</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>המפתח הסודי (מזווג עם המפתח של מטה-נתונים)</label18>
+<label17>איכון מטא-נתונים API מפתח</label17>
+<label16>איכון חיפוש API מפתח</label16>
+<lnkFilePaths>מיקומים</lnkFilePaths>
+<label38>רשת זמן קצוב (300 אלפיות השנייה ברירת המחדל):</label38>
+<lnkCopyLocalFiles>להעתיק קבצים מקומיים עכשיו</lnkCopyLocalFiles>
+<label30>נתיב נסיעה כלים של מארק שנקבע כברירת מחדל:</label30>
+<label27>נתיבי קבצים:</label27>
+<label26>תיקיית המשימות:</label26>
+<label25>תיקיות רשת:</label25>
+<lb_mono>נתיב מונו:</lb_mono>
+<lb_temp>להגדיר נתיב זמני:</lb_temp>
+<ck_rss>קורא RSS Feed</ck_rss>
+<lb_title>תג הכותרת:</lb_title>
+<lb_Author>סופר תג:</lb_Author>
+<lbCall>מספר תג:</lbCall>
+<label1>תג מספר הבקרה:</label1>
+<ck_allow_z3950>הפעלת פונקציות Z39.50</ck_allow_z3950>
+<label28>אפשרויות שדה:</label28>
+<ck_touch_friendly>השתמש בתפריטים מגע ידידותי</ck_touch_friendly>
+<ck64_bit>התקנה של 64 סיביות</ck64_bit>
+<ck_32bit>הותקנו 32 סיביות</ck_32bit>
+<label36>גירסת MS Office:</label36>
+<label34>תג ISBN:</label34>
+<ckSort880>880: להשתמש מהשדות המקשרים עבור מיון</ckSort880>
+<ck880Infile>Infile 880 שדות עם זוגות שדה</ck880Infile>
+<label29>אפשרויות מיון:</label29>
+<ckShowDescriptionInScreenTips>הצג הפונקציה בתיאורי</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>הצג קיצורי מקשים בתיאורי מסך</ckScreenTipShortcuts>
+<label42>אפשרויות מקלדת</label42>
+<ckProvideSoundAccess>משוב עם צליל</ckProvideSoundAccess>
+<label41>אפשרויות משוב</label41>
+<groupBox3>פעולות:</groupBox3>
+<lnkSearch4Themes>למחוק את הנושא הנבחר</lnkSearch4Themes>
+<lnkNewTheme>יצירת נושא חדש</lnkNewTheme>
+<label40>להפוך MarcEdit יותר נגיש</label40>
+<this>MarcEdit העדפות</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>תוספים זמינים:</label1>
+<ch1>תוסף שם</ch1>
+<ch2>כתובת URL</ch2>
+<c3>גודל הקובץ</c3>
+<c4>Version #:</c4>
+<cmddownload>להורדה</cmddownload>
+<cmdClose>סגור</cmdClose>
+<columnHeader1>להסיר?</columnHeader1>
+<columnHeader2>תוסף שם</columnHeader2>
+<columnHeader3>שם מחלקה</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>התקנת תוספים:</label2>
+<cmdRemove>הסר</cmdRemove>
+<c5>מספר גירסה MarcEdit</c5>
+<this>מנהל</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>משאבים. GetString ("label1. טקסט")</label1>
+<label2>תבנית:</label2>
+<cmdProcess>תהליך</cmdProcess>
+<cmdCancel>ביטול</cmdCancel>
+<lbstatus>מצב:</lbstatus>
+<ckEscape>הבריחה נתונים מ- URL</ckEscape>
+<ckAddNew>להחליף את שדה קיים</ckAddNew>
+<ck_addnewfield>הוסף שדה חדש אם לא להציג</ck_addnewfield>
+<ckAlwaysAdd>תמיד להוסיף שדה חדש</ckAlwaysAdd>
+<groupBox1>אפשרויות</groupBox1>
+<this>לבנות שדות חדשים</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>חיפוש אצווה</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>תוצאות</groupBox3>
+<lnkClearResults>תוצאות ברורות</lnkClearResults>
+<lnkDownload>להוריד את כל הפריטים</lnkDownload>
+<lnkGetNext>לקבל הבא {מגבלת}</lnkGetNext>
+<lnkDownloadAllHoldings>הורדה כל אחזקות</lnkDownloadAllHoldings>
+<col1>מיקום</col1>
+<col2>כותרת</col2>
+<columnHeader1>מסד נתונים</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>להוריד את הפריטים הנבחרים</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>הורד רשומות שנבחרו אחזקות</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>הצג את הרשומה שנבחרה</viewSelectedRecordToolStripMenuItem>
+<groupBox1>אפשרויות</groupBox1>
+<rdEditDB>בחר מסד הנתונים</rdEditDB>
+<rdEditSettings>עריכת הגדרות</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>רשומות בכל עמוד</label4>
+<ckUnicode>לאחזר Unicode</ckUnicode>
+<lb_encoding_single>ערכת התווים שרת</lb_encoding_single>
+<lbSearchb>חיפוש:</lbSearchb>
+<lbSearch>שאילתת מסד נתונים:</lbSearch>
+<label3>קביעת העדפת מסד הנתונים:</label3>
+<cmdSelectDatabase>בחר</cmdSelectDatabase>
+<MCol3>מזהה</MCol3>
+<MCol1>שם</MCol1>
+<MCol2>סוג</MCol2>
+<lb_PModifyTitle>בחר מסד נתונים:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>פעולות</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>הוסף שרת Z39.50 חדש</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>הוסף שרת אס חדש</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>העדפות</preferencesToolStripMenuItem>
+<cmdCloseSettings>סגור</cmdCloseSettings>
+<label5>לשלוט שדות (עבור מניעת כפילויות עיבוד אצווה)</label5>
+<cmdSaveSettings>שמירת הגדרות</cmdSaveSettings>
+<rdDownloadPreferred>להוריד מן המקור המועדפת</rdDownloadPreferred>
+<rdDownloadMostComplete>הורד את הרשומות השלם ביותר</rdDownloadMostComplete>
+<rdAllRecords>להוריד את כל הרשומות</rdAllRecords>
+<label2>אפשרויות עיבוד אצווה</label2>
+<label1>העדפות</label1>
+<this>MarcEdit Z39.50/אס לקוח</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>תהליך 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>לערוך שדות</lnkEditFields>
+<ck_040>לשנות 040 - להוסיף $erda</ck_040>
+<ck_qualifyinginfo>העפלה מידע (015/020 024 027)</ck_qualifyinginfo>
+<lnkEdit>עריכת רשימת</lnkEdit>
+<ck_dgmd>מחיקת GMD</ck_dgmd>
+<ckAbbrev>הרחבת קיצורים</ckAbbrev>
+<ckgmd>צור GMD</ckgmd>
+<ck264>להעריך 260/264</ck264>
+<ck_signs>השתמש תמיד ©, סמלים ℗</ck_signs>
+<ck381>להוסיף 381 - אחרים</ck381>
+<ck380>להוסיף 380 - צורת עבודה</ck380>
+<ck347>להוסיף 347..--מאפייני דיגיטלי</ck347>
+<ck346>להוסיף 346..--מאפייני וידאו</ck346>
+<ck345>הוסף 345 - פרוייקט. מאפיינים</ck345>
+<ck344>הוסף 344..--מאפייני צליל</ck344>
+<ck337>להוסיף 337..--סוג מדיה
+להוסיף 338..--סוג מנשא</ck337>
+<ck336>הוספת 336..--סוג תוכן</ck336>
+<cmdProcess>אוקיי</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<label1>מקור:</label1>
+<label2>שמור:</label2>
+<lnkAll>כל</lnkAll>
+<label3>בחר:</label3>
+<label4>|</label4>
+<lnkNone>אף אחד</lnkNone>
+<label7>מצב:</label7>
+<this>RDA עוזר</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>סגור</cmd_Close>
+<rEdit></rEdit>
+<this>תוצאות</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>הבית</lnkHome>
+<label5>משאבים. GetString ("label5. טקסט")</label5>
+<label4>אודות RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>אודות RobertCompare</lnkAbout>
+<ckSort>לפני מיון קבצים</ckSort>
+<cmdClose>סגור</cmdClose>
+<cmdExecute>ביצוע</cmdExecute>
+<label1>שמור קובץ:</label1>
+<label6>השוואת קבצים:</label6>
+<label2>משאבים. GetString ("label2. טקסט")</label2>
+<lnkPreferences>העדפות</lnkPreferences>
+<label7>|</label7>
+<lbSortField>שדה המיון:</lbSortField>
+<lbdelete>המחיקות:</lbdelete>
+<lbAddColor>תוספות:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>אף אחד</lnkNone>
+<lnkAll>בחר את כל</lnkAll>
+<col_title>כותרת</col_title>
+<col_id>מזהה</col_id>
+<label3>|</label3>
+<label2>תוצאות:</label2>
+<cmdClose>סגור</cmdClose>
+<cmdSearch>חיפוש</cmdSearch>
+<cmbarg1>כותרת</cmbarg1>
+<label1>חיפוש מסד נתונים:</label1>
+<ck_batch>חיפוש אצווה</ck_batch>
+<this>חיפוש</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>בחר</cmdSelect>
+<this>בחר ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>מספר הרשומה</columnHeader1>
+<columnHeader2>להציג שדה</columnHeader2>
+<selectItemsToolStripMenuItem>בחר פריטים</selectItemsToolStripMenuItem>
+<cmdImport>קובץ הייבוא</cmdImport>
+<cmdfDelete>מחק נבחר</cmdfDelete>
+<cmdExport>ייצוא שנבחרו</cmdExport>
+<cmdExit>יציאה</cmdExit>
+<lb_Search>חיפוש:</lb_Search>
+<lb_DisplayField>שדה תצוגה:</lb_DisplayField>
+<lb_SourceFile>קובץ המקור מרק:</lb_SourceFile>
+<ckSource>שמור מחדש רשומות שהשתנו במקור</ckSource>
+<ck_retain>שומרים על פריטים מסומנים</ck_retain>
+<cmd_Generate>דוח</cmd_Generate>
+<ck_find_all>חפש את כל נתוני הרשומה</ck_find_all>
+<ck_use_regex>שימוש בביטויים רגילים</ck_use_regex>
+<cmdRandomExport>ייצוא אקראי</cmdRandomExport>
+<lnkDoesNotMatch>אינו תואם</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>היפוך בחירות</lnkInvert>
+<ckExactWord>משחק במילים מדויקות</ckExactWord>
+<this>MarcEdit.NET: לשנות רשומות שנבחרו מרק</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>בחר שדות כדי לא לכלול ממיון</lb_title>
+<lb_fields>שדות המיון:</lb_fields>
+<lbExclude>לא לכלול שדות:</lbExclude>
+<cmd_OK>אוקיי</cmd_OK>
+<cmd_Close>סגור</cmd_Close>
+<this>אשף מיון מותאם אישית</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>נקודת קצה של SPARQL:</lbsparql>
+<cmdQuery>שאילתה</cmdQuery>
+<cmdClose>סגור</cmdClose>
+<lbQuery>SPARQL שאילתה:</lbQuery>
+<lbresults>תוצאות:</lbresults>
+<cklocal>טעינת הקבצים המקומית</cklocal>
+<lbOutput>פלט:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>שאילתות לדוגמה:</groupBox1>
+<lbExample3>שאילתה עבור: 軍事基地</lbExample3>
+<lnkExample3>ספריית הדיאט היפני</lnkExample3>
+<lbexample2>גטי השאילתה עבור נחושת גופרתית</lbexample2>
+<lnkExample2>דוגמה גטי</lnkExample2>
+<label1>רשת השאילתה עבור שפעת, אדם</label1>
+<lnkExample1>רשת דוגמא</lnkExample1>
+<label2>Sparql הפניות:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL נקודות הקצה (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (ויקיפדיה)</lnkwikipediaSparql>
+<lnkTutorials>הדרכות SPARQL</lnkTutorials>
+<this>דפדפן SPARQL</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>תקליטורים-איסיס =&gt; מארק תרגום</lb_title>
+<groupBox1>קלט משתמש</groupBox1>
+<lb_output>קובץ הפלט:</lb_output>
+<lb_input>קובץ הקלט:</lb_input>
+<groupBox2>אפשרויות:</groupBox2>
+<rd_advanced>תרגום מתקדמים</rd_advanced>
+<rd_simple>תרגום פשוט</rd_simple>
+<lb_subfield>שדה מרקר</lb_subfield>
+<cmd_Ok>אוקיי</cmd_Ok>
+<cmd_Close>סגור</cmd_Close>
+<this>תקליטורים-איזיס. iso =&gt; מארק תרגום</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>אפשרויות:</lb_title>
+<lnkLoad>מיפויי שדות עומס</lnkLoad>
+<ck_indicators>להוסיף מחוונים</ck_indicators>
+<ckLDR>LDRs הנכון</ckLDR>
+<ck_subfield>הוסף שדה המובילים</ck_subfield>
+<cmdOK>אוקיי</cmdOK>
+<cmdClose>סגור</cmdClose>
+<this>אפשרויות מתקדמות</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>label1</lbCaption>
+<cmdCancel>ביטול</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>תווים מיוחדים:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>הוספה</cmd_Insert>
+<cmdClose>סגור</cmdClose>
+<this>מרק-8 עלא Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>שם רשימת המשימות:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>הוסף שדה מחק משימה</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>הוספת עריכה כתת-תחום פעילות</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>להוסיף פעילות מחוון עריכה</addToolStripMenuItem>
+<cmdSave>שמור</cmdSave>
+<addNewFieldTaskToolStripMenuItem>הוסף שדה פעילות חדשה</addNewFieldTaskToolStripMenuItem>
+<cmdClose>סגור</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>הוסף החלפת שכל המשימות</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>הוסף תגובה</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>הוסף שדה עריכה פעילות</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>להוסיף Swap שדה פעילות</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>להוסיף פעילות השדה עותק</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>להוסיף רשימת משימות</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>הוסף עוזר RDA</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>להוסיף נתונים מקושרים המשימה</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>הוספת משימה חדשה לבנות שדה</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>לערוך קיצורי דרך</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>תיק משפטי</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>באותיות קטנות</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>אותיות רישיות</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>כותרת התיק</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>תיק ראשוני</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>לנצל מקרה הראשונית</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>שדה עריכות</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>תווים נקי חכם</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>פונקציות במתמטיקה</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>להמיר למעלות עשרוני</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>הסרת שורות ריקות</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>כלים קאטר</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>צור מחתך</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>צור Sanborn3 מחתך</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>להעתיק את הפעילות שנבחרה פעולה</mnuCopy>
+<mnuPasteTask>הדבק משימה פעולת</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>הערה את המשימה שנבחרה</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>ההערה פעילויות נבחרות</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>משימות:</lbTasks>
+<label1>פעולות:</label1>
+<label2>תיאור/הוראות:</label2>
+<cmdDebug>איתור באגים</cmdDebug>
+<this>עריכת רשימת משימות</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>שם</columnHeader1>
+<columnHeader2>נתיב</columnHeader2>
+<columnHeader3>קיצור דרך</columnHeader3>
+<columnHeader4>תיאור</columnHeader4>
+<cmdClose>סגור</cmdClose>
+<lnkNew>צור רשימת משימות חדשה</lnkNew>
+<lbMacro>רשימות משימות:</lbMacro>
+<lnkCloneTask>רשימת הפעילויות הקיימות שיבוט</lnkCloneTask>
+<groupBox1>פעולות המשימה</groupBox1>
+<lnkRelink>קישור פעילויות</lnkRelink>
+<lnk_import_task>ייבוא משימה</lnk_import_task>
+<groupBox2>ניהול משימות קיימות</groupBox2>
+<lnkBackup>גיבוי כל הפעילויות</lnkBackup>
+<lnk_export_task>ייצוא הפעילות שנבחרה</lnk_export_task>
+<lnkKey>מפתח הקצאה</lnkKey>
+<lnkEdit>עריכת רשימת המשימות שנבחרו</lnkEdit>
+<lnkDelete>מחיקת רשימת המשימות שנבחרו</lnkDelete>
+<this>מנהל המשימות</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>חיתוך רשומות ארוכות</ckTruncate>
+<label1>בחר פעולה:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>תו קידוד ברירת מחדל:</label35>
+<ck_Marc8>לתרגם מרק-8</ck_Marc8>
+<ck_UTF8>לתרגם UTF8</ck_UTF8>
+<lb_OutputFile>שמירה בשם...</lb_OutputFile>
+<lb_InputFile>פתוח...</lb_InputFile>
+<cmdCancel>סגור</cmdCancel>
+<cmdEdit>עריכה של רשומות</cmdEdit>
+<cmdExecute>ביצוע</cmdExecute>
+<lb_Results>תוצאות:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>כלים</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>חזור אל החלון הראשי</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>עריכת רשימת XML בפונקציה</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>רשומות תהליך אצווה</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>המרה Characterset</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC כלים</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>מה אתה רוצה לעשות?</mnuContextHelp>
+<lnkTopic1>להמיר את הקובץ קידוד תווים שונים</lnkTopic1>
+<lnkTopic2>הוספה/שינוי של התרגומים XML</lnkTopic2>
+<lnkTopic4>איך אני יכול למצוא שגיאה בקובץ שלי מארק?</lnkTopic4>
+<groupBox1>. ארצה:</groupBox1>
+<groupBox2>בחר נתונים לתהליך:</groupBox2>
+<groupBox3>אפשרויות קידוד תווים</groupBox3>
+<this>מארק כלים</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit מספק ערכה של כלי ההמרה UNIMARC lite-משקל.  אם כלים אלה הם לעניין אותך, אתה רוצה לעזור לשפר אותם, אנא ספקו נ eedback.
+
+</label1>
+<label2>מקור</label2>
+<label3>היעד</label3>
+<groupBox1>אפשרויות</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<this>UNIMARC כלים</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>עדכון הערות:</label1>
+<cmd_Update>עדכון</cmd_Update>
+<cmd_Cancel>ביטול</cmd_Cancel>
+<this>עדכון MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode מקודד</ckIsUTF8>
+<ck_merge_to_source>למזג לתוך המקור</ck_merge_to_source>
+<label17>שמור קובץ:</label17>
+<label16>קיטלוג מקור</label16>
+<ck_SameFile>קובץ המקור תהליך</ck_SameFile>
+<cmd_merge_cancel>ביטול</cmd_merge_cancel>
+<cmd_merge_next>הבא =&gt;</cmd_merge_next>
+<lb_merge_title>מיזוג נתוני הרשומה</lb_merge_title>
+<ck_merge_repeatable>יכול לחזור על עצמו</ck_merge_repeatable>
+<lb_id>מזהה רשומה:</lb_id>
+<lb_merge>מיזוג הקובץ:</lb_merge>
+<lb_source>קובץ המקור:</lb_source>
+<ck_overlayexisting>כיסוי הפריטים הקיימים</ck_overlayexisting>
+<label4>ערך ביטחון:</label4>
+<ck_mergeUnique>מיזוג פריטים ייחודיים</ck_mergeUnique>
+<button1>ביטול</button1>
+<cmd_merge_select_fields_next>הבא =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = חזרה</cmd_merge_select_fields_back>
+<label7>מיזוג שדות:</label7>
+<label6>בחר שדה:</label6>
+<label5>מיזוג נתוני הרשומה: לבחור שדות</label5>
+<button5>סגור</button5>
+<label15>קבצים מוזגו.  תוצאות ממוקם ב- {merge_results_file}.</label15>
+<label13>מיזוג הושלמה</label13>
+<this>למזג את הרשומות מרק</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>הכלי כותרות אימות יכול לשמש כדי לאמת את 1xx, 6xx או 7xx שדות.  ה e כלי מנצל שילוב של אינטרנט ושירותים מקומיים כדי לקבוע אם משחק חברה מופיע בכותרת מורשים.</label1>
+<ck_1xx>לאשר 1xx/7xx שדות</ck_1xx>
+<ck_6xx>לאשר 6xx שדה</ck_6xx>
+<cmdProcess>תהליך</cmdProcess>
+<cmdClose>סגור</cmdClose>
+<label2>מקור:</label2>
+<lbStatus>מצב:</lbStatus>
+<cmdExtract>תמצית</cmdExtract>
+<ckdeletecache>למחוק את המטמון המקומי</ckdeletecache>
+<lnkDelimited>שמור מופרד</lnkDelimited>
+<ckonlyA>רק תהליך שדה א</ckonlyA>
+<ckVariant>תיקון שגיאות אוטומטי גרסאות</ckVariant>
+<ckGenerateBriefHeadings>צור שם אישי קצר רשויות</ckGenerateBriefHeadings>
+<label3>הרשויות שנוצר:</label3>
+<ckAddURIs>להטביע יוריס בהקדם האפשרי.</ckAddURIs>
+<ck_download_authorities>הורד הרשויות LC</ck_download_authorities>
+<this>לאימות כותרות</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>קובץ המקור:</lb_Source>
+<lb_Rules>קובץ החוקים:</lb_Rules>
+<cmd_Ok>אוקיי</cmd_Ok>
+<cmd_close>סגור</cmd_close>
+<groupBox1>אפשרויות</groupBox1>
+<optIdentify>מבנה רשומה לאמת</optIdentify>
+<opt_remove>להסיר רשומות לא חוקי</opt_remove>
+<opt_validate>בדוק מארק באמצעות כללים קובץ</opt_validate>
+<rdHex>בתצוגה HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>אוקיי</cmd_Ok>
+<cmdCancel>סגור</cmdCancel>
+<groupBox1>אפשרויות הדוח:</groupBox1>
+<lb_MARC_Title>כותרת:</lb_MARC_Title>
+<lbReport>סוג דוח:</lbReport>
+<lb_XSLT>קובץ ה-XSLT:</lb_XSLT>
+<lb_Dest>קובץ הפלט:</lb_Dest>
+<lb_MARC>קובץ הקלט:</lb_MARC>
+<lb_Fields>שדות:</lb_Fields>
+<lbTimeout>זמן קצוב (בשניות)</lbTimeout>
+<this>אימות כתובת URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>על שירות מהיר של איכון</lnkClassify>
+<label1>משאבים. GetString ("label1. טקסט")</label1>
+<ck_conditional_fast>להוסיף כותרות מהיר כאשר אין כותרות נושאים קיימים</ck_conditional_fast>
+<ck_always_fast>תמיד להוסיף כותרות מהר</ck_always_fast>
+<label8>כותרות נושאים:</label8>
+<button1>תהליך</button1>
+<cmd_Close>סגור</cmd_Close>
+<this>להפיק כותרות מהר</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>שמור</cmd_save>
+<cmd_close>סגור</cmd_close>
+<ck_1xxa>$a: הכניסה הראשית</ck_1xxa>
+<ck_245p>$p: שם של pt/sec. של עבודה</ck_245p>
+<ck_245n>$n: מספר pt/sec. של עבודה</ck_245n>
+<ck_245c>$c: הצהרה של Responsiblity</ck_245c>
+<ck_245b>$b: שארית כותרת</ck_245b>
+<ck_245a>$a: כותרת</ck_245a>
+<ck_lang>שפה (עמדות: 35-37)</ck_lang>
+<ck_dates>תאריכים (עמדות: 7-14)</ck_dates>
+<ck_p7>BLvl (מיקום 7)</ck_p7>
+<ck_p6>סוג (מיקום 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>מספרי בקרת</label6>
+<ck_form>טופס (עמדות: 23)</ck_form>
+<ck_245_h>$h: חומר כללי ייעוד</ck_245_h>
+<label5>חיובים שונים שדות:</label5>
+<label4>שדה 245:</label4>
+<label3>שדה author (1xx)</label3>
+<label2>עמדות 008</label2>
+<label1>מיקום LDR</label1>
+<this>למזג את אפשרויות</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>מאפייני מסד נתונים</tabDBProps>
+<ck_Paused>לעקוף את הפסקה (6 שניות)</ck_Paused>
+<label1>מסד נתונים:</label1>
+<ck_Show>הצג מסד נתונים</ck_Show>
+<lbPassword>סיסמה:</lbPassword>
+<lbUsername>שם משתמש:</lbUsername>
+<lbSyntax>תחביר:</lbSyntax>
+<lbPort>יציאה:</lbPort>
+<lbHost>מנחה:</lbHost>
+<lbname>שם:</lbname>
+<tabDBAdvanced>מאפיינים מתקדמים</tabDBAdvanced>
+<label4>זמן קצוב (בשניות):</label4>
+<label2>ערכת יסוד:</label2>
+<label3>אפשרויות נוספות:</label3>
+<lnkftp>http://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>מידע נוסף:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>נושא:</lbSubject>
+<lbTitle>כותרת:</lbTitle>
+<lbAuthor>מחבר:</lbAuthor>
+<lbadvTitle>התכונה Z39.50 4: מבנה</lbadvTitle>
+<cmdSave>שמור</cmdSave>
+<cmdClose>סגור</cmdClose>
+<label17>Z39.50 הגדרות מסד הנתונים:</label17>
+<cmdDeleteZ3950>מחק</cmdDeleteZ3950>
+<gbCustom>הגדרות פרופיל מותאם אישית</gbCustom>
+<label5>הכותר:</label5>
+<label6>אינדקס מחבר:</label6>
+<label10>אינדקס מילת מפתח:</label10>
+<label7>נושא ראשי:</label7>
+<label11>Record # Index:</label11>
+<label8>אינדקס ISBN:</label8>
+<label12>אינדקס ISSN:</label12>
+<cmdDeleteSRU>מחק</cmdDeleteSRU>
+<ck_SRU_Show>הצג מסד נתונים</ck_SRU_Show>
+<label13>פרמטרים נוספים</label13>
+<label14>חיפוש פרופיל:</label14>
+<lbVersion>גרסה:</lbVersion>
+<cmdCloseSRU>סגור</cmdCloseSRU>
+<cmdSaveSRU>שמור</cmdSaveSRU>
+<label15>שם:</label15>
+<lbMetadata>מטה-נתונים של סכימה:</lbMetadata>
+<label16>כתובת URL:</label16>
+<lbSRUTitle>מאפייני מסד נתונים אס:</lbSRUTitle>
+<this>מאפייני מסד נתונים</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>מצא:</label1>
+<ckMatchCase>התאם רישיות</ckMatchCase>
+<cmdFind>למצוא</cmdFind>
+<this>Hex: למצוא מחרוזת</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>קובץ</fileToolStripMenuItem>
+<openToolStripMenuItem>פתוח</openToolStripMenuItem>
+<exitToolStripMenuItem>יציאה</exitToolStripMenuItem>
+<editToolStripMenuItem>עריכה</editToolStripMenuItem>
+<findToolStripMenuItem>למצוא</findToolStripMenuItem>
+<findNextToolStripMenuItem>חפש את הבא</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>לחתוך</cutToolStripMenuItem>
+<copyToolStripMenuItem>העתק</copyToolStripMenuItem>
+<pasteToolStripMenuItem>הדבק</pasteToolStripMenuItem>
+<clearToolStripMenuItem>ברור</clearToolStripMenuItem>
+<findToolStripMenuItem>למצוא</findToolStripMenuItem>
+<replaceToolStripMenuItem>החלף</replaceToolStripMenuItem>
+<lnkLoadAll>טעינת הקובץ כולו</lnkLoadAll>
+<lb_bytes>{loaded_bytes} של {file_bytes} שנטענו בתים.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>שיא חדש</tbNew>
+<mnuCNewWindow>פתח חלון חדש</mnuCNewWindow>
+<ContextAuthority>רשות</ContextAuthority>
+<ContextAuthorityName>שם</ContextAuthorityName>
+<ContextAuthoritySubject>נושא</ContextAuthoritySubject>
+<cBook>ספר</cBook>
+<cSerial>טורי</cSerial>
+<cVisualMat>חומר ויזואלי</cVisualMat>
+<cMaps>משאב המפות</cMaps>
+<cSoundRec>הקלטת צליל</cSoundRec>
+<cScore>הציון</cScore>
+<cElectMat>משאבים אלקטרוניים</cElectMat>
+<cMixedMat>חומר מעורב</cMixedMat>
+<tbOpen>פתח קובץ</tbOpen>
+<tbSave>שמור קובץ</tbSave>
+<tbPrint>קובץ ההדפסה</tbPrint>
+<tbCompile>בצע הידור רשומות</tbCompile>
+<tbCut>לחתוך</tbCut>
+<tbCopy>העתק</tbCopy>
+<tbPaste>הדבק</tbPaste>
+<tbALA>MARC8 עלא Characterset</tbALA>
+<tbDelete>מחק</tbDelete>
+<tbFind>למצוא</tbFind>
+<tbZ39_50>Z39.50/אס לקוח</tbZ39_50>
+<toolStripSplitButton1>כלי עריכה מארק גלובלית</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>הוספה/מחיקה של שדה</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>לבנות שדה חדש</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>להעתיק שדה</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>עריכת נתוני שדה</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>ערוך נתונים מחוון</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>לערוך שדה נתונים</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>להחליף נתוני שדה</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>קובץ</mnuFile>
+<mnuFileMain>חזור אל החלון הראשי</mnuFileMain>
+<mnuFileNew>חדש</mnuFileNew>
+<mnuFileNewWindow>פתח חלון חדש</mnuFileNewWindow>
+<mnuFileNewDefault>ברירת מחדל</mnuFileNewDefault>
+<mnuFileNewAuthority>רשות</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>שם</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>נושא</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>ספר</mnuFileNewBook>
+<mnuFileNewSerial>טורי</mnuFileNewSerial>
+<mnuFileVisualMat>חומר ויזואלי</mnuFileVisualMat>
+<mnuFileNewMap>משאב המפות</mnuFileNewMap>
+<mnuFileNewSound>הקלטת צליל</mnuFileNewSound>
+<mnuFileNewScore>הציון</mnuFileNewScore>
+<mnuFileNewER>משאבים אלקטרוניים</mnuFileNewER>
+<mnuFileNewMix>חומר מעורב</mnuFileNewMix>
+<mnuFileOpen>פתוח</mnuFileOpen>
+<mnuFileRecent>קבצים אחרונים</mnuFileRecent>
+<mnunone10>אף אחד</mnunone10>
+<mnunone9>אף אחד</mnunone9>
+<mnunone8>אף אחד</mnunone8>
+<mnunone7>אף אחד</mnunone7>
+<mnunone6>אף אחד</mnunone6>
+<mnunone5>אף אחד</mnunone5>
+<mnunone4>אף אחד</mnunone4>
+<mnunone3>אף אחד</mnunone3>
+<mnunone2>אף אחד</mnunone2>
+<mnunone1>אף אחד</mnunone1>
+<mnuFileClearHistory>נקה היסטוריה</mnuFileClearHistory>
+<mnuFileClearList>לנקות קבצים אחרונים</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>נקה היסטוריה עריכה/החלפה</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>סגור</mnuFileClose>
+<mnuFileExportData>ייצוא עבור...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>ייבוא מתוך...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>שמור</mnuFileSave>
+<mnuFileSaveAs>שמירה בשם...</mnuFileSaveAs>
+<mnuFilePrint>הדפסה</mnuFilePrint>
+<toolStripMenuItem34>הדפס רשומה בעמוד</toolStripMenuItem34>
+<FileSelectIndividualMake>בחר רשומות עבור עריכה</FileSelectIndividualMake>
+<mnuFileCompile>בצע הידור הקובץ לתוך מרק</mnuFileCompile>
+<mnuFileExit>יציאה</mnuFileExit>
+<mnuEdit>עריכה</mnuEdit>
+<mnuEditUndo>בטל</mnuEditUndo>
+<mnuEditRedo>בצע שוב</mnuEditRedo>
+<mnuEditSpecialUndo>ביטול מיוחדים</mnuEditSpecialUndo>
+<mnuEditCut>לחתוך</mnuEditCut>
+<mnuEditCopy>העתק</mnuEditCopy>
+<mnuEditPaste>הדבק</mnuEditPaste>
+<mnuEditDupLines>קווים כפולים</mnuEditDupLines>
+<mnuEditClear>ברור</mnuEditClear>
+<mnuEditFind>למצוא</mnuEditFind>
+<mnuEditReplace>החלף</mnuEditReplace>
+<toolStripMenuItem28>לערוך קיצורי דרך</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>שינוי רישיות</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>באותיות קטנות</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>אותיות רישיות</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>כותרת התיק</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>תיק ראשוני</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>אותיות לרישיות הראשונית תו</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>שדה עריכות</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>תווים נקי חכם</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>למצוא שדות מילים חסרות</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>למצוא רשומות חסרים שדה</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>למצוא רשומות עם תגי כפולים</toolStripMenuItem39>
+<toolStripMenuItem40>למצוא רשומות עם נתוני שדה כפולים</toolStripMenuItem40>
+<mnuEditLimitFields>הגבל את מספר שדות</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>להחליף את הכותרת</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>פונקציות במתמטיקה</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>להמיר למעלות עשרוני</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>לקפוץ...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>לקפוץ... שיא</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>לקפוץ... דף</jumpToPageToolStripMenuItem>
+<mnuEditControl>הכנס מספר בקרה בודדת</mnuEditControl>
+<mnuEdit006>הוספה/עריכה של 006</mnuEdit006>
+<mnuEdit006Edit>עריכה</mnuEdit006Edit>
+<mnuEdit006Book>ספר</mnuEdit006Book>
+<mnuEdit006Serial>משאבים המשך</mnuEdit006Serial>
+<mnuEdit006Map>משאב המפות</mnuEdit006Map>
+<mnuEdit006Sound>הקלטת צליל</mnuEdit006Sound>
+<mnuEdit006Score>הציון</mnuEdit006Score>
+<mnuEdit006ER>משאבים אלקטרוניים</mnuEdit006ER>
+<mnuEdit006Visual>חומר ויזואלי</mnuEdit006Visual>
+<mnuEdit006Mixed>חומר מעורב</mnuEdit006Mixed>
+<mnuEdit008>הוספה/עריכה של 008</mnuEdit008>
+<mnuEdit008Edit>עריכה</mnuEdit008Edit>
+<mnuEdit008Book>ספר</mnuEdit008Book>
+<mnuEdit008Serial>משאבים המשך</mnuEdit008Serial>
+<mnuEdit008Map>משאב המפות</mnuEdit008Map>
+<mnuEdit008Sound>הקלטת צליל</mnuEdit008Sound>
+<mnuEdit008Score>הציון</mnuEdit008Score>
+<mnuEdit008ER>משאבים אלקטרוניים</mnuEdit008ER>
+<mnuEdit008Visual>חומר ויזואלי</mnuEdit008Visual>
+<mnuEdit008Mixed>חומר מעורב</mnuEdit008Mixed>
+<toolStripMenuItem27>להמיר תוכן הלוח</toolStripMenuItem27>
+<mnuEditConverttoUTF8>מרק-8 ל UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8-מרק-8</mnuEditConvertoMarc8>
+<mnuEditALA>מרק-8 עלא characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>מפת התווים UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>בחר את כל</mnuEditSelectAll>
+<mnuEditWrap>לעטוף מילה</mnuEditWrap>
+<mnuEditRTL>להציג מימין לשמאל</mnuEditRTL>
+<mnuFont>גופנים</mnuFont>
+<mnuFontFont>גופן...</mnuFontFont>
+<mnuFontColor>צבע...</mnuFontColor>
+<mnuReports>דוחות</mnuReports>
+<mnuReportsField>ספירת שדות</mnuReportsField>
+<tlReportsMaterialReport>סוג של חומר דו ח</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>דוח</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>למצוא רשומות לפי סוג</findBookToolStripMenuItem>
+<booksToolStripMenuItem>ספרים</booksToolStripMenuItem>
+<toolStripMenuItem32>קבצי מחשב</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>משאבים המשך</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>מפות</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>חומרים שונים</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>ציונים</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>הקלטות קול</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>חומרים ויזואליים</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>לאמת ISBNS</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>לאמת ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>לאימות כותרות</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>מצב שירות</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>לאימות כותרות</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>ניהול קבצי יומן רישום</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>הצג קובץ יומן רישום נוכחי</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>ניהול יומן מתקדם</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>מחק קבצי יומן רישום</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>הצג את כל קבצי יומן רישום</viewAllLogFilesToolStripMenuItem>
+<mnuTools>כלים</mnuTools>
+<mnuToolsCluster>קיבוץ באשכולות כלים</mnuToolsCluster>
+<mnutoolCutters>Cuttering כלים</mnutoolCutters>
+<mnuToolsCalculator>קטלוג מחשבון</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>צור מחתך</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>סנבורן טבלה 3 חותכני</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>להפיק מספרי טלפון</mnuToolsCallNum>
+<mnuToolsControlNumber>להפיק מספרי בקרת</mnuToolsControlNumber>
+<toolStripMenuItem33>הכלים נתונים מקושרים</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>לבנות רשומות מקושרות</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>מניעת כפילויות הרשומה</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA עוזר</mnuToolsRDAHelpers>
+<mnuToolsZ3950>אפשרויות Z39.50/אס</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/אס לקוח</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 להעלות רשומה</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 למחוק רשומה</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 עדכון אחזקות</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>ערוך נתונים קבוע</mnuToolsEditConstant>
+<mnuToolsAssigned>נתונים קבוע שהוקצו</mnuToolsAssigned>
+<mnuConstant1>1) מחרוזת לא מוגדר</mnuConstant1>
+<mnuConstant2>2) מחרוזת לא מוגדר</mnuConstant2>
+<mnuConstant3>3) מחרוזת לא מוגדר</mnuConstant3>
+<mnuConstant4>4) מחרוזת לא מוגדר</mnuConstant4>
+<mnuConstant5>5) מחרוזת לא מוגדר</mnuConstant5>
+<mnuConstant6>6) מחרוזת לא מוגדר</mnuConstant6>
+<mnuConstant7>7) מחרוזת לא מוגדר</mnuConstant7>
+<mnuConstant8>8) מחרוזת לא מוגדר</mnuConstant8>
+<mnuConstant9>9) מחרוזת לא מוגדר</mnuConstant9>
+<mnuConstant10>10) מחרוזת לא מוגדר</mnuConstant10>
+<mnutoolmanageAutomate>ניהול משימות</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>הפעילויות שהוקצו</mnuToolsAssignedTasks>
+<mnuDefTask>משימות זמין כרגע</mnuDefTask>
+<task1>1) משימה לא מוגדר</task1>
+<task2>2) פעילות לא מוגדר</task2>
+<task3>3) משימה לא מוגדר</task3>
+<task4>4) משימה לא מוגדר</task4>
+<task5>5) משימה לא מוגדר</task5>
+<task6>6) פעילות לא מוגדר</task6>
+<task7>7) פעילות לא מוגדר</task7>
+<task8>8) פעילות לא מוגדר</task8>
+<task9>9) משימה לא מוגדר</task9>
+<task10>10) משימה לא מוגדר</task10>
+<task11>11) משימה לא מוגדר</task11>
+<task12>12) פעילות לא מוגדר</task12>
+<task13>13) פעילות לא מוגדר</task13>
+<task14>14) פעילות לא מוגדר</task14>
+<task15>15) פעילות לא מוגדר</task15>
+<task16>16) משימה לא מוגדר</task16>
+<task17>17) פעילות לא מוגדר</task17>
+<task18>18) פעילות לא מוגדר</task18>
+<task19>19) פעילות לא מוגדר</task19>
+<task20>20) פעילות לא מוגדר</task20>
+<mnuToolsValidate>לאמת רשומות מרק</mnuToolsValidate>
+<mnuToolsOAI>היבול מפני OAI</mnuToolsOAI>
+<mnutoolsurl>להפיק מרק מ- URL</mnutoolsurl>
+<toolStripMenuItem43>כלי עיצוב זכרון</toolStripMenuItem43>
+<toolStripMenuItem3>לנרמל...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>לנרמל LC רשומות</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>לנרמל Microlif רשומות</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>הסרת שורות ריקות</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>להסיר שדות ריקים/תחומים</mnuToolsRemoveEmpty>
+<mnuToolsAdd>הוספה/מחיקה של שדה</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>לבנות שדה חדש</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>להעתיק שדה</toolStripMenuItem26>
+<mnuToolsEditField>עריכת נתוני שדה</mnuToolsEditField>
+<mnuToolsIndicator>ערוך נתונים מחוון</mnuToolsIndicator>
+<mnuToolsSubfield>לערוך שדה נתונים</mnuToolsSubfield>
+<mnuToolsSortby>מיין לפי...</mnuToolsSortby>
+<toolStripMenuItem41>מיון רשומות על-ידי...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>שדה מותאם אישית</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>שדה author</mnuToolsSortAuthor>
+<mnuToolsSortByCall>מספר שדה</mnuToolsSortByCall>
+<mnuToolsSortControl>פקד שדה מספר</mnuToolsSortControl>
+<mnuToolsSortbyTitle>שדה הכותרת</mnuToolsSortbyTitle>
+<toolStripMenuItem42>מיון שדות Witin את הרשומה על-ידי...</toolStripMenuItem42>
+<mnuToolsCustomSort>מיון מותאם אישית</mnuToolsCustomSort>
+<mnuToolsSort2>שדות מיון 0xx</mnuToolsSort2>
+<mnuToolsSort>למיין את כל השדות</mnuToolsSort>
+<mnuToolsSwap>להחליף נתוני שדה</mnuToolsSwap>
+<mnuToolsOptions>העדפות</mnuToolsOptions>
+<mnu_ILS>[שם ש ח]</mnu_ILS>
+<mnu_ils_search>חיפוש</mnu_ils_search>
+<updateCreateToolStripMenuItem>צור/עדכן</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>תהליך הגדרות</processSettingsToolStripMenuItem>
+<mnuOCLC>איכון WorldCat</mnuOCLC>
+<toolStripMenuItem31>חיפוש WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>הוסף/מחק/עדכון נתונים ביבליוגרפי מקומיים</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>צור/עדכן הביבליוגרפי</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>עדכון אחזקות</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>יישומי plug-in</pluginsToolStripMenuItem>
+<mnuHelp>עזרה</mnuHelp>
+<mnuHelpContents>התוכן של עזרה</mnuHelpContents>
+<mnuEditInfo>מארק פרטי</mnuEditInfo>
+<mnuEditInfoOCLC>איכון מארק עזרה</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>ערכת הכלים של RDA</mnuHelpRDAToolkit>
+<mnuEditInfoLC>ארה ב ספריית הקונגרס מרק עזרה</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>קובצי חבילת לאיתור באגים</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>מה אתה רוצה לעשות?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>רשומות בכל עמוד</label1>
+<lblPage>דפים</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>תצוגת שמירה אוטומטית של קבצים</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>שירותי אימות נתונים ניתנים באמצעות שירותי Termology של איכון. כדי לנצל את שירותי אלה, עליך להסכים בצע, שעל פי תנאי, התנאים שנקבעו על-ידי איכון לגבי שימוש ו נאמנות של שירותים אלה.</lb_text>
+<label1>איכון הסכם קישור:</label1>
+<lnk_Terms>הצג את תנאי השימוש</lnk_Terms>
+<cmd_Agree>אני מסכים</cmd_Agree>
+<cmd_disagree>אני לא מסכים</cmd_disagree>
+<this>איכון הסכם</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>אנגלית</comboBox1>
+<linkLabel2>. לא תודה, פשוט להשתמש בהגדרות ברירת המחדל</linkLabel2>
+<linkLabel1>בואו נתחיל!</linkLabel1>
+<label2>. אני כאן כדי לעזור לך להתחיל!  לשאול אותך כמה שאלות, אעלה אותך על יו </label2>
+<label1>ברוכים הבאים MarcEdit 7!</label1>
+<this>אשף הפעלה MarcEdit 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>על הגדרות נתונים... רוף!</linkLabel1>
+<label6>זכור, באפשרותך להגדיר ערכות נושא, גודלי גופן, שפות ו o נגישות מתקדמות </label6>
+<cmb_theme_picker>ברירת מחדל</cmb_theme_picker>
+<label5>מומלץ דירוג:</label5>
+<label4>pt.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>מומלץ גודל הגופן:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>גופן ברירת המחדל:</label2>
+<label1>מראה MarcEdit</label1>
+<this>אשף הפעלה MarcEdit 7: עמוד 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit הוא מרק אגנוסטי, אז בוא תגיד את זה קצת אודות הנתונים שלך.</label5>
+<comboBox3>בחרו בשבילי</comboBox3>
+<label4>מנוע עיבוד XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>הרשומה קידוד ברירת מחדל:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>תבנית מרק שלי היא:</label2>
+<linkLabel1>כמעט סיימנו!  סנאי!</linkLabel1>
+<label1>הגדרות נתונים MarcEdit</label1>
+<this>אשף הפעלה MarcEdit 7: עמוד 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>עריכה נעימה!</linkLabel1>
+<label5>משאבים. GetString ("label5. טקסט")</label5>
+<label1>מזל טוב!  . אתה מוכן להשתמש MarcEdit 7</label1>
+<this>אשף הפעלה MarcEdit 7: סיימתי</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>סגור</cmdClose>
+<ck_remote>לפתור ישויות מרוחקות</ck_remote>
+<ck_Marc8>להמיר למרק-8</ck_Marc8>
+<opt_default>ברירת מחדל</opt_default>
+<opt_saxon>סקסון</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>שמור</cmdSave>
+<gp_XSLT>מנוע ה-XSLT</gp_XSLT>
+<label7>עיצוב הסופי</label7>
+<label6>בעיצוב המקורי</label6>
+<label4>XSLT/XQuery נתיב</label4>
+<label3>שם הפונקציה (כינוי):</label3>
+<label2>מידע כללי:</label2>
+<lnkXMLFunctionWizard>ואשף הפונקציות XML</lnkXMLFunctionWizard>
+<groupBox1>פעולות</groupBox1>
+<lnkAdd>להוסיף</lnkAdd>
+<lnkModify>לשנות</lnkModify>
+<lnkDelete>מחק</lnkDelete>
+<label5>עיצוב:</label5>
+<label1>פונקציות מוגדרות:</label1>
+<this>לערוך XML פונקציות</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

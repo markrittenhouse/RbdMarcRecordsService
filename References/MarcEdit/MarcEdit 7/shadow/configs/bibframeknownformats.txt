@@ -1,0 +1,4 @@
+EAD	EADlitetoMARC21slimXML.xsl
+FGDC	fgdctoMARC21xml.xsl
+MODS	MODS2MARC21slim.xsl
+Onix	ONIX2MARC21slim.xsl

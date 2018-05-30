@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>استخراج سوابق</mnuExtract>
+<cmenuClipboard>کپی به کلیپ بورد</cmenuClipboard>
+<cmenuSubfields>تعداد دفعات مشاهده تعداد</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>کمک</cmenuHelp>
+<cmd_OK>بستن</cmd_OK>
+<cmd_Report>تولید گزارش</cmd_Report>
+<lb_ReportStyle>گزارش سبک:</lb_ReportStyle>
+<opt_tab>زبانه پروندهای گزارش</opt_tab>
+<opt_xml>گزارش XML</opt_xml>
+<opt_html>گزارش متنی</opt_html>
+<this>تعداد دفعات مشاهده زمینه</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>جهت:</groupBox3>
+<rd_down>پایین</rd_down>
+<rd_up>تا</rd_up>
+<btn_findall>پیدا کردن تمام</btn_findall>
+<groupBox1>گزینه های جستجو:</groupBox1>
+<ck_f_whole_word>یافتن واژه کامل فقط</ck_f_whole_word>
+<ck_find_regex>استفاده از عبارات منظم</ck_find_regex>
+<ck_f_match_case>جور کردن حروف</ck_f_match_case>
+<cmdFClose>بستن</cmdFClose>
+<cmdFFind>پیدا کردن</cmdFFind>
+<lb_FindWhat>یافتن چه:</lb_FindWhat>
+<cmdNav_Find>پیدا کردن</cmdNav_Find>
+<cmdReplaceNav>جایگزین</cmdReplaceNav>
+<ckReplaceConditional>پیدا کردن و جایگزینی اگر را انجام می دهد.</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>اگر:</label1>
+<cmd_R_Close>بستن</cmd_R_Close>
+<cmd_R_All>جایگزینی همه</cmd_R_All>
+<cmd_R_Replace>جایگزین</cmd_R_Replace>
+<groupBox2>گزینه های جستجو:</groupBox2>
+<ck_Replace_ExactWordMatch>کلمه دقیق مسابقه</ck_Replace_ExactWordMatch>
+<ckMultiLine>ارزيابي چند خطی</ckMultiLine>
+<ckFile>استفاده از معیارهای خارجی جستجو/جایگزینی</ckFile>
+<ck_R_RegExp>استفاده از عبارات منظم</ck_R_RegExp>
+<ck_R_Case>جور کردن حروف</ck_R_Case>
+<lb_ReplaceWith>جایگزین:</lb_ReplaceWith>
+<lb_R_FindWhat>پیدا کردن:</lb_R_FindWhat>
+<this>پیدا کردن/جایگزینی:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>وضعیت:
+
+</lb_bProccess_status>
+<ck_bTask>وظایف بار</ck_bTask>
+<ckBatchProcessSubfolders>شامل پوشه های فرعی</ckBatchProcessSubfolders>
+<lb_Operation>تابع:</lb_Operation>
+<cmdBClose>بستن</cmdBClose>
+<cmdBProcess>روند</cmdBProcess>
+<lb_Extensions>نوع فایل:</lb_Extensions>
+<lb_BSource>دایرکتوری منبع:</lb_BSource>
+<lbBTitle>سوابق MARC فرایند دسته ای</lbBTitle>
+<groupBox1>گزینه های</groupBox1>
+<this>پرونده پردازش دسته ای</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>پردازش دسته ای</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>رمزی کردن نهایی:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>اصلی پشتیبانی می کند:</lb_encoding>
+<lb_UTF8_Header>شخصیت تبدیل</lb_UTF8_Header>
+<cmdCancel>بستن</cmdCancel>
+<cmdOK>روند</cmdOK>
+<lb_UTF8_Dest>پرونده مقصد:</lb_UTF8_Dest>
+<lb_UTF8_Source>پرونده منبع:</lb_UTF8_Source>
+<groupBox1>تنظیمات رمزگذاری</groupBox1>
+<this>تبدیل Characterset</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>ابزار خوشه بندی داده ها</label1>
+<label2>داده ها در خوشه ابزار ارائه مجموعه ای از گزینه های گروه بندی ساده برای enha nced دسته ای برای پاکسازی داده ها.  برای خوشه بندی قابلیت های پیشرفته، لطفا در نظر با استفاده از OpenRefine.</label2>
+<groupBox1>گزینه های</groupBox1>
+<rdCustom>شاخص های سفارشی</rdCustom>
+<rdControlData>فهرست بندی داده های کنترل شده (1xx 6xx، 7xx)</rdControlData>
+<rdAll>فهرست تمام داده ها</rdAll>
+<cmdImport>وارد کردن داده ها</cmdImport>
+<label3>پرونده منبع:</label3>
+<label9>نوع داده:</label9>
+<label8>خوشه های صفحه نمایش:</label8>
+<label7>خوشه در تعداد زیر:</label7>
+<cmbclusteringalgorithm>فاصله لون اشتاین</cmbclusteringalgorithm>
+<label6>الگوریتم خوشه بندی را انتخاب کنید:</label6>
+<cmbClusterField>نام (1xx, 7xx)</cmbClusterField>
+<label4>اطلاعات شما را به خوشه می خواهید را انتخاب کنید:</label4>
+<cmdGenerateCluster>تولید خوشه</cmdGenerateCluster>
+<cmbAlg>فاصله لون اشتاین</cmbAlg>
+<lnkAddCriteria>اضافه کردن به روز رسانی</lnkAddCriteria>
+<lnkClose>بستن</lnkClose>
+<lnkEditCluster>پردازش همه تغییرات</lnkEditCluster>
+<label5>خوشه از داده ها:</label5>
+<this>ابزار خوشه</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>وظیفه تصحیح خطاها</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>مرزبند متنی</label8>
+<lb_Tab_Header>صادرات برگه پروندهای سوابق</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>در زمینه مرزبند</label18>
+<lbdelimiter>مرزبند زمینه را انتخاب کنید</lbdelimiter>
+<cmdTClose2>بستن</cmdTClose2>
+<cmdTNext>بعد &gt;&gt;</cmdTNext>
+<label1>گام 1: تنظیم مسیر فایل</label1>
+<ck_normalize>عادی سازی داده های میدانی</ck_normalize>
+<cmd_tab2_back>پشت</cmd_tab2_back>
+<lnkSettings>تنظیمات...</lnkSettings>
+<lnkDeleteField>حذف زمینه</lnkDeleteField>
+<lnkAddField>افزودن زمینه</lnkAddField>
+<label14>Subfield:</label14>
+<label11>زمینه:</label11>
+<cmdTClose>بستن</cmdTClose>
+<cmdTExport>صادرات</cmdTExport>
+<label2>مرحله 2: تعریف زمینه های/شناسی به صادرات</label2>
+<label3>صادرات برگه پروندهای سوابق</label3>
+<mnuLoad>تنظیمات بار</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>ذخیره تنظیمات</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>پاک کردن تنظیمات</menuItem3>
+<this>صادرات برگه پروندهای سوابق</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>حجم:</label4>
+<lb_Example>متن نمونه</lb_Example>
+<lb_lang_font>فونت را انتخاب کنید:</lb_lang_font>
+<cmdOK>باشه</cmdOK>
+<cmdClose>بستن</cmdClose>
+<this>انتخاب قلم</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>وظایف به اجرا در واردات</groupBox1>
+<lnkSelectPre>وظیفه انتخاب کنید</lnkSelectPre>
+<cname>نام</cname>
+<cPath>راه کار</cPath>
+<groupBox2>وظایف به اجرا در صادرات</groupBox2>
+<linkLabel1>وظیفه انتخاب کنید</linkLabel1>
+<columnHeader1>نام</columnHeader1>
+<columnHeader2>راه کار</columnHeader2>
+<cmdSave>ذخیره</cmdSave>
+<cmdClose>بستن</cmdClose>
+<deleteItemToolStripMenuItem>حذف مورد</deleteItemToolStripMenuItem>
+<this>تنظیمات روند ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>شامل پوشه های فرعی</ckJoinSubfolders>
+<cmdEditFile>ویرایش فایل</cmdEditFile>
+<lnkJoinedFiles>نمایش فایل های پیوست</lnkJoinedFiles>
+<label19>نوع فایل:</label19>
+<ck_JoinIndividual>پیوستن به فایل های فردی</ck_JoinIndividual>
+<cmdJoinCancel>بستن</cmdJoinCancel>
+<cmdJoinProcess>روند</cmdJoinProcess>
+<lb_Join_Files>پرونده به عضویت:</lb_Join_Files>
+<lb_Join_Source>ذخیره پرونده:</lb_Join_Source>
+<lb_Join_Header>ابزار MARCJoin</lb_Join_Header>
+<lbJoinStatus>وضعیت:</lbJoinStatus>
+<groupBox1>گزینه های</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>سوابق هر فایل:</lb_Split_Records>
+<cmdSplitClose>بستن</cmdSplitClose>
+<cmdSplitProcess>روند</cmdSplitProcess>
+<lb_Split_Folder>پوشه مقصد:</lb_Split_Folder>
+<lb_Split_Source>پرونده منبع:</lb_Split_Source>
+<lb_Split_Header>ابزار MARCSplit</lb_Split_Header>
+<groupBox1>گزینه های</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>نام تم:</label1>
+<label2>توضیحات/کنترل:</label2>
+<label3>ارزش های جهانی</label3>
+<label4>رنگ قلم</label4>
+<label5>رنگ پس زمینه</label5>
+<label6>رنگ پس زمینه</label6>
+<label7>رنگ قلم</label7>
+<label8>ارزش MarcEditor</label8>
+<cmdSave>ذخیره</cmdSave>
+<cmdClose>بستن</cmdClose>
+<cmdPreview>پیش نمایش</cmdPreview>
+<richTextBox1>متن نمونه</richTextBox1>
+<label9>MarcEditor نمایش:</label9>
+<cmdOpen>باز</cmdOpen>
+<label10>پس زمینه Groupbox</label10>
+<groupBox1>مثال Groupbox</groupBox1>
+<this>MarcEdit تم ساز</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>جادوگر عیب یابی MarcEdit طراحی شده است برای کمک به کاربران کمک پیدا کردن که </label1>
+<gpStart>گزینه های</gpStart>
+<rdErrorMessage>دارم پیغام خطا</rdErrorMessage>
+<rdErrorNumber>شماره خطا دارم</rdErrorNumber>
+<lbMessage>{پیام}</lbMessage>
+<cmdPage1>بعدی</cmdPage1>
+<gpResults>نتیجه</gpResults>
+<cmdClose>بستن</cmdClose>
+<lnkCreateDebugPackage>اشکال زدایی بسته به ارسال برای اشکالزدایی کنی؟</lnkCreateDebugPackage>
+<label2>عیب یابی جادوگر قادر به قرار دادن مقاله در پایگاه دانش </label2>
+<this>MarcEdit عیب یابی جادوگر</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>XML دیگر</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>مارک</rdMARC>
+<label17>انتخاب قالب نهایی</label17>
+<label16>مرحله 3:</label16>
+<label15>ذخیره پرونده:</label15>
+<label13>مرحله 2:</label13>
+<label12>نام تحول:</label12>
+<lnkNextPg1>ادامه به مرحله بعدی</lnkNextPg1>
+<label4>فایل را انتخاب کنید:</label4>
+<label3>مرحله 1:</label3>
+<label2>منابع. GetString ("label2. متن")</label2>
+<label1>پیشفیلتر XML و JSON</label1>
+<lbTop>عنصر نوشتار:</lbTop>
+<ckTopLevel>استفاده از عنصر سند</ckTopLevel>
+<lnkNextPg2>ادامه به مرحله بعدی</lnkNextPg2>
+<label7>انتخاب عنصر رکورد</label7>
+<label6>مرحله 3:</label6>
+<label5>پیشفیلتر XML و JSON</label5>
+<label14>تعریف نگاشت</label14>
+<lnkNextP3>ادامه به مرحله بعدی</lnkNextP3>
+<groupBox2>استدلال</groupBox2>
+<ck_filing_characters>محاسبه داده های مشترک nonfiling</ck_filing_characters>
+<ck_sort>زمینه های مرتب سازی</ck_sort>
+<button2>قالب بار</button2>
+<toolStripMenuItem2>ویرایش مورد</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>حذف موارد</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>پیوستن به موارد</joinItemsToolStripMenuItem>
+<groupBox1>تنظیمات</groupBox1>
+<ckTrim>اصلاح نقطه گذاری های موجود</ckTrim>
+<ck_Repeatable>تکرار Subfield</ck_Repeatable>
+<P3_ck_constant>داده های ثابت</P3_ck_constant>
+<P3_cmd_Apply>اضافه کردن استدلال</P3_cmd_Apply>
+<P3_lb_punct>مدت. نقطه گذاری:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>صنعتی:</P3_lb_indicators>
+<P3_mapto>به نقشه:</P3_mapto>
+<P3_lb_select>را انتخاب کنید:</P3_lb_select>
+<label9>مرحله 4:</label9>
+<label8>پیشفیلتر XML و JSON</label8>
+<lnkClose>بستن سهل آموز</lnkClose>
+<label11>تحول ایجاد شده است و اضافه شده به لیست XML توابع.
+</label11>
+<label10>پیشفیلتر XML و JSON</label10>
+<this>پیشفیلتر XML و JSON</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>نوع: کتاب</label11>
+<lbbTitle>گزینه های 006/008:</lbbTitle>
+<lnkbBiog>برخواهد داشت Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>متحرک:</lnkbFest>
+<lnkbConf>کنفرانس:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>م:</lnkbCont>
+<lnkbForm>فرم:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>مشکلات:</lnkbIlls>
+<lnkbType>نوع:</lnkbType>
+<label12>نوع: منابع الکترونیکی</label12>
+<label5>گزینه های 006/008:</label5>
+<lnkcFile>پرونده:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>نوع:</lnkcType>
+<label2>,</label2>
+<lnkbDates>خرما:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>زبان:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>گزینه های 008:</label1>
+<label13>نوع: نقشه</label13>
+<label3>گزینه های 006/008:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>فرم:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>ها:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>نوع:</lnkmType>
+<label14>نوع: مخلوط مواد</label14>
+<label4>گزینه های 006/008:</label4>
+<lnkmmForm>فرم:</lnkmmForm>
+<lnkmmType>نوع:</lnkmmType>
+<label15>نوع: نمره</label15>
+<label6>گزینه های 006/008:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>فرم:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>نوع:</lnkscType>
+<label10>نوع: ادامه منابع</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>گزینه های 006/008:</label7>
+<lnkslAlph>الفبا:</lnkslAlph>
+<lnkslConf>کنفرانس:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>م:</lnkslCont>
+<lnkslForm>فرم:</lnkslForm>
+<lnkslOrig>کننده:</lnkslOrig>
+<lnkslSrTp>Srtp بار مفید:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>Freq:</lnkslFreq>
+<lnkslType>نوع:</lnkslType>
+<label16>نوع: ضبط صدا</label16>
+<label8>گزینه های 006/008:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>فرم:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>نوع:</lnksdType>
+<label17>نوع: مطالب تصویری</label17>
+<label9>گزینه های 006/008:</label9>
+<lnkvmTech>فن آوری:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>فرم:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>زمان:</lnkvmTime>
+<lnkvmType>نوع:</lnkvmType>
+<cmd_Ok>باشه</cmd_Ok>
+<cmd_Close>بستن</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>فرم:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>منابع. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>درباره من:</lb_Authors>
+<lbBuildCode>کد به روز رسانی:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>پروژه وب سایت:</label5>
+<label2>سپاسگزاری ها:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>تغییر یافته:</lbMod>
+<lbMailto>تری ریس</lbMailto>
+<lbAuthor>نویسنده:</lbAuthor>
+<lbVersion>ساخت تعداد:</lbVersion>
+<label4>درباره MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>مشخصات فنی:</label1>
+<this>درباره MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>بار</cmdLoad>
+<cmdClose>بستن</cmdClose>
+<cmdDelete>حذف</cmdDelete>
+<this>ذخیره خودکار پرونده ها:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>ویرایش زمینه</lnk_Edit_Fields>
+<lnkCopy>کپی کردن داده های میدانی</lnkCopy>
+<lnkSwapFields>تعویض زمینه</lnkSwapFields>
+<lnkIndicators>شاخص های ویرایش</lnkIndicators>
+<lnkSubfield>ویرایش داده های Subfield</lnkSubfield>
+<lnkAddDelete>اضافه کردن/حذف زمینه</lnkAddDelete>
+<groupBox8>حذف گزینه های زمینه</groupBox8>
+<ckRemoveByPostition>حذف زمینه و موقعیت</ckRemoveByPostition>
+<ck_RemoveIfNot>حذف اگر زمینه داده ها مطابقت ندارد</ck_RemoveIfNot>
+<ck_dedup>حذف داده های تکراری</ck_dedup>
+<groupBox7>اضافه کردن گزینه های زمینه</groupBox7>
+<ck_A_addifnotduplicate>افزودن زمینه فقط اگر نه تکراری</ck_A_addifnotduplicate>
+<ck_A_Insert>قبل از درج</ck_A_Insert>
+<ck_A_not_present>افزودن زمینه فقط اگر نه در حال حاضر</ck_A_not_present>
+<ck_AddIfPresent>افزودن زمینه در صورت وجود</ck_AddIfPresent>
+<ck_last>درج آخرین</ck_last>
+<groupBox6>گزینه های عمومی</groupBox6>
+<ck_delete_batch>عملیات پردازش دسته ای</ck_delete_batch>
+<ck_A_Case>جور کردن حروف</ck_A_Case>
+<ck_A_regular_Expression>استفاده از عبارت منظم</ck_A_regular_Expression>
+<label1>یافتن چه:</label1>
+<cmd_A_Close>بستن</cmd_A_Close>
+<cmd_A_Add>افزودن زمینه</cmd_A_Add>
+<cmd_A_Delete>حذف زمینه</cmd_A_Delete>
+<label3>فیلد داده:</label3>
+<lb_A_Field>زمینه:</lb_A_Field>
+<lb_A_Title>اضافه کردن/حذف زمینه ابزار</lb_A_Title>
+<cmd_Sub_Close>بستن</cmd_Sub_Close>
+<cmd_Sub_Remove>حذف متن</cmd_Sub_Remove>
+<cmd_Sub_Replace>جایگزینی متن</cmd_Sub_Replace>
+<groupBox2>گزینه های جستجو:</groupBox2>
+<ckDeleteDuplicate>حذف تکراری Subfield</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>حذف Subfield</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>انتقال داده های subfield</ck_move_subfield>
+<ck_Reg_Express>استفاده از عبارت منظم</ck_Reg_Express>
+<ck_Sub_Case>جور کردن حروف</ck_Sub_Case>
+<ck_Sub_New>جدید subfield تنها</ck_Sub_New>
+<ck_Sub_NotPresent>اضافه کردن subfield اگر نه در حال حاضر</ck_Sub_NotPresent>
+<label8>جایگزینی با:</label8>
+<label7>فیلد داده:</label7>
+<label6>Subfield:</label6>
+<label5>زمینه:</label5>
+<lb_Sub_Title>ویرایش ابزار Subfield</lb_Sub_Title>
+<cmd_I_Close>بستن</cmd_I_Close>
+<cmd_I_Replace>جایگزین</cmd_I_Replace>
+<lb_Ind_Replace>با شاخص های جایگزین</lb_Ind_Replace>
+<label12>فیلد داده:</label12>
+<label11>شاخص های</label11>
+<label10>زمینه:</label10>
+<lb_Ind_Title>ویرایش شاخص آب و برق</lb_Ind_Title>
+<ck_Match_All_Subfields>مطابقت با تمام شناسی</ck_Match_All_Subfields>
+<ck_swap_expression>درمان به عنوان عبارت منظم</ck_swap_expression>
+<label4>پیدا کردن:</label4>
+<cmd_Swap_Close>بستن</cmd_Swap_Close>
+<cmd_Swap_Process>روند</cmd_Swap_Process>
+<groupBox3>گزینه های جستجو</groupBox3>
+<ck_swap_once_per>یک زمینه در مبادله پردازش</ck_swap_once_per>
+<ck_swap_sort>مرتب کردن بر اساس زمینه تغییر یافته</ck_swap_sort>
+<ck_Swap_Override>اضافه کردن به موجود ایجاد/جدید</ck_Swap_Override>
+<ck_Swap_Add>افزودن به زمینه های موجود</ck_Swap_Add>
+<ck_Swap_Copy>منبع کپی</ck_Swap_Copy>
+<label20>داده های تغییر یافته:</label20>
+<label22>شناسی</label22>
+<label23>شاخص های</label23>
+<label24>زمینه</label24>
+<label19>داده های اصلی:</label19>
+<label18>پیدا کردن:</label18>
+<label17>شناسی</label17>
+<label16>شاخص های</label16>
+<label15>زمینه</label15>
+<lb_Swap_Title>تعویض زمینه ابزار</lb_Swap_Title>
+<label14>زمینه داده ها</label14>
+<lbFindInField>یافتن زمینه</lbFindInField>
+<groupBox4>گزینه های</groupBox4>
+<ck_copy_field_regex>استفاده از عبارات منظم</ck_copy_field_regex>
+<ck_copy_delete>زمینه منبع را حذف کنید</ck_copy_delete>
+<label2>مزرعه مقصد:</label2>
+<cmdCopyClose>بستن</cmdCopyClose>
+<cmdCopy>کپی</cmdCopy>
+<label9>پرونده منبع:</label9>
+<label13>کپی کردن داده های میدانی</label13>
+<label26>موقعیت:</label26>
+<label21>جایگزین:</label21>
+<label25>پیدا کردن:</label25>
+<groupBox5>گزینه های</groupBox5>
+<ck_editfield_match_case>جور کردن حروف</ck_editfield_match_case>
+<ck_UserRegularExpressions>استفاده از عبارات منظم</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>بستن</cmdFieldEdit_Close>
+<cmdEditField_Process>روند</cmdEditField_Process>
+<label27>زمینه:</label27>
+<label28>ویرایش داده های میدانی</label28>
+<this>ابزار ویرایش دسته MarcEdit.NET</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<label1>BibFrame2 Testbed ساده به استفاده از ابزار طراحی شده برای اجازه ابرداده پری است </label1>
+<label2>پرونده منبع:</label2>
+<label3>ذخیره پرونده:</label3>
+<label4>سریال سازی داده ها:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>ترجمه قوانین:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>ویرایش</lnkEditXQuery>
+<label7>نوع پرونده:</label7>
+<label8>مشخصات:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>كد رشته:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>ذخیره پرونده:</label3>
+<label2>پرونده منبع:</label2>
+<label1>ابزار متصل به حلقه را از طریق مجموعه ای از سوابق MARC و رفع نقاط دسترسی در 1xx 6xx و عناصر داده ها 7xx به خود که مرتبط end-points طراحی شده است.</label1>
+<cmdProcess>روند</cmdProcess>
+<cmdCancel>بستن</cmdCancel>
+<groupBox1>خدمات شناسه</groupBox1>
+<ckLimiter>دقت محدود به:</ckLimiter>
+<ck3xxFields>روند زمینه 3xx</ck3xxFields>
+<label4>OCLC شماره:</label4>
+<ckWorkId>قراردادن OCLC کار ID</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>آشکارسازی خودکار شناسه موضوع</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>آشکارسازی خودکار اصلی/ارسال مطلب</ck_loc>
+<label5>دریافت فایل قوانین:</label5>
+<cmdStatus>وضعیت سرویس</cmdStatus>
+<lbstatus>وضعیت:</lbstatus>
+<this>سوابق مرتبط ساخت</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>پیدا کردن</lnkFind>
+<lbResults>يافته ها:</lbResults>
+<lnkCatalog>کایل Banerjee کاتالوگ ماشین حساب</lnkCatalog>
+<cmdClose>بستن</cmdClose>
+<label1>برش LC</label1>
+<this>فهرست نویسی ماشین حساب</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>ابزار تشخیص شخصیت با استفاده از فرآیند heuristical به بهترین حدس واقعی </label1>
+<cmdDetect>تشخیص</cmdDetect>
+<cmdClose>بستن</cmdClose>
+<label2>يافته ها:</label2>
+<ckDetailed>نتیجه پرگو</ckDetailed>
+<this>تشخیص شخصیت</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>منابع. GetString ("لیبل 1. متن")</label1>
+<lnkClassify>طبقه بندی مورد OCLC's خدمات</lnkClassify>
+<ck_all>اضافه کردن به همه اطلاعات ثبت شده</ck_all>
+<ck_single>اضافه کردن به رکورد انتخاب شده</ck_single>
+<ck_lc>کتابخانه کنگره</ck_lc>
+<ck_dewey>دهدهی دیویی</ck_dewey>
+<cmdProcess>طبقه بندی</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<label5>اگر قسمت های زیر وجود ندارد را وارد کنید (مثال: 050; 060 090; 092)</label5>
+<label4>طبقه بندی های تولید شده را در قسمت زیر وارد کنید:</label4>
+<ck_cutters>محاسبه برش و خرما</ck_cutters>
+<ck_use_z>Z subfield استفاده برای تطبیق</ck_use_z>
+<ck_DateMod>ضمیمه کردن پرچم به تاریخ</ck_DateMod>
+<ck_omit_serial>حذف تاریخ سریال</ck_omit_serial>
+<ck_omit_integrated>حذف تاریخ یکپارچه منابع</ck_omit_integrated>
+<ck_omit>الحاق استثنا تاریخ</ck_omit>
+<ck_always_fast>همیشه اضافه کردن عنوان های سریع</ck_always_fast>
+<ck_conditional_fast>هنگامی که به هیچ عنوان در حال حاضر اضافه کردن عنوان های سریع</ck_conditional_fast>
+<label6>شاخص:</label6>
+<cmdInsert>درج دستورالعمل</cmdInsert>
+<cmdClassification>طبقه بندی</cmdClassification>
+<cmdSubjects>سرعنوان های موضوعی</cmdSubjects>
+<lnkClassification>انتخاب طبقه بندی</lnkClassification>
+<lnkSubjects>انتخاب گزینه های موضوع</lnkSubjects>
+<lnkOptions>تنظیم گزینه های</lnkOptions>
+<cmdOptions>گزینه های</cmdOptions>
+<label2>Subfield:</label2>
+<label3>Cuttering Subfield:</label3>
+<this>تولید طبقه بندی</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>داده های ثابت</columnHeader1>
+<columnHeader3>میانبر</columnHeader3>
+<cmdClose>بستن</cmdClose>
+<lnkKey>تخصیص کلیدی</lnkKey>
+<lnkEdit>ویرایش انتخاب رشته</lnkEdit>
+<lnkDelete>رشته های انتخاب شده را حذف کنید</lnkDelete>
+<lnkNew>ایجاد رشته های جدید</lnkNew>
+<lbActions>اقدامات:</lbActions>
+<lbMacro>داده های ثابت:</lbMacro>
+<this>ویرایش داده های ثابت</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>شماره پیشوند:</lb_prefix>
+<lb_digit>شروع رقمی:</lb_digit>
+<ck_autogenerate>جديدي را وارد کنید</ck_autogenerate>
+<button1>باشه</button1>
+<button2>بستن</button2>
+<lb_length>رقم طول (منهای پیشوند)</lb_length>
+<ckgenerate>تولید در پرونده موجود</ckgenerate>
+<ck_label>شماره ثبت علامت</ck_label>
+<label1>زمینه/Subfield (مثال: 001, 949$ ب)</label1>
+<ck_repeat>همیشه قرار دادن</ck_repeat>
+<this>تعداد کنترل تولید</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>استفاده از تطبیق فازی</ck_UseFuzzyMatch>
+<ck_save>ذخیره موارد Dedup:</ck_save>
+<ck_unique>خروجی موارد منحصر به فرد</ck_unique>
+<ck_remove>حذف موارد تکراری</ck_remove>
+<lbOptions>گزینه های:</lbOptions>
+<label1>Dedup نگه داشتن:</label1>
+<lb_Control>کنترل میدان:</lb_Control>
+<cmdClose>بستن</cmdClose>
+<cmdOK>روند</cmdOK>
+<btnCancel>لغو</btnCancel>
+<btnNext>بعدی</btnNext>
+<label4>ذخیره پرونده:</label4>
+<label3>Duplications از فایل زیر را پیدا کنید:</label3>
+<label2>ابزار حذف موارد تکراری رکورد</label2>
+<label5>اعتماد به نفس:</label5>
+<this>حذف موارد تکراری رکورد</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>ورود به سیستم فایل را انتخاب کنید:</label1>
+<groupBox1>گزینه های</groupBox1>
+<ckChanged>استخراج سوابق تغییر</ckChanged>
+<ckEnhance>افزایش سیاهههای مربوط</ckEnhance>
+<label2>انتخاب اطلاعات ثبت شده:</label2>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<this>ورود مدیر</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext فضای آزمایشگاهی به معرفی ابزارهای جدید و مفاهیم مربوط به </lbaboutmn>
+<lnkOpenRefine>ادغام OpenRefine</lnkOpenRefine>
+<lnkSPARQL>مرورگر SPARQL</lnkSPARQL>
+<lnkLinkIds>پیوند شناسه</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>استفاده از این ابزار برای انتقال داده ها بین مارک یا MarcEdit را فرمت حفظی و OpenRef </label1>
+<label2>پرونده منبع:</label2>
+<label3>ذخیره پرونده:</label3>
+<rdExport>صادرات به OpenRefine</rdExport>
+<rdImport>واردات از OpenRefine</rdImport>
+<cmdProcess>روند</cmdProcess>
+<cmdCancel>بستن</cmdCancel>
+<lbStatus>وضعیت:</lbStatus>
+<groupBox1>گزینه های</groupBox1>
+<this>ابزار انتقال اطلاعات OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>فایل های به اشتراک گذاری را انتخاب کنید:</label1>
+<ckconfig>گزینه های پیکربندی</ckconfig>
+<label2>تمام داده ها در دایرکتوری کاربر پیکربندی را صادر می کند.  این شامل اطلاعات پیکربندی، </label2>
+<ckXSLT>توابع XSLT</ckXSLT>
+<label3>صادرات تعریف شیوه نامه XSLT
+</label3>
+<ckMacros>ماکروهای تعریف شده و وظایف</ckMacros>
+<label4>صادرات همه ماکروها و وظایف تعریف شده...
+</label4>
+<label5>صادرات همه MarcEditor نوع مواد قالب تعریف شده.</label5>
+<ckTemplates>قالب های تعریف شده MarcEditor</ckTemplates>
+<cmdExport>صادرات</cmdExport>
+<cmdClose>بستن</cmdClose>
+<this>تنظیمات صادرات</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>عمل</columnHeader2>
+<columnHeader1>متن در بر داشت</columnHeader1>
+<button1>بستن</button1>
+<button2>رفتن به صفحه</button2>
+<cmdFindUpdate>ویرایش یافتن پرس و جو</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>پیدا کردن تمام نتایج</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<lbField>فیلد شماره تماس برای ارزیابی را وارد کنید. (مثلا: 090)</lbField>
+<groupBox1>گزینه های</groupBox1>
+<rdTitle>منظور برش (2xx متوسط، 1xx)</rdTitle>
+<rdDefault>منظور برش (1xx, 2xx متوسط)</rdDefault>
+<groupBox2>گزینه های</groupBox2>
+<label1>پیدا کردن:</label1>
+<rdCustomField>زمینه سفارشی</rdCustomField>
+<rdMainEntry>ارزیابی ورودی اصلی (1xx, 245)</rdMainEntry>
+<this>تولید برش</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>سرور OAI تعریف شده:</label1>
+<label2>(استفاده از کنترل انتقال/تغییر برای انتخاب چند مورد)</label2>
+<ck_date>برداشت از آخرین دانلود</ck_date>
+<cmdCreate>ذخیره</cmdCreate>
+<button1>بستن</button1>
+<this>ایجاد کار برداشت دسته</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>کلمه در ادامه متن</BytesGroup>
+<label5>بیت</label5>
+<label4>iso-8859-1</label4>
+<label3>ده دهی</label3>
+<label2>سحر و جادو</label2>
+<columnHeader1>موقعیت</columnHeader1>
+<columnHeader2>کلمه در ادامه متن</columnHeader2>
+<columnHeader3>متن</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>دریافت فایل</menuItem1>
+<openToolStripMenuItem>باز</openToolStripMenuItem>
+<ExitProgram>خروج</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit نتیجه پنجره</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>نام تابع (نام مستعار):</lb_Alias>
+<label1>با عضویت:</label1>
+<cmd_ok>ذخیره</cmd_ok>
+<cmd_close>بستن</cmd_close>
+<this>پیوستن به توابع XML</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>نام</columnHeader1>
+<columnHeader2>مسیر</columnHeader2>
+<cmdOK>باشه</cmdOK>
+<cmdClose>بستن</cmdClose>
+<this>وظایف موجود</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>ابزار</mnuTools>
+<mnuAddinsEditLinkedData>ویرایش قوانین داده های مرتبط</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>ویرایش فایل XML قوانین</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>چگونه نقطه انتهایی جدید مشخصات?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>فایل به روز رسانی قوانین</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>ورود به سیستم مدیریت</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>ورود به سیستم پیشرفته مدیریت</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>حذف فایل های ورود به سیستم</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>نمایش همه فایل ها وارد شوید</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>مترجم متن پروندهای</mnuAddinTranslator>
+<mnuExportGroup>صادر کردن...</mnuExportGroup>
+<mnuToolsTabbed>صادرات برگه پروندهای سوابق</mnuToolsTabbed>
+<mnuToolsGateway>صادرات رکورد مارک</mnuToolsGateway>
+<mnuToolsSelect>سوابق MARC را انتخاب کنید</mnuToolsSelect>
+<mnuToolsDelete>پرونده های انتخاب شده را حذف کنید</mnuToolsDelete>
+<mnuToolsExtract>استخراج پرونده های انتخاب شده</mnuToolsExtract>
+<mnuToolsCharacterConversion>شخصیت تبدیل ابزار</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>تبدیل Characterset</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>تشخیص شخصیت</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>اسکریپت MarcEdit جادوگر</mnuAddScriptWizard>
+<mnuExplorer>مارک گذاشتن اکسپلورر</mnuExplorer>
+<toolStripMenuItem4>OAI رفتگر ابزار</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>برداشت OAI سوابق</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>دسته ای برداشت</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>ایجاد کار دسته</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>برداشت های دسته ای را اجرا کنید</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>صادرات</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>واردات</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>ابزار UNIMARC</mnuToolsUnimarcTools>
+<mnuAddinURL>آدرس ها را بررسی کنید</mnuAddinURL>
+<mnuAddinZ39_50>مشتری Z39.50/SRU</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>ابزار پردازش مارک</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>پرونده پردازش دسته ای</mnuToolsBatch>
+<toolClusterData>ابزار خوشه اي داده ها</toolClusterData>
+<mnuToolsDedup>یافتن رکورد تکراری</mnuToolsDedup>
+<generateToolStripMenuItem>تولید...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>شماره های تماس</mnuGenerateCallnumber>
+<toolStripMenuItem3>عنوان های سریع</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>سرعنوان های موضوعی LC</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>ادغام اطلاعات ثبت شده</mnutoolsmerge>
+<toolStripMenuItem5>یاور RDA</toolStripMenuItem5>
+<toolStripMenuItem6>عملیات OCLC</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>دانلود رکورد در OCLC</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>بروز رسانی منابع WorldCat رکورد</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>آپلود Bibliograph سوابق در WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>اعتبار سرفصل</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>وضعیت سرویس</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>اعتبار سرفصل</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>تنظیمات</mnuToolsPreferences>
+<pluginsToolStripMenuItem>افزونه</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>مدیریت پلاگین</mnuAddinPluginManager>
+<mnuaddincdsisis>سی دی ایسیس ایزو =&gt; مارک ترجمه</mnuaddincdsisis>
+<mnuHelp>کمک</mnuHelp>
+<mnuHelpContents>مطالب و کمک</mnuHelpContents>
+<mnuHelpTutorials>مشاهده آموزش</mnuHelpTutorials>
+<mnuHelpOnline>کمک آنلاین</mnuHelpOnline>
+<mnuHelpList>عضویت در لیست اطلاع رسانی MarcEdit</mnuHelpList>
+<mnuHelpError>پیشنهادات و گزارشات</mnuHelpError>
+<mnuBlog>وبلاگ MarcEdit</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>مسائل شناخته شده MarcEdit</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>اطلاعات سیستم</systemInfoToolStripMenuItem>
+<mnuAddLang>ویرایش فایل های زبان</mnuAddLang>
+<mnuRestartIn32bitMode>MarcEdit راه اندازی مجدد در حالت 32 بیتی</mnuRestartIn32bitMode>
+<mnuFileShare>تنظیمات اشتراک گذاری</mnuFileShare>
+<exportSettingsToolStripMenuItem>تنظیمات صادرات</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>وارد کردن تنظیمات</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>گزینه های عیب یابی</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>پاک کردن فایل های موقت</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>دانلود فونت های یونیکد نوتو</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>تعمیر کار فایل</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>پرونده های شبکه را از نسخه پشتیبان بازیابی</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>وظایف Relink را انتخاب کنید</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>بازیابی داده های پیکربندی</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>باز HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>عیب یابی جادوگر</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>دانلود به روز رسانی (حالت اشکال زدایی)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>بررسی برای به روز رسانی</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>میانبرهای برنامه</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>مسیر برنامه داده ها</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>زبان داده مسیر</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>تم مسیر داده</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>مسیر داده ها XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>درباره...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>نویسنده تری ریس</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>چه کار داری؟</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>تعریف شده توسط کاربر 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine داده ها</lnkUserDefined1>
+<lnkMarcToolsStart>مارک ابزار</lnkMarcToolsStart>
+<lnkUserDefined2>تعریف شده توسط کاربر 2</lnkUserDefined2>
+<lnkUserDefined4>کاربر Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>من می خواهم به:</groupBox1>
+<cmbLastToolUsed>آخرین ابزار های مورد استفاده</cmbLastToolUsed>
+<lnkTopic5>کار با داده های مرتبط</lnkTopic5>
+<lnkTopic4>ترجمه اکسل به مارک</lnkTopic4>
+<lnkTopic3>ادغام فایل های مارک</lnkTopic3>
+<lnkTopic2>برداشت OAI داده</lnkTopic2>
+<lnkTopic1>ویرایش فایل مارک</lnkTopic1>
+<this>.Beta MarcEdit {نسخه} توسط ریس تری</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>برداشت OAI داده</lbTitle>
+<lbServer>آدرس سرور:</lbServer>
+<lbSet>نام مجموعه:</lbSet>
+<lbMetadata>نوع ابرداده:</lbMetadata>
+<cmdOK>باشه</cmdOK>
+<cmdClose>بستن</cmdClose>
+<opt_default>پیش فرض</opt_default>
+<opt_saxon>ساکسون</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>موتور XSLT:</label4>
+<ck_Raw>برداشت داده های خام (OAI داده ذخیره به فایل سیستم محلی)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>تنظیمات پیشرفته</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>تایم (به ثانیه.)</lbTimeout>
+<ck_Translate>ترجمه به 8 مارس</ck_Translate>
+<label2>پایان:</label2>
+<label1>شروع:</label1>
+<lbCrosswalk>Crosswalk مسیر:</lbCrosswalk>
+<cmdSave>ذخیره</cmdSave>
+<lnkDebug>اشکال زدایی آدرس</lnkDebug>
+<tabPage1>صفحه اصلی</tabPage1>
+<tabPage2>تنظیمات پیشرفته</tabPage2>
+<this>برداشت فوق داده</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>پرونده منبع OCLC اعداد:</label1>
+<cmdDownload>دانلود</cmdDownload>
+<cmdClose>بستن</cmdClose>
+<label2>ذخیره پرونده:</label2>
+<this>سوابق دانلود فله از OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>جستجو در WorldCat:</label1>
+<cmbarg1>کلید واژه</cmbarg1>
+<cmbconditional>و</cmbconditional>
+<cmdSearch>جستجو</cmdSearch>
+<cmdClose>بستن</cmdClose>
+<label2>يافته ها:</label2>
+<col_oclcnum>تعداد OCLC</col_oclcnum>
+<col_title>عنوان</col_title>
+<ck_LocalBib>دانلود رکورد کتاب شناسی محلی در صورت وجود</ck_LocalBib>
+<lnkAll>انتخاب همه</lnkAll>
+<label3>|</label3>
+<lnkNone>هیچ کدام</lnkNone>
+<this>جستجوی OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>بروز رسانی منابع WorldCat OCLC</label1>
+<groupBox1>گزینه های</groupBox1>
+<rdDeleteHoldings>حذف منابع</rdDeleteHoldings>
+<rdAddHolding>اضافه کردن منابع</rdAddHolding>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<label2>کد موسسه:</label2>
+<label3>طرح طبقه بندی:</label3>
+<cmb_schema>کتابخانه کنگره</cmb_schema>
+<ck_debug>چاپ اطلاعات اشکال زدایی</ck_debug>
+<this>به روز رسانی WorldCat منابع</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>کتابخانه کنگره</cmb_schema>
+<label3>طرح طبقه بندی:</label3>
+<label2>کد موسسه:</label2>
+<cmdClose>بستن</cmdClose>
+<cmdProcess>روند</cmdProcess>
+<label4>رکوردهای با تعداد OCLC در WorldCat بهنگام نخواهد شد.  Bibliograph </label4>
+<label1>برگزاری کد:</label1>
+<lnkGetHoldings>دریافت کد</lnkGetHoldings>
+<ckLocalBibData>روند به عنوان رکوردهای محلی</ckLocalBibData>
+<ck_deleterecords>حذف رکورد</ck_deleterecords>
+<this>ارسال پرونده به WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>باشه</cmd_options_ok>
+<cmd_options_cancel>بستن</cmd_options_cancel>
+<cmd_options_apply>درخواست</cmd_options_apply>
+<lnkMainWindow>پنجره اصلی</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>زبان</lnkLanguage>
+<lnkEaseOfUse>سهولت استفاده</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>به روز رسانی</lnkUpdates>
+<lnkFileAssociations>انجمن فایل</lnkFileAssociations>
+<lnkOther>دیگر</lnkOther>
+<lnkILSIntegration>ادغام ILS</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API ادغام</lnkOCLCAPI>
+<label15>تنظیم پیش فرض برنامه</label15>
+<ckLogging>ورود به سیستم را قادر می سازد:</ckLogging>
+<ckAutosave>ذخیره خودکار را فعال کنید</ckAutosave>
+<ck_enhanced_editor_loading>استفاده از صفحه بندی مدیریت پیشرفته</ck_enhanced_editor_loading>
+<ckRDATemplates>استفاده از RDA قالب</ckRDATemplates>
+<ckCompileMarc8>کامپایل پرونده به عنوان MARC8</ckCompileMarc8>
+<label37>راه ورود به سیستم:</label37>
+<cksaveutf8>کامپایل پرونده به عنوان UTF8</cksaveutf8>
+<ck_intellisense>فعال کردن Intellisense</ck_intellisense>
+<label2>تعداد موارد در صفحه</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>کدگذاری پیش فرض:</lb_Encoding>
+<ck_nwindow>پرونده های باز را در پنجره جدید</ck_nwindow>
+<ck_append>الحاق رکورد جدید</ck_append>
+<lb_psize>حجم پیش نمایش:</lb_psize>
+<ckUsePreview>استفاده از حالت پیش نمایش</ckUsePreview>
+<cmd_editor_font_default>تنظیم پیش فرض ها</cmd_editor_font_default>
+<cmd_editor_set_font>مجموعه فونت</cmd_editor_set_font>
+<lb_Editor_Font_Props>مجموعه فونت های MarcEditor خواص:</lb_Editor_Font_Props>
+<cmd_editor_template_default>تنظیم پیش فرض ها</cmd_editor_template_default>
+<cmd_editor_modify>تغییر</cmd_editor_modify>
+<lb_Current_Template>قالب فعلی:</lb_Current_Template>
+<lb_Editor_Template>مجموعه قالب های MarcEditor:</lb_Editor_Template>
+<label9>* نیاز * راه اندازی مجدد برنامه</label9>
+<label8>pt.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>اندازه قلم:</label4>
+<lb_Example>متن نمونه</lb_Example>
+<lb_lang_font>مجموعه ای از فونت های زبان:</lb_lang_font>
+<lb_Set_Lang>مجموعه پک زبان:</lb_Set_Lang>
+<rd_theme_dark>تم های سفارشی:</rd_theme_dark>
+<rd_theme_normal>عادی (پیش فرض)</rd_theme_normal>
+<label39>نرم افزار گزینه های نمایش</label39>
+<ck_export_output>صدور رسید (خروجی ضبط ILS)</ck_export_output>
+<lb_TCP_Timeout>تایم:</lb_TCP_Timeout>
+<lb_TCP_Port>درگاه:</lb_TCP_Port>
+<lb_TCP_Host>آدرس میزبان:</lb_TCP_Host>
+<lb_TCPIP_Props>ویژگیهای TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>پرونده در فرمت MARC21</ck_marc21>
+<ck_marcxml_sax>استفاده از گزینه بومی (غیر XSLT فرایند)</ck_marcxml_sax>
+<groupBox2>موتور XSLT</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>عادی سازی یونیکد</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>کدبندی نویسه پیش گزیده:</label35>
+<ckC>استاندارد Decomposition (C)</ckC>
+<ckKD>سازگاری تجزیه (KD)</ckKD>
+<ck_Diacritics>استفاده از حرکات در هنگام شکستن</ck_Diacritics>
+<lb_Diacritics>گزینه های عمومی:</lb_Diacritics>
+<lb_Engine_XML_Options>گزینه های XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>استفاده از Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>به روز رسانی خودکار توسط مدیر سیستم غیر فعال شده اند</labelAutoUpdateDisabled>
+<ckDetectProxy>استفاده از تنظیمات پروکسی سیستم</ckDetectProxy>
+<ck_Update_Validator>به طور خودکار چک برای به روز رسانی اعتبار سنج</ck_Update_Validator>
+<label3>شما باید به دامنه برای این کار در این زمان تعلق داشته باشد.</label3>
+<groupBox4>اطلاعات کاربر:</groupBox4>
+<lb_domain>دامنه:</lb_domain>
+<label6>رمز عبور:</label6>
+<label5>نام کاربری:</label5>
+<ckUpdates>به طور خودکار چک برای به روز رسانی</ckUpdates>
+<groupBox5>انجمن فایل تنظیم</groupBox5>
+<cmd_file_assoc_view>انواع مشاهده</cmd_file_assoc_view>
+<cmd_file_assoc_delete>نوع حذف</cmd_file_assoc_delete>
+<cmd_file_assoc_save>ذخیره نوع</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>دیپلم (*.                      ) نوع با فایل ها:</label7>
+<ck_mrk8_editor>فایل های (*.mrk8) مرتبط با MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>فایل های (*.mrk) مرتبط با MarcEditor</ck_mrk_editor>
+<ck_mrc>فایل های (*.mrc) مرتبط با MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>را انتخاب کنید</lnkSelectILS>
+<lnkDeleteProfile>حذف</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>اضافه کردن</lnkAddProfile>
+<label31>پروفایل:</label31>
+<ck_ignore_ssl>چشم پوشی از خطاهای گواهی SSL</ck_ignore_ssl>
+<lnk_ils_delete>حذف</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>ویرایش</lnk_ils_z3950_edit>
+<ck_ils_z3950>استفاده از تنظیمات Z39.50</ck_ils_z3950>
+<ck_ils_enable>فعال کردن گزینه های ILS</ck_ils_enable>
+<label13>نام میزبان:</label13>
+<label12>رمز عبور:</label12>
+<label11>نام کاربری:</label11>
+<label10>سیستم را انتخاب کنید:</label10>
+<lnkGetCodes>دریافت کدهای برگزاری</lnkGetCodes>
+<label24>برگزاری کد:</label24>
+<cmb_schema>کتابخانه کنگره</cmb_schema>
+<label22>طرح طبقه بندی:</label22>
+<label23>کد موسسه:</label23>
+<ckshow>نمایش متن</ckshow>
+<cmdValidateKeys>اعتبار کلید</cmdValidateKeys>
+<linkLabel1>درخواست/مدیریت کلید OCLC (متصل به OCLC)</linkLabel1>
+<label21>تنظیمات کلید API OCLC</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>مخفی کلید (با کلید API ابرداده زوج)</label18>
+<label17>کلید API ابرداده OCLC</label17>
+<label16>کلید API جستجو OCLC</label16>
+<lnkFilePaths>مکان</lnkFilePaths>
+<label38>شبکه ایست (300 میلی ثانیه پیش فرض):</label38>
+<lnkCopyLocalFiles>کپی فایل های محلی در حال حاضر</lnkCopyLocalFiles>
+<label30>تنظیم پیش فرض مارک درایو ابزار مسیر:</label30>
+<label27>مسیر پرونده:</label27>
+<label26>کار پوشه:</label26>
+<label25>پوشه های شبکه:</label25>
+<lb_mono>تک راه:</lb_mono>
+<lb_temp>تنظیم مسیر موقت:</lb_temp>
+<ck_rss>خواندن آر اس اس</ck_rss>
+<lb_title>برچسب عنوان:</lb_title>
+<lb_Author>برچسب نویسنده:</lb_Author>
+<lbCall>برچسب شماره تماس:</lbCall>
+<label1>کنترل برچسب شماره:</label1>
+<ck_allow_z3950>توابع Z39.50 را فعال کنید</ck_allow_z3950>
+<label28>گزینه های زمینه:</label28>
+<ck_touch_friendly>استفاده از منوها دوستانه لمسی</ck_touch_friendly>
+<ck64_bit>نصب 64 بیتی</ck64_bit>
+<ck_32bit>نصب 32 بیتی</ck_32bit>
+<label36>نسخهٔ دفتر کارشناسی ارشد:</label36>
+<label34>برچسب ISBN:</label34>
+<ckSort880>880: استفاده از پیوند زمینه برای مرتب سازی</ckSort880>
+<ck880Infile>زمینه های Infile 880 با زمینه جفت</ck880Infile>
+<label29>گزینه های مرتب سازی:</label29>
+<ckShowDescriptionInScreenTips>شرح عملکرد نشان می دهد در نکات صفحه</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>نمایش کلیدهای میانبر در نکات صفحه</ckScreenTipShortcuts>
+<label42>گزینه های صفحه کلید</label42>
+<ckProvideSoundAccess>ارائه بازخورد با صدا</ckProvideSoundAccess>
+<label41>گزینه های بازخورد</label41>
+<groupBox3>اقدامات:</groupBox3>
+<lnkSearch4Themes>موضوع انتخاب شده را حذف کنید</lnkSearch4Themes>
+<lnkNewTheme>ایجاد تم های جدید</lnkNewTheme>
+<label40>MarcEdit دیگر قابل دسترسی میباشد</label40>
+<this>اولویت های MarcEdit</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>اتصال های موجود:</label1>
+<ch1>نام پلاگین</ch1>
+<ch2>آدرس</ch2>
+<c3>حجم فایل</c3>
+<c4>Version #:</c4>
+<cmddownload>دانلود</cmddownload>
+<cmdClose>بستن</cmdClose>
+<columnHeader1>حذف شود؟</columnHeader1>
+<columnHeader2>نام پلاگین</columnHeader2>
+<columnHeader3>نام کلاس</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>افزونه های نصب شده:</label2>
+<cmdRemove>حذف</cmdRemove>
+<c5>شماره نسخه MarcEdit</c5>
+<this>مدیریت پلاگین</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>منابع. GetString ("لیبل 1. متن")</label1>
+<label2>الگو:</label2>
+<cmdProcess>روند</cmdProcess>
+<cmdCancel>لغو</cmdCancel>
+<lbstatus>وضعیت:</lbstatus>
+<ckEscape>فرار داده ها را از آدرس</ckEscape>
+<ckAddNew>تعویض زمینه موجود</ckAddNew>
+<ck_addnewfield>اضافه کردن فیلد جدید اگر نه در حال حاضر</ck_addnewfield>
+<ckAlwaysAdd>همیشه زمینه های جدید را اضافه کنید</ckAlwaysAdd>
+<groupBox1>گزینه های</groupBox1>
+<this>ایجاد زمینه های جدید</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>دسته ای جستجو</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>نتیجه</groupBox3>
+<lnkClearResults>نتیجه روشن</lnkClearResults>
+<lnkDownload>دانلود همه موارد</lnkDownload>
+<lnkGetNext>دریافت بعدی {حد}</lnkGetNext>
+<lnkDownloadAllHoldings>دانلود تمام منابع</lnkDownloadAllHoldings>
+<col1>موقعیت</col1>
+<col2>عنوان</col2>
+<columnHeader1>پایگاه داده</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>موارد انتخاب شده را به صورت</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>دانلود منابع انتخاب شده سوابق</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>مشاهده پرونده های انتخاب شده</viewSelectedRecordToolStripMenuItem>
+<groupBox1>گزینه های</groupBox1>
+<rdEditDB>انتخاب پایگاه داده</rdEditDB>
+<rdEditSettings>ویرایش تنظیمات</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>تعداد موارد در صفحه</label4>
+<ckUnicode>بازیابی یونیکد</ckUnicode>
+<lb_encoding_single>مجموعه کاراکتر سرور</lb_encoding_single>
+<lbSearchb>جستجو:</lbSearchb>
+<lbSearch>پرس و جو پایگاه داده:</lbSearch>
+<label3>پایگاه داده تعیین اولویت:</label3>
+<cmdSelectDatabase>را انتخاب کنید</cmdSelectDatabase>
+<MCol3>شناسه</MCol3>
+<MCol1>نام</MCol1>
+<MCol2>نوع</MCol2>
+<lb_PModifyTitle>انتخاب پایگاه داده:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>اقدامات</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>اضافه کردن سرور Z39.50 جدید</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>اضافه کردن سرور جدید SRU</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>تنظیمات</preferencesToolStripMenuItem>
+<cmdCloseSettings>بستن</cmdCloseSettings>
+<label5>زمینه های کنترل (برای deduplication پردازش دسته ای)</label5>
+<cmdSaveSettings>ذخیره تنظیمات</cmdSaveSettings>
+<rdDownloadPreferred>دانلود از منبع مورد نظر</rdDownloadPreferred>
+<rdDownloadMostComplete>دانلود کامل ترین سوابق</rdDownloadMostComplete>
+<rdAllRecords>دانلود تمام سوابق</rdAllRecords>
+<label2>گزینه های پردازش دسته ای</label2>
+<label1>تنظیمات</label1>
+<this>مشتری MarcEdit Z39.50/SRU</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>روند 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>ویرایش زمینه</lnkEditFields>
+<ck_040>040--تغییر و اضافه کردن $erda</ck_040>
+<ck_qualifyinginfo>مرحله مقدماتی اطلاعات (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>ویرایش لیست</lnkEdit>
+<ck_dgmd>حذف GMD</ck_dgmd>
+<ckAbbrev>گسترش اختصارات</ckAbbrev>
+<ckgmd>تولید GMD</ckgmd>
+<ck264>ارزیابی 260/264</ck264>
+<ck_signs>همیشه استفاده از ©، ℗ نمادها</ck_signs>
+<ck381>381--اضافه کردن دیگر</ck381>
+<ck380>380--اضافه کردن قالب کار</ck380>
+<ck347>347--اضافه کردن ویژگی های دیجیتال</ck347>
+<ck346>346--اضافه کردن ویژگی های ویدئو</ck346>
+<ck345>345 - ها اضافه کنید. ویژگی</ck345>
+<ck344>344--اضافه کردن ویژگی های صدا</ck344>
+<ck337>337--اضافه کردن نوع رسانه
+338--اضافه کردن نوع حامل</ck337>
+<ck336>336--اضافه کردن نوع محتوا</ck336>
+<cmdProcess>باشه</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<label1>منبع:</label1>
+<label2>ذخیره:</label2>
+<lnkAll>تمام</lnkAll>
+<label3>را انتخاب کنید:</label3>
+<label4>|</label4>
+<lnkNone>هیچ کدام</lnkNone>
+<label7>وضعیت:</label7>
+<this>یاور RDA</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>بستن</cmd_Close>
+<rEdit></rEdit>
+<this>نتیجه</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>صفحه اصلی</lnkHome>
+<label5>منابع. GetString ("label5. متن")</label5>
+<label4>درباره RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>درباره RobertCompare</lnkAbout>
+<ckSort>مرتب کردن فایل های از پیش</ckSort>
+<cmdClose>بستن</cmdClose>
+<cmdExecute>اجرای</cmdExecute>
+<label1>ذخیره پرونده:</label1>
+<label6>مقایسه فایل ها:</label6>
+<label2>منابع. GetString ("label2. متن")</label2>
+<lnkPreferences>تنظیمات</lnkPreferences>
+<label7>|</label7>
+<lbSortField>مرتب کردن بر اساس زمینه:</lbSortField>
+<lbdelete>حذف:</lbdelete>
+<lbAddColor>ارسال شده:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>هیچ کدام</lnkNone>
+<lnkAll>انتخاب همه</lnkAll>
+<col_title>عنوان</col_title>
+<col_id>شناسه</col_id>
+<label3>|</label3>
+<label2>يافته ها:</label2>
+<cmdClose>بستن</cmdClose>
+<cmdSearch>جستجو</cmdSearch>
+<cmbarg1>عنوان</cmbarg1>
+<label1>جستجوی پایگاه داده:</label1>
+<ck_batch>دسته ای جستجو</ck_batch>
+<this>جستجو</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>را انتخاب کنید</cmdSelect>
+<this>انتخاب ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>تعداد رکورد</columnHeader1>
+<columnHeader2>نمایش زمینه</columnHeader2>
+<selectItemsToolStripMenuItem>انتخاب موارد</selectItemsToolStripMenuItem>
+<cmdImport>فایل</cmdImport>
+<cmdfDelete>حذف انتخاب شده</cmdfDelete>
+<cmdExport>صادر کردن انتخاب</cmdExport>
+<cmdExit>خروج</cmdExit>
+<lb_Search>جستجو:</lb_Search>
+<lb_DisplayField>زمینه را نمایش می دهند:</lb_DisplayField>
+<lb_SourceFile>مارک پرونده منبع:</lb_SourceFile>
+<ckSource>اصلاح اطلاعات ثبت شده در منبع را مجددا ذخیره نمایید</ckSource>
+<ck_retain>موارد انتخاب شده را حفظ</ck_retain>
+<cmd_Generate>تولید گزارش</cmd_Generate>
+<ck_find_all>جستجوی تمام اطلاعات رکورد</ck_find_all>
+<ck_use_regex>استفاده از عبارات منظم</ck_use_regex>
+<cmdRandomExport>صادرات تصادفی</cmdRandomExport>
+<lnkDoesNotMatch>مطابقت ندارد</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>برعکس شود انتخاب</lnkInvert>
+<ckExactWord>کلمه دقیق مسابقه</ckExactWord>
+<this>MarcEdit.NET: سوابق MARC انتخاب شده را تغییر دهید</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>انتخاب زمینه ها جهت مستثنی کردن از مرتب سازی</lb_title>
+<lb_fields>مرتب کردن بر اساس زمینه:</lb_fields>
+<lbExclude>حذف زمینه های:</lbExclude>
+<cmd_OK>باشه</cmd_OK>
+<cmd_Close>بستن</cmd_Close>
+<this>جادوگر چیدن سفارشی</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL نقطه پایانی:</lbsparql>
+<cmdQuery>پرس و جو</cmdQuery>
+<cmdClose>بستن</cmdClose>
+<lbQuery>SPARQL پرس و جو:</lbQuery>
+<lbresults>يافته ها:</lbresults>
+<cklocal>بار پرونده محلی</cklocal>
+<lbOutput>خروجی:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>نمونه نمایش داده شد:</groupBox1>
+<lbExample3>برای پرس و جو: 軍事基地</lbExample3>
+<lnkExample3>رژیم غذایی ژاپنی کتابخانه</lnkExample3>
+<lbexample2>گتی پرس و جو مس سولفات</lbexample2>
+<lnkExample2>به عنوان مثال گتی</lnkExample2>
+<label1>مش پرس و جو برای آنفولانزا، بشر</label1>
+<lnkExample1>به عنوان مثال مش</lnkExample1>
+<label2>Sparql مراجع:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>نقطه انتهایی SPARQL (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (ویکی پدیا)</lnkwikipediaSparql>
+<lnkTutorials>آموزش SPARQL</lnkTutorials>
+<this>مرورگر SPARQL</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>سی دی-ایسیس =&gt; مارک ترجمه</lb_title>
+<groupBox1>ورودی کاربر</groupBox1>
+<lb_output>فایل خروجی:</lb_output>
+<lb_input>فایل ورودی:</lb_input>
+<groupBox2>گزینه های:</groupBox2>
+<rd_advanced>ترجمه پیشرفته</rd_advanced>
+<rd_simple>ترجمه ساده</rd_simple>
+<lb_subfield>نشانگر subfield</lb_subfield>
+<cmd_Ok>باشه</cmd_Ok>
+<cmd_Close>بستن</cmd_Close>
+<this>سی دی ایسیس ایزو =&gt; مارک ترجمه</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>گزینه های:</lb_title>
+<lnkLoad>تعیین زمینه بارگذاری</lnkLoad>
+<ck_indicators>اضافه کردن شاخص</ck_indicators>
+<ckLDR>درست LDRs</ckLDR>
+<ck_subfield>اضافه کردن subfield پیشرو</ck_subfield>
+<cmdOK>باشه</cmdOK>
+<cmdClose>بستن</cmdClose>
+<this>گزینه های پیشرفته</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>لیبل 1</lbCaption>
+<cmdCancel>لغو</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>نویسه های خاص:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>را وارد کنید</cmd_Insert>
+<cmdClose>بستن</cmdClose>
+<this>مارک 8 علا Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>نام لیست وظیفه:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>افزودن زمینه حذف وظیفه</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>افزودن ویرایش Subfield وظیفه</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>افزودن ویرایش شاخص وظیفه</addToolStripMenuItem>
+<cmdSave>ذخیره</cmdSave>
+<addNewFieldTaskToolStripMenuItem>افزودن زمینه وظیفه جدید</addNewFieldTaskToolStripMenuItem>
+<cmdClose>بستن</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>اضافه کردن به جای کار همه</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>اضافه کردن نظر</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>افزودن زمینه ویرایش کار</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>افزودن وظیفه زمینه مبادله</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>افزودن زمینه کپی کار</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>افزودن لیست وظایف</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>اضافه کردن RDA یاور</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>افزودن وظیفه داده های مرتبط</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>افزودن وظیفه میدان جدید ساخت</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>ویرایش کلید های میانبر</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>اظهارات در مورد اظهارات</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>حروف کوچک</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>حروف بزرگ</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>حالت حروف عنوان</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>اولیه مورد</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>سرمایه گذاری اولیه مورد</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>ویرایش زمینه</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>تمیز کردن شخصیت های هوشمند</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>توابع ریاضی</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>تبدیل به اعشاری درجه</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>حذف خط خالی</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>ابزارهای برش</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>تولید برش</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>تولید برش Sanborn3</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>عمل كار انتخاب شده را کپی کنید</mnuCopy>
+<mnuPasteTask>جگر عمل وظیفه</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>نظر کار انتخاب</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>برداشتن توضیح كارهاي انتخاب شده</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>وظایف:</lbTasks>
+<label1>اقدامات:</label1>
+<label2>توضیحات/کنترل:</label2>
+<cmdDebug>اشکال زدایی</cmdDebug>
+<this>ویرایش لیست وظایف</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>نام</columnHeader1>
+<columnHeader2>مسیر</columnHeader2>
+<columnHeader3>میانبر</columnHeader3>
+<columnHeader4>شرح</columnHeader4>
+<cmdClose>بستن</cmdClose>
+<lnkNew>ایجاد لیست وظایف جدید</lnkNew>
+<lbMacro>وظیفه لیست:</lbMacro>
+<lnkCloneTask>لیست وظایف موجود کلون</lnkCloneTask>
+<groupBox1>اقدامات وظیفه</groupBox1>
+<lnkRelink>Relink وظایف</lnkRelink>
+<lnk_import_task>وارد کردن وظیفه</lnk_import_task>
+<groupBox2>مدیریت وظایف موجود</groupBox2>
+<lnkBackup>پشتیبان گیری همه وظایف</lnkBackup>
+<lnk_export_task>صادرات كار انتخاب شده</lnk_export_task>
+<lnkKey>تخصیص کلیدی</lnkKey>
+<lnkEdit>ویرایش لیست کار انتخاب شده</lnkEdit>
+<lnkDelete>فهرست كار انتخاب شده را حذف کنید</lnkDelete>
+<this>مدیر وظیفه</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>سوابق طولانی کوتاه</ckTruncate>
+<label1>عمل را انتخاب کنید:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>کدبندی نویسه پیش گزیده:</label35>
+<ck_Marc8>ترجمه به 8 مارس</ck_Marc8>
+<ck_UTF8>ترجمه به UTF8</ck_UTF8>
+<lb_OutputFile>ذخیره به عنوان...</lb_OutputFile>
+<lb_InputFile>باز...</lb_InputFile>
+<cmdCancel>بستن</cmdCancel>
+<cmdEdit>ویرایش اطلاعات ثبت شده</cmdEdit>
+<cmdExecute>اجرای</cmdExecute>
+<lb_Results>يافته ها:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>ابزار</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>بازگشت به پنجره اصلی</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>ویرایش لیست تابع XML</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>پرونده پردازش دسته ای</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>تبدیل Characterset</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>ابزار UNIMARC</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>چه کار داری؟</mnuContextHelp>
+<lnkTopic1>تبدیل فایل من به شخصیت های مختلف را پشتیبانی می کند</lnkTopic1>
+<lnkTopic2>افزودن/ویرایش ترجمه XML</lnkTopic2>
+<lnkTopic4>چگونه می توانم پیدا خطا در فایل مارک من?</lnkTopic4>
+<groupBox1>من می خواهم به:</groupBox1>
+<groupBox2>داده ها به روند انتخاب:</groupBox2>
+<groupBox3>گزینه های رمزگذاری نویسه</groupBox3>
+<this>مارک ابزار</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit مجموعه ای از ابزار های تبدیل UNIMARC مطلب وزن را فراهم می کند.  اگر این ابزار مورد علاقه شما و شما می خواهم برای کمک به آنها را بهتر، از دكتر eedback ارائه.
+
+</label1>
+<label2>منبع</label2>
+<label3>مقصد</label3>
+<groupBox1>گزینه های</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<this>ابزار UNIMARC</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>یادداشت های به روز رسانی:</label1>
+<cmd_Update>به روز رسانی</cmd_Update>
+<cmd_Cancel>لغو</cmd_Cancel>
+<this>به روز رسانی MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>یونیکد کد گذاری</ckIsUTF8>
+<ck_merge_to_source>ادغام منبع</ck_merge_to_source>
+<label17>ذخیره پرونده:</label17>
+<label16>فهرست نویسی منبع</label16>
+<ck_SameFile>منبع فایل</ck_SameFile>
+<cmd_merge_cancel>لغو</cmd_merge_cancel>
+<cmd_merge_next>=&gt; بعدی</cmd_merge_next>
+<lb_merge_title>ادغام اطلاعات ثبت</lb_merge_title>
+<ck_merge_repeatable>تکرارشونده است</ck_merge_repeatable>
+<lb_id>شناسه رکورد:</lb_id>
+<lb_merge>ادغام فایل:</lb_merge>
+<lb_source>پرونده منبع:</lb_source>
+<ck_overlayexisting>رویهم قرار دادن آیتم های موجود</ck_overlayexisting>
+<label4>ارزش اعتماد به نفس:</label4>
+<ck_mergeUnique>ادغام موارد منحصر به فرد</ck_mergeUnique>
+<button1>لغو</button1>
+<cmd_merge_select_fields_next>=&gt; بعدی</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>-پشت =</cmd_merge_select_fields_back>
+<label7>زمینه های ادغام:</label7>
+<label6>زمینه را انتخاب کنید:</label6>
+<label5>ادغام اطلاعات ثبت: زمینه های را انتخاب کنید</label5>
+<button5>بستن</button5>
+<label15>فایل های ادغام شده اند.  نتیجه واقع در {merge_results_file}.</label15>
+<label13>تکمیل ادغام</label13>
+<this>ادغام اطلاعات ثبت شده مارک</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>ابزار اعتبار عنوان می تواند مورد استفاده قرار گیرد به اعتبار 1xx 6xx یا زمینه 7xx.  با بهره گیری از ابزار الکترونیکی هفتم ترکیبی از وب و خدمات محلی برای تعیین اگر headin g به نظر می رسد در سرفصل مجاز.</label1>
+<ck_1xx>اجازه زمینه 1xx/7xx</ck_1xx>
+<ck_6xx>اجازه میدان 6xx</ck_6xx>
+<cmdProcess>روند</cmdProcess>
+<cmdClose>بستن</cmdClose>
+<label2>منبع:</label2>
+<lbStatus>وضعیت:</lbStatus>
+<cmdExtract>عصاره</cmdExtract>
+<ckdeletecache>حذف حافظه پنهان محلی</ckdeletecache>
+<lnkDelimited>پروندهای ذخیره</lnkDelimited>
+<ckonlyA>تنها فرایند Subfield A</ckonlyA>
+<ckVariant>گونه های تصحيح خودکار</ckVariant>
+<ckGenerateBriefHeadings>تولید مقامات نام کوتاه شخصی</ckGenerateBriefHeadings>
+<label3>تولید مقامات:</label3>
+<ckAddURIs>Uri ها صورت امکان قراردادن</ckAddURIs>
+<ck_download_authorities>دانلود مقامات LC</ck_download_authorities>
+<this>اعتبار سرفصل</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>پرونده منبع:</lb_Source>
+<lb_Rules>دریافت فایل قوانین:</lb_Rules>
+<cmd_Ok>باشه</cmd_Ok>
+<cmd_close>بستن</cmd_close>
+<groupBox1>گزینه های</groupBox1>
+<optIdentify>اعتبار ساختار رکورد</optIdentify>
+<opt_remove>حذف پرونده نامعتبر</opt_remove>
+<opt_validate>بررسی قوانین مارک با استفاده از فایل</opt_validate>
+<rdHex>مشاهده در HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>باشه</cmd_Ok>
+<cmdCancel>بستن</cmdCancel>
+<groupBox1>گزینه های گزارش:</groupBox1>
+<lb_MARC_Title>عنوان:</lb_MARC_Title>
+<lbReport>نوع گزارش:</lbReport>
+<lb_XSLT>پرونده XSLT:</lb_XSLT>
+<lb_Dest>فایل خروجی:</lb_Dest>
+<lb_MARC>فایل ورودی:</lb_MARC>
+<lb_Fields>زمینه های:</lb_Fields>
+<lbTimeout>تایم (به ثانیه)</lbTimeout>
+<this>آدرس تایید</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>درباره خدمات OCLC's سریع</lnkClassify>
+<label1>منابع. GetString ("لیبل 1. متن")</label1>
+<ck_conditional_fast>هنگامی که به هیچ عنوان در حال حاضر اضافه کردن عنوان های سریع</ck_conditional_fast>
+<ck_always_fast>همیشه اضافه کردن عنوان های سریع</ck_always_fast>
+<label8>سرعنوان های موضوعی:</label8>
+<button1>روند</button1>
+<cmd_Close>بستن</cmd_Close>
+<this>ایجاد عنوان های سریع</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>ذخیره</cmd_save>
+<cmd_close>بستن</cmd_close>
+<ck_1xxa>$a: ورودی اصلی</ck_1xxa>
+<ck_245p>$p: نام pt/ثانیه از کار</ck_245p>
+<ck_245n>$n: تعداد pt/ثانیه از کار</ck_245n>
+<ck_245c>$c: بیانیه Responsiblity</ck_245c>
+<ck_245b>$b: باقی مانده از عنوان</ck_245b>
+<ck_245a>$a: عنوان</ck_245a>
+<ck_lang>زبان (موقعیت: 35-37)</ck_lang>
+<ck_dates>خرما (موقعیت: 7-14)</ck_dates>
+<ck_p7>BLvl (موقعیت 7)</ck_p7>
+<ck_p6>نوع (موقعیت 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>کنترل شماره</label6>
+<ck_form>فرم (موقعیت: 23)</ck_form>
+<ck_245_h>$h: تعیین مواد عمومی</ck_245_h>
+<label5>زمینه های متفرقه.:</label5>
+<label4>زمینه 245:</label4>
+<label3>نویسنده (1xx) زمینه</label3>
+<label2>موقعیت 008</label2>
+<label1>موقعیت LDR</label1>
+<this>گزینه های ادغام</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>ويژگيهای پایگاه اطلاعات</tabDBProps>
+<ck_Paused>نادیده گرفتن مکث (6 ثانیه)</ck_Paused>
+<label1>پایگاه داده:</label1>
+<ck_Show>پایگاه داده نشان می دهد</ck_Show>
+<lbPassword>رمز عبور:</lbPassword>
+<lbUsername>نام کاربری:</lbUsername>
+<lbSyntax>نحو:</lbSyntax>
+<lbPort>درگاه:</lbPort>
+<lbHost>میزبان:</lbHost>
+<lbname>نام:</lbname>
+<tabDBAdvanced>ویژگی های پیشرفته</tabDBAdvanced>
+<label4>تایم (به ثانیه):</label4>
+<label2>مجموعه عنصر:</label2>
+<label3>گزینه های دیگر:</label3>
+<lnkftp>http://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>اطلاعات بیشتر:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>موضوع:</lbSubject>
+<lbTitle>عنوان:</lbTitle>
+<lbAuthor>نویسنده:</lbAuthor>
+<lbadvTitle>ویژگی Z39.50 4: ساختار</lbadvTitle>
+<cmdSave>ذخیره</cmdSave>
+<cmdClose>بستن</cmdClose>
+<label17>Z39.50 تنظیمات پایگاه داده:</label17>
+<cmdDeleteZ3950>حذف</cmdDeleteZ3950>
+<gbCustom>تنظیمات سفارشی مشخصات</gbCustom>
+<label5>عنوان شاخص:</label5>
+<label6>نمایه نویسندگان</label6>
+<label10>نمایه کلیدواژگان:</label10>
+<label7>شاخص موضوع:</label7>
+<label11>Record # Index:</label11>
+<label8>شاخص شابک:</label8>
+<label12>شاخص ISSN:</label12>
+<cmdDeleteSRU>حذف</cmdDeleteSRU>
+<ck_SRU_Show>پایگاه داده نشان می دهد</ck_SRU_Show>
+<label13>پارامترهای اضافی</label13>
+<label14>جستجو اطلاعات عمومی:</label14>
+<lbVersion>نسخه:</lbVersion>
+<cmdCloseSRU>بستن</cmdCloseSRU>
+<cmdSaveSRU>ذخیره</cmdSaveSRU>
+<label15>نام:</label15>
+<lbMetadata>طرح فراداده:</lbMetadata>
+<label16>آدرس:</label16>
+<lbSRUTitle>SRU خواص پایگاه داده:</lbSRUTitle>
+<this>ويژگيهای پایگاه اطلاعات</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>پیدا کردن:</label1>
+<ckMatchCase>جور کردن حروف</ckMatchCase>
+<cmdFind>پیدا کردن</cmdFind>
+<this>سحر و جادو: پیدا کردن رشته</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>دریافت فایل</fileToolStripMenuItem>
+<openToolStripMenuItem>باز</openToolStripMenuItem>
+<exitToolStripMenuItem>خروج</exitToolStripMenuItem>
+<editToolStripMenuItem>ویرایش</editToolStripMenuItem>
+<findToolStripMenuItem>پیدا کردن</findToolStripMenuItem>
+<findNextToolStripMenuItem>یافتن بعدی</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>برش</cutToolStripMenuItem>
+<copyToolStripMenuItem>کپی</copyToolStripMenuItem>
+<pasteToolStripMenuItem>جای گذاری</pasteToolStripMenuItem>
+<clearToolStripMenuItem>روشن</clearToolStripMenuItem>
+<findToolStripMenuItem>پیدا کردن</findToolStripMenuItem>
+<replaceToolStripMenuItem>جایگزین</replaceToolStripMenuItem>
+<lnkLoadAll>بار کل فایل</lnkLoadAll>
+<lb_bytes>{loaded_bytes} از {file_bytes} کلمه لود شده است.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>رکورد جدید</tbNew>
+<mnuCNewWindow>باز پنجره جدید</mnuCNewWindow>
+<ContextAuthority>اقتدار</ContextAuthority>
+<ContextAuthorityName>نام</ContextAuthorityName>
+<ContextAuthoritySubject>موضوع</ContextAuthoritySubject>
+<cBook>کتاب</cBook>
+<cSerial>سریال</cSerial>
+<cVisualMat>مواد بصری</cVisualMat>
+<cMaps>منابع وابسته به نقشه کشی</cMaps>
+<cSoundRec>ضبط صدا</cSoundRec>
+<cScore>نمره</cScore>
+<cElectMat>منابع الکترونیکی</cElectMat>
+<cMixedMat>مخلوط مواد</cMixedMat>
+<tbOpen>باز کردن فایل</tbOpen>
+<tbSave>ذخیره فایل</tbSave>
+<tbPrint>چاپ فایل</tbPrint>
+<tbCompile>کامپایل پرونده</tbCompile>
+<tbCut>برش</tbCut>
+<tbCopy>کپی</tbCopy>
+<tbPaste>جای گذاری</tbPaste>
+<tbALA>MARC8 علا Characterset</tbALA>
+<tbDelete>حذف</tbDelete>
+<tbFind>پیدا کردن</tbFind>
+<tbZ39_50>مشتری Z39.50/SRU</tbZ39_50>
+<toolStripSplitButton1>مارک جهانی ویرایش تاسیسات</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>اضافه کردن/حذف زمینه</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>ایجاد زمینه های جدید</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>زمینه کپی</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>ویرایش داده های میدانی</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>ویرایش داده های شاخص</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>ویرایش داده های Subfield</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>مبادله داده های میدانی</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>دریافت فایل</mnuFile>
+<mnuFileMain>بازگشت به پنجره اصلی</mnuFileMain>
+<mnuFileNew>جدید</mnuFileNew>
+<mnuFileNewWindow>باز پنجره جدید</mnuFileNewWindow>
+<mnuFileNewDefault>پیش فرض</mnuFileNewDefault>
+<mnuFileNewAuthority>اقتدار</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>نام</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>موضوع</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>کتاب</mnuFileNewBook>
+<mnuFileNewSerial>سریال</mnuFileNewSerial>
+<mnuFileVisualMat>مواد بصری</mnuFileVisualMat>
+<mnuFileNewMap>منابع وابسته به نقشه کشی</mnuFileNewMap>
+<mnuFileNewSound>ضبط صدا</mnuFileNewSound>
+<mnuFileNewScore>نمره</mnuFileNewScore>
+<mnuFileNewER>منابع الکترونیکی</mnuFileNewER>
+<mnuFileNewMix>مخلوط مواد</mnuFileNewMix>
+<mnuFileOpen>باز</mnuFileOpen>
+<mnuFileRecent>پرونده های اخیر</mnuFileRecent>
+<mnunone10>هیچ کدام</mnunone10>
+<mnunone9>هیچ کدام</mnunone9>
+<mnunone8>هیچ کدام</mnunone8>
+<mnunone7>هیچ کدام</mnunone7>
+<mnunone6>هیچ کدام</mnunone6>
+<mnunone5>هیچ کدام</mnunone5>
+<mnunone4>هیچ کدام</mnunone4>
+<mnunone3>هیچ کدام</mnunone3>
+<mnunone2>هیچ کدام</mnunone2>
+<mnunone1>هیچ کدام</mnunone1>
+<mnuFileClearHistory>پاک کردن تاریخچه</mnuFileClearHistory>
+<mnuFileClearList>پاک کردن فایل های اخیر</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>پاک کردن تاریخچه ویرایش/جایگزین</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>بستن</mnuFileClose>
+<mnuFileExportData>برای صادر کردن...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>واردات از...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>ذخیره</mnuFileSave>
+<mnuFileSaveAs>ذخیره به عنوان...</mnuFileSaveAs>
+<mnuFilePrint>نسخه قابل چاپ</mnuFilePrint>
+<toolStripMenuItem34>چاپ یک رکورد در هر صفحه</toolStripMenuItem34>
+<FileSelectIndividualMake>انتخاب اطلاعات ثبت شده برای ویرایش</FileSelectIndividualMake>
+<mnuFileCompile>کامپایل فایل به مارک</mnuFileCompile>
+<mnuFileExit>خروج</mnuFileExit>
+<mnuEdit>ویرایش</mnuEdit>
+<mnuEditUndo>باطل کردن</mnuEditUndo>
+<mnuEditRedo>از نو</mnuEditRedo>
+<mnuEditSpecialUndo>لغو ویژه</mnuEditSpecialUndo>
+<mnuEditCut>برش</mnuEditCut>
+<mnuEditCopy>کپی</mnuEditCopy>
+<mnuEditPaste>جای گذاری</mnuEditPaste>
+<mnuEditDupLines>خطوط تکراری</mnuEditDupLines>
+<mnuEditClear>روشن</mnuEditClear>
+<mnuEditFind>پیدا کردن</mnuEditFind>
+<mnuEditReplace>جایگزین</mnuEditReplace>
+<toolStripMenuItem28>ویرایش کلید های میانبر</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>تغییر حالت حروف</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>حروف کوچک</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>حروف بزرگ</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>حالت حروف عنوان</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>اولیه مورد</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>سرمایه گذاری اولیه شخصیت</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>ویرایش زمینه</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>تمیز کردن شخصیت های هوشمند</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>یافتن زمینه های یک کلمه از دست رفته</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>پیدا کردن پرونده گم شده زمینه</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>پیدا کردن سوابق با برچسب تکراری</toolStripMenuItem39>
+<toolStripMenuItem40>پیدا کردن با داده های تکراری زمینه ثبت</toolStripMenuItem40>
+<mnuEditLimitFields>محدود کردن تعداد زمینه های</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>عنوان مبادله</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>توابع ریاضی</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>تبدیل به اعشاری درجه</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>پرش به...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>پرش به... رکورد</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>پرش به... صفحه</jumpToPageToolStripMenuItem>
+<mnuEditControl>درج کنترل تک شماره</mnuEditControl>
+<mnuEdit006>درج/ویرایش 006</mnuEdit006>
+<mnuEdit006Edit>ویرایش</mnuEdit006Edit>
+<mnuEdit006Book>کتاب</mnuEdit006Book>
+<mnuEdit006Serial>منابع مداوم</mnuEdit006Serial>
+<mnuEdit006Map>منابع وابسته به نقشه کشی</mnuEdit006Map>
+<mnuEdit006Sound>ضبط صدا</mnuEdit006Sound>
+<mnuEdit006Score>نمره</mnuEdit006Score>
+<mnuEdit006ER>منابع الکترونیکی</mnuEdit006ER>
+<mnuEdit006Visual>مواد بصری</mnuEdit006Visual>
+<mnuEdit006Mixed>مخلوط مواد</mnuEdit006Mixed>
+<mnuEdit008>درج/ویرایش 008</mnuEdit008>
+<mnuEdit008Edit>ویرایش</mnuEdit008Edit>
+<mnuEdit008Book>کتاب</mnuEdit008Book>
+<mnuEdit008Serial>منابع مداوم</mnuEdit008Serial>
+<mnuEdit008Map>منابع وابسته به نقشه کشی</mnuEdit008Map>
+<mnuEdit008Sound>ضبط صدا</mnuEdit008Sound>
+<mnuEdit008Score>نمره</mnuEdit008Score>
+<mnuEdit008ER>منابع الکترونیکی</mnuEdit008ER>
+<mnuEdit008Visual>مواد بصری</mnuEdit008Visual>
+<mnuEdit008Mixed>مخلوط مواد</mnuEdit008Mixed>
+<toolStripMenuItem27>تبدیل محتوای کلیپ بورد</toolStripMenuItem27>
+<mnuEditConverttoUTF8>مارک-8 به UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 برای 8 مارک</mnuEditConvertoMarc8>
+<mnuEditALA>مارک 8 علا characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>نقشه شخصیت UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>انتخاب همه</mnuEditSelectAll>
+<mnuEditWrap>قرار دادن کلمه</mnuEditWrap>
+<mnuEditRTL>نمایش راست به چپ</mnuEditRTL>
+<mnuFont>فونت</mnuFont>
+<mnuFontFont>فونت...</mnuFontFont>
+<mnuFontColor>رنگ...</mnuFontColor>
+<mnuReports>گزارش</mnuReports>
+<mnuReportsField>تعداد دفعات مشاهده زمینه</mnuReportsField>
+<tlReportsMaterialReport>نوع مواد گزارش</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>تولید گزارش</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>یافتن اطلاعات ثبت شده توسط نوع</findBookToolStripMenuItem>
+<booksToolStripMenuItem>کتاب</booksToolStripMenuItem>
+<toolStripMenuItem32>فایل های کامپیوتر</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>منابع مداوم</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>نقشه ها</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>مخلوط مواد</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>نمرات</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>ضبط صدا</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>مطالب تصویری</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>اعتبار ISBNS</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>اعتبار ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>اعتبار سرفصل</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>وضعیت سرویس</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>اعتبار سرفصل</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>مدیریت فایل ها وارد شوید</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>مشاهده فایل آماری فعلی</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>ورود به سیستم پیشرفته مدیریت</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>حذف فایل های ورود به سیستم</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>نمایش همه فایل ها وارد شوید</viewAllLogFilesToolStripMenuItem>
+<mnuTools>ابزار</mnuTools>
+<mnuToolsCluster>ابزار خوشه</mnuToolsCluster>
+<mnutoolCutters>ابزار cuttering</mnutoolCutters>
+<mnuToolsCalculator>کاتالوگ ماشین حساب</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>تولید برش</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn جدول 3 برش</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>شماره تماس تولید</mnuToolsCallNum>
+<mnuToolsControlNumber>تعداد کنترل تولید</mnuToolsControlNumber>
+<toolStripMenuItem33>ابزار داده های مرتبط</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>سوابق مرتبط ساخت</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>حذف موارد تکراری رکورد</mnuToolsDedup>
+<mnuToolsRDAHelpers>یاور RDA</mnuToolsRDAHelpers>
+<mnuToolsZ3950>گزینه های Z39.50/SRU</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>مشتری MarcEdit Z39.50/SRU</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>رکورد Z39.50 آپلود</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 حذف رکورد</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 بروز رسانی منابع</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>ویرایش داده های ثابت</mnuToolsEditConstant>
+<mnuToolsAssigned>اختصاص اطلاعات ثابت</mnuToolsAssigned>
+<mnuConstant1>1) رشته تعریف نشده</mnuConstant1>
+<mnuConstant2>2) رشته تعریف نشده</mnuConstant2>
+<mnuConstant3>3) رشته تعریف نشده</mnuConstant3>
+<mnuConstant4>4) رشته تعریف نشده</mnuConstant4>
+<mnuConstant5>5) رشته تعریف نشده</mnuConstant5>
+<mnuConstant6>6) رشته تعریف نشده</mnuConstant6>
+<mnuConstant7>7) رشته تعریف نشده</mnuConstant7>
+<mnuConstant8>8) رشته تعریف نشده</mnuConstant8>
+<mnuConstant9>9) رشته تعریف نشده</mnuConstant9>
+<mnuConstant10>10) رشته تعریف نشده</mnuConstant10>
+<mnutoolmanageAutomate>وظایف مدیریت</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>وظایف واگذار شده</mnuToolsAssignedTasks>
+<mnuDefTask>وظایف در حال حاضر در دسترس</mnuDefTask>
+<task1>1) وظیفه تعریف نشده</task1>
+<task2>2) وظیفه تعریف نشده</task2>
+<task3>3) وظیفه تعریف نشده</task3>
+<task4>4) وظیفه تعریف نشده</task4>
+<task5>5) وظیفه تعریف نشده</task5>
+<task6>6) وظیفه تعریف نشده</task6>
+<task7>7) وظیفه تعریف نشده</task7>
+<task8>8) وظیفه تعریف نشده</task8>
+<task9>9) وظیفه تعریف نشده</task9>
+<task10>10) کار تعریف نشده</task10>
+<task11>11) کار تعریف نشده</task11>
+<task12>12) وظیفه تعریف نشده</task12>
+<task13>13) وظیفه تعریف نشده</task13>
+<task14>14) وظیفه تعریف نشده</task14>
+<task15>15) وظیفه تعریف نشده</task15>
+<task16>16) وظیفه تعریف نشده</task16>
+<task17>17) وظیفه تعریف نشده</task17>
+<task18>18) وظیفه تعریف نشده</task18>
+<task19>19) وظیفه تعریف نشده</task19>
+<task20>20) وظیفه تعریف نشده</task20>
+<mnuToolsValidate>اعتبار سوابق MARC</mnuToolsValidate>
+<mnuToolsOAI>برداشت از OAI</mnuToolsOAI>
+<mnutoolsurl>مارک از URL تولید</mnutoolsurl>
+<toolStripMenuItem43>ابزار قالب بندی حفظی</toolStripMenuItem43>
+<toolStripMenuItem3>عادی سازی...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>عادی سازی سوابق LC</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>عادی سازی سوابق Microlif</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>حذف خط خالی</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>حذف زمینه های خالی/تعداد</mnuToolsRemoveEmpty>
+<mnuToolsAdd>اضافه کردن/حذف زمینه</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>ایجاد زمینه های جدید</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>زمینه کپی</toolStripMenuItem26>
+<mnuToolsEditField>ویرایش داده های میدانی</mnuToolsEditField>
+<mnuToolsIndicator>ویرایش داده های شاخص</mnuToolsIndicator>
+<mnuToolsSubfield>ویرایش داده های Subfield</mnuToolsSubfield>
+<mnuToolsSortby>مرتب کردن بر اساس...</mnuToolsSortby>
+<toolStripMenuItem41>ثبت ترتیب چیدن...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>زمینه سفارشی</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>زمینه نویسنده</mnuToolsSortAuthor>
+<mnuToolsSortByCall>زمینه های شماره تماس</mnuToolsSortByCall>
+<mnuToolsSortControl>کنترل شماره زمینه</mnuToolsSortControl>
+<mnuToolsSortbyTitle>عنوان رشته</mnuToolsSortbyTitle>
+<toolStripMenuItem42>مرتب کردن بر اساس زمینه های Witin رکورد توسط...</toolStripMenuItem42>
+<mnuToolsCustomSort>مرتب کردن بر اساس سفارشی</mnuToolsCustomSort>
+<mnuToolsSort2>مرتب کردن بر اساس زمینه های 0xx</mnuToolsSort2>
+<mnuToolsSort>همه زمینه های مرتب سازی</mnuToolsSort>
+<mnuToolsSwap>مبادله داده های میدانی</mnuToolsSwap>
+<mnuToolsOptions>تنظیمات</mnuToolsOptions>
+<mnu_ILS>[نام ILS]</mnu_ILS>
+<mnu_ils_search>جستجو</mnu_ils_search>
+<updateCreateToolStripMenuItem>به روز رسانی/ایجاد</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>پردازش تنظیمات</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>جستجو در WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>اضافه کردن/حذف/به روز رسانی اطلاعات کتاب شناسی محلی</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>ایجاد/بروز رسانی اطلاعات کتاب شناسی</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>بروز رسانی منابع</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>افزونه</pluginsToolStripMenuItem>
+<mnuHelp>کمک</mnuHelp>
+<mnuHelpContents>مطالب و کمک</mnuHelpContents>
+<mnuEditInfo>مارک اطلاعات</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC مارک کمک</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>جعبه ابزار RDA</mnuHelpRDAToolkit>
+<mnuEditInfoLC>ایالات متحده کتابخانه کنگره مارک کمک</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>فایل های بسته برای اشکال زدایی</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>چه کار داری؟</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>تعداد موارد در صفحه</label1>
+<lblPage>صفحات</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>مشاهده فایل های ذخیره</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>سرویس اعتبار سنجی داده ها از طریق OCLC's Termology خدمات ارائه شده اند. به منظور استفاده از این خدمات در حال توافق باید به دنبال و رعایت شرایط و ضوابط توسط OCLC مورد استفاده و وفاداری از این خدمات مندرج.</lb_text>
+<label1>OCLC توافق لینک:</label1>
+<lnk_Terms>مشاهده شرایط استفاده</lnk_Terms>
+<cmd_Agree>موافقم</cmd_Agree>
+<cmd_disagree>من مخالف</cmd_disagree>
+<this>توافق OCLC</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>انگلیسی</comboBox1>
+<linkLabel2>نه متشکرم، فقط با استفاده از تنظیمات پیش فرض</linkLabel2>
+<linkLabel1>بیایید شروع کنید!</linkLabel1>
+<label2>من در اینجا برای کمک به شما برای شروع!  من چند سوال را بپرسید، و می کنید برا </label2>
+<label1>خوش آمدید به MarcEdit 7!</label1>
+<this>MarcEdit 7 برنامه نصب</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>بر روی تنظیمات داده... تکبر!</linkLabel1>
+<label6>به یاد داشته باشید, مجموعه تم ها و اندازه فونت و زبان و دسترسی پیشرفته o </label6>
+<cmb_theme_picker>پیش فرض</cmb_theme_picker>
+<label5>موضوع توصیه می شود:</label5>
+<label4>pt.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>اندازه قلم توصیه می شود:</label3>
+<cmbFont>نوتو بدون</cmbFont>
+<label2>فونت پیش فرض:</label2>
+<label1>ظاهر MarcEdit</label1>
+<this>MarcEdit 7 برنامه نصب: صفحه 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit مارک agnostic، بنابراین اجازه دهید آن را کمی مورد داده های خود را بگویید.</label5>
+<comboBox3>برای من را انتخاب کنید</comboBox3>
+<label4>موتور پردازش XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>رکورد کدگذاری پیش فرض:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>قالب من مارک است:</label2>
+<linkLabel1>ما تقریبا تمام شد!  سنجاب!</linkLabel1>
+<label1>تنظیمات داده MarcEdit</label1>
+<this>MarcEdit 7 برنامه نصب: صفحه 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>ویرایش مبارک!</linkLabel1>
+<label5>منابع. GetString ("label5. متن")</label5>
+<label1>تبریک میگم!  آماده به استفاده از MarcEdit 7</label1>
+<this>MarcEdit 7 برنامه نصب: به پایان رسید</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>بستن</cmdClose>
+<ck_remote>حل برای ارتباط از راه دور</ck_remote>
+<ck_Marc8>تبدیل به 8 مارس</ck_Marc8>
+<opt_default>پیش فرض</opt_default>
+<opt_saxon>ساکسون</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>ذخیره</cmdSave>
+<gp_XSLT>موتور XSLT</gp_XSLT>
+<label7>قالب نهایی</label7>
+<label6>فرمت اصلی</label6>
+<label4>XSLT/XQuery مسیر</label4>
+<label3>نام تابع (نام مستعار):</label3>
+<label2>اطلاعات عمومی:</label2>
+<lnkXMLFunctionWizard>سهل آموز تابع XML</lnkXMLFunctionWizard>
+<groupBox1>اقدامات</groupBox1>
+<lnkAdd>اضافه کردن</lnkAdd>
+<lnkModify>تغییر</lnkModify>
+<lnkDelete>حذف</lnkDelete>
+<label5>قالب بندی:</label5>
+<label1>توابع تعریف شده:</label1>
+<this>ویرایش توابع XML</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>
