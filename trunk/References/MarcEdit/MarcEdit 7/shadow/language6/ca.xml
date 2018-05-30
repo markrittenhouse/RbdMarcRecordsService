@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Extreure els registres</mnuExtract>
+<cmenuClipboard>Copiar al porta-retalls</cmenuClipboard>
+<cmenuSubfields>Comte camps</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Ajuda</cmenuHelp>
+<cmd_OK>Tancar</cmd_OK>
+<cmd_Report>Generar l'informe</cmd_Report>
+<lb_ReportStyle>Estil de l'informe:</lb_ReportStyle>
+<opt_tab>Informe delimitat de tabulador</opt_tab>
+<opt_xml>Informe de XML</opt_xml>
+<opt_html>Informe en HTML</opt_html>
+<this>Comte de camp</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Direcció:</groupBox3>
+<rd_down>Avall</rd_down>
+<rd_up>Cap amunt</rd_up>
+<btn_findall>Trobar tots els</btn_findall>
+<groupBox1>Opcions de cerca:</groupBox1>
+<ck_f_whole_word>Trobar nomΘs la paraula sencera</ck_f_whole_word>
+<ck_find_regex>Utilitzar expressions regulars</ck_find_regex>
+<ck_f_match_case>Distingeix majúscules i minúscules</ck_f_match_case>
+<cmdFClose>Tancar</cmdFClose>
+<cmdFFind>Trobar</cmdFFind>
+<lb_FindWhat>Cercar:</lb_FindWhat>
+<cmdNav_Find>Trobar</cmdNav_Find>
+<cmdReplaceNav>Substituir</cmdReplaceNav>
+<ckReplaceConditional>Realitzar la cerca/substitució si...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Si:</label1>
+<cmd_R_Close>Tancar</cmd_R_Close>
+<cmd_R_All>Substitueix-ho tot</cmd_R_All>
+<cmd_R_Replace>Substituir</cmd_R_Replace>
+<groupBox2>Opcions de cerca:</groupBox2>
+<ck_Replace_ExactWordMatch>Partit de la paraula exacta</ck_Replace_ExactWordMatch>
+<ckMultiLine>Avaluació múltiples línies</ckMultiLine>
+<ckFile>Utilitzar criteris de recerca/reemplaçar extern</ckFile>
+<ck_R_RegExp>Utilitzar expressions regulars</ck_R_RegExp>
+<ck_R_Case>Distingeix majúscules i minúscules</ck_R_Case>
+<lb_ReplaceWith>Substitueix-ho:</lb_ReplaceWith>
+<lb_R_FindWhat>Trobar:</lb_R_FindWhat>
+<this>Cerca/substitució:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Estat:
+
+</lb_bProccess_status>
+<ck_bTask>Tasques de càrrega</ck_bTask>
+<ckBatchProcessSubfolders>Inclou les subcarpetes</ckBatchProcessSubfolders>
+<lb_Operation>Funció:</lb_Operation>
+<cmdBClose>Tancar</cmdBClose>
+<cmdBProcess>Procés</cmdBProcess>
+<lb_Extensions>Tipus d'arxiu:</lb_Extensions>
+<lb_BSource>Directori d'origen:</lb_BSource>
+<lbBTitle>Registres de MARC de procés per lots</lbBTitle>
+<groupBox1>Opcions</groupBox1>
+<this>Registres de procés per lots</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Procés per lots</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Codificació final:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Codificació original:</lb_encoding>
+<lb_UTF8_Header>Conversions de caràcter</lb_UTF8_Header>
+<cmdCancel>Tancar</cmdCancel>
+<cmdOK>Procés</cmdOK>
+<lb_UTF8_Dest>Fitxer de destinació:</lb_UTF8_Dest>
+<lb_UTF8_Source>Fitxer d'origen:</lb_UTF8_Source>
+<groupBox1>Configuració de codificació</groupBox1>
+<this>Characterset Conversions</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Eines de clusterització de dades</label1>
+<label2>Les dades clusterització eines ofereixen un conjunt d'opcions de clusterització simplificats per a la neteja de dades del enha avançades lot.  Per avançat clusterització funcionalitat, si us plau considerar l'ús OpenRefine.</label2>
+<groupBox1>Opcions</groupBox1>
+<rdCustom>Índex de camps personalitzats</rdCustom>
+<rdControlData>Indexar dades controlades (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Totes les dades d'índex</rdAll>
+<cmdImport>Importar dades</cmdImport>
+<label3>Fitxer d'origen:</label3>
+<label9>Tipus de dades:</label9>
+<label8>Clústers de visualització:</label8>
+<label7>Clúster en els camps següents:</label7>
+<cmbclusteringalgorithm>Distància de Levenshtein</cmbclusteringalgorithm>
+<label6>Seleccionar l'algoritme d'agrupació:</label6>
+<cmbClusterField>Noms (1xx, 7xx)</cmbClusterField>
+<label4>Seleccionar les dades que voleu clúster:</label4>
+<cmdGenerateCluster>Generar clúster</cmdGenerateCluster>
+<cmbAlg>Distància de Levenshtein</cmbAlg>
+<lnkAddCriteria>Afegir l'actualització</lnkAddCriteria>
+<lnkClose>Tancar</lnkClose>
+<lnkEditCluster>Processar tots els canvis</lnkEditCluster>
+<label5>Dades agrupades:</label5>
+<this>Agrupació d'eines</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Tasca depurador</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Delimitador contextual</label8>
+<lb_Tab_Header>Exportació pestanya registres delimitats</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>En delimitador de camp</label18>
+<lbdelimiter>Seleccioneu el delimitador de camp</lbdelimiter>
+<cmdTClose2>Tancar</cmdTClose2>
+<cmdTNext>Següent &gt;&gt;</cmdTNext>
+<label1>Pas 1: Establir camins d'arxiu</label1>
+<ck_normalize>Normalitzar les dades de camp</ck_normalize>
+<cmd_tab2_back>Esquena</cmd_tab2_back>
+<lnkSettings>Configuració...</lnkSettings>
+<lnkDeleteField>Suprimeix el camp</lnkDeleteField>
+<lnkAddField>Afegir el camp</lnkAddField>
+<label14>Camp:</label14>
+<label11>Camp:</label11>
+<cmdTClose>Tancar</cmdTClose>
+<cmdTExport>Exportació</cmdTExport>
+<label2>Pas 2: Definiu els camps/camps d'exportació</label2>
+<label3>Exportació pestanya registres delimitats</label3>
+<mnuLoad>Configuració de càrrega</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Desa la configuració</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Desactiveu la configuració</menuItem3>
+<this>Exportació pestanya registres delimitats</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Mida:</label4>
+<lb_Example>Exemple Text</lb_Example>
+<lb_lang_font>Seleccionar el tipus de lletra:</lb_lang_font>
+<cmdOK>Correcte</cmdOK>
+<cmdClose>Tancar</cmdClose>
+<this>Seleccionar tipus de lletra</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Tasques per córrer durant la importació</groupBox1>
+<lnkSelectPre>Seleccioneu la tasca</lnkSelectPre>
+<cname>Nom</cname>
+<cPath>Camí de la tasca</cPath>
+<groupBox2>Tasques de gestió en exportacions</groupBox2>
+<linkLabel1>Seleccioneu la tasca</linkLabel1>
+<columnHeader1>Nom</columnHeader1>
+<columnHeader2>Camí de la tasca</columnHeader2>
+<cmdSave>Desa</cmdSave>
+<cmdClose>Tancar</cmdClose>
+<deleteItemToolStripMenuItem>Esborrar element</deleteItemToolStripMenuItem>
+<this>ILS procés escenes</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Inclou les subcarpetes</ckJoinSubfolders>
+<cmdEditFile>Editar l'arxiu</cmdEditFile>
+<lnkJoinedFiles>Mostra els fitxers Unides</lnkJoinedFiles>
+<label19>Tipus d'arxiu:</label19>
+<ck_JoinIndividual>Uneix-te a arxius individuals</ck_JoinIndividual>
+<cmdJoinCancel>Tancar</cmdJoinCancel>
+<cmdJoinProcess>Procés</cmdJoinProcess>
+<lb_Join_Files>Fitxer o fitxers per unir-se a:</lb_Join_Files>
+<lb_Join_Source>Salvi l'arxiu:</lb_Join_Source>
+<lb_Join_Header>Utilitat de MARCJoin</lb_Join_Header>
+<lbJoinStatus>Estat:</lbJoinStatus>
+<groupBox1>Opcions</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Registres Per fitxer:</lb_Split_Records>
+<cmdSplitClose>Tancar</cmdSplitClose>
+<cmdSplitProcess>Procés</cmdSplitProcess>
+<lb_Split_Folder>Carpeta de destinació:</lb_Split_Folder>
+<lb_Split_Source>Fitxer d'origen:</lb_Split_Source>
+<lb_Split_Header>Utilitat de MARCSplit</lb_Split_Header>
+<groupBox1>Opcions</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Nom del tema:</label1>
+<label2>Descripció/controls:</label2>
+<label3>Valors globals</label3>
+<label4>Color de lletra</label4>
+<label5>Color de fons</label5>
+<label6>Color de fons</label6>
+<label7>Color de lletra</label7>
+<label8>MarcEditor valors</label8>
+<cmdSave>Desa</cmdSave>
+<cmdClose>Tancar</cmdClose>
+<cmdPreview>Visualització prèvia</cmdPreview>
+<richTextBox1>Text de Mostra</richTextBox1>
+<label9>Exhibició de MarcEditor:</label9>
+<cmdOpen>Obert</cmdOpen>
+<label10>Groupbox fons</label10>
+<groupBox1>Exemple Groupbox</groupBox1>
+<this>Constructor de tema MarcEdit</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>El Mag de depuració de MarcEdit estava dissenyat per ajudar usuaris a trobar l'ajuda que </label1>
+<gpStart>Opcions</gpStart>
+<rdErrorMessage>Tinc un missatge d'error</rdErrorMessage>
+<rdErrorNumber>Tinc un número d'error</rdErrorNumber>
+<lbMessage>{missatge}</lbMessage>
+<cmdPage1>Següent</cmdPage1>
+<gpResults>Resultats</gpResults>
+<cmdClose>Tancar</cmdClose>
+<lnkCreateDebugPackage>Crear un paquet de depuració a enviar per a depuració?</lnkCreateDebugPackage>
+<label2>El Mag de depuració va ser incapaç de localitzar un article de la knowledge base </label2>
+<this>MarcEdit auxiliar de reparació</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Altre XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Seleccioneu el Final Format</label17>
+<label16>Pas 3:</label16>
+<label15>Salvi l'arxiu:</label15>
+<label13>Pas 2:</label13>
+<label12>Nom de transformació:</label12>
+<lnkNextPg1>Procedir al següent pas</lnkNextPg1>
+<label4>Seleccioneu el fitxer:</label4>
+<label3>Pas 1:</label3>
+<label2>recursos. GetString ("label2. Text")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Element del document:</lbTop>
+<ckTopLevel>Utilitzar l'Element del Document</ckTopLevel>
+<lnkNextPg2>Procedir al següent pas</lnkNextPg2>
+<label7>Seleccioneu l'element rècord</label7>
+<label6>Pas 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Definir les assignacions</label14>
+<lnkNextP3>Procedir al següent pas</lnkNextP3>
+<groupBox2>Arguments de</groupBox2>
+<ck_filing_characters>Calcular les dades nonfiling comuns</ck_filing_characters>
+<ck_sort>Camps tipus</ck_sort>
+<button2>Plantilla de càrrega</button2>
+<toolStripMenuItem2>Editar element</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Suprimir elements</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Unir-se a elements</joinItemsToolStripMenuItem>
+<groupBox1>Configuració</groupBox1>
+<ckTrim>Retallar puntuació existent</ckTrim>
+<ck_Repeatable>Camp repetible</ck_Repeatable>
+<P3_ck_constant>Dades de constants</P3_ck_constant>
+<P3_cmd_Apply>Afegir l'Argument</P3_cmd_Apply>
+<P3_lb_punct>Terme. Puntuació:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Ind.:</P3_lb_indicators>
+<P3_mapto>Mapa a:</P3_mapto>
+<P3_lb_select>Seleccionar:</P3_lb_select>
+<label9>Pas 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Tancar l'auxiliar</lnkClose>
+<label11>La transformació ha estat creada i afegit a la llista de funcions de l'XML.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Tipus: llibre</label11>
+<lbbTitle>006/008 opcions:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>Festa:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>Cont:</lnkbCont>
+<lnkbForm>Formulari:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Mals:</lnkbIlls>
+<lnkbType>Tipus:</lnkbType>
+<label12>Tipus: Recurs electrònic</label12>
+<label5>006/008 opcions:</label5>
+<lnkcFile>Fitxer:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Tipus:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Dates:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Servir: ctrY</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 opcions:</label1>
+<label13>Tipus: mapa</label13>
+<label3>006/008 opcions:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>Formulari:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>En projecte:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Tipus:</lnkmType>
+<label14>Tipus: Materials mixtes</label14>
+<label4>006/008 opcions:</label4>
+<lnkmmForm>Formulari:</lnkmmForm>
+<lnkmmType>Tipus:</lnkmmType>
+<label15>Tipus: puntuació</label15>
+<label6>006/008 opcions:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Formulari:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>OB:</lnkscComp>
+<lnkscType>Tipus:</lnkscType>
+<label10>Tipus: Continuant recurs</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 opcions:</label7>
+<lnkslAlph>Alfabèticament:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>Cont:</lnkslCont>
+<lnkslForm>Formulari:</lnkslForm>
+<lnkslOrig>Orig:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>Freq:</lnkslFreq>
+<lnkslType>Tipus:</lnkslType>
+<label16>Tipus: Enregistrament de so</label16>
+<label8>006/008 opcions:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Formulari:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>OB:</lnksdComp>
+<lnksdType>Tipus:</lnksdType>
+<label17>Tipus: Material Visual</label17>
+<label9>006/008 opcions:</label9>
+<lnkvmTech>Tecnologia:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Formulari:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Hora:</lnkvmTime>
+<lnkvmType>Tipus:</lnkvmType>
+<cmd_Ok>Correcte</cmd_Ok>
+<cmd_Close>Tancar</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Formulari:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>recursos. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>Sobre mi:</lb_Authors>
+<lbBuildCode>Codi d'actualització:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>Web del projecte:</label5>
+<label2>Agraïments:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Modificació:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Autor:</lbAuthor>
+<lbVersion>Nombre de complexió:</lbVersion>
+<label4>Sobre MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/Technical-details</linkLabel1>
+<label1>Detalls tècnics:</label1>
+<this>Sobre MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Càrrega</cmdLoad>
+<cmdClose>Tancar</cmdClose>
+<cmdDelete>Suprimir</cmdDelete>
+<this>AutoSave arxius:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Editar camps</lnk_Edit_Fields>
+<lnkCopy>Copiar les dades de camp</lnkCopy>
+<lnkSwapFields>Camps d'intercanvi</lnkSwapFields>
+<lnkIndicators>Editar indicadors</lnkIndicators>
+<lnkSubfield>Edita les dades de camp</lnkSubfield>
+<lnkAddDelete>Afegeix/Suprimeix camp</lnkAddDelete>
+<groupBox8>Eliminar opcions del camp</groupBox8>
+<ckRemoveByPostition>Eliminar per la posició de camp</ckRemoveByPostition>
+<ck_RemoveIfNot>Eliminar si camp de dades no coincideix</ck_RemoveIfNot>
+<ck_dedup>Treure dades duplicades</ck_dedup>
+<groupBox7>Afegir opcions de camp</groupBox7>
+<ck_A_addifnotduplicate>Afegir el camp només si no un duplicat</ck_A_addifnotduplicate>
+<ck_A_Insert>Insereix abans de</ck_A_Insert>
+<ck_A_not_present>Afegir el camp només si no presentar</ck_A_not_present>
+<ck_AddIfPresent>Afegir el camp si hi</ck_AddIfPresent>
+<ck_last>Insereix una darrera</ck_last>
+<groupBox6>Opcions generals</groupBox6>
+<ck_delete_batch>Operació de procés per lots</ck_delete_batch>
+<ck_A_Case>Distingeix majúscules i minúscules</ck_A_Case>
+<ck_A_regular_Expression>Utilitzar expressions regulars</ck_A_regular_Expression>
+<label1>Cercar:</label1>
+<cmd_A_Close>Tancar</cmd_A_Close>
+<cmd_A_Add>Afegir el camp</cmd_A_Add>
+<cmd_A_Delete>Suprimeix el camp</cmd_A_Delete>
+<label3>Camp de dades:</label3>
+<lb_A_Field>Camp:</lb_A_Field>
+<lb_A_Title>Afegeix/Suprimeix la utilitat de camp</lb_A_Title>
+<cmd_Sub_Close>Tancar</cmd_Sub_Close>
+<cmd_Sub_Remove>Eliminar Text</cmd_Sub_Remove>
+<cmd_Sub_Replace>Substitueix el Text</cmd_Sub_Replace>
+<groupBox2>Opcions de cerca:</groupBox2>
+<ckDeleteDuplicate>Suprimir duplicat camp</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Suprimeix el camp</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Moure dades de camp</ck_move_subfield>
+<ck_Reg_Express>Utilitzar expressions regulars</ck_Reg_Express>
+<ck_Sub_Case>Distingeix majúscules i minúscules</ck_Sub_Case>
+<ck_Sub_New>Nou camp només</ck_Sub_New>
+<ck_Sub_NotPresent>Afegir el camp si no presentar</ck_Sub_NotPresent>
+<label8>Reemplaci amb:</label8>
+<label7>Camp de dades:</label7>
+<label6>Camp:</label6>
+<label5>Camp:</label5>
+<lb_Sub_Title>Editar camp utilitat</lb_Sub_Title>
+<cmd_I_Close>Tancar</cmd_I_Close>
+<cmd_I_Replace>Substituir</cmd_I_Replace>
+<lb_Ind_Replace>Reemplaci amb indicadors</lb_Ind_Replace>
+<label12>Camp de dades:</label12>
+<label11>Indicadors</label11>
+<label10>Camp:</label10>
+<lb_Ind_Title>Editar indicador utilitats</lb_Ind_Title>
+<ck_Match_All_Subfields>Coincideixen tots els camps</ck_Match_All_Subfields>
+<ck_swap_expression>Tractar com a expressió Regular</ck_swap_expression>
+<label4>Trobar:</label4>
+<cmd_Swap_Close>Tancar</cmd_Swap_Close>
+<cmd_Swap_Process>Procés</cmd_Swap_Process>
+<groupBox3>Opcions de cerca</groupBox3>
+<ck_swap_once_per>Camp d'un procés per intercanvi</ck_swap_once_per>
+<ck_swap_sort>Modificació de tipus camp</ck_swap_sort>
+<ck_Swap_Override>Afegir per existents/crear noves</ck_Swap_Override>
+<ck_Swap_Add>Afegir al camp existent</ck_Swap_Add>
+<ck_Swap_Copy>Font de còpia</ck_Swap_Copy>
+<label20>Dades modificades:</label20>
+<label22>Camps</label22>
+<label23>Indicadors</label23>
+<label24>Camp</label24>
+<label19>Dades originals:</label19>
+<label18>Trobar:</label18>
+<label17>Camps</label17>
+<label16>Indicadors</label16>
+<label15>Camp</label15>
+<lb_Swap_Title>Utilitat de camp d'intercanvi</lb_Swap_Title>
+<label14>Camp de dades</label14>
+<lbFindInField>Trobar en camp</lbFindInField>
+<groupBox4>Opcions</groupBox4>
+<ck_copy_field_regex>Utilitzar Expressions regulars</ck_copy_field_regex>
+<ck_copy_delete>Suprimir el camp d'origen</ck_copy_delete>
+<label2>Camp de destinació:</label2>
+<cmdCopyClose>Tancar</cmdCopyClose>
+<cmdCopy>Còpia</cmdCopy>
+<label9>Camp d'origen:</label9>
+<label13>Copiar les dades de camp</label13>
+<label26>Posició:</label26>
+<label21>Substitueix-ho:</label21>
+<label25>Trobar:</label25>
+<groupBox5>Opcions</groupBox5>
+<ck_editfield_match_case>Distingeix majúscules i minúscules</ck_editfield_match_case>
+<ck_UserRegularExpressions>Utilitzar Expressions regulars</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Tancar</cmdFieldEdit_Close>
+<cmdEditField_Process>Procés</cmdEditField_Process>
+<label27>Camp:</label27>
+<label28>Edita les dades de camp</label28>
+<this>MarcEdit.NET grup eines d'edició</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<label1>El Banc de proves de BibFrame2 és un simple utilitzar utilitat dissenyada per permetre metadades dia </label1>
+<label2>Fitxer d'origen:</label2>
+<label3>Salvi l'arxiu:</label3>
+<label4>Serialització de dades:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Traducció de normes:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Editar</lnkEditXQuery>
+<label7>Tipus d'arxiu:</label7>
+<label8>Perfil:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Camp d'ID:</label9>
+<this>Banc de proves BibFrame</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Salvi l'arxiu:</label3>
+<label2>Fitxer d'origen:</label2>
+<label1>L'eina de dades enllaçades ha estat dissenyat per bucle a través d'un conjunt de registres MARC i resoldre punts d'accés al 1xx, 6xx i elements de dades 7xx a seva dat enllaçat una assenyala extrem.</label1>
+<cmdProcess>Procés</cmdProcess>
+<cmdCancel>Tancar</cmdCancel>
+<groupBox1>Serveis d'ID</groupBox1>
+<ckLimiter>Límit de resolució a:</ckLimiter>
+<ck3xxFields>Procés 3xx camps</ck3xxFields>
+<label4>OCLC número:</label4>
+<ckWorkId>OCLC ID de treball d'inserció</ckWorkId>
+<cmb_viaf_index>LC (LOS ANGELES)</cmb_viaf_index>
+<ckAutodetect>AutoDetect tema ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>Entrada principal/afegit detecció automàtica</ck_loc>
+<label5>Fitxer rules:</label5>
+<cmdStatus>Estat del servei</cmdStatus>
+<lbstatus>Estat:</lbstatus>
+<this>Construir els registres enllaçats</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Trobar</lnkFind>
+<lbResults>Resultats:</lbResults>
+<lnkCatalog>Catàleg calculadora de Kyle Banerjee</lnkCatalog>
+<cmdClose>Tancar</cmdClose>
+<label1>LC talladors</label1>
+<this>Calculadora de catalogació</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>L'eina de detecció de caràcter utilitza un procés de heuristical per donar una millor conjectura rela </label1>
+<cmdDetect>Detectar</cmdDetect>
+<cmdClose>Tancar</cmdClose>
+<label2>Resultats:</label2>
+<ckDetailed>Resultats detallat</ckDetailed>
+<this>Detecció de caràcter</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>recursos. GetString ("label1. Text")</label1>
+<lnkClassify>Sobre de l'OCLC classificar servei</lnkClassify>
+<ck_all>Afegir a tots els registres</ck_all>
+<ck_single>Afegir al registre seleccionat</ck_single>
+<ck_lc>Biblioteca del Congrés</ck_lc>
+<ck_dewey>Dewey Decimal</ck_dewey>
+<cmdProcess>Classificar</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<label5>Insereix si no són presents els següents camps (exemple: 050 060; 090; 092)</label5>
+<label4>Inserir classificacions generats en el camp següent:</label4>
+<ck_cutters>Calcular talladors i dates</ck_cutters>
+<ck_use_z>Utilitzar z camp de joc</ck_use_z>
+<ck_DateMod>Afegir la bandera a la data</ck_DateMod>
+<ck_omit_serial>Omet data serials</ck_omit_serial>
+<ck_omit_integrated>Omet data de recursos integrats</ck_omit_integrated>
+<ck_omit>Afegir excepcions data</ck_omit>
+<ck_always_fast>Sempre afegir capçaleres ràpids</ck_always_fast>
+<ck_conditional_fast>Afegir capçaleres ràpids quan No encapçalaments de matèria són presents</ck_conditional_fast>
+<label6>Indicadors:</label6>
+<cmdInsert>Instruccions d'inserció</cmdInsert>
+<cmdClassification>Classificacions</cmdClassification>
+<cmdSubjects>Encapçalaments de matèria</cmdSubjects>
+<lnkClassification>Triar classificació</lnkClassification>
+<lnkSubjects>Triar opcions tema</lnkSubjects>
+<lnkOptions>Definir les opcions</lnkOptions>
+<cmdOptions>Opcions</cmdOptions>
+<label2>Camp:</label2>
+<label3>Cuttering camp:</label3>
+<this>Generar classificació</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Dades de constants</columnHeader1>
+<columnHeader3>Drecera</columnHeader3>
+<cmdClose>Tancar</cmdClose>
+<lnkKey>Assignat una tecla</lnkKey>
+<lnkEdit>Editar la cadena seleccionada</lnkEdit>
+<lnkDelete>Suprimir la cadena seleccionada</lnkDelete>
+<lnkNew>Crear nova cadena</lnkNew>
+<lbActions>Accions:</lbActions>
+<lbMacro>Dades constants:</lbMacro>
+<this>Editar dades constants</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Prefix de número:</lb_prefix>
+<lb_digit>Inici dígits:</lb_digit>
+<ck_autogenerate>Inserir en registres nous</ck_autogenerate>
+<button1>Correcte</button1>
+<button2>Tancar</button2>
+<lb_length>Longitud de dígits (menys prefix)</lb_length>
+<ckgenerate>Generar fitxer actual</ckgenerate>
+<ck_label>Números de registre de marca</ck_label>
+<label1>Camp/camp (exemple: 001, 949$ b)</label1>
+<ck_repeat>Sempre es pot inserir</ck_repeat>
+<this>Generar xifres de Control</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Utilitzar difusa es posin en venda</ck_UseFuzzyMatch>
+<ck_save>Guardar els elements Dedup a:</ck_save>
+<ck_unique>Elements singulars de sortida</ck_unique>
+<ck_remove>Eliminar els elements duplicats</ck_remove>
+<lbOptions>Opcions:</lbOptions>
+<label1>Dedup manteniment:</label1>
+<lb_Control>Àmbit de control:</lb_Control>
+<cmdClose>Tancar</cmdClose>
+<cmdOK>Procés</cmdOK>
+<btnCancel>Cancel·la</btnCancel>
+<btnNext>Següent</btnNext>
+<label4>Salvi l'arxiu:</label4>
+<label3>Trobar duplicacions dels arxius següents:</label3>
+<label2>Eina de registre desduplicació</label2>
+<label5>Confiança:</label5>
+<this>Registre desduplicació</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Seleccioneu el fitxer de registre:</label1>
+<groupBox1>Opcions</groupBox1>
+<ckChanged>Extraure canviava registres</ckChanged>
+<ckEnhance>Millorar els registres</ckEnhance>
+<label2>Seleccioneu els registres:</label2>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<this>Administrador de registre</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext és un espai de laboratori d'introduir noves eines i conceptes relacionats amb la </lbaboutmn>
+<lnkOpenRefine>Integració OpenRefine</lnkOpenRefine>
+<lnkSPARQL>SPARQL navegador</lnkSPARQL>
+<lnkLinkIds>Identificadors d'enllaç</lnkLinkIds>
+<lnkBibframe>Banc de proves BibFrame</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Utilitzeu aquesta eina per moure dades entre MARC o de MarcEdit Format Shing i OpenRef </label1>
+<label2>Fitxer d'origen:</label2>
+<label3>Salvi l'arxiu:</label3>
+<rdExport>Exporta-ho a OpenRefine</rdExport>
+<rdImport>Importació de OpenRefine</rdImport>
+<cmdProcess>Procés</cmdProcess>
+<cmdCancel>Tancar</cmdCancel>
+<lbStatus>Estat:</lbStatus>
+<groupBox1>Opcions</groupBox1>
+<this>Eina de transferència de dades de OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Seleccioni arxius per compartir:</label1>
+<ckconfig>Opcions de configuració</ckconfig>
+<label2>Exporta totes les dades en el directori de configuració d'usuari.  Això inclou les dades de configuració, </label2>
+<ckXSLT>XSLT funcions</ckXSLT>
+<label3>Exportar el stylesheets XSLT definits
+</label3>
+<ckMacros>Macros definits i tasques</ckMacros>
+<label4>Exportació tot definir Macros i tasques...
+</label4>
+<label5>Exporta totes les plantilles de tipus material de MarcEditor definits.</label5>
+<ckTemplates>Plantilles de MarcEditor definits</ckTemplates>
+<cmdExport>Exportació</cmdExport>
+<cmdClose>Tancar</cmdClose>
+<this>Exporteu</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Acció</columnHeader2>
+<columnHeader1>Troba el Text</columnHeader1>
+<button1>Tancar</button1>
+<button2>Saltar a pàgina</button2>
+<cmdFindUpdate>Edita la consulta de cerca</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Trobar tots els resultats</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<lbField>Entrar al camp topogràfic per avaluar. (ex. 090)</lbField>
+<groupBox1>Opcions</groupBox1>
+<rdTitle>Ordre tallador (2xx, 1xx)</rdTitle>
+<rdDefault>Ordre tallador (1xx, 2xx)</rdDefault>
+<groupBox2>Opcions</groupBox2>
+<label1>Trobar:</label1>
+<rdCustomField>Camp personalitzat</rdCustomField>
+<rdMainEntry>Avaluar l'entrada principal (1xx, 245)</rdMainEntry>
+<this>Generar talladors</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Servidors de l'OAI definits:</label1>
+<label2>(Utilitzar canvi/canvi de control per seleccionar elements múltiples)</label2>
+<ck_date>Collita de descarregar última</ck_date>
+<cmdCreate>Desa</cmdCreate>
+<button1>Tancar</button1>
+<this>Crear lots de collita</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Bytes</BytesGroup>
+<label5>Miques</label5>
+<label4>ISO-8859-1</label4>
+<label3>Decimal</label3>
+<label2>MALEFICI</label2>
+<columnHeader1>Posició</columnHeader1>
+<columnHeader2>Bytes</columnHeader2>
+<columnHeader3>Text</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Arxiu</menuItem1>
+<openToolStripMenuItem>Obert</openToolStripMenuItem>
+<ExitProgram>Sortida</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>Finestra de MarcEdit resultats</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Nom de la funció (àlies):</lb_Alias>
+<label1>Unir-se amb:</label1>
+<cmd_ok>Desa</cmd_ok>
+<cmd_close>Tancar</cmd_close>
+<this>Uneix-te a funcions XML</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Nom</columnHeader1>
+<columnHeader2>Camí</columnHeader2>
+<cmdOK>Correcte</cmdOK>
+<cmdClose>Tancar</cmdClose>
+<this>Tasques disponibles</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Eines</mnuTools>
+<mnuAddinsEditLinkedData>Editar dades enllaçades normes</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Editar el fitxer XML Rules.</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Com perfil nous punts finals?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Actualitzar el fitxer Rules.</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Gestió de logs</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Gestió avançada de registre</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Suprimeix els fitxers de registre</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Mostra els fitxers de registre</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Traductor de Text delimitat</mnuAddinTranslator>
+<mnuExportGroup>Exporta...</mnuExportGroup>
+<mnuToolsTabbed>Exportació pestanya registres delimitats</mnuToolsTabbed>
+<mnuToolsGateway>Exportar el registre MARC</mnuToolsGateway>
+<mnuToolsSelect>Seleccioneu registres MARC</mnuToolsSelect>
+<mnuToolsDelete>Suprimir registres seleccionats</mnuToolsDelete>
+<mnuToolsExtract>Extreure els registres seleccionats</mnuToolsExtract>
+<mnuToolsCharacterConversion>Eines de conversió de caràcter</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>Characterset Conversions</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Detecció de caràcter</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit Script auxiliar</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL Explorador</mnuExplorer>
+<toolStripMenuItem4>OAI Segadora eines</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Collita OAI registres</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Segadora de lot</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Crear lots</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Executa el lot collita</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Exportació</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Importació</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC eines</mnuToolsUnimarcTools>
+<mnuAddinURL>Verificar les adreces URL</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU Client</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>Eines de processament de MARC</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Registres de procés per lots</mnuToolsBatch>
+<toolClusterData>Clúster dades eines</toolClusterData>
+<mnuToolsDedup>Cercar registres duplicats</mnuToolsDedup>
+<generateToolStripMenuItem>Generar...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Topogràfics</mnuGenerateCallnumber>
+<toolStripMenuItem3>Partides ràpides</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC tema títols</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Combinar els registres</mnutoolsmerge>
+<toolStripMenuItem5>Ajudant de RDA</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC operacions</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC registre Downloader</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Actualitzar el registre de WorldCat fons</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Carregar registres Bibliograph a WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Validar els títols</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Estat del servei</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Validar els títols</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Preferències</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Connectors</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>CDS-ISIS. ISO =&gt; traducció de MARC</mnuaddincdsisis>
+<mnuHelp>Ajuda</mnuHelp>
+<mnuHelpContents>Continguts i ajuda</mnuHelpContents>
+<mnuHelpTutorials>Vista Tutorials</mnuHelpTutorials>
+<mnuHelpOnline>Ajuda en línia</mnuHelpOnline>
+<mnuHelpList>Apuntat a la llista de notificació MarcEdit</mnuHelpList>
+<mnuHelpError>Informe d'Error/suggeriment</mnuHelpError>
+<mnuBlog>MarcEdit Blog</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>Qüestions MarcEdit coneguts</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Sistema d'informació</systemInfoToolStripMenuItem>
+<mnuAddLang>Editar arxius de llengua</mnuAddLang>
+<mnuRestartIn32bitMode>Reprengui's MarcEdit en Mode de 32 bits</mnuRestartIn32bitMode>
+<mnuFileShare>Compartir les opcions de configuració</mnuFileShare>
+<exportSettingsToolStripMenuItem>Exporteu</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Configuració d'importació</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Opcions de resolució de problemes</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Arxius provisionals clars</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Descarregar Fonts Noto Unicode</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Reparació tasca fitxer</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Restaurar arxius de xarxa de còpia de seguretat</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Seleccioneu torna a enllaçar les tasques</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Restaurar les dades de configuració</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Hexaeditor obert</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Mag de depuració</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Descarregui Actualització (mode de depuració)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Buscar actualitzacions</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Dreceres d'aplicacions</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Camí de dades d'aplicació</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Camí de dades de llengua</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Camí de dades de tema</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>Camí de dades XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>Sobre...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>L'autor, Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Què t'agradaria fer?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>L'usuari definia 3</lnkUserDefined3>
+<lnkUserDefined1>Dades OpenRefine</lnkUserDefined1>
+<lnkMarcToolsStart>MARC eines</lnkMarcToolsStart>
+<lnkUserDefined2>L'usuari definia 2</lnkUserDefined2>
+<lnkUserDefined4>Usuari Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>M'agradaria:</groupBox1>
+<cmbLastToolUsed>Últims eines utilitzades</cmbLastToolUsed>
+<lnkTopic5>Treballar amb dades enllaçades</lnkTopic5>
+<lnkTopic4>Traduir Excel per MARC</lnkTopic4>
+<lnkTopic3>Fusionar arxius de MARC</lnkTopic3>
+<lnkTopic2>Collita OAI dades</lnkTopic2>
+<lnkTopic1>Editar un fitxer de MARC</lnkTopic1>
+<this>.Beta MarcEdit {versió} per Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Collita OAI dades</lbTitle>
+<lbServer>Adreça de servidor:</lbServer>
+<lbSet>Nom del conjunt:</lbSet>
+<lbMetadata>Tipus de metadades:</lbMetadata>
+<cmdOK>Correcte</cmdOK>
+<cmdClose>Tancar</cmdClose>
+<opt_default>Per defecte</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT motor:</label4>
+<ck_Raw>Collita dades brutes (guardar OAI dades al sistema de fitxers local)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Configuració avançada</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Retard (en segons).</lbTimeout>
+<ck_Translate>Traduir a MARC-8</ck_Translate>
+<label2>Final:</label2>
+<label1>Inici:</label1>
+<lbCrosswalk>Camí del pas de vianants:</lbCrosswalk>
+<cmdSave>Desa</cmdSave>
+<lnkDebug>Depurar URL</lnkDebug>
+<tabPage1>Casa</tabPage1>
+<tabPage2>Configuració avançada</tabPage2>
+<this>Segadora de metadades</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Fitxer d'origen de l'OCLC números:</label1>
+<cmdDownload>Descarregar</cmdDownload>
+<cmdClose>Tancar</cmdClose>
+<label2>Salvi l'arxiu:</label2>
+<this>Granel registres de descàrregues de l'OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>WorldCat de cerca:</label1>
+<cmbarg1>paraula clau</cmbarg1>
+<cmbconditional>i</cmbconditional>
+<cmdSearch>Cerca</cmdSearch>
+<cmdClose>Tancar</cmdClose>
+<label2>Resultats:</label2>
+<col_oclcnum>Nombre d'OCLC</col_oclcnum>
+<col_title>Títol</col_title>
+<ck_LocalBib>Descarregar fitxa bibliogràfica Local si</ck_LocalBib>
+<lnkAll>Selecciona-ho tot</lnkAll>
+<label3>|</label3>
+<lnkNone>Cap</lnkNone>
+<this>WorldCat d'OCLC Cerca</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Actualitzar el seu fons de WorldCat d'OCLC</label1>
+<groupBox1>Opcions</groupBox1>
+<rdDeleteHoldings>Suprimir fons</rdDeleteHoldings>
+<rdAddHolding>Afegir fons</rdAddHolding>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<label2>Codi de la institució:</label2>
+<label3>Esquema de classificació:</label3>
+<cmb_schema>Biblioteca del Congrés</cmb_schema>
+<ck_debug>Imprimir informació de depuració</ck_debug>
+<this>Actualització WorldCat fons</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Biblioteca del Congrés</cmb_schema>
+<label3>Esquema de classificació:</label3>
+<label2>Codi de la institució:</label2>
+<cmdClose>Tancar</cmdClose>
+<cmdProcess>Procés</cmdProcess>
+<label4>Registres bibliogràfics amb números OCLC s'actualitzarà a WorldCat.  Bibliograph </label4>
+<label1>Celebració de codi:</label1>
+<lnkGetHoldings>Obtenir els codis</lnkGetHoldings>
+<ckLocalBibData>Procés com registres bibliogràfics locals</ckLocalBibData>
+<ck_deleterecords>Suprimir registres</ck_deleterecords>
+<this>Carregar registres a WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>Correcte</cmd_options_ok>
+<cmd_options_cancel>Tancar</cmd_options_cancel>
+<cmd_options_apply>S'apliquen</cmd_options_apply>
+<lnkMainWindow>Finestra principal</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Llengua</lnkLanguage>
+<lnkEaseOfUse>Facilitat d'ús</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Actualitzacions</lnkUpdates>
+<lnkFileAssociations>Associacions d'arxiu</lnkFileAssociations>
+<lnkOther>Altres</lnkOther>
+<lnkILSIntegration>ILS integració</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API integració</lnkOCLCAPI>
+<label15>Programes d'omissió de conjunt</label15>
+<ckLogging>Permeti Registrant:</ckLogging>
+<ckAutosave>Permetre Autosave</ckAutosave>
+<ck_enhanced_editor_loading>Utilitzi direcció de paginació realçada</ck_enhanced_editor_loading>
+<ckRDATemplates>Utilitzar plantilles RDA</ckRDATemplates>
+<ckCompileMarc8>Recopilar registres com MARC8</ckCompileMarc8>
+<label37>Camí de registre:</label37>
+<cksaveutf8>Recopilar registres com UTF8</cksaveutf8>
+<ck_intellisense>Permetre Intellisense</ck_intellisense>
+<label2>Registres per pàgina</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Codificació per defecte:</lb_Encoding>
+<ck_nwindow>Fitxers oberts en finestra nova</ck_nwindow>
+<ck_append>Afegir nous registres</ck_append>
+<lb_psize>Vista prèvia de mida:</lb_psize>
+<ckUsePreview>Previsualització d'ús</ckUsePreview>
+<cmd_editor_font_default>Conjunt d'omissions</cmd_editor_font_default>
+<cmd_editor_set_font>Conjunt Font</cmd_editor_set_font>
+<lb_Editor_Font_Props>Definir propietats MarcEditor Font:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Conjunt d'omissions</cmd_editor_template_default>
+<cmd_editor_modify>Modificar</cmd_editor_modify>
+<lb_Current_Template>Plantilla actual:</lb_Current_Template>
+<lb_Editor_Template>Conjunt de MarcEditor de plantilla:</lb_Editor_Template>
+<label9>* Requereix reiniciar programa *</label9>
+<label8>PT.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Tamany de lletra:</label4>
+<lb_Example>Exemple Text</lb_Example>
+<lb_lang_font>Posi Llengua Font:</lb_lang_font>
+<lb_Set_Lang>Posi el paquet d'idioma:</lb_Set_Lang>
+<rd_theme_dark>Temes de costum:</rd_theme_dark>
+<rd_theme_normal>Normal (per defecte)</rd_theme_normal>
+<label39>Opcions de visualització d'aplicació</label39>
+<ck_export_output>Exportació de recepció (captura ILS sortida)</ck_export_output>
+<lb_TCP_Timeout>Temps d'espera:</lb_TCP_Timeout>
+<lb_TCP_Port>Port de:</lb_TCP_Port>
+<lb_TCP_Host>Adreça d'amfitrió:</lb_TCP_Host>
+<lb_TCPIP_Props>Propietats de TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>Registres en el MARC21 format</ck_marc21>
+<ck_marcxml_sax>Utilitza nadiu opció (procés no-XSLT)</ck_marcxml_sax>
+<groupBox2>XSLT motor</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Normalització Unicode</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Codificació de caràcters per defecte:</label35>
+<ckC>Decomposition (C) canòniques</ckC>
+<ckKD>Descomposició de compatibilitat (KD)</ckKD>
+<ck_Diacritics>Utilitzar diacrítics quan ha frenat</ck_Diacritics>
+<lb_Diacritics>Opcions generals:</lb_Diacritics>
+<lb_Engine_XML_Options>Opcions XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>Utilitzar l'espai de noms</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Seva adminstrator sistema ha inhabilitat les actualitzacions automàtiques</labelAutoUpdateDisabled>
+<ckDetectProxy>Utilitzar escenes d'apoderat de sistema</ckDetectProxy>
+<ck_Update_Validator>Comprovar automàticament actualitzacions Validator</ck_Update_Validator>
+<label3>Vostè ha de pertànyer a un domini per a això per treballar en aquest moment.</label3>
+<groupBox4>Informació d'usuari:</groupBox4>
+<lb_domain>Domini:</lb_domain>
+<label6>Contrasenya:</label6>
+<label5>Nom d'usuari:</label5>
+<ckUpdates>Automàticament comprova per a actualitzacions</ckUpdates>
+<groupBox5>Associacions d'arxiu conjunt</groupBox5>
+<cmd_file_assoc_view>Veure tipus</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Suprimir tipus</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Salvar el tipus</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Associat (*.                      ) arxiu tipus amb el:</label7>
+<ck_mrk8_editor>Associar els arxius (*.mrk8) amb la MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Associar els arxius (*.mrk) amb la MarcEditor</ck_mrk_editor>
+<ck_mrc>Associar els arxius (*.mrc) amb la MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Seleccioneu</lnkSelectILS>
+<lnkDeleteProfile>Suprimir</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Afegir</lnkAddProfile>
+<label31>Perfils:</label31>
+<ck_ignore_ssl>Ignora els Errors de certificat SSL</ck_ignore_ssl>
+<lnk_ils_delete>Suprimir</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Editar</lnk_ils_z3950_edit>
+<ck_ils_z3950>Utilitza la configuració de Z39.50</ck_ils_z3950>
+<ck_ils_enable>Permetre ILS opcions</ck_ils_enable>
+<label13>Nom d'amfitrió:</label13>
+<label12>Contrasenya:</label12>
+<label11>Nom d'usuari:</label11>
+<label10>Seleccioni sistema:</label10>
+<lnkGetCodes>Aconseguir celebració de codis</lnkGetCodes>
+<label24>Celebració de codi:</label24>
+<cmb_schema>Biblioteca del Congrés</cmb_schema>
+<label22>Esquema de classificació:</label22>
+<label23>Codi de la institució:</label23>
+<ckshow>Mostra el Text</ckshow>
+<cmdValidateKeys>Validar les claus</cmdValidateKeys>
+<linkLabel1>Sol·licitud o gestiona una clau d'OCLC (connecta amb OCLC)</linkLabel1>
+<label21>OCLC clau d'API escenes</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Clau secreta (aparellat amb clau d'API de metadades)</label18>
+<label17>OCLC metadades clau d'API</label17>
+<label16>OCLC clau d'API de cerca</label16>
+<lnkFilePaths>Localitzacions</lnkFilePaths>
+<label38>Temps d'espera de xarxa (300 mil·lisegon per defecte):</label38>
+<lnkCopyLocalFiles>Copiar fitxers locals ara</lnkCopyLocalFiles>
+<label30>Predeterminar MARC eines unitat camí:</label30>
+<label27>Camins d'arxiu:</label27>
+<label26>Carpeta de la tasca:</label26>
+<label25>Carpetes de xarxa:</label25>
+<lb_mono>Ruta MICO:</lb_mono>
+<lb_temp>Conjunt camí temporal:</lb_temp>
+<ck_rss>Llegir el RSS Feed</ck_rss>
+<lb_title>Etiqueta del títol:</lb_title>
+<lb_Author>Autor d'etiqueta:</lb_Author>
+<lbCall>Topogràfic d'etiqueta:</lbCall>
+<label1>Cordó de nombre de control:</label1>
+<ck_allow_z3950>Permeten funcions Z39.50</ck_allow_z3950>
+<label28>Opcions de camp:</label28>
+<ck_touch_friendly>Utilitzeu els menús agradable tacte</ck_touch_friendly>
+<ck64_bit>64-bit instal·la</ck64_bit>
+<ck_32bit>32-bit instal·la</ck_32bit>
+<label36>Versió d'Office de MS:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: utilitzar el camp enllaç per tipus</ckSort880>
+<ck880Infile>INFILE 880 camps amb parells de camp</ck880Infile>
+<label29>Opcions d'ordenació:</label29>
+<ckShowDescriptionInScreenTips>Mostra descripcions de la funció de pantalla</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Mostrar claus de drecera a la informació de pantalla</ckScreenTipShortcuts>
+<label42>Opcions del teclat</label42>
+<ckProvideSoundAccess>Proporcionar retroacció amb sons</ckProvideSoundAccess>
+<label41>Opcions de retroacció</label41>
+<groupBox3>Accions:</groupBox3>
+<lnkSearch4Themes>Suprimir el tema seleccionat</lnkSearch4Themes>
+<lnkNewTheme>Crear nou tema</lnkNewTheme>
+<label40>Fer MarcEdit més Accessible</label40>
+<this>MarcEdit preferències</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Complements disponibles:</label1>
+<ch1>Nom de plugin</ch1>
+<ch2>URL</ch2>
+<c3>Mida d'arxiu</c3>
+<c4>Version #:</c4>
+<cmddownload>Descarregar</cmddownload>
+<cmdClose>Tancar</cmdClose>
+<columnHeader1>Treure?</columnHeader1>
+<columnHeader2>Nom de plugin</columnHeader2>
+<columnHeader3>Nom de la classe</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Connectors:</label2>
+<cmdRemove>Treure</cmdRemove>
+<c5>Nombre de versió de MarcEdit</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>recursos. GetString ("label1. Text")</label1>
+<label2>Patró:</label2>
+<cmdProcess>Procés</cmdProcess>
+<cmdCancel>Cancel·la</cmdCancel>
+<lbstatus>Estat:</lbstatus>
+<ckEscape>Escapar de dades des d'URL</ckEscape>
+<ckAddNew>Substituir el camp existent</ckAddNew>
+<ck_addnewfield>Afegeix un camp nou si no presentar</ck_addnewfield>
+<ckAlwaysAdd>Sempre afegir nou camp</ckAlwaysAdd>
+<groupBox1>Opcions</groupBox1>
+<this>Construir nous camps</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Grup Cerca</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Resultats</groupBox3>
+<lnkClearResults>Resultats clars</lnkClearResults>
+<lnkDownload>Descarregar tots els elements</lnkDownload>
+<lnkGetNext>Obtenir el següent {límit de}</lnkGetNext>
+<lnkDownloadAllHoldings>Descarregar tots els fons</lnkDownloadAllHoldings>
+<col1>Posició</col1>
+<col2>Títol</col2>
+<columnHeader1>Base de dades</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Descarregar els elements seleccionats</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Descarregar els registres seleccionats fons</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Mostra el registre seleccionat</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Opcions</groupBox1>
+<rdEditDB>Seleccioneu la base de dades</rdEditDB>
+<rdEditSettings>Edita configuració</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Registres per pàgina</label4>
+<ckUnicode>Recuperar Unicode</ckUnicode>
+<lb_encoding_single>Joc de caràcters de servidor</lb_encoding_single>
+<lbSearchb>Cerca:</lbSearchb>
+<lbSearch>Consulta base de dades:</lbSearch>
+<label3>Posi la preferència de base de dades:</label3>
+<cmdSelectDatabase>Seleccioneu</cmdSelectDatabase>
+<MCol3>ID</MCol3>
+<MCol1>Nom</MCol1>
+<MCol2>Tipus</MCol2>
+<lb_PModifyTitle>Seleccioneu la base de dades:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Accions</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Afegir nova Z39.50 servidor</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Afegir nou SRU servidor</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Preferències</preferencesToolStripMenuItem>
+<cmdCloseSettings>Tancar</cmdCloseSettings>
+<label5>Camps de control (per desduplicació de processament per lots)</label5>
+<cmdSaveSettings>Desa la configuració</cmdSaveSettings>
+<rdDownloadPreferred>Descarregui des de font preferit</rdDownloadPreferred>
+<rdDownloadMostComplete>Descarregar els registres més complets</rdDownloadMostComplete>
+<rdAllRecords>Descarregar tots els registres</rdAllRecords>
+<label2>Opcions de processament per lots</label2>
+<label1>Preferències</label1>
+<this>MarcEdit Z39.50/SRU Client</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Procés el 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Editar camps</lnkEditFields>
+<ck_040>Modificar 040 – afegir $erda</ck_040>
+<ck_qualifyinginfo>Classificació d'informació (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Edita la llista</lnkEdit>
+<ck_dgmd>Suprimir Encarnat</ck_dgmd>
+<ckAbbrev>Ampliar les abreviatures</ckAbbrev>
+<ckgmd>Generar Encarnat</ckgmd>
+<ck264>Avaluar 260/264</ck264>
+<ck_signs>Utilitza sempre ©, símbols ℗</ck_signs>
+<ck381>Afegir 381 - altres</ck381>
+<ck380>Afegir 380 - forma de treball</ck380>
+<ck347>Afegir 347 - característiques Digital</ck347>
+<ck346>Afegir 346 - característiques de vídeo</ck346>
+<ck345>Afegir 345 - en projecte. Característiques</ck345>
+<ck344>Afegir 344 - Característiques sonores</ck344>
+<ck337>Afegir 337 - tipus de mitjans de comunicació
+Afegir 338 - tipus de transportista</ck337>
+<ck336>Afegir 336 - tipus de contingut</ck336>
+<cmdProcess>Correcte</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<label1>Font:</label1>
+<label2>Estalvïi:</label2>
+<lnkAll>Tots els</lnkAll>
+<label3>Seleccionar:</label3>
+<label4>|</label4>
+<lnkNone>Cap</lnkNone>
+<label7>Estat:</label7>
+<this>Ajudant de RDA</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Tancar</cmd_Close>
+<rEdit></rEdit>
+<this>Resultats</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Casa</lnkHome>
+<label5>recursos. GetString ("label5. Text")</label5>
+<label4>Sobre RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>Sobre RobertCompare</lnkAbout>
+<ckSort>Arxius de pre-classe</ckSort>
+<cmdClose>Tancar</cmdClose>
+<cmdExecute>Executar</cmdExecute>
+<label1>Salvi l'arxiu:</label1>
+<label6>Comparar els arxius:</label6>
+<label2>recursos. GetString ("label2. Text")</label2>
+<lnkPreferences>Preferències</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Camp:</lbSortField>
+<lbdelete>Supressions:</lbdelete>
+<lbAddColor>Addicions:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Cap</lnkNone>
+<lnkAll>Selecciona-ho tot</lnkAll>
+<col_title>Títol</col_title>
+<col_id>ID</col_id>
+<label3>|</label3>
+<label2>Resultats:</label2>
+<cmdClose>Tancar</cmdClose>
+<cmdSearch>Cerca</cmdSearch>
+<cmbarg1>títol</cmbarg1>
+<label1>Base de dades de cerca:</label1>
+<ck_batch>Grup Cerca</ck_batch>
+<this>Cerca</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Seleccioneu</cmdSelect>
+<this>Seleccioneu ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Número de registre</columnHeader1>
+<columnHeader2>Camp d'exhibició</columnHeader2>
+<selectItemsToolStripMenuItem>Seleccionar elements</selectItemsToolStripMenuItem>
+<cmdImport>Fitxer d'importació</cmdImport>
+<cmdfDelete>Eliminar seleccionat</cmdfDelete>
+<cmdExport>Exportar seleccionat</cmdExport>
+<cmdExit>Sortida</cmdExit>
+<lb_Search>Cerca:</lb_Search>
+<lb_DisplayField>Mostra el camp:</lb_DisplayField>
+<lb_SourceFile>Fitxer d'origen MARC:</lb_SourceFile>
+<ckSource>Desar els registres modificats en font</ckSource>
+<ck_retain>Conservar els elements marcats</ck_retain>
+<cmd_Generate>Generar l'informe</cmd_Generate>
+<ck_find_all>Cerca totes les dades de registre</ck_find_all>
+<ck_use_regex>Utilitzar Expressions regulars</ck_use_regex>
+<cmdRandomExport>Exportació a l'atzar</cmdRandomExport>
+<lnkDoesNotMatch>No coincideix</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Inverteix la selecció</lnkInvert>
+<ckExactWord>Partit de la paraula exacta</ckExactWord>
+<this>MarcEdit.NET: Modificar els registres seleccionats MARC</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Seleccioneu camps d'excloure de la classificació</lb_title>
+<lb_fields>Tipus de camps:</lb_fields>
+<lbExclude>Excloure camps:</lbExclude>
+<cmd_OK>Correcte</cmd_OK>
+<cmd_Close>Tancar</cmd_Close>
+<this>Ordre personalitzat assistent</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL Endpoint:</lbsparql>
+<cmdQuery>Consulta</cmdQuery>
+<cmdClose>Tancar</cmdClose>
+<lbQuery>SPARQL consulta:</lbQuery>
+<lbresults>Resultats:</lbresults>
+<cklocal>Arxiu Local de càrrega</cklocal>
+<lbOutput>Sortida:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Consultes de Mostra:</groupBox1>
+<lbExample3>Consulta per: 軍事基地</lbExample3>
+<lnkExample3>La dieta japonesa biblioteca</lnkExample3>
+<lbexample2>Consulta Getty per sulfat de coure</lbexample2>
+<lnkExample2>Exemple Getty</lnkExample2>
+<label1>Consulta de malla per grip, humans</label1>
+<lnkExample1>Exemple de malla</lnkExample1>
+<label2>SPARQL referències:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL extrems del (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Viquipèdia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL Tutorials</lnkTutorials>
+<this>SPARQL navegador</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CDS-ISIS =&gt; traducció de MARC</lb_title>
+<groupBox1>Aportació d'usuari</groupBox1>
+<lb_output>Fitxer de sortida:</lb_output>
+<lb_input>Fitxer d'entrada:</lb_input>
+<groupBox2>Opcions:</groupBox2>
+<rd_advanced>Traducció avançada</rd_advanced>
+<rd_simple>Simple traducció</rd_simple>
+<lb_subfield>Marcador de camp</lb_subfield>
+<cmd_Ok>Correcte</cmd_Ok>
+<cmd_Close>Tancar</cmd_Close>
+<this>CDS-ISIS. ISO =&gt; traducció de MARC</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Opcions:</lb_title>
+<lnkLoad>Assignacions de camps de càrrega</lnkLoad>
+<ck_indicators>Afegir indicadors</ck_indicators>
+<ckLDR>LDRs correctes</ckLDR>
+<ck_subfield>Afegir el camp principal</ck_subfield>
+<cmdOK>Correcte</cmdOK>
+<cmdClose>Tancar</cmdClose>
+<this>Opcions avançades</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Cancel·la</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Caràcters especials:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Insereix</cmd_Insert>
+<cmdClose>Tancar</cmdClose>
+<this>MARC-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Nom de la llista de tasca:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Afegir el camp Suprimeix la tasca</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Afegir editar camp tasca</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Afegir editar indicador tasca</addToolStripMenuItem>
+<cmdSave>Desa</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Afegeix una tasca nova camp</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Tancar</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Afegir substitueix que totes les tasques</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Afegir comentari</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Afegir tasca d'editar camp</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Afegeixi Swap camp tasca</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Afegeix còpia camp tasca</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Afegir la llista de tasques</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Afegir RDA ajudant</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Afegeix dades enllaçades tasca</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Afegeix complexió nova tasca de camp</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Editar dreceres</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Cas declaracions</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>minúscules</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>VERSAL</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Cas de títol</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Cas inicial</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Posa en majúscula la inicial cas</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Camp edicions</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Personatges net elegants</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Funcions matemàtiques</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Convertir en graus decimals</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Eliminar les línies en blanc</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Tallador d'eines</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Generar talladors</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Generar talladors de Sanborn3</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Copiar la tasca seleccionada acció</mnuCopy>
+<mnuPasteTask>Acció d'enganxar tasca</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Comentari seleccionat tasca</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>Incomenti tasques seleccionades</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Tasques:</lbTasks>
+<label1>Accions:</label1>
+<label2>Descripció/controls:</label2>
+<cmdDebug>Depuració</cmdDebug>
+<this>Editar la llista de tasques</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Nom</columnHeader1>
+<columnHeader2>Camí</columnHeader2>
+<columnHeader3>Drecera</columnHeader3>
+<columnHeader4>Descripció</columnHeader4>
+<cmdClose>Tancar</cmdClose>
+<lnkNew>Crear llista de tasca nova</lnkNew>
+<lbMacro>Llistes de tasques:</lbMacro>
+<lnkCloneTask>Llista de tasques existent clon</lnkCloneTask>
+<groupBox1>Tasca accions</groupBox1>
+<lnkRelink>Torna a enllaçar les tasques</lnkRelink>
+<lnk_import_task>Tasca d'importació</lnk_import_task>
+<groupBox2>Gestionar tasques existents</groupBox2>
+<lnkBackup>Còpia de seguretat de totes les tasques</lnkBackup>
+<lnk_export_task>Exportar la tasca seleccionada</lnk_export_task>
+<lnkKey>Assignat una tecla</lnkKey>
+<lnkEdit>Editar la llista de tasques seleccionades</lnkEdit>
+<lnkDelete>Suprimeix la llista de tasques seleccionades</lnkDelete>
+<this>Director de tasca</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Trunca els registres llargs</ckTruncate>
+<label1>Seleccionar operació:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Codificació de caràcters per defecte:</label35>
+<ck_Marc8>Traduir a MARC-8</ck_Marc8>
+<ck_UTF8>Traduir en UTF8</ck_UTF8>
+<lb_OutputFile>Desa com...</lb_OutputFile>
+<lb_InputFile>Oberta...</lb_InputFile>
+<cmdCancel>Tancar</cmdCancel>
+<cmdEdit>Editar registres</cmdEdit>
+<cmdExecute>Executar</cmdExecute>
+<lb_Results>Resultats:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Eines</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Tornar a la finestra principal</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Editar la llista de funció XML</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Registres de procés per lots</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>Conversió de caràcters</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC eines</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Què t'agradaria fer?</mnuContextHelp>
+<lnkTopic1>Convertir el meu arxiu en una codificació de caràcters diferents</lnkTopic1>
+<lnkTopic2>Afegir/modificar les traduccions de XML</lnkTopic2>
+<lnkTopic4>Com puc trobar un error al meu arxiu de MARC?</lnkTopic4>
+<groupBox1>M'agradaria:</groupBox1>
+<groupBox2>Seleccioneu les dades al procés:</groupBox2>
+<groupBox3>Opcions de codificació de caràcter</groupBox3>
+<this>MARC eines</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit proporciona un conjunt d'eines de conversió UNIMARC lite-pes.  Si aquestes eines són d'interès per a vostè i li agradaria ajudar a fer-los millor, si us plau proporcioni f eedback.
+
+</label1>
+<label2>Font</label2>
+<label3>Destinació</label3>
+<groupBox1>Opcions</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<this>UNIMARC eines</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Notes d'actualització:</label1>
+<cmd_Update>Actualització</cmd_Update>
+<cmd_Cancel>Cancel·la</cmd_Cancel>
+<this>MarcEdit actualització</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode amb codificació</ckIsUTF8>
+<ck_merge_to_source>Fusionar a font</ck_merge_to_source>
+<label17>Salvi l'arxiu:</label17>
+<label16>Font de la catalogació</label16>
+<ck_SameFile>Processa el fitxer font.</ck_SameFile>
+<cmd_merge_cancel>Cancel·la</cmd_merge_cancel>
+<cmd_merge_next>Següent =&gt;</cmd_merge_next>
+<lb_merge_title>Permet combinar dades registres</lb_merge_title>
+<ck_merge_repeatable>És repetible</ck_merge_repeatable>
+<lb_id>Identificador de registre:</lb_id>
+<lb_merge>Combina l'arxiu:</lb_merge>
+<lb_source>Fitxer d'origen:</lb_source>
+<ck_overlayexisting>Superposició d'elements existents</ck_overlayexisting>
+<label4>Valor de confiança:</label4>
+<ck_mergeUnique>Combinar elements singulars</ck_mergeUnique>
+<button1>Cancel·la</button1>
+<cmd_merge_select_fields_next>Següent =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Esquena</cmd_merge_select_fields_back>
+<label7>Camps de combinació:</label7>
+<label6>Seleccioneu el camp:</label6>
+<label5>Combinació de dades registre: Seleccioneu els camps</label5>
+<button5>Tancar</button5>
+<label15>Arxius s'han fusionat.  Resultats a {merge_results_file}.</label15>
+<label13>Fusió completa</label13>
+<this>Combinar els registres MARC</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>L'eina de validació d'encapçalaments es poden validar 1xx, 6xx o 7xx camps.  Eina de th e utilitza una combinació de web i serveis locals per determinar si una headin g apareix en una partida autoritzat.</label1>
+<ck_1xx>Autoritzar camps 1xx/7xx</ck_1xx>
+<ck_6xx>Autoritzar 6xx camp</ck_6xx>
+<cmdProcess>Procés</cmdProcess>
+<cmdClose>Tancar</cmdClose>
+<label2>Font:</label2>
+<lbStatus>Estat:</lbStatus>
+<cmdExtract>Extracte</cmdExtract>
+<ckdeletecache>Esborrar la memòria cau Local</ckdeletecache>
+<lnkDelimited>Estalviar delimitat</lnkDelimited>
+<ckonlyA>Només procés camp A</ckonlyA>
+<ckVariant>Corregir automàticament Variants</ckVariant>
+<ckGenerateBriefHeadings>Generar les autoritats nom Personal breu</ckGenerateBriefHeadings>
+<label3>Autoritats generats:</label3>
+<ckAddURIs>Incrustar URIs quan sigui Possible</ckAddURIs>
+<ck_download_authorities>Descarregui LC autoritats</ck_download_authorities>
+<this>Validar els títols</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Fitxer d'origen:</lb_Source>
+<lb_Rules>Fitxer rules:</lb_Rules>
+<cmd_Ok>Correcte</cmd_Ok>
+<cmd_close>Tancar</cmd_close>
+<groupBox1>Opcions</groupBox1>
+<optIdentify>Validar l'estructura</optIdentify>
+<opt_remove>Eliminar registres no vàlids</opt_remove>
+<opt_validate>Comproveu el fitxer Rules MARC utilitzant</opt_validate>
+<rdHex>Vista en un hexaeditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>Correcte</cmd_Ok>
+<cmdCancel>Tancar</cmdCancel>
+<groupBox1>Opcions d'informe:</groupBox1>
+<lb_MARC_Title>Títol:</lb_MARC_Title>
+<lbReport>Tipus d'informe:</lbReport>
+<lb_XSLT>Fitxer XSLT:</lb_XSLT>
+<lb_Dest>Fitxer de sortida:</lb_Dest>
+<lb_MARC>Fitxer d'entrada:</lb_MARC>
+<lb_Fields>Camps:</lb_Fields>
+<lbTimeout>Temps d'espera (en segons)</lbTimeout>
+<this>Verifiqui la URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>Servei ràpid de OCLC</lnkClassify>
+<label1>recursos. GetString ("label1. Text")</label1>
+<ck_conditional_fast>Afegir capçaleres ràpids quan No encapçalaments de matèria són presents</ck_conditional_fast>
+<ck_always_fast>Sempre afegir capçaleres ràpids</ck_always_fast>
+<label8>Encapçalaments de matèria:</label8>
+<button1>Procés</button1>
+<cmd_Close>Tancar</cmd_Close>
+<this>Generar les partides ràpides</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Desa</cmd_save>
+<cmd_close>Tancar</cmd_close>
+<ck_1xxa>$a: entrada principal</ck_1xxa>
+<ck_245p>$p: nom de pt/sec. de treball</ck_245p>
+<ck_245n>$n: nombre de pt/sec. de treball</ck_245n>
+<ck_245c>$c: declaració de responsabilitat</ck_245c>
+<ck_245b>$b: resta del títol</ck_245b>
+<ck_245a>$a: títol</ck_245a>
+<ck_lang>Llengua (posicions: 35-37)</ck_lang>
+<ck_dates>Dates (posicions: 7-14)</ck_dates>
+<ck_p7>BLvl (posició 7)</ck_p7>
+<ck_p6>Tipus (posició 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Números de control</label6>
+<ck_form>Formulari (posicions: 23)</ck_form>
+<ck_245_h>$h: designació general de Material</ck_245_h>
+<label5>Diversos camps:</label5>
+<label4>Camp 245:</label4>
+<label3>Camp autor (1xx)</label3>
+<label2>008 posicions</label2>
+<label1>LDR posició</label1>
+<this>Combinar opcions</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Base de dades propietats</tabDBProps>
+<ck_Paused>Invalidar pausa (6 secs).</ck_Paused>
+<label1>Base de dades:</label1>
+<ck_Show>Mostra de base de dades</ck_Show>
+<lbPassword>Contrasenya:</lbPassword>
+<lbUsername>Nom d'usuari:</lbUsername>
+<lbSyntax>Sintaxi:</lbSyntax>
+<lbPort>Port de:</lbPort>
+<lbHost>Amfitrió:</lbHost>
+<lbname>Nom:</lbname>
+<tabDBAdvanced>Propietats avançades</tabDBAdvanced>
+<label4>Temps d'espera (en segons):</label4>
+<label2>Conjunt de l'element:</label2>
+<label3>Altres opcions:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Més informació:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Assumpte:</lbSubject>
+<lbTitle>Títol:</lbTitle>
+<lbAuthor>Autor:</lbAuthor>
+<lbadvTitle>L'atribut Z39.50 4: estructura</lbadvTitle>
+<cmdSave>Desa</cmdSave>
+<cmdClose>Tancar</cmdClose>
+<label17>Configuració de base de dades Z39.50:</label17>
+<cmdDeleteZ3950>Suprimir</cmdDeleteZ3950>
+<gbCustom>Configuració del perfil personalitzat</gbCustom>
+<label5>Índex títol:</label5>
+<label6>Índex d'autors:</label6>
+<label10>Índex de paraules clau:</label10>
+<label7>Índex temàtic:</label7>
+<label11>Record # Index:</label11>
+<label8>Índex de l'ISBN:</label8>
+<label12>Índex ISSN:</label12>
+<cmdDeleteSRU>Suprimir</cmdDeleteSRU>
+<ck_SRU_Show>Mostra de base de dades</ck_SRU_Show>
+<label13>Paràmetres addicionals</label13>
+<label14>Perfil de recerca:</label14>
+<lbVersion>Versió:</lbVersion>
+<cmdCloseSRU>Tancar</cmdCloseSRU>
+<cmdSaveSRU>Desa</cmdSaveSRU>
+<label15>Nom:</label15>
+<lbMetadata>Esquema de metadades:</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>SRU propietats de base de dades:</lbSRUTitle>
+<this>Base de dades propietats</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Trobar:</label1>
+<ckMatchCase>Distingeix majúscules i minúscules</ckMatchCase>
+<cmdFind>Trobar</cmdFind>
+<this>MALEFICI: Corda de descobriment</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Arxiu</fileToolStripMenuItem>
+<openToolStripMenuItem>Obert</openToolStripMenuItem>
+<exitToolStripMenuItem>Sortida</exitToolStripMenuItem>
+<editToolStripMenuItem>Editar</editToolStripMenuItem>
+<findToolStripMenuItem>Trobar</findToolStripMenuItem>
+<findNextToolStripMenuItem>Güent</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Tallar</cutToolStripMenuItem>
+<copyToolStripMenuItem>Còpia</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Pasta</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Clar</clearToolStripMenuItem>
+<findToolStripMenuItem>Trobar</findToolStripMenuItem>
+<replaceToolStripMenuItem>Substituir</replaceToolStripMenuItem>
+<lnkLoadAll>Arxiu de tota càrrega</lnkLoadAll>
+<lb_bytes>{loaded_bytes} de {file_bytes} bytes carregats.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Nou rècord</tbNew>
+<mnuCNewWindow>Nova finestra oberta</mnuCNewWindow>
+<ContextAuthority>Autoritat</ContextAuthority>
+<ContextAuthorityName>Nom</ContextAuthorityName>
+<ContextAuthoritySubject>Tema</ContextAuthoritySubject>
+<cBook>Llibre</cBook>
+<cSerial>En sèrie</cSerial>
+<cVisualMat>Visual Material</cVisualMat>
+<cMaps>Recursos cartogràfics</cMaps>
+<cSoundRec>Enregistrament de so</cSoundRec>
+<cScore>Puntuació</cScore>
+<cElectMat>Recurs electrònic</cElectMat>
+<cMixedMat>Material mixt</cMixedMat>
+<tbOpen>Obrir arxiu</tbOpen>
+<tbSave>Desa el fitxer</tbSave>
+<tbPrint>Fitxer d'impressió</tbPrint>
+<tbCompile>Recopilar registres</tbCompile>
+<tbCut>Tallar</tbCut>
+<tbCopy>Còpia</tbCopy>
+<tbPaste>Pasta</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>Suprimir</tbDelete>
+<tbFind>Trobar</tbFind>
+<tbZ39_50>Z39.50/SRU Client</tbZ39_50>
+<toolStripSplitButton1>Global MARC d'edició utilitats</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Afegeix/Suprimeix camp</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Construir el camp nou</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Camp de còpia</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Edita les dades de camp</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Editar dades d'indicadors</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Edita les dades de camp</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Intercanvi de dades de camp</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Arxiu</mnuFile>
+<mnuFileMain>Tornar a la finestra principal</mnuFileMain>
+<mnuFileNew>Nou</mnuFileNew>
+<mnuFileNewWindow>Nova finestra oberta</mnuFileNewWindow>
+<mnuFileNewDefault>per defecte</mnuFileNewDefault>
+<mnuFileNewAuthority>Autoritat</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Nom</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Tema</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Llibre</mnuFileNewBook>
+<mnuFileNewSerial>En sèrie</mnuFileNewSerial>
+<mnuFileVisualMat>Visual Material</mnuFileVisualMat>
+<mnuFileNewMap>Recursos cartogràfics</mnuFileNewMap>
+<mnuFileNewSound>Enregistrament de so</mnuFileNewSound>
+<mnuFileNewScore>Puntuació</mnuFileNewScore>
+<mnuFileNewER>Recurs electrònic</mnuFileNewER>
+<mnuFileNewMix>Material mixt</mnuFileNewMix>
+<mnuFileOpen>Obert</mnuFileOpen>
+<mnuFileRecent>Arxius recents</mnuFileRecent>
+<mnunone10>cap</mnunone10>
+<mnunone9>cap</mnunone9>
+<mnunone8>cap</mnunone8>
+<mnunone7>cap</mnunone7>
+<mnunone6>cap</mnunone6>
+<mnunone5>cap</mnunone5>
+<mnunone4>cap</mnunone4>
+<mnunone3>cap</mnunone3>
+<mnunone2>cap</mnunone2>
+<mnunone1>cap</mnunone1>
+<mnuFileClearHistory>Esborra l'Historial</mnuFileClearHistory>
+<mnuFileClearList>Esborra arxius recents</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Esborra edita/reemplaçar</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Tancar</mnuFileClose>
+<mnuFileExportData>Exportar per...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Importa des de...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Desa</mnuFileSave>
+<mnuFileSaveAs>Desa com...</mnuFileSaveAs>
+<mnuFilePrint>Impressió</mnuFilePrint>
+<toolStripMenuItem34>Imprimir un registre Per pàgina</toolStripMenuItem34>
+<FileSelectIndividualMake>Seleccioneu els registres per modificar</FileSelectIndividualMake>
+<mnuFileCompile>Compilar l'arxiu en el MARC</mnuFileCompile>
+<mnuFileExit>Sortida</mnuFileExit>
+<mnuEdit>Editar</mnuEdit>
+<mnuEditUndo>Desfer</mnuEditUndo>
+<mnuEditRedo>Refés</mnuEditRedo>
+<mnuEditSpecialUndo>Desfer especial</mnuEditSpecialUndo>
+<mnuEditCut>Tallar</mnuEditCut>
+<mnuEditCopy>Còpia</mnuEditCopy>
+<mnuEditPaste>Pasta</mnuEditPaste>
+<mnuEditDupLines>Línies duplicats</mnuEditDupLines>
+<mnuEditClear>Clar</mnuEditClear>
+<mnuEditFind>Trobar</mnuEditFind>
+<mnuEditReplace>Substituir</mnuEditReplace>
+<toolStripMenuItem28>Editar dreceres</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Canvia majúscules i minúscules</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>minúscules</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>VERSAL</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Cas de títol</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Cas inicial</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Aprofitar el caràcter inicial</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Camp edicions</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Personatges net elegants</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Trobar camps falta una paraula</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Cercar registres falta camp</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Cercar registres amb etiquetes duplicades</toolStripMenuItem39>
+<toolStripMenuItem40>Cercar registres duplicats camp dades</toolStripMenuItem40>
+<mnuEditLimitFields>Nombre límit de camps</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Títol de l'intercanvi</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Funcions matemàtiques</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Convertir en graus decimals</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Saltar a...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Saltar a... Registre</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Saltar a... Pàgina</jumpToPageToolStripMenuItem>
+<mnuEditControl>Insereix el número de Control individual</mnuEditControl>
+<mnuEdit006>Insereix/Edita 006</mnuEdit006>
+<mnuEdit006Edit>Editar</mnuEdit006Edit>
+<mnuEdit006Book>Llibre</mnuEdit006Book>
+<mnuEdit006Serial>Recurs continu</mnuEdit006Serial>
+<mnuEdit006Map>Recursos cartogràfics</mnuEdit006Map>
+<mnuEdit006Sound>Enregistrament de so</mnuEdit006Sound>
+<mnuEdit006Score>Puntuació</mnuEdit006Score>
+<mnuEdit006ER>Recurs electrònic</mnuEdit006ER>
+<mnuEdit006Visual>Visual Material</mnuEdit006Visual>
+<mnuEdit006Mixed>Material mixt</mnuEdit006Mixed>
+<mnuEdit008>Insereix/Edita 008</mnuEdit008>
+<mnuEdit008Edit>Editar</mnuEdit008Edit>
+<mnuEdit008Book>Llibre</mnuEdit008Book>
+<mnuEdit008Serial>Recurs continu</mnuEdit008Serial>
+<mnuEdit008Map>Recursos cartogràfics</mnuEdit008Map>
+<mnuEdit008Sound>Enregistrament de so</mnuEdit008Sound>
+<mnuEdit008Score>Puntuació</mnuEdit008Score>
+<mnuEdit008ER>Recurs electrònic</mnuEdit008ER>
+<mnuEdit008Visual>Visual Material</mnuEdit008Visual>
+<mnuEdit008Mixed>Material mixt</mnuEdit008Mixed>
+<toolStripMenuItem27>Convertir el contingut del porta-retalls</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8 a UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 a MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>Mapa de caràcters UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Selecciona-ho tot</mnuEditSelectAll>
+<mnuEditWrap>Abrigall de paraula</mnuEditWrap>
+<mnuEditRTL>Exhibició de dreta a esquerra</mnuEditRTL>
+<mnuFont>Tipus de lletra</mnuFont>
+<mnuFontFont>Tipus de lletra...</mnuFontFont>
+<mnuFontColor>Color...</mnuFontColor>
+<mnuReports>Informes</mnuReports>
+<mnuReportsField>Comte de camp</mnuReportsField>
+<tlReportsMaterialReport>Material tipus informe</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Generar l'informe</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Cercar registres per tipus</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Llibres</booksToolStripMenuItem>
+<toolStripMenuItem32>Fitxers informàtics</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Recursos continus</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Mapes</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Materials mixtes</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Partitures</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Enregistraments sonors</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Material visual</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Validar l'ISBN</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Validar ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Validar els títols</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Estat del servei</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Validar els títols</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Gestionar els fitxers de registre</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Veure arxiu de registre actual</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Gestió avançada de registre</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Suprimeix els fitxers de registre</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Mostra els fitxers de registre</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Eines</mnuTools>
+<mnuToolsCluster>Agrupació d'eines</mnuToolsCluster>
+<mnutoolCutters>Eines de cuttering</mnutoolCutters>
+<mnuToolsCalculator>Calculadora de catàleg</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Generar talladors</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn taula 3 talladors</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Generar nombres de trucada</mnuToolsCallNum>
+<mnuToolsControlNumber>Generar xifres de Control</mnuToolsControlNumber>
+<toolStripMenuItem33>Eines de dades enllaçades</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Construir els registres enllaçats</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Registre desduplicació</mnuToolsDedup>
+<mnuToolsRDAHelpers>Ajudant de RDA</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU opcions</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU Client</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 carregar el registre</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 esborrar el registre</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Fons d'actualització Z39.50</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Editar dades constants</mnuToolsEditConstant>
+<mnuToolsAssigned>Dades de constants assignats</mnuToolsAssigned>
+<mnuConstant1>1) corda indefinit</mnuConstant1>
+<mnuConstant2>2) corda indefinit</mnuConstant2>
+<mnuConstant3>3) corda indefinit</mnuConstant3>
+<mnuConstant4>4) corda indefinit</mnuConstant4>
+<mnuConstant5>5) corda indefinit</mnuConstant5>
+<mnuConstant6>6) corda indefinit</mnuConstant6>
+<mnuConstant7>7) corda indefinit</mnuConstant7>
+<mnuConstant8>8) cadena indefinit</mnuConstant8>
+<mnuConstant9>9) corda indefinit</mnuConstant9>
+<mnuConstant10>10) corda indefinit</mnuConstant10>
+<mnutoolmanageAutomate>Gestionar tasques</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Tasques assignades</mnuToolsAssignedTasks>
+<mnuDefTask>Tasques actualment disponibles</mnuDefTask>
+<task1>1) tasca indefinit</task1>
+<task2>2) tasca indefinit</task2>
+<task3>3) tasca indefinit</task3>
+<task4>4) tasca indefinit</task4>
+<task5>5) tasca indefinit</task5>
+<task6>6) tasca indefinit</task6>
+<task7>7) tasca indefinit</task7>
+<task8>8) tasca indefinit</task8>
+<task9>9) tasca indefinit</task9>
+<task10>10) tasca indefinit</task10>
+<task11>11) tasca indefinit</task11>
+<task12>12) tasca indefinit</task12>
+<task13>13) tasca indefinit</task13>
+<task14>14) tasca indefinit</task14>
+<task15>15) tasca indefinit</task15>
+<task16>16) tasca indefinit</task16>
+<task17>17) tasca indefinit</task17>
+<task18>18) tasca indefinit</task18>
+<task19>19) tasca indefinit</task19>
+<task20>20) tasca indefinit</task20>
+<mnuToolsValidate>Validar els registres MARC</mnuToolsValidate>
+<mnuToolsOAI>Collita de OAI</mnuToolsOAI>
+<mnutoolsurl>Generar el MARC de la URL</mnutoolsurl>
+<toolStripMenuItem43>Eines de formats Shing</toolStripMenuItem43>
+<toolStripMenuItem3>Normalitzar...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normalitzar LC registres</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normalitzar els registres Microlif</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Eliminar les línies en blanc</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Eliminar camps/camps buits</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Afegeix/Suprimeix camp</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Construir el camp nou</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Camp de còpia</toolStripMenuItem26>
+<mnuToolsEditField>Edita les dades de camp</mnuToolsEditField>
+<mnuToolsIndicator>Editar dades d'indicadors</mnuToolsIndicator>
+<mnuToolsSubfield>Edita les dades de camp</mnuToolsSubfield>
+<mnuToolsSortby>Ordena per...</mnuToolsSortby>
+<toolStripMenuItem41>Registre ordenació per...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Camp personalitzat</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Camp de l'autor</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Topogràfic àmbit</mnuToolsSortByCall>
+<mnuToolsSortControl>Camp numèric control</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Camp de títol</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Mena camps Witin disc...</toolStripMenuItem42>
+<mnuToolsCustomSort>Ordre personalitzat</mnuToolsCustomSort>
+<mnuToolsSort2>Mena 0xx camps</mnuToolsSort2>
+<mnuToolsSort>Ordenar tots els camps</mnuToolsSort>
+<mnuToolsSwap>Intercanvi de dades de camp</mnuToolsSwap>
+<mnuToolsOptions>Preferències</mnuToolsOptions>
+<mnu_ILS>[ILS nom]</mnu_ILS>
+<mnu_ils_search>Cerca</mnu_ils_search>
+<updateCreateToolStripMenuItem>Actualització/crear</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Procés de configuració</processSettingsToolStripMenuItem>
+<mnuOCLC>WorldCat d'OCLC</mnuOCLC>
+<toolStripMenuItem31>Cerca WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Afegir/eliminar/actualitzar dades bibliogràfiques Local</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Creació i actualització de dades bibliogràfiques</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Actualització de fons</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Connectors</pluginsToolStripMenuItem>
+<mnuHelp>Ajuda</mnuHelp>
+<mnuHelpContents>Continguts i ajuda</mnuHelpContents>
+<mnuEditInfo>MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC ajuda</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>Biblioteca d'EUA d'ajuda de MARC Congrés</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Fitxers de paquet de depuració</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Què t'agradaria fer?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Registres per pàgina</label1>
+<lblPage>pàgines</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Veure AutoSave arxius</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Serveis de validació de dades es proporcionen a través Termology serveis de l'OCLC. Per utilitzar aquests serveis, s'obliga a seguir i complir amb els termes i condicions establertes per l'OCLC sobre l'ús i la fidelitat d'aquests serveis.</lb_text>
+<label1>OCLC acord enllaç:</label1>
+<lnk_Terms>Mostra els termes d'ús</lnk_Terms>
+<cmd_Agree>Estic d'acord</cmd_Agree>
+<cmd_disagree>Estic en desacord</cmd_disagree>
+<this>OCLC acord</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Anglès</comboBox1>
+<linkLabel2>No, gràcies, només utilitza la configuració per defecte</linkLabel2>
+<linkLabel1>Anem a començar!</linkLabel1>
+<label2>Sóc aquí per ajudar a començar!  Vaig a fer algunes preguntes i aconseguir que en jo </label2>
+<label1>Benvingut a MarcEdit 7!</label1>
+<this>Auxiliar d'inici MarcEdit 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>A dades de configuració... Collaret!</linkLabel1>
+<label6>Recordeu, vostè pot posar temes, mides de font, llengües i accessibilitat avançat o </label6>
+<cmb_theme_picker>Per defecte</cmb_theme_picker>
+<label5>Tema recomanat:</label5>
+<label4>PT.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Recomanat de lletra:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Font d'omissió:</label2>
+<label1>L'aparició de MarcEdit</label1>
+<this>MarcEdit 7 auxiliar d'inici: Pàgina 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit és agnòstic MARC, així que anem a dir que una mica sobre les seves dades.</label5>
+<comboBox3>Triar per a mi</comboBox3>
+<label4>Motor de processament de XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Registre de codificació per defecte:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>El meu MARC Format és:</label2>
+<linkLabel1>Gairebé ja hem acabat!  Esquirol!</linkLabel1>
+<label1>MarcEdit dades configuració</label1>
+<this>MarcEdit 7 auxiliar d'inici: Pàgina 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Edició feliç!</linkLabel1>
+<label5>recursos. GetString ("label5. Text")</label5>
+<label1>Felicitats!  Estàs preparat per utilitzar MarcEdit 7</label1>
+<this>MarcEdit 7 auxiliar d'inici: acabat</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Tancar</cmdClose>
+<ck_remote>Resoldre entitats remots</ck_remote>
+<ck_Marc8>Convertir en MARC-8</ck_Marc8>
+<opt_default>Per defecte</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Desa</cmdSave>
+<gp_XSLT>XSLT motor</gp_XSLT>
+<label7>Final Format</label7>
+<label6>Original Format</label6>
+<label4>XSLT/XQuery camí</label4>
+<label3>Nom de la funció (àlies):</label3>
+<label2>Informació general:</label2>
+<lnkXMLFunctionWizard>XML funció auxiliar</lnkXMLFunctionWizard>
+<groupBox1>Accions</groupBox1>
+<lnkAdd>Afegir</lnkAdd>
+<lnkModify>Modificar</lnkModify>
+<lnkDelete>Suprimir</lnkDelete>
+<label5>Format:</label5>
+<label1>Funcions definides:</label1>
+<this>Editar funcions XML</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

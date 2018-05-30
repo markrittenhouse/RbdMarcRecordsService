@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<theme>
+  <name>Dark (High Contrast) Theme</name>
+  <global>
+    <!--Use HTML web color codes for these values-->
+    <font_color>#fbf9f4</font_color>
+    <background_color>#353839</background_color>
+  </global>
+  <marceditor>
+    <font_color>#fbf9f4</font_color>
+    <background_color>#353839</background_color>
+  </marceditor>
+  <overrides>
+    <!--
+      Override values
+      <menus>
+         <font_color>         
+         <background_color>
+      </menus>
+      <links>
+         <font_color>
+         <visited_font_color>
+         <behavior> [set to always, hover, none]
+      </links>
+    -->
+  </overrides>
+</theme>

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using MARCEngine5;
+
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
 using MarcRecordServiceApp.Core.MarcRecord;
+using MARCEngine5;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {

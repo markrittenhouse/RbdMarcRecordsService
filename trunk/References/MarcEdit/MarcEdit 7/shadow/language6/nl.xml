@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Ophalen van Records</mnuExtract>
+<cmenuClipboard>Naar klembord kopiëren</cmenuClipboard>
+<cmenuSubfields>Graaf Subvelden</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Help</cmenuHelp>
+<cmd_OK>Sluiten</cmd_OK>
+<cmd_Report>Rapport genereren</cmd_Report>
+<lb_ReportStyle>De stijl van het verslag:</lb_ReportStyle>
+<opt_tab>Tab Delimited verslag</opt_tab>
+<opt_xml>XML-rapport</opt_xml>
+<opt_html>HTML-rapport</opt_html>
+<this>Veld Count</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Richting:</groupBox3>
+<rd_down>Down</rd_down>
+<rd_up>Omhoog</rd_up>
+<btn_findall>Alles zoeken</btn_findall>
+<groupBox1>Zoekopties:</groupBox1>
+<ck_f_whole_word>Alleen heel woord zoeken</ck_f_whole_word>
+<ck_find_regex>Reguliere expressies gebruiken</ck_find_regex>
+<ck_f_match_case>Hoofdlettergevoelig</ck_f_match_case>
+<cmdFClose>Sluiten</cmdFClose>
+<cmdFFind>Zoeken</cmdFFind>
+<lb_FindWhat>Zoeken:</lb_FindWhat>
+<cmdNav_Find>Zoeken</cmdNav_Find>
+<cmdReplaceNav>Vervangen</cmdReplaceNav>
+<ckReplaceConditional>Zoeken/vervangen uitvoeren als...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Indien:</label1>
+<cmd_R_Close>Sluiten</cmd_R_Close>
+<cmd_R_All>Alles vervangen</cmd_R_All>
+<cmd_R_Replace>Vervangen</cmd_R_Replace>
+<groupBox2>Zoekopties:</groupBox2>
+<ck_Replace_ExactWordMatch>Exact Word Match</ck_Replace_ExactWordMatch>
+<ckMultiLine>MultiLine evaluatie</ckMultiLine>
+<ckFile>Externe zoeken/vervangen Criteria gebruiken</ckFile>
+<ck_R_RegExp>Reguliere expressies gebruiken</ck_R_RegExp>
+<ck_R_Case>Hoofdlettergevoelig</ck_R_Case>
+<lb_ReplaceWith>Vervangen:</lb_ReplaceWith>
+<lb_R_FindWhat>Zoeken:</lb_R_FindWhat>
+<this>Zoeken/vervangen:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Status:
+
+</lb_bProccess_status>
+<ck_bTask>Laden van taken</ck_bTask>
+<ckBatchProcessSubfolders>Submappen opnemen</ckBatchProcessSubfolders>
+<lb_Operation>Functie:</lb_Operation>
+<cmdBClose>Sluiten</cmdBClose>
+<cmdBProcess>Proces</cmdBProcess>
+<lb_Extensions>Bestandstypen:</lb_Extensions>
+<lb_BSource>Brondirectory:</lb_BSource>
+<lbBTitle>Batch proces MARC Records</lbBTitle>
+<groupBox1>Opties</groupBox1>
+<this>Batch proces Records</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Batchproces</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Uiteindelijke codering:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Oorspronkelijke codering:</lb_encoding>
+<lb_UTF8_Header>Tekenconversies</lb_UTF8_Header>
+<cmdCancel>Sluiten</cmdCancel>
+<cmdOK>Proces</cmdOK>
+<lb_UTF8_Dest>Doelbestand:</lb_UTF8_Dest>
+<lb_UTF8_Source>Bronbestand:</lb_UTF8_Source>
+<groupBox1>Coderingsinstellingen</groupBox1>
+<this>Characterset conversies</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Gegevenshulpmiddelen Clustering</label1>
+<label2>De gegevens die clustering gereedschappen geven een aantal vereenvoudigde clustering opties voor enha nced batch datagegevens.  Voor geavanceerde functionaliteit clustering, kunt u overwegen met behulp van OpenRefine.</label2>
+<groupBox1>Opties</groupBox1>
+<rdCustom>Aangepaste velden van de index</rdCustom>
+<rdControlData>Index van de gecontroleerde gegevens (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Index van alle gegevens</rdAll>
+<cmdImport>Gegevens importeren</cmdImport>
+<label3>Bronbestand:</label3>
+<label9>Gegevens sorteren:</label9>
+<label8>Clusters weergeven</label8>
+<label7>Cluster op de volgende deelgebieden:</label7>
+<cmbclusteringalgorithm>Levenshtein afstand</cmbclusteringalgorithm>
+<label6>Selecteer Clustering algoritme:</label6>
+<cmbClusterField>Namen (1xx, 7xx)</cmbClusterField>
+<label4>Selecteer de gegevens die u wilt clusteren:</label4>
+<cmdGenerateCluster>Genereren van Cluster</cmdGenerateCluster>
+<cmbAlg>Levenshtein afstand</cmbAlg>
+<lnkAddCriteria>Update toevoegen</lnkAddCriteria>
+<lnkClose>Sluiten</lnkClose>
+<lnkEditCluster>Alle wijzigingen zijn verwerkt</lnkEditCluster>
+<label5>Gegroepeerde gegevens:</label5>
+<this>Clustering Tools</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Taak Debugger</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Contextuele scheidingsteken</label8>
+<lb_Tab_Header>Export Tab gescheiden Records</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>In veldnamen het veldscheidingsteken bevatten</label18>
+<lbdelimiter>Selecteer de veldnamen het veldscheidingsteken bevatten</lbdelimiter>
+<cmdTClose2>Sluiten</cmdTClose2>
+<cmdTNext>Volgende &gt;&gt;</cmdTNext>
+<label1>Stap 1: Stel bestandspaden</label1>
+<ck_normalize>Normaliseren van veldgegevens</ck_normalize>
+<cmd_tab2_back>Terug</cmd_tab2_back>
+<lnkSettings>Instellingen...</lnkSettings>
+<lnkDeleteField>Veld verwijderen</lnkDeleteField>
+<lnkAddField>Veld toevoegen</lnkAddField>
+<label14>Subveld:</label14>
+<label11>Veld:</label11>
+<cmdTClose>Sluiten</cmdTClose>
+<cmdTExport>Exporteren</cmdTExport>
+<label2>Stap 2: Velden/subvelden definiëren om te exporteren</label2>
+<label3>Export Tab gescheiden Records</label3>
+<mnuLoad>Instellingen laden</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Instellingen opslaan</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Instellingen wissen</menuItem3>
+<this>Export Tab gescheiden Records</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Grootte:</label4>
+<lb_Example>Voorbeeldtekst</lb_Example>
+<lb_lang_font>Selecteer lettertype:</lb_lang_font>
+<cmdOK>OK</cmdOK>
+<cmdClose>Sluiten</cmdClose>
+<this>Selecteer lettertype</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Taken uitvoeren op importeren</groupBox1>
+<lnkSelectPre>Selecteer taak</lnkSelectPre>
+<cname>Naam</cname>
+<cPath>Pad van de taak</cPath>
+<groupBox2>Taken uitvoeren op exporteren</groupBox2>
+<linkLabel1>Selecteer taak</linkLabel1>
+<columnHeader1>Naam</columnHeader1>
+<columnHeader2>Pad van de taak</columnHeader2>
+<cmdSave>Opslaan</cmdSave>
+<cmdClose>Sluiten</cmdClose>
+<deleteItemToolStripMenuItem>Item verwijderen</deleteItemToolStripMenuItem>
+<this>ILS proces instellingen</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Submappen opnemen</ckJoinSubfolders>
+<cmdEditFile>Bestand bewerken</cmdEditFile>
+<lnkJoinedFiles>Gekoppelde bestanden weergeven</lnkJoinedFiles>
+<label19>Bestandstypen:</label19>
+<ck_JoinIndividual>Join individuele bestanden</ck_JoinIndividual>
+<cmdJoinCancel>Sluiten</cmdJoinCancel>
+<cmdJoinProcess>Proces</cmdJoinProcess>
+<lb_Join_Files>Bestand(en) join:</lb_Join_Files>
+<lb_Join_Source>Bestand opslaan:</lb_Join_Source>
+<lb_Join_Header>MARCJoin Utility</lb_Join_Header>
+<lbJoinStatus>Status:</lbJoinStatus>
+<groupBox1>Opties</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Records Per bestand:</lb_Split_Records>
+<cmdSplitClose>Sluiten</cmdSplitClose>
+<cmdSplitProcess>Proces</cmdSplitProcess>
+<lb_Split_Folder>Doelmap:</lb_Split_Folder>
+<lb_Split_Source>Bronbestand:</lb_Split_Source>
+<lb_Split_Header>MARCSplit Utility</lb_Split_Header>
+<groupBox1>Opties</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>De naam van het thema:</label1>
+<label2>Beschrijving:</label2>
+<label3>Globale waarden</label3>
+<label4>Tekstkleur</label4>
+<label5>Achtergrondkleur</label5>
+<label6>Achtergrondkleur</label6>
+<label7>Tekstkleur</label7>
+<label8>MarcEditor waarden</label8>
+<cmdSave>Opslaan</cmdSave>
+<cmdClose>Sluiten</cmdClose>
+<cmdPreview>Voorbeeld</cmdPreview>
+<richTextBox1>Voorbeeldtekst</richTextBox1>
+<label9>MarcEditor Display:</label9>
+<cmdOpen>Open</cmdOpen>
+<label10>GROUPBOX achtergrond</label10>
+<groupBox1>GROUPBOX voorbeeld</groupBox1>
+<this>MarcEdit thema bouwer</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>De MarcEdit de Wizard probleemoplosser is ontworpen om te helpen gebruikers bij het zoeken van de help die </label1>
+<gpStart>Opties</gpStart>
+<rdErrorMessage>Ik heb een foutmelding</rdErrorMessage>
+<rdErrorNumber>Ik heb een foutnummer</rdErrorNumber>
+<lbMessage>{message}</lbMessage>
+<cmdPage1>Volgende</cmdPage1>
+<gpResults>Resultaten</gpResults>
+<cmdClose>Sluiten</cmdClose>
+<lnkCreateDebugPackage>Maak een pakket Debug te verzenden voor foutopsporing?</lnkCreateDebugPackage>
+<label2>De Wizard probleemoplosser kon voor het zoeken van een artikel in de knowledge-base </label2>
+<this>De Wizard probleemoplosser MarcEdit</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Andere XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Definitieve indeling selecteren</label17>
+<label16>Stap 3:</label16>
+<label15>Bestand opslaan:</label15>
+<label13>Stap 2:</label13>
+<label12>De naam van de transformatie:</label12>
+<lnkNextPg1>Ga naar de volgende stap</lnkNextPg1>
+<label4>Selecteer bestand:</label4>
+<label3>Stap 1:</label3>
+<label2>middelen. GetString ("label2. Tekst")</label2>
+<label1>XML/JSON Profiler</label1>
+<lbTop>Document-Element:</lbTop>
+<ckTopLevel>Gebruik van de Document-Element</ckTopLevel>
+<lnkNextPg2>Ga naar de volgende stap</lnkNextPg2>
+<label7>Selecteer het element dat record</label7>
+<label6>Stap 3:</label6>
+<label5>XML/JSON Profiler</label5>
+<label14>Toewijzingen definiëren</label14>
+<lnkNextP3>Ga naar de volgende stap</lnkNextP3>
+<groupBox2>Argumenten</groupBox2>
+<ck_filing_characters>Gemeenschappelijk nonfiling gegevens berekenen</ck_filing_characters>
+<ck_sort>Sorteervelden</ck_sort>
+<button2>Belasting sjabloon</button2>
+<toolStripMenuItem2>Item bewerken</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Items verwijderen</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Lid worden van Items</joinItemsToolStripMenuItem>
+<groupBox1>Instellingen</groupBox1>
+<ckTrim>Trim bestaande interpunctie</ckTrim>
+<ck_Repeatable>Herhaalbare subveld</ck_Repeatable>
+<P3_ck_constant>Constante Data</P3_ck_constant>
+<P3_cmd_Apply>Argument toevoegen</P3_cmd_Apply>
+<P3_lb_punct>Termijn. Leestekens:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>Ind.:</P3_lb_indicators>
+<P3_mapto>Toewijzen aan:</P3_mapto>
+<P3_lb_select>Selecteer:</P3_lb_select>
+<label9>Stap 4:</label9>
+<label8>XML/JSON Profiler</label8>
+<lnkClose>Wizard te sluiten</lnkClose>
+<label11>De transformatie is gemaakt en toegevoegd aan de lijst van de XML-functies.
+</label11>
+<label10>XML/JSON Profiler</label10>
+<this>XML/JSON Profiler</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Type: boek</label11>
+<lbbTitle>006/008 opties:</lbbTitle>
+<lnkbBiog>BIOG:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>Indx:</lnkbIndx>
+<lnkbFest>Fest:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>CONT:</lnkbCont>
+<lnkbForm>Formulier:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Kwalen:</lnkbIlls>
+<lnkbType>Type:</lnkbType>
+<label12>Type: Electronic Resource</label12>
+<label5>006/008 opties:</label5>
+<lnkcFile>File:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Type:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Data:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 opties:</label1>
+<label13>Type: kaart</label13>
+<label3>006/008 opties:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>Indx:</lnkmIndx>
+<lnkmForm>Formulier:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>Proj:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Type:</lnkmType>
+<label14>Type: Gemengde materialen</label14>
+<label4>006/008 opties:</label4>
+<lnkmmForm>Formulier:</lnkmmForm>
+<lnkmmType>Type:</lnkmmType>
+<label15>Type: Score</label15>
+<label6>006/008 opties:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Formulier:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>Invulling:</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>Type:</lnkscType>
+<label10>Type: Voortzetting van Resource</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 opties:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>CONT:</lnkslCont>
+<lnkslForm>Formulier:</lnkslForm>
+<lnkslOrig>Orig:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>REGL:</lnkslRegl>
+<lnkslFreq>Freq:</lnkslFreq>
+<lnkslType>Type:</lnkslType>
+<label16>Type: Geluid opnemen</label16>
+<label8>006/008 opties:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Formulier:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>Invulling:</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>Type:</lnksdType>
+<label17>Type: Beeldmateriaal</label17>
+<label9>006/008 opties:</label9>
+<lnkvmTech>Technologie:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Formulier:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Tijd:</lnkvmTime>
+<lnkvmType>Type:</lnkvmType>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_Close>Sluiten</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Formulier:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>middelen. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>Over mij:</lb_Authors>
+<lbBuildCode>Code bijwerken:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>Website van het project:</label5>
+<label2>Met dank aan:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Gewijzigd:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Auteur:</lbAuthor>
+<lbVersion>Nummer van de build:</lbVersion>
+<label4>Over MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.net/Technical-Details</linkLabel1>
+<label1>Technische Details:</label1>
+<this>Over MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Belasting</cmdLoad>
+<cmdClose>Sluiten</cmdClose>
+<cmdDelete>Verwijderen</cmdDelete>
+<this>AutoOpslaan-bestanden:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Velden bewerken</lnk_Edit_Fields>
+<lnkCopy>Veldgegevens kopiëren</lnkCopy>
+<lnkSwapFields>Swap velden</lnkSwapFields>
+<lnkIndicators>Bewerken van indicatoren</lnkIndicators>
+<lnkSubfield>Subveld gegevens bewerken</lnkSubfield>
+<lnkAddDelete>Veld toevoegen/verwijderen</lnkAddDelete>
+<groupBox8>Veldopties verwijderen</groupBox8>
+<ckRemoveByPostition>Verwijderen door veldpositie</ckRemoveByPostition>
+<ck_RemoveIfNot>Verwijder als veldgegevens niet overeenkomt met</ck_RemoveIfNot>
+<ck_dedup>Verwijderen van dubbele gegevens</ck_dedup>
+<groupBox7>Veldopties toevoegen</groupBox7>
+<ck_A_addifnotduplicate>Voeg het veld alleen als niet een duplicaat</ck_A_addifnotduplicate>
+<ck_A_Insert>Invoegen voor</ck_A_Insert>
+<ck_A_not_present>Veld alleen toevoegen, indien niet aanwezig</ck_A_not_present>
+<ck_AddIfPresent>Voeg een veld toe indien aanwezig</ck_AddIfPresent>
+<ck_last>Laatst invoegen</ck_last>
+<groupBox6>Algemene opties</groupBox6>
+<ck_delete_batch>Proces batch operatie</ck_delete_batch>
+<ck_A_Case>Hoofdlettergevoelig</ck_A_Case>
+<ck_A_regular_Expression>Gebruik reguliere expressies</ck_A_regular_Expression>
+<label1>Zoeken:</label1>
+<cmd_A_Close>Sluiten</cmd_A_Close>
+<cmd_A_Add>Veld toevoegen</cmd_A_Add>
+<cmd_A_Delete>Veld verwijderen</cmd_A_Delete>
+<label3>Veldgegevens:</label3>
+<lb_A_Field>Veld:</lb_A_Field>
+<lb_A_Title>Toevoegen/verwijderen veld Utility</lb_A_Title>
+<cmd_Sub_Close>Sluiten</cmd_Sub_Close>
+<cmd_Sub_Remove>Tekst verwijderen</cmd_Sub_Remove>
+<cmd_Sub_Replace>Tekst vervangen</cmd_Sub_Replace>
+<groupBox2>Zoekopties:</groupBox2>
+<ckDeleteDuplicate>Verwijderen van dubbele subveld</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Subveld verwijderen</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Subveld gegevens verplaatsen</ck_move_subfield>
+<ck_Reg_Express>Gebruik reguliere expressies</ck_Reg_Express>
+<ck_Sub_Case>Hoofdlettergevoelig</ck_Sub_Case>
+<ck_Sub_New>Nieuwe subveld alleen</ck_Sub_New>
+<ck_Sub_NotPresent>Subveld toevoegen, indien niet aanwezig</ck_Sub_NotPresent>
+<label8>Vervangen door:</label8>
+<label7>Veldgegevens:</label7>
+<label6>Subveld:</label6>
+<label5>Veld:</label5>
+<lb_Sub_Title>Subveld Utility bewerken</lb_Sub_Title>
+<cmd_I_Close>Sluiten</cmd_I_Close>
+<cmd_I_Replace>Vervangen</cmd_I_Replace>
+<lb_Ind_Replace>Vervangen van indicatoren</lb_Ind_Replace>
+<label12>Veldgegevens:</label12>
+<label11>Indicatoren</label11>
+<label10>Veld:</label10>
+<lb_Ind_Title>Bewerken van Indicator Utilities</lb_Ind_Title>
+<ck_Match_All_Subfields>Overeenkomen met alle deelgebieden</ck_Match_All_Subfields>
+<ck_swap_expression>Behandelen als reguliere expressie</ck_swap_expression>
+<label4>Zoeken:</label4>
+<cmd_Swap_Close>Sluiten</cmd_Swap_Close>
+<cmd_Swap_Process>Proces</cmd_Swap_Process>
+<groupBox3>Zoekopties</groupBox3>
+<ck_swap_once_per>Verwerken van één veld per swap</ck_swap_once_per>
+<ck_swap_sort>Soort veld gewijzigd</ck_swap_sort>
+<ck_Swap_Override>Voeg toe aan bestaande/nieuwe maken</ck_Swap_Override>
+<ck_Swap_Add>Toevoegen aan bestaand veld</ck_Swap_Add>
+<ck_Swap_Copy>Bron kopiëren</ck_Swap_Copy>
+<label20>Gewijzigde gegevens:</label20>
+<label22>Subvelden</label22>
+<label23>Indicatoren</label23>
+<label24>Veld</label24>
+<label19>Oorspronkelijke gegevens:</label19>
+<label18>Zoeken:</label18>
+<label17>Subvelden</label17>
+<label16>Indicatoren</label16>
+<label15>Veld</label15>
+<lb_Swap_Title>Wisselen van veld Utility</lb_Swap_Title>
+<label14>Veldgegevens</label14>
+<lbFindInField>In veld zoeken</lbFindInField>
+<groupBox4>Opties</groupBox4>
+<ck_copy_field_regex>Reguliere expressies gebruiken</ck_copy_field_regex>
+<ck_copy_delete>Bronveld verwijderen</ck_copy_delete>
+<label2>Doelveld:</label2>
+<cmdCopyClose>Sluiten</cmdCopyClose>
+<cmdCopy>Kopie</cmdCopy>
+<label9>Bronveld:</label9>
+<label13>Veldgegevens kopiëren</label13>
+<label26>Positie:</label26>
+<label21>Vervangen:</label21>
+<label25>Zoeken:</label25>
+<groupBox5>Opties</groupBox5>
+<ck_editfield_match_case>Hoofdlettergevoelig</ck_editfield_match_case>
+<ck_UserRegularExpressions>Reguliere expressies gebruiken</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Sluiten</cmdFieldEdit_Close>
+<cmdEditField_Process>Proces</cmdEditField_Process>
+<label27>Veld:</label27>
+<label28>Bewerken van veldgegevens</label28>
+<this>MarcEdit.NET Batch bewerkingsgereedschap</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<label1>De Testbed BibFrame2 is een eenvoudig te gebruiken hulpprogramma ontworpen om metagegevens speci </label1>
+<label2>Bronbestand:</label2>
+<label3>Bestand opslaan:</label3>
+<label4>Data Serialization:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Vertalingsregels:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Bewerken</lnkEditXQuery>
+<label7>Bestandstype:</label7>
+<label8>Profiel:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Veld-id:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Bestand opslaan:</label3>
+<label2>Bronbestand:</label2>
+<label1>De gekoppelde Data Tool is ontworpen om een set MARC records doorlopen en toegangspunten in de 1xx, 6xx en 7xx gegevenselementen omzetten hun gekoppelde dat een eindpunten.</label1>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Sluiten</cmdCancel>
+<groupBox1>Id-Services</groupBox1>
+<ckLimiter>Maximum resolutie aan:</ckLimiter>
+<ck3xxFields>Proces 3xx velden</ck3xxFields>
+<label4>OCLC-nummer:</label4>
+<ckWorkId>OCLC werk ID insluiten</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>AutoDetect onderwerp ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>AutoDetect Main/toegevoegde Entry</ck_loc>
+<label5>Het bestand met regels:</label5>
+<cmdStatus>Servicestatus</cmdStatus>
+<lbstatus>Status:</lbstatus>
+<this>Bouwen van gekoppelde Records</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Zoeken</lnkFind>
+<lbResults>Resultaten:</lbResults>
+<lnkCatalog>Kyle Banerjee de catalogus Calculator</lnkCatalog>
+<cmdClose>Sluiten</cmdClose>
+<label1>LC Cutters</label1>
+<this>Catalogiseren van Rekenmachine</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>De teken Detection Tool maakt gebruik van een heuristical proces om een beste gok EXTE </label1>
+<cmdDetect>Detecteren</cmdDetect>
+<cmdClose>Sluiten</cmdClose>
+<label2>Resultaten:</label2>
+<ckDetailed>Uitgebreide resultaten</ckDetailed>
+<this>Teken detectie</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>middelen. GetString ("label1. Tekst")</label1>
+<lnkClassify>Over de OCLC classificeren Service</lnkClassify>
+<ck_all>Toevoegen aan alle Records</ck_all>
+<ck_single>Toevoegen aan geselecteerde Record</ck_single>
+<ck_lc>Library of Congress</ck_lc>
+<ck_dewey>Dewey Decimale</ck_dewey>
+<cmdProcess>Classificeren</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<label5>Invoegen als de volgende velden niet aanwezig zijn (voorbeeld: 050 060; 090; 092)</label5>
+<label4>Gegenereerde classificaties in het volgende veld invoegen:</label4>
+<ck_cutters>Scharen en datums berekenen</ck_cutters>
+<ck_use_z>Gebruik subveld z voor het afstemmen van</ck_use_z>
+<ck_DateMod>Vlag aan datum toevoegen</ck_DateMod>
+<ck_omit_serial>Weglaten van datum voor Series</ck_omit_serial>
+<ck_omit_integrated>Datum voor geïntegreerde resources weglaten</ck_omit_integrated>
+<ck_omit>Datum uitzonderingen toevoegen</ck_omit>
+<ck_always_fast>Altijd snelle rubrieken toevoegen</ck_always_fast>
+<ck_conditional_fast>SNELLE rubrieken toevoegen als er geen onderwerptitels aanwezig zijn</ck_conditional_fast>
+<label6>Indicatoren:</label6>
+<cmdInsert>Invoeging instructies</cmdInsert>
+<cmdClassification>Classificaties</cmdClassification>
+<cmdSubjects>Onderwerptitels</cmdSubjects>
+<lnkClassification>Kies classificatie</lnkClassification>
+<lnkSubjects>Kies onderwerp opties</lnkSubjects>
+<lnkOptions>Opties instellen</lnkOptions>
+<cmdOptions>Opties</cmdOptions>
+<label2>Subveld:</label2>
+<label3>Cuttering subveld:</label3>
+<this>Indeling genereren</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Constante Data</columnHeader1>
+<columnHeader3>Snelkoppeling</columnHeader3>
+<cmdClose>Sluiten</cmdClose>
+<lnkKey>Toetstoewijzing</lnkKey>
+<lnkEdit>Bewerken van de geselecteerde tekenreeks</lnkEdit>
+<lnkDelete>Verwijderen van de geselecteerde tekenreeks</lnkDelete>
+<lnkNew>Nieuwe tekenreeks maken</lnkNew>
+<lbActions>Acties:</lbActions>
+<lbMacro>Constante Data:</lbMacro>
+<this>Constante gegevens bewerken</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>De Prefix van het nummer:</lb_prefix>
+<lb_digit>Start de cijfers:</lb_digit>
+<ck_autogenerate>In nieuwe records invoegen</ck_autogenerate>
+<button1>OK</button1>
+<button2>Sluiten</button2>
+<lb_length>Cijfer lengte (min voorvoegsel)</lb_length>
+<ckgenerate>In het huidige bestand genereren</ckgenerate>
+<ck_label>Mark Record nummers</ck_label>
+<label1>Veld/subveld (voorbeeld: 001, 949$ b)</label1>
+<ck_repeat>Altijd invoegen</ck_repeat>
+<this>Genereren van controlenummers</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Gebruik Fuzzy Matching</ck_UseFuzzyMatch>
+<ck_save>Dedup Items om te bewaren</ck_save>
+<ck_unique>Unieke Items van de uitvoer</ck_unique>
+<ck_remove>Verwijder dubbele Items</ck_remove>
+<lbOptions>Opties:</lbOptions>
+<label1>Dedup bij te houden:</label1>
+<lb_Control>Het veld van het besturingselement:</lb_Control>
+<cmdClose>Sluiten</cmdClose>
+<cmdOK>Proces</cmdOK>
+<btnCancel>Annuleren</btnCancel>
+<btnNext>Volgende</btnNext>
+<label4>Bestand opslaan:</label4>
+<label3>Vind doublures van de volgende bestanden:</label3>
+<label2>Record ontdubbeling Tool</label2>
+<label5>Vertrouwen:</label5>
+<this>Record ontdubbeling</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Selecteer logboekbestand:</label1>
+<groupBox1>Opties</groupBox1>
+<ckChanged>Uittreksel van gewijzigde Records</ckChanged>
+<ckEnhance>Verbeteren van de Logs</ckEnhance>
+<label2>Records selecteren:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<this>Logboekbeheer</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext is de ruimte van een laboratorium om nieuwe instrumenten en concepten met betrekking tot de </lbaboutmn>
+<lnkOpenRefine>OpenRefine integratie</lnkOpenRefine>
+<lnkSPARQL>SPARQL Browser</lnkSPARQL>
+<lnkLinkIds>Koppeling-id 's</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Dit hulpprogramma gebruiken om gegevens te verplaatsen tussen MARC of MarcEdit de Mnemonic-indeling en OpenRef </label1>
+<label2>Bronbestand:</label2>
+<label3>Bestand opslaan:</label3>
+<rdExport>Exporteren naar OpenRefine</rdExport>
+<rdImport>Importeren uit OpenRefine</rdImport>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Sluiten</cmdCancel>
+<lbStatus>Status:</lbStatus>
+<groupBox1>Opties</groupBox1>
+<this>Hulpmiddel van de overdracht van de OpenRefine gegevens</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Selecteer bestanden om te delen:</label1>
+<ckconfig>Configuratie-opties</ckconfig>
+<label2>Exporteert alle gegevens in de configuratiemap van de gebruiker.  Dit bevat configuratiegegevens, </label2>
+<ckXSLT>XSLT-functies</ckXSLT>
+<label3>Exporteren van de gedefinieerde XSLT-stylesheets
+</label3>
+<ckMacros>Gedefinieerde macro's en taken</ckMacros>
+<label4>Alle gedefinieerde macro's en taken exporteren...
+</label4>
+<label5>Alle gedefinieerde MarcEditor materiaalsoort sjablonen exporteren.</label5>
+<ckTemplates>Gedefinieerde MarcEditor sjablonen</ckTemplates>
+<cmdExport>Exporteren</cmdExport>
+<cmdClose>Sluiten</cmdClose>
+<this>Exportinstellingen</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Actie</columnHeader2>
+<columnHeader1>Gevonden tekst</columnHeader1>
+<button1>Sluiten</button1>
+<button2>Ga naar pagina</button2>
+<cmdFindUpdate>Find Query bewerken</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Alle resultaten gevonden</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<lbField>Voer het telefoonnummer veld te evalueren. (ex. 090)</lbField>
+<groupBox1>Opties</groupBox1>
+<rdTitle>Cutter volgorde (2xx, 1xx)</rdTitle>
+<rdDefault>Cutter volgorde (1xx, 2xx)</rdDefault>
+<groupBox2>Opties</groupBox2>
+<label1>Zoeken:</label1>
+<rdCustomField>Aangepast veld</rdCustomField>
+<rdMainEntry>Evalueren van de hoofdvermelding (1xx, 245)</rdMainEntry>
+<this>Genereren van scharen</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Gedefinieerde OAI Servers:</label1>
+<label2>(Gebruik shift/shift control om meerdere items te selecteren)</label2>
+<ck_date>Oogst van de laatste download</ck_date>
+<cmdCreate>Opslaan</cmdCreate>
+<button1>Sluiten</button1>
+<this>Oogst batchverwerking maken</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Bytes</BytesGroup>
+<label5>Bits</label5>
+<label4>ISO-8859-1</label4>
+<label3>Decimaal</label3>
+<label2>Hex</label2>
+<columnHeader1>Positie</columnHeader1>
+<columnHeader2>Bytes</columnHeader2>
+<columnHeader3>Tekst</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Bestand</menuItem1>
+<openToolStripMenuItem>Open</openToolStripMenuItem>
+<ExitProgram>Uitgang</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit resultatenvenster</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>De naam van de functie (Alias):</lb_Alias>
+<label1>Samen met:</label1>
+<cmd_ok>Opslaan</cmd_ok>
+<cmd_close>Sluiten</cmd_close>
+<this>Lid worden van de XML-functies</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Naam</columnHeader1>
+<columnHeader2>Pad</columnHeader2>
+<cmdOK>OK</cmdOK>
+<cmdClose>Sluiten</cmdClose>
+<this>Beschikbare taken</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Hulpmiddelen</mnuTools>
+<mnuAddinsEditLinkedData>De regels van de gekoppelde gegevens bewerken</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Bewerken van XML-bestand met regels</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Hoe ik nieuwe eindpunten Profile?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Update van het bestand met regels</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Log-beheer</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Geavanceerde Log-beheer</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Log-bestanden verwijderen</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Alle logboekbestanden weergeven</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Tekst met scheidingstekens vertaler</mnuAddinTranslator>
+<mnuExportGroup>Exporteren...</mnuExportGroup>
+<mnuToolsTabbed>Export Tab gescheiden Records</mnuToolsTabbed>
+<mnuToolsGateway>MARC Record exporteren</mnuToolsGateway>
+<mnuToolsSelect>MARC Records selecteren</mnuToolsSelect>
+<mnuToolsDelete>Verwijderen van geselecteerde Records</mnuToolsDelete>
+<mnuToolsExtract>Uittreksel van geselecteerde Records</mnuToolsExtract>
+<mnuToolsCharacterConversion>Teken conversie Tools</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>Characterset conversies</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Teken detectie</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit Script Wizard</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL Explorer</mnuExplorer>
+<toolStripMenuItem4>OAI Harvester Tools</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Oogst OAI Records</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Batch Harvester</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Batchverwerking maken</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Uitvoeren van Batch-oogst</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Exporteren</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Importeren</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC Tools</mnuToolsUnimarcTools>
+<mnuAddinURL>Controleer of de URL 's</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU Client</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>MARC Processing Tools</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Batch proces Records</mnuToolsBatch>
+<toolClusterData>Cluster Gegevenshulpmiddelen</toolClusterData>
+<mnuToolsDedup>Dubbele Records zoeken</mnuToolsDedup>
+<generateToolStripMenuItem>Genereren...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Telefoonnummers</mnuGenerateCallnumber>
+<toolStripMenuItem3>SNELLE koppen</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC onderwerptitels</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Records samenvoegen</mnutoolsmerge>
+<toolStripMenuItem5>RDA Helper</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC operaties</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC Record Downloader</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Bijwerken van Record van WorldCat Holdings</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Uploaden Bibliograph Records naar WorldCat</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Valideren van koppen</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Servicestatus</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Valideren van koppen</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Voorkeuren</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Plug-ins</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>Cd's-ISIS .iso =&gt; MARC vertaling</mnuaddincdsisis>
+<mnuHelp>Help</mnuHelp>
+<mnuHelpContents>Inhoud en Help</mnuHelpContents>
+<mnuHelpTutorials>Weergave Tutorials</mnuHelpTutorials>
+<mnuHelpOnline>On line Help</mnuHelpOnline>
+<mnuHelpList>Lid worden van de notificatielijst MarcEdit</mnuHelpList>
+<mnuHelpError>Suggesties/foutrapport</mnuHelpError>
+<mnuBlog>MarcEdit Blog</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit bekende problemen</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Systeeminfo</systemInfoToolStripMenuItem>
+<mnuAddLang>Bewerken van taalbestanden</mnuAddLang>
+<mnuRestartIn32bitMode>MarcEdit starten in 32-bits modus</mnuRestartIn32bitMode>
+<mnuFileShare>Delen van configuratie-instellingen</mnuFileShare>
+<exportSettingsToolStripMenuItem>Exportinstellingen</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Importinstellingen</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Opties voor probleemoplossing</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Verwijder tijdelijke bestanden</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Noto Unicode Fonts downloaden</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Reparatie taakbestand</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Netwerkbestanden terugzetten vanaf de back-up</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Selecteer taken te koppelen</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Reset configuratiegegevens</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Open HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Wizard probleemoplossing</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Downloaden van de Update (debug-modus)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Controleren op Updates</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Snelkoppelingen naar toepassingen</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Toepassing gegevenspad</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Taal gegevenspad</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Thema gegevenspad</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT-gegevenspad</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>Over...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>De auteur, Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit gebruiksrechtovereenkomst</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Wat zou u willen doen?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>Door de gebruiker gedefinieerde 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine gegevens</lnkUserDefined1>
+<lnkMarcToolsStart>MARC Tools</lnkMarcToolsStart>
+<lnkUserDefined2>Door de gebruiker gedefinieerde 2</lnkUserDefined2>
+<lnkUserDefined4>Gebruiker Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Ik wil graag:</groupBox1>
+<cmbLastToolUsed>Laatste gebruikte Tools</cmbLastToolUsed>
+<lnkTopic5>Werken met gekoppelde gegevens</lnkTopic5>
+<lnkTopic4>Vertalen van Excel naar MARC</lnkTopic4>
+<lnkTopic3>MARC-bestanden samenvoegen</lnkTopic3>
+<lnkTopic2>Oogst OAI gegevens</lnkTopic2>
+<lnkTopic1>Bewerken van een bestand van MARC</lnkTopic1>
+<this>MarcEdit {version} .beta door Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Oogst OAI gegevens</lbTitle>
+<lbServer>Het adres van de server:</lbServer>
+<lbSet>Naam:</lbSet>
+<lbMetadata>Metadata Type:</lbMetadata>
+<cmdOK>OK</cmdOK>
+<cmdClose>Sluiten</cmdClose>
+<opt_default>Standaard</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT-Engine:</label4>
+<ck_Raw>Oogsten van onbewerkte gegevens (OAI gegevens opslaan in lokale bestandssysteem)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Geavanceerde instellingen</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Time-out (in seconden).</lbTimeout>
+<ck_Translate>Vertalen naar MARC-8</ck_Translate>
+<label2>Einde:</label2>
+<label1>Start:</label1>
+<lbCrosswalk>Crosswalk Path:</lbCrosswalk>
+<cmdSave>Opslaan</cmdSave>
+<lnkDebug>Debug URL</lnkDebug>
+<tabPage1>Huis</tabPage1>
+<tabPage2>Geavanceerde instellingen</tabPage2>
+<this>Metadata Harvester</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Bronbestand van OCLC getallen:</label1>
+<cmdDownload>Downloaden</cmdDownload>
+<cmdClose>Sluiten</cmdClose>
+<label2>Bestand opslaan:</label2>
+<this>Bulk Download Records uit OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>Zoek de WorldCat:</label1>
+<cmbarg1>trefwoord</cmbarg1>
+<cmbconditional>en</cmbconditional>
+<cmdSearch>Zoek</cmdSearch>
+<cmdClose>Sluiten</cmdClose>
+<label2>Resultaten:</label2>
+<col_oclcnum>OCLC-nummer</col_oclcnum>
+<col_title>Titel</col_title>
+<ck_LocalBib>Downloaden van lokale bibliografische Record indien aanwezig</ck_LocalBib>
+<lnkAll>Selecteer alle</lnkAll>
+<label3>|</label3>
+<lnkNone>Geen</lnkNone>
+<this>Zoek OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Bijwerken uw OCLC WorldCat Holdings</label1>
+<groupBox1>Opties</groupBox1>
+<rdDeleteHoldings>Bedrijven verwijderen</rdDeleteHoldings>
+<rdAddHolding>Toevoegen van Holdings</rdAddHolding>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<label2>Instelling de Code:</label2>
+<label3>Indeling Schema:</label3>
+<cmb_schema>Library Of Congress</cmb_schema>
+<ck_debug>Afdrukken Debugging Info</ck_debug>
+<this>Update WorldCat Holdings</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Library Of Congress</cmb_schema>
+<label3>Indeling Schema:</label3>
+<label2>Instelling de Code:</label2>
+<cmdClose>Sluiten</cmdClose>
+<cmdProcess>Proces</cmdProcess>
+<label4>Bibliografische records met OCLC nummers worden bijgewerkt in WorldCat.  Bibliograph </label4>
+<label1>Code te houden:</label1>
+<lnkGetHoldings>Codes krijgen</lnkGetHoldings>
+<ckLocalBibData>Proces als lokale bibliografische Records</ckLocalBibData>
+<ck_deleterecords>Records verwijderen</ck_deleterecords>
+<this>Uploaden van Records naar WorldCat</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>OK</cmd_options_ok>
+<cmd_options_cancel>Sluiten</cmd_options_cancel>
+<cmd_options_apply>Toepassing</cmd_options_apply>
+<lnkMainWindow>Hoofdvenster</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Taal</lnkLanguage>
+<lnkEaseOfUse>Gebruiksgemak</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Updates</lnkUpdates>
+<lnkFileAssociations>Bestandskoppelingen</lnkFileAssociations>
+<lnkOther>Andere</lnkOther>
+<lnkILSIntegration>ILS integratie</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API-integratie</lnkOCLCAPI>
+<label15>Standaard programma 's</label15>
+<ckLogging>Logboekregistratie inschakelen:</ckLogging>
+<ckAutosave>Automatisch opslaan inschakelen</ckAutosave>
+<ck_enhanced_editor_loading>Met de verbeterde Paging Management</ck_enhanced_editor_loading>
+<ckRDATemplates>RDA-sjablonen gebruiken</ckRDATemplates>
+<ckCompileMarc8>Compileren van Records als MARC8</ckCompileMarc8>
+<label37>Logboekregistratie Path:</label37>
+<cksaveutf8>Compileren van Records als UTF8</cksaveutf8>
+<ck_intellisense>Intellisense inschakelen</ck_intellisense>
+<label2>Records per pagina</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Standaard codering:</lb_Encoding>
+<ck_nwindow>Bestanden openen in nieuw venster</ck_nwindow>
+<ck_append>Nieuwe Records toevoegen</ck_append>
+<lb_psize>De grootte van de Voorproef:</lb_psize>
+<ckUsePreview>Gebruik de voorvertoningsmodus</ckUsePreview>
+<cmd_editor_font_default>Standaardwaarden instellen</cmd_editor_font_default>
+<cmd_editor_set_font>Lettertype instellen</cmd_editor_set_font>
+<lb_Editor_Font_Props>MarcEditor lettertype-eigenschappen instellen:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Standaardwaarden instellen</cmd_editor_template_default>
+<cmd_editor_modify>Wijzigen</cmd_editor_modify>
+<lb_Current_Template>Huidige sjabloon:</lb_Current_Template>
+<lb_Editor_Template>MarcEditor sjabloon instellen</lb_Editor_Template>
+<label9>* Vereist programma opnieuw *</label9>
+<label8>PT.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Tekengrootte:</label4>
+<lb_Example>Voorbeeldtekst</lb_Example>
+<lb_lang_font>De doopvont van de taal instellen:</lb_lang_font>
+<lb_Set_Lang>Taalpakket voor instellen</lb_Set_Lang>
+<rd_theme_dark>Aangepaste thema's:</rd_theme_dark>
+<rd_theme_normal>Normal (standaardwaarde)</rd_theme_normal>
+<label39>Weergaveopties voor toepassing</label39>
+<ck_export_output>Ontvangst (capture ILS output) exporteren</ck_export_output>
+<lb_TCP_Timeout>Time-out:</lb_TCP_Timeout>
+<lb_TCP_Port>Poort:</lb_TCP_Port>
+<lb_TCP_Host>Adres van de host:</lb_TCP_Host>
+<lb_TCPIP_Props>TCP/IP-eigenschappen:</lb_TCPIP_Props>
+<ck_marc21>Records in MARC21-indeling</ck_marc21>
+<ck_marcxml_sax>Inheemse optie gebruiken (niet-XSLT proces)</ck_marcxml_sax>
+<groupBox2>XSLT-Engine</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode-normalisatie</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Standaard tekencodering:</label35>
+<ckC>Canonieke Decomposition (C)</ckC>
+<ckKD>Compatibiliteit ontleding (KD)</ckKD>
+<ck_Diacritics>Diakritische tekens gebruiken bij het afbreken van</ck_Diacritics>
+<lb_Diacritics>Algemene opties:</lb_Diacritics>
+<lb_Engine_XML_Options>XML-opties:</lb_Engine_XML_Options>
+<ck_engine_namespace>Namespace gebruiken</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Automatische updates is uitgeschakeld door de beheerder van uw systeem</labelAutoUpdateDisabled>
+<ckDetectProxy>Proxy systeeminstellingen gebruiken</ckDetectProxy>
+<ck_Update_Validator>Automatisch controleren op Updates van de Validator</ck_Update_Validator>
+<label3>U moet behoren tot een domein voor dit om te werken op dit moment.</label3>
+<groupBox4>Gebruikersgegevens:</groupBox4>
+<lb_domain>Domein:</lb_domain>
+<label6>Wachtwoord:</label6>
+<label5>Gebruikersnaam:</label5>
+<ckUpdates>Automatisch controleren op Updates</ckUpdates>
+<groupBox5>Set File verenigingen</groupBox5>
+<cmd_file_assoc_view>Weergavetypen</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Tekst verwijderen</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Type opslaan</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Koppelen (*.                      ) vijl type met de:</label7>
+<ck_mrk8_editor>(*.Mrk8) bestanden koppelen aan de MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>(*.Mrk) bestanden koppelen aan de MarcEditor</ck_mrk_editor>
+<ck_mrc>(*.Mrc) bestanden koppelen aan de MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Selecteer</lnkSelectILS>
+<lnkDeleteProfile>Verwijderen</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Toevoegen</lnkAddProfile>
+<label31>Profielen:</label31>
+<ck_ignore_ssl>SSL certificaatfouten negeren</ck_ignore_ssl>
+<lnk_ils_delete>Verwijderen</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Bewerken</lnk_ils_z3950_edit>
+<ck_ils_z3950>Z39.50 instellingen gebruiken</ck_ils_z3950>
+<ck_ils_enable>ILS opties inschakelen</ck_ils_enable>
+<label13>Hostnaam:</label13>
+<label12>Wachtwoord:</label12>
+<label11>Gebruikersnaam:</label11>
+<label10>Selecteer systeem:</label10>
+<lnkGetCodes>Codes krijgen bedrijf</lnkGetCodes>
+<label24>Code te houden:</label24>
+<cmb_schema>Library Of Congress</cmb_schema>
+<label22>Indeling Schema:</label22>
+<label23>Instelling de Code:</label23>
+<ckshow>Toon tekst</ckshow>
+<cmdValidateKeys>Valideren van sleutels</cmdValidateKeys>
+<linkLabel1>Verzoek/beheren een OCLC-toets (verbindt met OCLC)</linkLabel1>
+<label21>OCLC API-sleutel-instellingen</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Geheime sleutel (gepaard met metagegevens API-sleutel)</label18>
+<label17>OCLC metagegevens API-sleutel</label17>
+<label16>OCLC Search API-sleutel</label16>
+<lnkFilePaths>Locaties</lnkFilePaths>
+<label38>Netwerk Timeout (300 milliseconden standaard):</label38>
+<lnkCopyLocalFiles>Kopieert lokale bestanden nu</lnkCopyLocalFiles>
+<label30>Standaard MARC Tools stationspad instellen</label30>
+<label27>Bestandspaden:</label27>
+<label26>Map met taken:</label26>
+<label25>Netwerkmappen:</label25>
+<lb_mono>MONO pad:</lb_mono>
+<lb_temp>Tijdelijke pad instellen:</lb_temp>
+<ck_rss>Lezen van de RSS-Feed</ck_rss>
+<lb_title>Title-Tag:</lb_title>
+<lb_Author>Auteur Tag:</lb_Author>
+<lbCall>Gemeenschappelijk Europees oproepnummer Tag:</lbCall>
+<label1>Controle getal Tag:</label1>
+<ck_allow_z3950>Z39.50 functies inschakelen</ck_allow_z3950>
+<label28>Veldopties:</label28>
+<ck_touch_friendly>Touch vriendelijke menu's gebruiken</ck_touch_friendly>
+<ck64_bit>64-bits geïnstalleerd</ck64_bit>
+<ck_32bit>32-bits geïnstalleerd</ck_32bit>
+<label36>MS Office-versie:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: koppelingsvelden gebruiken voor sorteren</ckSort880>
+<ck880Infile>Infile 880 velden met veld paren</ck880Infile>
+<label29>Sorteeropties:</label29>
+<ckShowDescriptionInScreenTips>Functie beschrijvingen van functies in Scherminfo weergeven</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Sneltoetsen weergeven In Scherminfo</ckScreenTipShortcuts>
+<label42>Toetsenbordopties</label42>
+<ckProvideSoundAccess>Feedback met geluid</ckProvideSoundAccess>
+<label41>Opties voor klantenfeedback</label41>
+<groupBox3>Acties:</groupBox3>
+<lnkSearch4Themes>Geselecteerde thema verwijderen</lnkSearch4Themes>
+<lnkNewTheme>Nieuw thema maken</lnkNewTheme>
+<label40>MarcEdit meer toegankelijk maken</label40>
+<this>MarcEdit voorkeuren</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Beschikbare Plugins:</label1>
+<ch1>Plugin naam</ch1>
+<ch2>URL</ch2>
+<c3>Bestandsgrootte</c3>
+<c4>Version #:</c4>
+<cmddownload>Downloaden</cmddownload>
+<cmdClose>Sluiten</cmdClose>
+<columnHeader1>Verwijderen?</columnHeader1>
+<columnHeader2>Plugin naam</columnHeader2>
+<columnHeader3>Klassenaam</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Geïnstalleerde plug-ins:</label2>
+<cmdRemove>Verwijderen</cmdRemove>
+<c5>MarcEdit versienummer</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>middelen. GetString ("label1. Tekst")</label1>
+<label2>Patroon:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Annuleren</cmdCancel>
+<lbstatus>Status:</lbstatus>
+<ckEscape>Gegevens ontsnappen URL</ckEscape>
+<ckAddNew>Vervangen van bestaand veld</ckAddNew>
+<ck_addnewfield>Een nieuw veld toevoegen, indien niet aanwezig</ck_addnewfield>
+<ckAlwaysAdd>Altijd nieuw veld toevoegen</ckAlwaysAdd>
+<groupBox1>Opties</groupBox1>
+<this>Bouwen van nieuwe velden</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Batch Search</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Resultaten</groupBox3>
+<lnkClearResults>Duidelijke resultaten</lnkClearResults>
+<lnkDownload>Alle Items downloaden</lnkDownload>
+<lnkGetNext>Krijg volgende {limiet}</lnkGetNext>
+<lnkDownloadAllHoldings>Het downloaden van alle bedrijven</lnkDownloadAllHoldings>
+<col1>Positie</col1>
+<col2>Titel</col2>
+<columnHeader1>Database</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Geselecteerde Items downloaden</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Download geselecteerde bedrijven Records</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Geselecteerde records weergeven</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Opties</groupBox1>
+<rdEditDB>Selecteer Database</rdEditDB>
+<rdEditSettings>Instellingen bewerken</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Records per pagina</label4>
+<ckUnicode>Ophalen van Unicode</ckUnicode>
+<lb_encoding_single>Server-tekenset</lb_encoding_single>
+<lbSearchb>Zoeken:</lbSearchb>
+<lbSearch>Query Database:</lbSearch>
+<label3>Database voorkeur instellen:</label3>
+<cmdSelectDatabase>Selecteer</cmdSelectDatabase>
+<MCol3>ID</MCol3>
+<MCol1>Naam</MCol1>
+<MCol2>Type</MCol2>
+<lb_PModifyTitle>Selecteer Database:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Acties</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Nieuwe Z39.50 Server toevoegen</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Nieuwe SRU Server toevoegen</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Voorkeuren</preferencesToolStripMenuItem>
+<cmdCloseSettings>Sluiten</cmdCloseSettings>
+<label5>Bepalen van de velden (voor batch processing ontdubbeling)</label5>
+<cmdSaveSettings>Instellingen opslaan</cmdSaveSettings>
+<rdDownloadPreferred>Downloaden van voorkeur bron</rdDownloadPreferred>
+<rdDownloadMostComplete>Downloaden van de meest Complete Records</rdDownloadMostComplete>
+<rdAllRecords>Het downloaden van alle Records</rdAllRecords>
+<label2>Batch Processing opties</label2>
+<label1>Voorkeuren</label1>
+<this>MarcEdit Z39.50/SRU Client</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Proces de 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Velden bewerken</lnkEditFields>
+<ck_040>040--wijzigen $erda toevoegen</ck_040>
+<ck_qualifyinginfo>Kwalificatie van informatie (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>Lijst bewerken</lnkEdit>
+<ck_dgmd>Verwijderen van GMD</ck_dgmd>
+<ckAbbrev>Afkortingen uit te breiden</ckAbbrev>
+<ckgmd>Genereren van GMD</ckgmd>
+<ck264>Evalueren van 260/264</ck264>
+<ck_signs>Gebruik altijd ©, ℗ symbolen</ck_signs>
+<ck381>Toevoegen van 381--andere</ck381>
+<ck380>Toevoegen van 380--vorm van werk</ck380>
+<ck347>Toevoegen 347--digitale kenmerken</ck347>
+<ck346>Toevoegen van 346--Video kenmerken</ck346>
+<ck345>345--Proj toevoegen. Kenmerken</ck345>
+<ck344>Toevoegen van 344--klankkleur te veranderen</ck344>
+<ck337>Toevoegen van 337--mediatype
+338--toevoegen Type van de drager van</ck337>
+<ck336>Toevoegen 336--inhoudstype</ck336>
+<cmdProcess>OK</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<label1>Bron:</label1>
+<label2>Opslaan:</label2>
+<lnkAll>Alle</lnkAll>
+<label3>Selecteer:</label3>
+<label4>|</label4>
+<lnkNone>Geen</lnkNone>
+<label7>Status:</label7>
+<this>RDA Helper</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Sluiten</cmd_Close>
+<rEdit></rEdit>
+<this>Resultaten</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Huis</lnkHome>
+<label5>middelen. GetString ("label5. Tekst")</label5>
+<label4>Over RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>Over RobertCompare</lnkAbout>
+<ckSort>Vooraf bestanden sorteren</ckSort>
+<cmdClose>Sluiten</cmdClose>
+<cmdExecute>Uitvoeren</cmdExecute>
+<label1>Bestand opslaan:</label1>
+<label6>Bestanden vergelijken:</label6>
+<label2>middelen. GetString ("label2. Tekst")</label2>
+<lnkPreferences>Voorkeuren</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Sorteerveld:</lbSortField>
+<lbdelete>Verwijderingen:</lbdelete>
+<lbAddColor>Toevoegingen:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Geen</lnkNone>
+<lnkAll>Selecteer alle</lnkAll>
+<col_title>Titel</col_title>
+<col_id>ID</col_id>
+<label3>|</label3>
+<label2>Resultaten:</label2>
+<cmdClose>Sluiten</cmdClose>
+<cmdSearch>Zoek</cmdSearch>
+<cmbarg1>titel</cmbarg1>
+<label1>De zoekdatabase:</label1>
+<ck_batch>Batch Search</ck_batch>
+<this>Zoek</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Selecteer</cmdSelect>
+<this>Selecteer ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Recordnummer</columnHeader1>
+<columnHeader2>Veld weergeven</columnHeader2>
+<selectItemsToolStripMenuItem>Items selecteren</selectItemsToolStripMenuItem>
+<cmdImport>Bestand importeren</cmdImport>
+<cmdfDelete>Verwijder geselecteerde</cmdfDelete>
+<cmdExport>Export geselecteerd</cmdExport>
+<cmdExit>Uitgang</cmdExit>
+<lb_Search>Zoeken:</lb_Search>
+<lb_DisplayField>Veld weergeven:</lb_DisplayField>
+<lb_SourceFile>MARC bronbestand:</lb_SourceFile>
+<ckSource>Opslaan van de gewijzigde records in bron</ckSource>
+<ck_retain>Geselecteerde Items behouden</ck_retain>
+<cmd_Generate>Rapport genereren</cmd_Generate>
+<ck_find_all>Alle gegevens van de Record zoeken</ck_find_all>
+<ck_use_regex>Reguliere expressies gebruiken</ck_use_regex>
+<cmdRandomExport>Export willekeurige</cmdRandomExport>
+<lnkDoesNotMatch>Komt niet overeen met</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Selecties omkeren</lnkInvert>
+<ckExactWord>Exact Word Match</ckExactWord>
+<this>MarcEdit.NET: Geselecteerde MARC Records wijzigen</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Selecteer velden uit te sluiten van sorteren</lb_title>
+<lb_fields>Sorteervelden:</lb_fields>
+<lbExclude>Velden uitsluiten:</lbExclude>
+<cmd_OK>OK</cmd_OK>
+<cmd_Close>Sluiten</cmd_Close>
+<this>Aangepaste sortering Wizard</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL eindpunt:</lbsparql>
+<cmdQuery>Query</cmdQuery>
+<cmdClose>Sluiten</cmdClose>
+<lbQuery>SPARQL Query:</lbQuery>
+<lbresults>Resultaten:</lbresults>
+<cklocal>Lokaal bestand laden</cklocal>
+<lbOutput>Uitgang:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Voorbeeldquery's:</groupBox1>
+<lbExample3>Query voor: 軍事基地</lbExample3>
+<lnkExample3>Bibliotheek van de Japanse DIET</lnkExample3>
+<lbexample2>Getty query voor kopersulfaat</lbexample2>
+<lnkExample2>Getty voorbeeld</lnkExample2>
+<label1>MESH query voor Influenza, mens</label1>
+<lnkExample1>Voorbeeld van de Maas</lnkExample1>
+<label2>Sparql referenties:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL eindpunten (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Wikipedia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL Tutorials</lnkTutorials>
+<this>SPARQL Browser</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>Cd's-ISIS =&gt; MARC vertaling</lb_title>
+<groupBox1>Gebruikersinvoer</groupBox1>
+<lb_output>Output-bestand:</lb_output>
+<lb_input>Input File:</lb_input>
+<groupBox2>Opties:</groupBox2>
+<rd_advanced>Geavanceerde vertaling</rd_advanced>
+<rd_simple>Eenvoudige vertaling</rd_simple>
+<lb_subfield>Subveld Marker</lb_subfield>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_Close>Sluiten</cmd_Close>
+<this>Cd's-ISIS .iso =&gt; MARC vertaling</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Opties:</lb_title>
+<lnkLoad>Laden van veld toewijzingen</lnkLoad>
+<ck_indicators>Indicatoren toevoegen</ck_indicators>
+<ckLDR>Juiste LDRs</ckLDR>
+<ck_subfield>Toonaangevende subveld toevoegen</ck_subfield>
+<cmdOK>OK</cmdOK>
+<cmdClose>Sluiten</cmdClose>
+<this>Geavanceerde opties</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Annuleren</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Speciale tekens:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Invoegen</cmd_Insert>
+<cmdClose>Sluiten</cmdClose>
+<this>MARC-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>De naam van de lijst van de taak:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Delete veld taak toevoegen</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Edit subveld taak toevoegen</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Edit Indicator taak toevoegen</addToolStripMenuItem>
+<cmdSave>Opslaan</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Nieuwe veld taak toevoegen</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Sluiten</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Vervangen die alle taak toevoegen</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Reactie toevoegen</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Veld bewerken taak toevoegen</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Swap veld taak toevoegen</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Kopie veld taak toevoegen</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Takenlijst toevoegen</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>RDA Helper toevoegen</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Gekoppelde gegevens taak toevoegen</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Bouw nieuwe veld taak toevoegen</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Sneltoetsen bewerken</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Zaak verklaringen</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>kleine letters</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>HOOFDLETTERS</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Beginhoofdletters</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Eerste geval</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Eerste geval kapitaliseren</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Veld bewerkingen</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Schoon slimme tekens</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Wiskundige functies</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Omzetten in decimale graden</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Lege regels verwijderen</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Cutter Tools</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Genereren van scharen</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Genereren van Sanborn3 scharen</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Actie van de geselecteerde taak kopiëren</mnuCopy>
+<mnuPasteTask>Plakken taakactie</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Opmerking de taak geselecteerd</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>UnComment geselecteerde taken</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Taken:</lbTasks>
+<label1>Acties:</label1>
+<label2>Beschrijving:</label2>
+<cmdDebug>Debug</cmdDebug>
+<this>Taaklijst bewerken</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Naam</columnHeader1>
+<columnHeader2>Pad</columnHeader2>
+<columnHeader3>Snelkoppeling</columnHeader3>
+<columnHeader4>Beschrijving</columnHeader4>
+<cmdClose>Sluiten</cmdClose>
+<lnkNew>Nieuwe takenlijst maken</lnkNew>
+<lbMacro>Takenlijsten, lijsten:</lbMacro>
+<lnkCloneTask>Kloon bestaande taaklijst</lnkCloneTask>
+<groupBox1>Taakacties</groupBox1>
+<lnkRelink>Taken koppelen</lnkRelink>
+<lnk_import_task>Import taak</lnk_import_task>
+<groupBox2>Bestaande taken beheren</groupBox2>
+<lnkBackup>Back-up van alle taken</lnkBackup>
+<lnk_export_task>Geselecteerde taak exporteren</lnk_export_task>
+<lnkKey>Toetstoewijzing</lnkKey>
+<lnkEdit>Lijst van de geselecteerde taak bewerken</lnkEdit>
+<lnkDelete>Lijst van de geselecteerde taak verwijderen</lnkDelete>
+<this>Taakbeheer</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Truncate lange Records</ckTruncate>
+<label1>Selecteer bewerking:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Standaard tekencodering:</label35>
+<ck_Marc8>Vertalen naar MARC-8</ck_Marc8>
+<ck_UTF8>Vertalen naar UTF8</ck_UTF8>
+<lb_OutputFile>Opslaan als...</lb_OutputFile>
+<lb_InputFile>Open...</lb_InputFile>
+<cmdCancel>Sluiten</cmdCancel>
+<cmdEdit>Records bewerken</cmdEdit>
+<cmdExecute>Uitvoeren</cmdExecute>
+<lb_Results>Resultaten:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Hulpmiddelen</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Terug naar het hoofdvenster</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Bewerken van XML-functielijst</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Batch proces Records</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>Characterset conversie</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC Tools</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Wat zou u willen doen?</mnuContextHelp>
+<lnkTopic1>Mijn bestand converteren naar een verschillende tekencodering</lnkTopic1>
+<lnkTopic2>Toevoegen/wijzigen van de XML-vertalingen</lnkTopic2>
+<lnkTopic4>Hoe vind ik een fout in mijn bestand MARC?</lnkTopic4>
+<groupBox1>Ik wil graag:</groupBox1>
+<groupBox2>Selecteer gegevens aan proces:</groupBox2>
+<groupBox3>Teken coderingsopties</groupBox3>
+<this>MARC Tools</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit biedt een aantal lite-gewicht UNIMARC conversie tools.  Als deze hulpprogramma's voor u van belang zijn, maar u zou willen helpen om ze beter, geef dan f eedback.
+
+</label1>
+<label2>Bron</label2>
+<label3>Bestemming</label3>
+<groupBox1>Opties</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<this>UNIMARC Tools</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Update de opmerkingen:</label1>
+<cmd_Update>Update</cmd_Update>
+<cmd_Cancel>Annuleren</cmd_Cancel>
+<this>Update MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode is gecodeerd</ckIsUTF8>
+<ck_merge_to_source>Samenvoegen van bron</ck_merge_to_source>
+<label17>Bestand opslaan:</label17>
+<label16>Catalogiseren van bron</label16>
+<ck_SameFile>Bron-bestand verwerken</ck_SameFile>
+<cmd_merge_cancel>Annuleren</cmd_merge_cancel>
+<cmd_merge_next>Volgende =&gt;</cmd_merge_next>
+<lb_merge_title>Recordgegevens samenvoegen</lb_merge_title>
+<ck_merge_repeatable>Herhaalbaar is</ck_merge_repeatable>
+<lb_id>Record-id:</lb_id>
+<lb_merge>Samenvoegen:</lb_merge>
+<lb_source>Bronbestand:</lb_source>
+<ck_overlayexisting>Overlay bestaande Items</ck_overlayexisting>
+<label4>Vertrouwen de waarde:</label4>
+<ck_mergeUnique>Unieke Items samenvoegen</ck_mergeUnique>
+<button1>Annuleren</button1>
+<cmd_merge_select_fields_next>Volgende =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Terug</cmd_merge_select_fields_back>
+<label7>Samenvoegvelden:</label7>
+<label6>Selecteer veld:</label6>
+<label5>Recordgegevens samenvoegen: Velden selecteren</label5>
+<button5>Sluiten</button5>
+<label15>Bestanden zijn samengevoegd.  Resultaten gelegen in {merge_results_file}.</label15>
+<label13>Samenvoegen voltooid</label13>
+<this>MARC Records samenvoegen</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Het hulpmiddel van de bevestiging van de rubrieken kan worden gebruikt voor het valideren van 1xx, 6xx of 7xx velden.  Th e tool maakt gebruik van een combinatie van web en lokale diensten om te bepalen als een headin g in een geautoriseerde rubriek verschijnt.</label1>
+<ck_1xx>Machtigen 1xx/7xx velden</ck_1xx>
+<ck_6xx>6xx veld toestaan</ck_6xx>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Sluiten</cmdClose>
+<label2>Bron:</label2>
+<lbStatus>Status:</lbStatus>
+<cmdExtract>Extract</cmdExtract>
+<ckdeletecache>De lokale Cache verwijderen</ckdeletecache>
+<lnkDelimited>Opslaan met scheidingstekens</lnkDelimited>
+<ckonlyA>Alleen verwerken subveld A</ckonlyA>
+<ckVariant>Automatisch corrigeren varianten</ckVariant>
+<ckGenerateBriefHeadings>Het genereren van korte persoonlijke naam autoriteiten</ckGenerateBriefHeadings>
+<label3>Gegenereerde autoriteiten:</label3>
+<ckAddURIs>Insluiten URIs indien mogelijk</ckAddURIs>
+<ck_download_authorities>LC autoriteiten downloaden</ck_download_authorities>
+<this>Valideren van koppen</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Bronbestand:</lb_Source>
+<lb_Rules>Het bestand met regels:</lb_Rules>
+<cmd_Ok>OK</cmd_Ok>
+<cmd_close>Sluiten</cmd_close>
+<groupBox1>Opties</groupBox1>
+<optIdentify>Record structuur valideren</optIdentify>
+<opt_remove>Ongeldige records verwijderen</opt_remove>
+<opt_validate>Controleer met behulp van MARC regels bestand</opt_validate>
+<rdHex>Weergave in een HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>OK</cmd_Ok>
+<cmdCancel>Sluiten</cmdCancel>
+<groupBox1>De opties van het rapport:</groupBox1>
+<lb_MARC_Title>Titel:</lb_MARC_Title>
+<lbReport>Verslag Type:</lbReport>
+<lb_XSLT>XSLT-bestand:</lb_XSLT>
+<lb_Dest>Output-bestand:</lb_Dest>
+<lb_MARC>Input File:</lb_MARC>
+<lb_Fields>Velden:</lb_Fields>
+<lbTimeout>Timeout (in seconden)</lbTimeout>
+<this>Controleer of de URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>Over de OCLC snelle Service</lnkClassify>
+<label1>middelen. GetString ("label1. Tekst")</label1>
+<ck_conditional_fast>SNELLE rubrieken toevoegen als er geen onderwerptitels aanwezig zijn</ck_conditional_fast>
+<ck_always_fast>Altijd snelle rubrieken toevoegen</ck_always_fast>
+<label8>Rubrieken:</label8>
+<button1>Proces</button1>
+<cmd_Close>Sluiten</cmd_Close>
+<this>Genereren van snelle koppen</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Opslaan</cmd_save>
+<cmd_close>Sluiten</cmd_close>
+<ck_1xxa>$a: hoofdvermelding</ck_1xxa>
+<ck_245p>$p: naam van pt/sec. van werk</ck_245p>
+<ck_245n>$n: aantal pt/sec. van werk</ck_245n>
+<ck_245c>$c: verklaring van Responsiblity</ck_245c>
+<ck_245b>$b: rest van titel</ck_245b>
+<ck_245a>$a: titel</ck_245a>
+<ck_lang>Taal (posities: 35-37)</ck_lang>
+<ck_dates>Datums (posities: 7-14)</ck_dates>
+<ck_p7>BLvl (positie 7)</ck_p7>
+<ck_p6>Type (positie 6)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Controlenummers</label6>
+<ck_form>Formulier (posities: 23)</ck_form>
+<ck_245_h>$h: generaal materiaal aanwijzing</ck_245_h>
+<label5>Misc. velden:</label5>
+<label4>Veld 245:</label4>
+<label3>Veld Author (1xx)</label3>
+<label2>008 posities</label2>
+<label1>LDR positie</label1>
+<this>Samenvoegen van opties</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Database-eigenschappen</tabDBProps>
+<ck_Paused>Overschrijven pauze (6 sec.)</ck_Paused>
+<label1>Database:</label1>
+<ck_Show>Database weergeven</ck_Show>
+<lbPassword>Wachtwoord:</lbPassword>
+<lbUsername>Gebruikersnaam:</lbUsername>
+<lbSyntax>Syntaxis:</lbSyntax>
+<lbPort>Poort:</lbPort>
+<lbHost>Host:</lbHost>
+<lbname>Naam:</lbname>
+<tabDBAdvanced>Geavanceerde eigenschappen</tabDBAdvanced>
+<label4>Timeout (in seconden):</label4>
+<label2>Element-reeks:</label2>
+<label3>Andere opties:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Meer informatie:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Onderwerp:</lbSubject>
+<lbTitle>Titel:</lbTitle>
+<lbAuthor>Auteur:</lbAuthor>
+<lbadvTitle>Z39.50 kenmerk 4: structuur</lbadvTitle>
+<cmdSave>Opslaan</cmdSave>
+<cmdClose>Sluiten</cmdClose>
+<label17>Z39.50 Database-instellingen:</label17>
+<cmdDeleteZ3950>Verwijderen</cmdDeleteZ3950>
+<gbCustom>Aangepaste profielinstellingen</gbCustom>
+<label5>Titel Index:</label5>
+<label6>De Index van de auteur:</label6>
+<label10>Sleutelwoorden:</label10>
+<label7>Onderwerp Index:</label7>
+<label11>Record # Index:</label11>
+<label8>ISBN Index:</label8>
+<label12>ISSN Index:</label12>
+<cmdDeleteSRU>Verwijderen</cmdDeleteSRU>
+<ck_SRU_Show>Database weergeven</ck_SRU_Show>
+<label13>Extra Parameters</label13>
+<label14>Zoekprofiel:</label14>
+<lbVersion>Versie:</lbVersion>
+<cmdCloseSRU>Sluiten</cmdCloseSRU>
+<cmdSaveSRU>Opslaan</cmdSaveSRU>
+<label15>Naam:</label15>
+<lbMetadata>Metadata Schema:</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>De eigenschappen van de Database van de SRU:</lbSRUTitle>
+<this>Database-eigenschappen</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Zoeken:</label1>
+<ckMatchCase>Hoofdlettergevoelig</ckMatchCase>
+<cmdFind>Zoeken</cmdFind>
+<this>Hex: Vinden String</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Bestand</fileToolStripMenuItem>
+<openToolStripMenuItem>Open</openToolStripMenuItem>
+<exitToolStripMenuItem>Uitgang</exitToolStripMenuItem>
+<editToolStripMenuItem>Bewerken</editToolStripMenuItem>
+<findToolStripMenuItem>Zoeken</findToolStripMenuItem>
+<findNextToolStripMenuItem>Volgende zoeken</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Knippen</cutToolStripMenuItem>
+<copyToolStripMenuItem>Kopie</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Plakken</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Duidelijk</clearToolStripMenuItem>
+<findToolStripMenuItem>Zoeken</findToolStripMenuItem>
+<replaceToolStripMenuItem>Vervangen</replaceToolStripMenuItem>
+<lnkLoadAll>Het hele bestand laden</lnkLoadAll>
+<lb_bytes>{loaded_bytes} van {file_bytes} bytes zijn geladen.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Nieuwe Record</tbNew>
+<mnuCNewWindow>Open nieuw venster</mnuCNewWindow>
+<ContextAuthority>Autoriteit</ContextAuthority>
+<ContextAuthorityName>Naam</ContextAuthorityName>
+<ContextAuthoritySubject>Onderwerp</ContextAuthoritySubject>
+<cBook>Boek</cBook>
+<cSerial>Seriële</cSerial>
+<cVisualMat>Visueel materiaal</cVisualMat>
+<cMaps>Cartografische Resource</cMaps>
+<cSoundRec>Geluid opname</cSoundRec>
+<cScore>Score</cScore>
+<cElectMat>Electronic Resource</cElectMat>
+<cMixedMat>Gemengde materiaal</cMixedMat>
+<tbOpen>Bestand openen</tbOpen>
+<tbSave>Bestand opslaan</tbSave>
+<tbPrint>Bestand afdrukken</tbPrint>
+<tbCompile>Compileren van Records</tbCompile>
+<tbCut>Knippen</tbCut>
+<tbCopy>Kopie</tbCopy>
+<tbPaste>Plakken</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>Verwijderen</tbDelete>
+<tbFind>Zoeken</tbFind>
+<tbZ39_50>Z39.50/SRU Client</tbZ39_50>
+<toolStripSplitButton1>Global MARC bewerken Utilities</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Veld toevoegen/verwijderen</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Bouwen van nieuw veld</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Veld kopiëren</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Bewerken van veldgegevens</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Indicator gegevens bewerken</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Subveld gegevens bewerken</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Swap veldgegevens</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Bestand</mnuFile>
+<mnuFileMain>Terug naar het hoofdvenster</mnuFileMain>
+<mnuFileNew>Nieuw</mnuFileNew>
+<mnuFileNewWindow>Open nieuw venster</mnuFileNewWindow>
+<mnuFileNewDefault>standaard</mnuFileNewDefault>
+<mnuFileNewAuthority>Autoriteit</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Naam</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Onderwerp</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Boek</mnuFileNewBook>
+<mnuFileNewSerial>Seriële</mnuFileNewSerial>
+<mnuFileVisualMat>Visueel materiaal</mnuFileVisualMat>
+<mnuFileNewMap>Cartografische Resource</mnuFileNewMap>
+<mnuFileNewSound>Geluid opname</mnuFileNewSound>
+<mnuFileNewScore>Score</mnuFileNewScore>
+<mnuFileNewER>Electronic Resource</mnuFileNewER>
+<mnuFileNewMix>Gemengde materiaal</mnuFileNewMix>
+<mnuFileOpen>Open</mnuFileOpen>
+<mnuFileRecent>Recente bestanden</mnuFileRecent>
+<mnunone10>geen</mnunone10>
+<mnunone9>geen</mnunone9>
+<mnunone8>geen</mnunone8>
+<mnunone7>geen</mnunone7>
+<mnunone6>geen</mnunone6>
+<mnunone5>geen</mnunone5>
+<mnunone4>geen</mnunone4>
+<mnunone3>geen</mnunone3>
+<mnunone2>geen</mnunone2>
+<mnunone1>geen</mnunone1>
+<mnuFileClearHistory>Geschiedenis wissen</mnuFileClearHistory>
+<mnuFileClearList>Duidelijke recente bestanden</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Bewerken/vervangen geschiedenis wissen</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Sluiten</mnuFileClose>
+<mnuFileExportData>Export voor...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Importeren uit...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Opslaan</mnuFileSave>
+<mnuFileSaveAs>Opslaan als...</mnuFileSaveAs>
+<mnuFilePrint>Afdrukken</mnuFilePrint>
+<toolStripMenuItem34>Een Record Per pagina afdrukken</toolStripMenuItem34>
+<FileSelectIndividualMake>Records selecteren voor bewerken</FileSelectIndividualMake>
+<mnuFileCompile>Bestand compileren in MARC</mnuFileCompile>
+<mnuFileExit>Uitgang</mnuFileExit>
+<mnuEdit>Bewerken</mnuEdit>
+<mnuEditUndo>Ongedaan maken</mnuEditUndo>
+<mnuEditRedo>Opnieuw uitvoeren</mnuEditRedo>
+<mnuEditSpecialUndo>Speciale ongedaan maken</mnuEditSpecialUndo>
+<mnuEditCut>Knippen</mnuEditCut>
+<mnuEditCopy>Kopie</mnuEditCopy>
+<mnuEditPaste>Plakken</mnuEditPaste>
+<mnuEditDupLines>Dubbele lijnen</mnuEditDupLines>
+<mnuEditClear>Duidelijk</mnuEditClear>
+<mnuEditFind>Zoeken</mnuEditFind>
+<mnuEditReplace>Vervangen</mnuEditReplace>
+<toolStripMenuItem28>Sneltoetsen bewerken</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Hoofdlettergebruik wijzigen</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>kleine letters</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>HOOFDLETTERS</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Beginhoofdletters</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Eerste geval</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Profiteren van de oorspronkelijke karakter</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Veld bewerkingen</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Schoon slimme tekens</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Velden ontbreekt een woord zoeken</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Ontbrekend veld Records zoeken</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Records met dubbele Tags zoeken</toolStripMenuItem39>
+<toolStripMenuItem40>Records met dubbele veldgegevens zoeken</toolStripMenuItem40>
+<mnuEditLimitFields>Beperk het aantal velden</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Swap titel</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Wiskundige functies</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>Omzetten in decimale graden</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Ga naar...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Ga naar... Record</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Ga naar... Pagina</jumpToPageToolStripMenuItem>
+<mnuEditControl>Eén besturingselement nummer invoegen</mnuEditControl>
+<mnuEdit006>Insert/Edit 006</mnuEdit006>
+<mnuEdit006Edit>Bewerken</mnuEdit006Edit>
+<mnuEdit006Book>Boek</mnuEdit006Book>
+<mnuEdit006Serial>Voortdurende Resource</mnuEdit006Serial>
+<mnuEdit006Map>Cartografische Resource</mnuEdit006Map>
+<mnuEdit006Sound>Geluid opname</mnuEdit006Sound>
+<mnuEdit006Score>Score</mnuEdit006Score>
+<mnuEdit006ER>Electronic Resource</mnuEdit006ER>
+<mnuEdit006Visual>Visueel materiaal</mnuEdit006Visual>
+<mnuEdit006Mixed>Gemengde materiaal</mnuEdit006Mixed>
+<mnuEdit008>Insert/Edit 008</mnuEdit008>
+<mnuEdit008Edit>Bewerken</mnuEdit008Edit>
+<mnuEdit008Book>Boek</mnuEdit008Book>
+<mnuEdit008Serial>Voortdurende Resource</mnuEdit008Serial>
+<mnuEdit008Map>Cartografische Resource</mnuEdit008Map>
+<mnuEdit008Sound>Geluid opname</mnuEdit008Sound>
+<mnuEdit008Score>Score</mnuEdit008Score>
+<mnuEdit008ER>Electronic Resource</mnuEdit008ER>
+<mnuEdit008Visual>Visueel materiaal</mnuEdit008Visual>
+<mnuEdit008Mixed>Gemengde materiaal</mnuEdit008Mixed>
+<toolStripMenuItem27>Inhoud van het Klembord converteren</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8 UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 aan MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8-tekens</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Selecteer alle</mnuEditSelectAll>
+<mnuEditWrap>Tekst laten teruglopen</mnuEditWrap>
+<mnuEditRTL>Rechts naar links weergegeven</mnuEditRTL>
+<mnuFont>Lettertypen</mnuFont>
+<mnuFontFont>Lettertype...</mnuFontFont>
+<mnuFontColor>Kleur...</mnuFontColor>
+<mnuReports>Verslagen</mnuReports>
+<mnuReportsField>Veld Count</mnuReportsField>
+<tlReportsMaterialReport>Materiaalsoort verslag</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Rapport genereren</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Records zoeken op Type</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Boeken</booksToolStripMenuItem>
+<toolStripMenuItem32>Computerbestanden</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>Verdere bronnen</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Kaarten</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Gemengde materialen</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Scores</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Sound Recordings</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Beeldmateriaal</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Valideren van ISBN nummers</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Valideren van ISSNS</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Valideren van koppen</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Servicestatus</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Valideren van koppen</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Beheer van logboekbestanden</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Het huidige logboekbestand weergeven</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Geavanceerde Log Management</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Log-bestanden verwijderen</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Alle logboekbestanden weergeven</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Hulpmiddelen</mnuTools>
+<mnuToolsCluster>Clustering Tools</mnuToolsCluster>
+<mnutoolCutters>Cuttering Tools</mnutoolCutters>
+<mnuToolsCalculator>Catalogus Calculator</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Genereren van scharen</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn tabel 3 Cutters</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Genereren van telefoonnummers</mnuToolsCallNum>
+<mnuToolsControlNumber>Genereren van controlenummers</mnuToolsControlNumber>
+<toolStripMenuItem33>Gekoppelde gegevens Tools</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Bouwen van gekoppelde Records</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Record ontdubbeling</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA Helper</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU opties</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU Client</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 uploaden Record</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 Record verwijderen</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 Update Holdings</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Constante gegevens bewerken</mnuToolsEditConstant>
+<mnuToolsAssigned>Toegewezen constante Data</mnuToolsAssigned>
+<mnuConstant1>1) ongedefinieerde tekenreeks</mnuConstant1>
+<mnuConstant2>2) ongedefinieerde tekenreeks</mnuConstant2>
+<mnuConstant3>3) ongedefinieerde tekenreeks</mnuConstant3>
+<mnuConstant4>4) ongedefinieerde tekenreeks</mnuConstant4>
+<mnuConstant5>5) ongedefinieerde tekenreeks</mnuConstant5>
+<mnuConstant6>6) ongedefinieerde tekenreeks</mnuConstant6>
+<mnuConstant7>7) ongedefinieerde tekenreeks</mnuConstant7>
+<mnuConstant8>8) ongedefinieerde tekenreeks</mnuConstant8>
+<mnuConstant9>9) ongedefinieerde tekenreeks</mnuConstant9>
+<mnuConstant10>10) ongedefinieerde tekenreeks</mnuConstant10>
+<mnutoolmanageAutomate>Taken beheren</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Toegewezen taken</mnuToolsAssignedTasks>
+<mnuDefTask>Momenteel beschikbare taken</mnuDefTask>
+<task1>1) niet-gedefinieerde taak</task1>
+<task2>2) niet-gedefinieerde taak</task2>
+<task3>3) niet-gedefinieerde taak</task3>
+<task4>4) niet-gedefinieerde taak</task4>
+<task5>5) niet-gedefinieerde taak</task5>
+<task6>6) niet-gedefinieerde taak</task6>
+<task7>7) niet-gedefinieerde taak</task7>
+<task8>8) niet-gedefinieerde taak</task8>
+<task9>9) niet-gedefinieerde taak</task9>
+<task10>10) niet-gedefinieerde taak</task10>
+<task11>11) niet-gedefinieerde taak</task11>
+<task12>12) niet-gedefinieerde taak</task12>
+<task13>13) niet-gedefinieerde taak</task13>
+<task14>14) niet-gedefinieerde taak</task14>
+<task15>15) niet-gedefinieerde taak</task15>
+<task16>16) niet-gedefinieerde taak</task16>
+<task17>17) niet-gedefinieerde taak</task17>
+<task18>18) niet-gedefinieerde taak</task18>
+<task19>19) niet-gedefinieerde taak</task19>
+<task20>20) niet-gedefinieerde taak</task20>
+<mnuToolsValidate>Valideren van MARC Records</mnuToolsValidate>
+<mnuToolsOAI>Oogst van OAI</mnuToolsOAI>
+<mnutoolsurl>MARC van URL genereren</mnutoolsurl>
+<toolStripMenuItem43>Mnemonic opmaaktools beschikt</toolStripMenuItem43>
+<toolStripMenuItem3>Normaliseren...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normaliseren LC Records</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normaliseren van Microlif Records</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Lege regels verwijderen</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Lege velden/subvelden verwijderen</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Veld toevoegen/verwijderen</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Bouwen van nieuw veld</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Veld kopiëren</toolStripMenuItem26>
+<mnuToolsEditField>Bewerken van veldgegevens</mnuToolsEditField>
+<mnuToolsIndicator>Indicator gegevens bewerken</mnuToolsIndicator>
+<mnuToolsSubfield>Subveld gegevens bewerken</mnuToolsSubfield>
+<mnuToolsSortby>Sorteren op...</mnuToolsSortby>
+<toolStripMenuItem41>Record sorteervolgorde door...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Aangepast veld</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Veld Author</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Gemeenschappelijk Europees oproepnummer veld</mnuToolsSortByCall>
+<mnuToolsSortControl>Controle numeriek veld</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Veld Title</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Soort velden interactietypen de Record door...</toolStripMenuItem42>
+<mnuToolsCustomSort>Aangepaste sortering</mnuToolsCustomSort>
+<mnuToolsSort2>0xx sorteervelden</mnuToolsSort2>
+<mnuToolsSort>Alle velden sorteren</mnuToolsSort>
+<mnuToolsSwap>Swap veldgegevens</mnuToolsSwap>
+<mnuToolsOptions>Voorkeuren</mnuToolsOptions>
+<mnu_ILS>[ILS naam]</mnu_ILS>
+<mnu_ils_search>Zoek</mnu_ils_search>
+<updateCreateToolStripMenuItem>Update/maken</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Verwerken van instellingen</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>Zoek WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Toevoegen/verwijderen/Update lokale bibliografische gegevens</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Bibliografische gegevens maken of bijwerken</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Bijwerken van Holdings</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Plug-ins</pluginsToolStripMenuItem>
+<mnuHelp>Help</mnuHelp>
+<mnuHelpContents>Inhoud en Help</mnuHelpContents>
+<mnuEditInfo>MARC Info</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC Help</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>U.S. Library of Congress MARC Help</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Pakketbestanden voor foutopsporing</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Wat zou u willen doen?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Records per pagina</label1>
+<lblPage>pagina 's</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Weergave AutoOpslaan-bestanden</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Gegevens validatie diensten worden geleverd via de OCLC Termology Services. Om gebruik te maken van deze diensten, u moet akkoord gaan te volgen en zich houden aan de bepalingen en voorwaarden uiteengezet door OCLC met betrekking tot het gebruik en de betrouwbaarheid van deze diensten.</lb_text>
+<label1>OCLC overeenkomst Link:</label1>
+<lnk_Terms>Bekijken van de gebruiksvoorwaarden</lnk_Terms>
+<cmd_Agree>Ik ga akkoord</cmd_Agree>
+<cmd_disagree>Ik ga niet akkoord</cmd_disagree>
+<this>OCLC overeenkomst</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Engels</comboBox1>
+<linkLabel2>Nee bedankt, gewoon gebruik maken van de standaardinstellingen</linkLabel2>
+<linkLabel1>Let's Get Started!</linkLabel1>
+<label2>Ik ben hier om te helpen goed te beginnen!  Ik zal u enkele vragen, en krijg je op yo </label2>
+<label1>Welkom bij MarcEdit 7!</label1>
+<this>MarcEdit 7 Startup Wizard</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>Aan instellingen voor gegevens... Kemphaan!</linkLabel1>
+<label6>Herinner me, kunt u de thema's, lettergroottes, talen, en geavanceerde toegankelijkheid o instellen </label6>
+<cmb_theme_picker>Standaard</cmb_theme_picker>
+<label5>Aanbevolen thema:</label5>
+<label4>PT.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Aanbevolen grootte van het lettertype:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Standaardlettertype:</label2>
+<label1>MarcEdit uiterlijk</label1>
+<this>MarcEdit 7 Startup Wizard: Pagina 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit is MARC agnostisch, dus laten we een beetje vertellen over uw gegevens.</label5>
+<comboBox3>Kiezen voor mij</comboBox3>
+<label4>XML-verwerkingsmotor:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Standaard Record codering:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>Mijn MARC Format is:</label2>
+<linkLabel1>We zijn bijna klaar!  Eekhoorn!</linkLabel1>
+<label1>Instellingen voor MarcEdit gegevens</label1>
+<this>MarcEdit 7 Startup Wizard: Pagina 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Veel plezier gewenst!</linkLabel1>
+<label5>middelen. GetString ("label5. Tekst")</label5>
+<label1>Gefeliciteerd!  U bent klaar voor het gebruik van MarcEdit 7</label1>
+<this>MarcEdit 7 Startup Wizard: voltooid</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Sluiten</cmdClose>
+<ck_remote>Oplossen van externe entiteiten</ck_remote>
+<ck_Marc8>Converteren naar MARC-8</ck_Marc8>
+<opt_default>Standaard</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Opslaan</cmdSave>
+<gp_XSLT>XSLT-Engine</gp_XSLT>
+<label7>Definitieve indeling</label7>
+<label6>Oorspronkelijke indeling</label6>
+<label4>XSLT/XQuery pad</label4>
+<label3>De naam van de functie (Alias):</label3>
+<label2>Algemene informatie:</label2>
+<lnkXMLFunctionWizard>XML-functie Wizard</lnkXMLFunctionWizard>
+<groupBox1>Acties</groupBox1>
+<lnkAdd>Toevoegen</lnkAdd>
+<lnkModify>Wijzigen</lnkModify>
+<lnkDelete>Verwijderen</lnkDelete>
+<label5>Opmaak:</label5>
+<label1>Gedefinieerde functies:</label1>
+<this>Bewerken van XML-functies</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

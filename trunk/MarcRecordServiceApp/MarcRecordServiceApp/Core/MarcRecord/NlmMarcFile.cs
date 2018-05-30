@@ -5,17 +5,26 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public class NlmMarcFile : MarcFileData, IMarcFile
     {
-        private readonly MarcRecordProvider _marcRecordProvider;
-
         public NlmMarcFile(Product product)
             : base(product)
         {
-            _marcRecordProvider = MarcRecordProvider.Nlm;
+            RecordProviderType = MarcRecordProviderType.Nlm;
         }
 
-        public MarcRecordProvider RecordProvider
+        public NlmMarcFile(Product product, int? marcRecordId, int? marcRecordProviderId)
+            : base(product)
         {
-            get { return _marcRecordProvider; }
+            RecordProviderType = MarcRecordProviderType.Nlm;
+            MarcRecordId = marcRecordId;
+            MarcRecordProviderId = marcRecordProviderId;
         }
+
+        public MarcRecordProviderType RecordProviderType { get; }
+
+        public int? MarcRecordId { get; set; }
+        public int? MarcRecordProviderId { get; set; }
+
+        public bool IsProviderUpdate { get; set; }
+        public bool IsFileUpdate { get; set; }
     }
 }

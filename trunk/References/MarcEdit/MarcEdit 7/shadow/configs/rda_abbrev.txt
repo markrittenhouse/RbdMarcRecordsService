@@ -1,0 +1,142 @@
+##################################
+#VERSION: 7.0.2
+#DEFAULT BLOCK WILL BE OVERWRITTEN
+#ON UPDATE
+##################################
+#DEFAULT
+Abdr.	Abdruck
+abgedr.	abgedruckt
+Abt.	Abteilung
+acc.	accompaniment
+afd.	afdeling
+alt.	altitude
+&	and
+et al.	and others
+approx.	approximately
+arg.	argraffiad
+arr.	arranged
+Aufl.	Auflage
+augm.	augmented
+aum.	aumentato
+Ausg.	Ausgabe
+avd.	avdeling
+Bd.	Band
+bd.	band
+bil.	bilangan
+BCD	binary coded decimal
+b&w	black and white
+bk.	book
+b.	born
+br.	broj
+Bros.	Brothers
+Bro.	Brother
+bull.	bulletin
+bpi	bytes per inch
+cap.	capitolo
+cent.	century
+ch.	chapter
+ca.	circa
+col.	color
+Co.	Company
+cf.	compare
+comp.	compiler
+Corp.	Corporation
+corr.	corrected
+diagr.	illustrations
+ed.	edition
+eds.	editions.
+enl.	enlarged
+eq.	equinox
+etc.	et cetera
+facsim.	facsimile
+facsims.	facsimiles
+fasc.	fascicle
+fl.	flourished
+fol.	folio
+fold.	folded
+ff.	following
+geneal.	genealogical
+govt.	government
+G.P.O.	Government Printing Office
+H.M.S.O.	Her Majesty's Stationery Office
+"(=[0-24-9]..*)(\bhr\.)"	$1hours
+"(=3[0-9][1-9].*)(\bhr\.)"	$1hours
+i.e.	id est
+ill.	illustrations
+illus.	illustrations
+impr.	imprenta
+"(=[0-24-9]..*)(\bin\.)"	$1inches
+"(=3[0-9][1-9].*)(\bin\.)"	$1inches
+ips	inches per second
+incl.	including
+Inc.	Incorporated
+introd.	introduction
+jaarg.	jaargang
+Jahrg.	Jahrgang
+jil.	jilid
+kn.	kniha
+l.	leaves
+libr.	librairie
+Ltd.	Limited
+ map. 	mappages
+"(=[0-24-9]..*)(\bmin\.)"	$1minutes
+"(=3[0-9][1-9].*)(\bmin\.)"	$1minutes
+ms.	manuscript
+mss.	manuscripts
+misc.	miscellaneous
+mono.	monophonic
+n.d.	date of publication not identified
+new ser.	new series
+N.T.	New Testament
+no.	numbers
+numb.	numbered
+O.T.	Old Testament
+op.	opus
+p.	pages
+pbk.	paperback
+pt.	part
+pts.	parts
+photo.	photograph
+photos.	photographs
+pl. no.	plate numbers
+port.	portrait
+ports.	portraits
+posth.	posthumous
+pref.	preface
+prelim.	preliminary
+print.	printing
+priv. print.	privately printed
+proj.	projection
+pseud.	pseudonym
+pub.	publishing
+quad.	quadraphonic
+rept.	report
+repr.	reprinted
+reprod.	reproduced
+rev.	revised
+ser.	series
+sig.	signature
+si.	silent
+s.l.	sine loco
+S.L.	Place of publication not identified
+S.I.	Place of publication not identified
+s.n.	publisher not identified
+sd.	sound
+stereo.	stereophonic
+supt.	superintendent
+Supt. of Docs.	Superintendent of Documents
+suppl.	supplement
+sv.	svazek
+tr.	translator
+typog.	typographical
+typ.	typographie
+verb.	verbesserte
+"([a-zA-Z, :;][1])(\b[vV]\.)"	$1 volume
+"([^ ][0-9])(\b[vV]\.)"	$1 volumes
+v.	volume
+vol.	volume
+vols.	volumes
+wyd.	wydanie
+wydawn.	wydawnictwo
+zesz.	zeszyt
+zv.	zvezek

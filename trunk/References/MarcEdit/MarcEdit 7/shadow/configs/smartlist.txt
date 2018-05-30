@@ -1,0 +1,16 @@
+﻿# BASIC
+“	"
+”	"
+’	'
+&#x2018;	'
+&#x2019;	'
+&#x2022;	;
+&#x2013;	-
+&#x2010;	-
+&#x2014;	-
+&#xFFFD;	
+&#x2026;	 
+
+
+# REGEX (all items below will be processed as regex)
+	

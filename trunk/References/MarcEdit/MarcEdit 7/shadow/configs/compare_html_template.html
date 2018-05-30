@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MarcEdit MARCCompare Report</title>
+    <script type="text/javascript">
+        function toggle_visibility(id, label_id) {
+            var e = document.getElementById(id);
+            var e_label = document.getElementById(label_id);
+            if (e.style.display == 'none') {
+                e_label.innerText = "Close Record"
+                e.style.display = 'block';
+            }
+            else {
+                e_label.innerText = "Display Record";
+                e.style.display = 'none';
+            }
+        }
+        
+        function toggle_all() {
+            var els = document.getElementsByClassName('recs');
+            for (var i = 0; i < els.length; ++i) {
+                var s = els[i].style;
+                s.display = s.display === 'none' ? 'block' : 'none';
+            };
+        }
+
+    </script>
+    <style>
+        body {
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        .recordodd {
+            background-color: wheat;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+
+        .recordeven {
+            background-color: ghostwhite;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+
+        .body_content {
+            background-color: ivory;
+            margin:auto;
+            max-width: 700px;
+        }
+
+        hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="body_content">
+        <h2>MarcEdit MARCCompare Report</h2>
+        
+            
+            <br />
+            Compare Results:<br />
+            Files compared: <!--FILES--> <br />
+            <a href="#" onclick="toggle_all();">Toggle Display of All Records</a>
+
+            <hr />
+            <br />
+            <!--INSERT_COMPARE_RESULTS_HERE-->
+        
+    </div>
+</body>
+</html>

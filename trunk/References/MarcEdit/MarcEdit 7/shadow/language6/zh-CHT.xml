@@ -1,0 +1,2167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>提取的記錄</mnuExtract>
+<cmenuClipboard>複製到剪貼簿</cmenuClipboard>
+<cmenuSubfields>張子</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>説明</cmenuHelp>
+<cmd_OK>關閉</cmd_OK>
+<cmd_Report>生成報告</cmd_Report>
+<lb_ReportStyle>報告樣式：</lb_ReportStyle>
+<opt_tab>選項卡分隔的報告</opt_tab>
+<opt_xml>XML 報告</opt_xml>
+<opt_html>HTML 報告</opt_html>
+<this>欄位計數</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>方向：</groupBox3>
+<rd_down>向下</rd_down>
+<rd_up>向上</rd_up>
+<btn_findall>找到所有</btn_findall>
+<groupBox1>搜索選項：</groupBox1>
+<ck_f_whole_word>查找全字匹配</ck_f_whole_word>
+<ck_find_regex>使用正則運算式</ck_find_regex>
+<ck_f_match_case>區分大小寫</ck_f_match_case>
+<cmdFClose>關閉</cmdFClose>
+<cmdFFind>查找</cmdFFind>
+<lb_FindWhat>查找內容：</lb_FindWhat>
+<cmdNav_Find>查找</cmdNav_Find>
+<cmdReplaceNav>替換</cmdReplaceNav>
+<ckReplaceConditional>如果執行查找/替換。</ckReplaceConditional>
+<cmbCondOpt>正則運算式</cmbCondOpt>
+<label1>如果：</label1>
+<cmd_R_Close>關閉</cmd_R_Close>
+<cmd_R_All>全部替換</cmd_R_All>
+<cmd_R_Replace>替換</cmd_R_Replace>
+<groupBox2>搜索選項：</groupBox2>
+<ck_Replace_ExactWordMatch>詞語精確匹配</ck_Replace_ExactWordMatch>
+<ckMultiLine>多行評價</ckMultiLine>
+<ckFile>使用外部搜索/替換條件</ckFile>
+<ck_R_RegExp>使用正則運算式</ck_R_RegExp>
+<ck_R_Case>區分大小寫</ck_R_Case>
+<lb_ReplaceWith>替換：</lb_ReplaceWith>
+<lb_R_FindWhat>查找：</lb_R_FindWhat>
+<this>查找/替換：</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>狀態：
+
+</lb_bProccess_status>
+<ck_bTask>載入任務</ck_bTask>
+<ckBatchProcessSubfolders>包括子資料夾</ckBatchProcessSubfolders>
+<lb_Operation>功能：</lb_Operation>
+<cmdBClose>關閉</cmdBClose>
+<cmdBProcess>過程</cmdBProcess>
+<lb_Extensions>檔案類型：</lb_Extensions>
+<lb_BSource>原始目錄：</lb_BSource>
+<lbBTitle>批次處理過程 MARC 記錄</lbBTitle>
+<groupBox1>選項</groupBox1>
+<this>批次處理過程記錄</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>間歇過程</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>最後的編碼：</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>原來的編碼：</lb_encoding>
+<lb_UTF8_Header>字元轉換</lb_UTF8_Header>
+<cmdCancel>關閉</cmdCancel>
+<cmdOK>過程</cmdOK>
+<lb_UTF8_Dest>目的檔案：</lb_UTF8_Dest>
+<lb_UTF8_Source>原始檔案：</lb_UTF8_Source>
+<groupBox1>編碼設置</groupBox1>
+<this>了字元集轉換</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>資料聚類工具</label1>
+<label2>資料聚類工具提供一組簡化的聚類選項，為提高維思批次處理資料清理。 高級群集功能，請考慮使用 OpenRefine。</label2>
+<groupBox1>選項</groupBox1>
+<rdCustom>索引自訂欄位</rdCustom>
+<rdControlData>控制的資料 （1xx，6xx，7xx） 創建索引</rdControlData>
+<rdAll>所有的資料建立索引</rdAll>
+<cmdImport>導入資料</cmdImport>
+<label3>原始檔案：</label3>
+<label9>對資料進行排序：</label9>
+<label8>顯示群集：</label8>
+<label7>集群對以下分支：</label7>
+<cmbclusteringalgorithm>萊文斯坦的距離</cmbclusteringalgorithm>
+<label6>選擇聚類演算法：</label6>
+<cmbClusterField>名稱 （1xx，7xx）</cmbClusterField>
+<label4>選擇您想要聚類的資料：</label4>
+<cmdGenerateCluster>生成群集</cmdGenerateCluster>
+<cmbAlg>萊文斯坦的距離</cmbAlg>
+<lnkAddCriteria>添加更新</lnkAddCriteria>
+<lnkClose>關閉</lnkClose>
+<lnkEditCluster>處理所有更改</lnkEditCluster>
+<label5>群集的資料：</label5>
+<this>聚類的工具</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>任務調試器</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>語境的分隔符號</label8>
+<lb_Tab_Header>匯出選項卡分隔的記錄</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>在欄位分隔符號</label18>
+<lbdelimiter>選擇欄位分隔符號</lbdelimiter>
+<cmdTClose2>關閉</cmdTClose2>
+<cmdTNext>下一個 &gt; &gt;</cmdTNext>
+<label1>步驟 1： 設置檔路徑</label1>
+<ck_normalize>欄位資料正常化</ck_normalize>
+<cmd_tab2_back>返回</cmd_tab2_back>
+<lnkSettings>設置。。。</lnkSettings>
+<lnkDeleteField>刪除欄位</lnkDeleteField>
+<lnkAddField>添加欄位</lnkAddField>
+<label14>子欄位：</label14>
+<label11>欄位：</label11>
+<cmdTClose>關閉</cmdTClose>
+<cmdTExport>出口</cmdTExport>
+<label2>步驟 2： 定義欄位/子域到出口</label2>
+<label3>匯出選項卡分隔的記錄</label3>
+<mnuLoad>載入設置</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>保存設置</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>清除設置</menuItem3>
+<this>匯出選項卡分隔的記錄</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>大小：</label4>
+<lb_Example>示例文本</lb_Example>
+<lb_lang_font>選擇字體：</lb_lang_font>
+<cmdOK>還行</cmdOK>
+<cmdClose>關閉</cmdClose>
+<this>選擇字體</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>在導入運行任務</groupBox1>
+<lnkSelectPre>選擇任務</lnkSelectPre>
+<cname>名稱</cname>
+<cPath>任務路徑</cPath>
+<groupBox2>在出口上運行的任務</groupBox2>
+<linkLabel1>選擇任務</linkLabel1>
+<columnHeader1>名稱</columnHeader1>
+<columnHeader2>任務路徑</columnHeader2>
+<cmdSave>保存</cmdSave>
+<cmdClose>關閉</cmdClose>
+<deleteItemToolStripMenuItem>刪除專案</deleteItemToolStripMenuItem>
+<this>ILS 過程設置</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>包括子資料夾</ckJoinSubfolders>
+<cmdEditFile>編輯檔</cmdEditFile>
+<lnkJoinedFiles>顯示加入檔</lnkJoinedFiles>
+<label19>檔案類型：</label19>
+<ck_JoinIndividual>加入個人檔</ck_JoinIndividual>
+<cmdJoinCancel>關閉</cmdJoinCancel>
+<cmdJoinProcess>過程</cmdJoinProcess>
+<lb_Join_Files>要加入的檔：</lb_Join_Files>
+<lb_Join_Source>保存檔：</lb_Join_Source>
+<lb_Join_Header>MARCJoin 實用程式</lb_Join_Header>
+<lbJoinStatus>狀態：</lbJoinStatus>
+<groupBox1>選項</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>每個檔的記錄：</lb_Split_Records>
+<cmdSplitClose>關閉</cmdSplitClose>
+<cmdSplitProcess>過程</cmdSplitProcess>
+<lb_Split_Folder>目的地資料夾：</lb_Split_Folder>
+<lb_Split_Source>原始檔案：</lb_Split_Source>
+<lb_Split_Header>MARCSplit 實用程式</lb_Split_Header>
+<groupBox1>選項</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>主題名稱：</label1>
+<label2>描述：</label2>
+<label3>全域值</label3>
+<label4>字體顏色</label4>
+<label5>背景顏色</label5>
+<label6>背景顏色</label6>
+<label7>字體顏色</label7>
+<label8>MarcEditor 值</label8>
+<cmdSave>保存</cmdSave>
+<cmdClose>關閉</cmdClose>
+<cmdPreview>預覽</cmdPreview>
+<richTextBox1>示例文本</richTextBox1>
+<label9>MarcEditor 顯示：</label9>
+<cmdOpen>開放</cmdOpen>
+<label10>群組方塊背景</label10>
+<groupBox1>群組方塊示例</groupBox1>
+<this>MarcEdit 主題產生器</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>MarcEdit 故障排除嚮導被為了説明使用者找到説明，</label1>
+<gpStart>選項</gpStart>
+<rdErrorMessage>我有一條錯誤訊息</rdErrorMessage>
+<rdErrorNumber>我有一個錯誤編號</rdErrorNumber>
+<lbMessage>{消息}</lbMessage>
+<cmdPage1>下一個</cmdPage1>
+<gpResults>結果</gpResults>
+<cmdClose>關閉</cmdClose>
+<lnkCreateDebugPackage>為調試創建調試包到發送嗎？</lnkCreateDebugPackage>
+<label2>故障排除嚮導是無法在知識庫文章中找到一篇文章</label2>
+<this>MarcEdit 疑難排解嚮導</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>其他 XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>馬克 ·</rdMARC>
+<label17>選擇最終格式</label17>
+<label16>第 3 步：</label16>
+<label15>保存檔：</label15>
+<label13>第 2 步：</label13>
+<label12>名稱轉換：</label12>
+<lnkNextPg1>繼續執行下一步驟</lnkNextPg1>
+<label4>選擇檔：</label4>
+<label3>第 1 步：</label3>
+<label2>資源。GetString"(標籤 2。文本"）</label2>
+<label1>XML/JSON 探測器</label1>
+<lbTop>文件項目：</lbTop>
+<ckTopLevel>使用文件項目</ckTopLevel>
+<lnkNextPg2>繼續執行下一步驟</lnkNextPg2>
+<label7>選擇的記錄的元素</label7>
+<label6>第 3 步：</label6>
+<label5>XML/JSON 探測器</label5>
+<label14>定義映射</label14>
+<lnkNextP3>繼續執行下一步驟</lnkNextP3>
+<groupBox2>參數</groupBox2>
+<ck_filing_characters>計算常見的歸檔資料</ck_filing_characters>
+<ck_sort>排序欄位</ck_sort>
+<button2>載入範本</button2>
+<toolStripMenuItem2>編輯專案</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>刪除專案</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>加入專案</joinItemsToolStripMenuItem>
+<groupBox1>設置</groupBox1>
+<ckTrim>修剪現有標點</ckTrim>
+<ck_Repeatable>可重複的子欄位</ck_Repeatable>
+<P3_ck_constant>常量資料</P3_ck_constant>
+<P3_cmd_Apply>添加參數</P3_cmd_Apply>
+<P3_lb_punct>術語。標點符號：</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>印第安那州：</P3_lb_indicators>
+<P3_mapto>映射到：</P3_mapto>
+<P3_lb_select>請選擇：</P3_lb_select>
+<label9>第 4 步：</label9>
+<label8>XML/JSON 探測器</label8>
+<lnkClose>關閉嚮導</lnkClose>
+<label11>轉型已被創建並添加到 XML 函數清單。</label11>
+<label10>XML/JSON 探測器</label10>
+<this>XML/JSON 探測器</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>類型： 書</label11>
+<lbbTitle>00/6/8 的選項：</lbbTitle>
+<lnkbBiog>小傳：</lnkbBiog>
+<lnkbLitF>力：</lnkbLitF>
+<lnkbIndx>為 Indx:</lnkbIndx>
+<lnkbFest>巨星：</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>續：</lnkbCont>
+<lnkbForm>表單：</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>弊病：</lnkbIlls>
+<lnkbType>類型：</lnkbType>
+<label12>類型： 電子資源</label12>
+<label5>00/6/8 的選項：</label5>
+<lnkcFile>檔：</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>類型：</lnkcType>
+<label2>,</label2>
+<lnkbDates>日期：</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>長途：</lnkbCtry>
+<lnkbLang>郎：</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 的選項：</label1>
+<label13>類型： 地圖</label13>
+<label3>00/6/8 的選項：</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>為 Indx:</lnkmIndx>
+<lnkmForm>表單：</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>專案：</lnkmProj>
+<lnkmRelf>雷爾夫：</lnkmRelf>
+<lnkmType>類型：</lnkmType>
+<label14>類型： 混合的材料</label14>
+<label4>00/6/8 的選項：</label4>
+<lnkmmForm>表單：</lnkmmForm>
+<lnkmmType>類型：</lnkmmType>
+<label15>類型： 得分</label15>
+<label6>00/6/8 的選項：</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>表單：</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>放行：</lnkscFMus>
+<lnkscComp>Comp:</lnkscComp>
+<lnkscType>類型：</lnkscType>
+<label10>類型： 繼續資源</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>00/6/8 的選項：</label7>
+<lnkslAlph>深不可測：</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>續：</lnkslCont>
+<lnkslForm>表單：</lnkslForm>
+<lnkslOrig>Orig:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>Regl:</lnkslRegl>
+<lnkslFreq>頻率：</lnkslFreq>
+<lnkslType>類型：</lnkslType>
+<label16>類型： 錄音</label16>
+<label8>00/6/8 的選項：</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>表單：</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>放行：</lnksdFMus>
+<lnksdComp>Comp:</lnksdComp>
+<lnksdType>類型：</lnksdType>
+<label17>類型： 視覺材料</label17>
+<label9>00/6/8 的選項：</label9>
+<lnkvmTech>技術：</lnkvmTech>
+<lnkvmTMat>德：</lnkvmTMat>
+<lnkvmForm>表單：</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>時間：</lnkvmTime>
+<lnkvmType>類型：</lnkvmType>
+<cmd_Ok>還行</cmd_Ok>
+<cmd_Close>關閉</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>表單：</linkLabel1>
+<this>00/6/8</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>資源。GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>關於我：</lb_Authors>
+<lbBuildCode>更新代碼：</lbBuildCode>
+<lnkHomepage>HTTP://marcedit.reeset.net</lnkHomepage>
+<label5>專案網站：</label5>
+<label2>鳴謝：</label2>
+<lb_modified>.</lb_modified>
+<lbMod>修訂日期：</lbMod>
+<lbMailto>特裡斯</lbMailto>
+<lbAuthor>作者：</lbAuthor>
+<lbVersion>內部版本號：</lbVersion>
+<label4>關於 MarcEdit</label4>
+<linkLabel1>HTTP://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>技術細節：</label1>
+<this>關於 MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>負載</cmdLoad>
+<cmdClose>關閉</cmdClose>
+<cmdDelete>刪除</cmdDelete>
+<this>自動儲存檔：</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>編輯欄位</lnk_Edit_Fields>
+<lnkCopy>複製欄位資料</lnkCopy>
+<lnkSwapFields>交換領域</lnkSwapFields>
+<lnkIndicators>編輯指標</lnkIndicators>
+<lnkSubfield>編輯子欄位資料</lnkSubfield>
+<lnkAddDelete>添加刪除欄位</lnkAddDelete>
+<groupBox8>刪除欄位選項</groupBox8>
+<ckRemoveByPostition>刪除的欄位位置</ckRemoveByPostition>
+<ck_RemoveIfNot>刪除如果欄位資料不匹配</ck_RemoveIfNot>
+<ck_dedup>刪除重復資料</ck_dedup>
+<groupBox7>添加欄位選項</groupBox7>
+<ck_A_addifnotduplicate>添加欄位只，如果不是重複</ck_A_addifnotduplicate>
+<ck_A_Insert>插入前</ck_A_Insert>
+<ck_A_not_present>添加欄位只，如果不是存在</ck_A_not_present>
+<ck_AddIfPresent>如果存在中添加欄位</ck_AddIfPresent>
+<ck_last>最後插入</ck_last>
+<groupBox6>常規選項</groupBox6>
+<ck_delete_batch>處理批次處理操作</ck_delete_batch>
+<ck_A_Case>區分大小寫</ck_A_Case>
+<ck_A_regular_Expression>使用正則運算式</ck_A_regular_Expression>
+<label1>查找內容：</label1>
+<cmd_A_Close>關閉</cmd_A_Close>
+<cmd_A_Add>添加欄位</cmd_A_Add>
+<cmd_A_Delete>刪除欄位</cmd_A_Delete>
+<label3>資料欄位：</label3>
+<lb_A_Field>欄位：</lb_A_Field>
+<lb_A_Title>添加刪除欄位實用程式</lb_A_Title>
+<cmd_Sub_Close>關閉</cmd_Sub_Close>
+<cmd_Sub_Remove>刪除文本</cmd_Sub_Remove>
+<cmd_Sub_Replace>替換文本</cmd_Sub_Replace>
+<groupBox2>搜索選項：</groupBox2>
+<ckDeleteDuplicate>刪除重複的子欄位</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>刪除子欄位</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>移動子欄位資料</ck_move_subfield>
+<ck_Reg_Express>使用正則運算式</ck_Reg_Express>
+<ck_Sub_Case>區分大小寫</ck_Sub_Case>
+<ck_Sub_New>新子欄位只</ck_Sub_New>
+<ck_Sub_NotPresent>添加子欄位，如果不是存在</ck_Sub_NotPresent>
+<label8>替換為：</label8>
+<label7>資料欄位：</label7>
+<label6>子欄位：</label6>
+<label5>欄位：</label5>
+<lb_Sub_Title>編輯子欄位實用程式</lb_Sub_Title>
+<cmd_I_Close>關閉</cmd_I_Close>
+<cmd_I_Replace>替換</cmd_I_Replace>
+<lb_Ind_Replace>替換為指標</lb_Ind_Replace>
+<label12>資料欄位：</label12>
+<label11>指標</label11>
+<label10>欄位：</label10>
+<lb_Ind_Title>編輯指標實用程式</lb_Ind_Title>
+<ck_Match_All_Subfields>匹配所有子域</ck_Match_All_Subfields>
+<ck_swap_expression>視為正則運算式</ck_swap_expression>
+<label4>查找：</label4>
+<cmd_Swap_Close>關閉</cmd_Swap_Close>
+<cmd_Swap_Process>過程</cmd_Swap_Process>
+<groupBox3>搜索選項</groupBox3>
+<ck_swap_once_per>處理交換每個域</ck_swap_once_per>
+<ck_swap_sort>排序修改欄位</ck_swap_sort>
+<ck_Swap_Override>添加現有/創建新</ck_Swap_Override>
+<ck_Swap_Add>將添加到現有欄位</ck_Swap_Add>
+<ck_Swap_Copy>複製源</ck_Swap_Copy>
+<label20>修改後的資料：</label20>
+<label22>子域</label22>
+<label23>指標</label23>
+<label24>欄位</label24>
+<label19>原始資料：</label19>
+<label18>查找：</label18>
+<label17>子域</label17>
+<label16>指標</label16>
+<label15>欄位</label15>
+<lb_Swap_Title>換場實用程式</lb_Swap_Title>
+<label14>欄位資料</label14>
+<lbFindInField>在域中查找</lbFindInField>
+<groupBox4>選項</groupBox4>
+<ck_copy_field_regex>使用正則運算式</ck_copy_field_regex>
+<ck_copy_delete>刪除的源欄位</ck_copy_delete>
+<label2>目標欄位：</label2>
+<cmdCopyClose>關閉</cmdCopyClose>
+<cmdCopy>副本</cmdCopy>
+<label9>源欄位：</label9>
+<label13>複製欄位資料</label13>
+<label26>位置：</label26>
+<label21>替換：</label21>
+<label25>查找：</label25>
+<groupBox5>選項</groupBox5>
+<ck_editfield_match_case>區分大小寫</ck_editfield_match_case>
+<ck_UserRegularExpressions>使用正則運算式</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>關閉</cmdFieldEdit_Close>
+<cmdEditField_Process>過程</cmdEditField_Process>
+<label27>欄位：</label27>
+<label28>編輯欄位資料</label28>
+<this>MarcEdit.NET 批次處理編輯工具</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<label1>BibFrame2 測試平臺是一個簡單易用的實用程式允許中繼資料損壞</label1>
+<label2>原始檔案：</label2>
+<label3>保存檔：</label3>
+<label4>資料序列化：</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>翻譯規則：</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>編輯</lnkEditXQuery>
+<label7>檔案類型：</label7>
+<label8>設定檔：</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Id 欄位：</label9>
+<this>BibFrame 測試平臺</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>保存檔：</label3>
+<label2>原始檔案：</label2>
+<label1>連結資料工具旨在迴圈遍歷一組 MARC 記錄和解析 1xx、 6xx 和 7xx 資料元素中的存取點為其連結的 dat 端點。</label1>
+<cmdProcess>過程</cmdProcess>
+<cmdCancel>關閉</cmdCancel>
+<groupBox1>ID 服務</groupBox1>
+<ckLimiter>向的極限解析度：</ckLimiter>
+<ck3xxFields>過程 3xx 欄位</ck3xxFields>
+<label4>OCLC 編號：</label4>
+<ckWorkId>嵌入 OCLC 工作 ID</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>自動檢測主題 ID</ckAutodetect>
+<ck_viaf>OCLC VIAF</ck_viaf>
+<ck_loc>自動檢測主/添加條目</ck_loc>
+<label5>規則檔：</label5>
+<cmdStatus>服務狀態</cmdStatus>
+<lbstatus>狀態：</lbstatus>
+<this>建立連結的記錄</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>查找</lnkFind>
+<lbResults>結果：</lbResults>
+<lnkCatalog>班納吉凱爾的目錄計算機</lnkCatalog>
+<cmdClose>關閉</cmdClose>
+<label1>LC 刀具</label1>
+<this>編目計算機</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>字元偵查工具使用一個試探性的過程來給最好的猜測 rela</label1>
+<cmdDetect>檢測</cmdDetect>
+<cmdClose>關閉</cmdClose>
+<label2>結果：</label2>
+<ckDetailed>詳細結果</ckDetailed>
+<this>特性的檢測</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>資源。GetString"(label1。文本"）</label1>
+<lnkClassify>關於 OCLC 的分類服務</lnkClassify>
+<ck_all>添加到所有的記錄</ck_all>
+<ck_single>添加到所選的記錄</ck_single>
+<ck_lc>國會圖書館</ck_lc>
+<ck_dewey>杜威十進位</ck_dewey>
+<cmdProcess>分類</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<label5>如果不存在以下欄位插入 (示例： 050 060; 090; 092)</label5>
+<label4>下面的欄位中插入生成的分類：</label4>
+<ck_cutters>計算刀具和日期</ck_cutters>
+<ck_use_z>用於匹配子 z</ck_use_z>
+<ck_DateMod>追加到日期的標誌</ck_DateMod>
+<ck_omit_serial>省略為連續日期</ck_omit_serial>
+<ck_omit_integrated>忽略日期綜合資源</ck_omit_integrated>
+<ck_omit>追加日期例外</ck_omit>
+<ck_always_fast>始終添加快速標題</ck_always_fast>
+<ck_conditional_fast>添加快速標題存在沒有主題詞時</ck_conditional_fast>
+<label6>指標：</label6>
+<cmdInsert>插入說明</cmdInsert>
+<cmdClassification>分類</cmdClassification>
+<cmdSubjects>主題詞</cmdSubjects>
+<lnkClassification>選擇分類</lnkClassification>
+<lnkSubjects>選擇主題選項</lnkSubjects>
+<lnkOptions>設置的選項</lnkOptions>
+<cmdOptions>選項</cmdOptions>
+<label2>子欄位：</label2>
+<label3>Cuttering 子欄位：</label3>
+<this>生成分類</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>常量資料</columnHeader1>
+<columnHeader3>快捷方式</columnHeader3>
+<cmdClose>關閉</cmdClose>
+<lnkKey>金鑰分配</lnkKey>
+<lnkEdit>編輯選定的字串</lnkEdit>
+<lnkDelete>刪除選定的字串</lnkDelete>
+<lnkNew>創建新的字串</lnkNew>
+<lbActions>行動：</lbActions>
+<lbMacro>恒定的資料：</lbMacro>
+<this>編輯常量資料</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>編號的首碼：</lb_prefix>
+<lb_digit>啟動數位：</lb_digit>
+<ck_autogenerate>插入新記錄</ck_autogenerate>
+<button1>還行</button1>
+<button2>關閉</button2>
+<lb_length>數位長度 （減去首碼）</lb_length>
+<ckgenerate>在當前檔中生成</ckgenerate>
+<ck_label>馬克記錄號碼</ck_label>
+<label1>域/子域 (示例： 001，949$ b)</label1>
+<ck_repeat>總是插入</ck_repeat>
+<this>生成控制編號</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>使用模糊比對</ck_UseFuzzyMatch>
+<ck_save>保存到 Dedup 專案：</ck_save>
+<ck_unique>獨特的輸出項</ck_unique>
+<ck_remove>刪除重複項</ck_remove>
+<lbOptions>選項：</lbOptions>
+<label1>Dedup 保持：</label1>
+<lb_Control>控制欄位：</lb_Control>
+<cmdClose>關閉</cmdClose>
+<cmdOK>過程</cmdOK>
+<btnCancel>取消</btnCancel>
+<btnNext>下一個</btnNext>
+<label4>保存檔：</label4>
+<label3>找到重複從以下檔：</label3>
+<label2>記錄重復資料移除工具</label2>
+<label5>信心：</label5>
+<this>記錄重復資料消除技術</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>選擇日誌檔：</label1>
+<groupBox1>選項</groupBox1>
+<ckChanged>提取已更改的記錄</ckChanged>
+<ckEnhance>加強日誌</ckEnhance>
+<label2>選擇記錄：</label2>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<this>日誌管理器</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext 實驗室空間引入新的工具，並與有關的概念</lbaboutmn>
+<lnkOpenRefine>OpenRefine 集成</lnkOpenRefine>
+<lnkSPARQL>SPARQL 瀏覽器</lnkSPARQL>
+<lnkLinkIds>連結識別碼</lnkLinkIds>
+<lnkBibframe>BibFrame 測試平臺</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>使用此工具來馬克或 MarcEdit 的助記符的格式和 OpenRef 之間移動資料</label1>
+<label2>原始檔案：</label2>
+<label3>保存檔：</label3>
+<rdExport>匯出到 OpenRefine</rdExport>
+<rdImport>從 OpenRefine 導入</rdImport>
+<cmdProcess>過程</cmdProcess>
+<cmdCancel>關閉</cmdCancel>
+<lbStatus>狀態：</lbStatus>
+<groupBox1>選項</groupBox1>
+<this>OpenRefine 資料轉移工具</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>選擇要共用的檔：</label1>
+<ckconfig>配置選項</ckconfig>
+<label2>匯出使用者配置目錄中的所有資料。 這包括配置資料</label2>
+<ckXSLT>XSLT 函數</ckXSLT>
+<label3>匯出定義的 XSLT 樣式表</label3>
+<ckMacros>已定義的宏和任務</ckMacros>
+<label4>匯出所有已定義的宏和任務。</label4>
+<label5>出口所有定義的 MarcEditor 材料類型範本。</label5>
+<ckTemplates>定義的 MarcEditor 範本</ckTemplates>
+<cmdExport>出口</cmdExport>
+<cmdClose>關閉</cmdClose>
+<this>匯出設置</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>行動</columnHeader2>
+<columnHeader1>找到的文本</columnHeader1>
+<button1>關閉</button1>
+<button2>跳轉到頁</button2>
+<cmdFindUpdate>編輯查找查詢</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>找到所有結果</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<lbField>輸入電話號碼欄位來評價。（如 090）</lbField>
+<groupBox1>選項</groupBox1>
+<rdTitle>刀具順序 （2xx，1xx）</rdTitle>
+<rdDefault>刀具順序 （1xx，2xx）</rdDefault>
+<groupBox2>選項</groupBox2>
+<label1>查找：</label1>
+<rdCustomField>自訂欄位</rdCustomField>
+<rdMainEntry>評估主要條目 (1xx，245)</rdMainEntry>
+<this>生成刀具</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>定義的 OAI 伺服器：</label1>
+<label2>（使用 shift/換檔控制選擇多個專案）</label2>
+<ck_date>從上次下載收穫</ck_date>
+<cmdCreate>保存</cmdCreate>
+<button1>關閉</button1>
+<this>創建批次處理收穫作業</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>位元組</BytesGroup>
+<label5>雙邊投資條約</label5>
+<label4>iso-8859-1</label4>
+<label3>十進位</label3>
+<label2>十六進位</label2>
+<columnHeader1>位置</columnHeader1>
+<columnHeader2>位元組</columnHeader2>
+<columnHeader3>文本</columnHeader3>
+<menuStrip1>menustrip1</menuStrip1>
+<menuItem1>檔</menuItem1>
+<openToolStripMenuItem>開放</openToolStripMenuItem>
+<ExitProgram>退出</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>MarcEdit 結果視窗</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>函數名稱 （別名）：</lb_Alias>
+<label1>加入：</label1>
+<cmd_ok>保存</cmd_ok>
+<cmd_close>關閉</cmd_close>
+<this>加入 XML 函數</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>名稱</columnHeader1>
+<columnHeader2>路徑</columnHeader2>
+<cmdOK>還行</cmdOK>
+<cmdClose>關閉</cmdClose>
+<this>可用的任務</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menustrip1</menuStrip1>
+<mnuTools>工具</mnuTools>
+<mnuAddinsEditLinkedData>編輯連結的資料規則</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>編輯 XML 規則檔</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>如何分析新的終結點？</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>更新規則檔</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>日誌管理</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>高級的日誌管理</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>刪除日誌檔</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>查看所有日誌檔</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>帶分隔符號的文本翻譯</mnuAddinTranslator>
+<mnuExportGroup>出口...</mnuExportGroup>
+<mnuToolsTabbed>匯出選項卡分隔的記錄</mnuToolsTabbed>
+<mnuToolsGateway>出口 MARC 記錄</mnuToolsGateway>
+<mnuToolsSelect>選擇 MARC 記錄</mnuToolsSelect>
+<mnuToolsDelete>刪除選中的記錄</mnuToolsDelete>
+<mnuToolsExtract>提取所選的記錄</mnuToolsExtract>
+<mnuToolsCharacterConversion>字元轉換工具</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>了字元集轉換</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>特性的檢測</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>MarcEdit 腳本嚮導</mnuAddScriptWizard>
+<mnuExplorer>MARC SQL 資源管理器</mnuExplorer>
+<toolStripMenuItem4>OAI 收割機工具</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>收穫 OAI 記錄</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>批收割機</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>創建批次處理作業</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>運行批次處理收穫</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>出口</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>導入</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC 工具</mnuToolsUnimarcTools>
+<mnuAddinURL>請驗證 Url</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU 用戶端</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>馬克 · 處理工具</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>批次處理過程記錄</mnuToolsBatch>
+<toolClusterData>群集資料工具</toolClusterData>
+<mnuToolsDedup>查找重複的記錄</mnuToolsDedup>
+<generateToolStripMenuItem>生成...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>電話號碼</mnuGenerateCallnumber>
+<toolStripMenuItem3>快速的標題</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>LC 主題詞</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>合併記錄</mnutoolsmerge>
+<toolStripMenuItem5>RDA 説明器</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC 操作</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC 記錄下載</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>更新精神記錄控股</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>將題錄記錄上載到精神</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>驗證標題</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>服務狀態</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>驗證標題</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>首選項</mnuToolsPreferences>
+<pluginsToolStripMenuItem>外掛程式</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>外掛程式管理器</mnuAddinPluginManager>
+<mnuaddincdsisis>CDS ISIS.iso =&gt; 馬克翻譯</mnuaddincdsisis>
+<mnuHelp>説明</mnuHelp>
+<mnuHelpContents>內容和説明</mnuHelpContents>
+<mnuHelpTutorials>觀看教程</mnuHelpTutorials>
+<mnuHelpOnline>線上說明</mnuHelpOnline>
+<mnuHelpList>加入 MarcEdit 通知清單</mnuHelpList>
+<mnuHelpError>建議/錯誤報表</mnuHelpError>
+<mnuBlog>MarcEdit 的博客</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit 已知問題</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>系統資訊</systemInfoToolStripMenuItem>
+<mnuAddLang>編輯語言檔</mnuAddLang>
+<mnuRestartIn32bitMode>在 32 位模式下重新開機 MarcEdit</mnuRestartIn32bitMode>
+<mnuFileShare>共用配置設置</mnuFileShare>
+<exportSettingsToolStripMenuItem>匯出設置</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>導入設置</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>故障排除選項</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>清除暫存檔案</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>下載 Noto Unicode 字體</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>修復任務檔</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>從備份還原網路檔</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>選擇要重新連結任務</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>重置配置資料</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>打開 HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>故障排除嚮導</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>下載更新 （偵錯模式）</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>檢查更新</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>應用程式快捷方式</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>應用程式資料路徑</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>語言資料路徑</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>主題資料路徑</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>XSLT 資料路徑</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>關於...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>作者，特裡斯</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit 使用者授權合約</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>你想做什麼？</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>使用者定義 3</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine 資料</lnkUserDefined1>
+<lnkMarcToolsStart>馬克 · 工具</lnkMarcToolsStart>
+<lnkUserDefined2>使用者自訂 2</lnkUserDefined2>
+<lnkUserDefined4>使用者 Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>喜歡：</groupBox1>
+<cmbLastToolUsed>去年用過的工具</cmbLastToolUsed>
+<lnkTopic5>使用連結的資料</lnkTopic5>
+<lnkTopic4>翻譯到馬克的 Excel</lnkTopic4>
+<lnkTopic3>合併 MARC 檔</lnkTopic3>
+<lnkTopic2>收穫 OAI 資料</lnkTopic2>
+<lnkTopic1>編輯馬克 · 檔</lnkTopic1>
+<this>MarcEdit {版本}.Beta 由特裡斯</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>收穫 OAI 資料</lbTitle>
+<lbServer>伺服器位址：</lbServer>
+<lbSet>設置名稱：</lbSet>
+<lbMetadata>元資料類型：</lbMetadata>
+<cmdOK>還行</cmdOK>
+<cmdClose>關閉</cmdClose>
+<opt_default>預設</opt_default>
+<opt_saxon>撒克遜</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>XSLT 引擎：</label4>
+<ck_Raw>收穫 （OAI 資料保存到本地檔案系統） 的原始資料</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>高級的設置</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>超時 （秒）</lbTimeout>
+<ck_Translate>翻譯到馬克-8</ck_Translate>
+<label2>結束：</label2>
+<label1>開始：</label1>
+<lbCrosswalk>人行橫道的路徑：</lbCrosswalk>
+<cmdSave>保存</cmdSave>
+<lnkDebug>調試 URL</lnkDebug>
+<tabPage1>首頁</tabPage1>
+<tabPage2>高級的設置</tabPage2>
+<this>中繼資料聯合收割機</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>原始檔案的 OCLC 數位：</label1>
+<cmdDownload>下載</cmdDownload>
+<cmdClose>關閉</cmdClose>
+<label2>保存檔：</label2>
+<this>OCLC 的批量下載記錄</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>搜索精神：</label1>
+<cmbarg1>關鍵字</cmbarg1>
+<cmbconditional>和</cmbconditional>
+<cmdSearch>搜索</cmdSearch>
+<cmdClose>關閉</cmdClose>
+<label2>結果：</label2>
+<col_oclcnum>OCLC 數</col_oclcnum>
+<col_title>標題</col_title>
+<ck_LocalBib>下載本地書目記錄，如果存在</ck_LocalBib>
+<lnkAll>選擇所有</lnkAll>
+<label3>|</label3>
+<lnkNone>沒有一個</lnkNone>
+<this>搜索 OCLC 精神</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>更新你 OCLC 精神控股</label1>
+<groupBox1>選項</groupBox1>
+<rdDeleteHoldings>刪除控股</rdDeleteHoldings>
+<rdAddHolding>添加控股</rdAddHolding>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<label2>組織機構代碼：</label2>
+<label3>分類架構：</label3>
+<cmb_schema>國會圖書館</cmb_schema>
+<ck_debug>列印調試資訊</ck_debug>
+<this>更新精神控股</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>國會圖書館</cmb_schema>
+<label3>分類架構：</label3>
+<label2>組織機構代碼：</label2>
+<cmdClose>關閉</cmdClose>
+<cmdProcess>過程</cmdProcess>
+<label4>書目記錄與 OCLC 數位將更新的精神。 題錄</label4>
+<label1>持有的代碼：</label1>
+<lnkGetHoldings>獲取代碼</lnkGetHoldings>
+<ckLocalBibData>作為本地書目記錄過程</ckLocalBibData>
+<ck_deleterecords>刪除記錄</ck_deleterecords>
+<this>將記錄上載到精神</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>還行</cmd_options_ok>
+<cmd_options_cancel>關閉</cmd_options_cancel>
+<cmd_options_apply>應用</cmd_options_apply>
+<lnkMainWindow>主視窗</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>語言</lnkLanguage>
+<lnkEaseOfUse>易用性</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>更新</lnkUpdates>
+<lnkFileAssociations>檔關聯</lnkFileAssociations>
+<lnkOther>其他</lnkOther>
+<lnkILSIntegration>ILS 集成</lnkILSIntegration>
+<lnkOCLCAPI>OCLC API 集成</lnkOCLCAPI>
+<label15>設置的預設程式</label15>
+<ckLogging>啟用日誌記錄：</ckLogging>
+<ckAutosave>啟用自動儲存</ckAutosave>
+<ck_enhanced_editor_loading>使用增強的分頁管理</ck_enhanced_editor_loading>
+<ckRDATemplates>使用 RDA 的範本</ckRDATemplates>
+<ckCompileMarc8>作為 MARC8 編譯記錄</ckCompileMarc8>
+<label37>日誌路徑：</label37>
+<cksaveutf8>將記錄編譯為 UTF8</cksaveutf8>
+<ck_intellisense>啟用智慧感知</ck_intellisense>
+<label2>每頁記錄數</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>預設編碼：</lb_Encoding>
+<ck_nwindow>在新視窗中打開的檔</ck_nwindow>
+<ck_append>追加新記錄</ck_append>
+<lb_psize>預覽大小：</lb_psize>
+<ckUsePreview>使用預覽模式</ckUsePreview>
+<cmd_editor_font_default>設置的預設值</cmd_editor_font_default>
+<cmd_editor_set_font>設置的字體</cmd_editor_set_font>
+<lb_Editor_Font_Props>設置 MarcEditor 字體屬性：</lb_Editor_Font_Props>
+<cmd_editor_template_default>設置的預設值</cmd_editor_template_default>
+<cmd_editor_modify>修改</cmd_editor_modify>
+<lb_Current_Template>當前範本：</lb_Current_Template>
+<lb_Editor_Template>設置 MarcEditor 範本：</lb_Editor_Template>
+<label9>* 需要程式重新開機 *</label9>
+<label8>pt。</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>字體大小：</label4>
+<lb_Example>示例文本</lb_Example>
+<lb_lang_font>設置語言字體：</lb_lang_font>
+<lb_Set_Lang>設置語言包：</lb_Set_Lang>
+<rd_theme_dark>自訂主題：</rd_theme_dark>
+<rd_theme_normal>正常 （預設值）</rd_theme_normal>
+<label39>應用程式顯示選項</label39>
+<ck_export_output>出口收據 （捕獲 ILS 的輸出）</ck_export_output>
+<lb_TCP_Timeout>超時：</lb_TCP_Timeout>
+<lb_TCP_Port>埠：</lb_TCP_Port>
+<lb_TCP_Host>主機位址：</lb_TCP_Host>
+<lb_TCPIP_Props>TCP/IP 屬性：</lb_TCPIP_Props>
+<ck_marc21>在對 MARC21 格式記錄</ck_marc21>
+<ck_marcxml_sax>使用本機選項 （非 XSLT 過程）</ck_marcxml_sax>
+<groupBox2>XSLT 引擎</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Unicode 正常化</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>預設的字元編碼：</label35>
+<ckC>典型的 Decomposition (C)</ckC>
+<ckKD>相容性分解 (KD)</ckKD>
+<ck_Diacritics>換時使用變音符號</ck_Diacritics>
+<lb_Diacritics>常規選項：</lb_Diacritics>
+<lb_Engine_XML_Options>XML 選項：</lb_Engine_XML_Options>
+<ck_engine_namespace>使用 Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>自動的更新已被系統管理員禁用</labelAutoUpdateDisabled>
+<ckDetectProxy>使用系統代理設置</ckDetectProxy>
+<ck_Update_Validator>自動檢查驗證程式更新</ck_Update_Validator>
+<label3>你必須屬於某個域，為此，在這段時間工作。</label3>
+<groupBox4>使用者資訊：</groupBox4>
+<lb_domain>域：</lb_domain>
+<label6>密碼：</label6>
+<label5>使用者名：</label5>
+<ckUpdates>自動檢查更新</ckUpdates>
+<groupBox5>設置的檔關聯</groupBox5>
+<cmd_file_assoc_view>檢視類型</cmd_file_assoc_view>
+<cmd_file_assoc_delete>刪除類型</cmd_file_assoc_delete>
+<cmd_file_assoc_save>保存類型</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>關聯 (*。                     ) 檔的類型帶有:</label7>
+<ck_mrk8_editor>與 MarcEditor 關聯 (*.mrk8) 檔</ck_mrk8_editor>
+<ck_mrk_editor>與 MarcEditor 關聯 (*.mrk) 檔</ck_mrk_editor>
+<ck_mrc>與 MarcBreaker 關聯 (*.mrc) 檔</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>選擇</lnkSelectILS>
+<lnkDeleteProfile>刪除</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>添加</lnkAddProfile>
+<label31>設定檔：</label31>
+<ck_ignore_ssl>忽略 SSL 憑證錯誤</ck_ignore_ssl>
+<lnk_ils_delete>刪除</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>編輯</lnk_ils_z3950_edit>
+<ck_ils_z3950>使用 Z39.50 設置</ck_ils_z3950>
+<ck_ils_enable>啟用 ILS 選項</ck_ils_enable>
+<label13>主機名稱稱：</label13>
+<label12>密碼：</label12>
+<label11>使用者名：</label11>
+<label10>選擇系統：</label10>
+<lnkGetCodes>得到持有代碼</lnkGetCodes>
+<label24>持有的代碼：</label24>
+<cmb_schema>國會圖書館</cmb_schema>
+<label22>分類架構：</label22>
+<label23>組織機構代碼：</label23>
+<ckshow>顯示文本</ckshow>
+<cmdValidateKeys>驗證金鑰</cmdValidateKeys>
+<linkLabel1>請求/管理 （連接到 OCLC） OCLC 關鍵</linkLabel1>
+<label21>OCLC 的 API 金鑰設置</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>金鑰 （與中繼資料 API 金鑰成對出現）</label18>
+<label17>OCLC 的中繼資料 API 金鑰</label17>
+<label16>OCLC 搜索 API 金鑰</label16>
+<lnkFilePaths>地點</lnkFilePaths>
+<label38>網路超時 （預設 300 毫秒）：</label38>
+<lnkCopyLocalFiles>將本地檔案複製到現在</lnkCopyLocalFiles>
+<label30>設置的預設馬克工具磁碟機路徑：</label30>
+<label27>檔路徑：</label27>
+<label26>任務資料夾：</label26>
+<label25>網路資料夾：</label25>
+<lb_mono>單聲道的路徑：</lb_mono>
+<lb_temp>設置臨時路徑：</lb_temp>
+<ck_rss>閱讀 rss 訂閱源</ck_rss>
+<lb_title>標題標籤：</lb_title>
+<lb_Author>作者標籤：</lb_Author>
+<lbCall>呼叫號碼標記：</lbCall>
+<label1>控制數字標記：</label1>
+<ck_allow_z3950>啟用了 Z39.50 功能</ck_allow_z3950>
+<label28>欄位選項：</label28>
+<ck_touch_friendly>使用觸摸友好的功能表</ck_touch_friendly>
+<ck64_bit>64 位安裝</ck64_bit>
+<ck_32bit>32 位安裝</ck_32bit>
+<label36>MS Office 版本：</label36>
+<label34>國際標準書號標記：</label34>
+<ckSort880>880： 連結欄位用於排序</ckSort880>
+<ck880Infile>Infile 880 欄位與欄位對</ck880Infile>
+<label29>排序選項：</label29>
+<ckShowDescriptionInScreenTips>在工具提示中顯示功能說明</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>在工具提示中顯示快速鍵</ckScreenTipShortcuts>
+<label42>鍵盤選項</label42>
+<ckProvideSoundAccess>提供聲音回饋</ckProvideSoundAccess>
+<label41>回饋選項</label41>
+<groupBox3>行動：</groupBox3>
+<lnkSearch4Themes>刪除所選主題</lnkSearch4Themes>
+<lnkNewTheme>創建新的主題</lnkNewTheme>
+<label40>使 MarcEdit 更多</label40>
+<this>MarcEdit 首選項</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>可用的外掛程式：</label1>
+<ch1>外掛程式名稱</ch1>
+<ch2>URL</ch2>
+<c3>檔案大小</c3>
+<c4>Version #:</c4>
+<cmddownload>下載</cmddownload>
+<cmdClose>關閉</cmdClose>
+<columnHeader1>刪除嗎？</columnHeader1>
+<columnHeader2>外掛程式名稱</columnHeader2>
+<columnHeader3>類名稱</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>已安裝的外掛程式：</label2>
+<cmdRemove>刪除</cmdRemove>
+<c5>MarcEdit 版本編號</c5>
+<this>外掛程式管理器</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>資源。GetString"(label1。文本"）</label1>
+<label2>模式：</label2>
+<cmdProcess>過程</cmdProcess>
+<cmdCancel>取消</cmdCancel>
+<lbstatus>狀態：</lbstatus>
+<ckEscape>從 URL 轉義資料</ckEscape>
+<ckAddNew>替換現有欄位</ckAddNew>
+<ck_addnewfield>添加一個新的領域，如果不是存在</ck_addnewfield>
+<ckAlwaysAdd>始終添加新欄位</ckAlwaysAdd>
+<groupBox1>選項</groupBox1>
+<this>生成新的欄位</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>批次搜索</ck_batch>
+<lbdbtitle>標籤 2</lbdbtitle>
+<groupBox3>結果</groupBox3>
+<lnkClearResults>清除結果</lnkClearResults>
+<lnkDownload>下載所有專案</lnkDownload>
+<lnkGetNext>得到下一步 {極限}</lnkGetNext>
+<lnkDownloadAllHoldings>下載所有控股</lnkDownloadAllHoldings>
+<col1>位置</col1>
+<col2>標題</col2>
+<columnHeader1>資料庫</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>下載所選的專案</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>下載選定的控股記錄</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>查看所選的記錄</viewSelectedRecordToolStripMenuItem>
+<groupBox1>選項</groupBox1>
+<rdEditDB>選擇資料庫</rdEditDB>
+<rdEditSettings>編輯設置</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>每頁記錄數</label4>
+<ckUnicode>檢索 Unicode</ckUnicode>
+<lb_encoding_single>伺服器的字元集</lb_encoding_single>
+<lbSearchb>搜索：</lbSearchb>
+<lbSearch>查詢資料庫：</lbSearch>
+<label3>設置資料庫優先選項：</label3>
+<cmdSelectDatabase>選擇</cmdSelectDatabase>
+<MCol3>ID</MCol3>
+<MCol1>名稱</MCol1>
+<MCol2>類型</MCol2>
+<lb_PModifyTitle>選擇資料庫：</lb_PModifyTitle>
+<menuStrip1>menustrip1</menuStrip1>
+<actionsToolStripMenuItem>行動</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>添加新的 Z39.50 伺服器</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>添加新 SRU 伺服器</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>首選項</preferencesToolStripMenuItem>
+<cmdCloseSettings>關閉</cmdCloseSettings>
+<label5>控制欄位 （用於批量處理重復資料消除）</label5>
+<cmdSaveSettings>保存設置</cmdSaveSettings>
+<rdDownloadPreferred>從首選源下載</rdDownloadPreferred>
+<rdDownloadMostComplete>下載最完整的記載</rdDownloadMostComplete>
+<rdAllRecords>下載的所有記錄</rdAllRecords>
+<label2>批次處理選項</label2>
+<label1>首選項</label1>
+<this>MarcEdit Z39.50/SRU 用戶端</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>過程 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>編輯欄位</lnkEditFields>
+<ck_040>修改 040 — — 添加 $erda</ck_040>
+<ck_qualifyinginfo>限定資訊 (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>編輯清單</lnkEdit>
+<ck_dgmd>刪除 GMD</ck_dgmd>
+<ckAbbrev>擴大的縮寫</ckAbbrev>
+<ckgmd>生成 GMD</ckgmd>
+<ck264>評價 260/264</ck264>
+<ck_signs>始終使用 ©，℗ 符號</ck_signs>
+<ck381>添加 381 — — 其他</ck381>
+<ck380>添加 380 — — 表單的工作</ck380>
+<ck347>添加 347 — — 數位特徵</ck347>
+<ck346>添加 346 — — 視頻特徵</ck346>
+<ck345>添加 345 — — Proj。特點</ck345>
+<ck344>添加 344 — — 聲特性</ck344>
+<ck337>添加 337 — — 媒體類型
+添加 338 — — 載體類型</ck337>
+<ck336>添加 336 — — 內容類型</ck336>
+<cmdProcess>還行</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<label1>資料來源：</label1>
+<label2>保存：</label2>
+<lnkAll>所有</lnkAll>
+<label3>請選擇：</label3>
+<label4>|</label4>
+<lnkNone>沒有一個</lnkNone>
+<label7>狀態：</label7>
+<this>RDA 説明器</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>關閉</cmd_Close>
+<rEdit></rEdit>
+<this>結果</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>首頁</lnkHome>
+<label5>資源。GetString"(label5。文本"）</label5>
+<label4>關於 RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>關於 RobertCompare</lnkAbout>
+<ckSort>預排序檔</ckSort>
+<cmdClose>關閉</cmdClose>
+<cmdExecute>執行</cmdExecute>
+<label1>保存檔：</label1>
+<label6>比較檔：</label6>
+<label2>資源。GetString"(標籤 2。文本"）</label2>
+<lnkPreferences>首選項</lnkPreferences>
+<label7>|</label7>
+<lbSortField>排序欄位：</lbSortField>
+<lbdelete>刪除：</lbdelete>
+<lbAddColor>增補：</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>沒有一個</lnkNone>
+<lnkAll>選擇所有</lnkAll>
+<col_title>標題</col_title>
+<col_id>ID</col_id>
+<label3>|</label3>
+<label2>結果：</label2>
+<cmdClose>關閉</cmdClose>
+<cmdSearch>搜索</cmdSearch>
+<cmbarg1>標題</cmbarg1>
+<label1>搜索資料庫：</label1>
+<ck_batch>批次搜索</ck_batch>
+<this>搜索</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>選擇</cmdSelect>
+<this>選擇 ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>記錄號碼</columnHeader1>
+<columnHeader2>顯示欄位</columnHeader2>
+<selectItemsToolStripMenuItem>選擇專案</selectItemsToolStripMenuItem>
+<cmdImport>導入檔</cmdImport>
+<cmdfDelete>刪除所選</cmdfDelete>
+<cmdExport>匯出選擇</cmdExport>
+<cmdExit>退出</cmdExit>
+<lb_Search>搜索：</lb_Search>
+<lb_DisplayField>顯示欄位：</lb_DisplayField>
+<lb_SourceFile>馬克的原始檔案：</lb_SourceFile>
+<ckSource>重新保存已修改的記錄源中</ckSource>
+<ck_retain>保留選中的項</ck_retain>
+<cmd_Generate>生成報告</cmd_Generate>
+<ck_find_all>搜索所有記錄資料</ck_find_all>
+<ck_use_regex>使用正則運算式</ck_use_regex>
+<cmdRandomExport>出口隨機</cmdRandomExport>
+<lnkDoesNotMatch>與不匹配</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>反向選擇</lnkInvert>
+<ckExactWord>詞語精確匹配</ckExactWord>
+<this>MarcEdit.NET： 修改選定的 MARC 記錄</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>選擇要排除在排序欄位</lb_title>
+<lb_fields>排序欄位：</lb_fields>
+<lbExclude>排除的欄位：</lbExclude>
+<cmd_OK>還行</cmd_OK>
+<cmd_Close>關閉</cmd_Close>
+<this>自訂排序嚮導</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL 端點：</lbsparql>
+<cmdQuery>查詢</cmdQuery>
+<cmdClose>關閉</cmdClose>
+<lbQuery>SPARQL 查詢：</lbQuery>
+<lbresults>結果：</lbresults>
+<cklocal>載入本地檔</cklocal>
+<lbOutput>輸出：</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>依例查詢：</groupBox1>
+<lbExample3>查詢： 軍事基地</lbExample3>
+<lnkExample3>日本的國會圖書館</lnkExample3>
+<lbexample2>硫酸銅的蓋蒂查詢</lbexample2>
+<lnkExample2>蓋蒂示例</lnkExample2>
+<label1>流感，人權網查詢</label1>
+<lnkExample1>網格示例</lnkExample1>
+<label2>Sparql 的參考檔：</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL 端點 (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL （維琪百科）</lnkwikipediaSparql>
+<lnkTutorials>SPARQL 教程</lnkTutorials>
+<this>SPARQL 瀏覽器</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CD-ISIS =&gt; 馬克翻譯</lb_title>
+<groupBox1>使用者輸入</groupBox1>
+<lb_output>輸出檔案：</lb_output>
+<lb_input>輸入的檔：</lb_input>
+<groupBox2>選項：</groupBox2>
+<rd_advanced>高級的翻譯</rd_advanced>
+<rd_simple>簡單的翻譯</rd_simple>
+<lb_subfield>子欄位標記</lb_subfield>
+<cmd_Ok>還行</cmd_Ok>
+<cmd_Close>關閉</cmd_Close>
+<this>CDS ISIS.iso =&gt; 馬克翻譯</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>選項：</lb_title>
+<lnkLoad>負載欄位映射</lnkLoad>
+<ck_indicators>添加指標</ck_indicators>
+<ckLDR>正確的異地</ckLDR>
+<ck_subfield>添加前導子欄位</ck_subfield>
+<cmdOK>還行</cmdOK>
+<cmdClose>關閉</cmdClose>
+<this>高級的選項</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>label1</lbCaption>
+<cmdCancel>取消</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>特殊字元：</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>插入</cmd_Insert>
+<cmdClose>關閉</cmdClose>
+<this>馬克 · 8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>工作清單名稱：</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>添加刪除欄位任務</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>添加編輯子任務</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>添加編輯指標任務</addToolStripMenuItem>
+<cmdSave>保存</cmdSave>
+<addNewFieldTaskToolStripMenuItem>添加新欄位任務</addNewFieldTaskToolStripMenuItem>
+<cmdClose>關閉</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>添加的替換所有任務</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>添加注釋</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>添加欄位編輯任務</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>添加交換場任務</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>添加複製領域任務</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>添加工作清單</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>添加 RDA 幫手</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>添加連結的資料任務</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>添加生成新領域任務</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>編輯快捷方式</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Case 語句</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>小寫</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>大寫</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>詞首字母大寫</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>最初的病例</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>首字母大寫</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>欄位編輯</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>清潔智慧字元</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>數學函數</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>轉換為十進位的度</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>刪除空行</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>刀具工具</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>生成刀具</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>生成 Sanborn3 刀具</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>複製選定的任務操作</mnuCopy>
+<mnuPasteTask>粘貼任務操作</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>注釋選定任務</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>取消注釋選定的任務</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>任務：</lbTasks>
+<label1>行動：</label1>
+<label2>描述：</label2>
+<cmdDebug>調試</cmdDebug>
+<this>編輯工作清單</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>名稱</columnHeader1>
+<columnHeader2>路徑</columnHeader2>
+<columnHeader3>快捷方式</columnHeader3>
+<columnHeader4>描述</columnHeader4>
+<cmdClose>關閉</cmdClose>
+<lnkNew>創建新的工作清單</lnkNew>
+<lbMacro>工作清單：</lbMacro>
+<lnkCloneTask>克隆現有的工作清單</lnkCloneTask>
+<groupBox1>任務操作</groupBox1>
+<lnkRelink>重新連結任務</lnkRelink>
+<lnk_import_task>導入任務</lnk_import_task>
+<groupBox2>管理現有任務</groupBox2>
+<lnkBackup>備份所有任務</lnkBackup>
+<lnk_export_task>匯出選定的任務</lnk_export_task>
+<lnkKey>金鑰分配</lnkKey>
+<lnkEdit>編輯所選的工作清單</lnkEdit>
+<lnkDelete>刪除選定的工作清單</lnkDelete>
+<this>工作管理員</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>截斷長記錄</ckTruncate>
+<label1>選擇操作：</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>預設的字元編碼：</label35>
+<ck_Marc8>翻譯到馬克-8</ck_Marc8>
+<ck_UTF8>轉換為 UTF8</ck_UTF8>
+<lb_OutputFile>另存為...</lb_OutputFile>
+<lb_InputFile>打開...</lb_InputFile>
+<cmdCancel>關閉</cmdCancel>
+<cmdEdit>編輯記錄</cmdEdit>
+<cmdExecute>執行</cmdExecute>
+<lb_Results>結果：</lb_Results>
+<menuStrip1>menustrip1</menuStrip1>
+<toolsToolStripMenuItem>工具</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>返回到主視窗</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>編輯 XML 函數清單</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>批次處理過程記錄</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>了字元集轉換</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC 工具</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>你想做什麼？</mnuContextHelp>
+<lnkTopic1>將我的檔轉換為不同的字元編碼</lnkTopic1>
+<lnkTopic2>添加修改 XML 翻譯</lnkTopic2>
+<lnkTopic4>如何在我馬克檔中發現錯誤？</lnkTopic4>
+<groupBox1>喜歡：</groupBox1>
+<groupBox2>選擇資料的過程：</groupBox2>
+<groupBox3>字元編碼選項</groupBox3>
+<this>馬克 · 工具</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit 提供了一套建興重量 UNIMARC 轉換工具。 如果這些工具是您感興趣的你想要説明他們更好，請提供 f 回饋。
+
+</label1>
+<label2>來源</label2>
+<label3>目的地</label3>
+<groupBox1>選項</groupBox1>
+<rdUNIMARC>=&gt; 對 MARC21 UNIMARC</rdUNIMARC>
+<rdMARC21>=&gt; UNIMARC MARC21</rdMARC21>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<this>UNIMARC 工具</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>更新說明：</label1>
+<cmd_Update>更新</cmd_Update>
+<cmd_Cancel>取消</cmd_Cancel>
+<this>更新 MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode 編碼</ckIsUTF8>
+<ck_merge_to_source>將合併到源</ck_merge_to_source>
+<label17>保存檔：</label17>
+<label16>編目源</label16>
+<ck_SameFile>過程原始檔案</ck_SameFile>
+<cmd_merge_cancel>取消</cmd_merge_cancel>
+<cmd_merge_next>下一步 =&gt;</cmd_merge_next>
+<lb_merge_title>合併記錄資料</lb_merge_title>
+<ck_merge_repeatable>是可重複</ck_merge_repeatable>
+<lb_id>記錄的識別碼：</lb_id>
+<lb_merge>合併檔：</lb_merge>
+<lb_source>原始檔案：</lb_source>
+<ck_overlayexisting>覆蓋現有專案</ck_overlayexisting>
+<label4>信心的值：</label4>
+<ck_mergeUnique>合併唯一專案</ck_mergeUnique>
+<button1>取消</button1>
+<cmd_merge_select_fields_next>下一步 =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = 背</cmd_merge_select_fields_back>
+<label7>合併的欄位：</label7>
+<label6>選擇欄位：</label6>
+<label5>合併記錄的資料： 選擇欄位</label5>
+<button5>關閉</button5>
+<label15>已合併的檔。 結果位於 {merge_results_file}。</label15>
+<label13>合併已完成</label13>
+<this>合併 MARC 記錄</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>標題驗證工具可以用於驗證 1xx、 6xx 或 7xx 欄位。 Th e 工具利用 web 和本地的服務，以確定是否菌性 g 出現在授權的標題中的組合。</label1>
+<ck_1xx>授權 1xx/7xx 欄位</ck_1xx>
+<ck_6xx>授權 6xx 欄位</ck_6xx>
+<cmdProcess>過程</cmdProcess>
+<cmdClose>關閉</cmdClose>
+<label2>資料來源：</label2>
+<lbStatus>狀態：</lbStatus>
+<cmdExtract>提取物</cmdExtract>
+<ckdeletecache>刪除本機快取</ckdeletecache>
+<lnkDelimited>保存分隔</lnkDelimited>
+<ckonlyA>只有在處理 A 的子欄位</ckonlyA>
+<ckVariant>自動校正的變種</ckVariant>
+<ckGenerateBriefHeadings>生成簡短的個人名稱當局</ckGenerateBriefHeadings>
+<label3>生成的當局：</label3>
+<ckAddURIs>嵌入 Uri 時可能</ckAddURIs>
+<ck_download_authorities>下載 LC 當局</ck_download_authorities>
+<this>驗證標題</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>原始檔案：</lb_Source>
+<lb_Rules>規則檔：</lb_Rules>
+<cmd_Ok>還行</cmd_Ok>
+<cmd_close>關閉</cmd_close>
+<groupBox1>選項</groupBox1>
+<optIdentify>驗證記錄結構</optIdentify>
+<opt_remove>刪除不正確記錄</opt_remove>
+<opt_validate>檢查使用的 MARC 規則檔</opt_validate>
+<rdHex>在 HexEditor 中的視圖</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>還行</cmd_Ok>
+<cmdCancel>關閉</cmdCancel>
+<groupBox1>報告選項：</groupBox1>
+<lb_MARC_Title>標題：</lb_MARC_Title>
+<lbReport>報告類型：</lbReport>
+<lb_XSLT>XSLT 檔：</lb_XSLT>
+<lb_Dest>輸出檔案：</lb_Dest>
+<lb_MARC>輸入的檔：</lb_MARC>
+<lb_Fields>欄位：</lb_Fields>
+<lbTimeout>超時 （以秒為單位）</lbTimeout>
+<this>請驗證 URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>關於 OCLC 的快速服務</lnkClassify>
+<label1>資源。GetString"(label1。文本"）</label1>
+<ck_conditional_fast>添加快速標題存在沒有主題詞時</ck_conditional_fast>
+<ck_always_fast>始終添加快速標題</ck_always_fast>
+<label8>主題詞：</label8>
+<button1>過程</button1>
+<cmd_Close>關閉</cmd_Close>
+<this>生成快速標題</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>保存</cmd_save>
+<cmd_close>關閉</cmd_close>
+<ck_1xxa>$a： 主入口</ck_1xxa>
+<ck_245p>$p: pt/秒的工作名稱</ck_245p>
+<ck_245n>$n: pt/秒的工作數目</ck_245n>
+<ck_245c>$c： 公益責任聲明</ck_245c>
+<ck_245b>$b： 其餘的標題</ck_245b>
+<ck_245a>$a： 標題</ck_245a>
+<ck_lang>語言 (職位： 35-37)</ck_lang>
+<ck_dates>日期 (職位： 7-14)</ck_dates>
+<ck_p7>BLvl （位置 7）</ck_p7>
+<ck_p6>類型 （位置 6）</ck_p6>
+<ck_001>00/1/19</ck_001>
+<label6>控制中心的電話</label6>
+<ck_form>表單 (職位： 23)</ck_form>
+<ck_245_h>$h： 一般材料指定</ck_245_h>
+<label5>雜項的欄位：</label5>
+<label4>245 的領域：</label4>
+<label3>作者 (1xx) 欄位</label3>
+<label2>008 職位</label2>
+<label1>LDR 位置</label1>
+<this>合併選項</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>資料庫屬性</tabDBProps>
+<ck_Paused>重寫暫停 （6 秒）。</ck_Paused>
+<label1>資料庫：</label1>
+<ck_Show>顯示資料庫</ck_Show>
+<lbPassword>密碼：</lbPassword>
+<lbUsername>使用者名：</lbUsername>
+<lbSyntax>語法：</lbSyntax>
+<lbPort>埠：</lbPort>
+<lbHost>主持人：</lbHost>
+<lbname>名稱：</lbname>
+<tabDBAdvanced>高級的屬性</tabDBAdvanced>
+<label4>超時 （以秒為單位）：</label4>
+<label2>元素集：</label2>
+<label3>其他選項：</label3>
+<lnkftp>HTTP://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>更多的資訊：</lbInfo>
+<lbISBN>國際標準書號/ISSN:</lbISBN>
+<lbSubject>主題：</lbSubject>
+<lbTitle>標題：</lbTitle>
+<lbAuthor>作者：</lbAuthor>
+<lbadvTitle>Z39.50 屬性 4： 結構</lbadvTitle>
+<cmdSave>保存</cmdSave>
+<cmdClose>關閉</cmdClose>
+<label17>Z39.50 資料庫設置：</label17>
+<cmdDeleteZ3950>刪除</cmdDeleteZ3950>
+<gbCustom>自訂設定檔設置</gbCustom>
+<label5>標題索引：</label5>
+<label6>作者索引：</label6>
+<label10>關鍵字索引：</label10>
+<label7>主題索引：</label7>
+<label11>Record # Index:</label11>
+<label8>國際標準書號索引：</label8>
+<label12>ISSN 索引：</label12>
+<cmdDeleteSRU>刪除</cmdDeleteSRU>
+<ck_SRU_Show>顯示資料庫</ck_SRU_Show>
+<label13>額外的參數</label13>
+<label14>搜索設定檔：</label14>
+<lbVersion>版本：</lbVersion>
+<cmdCloseSRU>關閉</cmdCloseSRU>
+<cmdSaveSRU>保存</cmdSaveSRU>
+<label15>名稱：</label15>
+<lbMetadata>中繼資料架構：</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>SRU 資料庫屬性：</lbSRUTitle>
+<this>資料庫屬性</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>查找：</label1>
+<ckMatchCase>區分大小寫</ckMatchCase>
+<cmdFind>查找</cmdFind>
+<this>十六進位： 查找字串</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menustrip1</menuStrip1>
+<fileToolStripMenuItem>檔</fileToolStripMenuItem>
+<openToolStripMenuItem>開放</openToolStripMenuItem>
+<exitToolStripMenuItem>退出</exitToolStripMenuItem>
+<editToolStripMenuItem>編輯</editToolStripMenuItem>
+<findToolStripMenuItem>查找</findToolStripMenuItem>
+<findNextToolStripMenuItem>查找下一個</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>切</cutToolStripMenuItem>
+<copyToolStripMenuItem>副本</copyToolStripMenuItem>
+<pasteToolStripMenuItem>粘貼</pasteToolStripMenuItem>
+<clearToolStripMenuItem>明確</clearToolStripMenuItem>
+<findToolStripMenuItem>查找</findToolStripMenuItem>
+<replaceToolStripMenuItem>替換</replaceToolStripMenuItem>
+<lnkLoadAll>載入整個檔</lnkLoadAll>
+<lb_bytes>{loaded_bytes} 的 {file_bytes} 已載入位元組。</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>新記錄</tbNew>
+<mnuCNewWindow>打開新視窗</mnuCNewWindow>
+<ContextAuthority>權威</ContextAuthority>
+<ContextAuthorityName>名稱</ContextAuthorityName>
+<ContextAuthoritySubject>主題</ContextAuthoritySubject>
+<cBook>書</cBook>
+<cSerial>串列</cSerial>
+<cVisualMat>視覺材料</cVisualMat>
+<cMaps>製圖資源</cMaps>
+<cSoundRec>錄音</cSoundRec>
+<cScore>得分</cScore>
+<cElectMat>電子資源</cElectMat>
+<cMixedMat>混合的料</cMixedMat>
+<tbOpen>打開的檔</tbOpen>
+<tbSave>保存檔</tbSave>
+<tbPrint>列印檔案</tbPrint>
+<tbCompile>編譯的記錄</tbCompile>
+<tbCut>切</tbCut>
+<tbCopy>副本</tbCopy>
+<tbPaste>粘貼</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>刪除</tbDelete>
+<tbFind>查找</tbFind>
+<tbZ39_50>Z39.50/SRU 用戶端</tbZ39_50>
+<toolStripSplitButton1>全球馬克編輯實用程式</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>添加刪除欄位</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>建立新的領域</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>複製域</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>編輯欄位資料</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>編輯指標資料</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>編輯子欄位資料</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>欄位資料交換</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menustrip1</mnuObj>
+<mnuFile>檔</mnuFile>
+<mnuFileMain>返回到主視窗</mnuFileMain>
+<mnuFileNew>新增功能</mnuFileNew>
+<mnuFileNewWindow>打開新視窗</mnuFileNewWindow>
+<mnuFileNewDefault>預設</mnuFileNewDefault>
+<mnuFileNewAuthority>權威</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>名稱</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>主題</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>書</mnuFileNewBook>
+<mnuFileNewSerial>串列</mnuFileNewSerial>
+<mnuFileVisualMat>視覺材料</mnuFileVisualMat>
+<mnuFileNewMap>製圖資源</mnuFileNewMap>
+<mnuFileNewSound>錄音</mnuFileNewSound>
+<mnuFileNewScore>得分</mnuFileNewScore>
+<mnuFileNewER>電子資源</mnuFileNewER>
+<mnuFileNewMix>混合的料</mnuFileNewMix>
+<mnuFileOpen>開放</mnuFileOpen>
+<mnuFileRecent>最近使用的檔</mnuFileRecent>
+<mnunone10>沒有一個</mnunone10>
+<mnunone9>沒有一個</mnunone9>
+<mnunone8>沒有一個</mnunone8>
+<mnunone7>沒有一個</mnunone7>
+<mnunone6>沒有一個</mnunone6>
+<mnunone5>沒有一個</mnunone5>
+<mnunone4>沒有一個</mnunone4>
+<mnunone3>沒有一個</mnunone3>
+<mnunone2>沒有一個</mnunone2>
+<mnunone1>沒有一個</mnunone1>
+<mnuFileClearHistory>清除歷史記錄</mnuFileClearHistory>
+<mnuFileClearList>清除最近使用的檔</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>清除歷史記錄編輯/替換</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>關閉</mnuFileClose>
+<mnuFileExportData>為出口...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>從導入...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>保存</mnuFileSave>
+<mnuFileSaveAs>另存為...</mnuFileSaveAs>
+<mnuFilePrint>列印</mnuFilePrint>
+<toolStripMenuItem34>列印每頁的記錄</toolStripMenuItem34>
+<FileSelectIndividualMake>選擇的記錄進行編輯</FileSelectIndividualMake>
+<mnuFileCompile>將檔編譯為馬克 ·</mnuFileCompile>
+<mnuFileExit>退出</mnuFileExit>
+<mnuEdit>編輯</mnuEdit>
+<mnuEditUndo>撤銷</mnuEditUndo>
+<mnuEditRedo>重做</mnuEditRedo>
+<mnuEditSpecialUndo>特別撤銷</mnuEditSpecialUndo>
+<mnuEditCut>切</mnuEditCut>
+<mnuEditCopy>副本</mnuEditCopy>
+<mnuEditPaste>粘貼</mnuEditPaste>
+<mnuEditDupLines>重複行</mnuEditDupLines>
+<mnuEditClear>明確</mnuEditClear>
+<mnuEditFind>查找</mnuEditFind>
+<mnuEditReplace>替換</mnuEditReplace>
+<toolStripMenuItem28>編輯快捷方式</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>更改大小寫</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>小寫</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>大寫</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>詞首字母大寫</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>最初的病例</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>初始字元大寫</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>欄位編輯</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>清潔智慧字元</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>查找欄位漏掉一個字</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>查找記錄缺少欄位</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>查找具有重複標記的記錄</toolStripMenuItem39>
+<toolStripMenuItem40>查找具有重複欄位資料記錄</toolStripMenuItem40>
+<mnuEditLimitFields>限制的欄位數</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>互換標題</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>數學函數</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>轉換為十進位的度</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>跳轉到...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>跳轉到...記錄</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>跳轉到...頁面</jumpToPageToolStripMenuItem>
+<mnuEditControl>插入單個控制編號</mnuEditControl>
+<mnuEdit006>插入/編輯 006</mnuEdit006>
+<mnuEdit006Edit>編輯</mnuEdit006Edit>
+<mnuEdit006Book>書</mnuEdit006Book>
+<mnuEdit006Serial>持續的資源</mnuEdit006Serial>
+<mnuEdit006Map>製圖資源</mnuEdit006Map>
+<mnuEdit006Sound>錄音</mnuEdit006Sound>
+<mnuEdit006Score>得分</mnuEdit006Score>
+<mnuEdit006ER>電子資源</mnuEdit006ER>
+<mnuEdit006Visual>視覺材料</mnuEdit006Visual>
+<mnuEdit006Mixed>混合的料</mnuEdit006Mixed>
+<mnuEdit008>插入/編輯 008</mnuEdit008>
+<mnuEdit008Edit>編輯</mnuEdit008Edit>
+<mnuEdit008Book>書</mnuEdit008Book>
+<mnuEdit008Serial>持續的資源</mnuEdit008Serial>
+<mnuEdit008Map>製圖資源</mnuEdit008Map>
+<mnuEdit008Sound>錄音</mnuEdit008Sound>
+<mnuEdit008Score>得分</mnuEdit008Score>
+<mnuEdit008ER>電子資源</mnuEdit008ER>
+<mnuEdit008Visual>視覺材料</mnuEdit008Visual>
+<mnuEdit008Mixed>混合的料</mnuEdit008Mixed>
+<toolStripMenuItem27>將剪貼簿內容轉換</toolStripMenuItem27>
+<mnuEditConverttoUTF8>馬克-8 為 UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 對馬克-8</mnuEditConvertoMarc8>
+<mnuEditALA>馬克 · 8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>UTF-8 字元對應表</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>選擇所有</mnuEditSelectAll>
+<mnuEditWrap>自動換行</mnuEditWrap>
+<mnuEditRTL>右到左顯示</mnuEditRTL>
+<mnuFont>字體</mnuFont>
+<mnuFontFont>字體...</mnuFontFont>
+<mnuFontColor>顏色。。。</mnuFontColor>
+<mnuReports>報告</mnuReports>
+<mnuReportsField>欄位計數</mnuReportsField>
+<tlReportsMaterialReport>材料類型報告</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>生成報告</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>查找記錄的類型</findBookToolStripMenuItem>
+<booksToolStripMenuItem>書籍</booksToolStripMenuItem>
+<toolStripMenuItem32>電腦檔</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>持續的資源</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>地圖</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>混合的材料</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>分數</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>錄音</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>視覺材料</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>驗證 ISBN</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>驗證刊號</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>驗證標題</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>服務狀態</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>驗證標題</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>管理日誌檔</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>查看當前日誌檔</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>高級的日誌管理</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>刪除日誌檔</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>查看所有日誌檔</viewAllLogFilesToolStripMenuItem>
+<mnuTools>工具</mnuTools>
+<mnuToolsCluster>聚類的工具</mnuToolsCluster>
+<mnutoolCutters>Cuttering 工具</mnutoolCutters>
+<mnuToolsCalculator>目錄計算機</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>生成刀具</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>桑伯恩表 3 刀</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>生成的電話號碼</mnuToolsCallNum>
+<mnuToolsControlNumber>生成控制編號</mnuToolsControlNumber>
+<toolStripMenuItem33>連結的資料工具</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>建立連結的記錄</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>記錄重復資料消除技術</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA 説明器</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Z39.50/SRU 選項</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU 用戶端</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 上載記錄</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 刪除記錄</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 更新控股</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>編輯常量資料</mnuToolsEditConstant>
+<mnuToolsAssigned>分配常數資料</mnuToolsAssigned>
+<mnuConstant1>1） 未定義字串</mnuConstant1>
+<mnuConstant2>2） 未定義字串</mnuConstant2>
+<mnuConstant3>3） 未定義字串</mnuConstant3>
+<mnuConstant4>4） 未定義字串</mnuConstant4>
+<mnuConstant5>5） 未定義字串</mnuConstant5>
+<mnuConstant6>6） 未定義字串</mnuConstant6>
+<mnuConstant7>7） 未定義字串</mnuConstant7>
+<mnuConstant8>8） 未定義字串</mnuConstant8>
+<mnuConstant9>9） 未定義字串</mnuConstant9>
+<mnuConstant10>10） 未定義字串</mnuConstant10>
+<mnutoolmanageAutomate>管理工作</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>分配的任務</mnuToolsAssignedTasks>
+<mnuDefTask>目前可用的任務</mnuDefTask>
+<task1>1） 沒有定義的任務</task1>
+<task2>2） 沒有定義的任務</task2>
+<task3>3） 沒有定義的任務</task3>
+<task4>4） 沒有定義的任務</task4>
+<task5>5） 沒有定義的任務</task5>
+<task6>6） 沒有定義的任務</task6>
+<task7>7） 沒有定義的任務</task7>
+<task8>8） 沒有定義的任務</task8>
+<task9>9） 沒有定義的任務</task9>
+<task10>10） 未定義任務</task10>
+<task11>11） 沒有定義的任務</task11>
+<task12>12） 沒有定義的任務</task12>
+<task13>13） 沒有定義的任務</task13>
+<task14>14） 沒有定義的任務</task14>
+<task15>15） 未定義任務</task15>
+<task16>16） 沒有定義的任務</task16>
+<task17>17） 沒有定義的任務</task17>
+<task18>18） 沒有定義的任務</task18>
+<task19>19） 沒有定義的任務</task19>
+<task20>20） 沒有定義的任務</task20>
+<mnuToolsValidate>驗證 MARC 記錄</mnuToolsValidate>
+<mnuToolsOAI>從 OAI 的收穫</mnuToolsOAI>
+<mnutoolsurl>從 URL 生成馬克</mnutoolsurl>
+<toolStripMenuItem43>助記符的格式設置工具</toolStripMenuItem43>
+<toolStripMenuItem3>正常化......</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>正常化 LC 記錄</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>正常化 Microlif 記錄</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>刪除空行</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>刪除空的域/子域</mnuToolsRemoveEmpty>
+<mnuToolsAdd>添加刪除欄位</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>建立新的領域</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>複製域</toolStripMenuItem26>
+<mnuToolsEditField>編輯欄位資料</mnuToolsEditField>
+<mnuToolsIndicator>編輯指標資料</mnuToolsIndicator>
+<mnuToolsSubfield>編輯子欄位資料</mnuToolsSubfield>
+<mnuToolsSortby>按排序......</mnuToolsSortby>
+<toolStripMenuItem41>排序記錄由...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>自訂欄位</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>作者欄位</mnuToolsSortAuthor>
+<mnuToolsSortByCall>電話號碼欄位</mnuToolsSortByCall>
+<mnuToolsSortControl>控制數字欄位</mnuToolsSortControl>
+<mnuToolsSortbyTitle>標題欄位</mnuToolsSortbyTitle>
+<toolStripMenuItem42>排序欄位中的記錄...</toolStripMenuItem42>
+<mnuToolsCustomSort>自訂排序</mnuToolsCustomSort>
+<mnuToolsSort2>排序 0xx 欄位</mnuToolsSort2>
+<mnuToolsSort>對所有欄位進行都排序</mnuToolsSort>
+<mnuToolsSwap>欄位資料交換</mnuToolsSwap>
+<mnuToolsOptions>首選項</mnuToolsOptions>
+<mnu_ILS>[ILS 名稱]</mnu_ILS>
+<mnu_ils_search>搜索</mnu_ils_search>
+<updateCreateToolStripMenuItem>更新/創建</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>進程設置</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC 精神</mnuOCLC>
+<toolStripMenuItem31>搜索精神</toolStripMenuItem31>
+<mnuOCLCLocalBibData>添加/刪除/更新本地書目資料</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>創建並更新書目資料</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>更新控股</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>外掛程式</pluginsToolStripMenuItem>
+<mnuHelp>説明</mnuHelp>
+<mnuHelpContents>內容和説明</mnuHelpContents>
+<mnuEditInfo>馬克 · 資訊</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC 馬克説明</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA 工具組</mnuHelpRDAToolkit>
+<mnuEditInfoLC>美國圖書館的國會馬克説明</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>包檔以進行調試</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>你想做什麼？</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>每頁記錄數</label1>
+<lblPage>頁面</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>查看自動儲存檔</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>通過 OCLC 的 Termology 服務提供資料驗證服務。為了利用這些服務，您必須同意遵守和遵守的條款及條件規定由 OCLC 有關使用和逼真度的這些服務。</lb_text>
+<label1>OCLC 協定的聯繫：</label1>
+<lnk_Terms>查看使用條款</lnk_Terms>
+<cmd_Agree>我同意</cmd_Agree>
+<cmd_disagree>我不同意</cmd_disagree>
+<this>OCLC 協定</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>英語</comboBox1>
+<linkLabel2>不，謝謝，只是使用預設設置</linkLabel2>
+<linkLabel1>讓我們開始吧 ！</linkLabel1>
+<label2>我是來説明您入門的 ！ 我會問你一些問題，然後你喲</label2>
+<label1>歡迎來到 MarcEdit 7 ！</label1>
+<this>MarcEdit 7 啟動嚮導</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>到資料設置...Ruff ！</linkLabel1>
+<label6>請記住，您可以設置主題、 字體大小、 語言和高級協助工具 o</label6>
+<cmb_theme_picker>預設</cmb_theme_picker>
+<label5>建議主題：</label5>
+<label4>pt。</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>建議字體大小：</label3>
+<cmbFont>San 的諾托</cmbFont>
+<label2>預設字型：</label2>
+<label1>MarcEdit 外觀</label1>
+<this>MarcEdit 7 啟動嚮導： 頁 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit 是 MARC 不可知論者，所以讓我們告訴它一點關於您的資料。</label5>
+<comboBox3>為我選擇</comboBox3>
+<label4>XML 處理引擎：</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>預設記錄編碼：</label3>
+<comboBox1>對 MARC21</comboBox1>
+<label2>我 MARC 格式是：</label2>
+<linkLabel1>我們就要大功告成了 ！ 松鼠 ！</linkLabel1>
+<label1>MarcEdit 資料設置</label1>
+<this>MarcEdit 7 啟動嚮導： 頁 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>快樂編輯 ！</linkLabel1>
+<label5>資源。GetString"(label5。文本"）</label5>
+<label1>祝賀你 ！ 你準備好了使用 MarcEdit 7</label1>
+<this>MarcEdit 7 啟動嚮導： 完成</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>關閉</cmdClose>
+<ck_remote>解決遠端實體</ck_remote>
+<ck_Marc8>轉換為馬克-8</ck_Marc8>
+<opt_default>預設</opt_default>
+<opt_saxon>撒克遜</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>保存</cmdSave>
+<gp_XSLT>XSLT 引擎</gp_XSLT>
+<label7>最終格式</label7>
+<label6>原始格式</label6>
+<label4>XSLT/XQuery 路徑</label4>
+<label3>函數名稱 （別名）：</label3>
+<label2>一般資訊：</label2>
+<lnkXMLFunctionWizard>XML 函數嚮導</lnkXMLFunctionWizard>
+<groupBox1>行動</groupBox1>
+<lnkAdd>添加</lnkAdd>
+<lnkModify>修改</lnkModify>
+<lnkDelete>刪除</lnkDelete>
+<label5>格式：</label5>
+<label1>定義的函數：</label1>
+<this>編輯 XML 函數</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

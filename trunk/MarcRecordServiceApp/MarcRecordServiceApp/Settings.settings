@@ -9,10 +9,10 @@
       <Value Profile="(Default)">60</Value>
     </Setting>
     <Setting Name="LcMarcRecordMaxProducts" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">10000</Value>
+      <Value Profile="(Default)">20000</Value>
     </Setting>
     <Setting Name="NlmMarcRecordMaxProducts" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">10000</Value>
+      <Value Profile="(Default)">100000</Value>
     </Setting>
     <Setting Name="RbdMarcRecordMaxProducts" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">1000000</Value>
@@ -23,15 +23,8 @@
     <Setting Name="DefaultFromAddressName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Rittenhouse Customer Service</Value>
     </Setting>
-    <Setting Name="RittenhouseMarcDb" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Server=10.0.0.32;Database=MarcRecords;User ID=sa;Password=Techno2012;Trusted_Connection=False&lt;/ConnectionString&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Server=10.0.0.32;Database=MarcRecords;User ID=sa;Password=Techno2012;Trusted_Connection=False</Value>
-    </Setting>
     <Setting Name="MarcRecordBatchSize" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">10000</Value>
+      <Value Profile="(Default)">1000</Value>
     </Setting>
     <Setting Name="R2DatabaseName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Dev2_RIT001</Value>
@@ -47,6 +40,13 @@
     </Setting>
     <Setting Name="OclcGetRecordsOlderThanDays" Type="System.String" Scope="Application">
       <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="RittenhouseMarcDb" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=technoserv05;Database=MarcRecords;User ID=sa;Password=Techno2015;Trusted_Connection=False&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=technoserv05;Database=MarcRecords;User ID=sa;Password=Techno2015;Trusted_Connection=False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

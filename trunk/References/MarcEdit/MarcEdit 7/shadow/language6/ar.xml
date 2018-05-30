@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>استخراج السجلات</mnuExtract>
+<cmenuClipboard>نسخ إلى الحافظة</cmenuClipboard>
+<cmenuSubfields>عدد الحقول الفرعية</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>تعليمات</cmenuHelp>
+<cmd_OK>قم بإغلاق</cmd_OK>
+<cmd_Report>إنشاء تقرير</cmd_Report>
+<lb_ReportStyle>أسلوب التقرير:</lb_ReportStyle>
+<opt_tab>علامة التبويب تقرير محدد</opt_tab>
+<opt_xml>تقرير XML</opt_xml>
+<opt_html>تقرير HTML</opt_html>
+<this>حقل العد</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>الاتجاه:</groupBox3>
+<rd_down>إلى أسفل</rd_down>
+<rd_up>حتى</rd_up>
+<btn_findall>بحث عن الكل</btn_findall>
+<groupBox1>خيارات البحث:</groupBox1>
+<ck_f_whole_word>البحث عن الكلمة بالكامل فقط</ck_f_whole_word>
+<ck_find_regex>استخدام تعبيرات عادية</ck_find_regex>
+<ck_f_match_case>مطابقة حالة الأحرف</ck_f_match_case>
+<cmdFClose>قم بإغلاق</cmdFClose>
+<cmdFFind>البحث عن</cmdFFind>
+<lb_FindWhat>بحث عن:</lb_FindWhat>
+<cmdNav_Find>البحث عن</cmdNav_Find>
+<cmdReplaceNav>استبدال</cmdReplaceNav>
+<ckReplaceConditional>تنفيذ البحث/الاستبدال إذا...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>إذا كان:</label1>
+<cmd_R_Close>قم بإغلاق</cmd_R_Close>
+<cmd_R_All>استبدال الكل</cmd_R_All>
+<cmd_R_Replace>استبدال</cmd_R_Replace>
+<groupBox2>خيارات البحث:</groupBox2>
+<ck_Replace_ExactWordMatch>مطابقة الكلمة الضبط</ck_Replace_ExactWordMatch>
+<ckMultiLine>التقييم متعدد الأسطر</ckMultiLine>
+<ckFile>استخدام المعايير الخارجية بحث/استبدال</ckFile>
+<ck_R_RegExp>استخدام تعبيرات عادية</ck_R_RegExp>
+<ck_R_Case>مطابقة حالة الأحرف</ck_R_Case>
+<lb_ReplaceWith>يستعاض عن:</lb_ReplaceWith>
+<lb_R_FindWhat>البحث عن:</lb_R_FindWhat>
+<this>بحث/استبدال:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>الحالة:
+
+</lb_bProccess_status>
+<ck_bTask>تحميل المهام</ck_bTask>
+<ckBatchProcessSubfolders>تضمين المجلدات الفرعية</ckBatchProcessSubfolders>
+<lb_Operation>الدالة:</lb_Operation>
+<cmdBClose>قم بإغلاق</cmdBClose>
+<cmdBProcess>عملية</cmdBProcess>
+<lb_Extensions>أنواع الملفات:</lb_Extensions>
+<lb_BSource>الدليل المصدر:</lb_BSource>
+<lbBTitle>سجلات مارك عملية دفعية</lbBTitle>
+<groupBox1>خيارات</groupBox1>
+<this>سجلات عملية دفعية</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>عملية دفعية</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>ترميز النهائي:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>الترميز الأصلي:</lb_encoding>
+<lb_UTF8_Header>تحويلات الحرف</lb_UTF8_Header>
+<cmdCancel>قم بإغلاق</cmdCancel>
+<cmdOK>عملية</cmdOK>
+<lb_UTF8_Dest>الملف الوجهة:</lb_UTF8_Dest>
+<lb_UTF8_Source>الملف المصدر:</lb_UTF8_Source>
+<groupBox1>إعدادات الترميز</groupBox1>
+<this>تحويلات Characterset</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>أدوات تجميع البيانات</label1>
+<label2>البيانات تجميع أدوات توفر مجموعة من خيارات تجميع مبسط لتنظيف البيانات دفعة نسيد أنا.  لتجميع وظائف متقدمة، يرجى النظر في استخدام أوبينريفيني.</label2>
+<groupBox1>خيارات</groupBox1>
+<rdCustom>فهرسة الحقول المخصصة</rdCustom>
+<rdControlData>فهرسة البيانات الخاضعة للرقابة (1xx، 6xx، 7xx)</rdControlData>
+<rdAll>فهرسة جميع البيانات</rdAll>
+<cmdImport>استيراد البيانات</cmdImport>
+<label3>الملف المصدر:</label3>
+<label9>نوع البيانات:</label9>
+<label8>عرض مجموعات:</label8>
+<label7>الكتلة في الفروع التالية:</label7>
+<cmbclusteringalgorithm>المسافة ليفينشتاين</cmbclusteringalgorithm>
+<label6>حدد خوارزمية التجميع:</label6>
+<cmbClusterField>أسماء (1xx، 7xx)</cmbClusterField>
+<label4>حدد البيانات التي تريد للمجموعة:</label4>
+<cmdGenerateCluster>توليد الكتلة</cmdGenerateCluster>
+<cmbAlg>المسافة ليفينشتاين</cmbAlg>
+<lnkAddCriteria>إضافة تحديث</lnkAddCriteria>
+<lnkClose>قم بإغلاق</lnkClose>
+<lnkEditCluster>معالجة كافة التغييرات</lnkEditCluster>
+<label5>مجمع البيانات:</label5>
+<this>تجميع الأدوات</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>مصحح الأخطاء المهمة</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>محدد السياقية</label8>
+<lb_Tab_Header>تصدير السجلات محدد علامة التبويب</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>في حقل محدد</label18>
+<lbdelimiter>حدد محدد الحقل</lbdelimiter>
+<cmdTClose2>قم بإغلاق</cmdTClose2>
+<cmdTNext>القادم &gt;&gt;</cmdTNext>
+<label1>الخطوة 1: تعيين مسارات الملفات</label1>
+<ck_normalize>تطبيع البيانات الميدانية</ck_normalize>
+<cmd_tab2_back>مرة أخرى</cmd_tab2_back>
+<lnkSettings>إعدادات...</lnkSettings>
+<lnkDeleteField>حذف حقل</lnkDeleteField>
+<lnkAddField>قم بإضافة حقل</lnkAddField>
+<label14>حقلاً فرعياً:</label14>
+<label11>الحقل:</label11>
+<cmdTClose>قم بإغلاق</cmdTClose>
+<cmdTExport>تصدير</cmdTExport>
+<label2>الخطوة 2: تعريف حقول/الفروع للتصدير</label2>
+<label3>تصدير السجلات محدد علامة التبويب</label3>
+<mnuLoad>تحميل الإعدادات</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>حفظ الإعدادات</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>مسح الإعدادات</menuItem3>
+<this>تصدير السجلات محدد علامة التبويب</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>الحجم:</label4>
+<lb_Example>مثال على نص</lb_Example>
+<lb_lang_font>حدد الخط:</lb_lang_font>
+<cmdOK>موافق</cmdOK>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>حدد الخط</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>المهام لتشغيل الاستيراد</groupBox1>
+<lnkSelectPre>حدد مهمة</lnkSelectPre>
+<cname>الاسم</cname>
+<cPath>مسار المهمة</cPath>
+<groupBox2>المهام لتشغيل على التصدير</groupBox2>
+<linkLabel1>حدد مهمة</linkLabel1>
+<columnHeader1>الاسم</columnHeader1>
+<columnHeader2>مسار المهمة</columnHeader2>
+<cmdSave>حفظ</cmdSave>
+<cmdClose>قم بإغلاق</cmdClose>
+<deleteItemToolStripMenuItem>حذف عنصر</deleteItemToolStripMenuItem>
+<this>إعدادات عملية ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>تضمين المجلدات الفرعية</ckJoinSubfolders>
+<cmdEditFile>تحرير ملف</cmdEditFile>
+<lnkJoinedFiles>وانضم إلى إظهار الملفات</lnkJoinedFiles>
+<label19>أنواع الملفات:</label19>
+<ck_JoinIndividual>الانضمام إلى ملفات فردية</ck_JoinIndividual>
+<cmdJoinCancel>قم بإغلاق</cmdJoinCancel>
+<cmdJoinProcess>عملية</cmdJoinProcess>
+<lb_Join_Files>(ق) إلى التسجيل:</lb_Join_Files>
+<lb_Join_Source>حفظ الملف:</lb_Join_Source>
+<lb_Join_Header>الأداة المساعدة ماركجوين</lb_Join_Header>
+<lbJoinStatus>الحالة:</lbJoinStatus>
+<groupBox1>خيارات</groupBox1>
+<this>ماركجوين</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>سجلات لكل ملف:</lb_Split_Records>
+<cmdSplitClose>قم بإغلاق</cmdSplitClose>
+<cmdSplitProcess>عملية</cmdSplitProcess>
+<lb_Split_Folder>المجلد الوجهة:</lb_Split_Folder>
+<lb_Split_Source>الملف المصدر:</lb_Split_Source>
+<lb_Split_Header>الأداة المساعدة ماركسبليت</lb_Split_Header>
+<groupBox1>خيارات</groupBox1>
+<this>ماركسبليت</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>اسم الموضوع:</label1>
+<label2>الوصف:</label2>
+<label3>القيم العالمية</label3>
+<label4>لون الخط</label4>
+<label5>لون الخلفية</label5>
+<label6>لون الخلفية</label6>
+<label7>لون الخط</label7>
+<label8>قيم مارسيديتور</label8>
+<cmdSave>حفظ</cmdSave>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdPreview>معاينة</cmdPreview>
+<richTextBox1>نص عينة</richTextBox1>
+<label9>عرض مارسيديتور:</label9>
+<cmdOpen>فتح</cmdOpen>
+<label10>خلفية مربع المجموعة</label10>
+<groupBox1>مثال على مربع المجموعة</groupBox1>
+<this>موضوع مارسيديت باني</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>تم تصميم "معالج استكشاف الأخطاء وإصلاحها مارسيديت" لمساعدة المستخدمين في العثور على التعليمات التي </label1>
+<gpStart>خيارات</gpStart>
+<rdErrorMessage>لدى رسالة خطأ</rdErrorMessage>
+<rdErrorNumber>لدى رقم خطأ</rdErrorNumber>
+<lbMessage>{الرسالة}</lbMessage>
+<cmdPage1>القادم</cmdPage1>
+<gpResults>النتائج</gpResults>
+<cmdClose>قم بإغلاق</cmdClose>
+<lnkCreateDebugPackage>إنشاء إرسال "حزمة تصحيح إلى" لتصحيح الأخطاء؟</lnkCreateDebugPackage>
+<label2>معالج استكشاف الأخطاء وإصلاحها وكان غير قادر على تحديد موقع مقالة في قاعدة المعارف </label2>
+<this>مارسيديت معالج استكشاف الأخطاء وإصلاحها</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>أخرى XML</rdOther>
+<rdMARCXML>مارككسمل</rdMARCXML>
+<rdMARC>مارك</rdMARC>
+<label17>قم بتحديد الشكل النهائي</label17>
+<label16>الخطوة 3:</label16>
+<label15>حفظ الملف:</label15>
+<label13>الخطوة 2:</label13>
+<label12>اسم التحول:</label12>
+<lnkNextPg1>للانتقال إلى الخطوة التالية</lnkNextPg1>
+<label4>قم بتحديد الملف:</label4>
+<label3>الخطوة 1:</label3>
+<label2>الموارد. GetString ("label2. النص ")</label2>
+<label1>XML/JSON منشئ ملفات التعريف</label1>
+<lbTop>عنصر المستند:</lbTop>
+<ckTopLevel>استخدام عنصر المستند</ckTopLevel>
+<lnkNextPg2>للانتقال إلى الخطوة التالية</lnkNextPg2>
+<label7>حدد العنصر الذي سجل</label7>
+<label6>الخطوة 3:</label6>
+<label5>XML/JSON منشئ ملفات التعريف</label5>
+<label14>تعريف تعيينات</label14>
+<lnkNextP3>للانتقال إلى الخطوة التالية</lnkNextP3>
+<groupBox2>الوسائط</groupBox2>
+<ck_filing_characters>حساب البيانات نونفيلينج المشتركة</ck_filing_characters>
+<ck_sort>حقول الفرز</ck_sort>
+<button2>تحميل قالب</button2>
+<toolStripMenuItem2>تحرير العنصر</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>حذف العناصر</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>وصل العناصر</joinItemsToolStripMenuItem>
+<groupBox1>إعدادات</groupBox1>
+<ckTrim>تقليم التنقيط الموجودة</ckTrim>
+<ck_Repeatable>حقلاً فرعياً للتكرار</ck_Repeatable>
+<P3_ck_constant>بيانات ثابتة</P3_ck_constant>
+<P3_cmd_Apply>إضافة الوسيطة</P3_cmd_Apply>
+<P3_lb_punct>الأجل. علامات الترقيم:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>الصناعية:</P3_lb_indicators>
+<P3_mapto>تعيين إلى:</P3_mapto>
+<P3_lb_select>قم بتحديد:</P3_lb_select>
+<label9>الخطوة 4:</label9>
+<label8>XML/JSON منشئ ملفات التعريف</label8>
+<lnkClose>قم بإغلاق المعالج</lnkClose>
+<label11>التحول الذي تم إنشاء وإضافتها إلى قائمة المهام XML.
+</label11>
+<label10>XML/JSON منشئ ملفات التعريف</label10>
+<this>XML/JSON منشئ ملفات التعريف</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>النوع: الكتاب</label11>
+<lbbTitle>خيارات 08/06/00:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>ليتف:</lnkbLitF>
+<lnkbIndx>إيندكس:</lnkbIndx>
+<lnkbFest>مهرجان:</lnkbFest>
+<lnkbConf>أسيوط:</lnkbConf>
+<lnkbGPub>جبوب:</lnkbGPub>
+<lnkbCont>تابع:</lnkbCont>
+<lnkbForm>النموذج:</lnkbForm>
+<lnkbAudn>أودن:</lnkbAudn>
+<lnkbIlls>العلل:</lnkbIlls>
+<lnkbType>النوع:</lnkbType>
+<label12>نوع: الموارد الإلكترونية</label12>
+<label5>خيارات 08/06/00:</label5>
+<lnkcFile>ملف:</lnkcFile>
+<lnkcGPub>جبوب:</lnkcGPub>
+<lnkcAudn>أودن:</lnkcAudn>
+<lnkcType>النوع:</lnkcType>
+<label2>,</label2>
+<lnkbDates>التواريخ:</lnkbDates>
+<lnkbDtSt>دتست:</lnkbDtSt>
+<lnkbCtry>Ctry:</lnkbCtry>
+<lnkbLang>لانغ:</lnkbLang>
+<lnkbMRec>مريك:</lnkbMRec>
+<label1>خيارات 008:</label1>
+<label13>النوع: خريطة</label13>
+<label3>خيارات 08/06/00:</label3>
+<lnkmSpFm>سبفم:</lnkmSpFm>
+<lnkmIndx>إيندكس:</lnkmIndx>
+<lnkmForm>النموذج:</lnkmForm>
+<lnkmGPub>جبوب:</lnkmGPub>
+<lnkmCrTp>كرتب:</lnkmCrTp>
+<lnkmProj>Proj:</lnkmProj>
+<lnkmRelf>ريلف:</lnkmRelf>
+<lnkmType>النوع:</lnkmType>
+<label14>النوع: مواد مختلطة</label14>
+<label4>خيارات 08/06/00:</label4>
+<lnkmmForm>النموذج:</lnkmmForm>
+<lnkmmType>النوع:</lnkmmType>
+<label15>النوع: نقاط</label15>
+<label6>خيارات 08/06/00:</label6>
+<lnkscLTxt>لتكست:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>النموذج:</lnkscForm>
+<lnkscAudn>أودن:</lnkscAudn>
+<lnkscFMus>واﻷصول:</lnkscFMus>
+<lnkscComp>شركات:</lnkscComp>
+<lnkscType>النوع:</lnkscType>
+<label10>النوع: استمرار الموارد</label10>
+<lnkslEntW>انتو:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>خيارات 08/06/00:</label7>
+<lnkslAlph>بالرشيدية:</lnkslAlph>
+<lnkslConf>أسيوط:</lnkslConf>
+<lnkslGPub>جبوب:</lnkslGPub>
+<lnkslCont>تابع:</lnkslCont>
+<lnkslForm>النموذج:</lnkslForm>
+<lnkslOrig>الأصلية:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>ريجل:</lnkslRegl>
+<lnkslFreq>التكرار:</lnkslFreq>
+<lnkslType>النوع:</lnkslType>
+<label16>النوع: تسجيل الصوت</label16>
+<label8>خيارات 08/06/00:</label8>
+<lnksdLTxt>لتكست:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>النموذج:</lnksdForm>
+<lnksdAudn>أودن:</lnksdAudn>
+<lnksdFMus>واﻷصول:</lnksdFMus>
+<lnksdComp>شركات:</lnksdComp>
+<lnksdType>النوع:</lnksdType>
+<label17>نوع: المواد البصرية</label17>
+<label9>خيارات 08/06/00:</label9>
+<lnkvmTech>التكنولوجيا:</lnkvmTech>
+<lnkvmTMat>تمات:</lnkvmTMat>
+<lnkvmForm>النموذج:</lnkvmForm>
+<lnkvmGPub>جبوب:</lnkvmGPub>
+<lnkvmAudn>أودن:</lnkvmAudn>
+<lnkvmTime>الوقت:</lnkvmTime>
+<lnkvmType>النوع:</lnkvmType>
+<cmd_Ok>موافق</cmd_Ok>
+<cmd_Close>قم بإغلاق</cmd_Close>
+<lnkSrce>سرسي:</lnkSrce>
+<linkLabel1>النموذج:</linkLabel1>
+<this>08/06/00</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>الموارد. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>عني:</lb_Authors>
+<lbBuildCode>قم بتحديث التعليمات البرمجية:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.net</lnkHomepage>
+<label5>موقع المشروع على الإنترنت:</label5>
+<label2>شكر وتقدير:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>تعديل:</lbMod>
+<lbMailto>تيري ريز</lbMailto>
+<lbAuthor>مقدم البلاغ:</lbAuthor>
+<lbVersion>رقم البنية:</lbVersion>
+<label4>حول مارسيديت</label4>
+<linkLabel1>http://marcedit.reeset.net/technical-details</linkLabel1>
+<label1>التفاصيل التقنية:</label1>
+<this>حول مارسيديت</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>تحميل</cmdLoad>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdDelete>حذف</cmdDelete>
+<this>ملفات حفظ تلقائي للبريد:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>تحرير الحقول</lnk_Edit_Fields>
+<lnkCopy>نسخ بيانات الحقل</lnkCopy>
+<lnkSwapFields>تبديل الحقول</lnkSwapFields>
+<lnkIndicators>تحرير المؤشرات</lnkIndicators>
+<lnkSubfield>تحرير البيانات حقلاً فرعياً</lnkSubfield>
+<lnkAddDelete>إضافة أو حذف حقل</lnkAddDelete>
+<groupBox8>حذف خيارات الحقل</groupBox8>
+<ckRemoveByPostition>إزالة بالموقف الميداني</ckRemoveByPostition>
+<ck_RemoveIfNot>إزالة إذا لم تتطابق البيانات الميدانية</ck_RemoveIfNot>
+<ck_dedup>إزالة البيانات المكررة</ck_dedup>
+<groupBox7>إضافة خيارات الحقل</groupBox7>
+<ck_A_addifnotduplicate>إضافة الحقل فقط إذا لم يكن مكرر</ck_A_addifnotduplicate>
+<ck_A_Insert>إدراج قبل</ck_A_Insert>
+<ck_A_not_present>قم بإضافة الحقل فقط إذا لم يكن موجوداً</ck_A_not_present>
+<ck_AddIfPresent>قم بإضافة الحقل إذا كان موجوداً</ck_AddIfPresent>
+<ck_last>إدراج آخر</ck_last>
+<groupBox6>خيارات عامة</groupBox6>
+<ck_delete_batch>العملية عملية دفعية</ck_delete_batch>
+<ck_A_Case>مطابقة حالة الأحرف</ck_A_Case>
+<ck_A_regular_Expression>استخدم التعبير العادي</ck_A_regular_Expression>
+<label1>بحث عن:</label1>
+<cmd_A_Close>قم بإغلاق</cmd_A_Close>
+<cmd_A_Add>قم بإضافة حقل</cmd_A_Add>
+<cmd_A_Delete>حذف حقل</cmd_A_Delete>
+<label3>حقل البيانات:</label3>
+<lb_A_Field>الحقل:</lb_A_Field>
+<lb_A_Title>إضافة/حذف الأداة المساعدة الميدانية</lb_A_Title>
+<cmd_Sub_Close>قم بإغلاق</cmd_Sub_Close>
+<cmd_Sub_Remove>إزالة نص</cmd_Sub_Remove>
+<cmd_Sub_Replace>استبدال النص</cmd_Sub_Replace>
+<groupBox2>خيارات البحث:</groupBox2>
+<ckDeleteDuplicate>حذف حقلاً فرعياً مكررة</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>حذف حقلاً فرعياً</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>نقل البيانات حقلاً فرعياً</ck_move_subfield>
+<ck_Reg_Express>استخدم التعبير العادي</ck_Reg_Express>
+<ck_Sub_Case>مطابقة حالة الأحرف</ck_Sub_Case>
+<ck_Sub_New>فروع جديدة فقط</ck_Sub_New>
+<ck_Sub_NotPresent>أضف حقلاً فرعياً إذا لم يكن موجوداً</ck_Sub_NotPresent>
+<label8>استبدال:</label8>
+<label7>حقل البيانات:</label7>
+<label6>حقلاً فرعياً:</label6>
+<label5>الحقل:</label5>
+<lb_Sub_Title>تحرير الأداة المساعدة حقلاً فرعياً</lb_Sub_Title>
+<cmd_I_Close>قم بإغلاق</cmd_I_Close>
+<cmd_I_Replace>استبدال</cmd_I_Replace>
+<lb_Ind_Replace>استبدال مع المؤشرات</lb_Ind_Replace>
+<label12>حقل البيانات:</label12>
+<label11>المؤشرات</label11>
+<label10>الحقل:</label10>
+<lb_Ind_Title>تحرير مؤشر المرافق</lb_Ind_Title>
+<ck_Match_All_Subfields>مطابقة جميع الفروع</ck_Match_All_Subfields>
+<ck_swap_expression>معاملة كتعبير عادي</ck_swap_expression>
+<label4>البحث عن:</label4>
+<cmd_Swap_Close>قم بإغلاق</cmd_Swap_Close>
+<cmd_Swap_Process>عملية</cmd_Swap_Process>
+<groupBox3>خيارات البحث</groupBox3>
+<ck_swap_once_per>عملية حقل واحد في مبادلة</ck_swap_once_per>
+<ck_swap_sort>تعديل حقل من نوع</ck_swap_sort>
+<ck_Swap_Override>إضافة إلى القائمة/إنشاء جديد</ck_Swap_Override>
+<ck_Swap_Add>إضافة إلى حقل موجود</ck_Swap_Add>
+<ck_Swap_Copy>نسخ المصدر</ck_Swap_Copy>
+<label20>البيانات المعدلة:</label20>
+<label22>الحقول الفرعية</label22>
+<label23>المؤشرات</label23>
+<label24>الميدان</label24>
+<label19>البيانات الأصلية:</label19>
+<label18>البحث عن:</label18>
+<label17>الحقول الفرعية</label17>
+<label16>المؤشرات</label16>
+<label15>الميدان</label15>
+<lb_Swap_Title>مقايضة فائدة الحقل</lb_Swap_Title>
+<label14>حقل البيانات</label14>
+<lbFindInField>البحث في الحقل</lbFindInField>
+<groupBox4>خيارات</groupBox4>
+<ck_copy_field_regex>استخدام تعبيرات عادية</ck_copy_field_regex>
+<ck_copy_delete>حذف الحقل المصدر</ck_copy_delete>
+<label2>حقل الوجهة:</label2>
+<cmdCopyClose>قم بإغلاق</cmdCopyClose>
+<cmdCopy>نسخة</cmdCopy>
+<label9>حقل المصدر:</label9>
+<label13>نسخ بيانات الحقل</label13>
+<label26>الوظيفة:</label26>
+<label21>يستعاض عن:</label21>
+<label25>البحث عن:</label25>
+<groupBox5>خيارات</groupBox5>
+<ck_editfield_match_case>مطابقة حالة الأحرف</ck_editfield_match_case>
+<ck_UserRegularExpressions>استخدام تعبيرات عادية</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>قم بإغلاق</cmdFieldEdit_Close>
+<cmdEditField_Process>عملية</cmdEditField_Process>
+<label27>الحقل:</label27>
+<label28>تحرير بيانات الحقل</label28>
+<this>أدوات تحرير دفعة MarcEdit.NET</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<label1>اختبارات BibFrame2 بسيط لاستخدام الأداة المساعدة مصممة للسماح للبيانات الوصفية speci </label1>
+<label2>الملف المصدر:</label2>
+<label3>حفظ الملف:</label3>
+<label4>إنشاء تسلسل البيانات:</label4>
+<cmbSerialization>ردفكسمل</cmbSerialization>
+<label5>قواعد الترجمة:</label5>
+<label6>باصيري:</label6>
+<lnkEditXQuery>تحرير</lnkEditXQuery>
+<label7>نوع الملف:</label7>
+<label8>الشخصية:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>معرف الحقل:</label9>
+<this>اختبارات بيبفرامي</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>حفظ الملف:</label3>
+<label2>الملف المصدر:</label2>
+<label1>قد صمم "أداة البيانات المرتبطة" حلقة مستمرة من خلال مجموعة من سجلات مارك وحل نقاط الوصول في 1xx و 6xx، وعناصر البيانات 7xx دات المرتبطة بهم من اندبوينتس.</label1>
+<cmdProcess>عملية</cmdProcess>
+<cmdCancel>قم بإغلاق</cmdCancel>
+<groupBox1>خدمات معرف</groupBox1>
+<ckLimiter>القرار الحد الأقصى إلى:</ckLimiter>
+<ck3xxFields>عملية 3xx حقول</ck3xxFields>
+<label4>عدد مؤسسهاو:</label4>
+<ckWorkId>تضمين معرف العمل مؤسسهاو</ckWorkId>
+<cmb_viaf_index>LC (ناكو)</cmb_viaf_index>
+<ckAutodetect>كشف تلقائي معرف الموضوع</ckAutodetect>
+<ck_viaf>فياف مؤسسهاو</ck_viaf>
+<ck_loc>دخول الرئيسية/إضافة الكشف التلقائي</ck_loc>
+<label5>ملف النظام:</label5>
+<cmdStatus>حالة الخدمة</cmdStatus>
+<lbstatus>الحالة:</lbstatus>
+<this>بناء السجلات المرتبطة</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>البحث عن</lnkFind>
+<lbResults>النتائج:</lbResults>
+<lnkCatalog>كتالوج الإله الحاسبة كايل بانيرجي</lnkCatalog>
+<cmdClose>قم بإغلاق</cmdClose>
+<label1>قواطع LC</label1>
+<this>جاري إنشاء نشرة مصورة الحاسبة</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>يستخدم "أداة الكشف عن حرف" عملية هيوريستيكال لإعطاء أفضل تخمين rela </label1>
+<cmdDetect>كشف</cmdDetect>
+<cmdClose>قم بإغلاق</cmdClose>
+<label2>النتائج:</label2>
+<ckDetailed>نتائج مطول</ckDetailed>
+<this>الكشف عن الطابع</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>الموارد. GetString ("label1. النص ")</label1>
+<lnkClassify>حول مؤسسهاو لتصنيف الخدمات</lnkClassify>
+<ck_all>إضافة إلى كافة السجلات</ck_all>
+<ck_single>إضافة إلى السجل المحدد</ck_single>
+<ck_lc>مكتبة الكونغرس</ck_lc>
+<ck_dewey>ديوي العشري</ck_dewey>
+<cmdProcess>تصنيف</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<label5>إدراج إذا لم تكن موجودة الحقول التالية (مثال: 050 060 090; 092)</label5>
+<label4>إدراج التصنيفات التي تم إنشاؤها في الحقل التالي:</label4>
+<ck_cutters>حساب تواريخ وتقطيع</ck_cutters>
+<ck_use_z>استخدام z حقلاً فرعياً لمطابقة</ck_use_z>
+<ck_DateMod>إلحاق إشارة إلى تاريخ</ck_DateMod>
+<ck_omit_serial>حذف تاريخ المسلسلات</ck_omit_serial>
+<ck_omit_integrated>حذف تاريخ الموارد المتكاملة</ck_omit_integrated>
+<ck_omit>إلحاق تاريخ الاستثناءات</ck_omit>
+<ck_always_fast>دائماً إضافة عناوين سريعة</ck_always_fast>
+<ck_conditional_fast>إضافة عناوين سريعة عند حضور لا من عناوين المواضيع</ck_conditional_fast>
+<label6>المؤشرات:</label6>
+<cmdInsert>تعليمات الإدراج</cmdInsert>
+<cmdClassification>التصنيفات</cmdClassification>
+<cmdSubjects>عناوين المواضيع</cmdSubjects>
+<lnkClassification>اختر تصنيف</lnkClassification>
+<lnkSubjects>اختر خيارات الموضوع</lnkSubjects>
+<lnkOptions>تعيين خيارات</lnkOptions>
+<cmdOptions>خيارات</cmdOptions>
+<label2>حقلاً فرعياً:</label2>
+<label3>كوتيرينج حقلاً فرعياً:</label3>
+<this>إنشاء تصنيف</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>بيانات ثابتة</columnHeader1>
+<columnHeader3>الاختصار</columnHeader3>
+<cmdClose>قم بإغلاق</cmdClose>
+<lnkKey>تعيين المفتاح</lnkKey>
+<lnkEdit>تحرير السلسلة المحددة</lnkEdit>
+<lnkDelete>حذف السلسلة المحددة</lnkDelete>
+<lnkNew>إنشاء سلسلة جديدة</lnkNew>
+<lbActions>الإجراءات:</lbActions>
+<lbMacro>بيانات ثابتة:</lbMacro>
+<this>تحرير بيانات ثابتة</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>عدد بادئة:</lb_prefix>
+<lb_digit>تبدأ أرقام:</lb_digit>
+<ck_autogenerate>إدراج سجلات جديدة</ck_autogenerate>
+<button1>موافق</button1>
+<button2>قم بإغلاق</button2>
+<lb_length>طول أرقام (ناقص بادئة)</lb_length>
+<ckgenerate>تولد في الملف الحالي</ckgenerate>
+<ck_label>أرقام سجل مارك</ck_label>
+<label1>حقل/حقلاً فرعياً (مثال: 001، 949$ ب)</label1>
+<ck_repeat>دائماً إدراج</ck_repeat>
+<this>توليد أرقام التحكم</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>استخدام مطابقة غامض</ck_UseFuzzyMatch>
+<ck_save>حفظ العناصر ديدوب إلى:</ck_save>
+<ck_unique>إخراج عناصر فريدة</ck_unique>
+<ck_remove>إزالة العناصر المكررة</ck_remove>
+<lbOptions>خيارات:</lbOptions>
+<label1>حفظ ديدوب:</label1>
+<lb_Control>حقل التحكم:</lb_Control>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdOK>عملية</cmdOK>
+<btnCancel>إلغاء الأمر</btnCancel>
+<btnNext>القادم</btnNext>
+<label4>حفظ الملف:</label4>
+<label3>البحث عن التكرار من الملفات التالية:</label3>
+<label2>أداة تسجيل إلغاء البيانات المكررة</label2>
+<label5>الثقة:</label5>
+<this>سجل إلغاء البيانات المكررة</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>حدد ملف السجل:</label1>
+<groupBox1>خيارات</groupBox1>
+<ckChanged>استخراج السجلات التي تم تغييرها</ckChanged>
+<ckEnhance>تعزيز سجلات</ckEnhance>
+<label2>حدد السجلات:</label2>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>إدارة السجلات</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>ماركنيكست</label1>
+<lbaboutmn>ماركنيكست مساحة مختبر لإدخال الأدوات الجديدة والمفاهيم المتعلقة </lbaboutmn>
+<lnkOpenRefine>التكامل أوبينريفيني</lnkOpenRefine>
+<lnkSPARQL>متصفح سباركل</lnkSPARQL>
+<lnkLinkIds>ربط معرفات</lnkLinkIds>
+<lnkBibframe>اختبارات بيبفرامي</lnkBibframe>
+<this>ماركنيكست</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>استخدم هذه الأداة لنقل البيانات بين مارك أو مارسيديت لتنسيق Mnemonic وأوبينريف </label1>
+<label2>الملف المصدر:</label2>
+<label3>حفظ الملف:</label3>
+<rdExport>التصدير إلى أوبينريفيني</rdExport>
+<rdImport>استيراد من أوبينريفيني</rdImport>
+<cmdProcess>عملية</cmdProcess>
+<cmdCancel>قم بإغلاق</cmdCancel>
+<lbStatus>الحالة:</lbStatus>
+<groupBox1>خيارات</groupBox1>
+<this>أداة نقل البيانات أوبينريفيني</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>حدد لمشاركة الملفات:</label1>
+<ckconfig>خيارات التكوين</ckconfig>
+<label2>تصدير كافة البيانات الموجودة في الدليل config المستخدم.  وهذا يشمل بيانات التكوين، </label2>
+<ckXSLT>وظائف XSLT</ckXSLT>
+<label3>تصدير أوراق أنماط XSLT المحدد
+</label3>
+<ckMacros>وحدات الماكرو المعرفة والمهام</ckMacros>
+<label4>تعريف تصدير كافة وحدات الماكرو والمهام...
+</label4>
+<label5>تصدير كافة قوالب نوع المواد مارسيديتور محددة.</label5>
+<ckTemplates>قوالب محددة مارسيديتور</ckTemplates>
+<cmdExport>تصدير</cmdExport>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>إعدادات التصدير</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>عمل</columnHeader2>
+<columnHeader1>العثور على النص</columnHeader1>
+<button1>قم بإغلاق</button1>
+<button2>الانتقال إلى الصفحة</button2>
+<cmdFindUpdate>تحرير استعلام البحث</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>البحث عن جميع النتائج</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<lbField>أدخل الحقل رقم الاستدعاء لتقييم. (خروج 090)</lbField>
+<groupBox1>خيارات</groupBox1>
+<rdTitle>الأمر القاطع (2xx، 1xx)</rdTitle>
+<rdDefault>الأمر القاطع (1xx، 2xx)</rdDefault>
+<groupBox2>خيارات</groupBox2>
+<label1>البحث عن:</label1>
+<rdCustomField>حقل مخصص</rdCustomField>
+<rdMainEntry>تقييم الإدخال الرئيسي (1xx، 245)</rdMainEntry>
+<this>توليد تقطيع</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>ملقمات OAI محددة:</label1>
+<label2>(استخدم مراقبة التحول/shift لتحديد عناصر متعددة)</label2>
+<ck_date>الحصاد من آخر تحميل</ck_date>
+<cmdCreate>حفظ</cmdCreate>
+<button1>قم بإغلاق</button1>
+<this>إنشاء مهمة الحصاد المجموعة</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>وحدات البايت</BytesGroup>
+<label5>معاهدات الاستثمار الثنائية</label5>
+<label4>إيزو-8859-1</label4>
+<label3>العلامة العشرية</label3>
+<label2>ست عشري</label2>
+<columnHeader1>موقف</columnHeader1>
+<columnHeader2>وحدات البايت</columnHeader2>
+<columnHeader3>نص</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>الملف</menuItem1>
+<openToolStripMenuItem>فتح</openToolStripMenuItem>
+<ExitProgram>خروج</ExitProgram>
+<this>ماركسبي</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>نافذة نتائج مارسيديت</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>اسم الدالة (اسم مستعار):</lb_Alias>
+<label1>ينضم إلى:</label1>
+<cmd_ok>حفظ</cmd_ok>
+<cmd_close>قم بإغلاق</cmd_close>
+<this>الانضمام إلى وظائف XML</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>الاسم</columnHeader1>
+<columnHeader2>مسار</columnHeader2>
+<cmdOK>موافق</cmdOK>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>المهام المتوفرة</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>أدوات</mnuTools>
+<mnuAddinsEditLinkedData>تحرير قواعد البيانات المرتبطة</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>تحرير ملف قواعد XML</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>كيف الشخصية النهاية الجديدة؟</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>تحديث ملفات النظام</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>إدارة سجل</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>إدارة سجل تقدما</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>حذف ملفات السجل</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>عرض كافة ملفات السجل</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>مترجم نص محدد</mnuAddinTranslator>
+<mnuExportGroup>تصدير...</mnuExportGroup>
+<mnuToolsTabbed>تصدير السجلات محدد علامة التبويب</mnuToolsTabbed>
+<mnuToolsGateway>تصدير سجل مارك</mnuToolsGateway>
+<mnuToolsSelect>حدد سجلات مارك</mnuToolsSelect>
+<mnuToolsDelete>حذف السجلات المحددة</mnuToolsDelete>
+<mnuToolsExtract>استخراج السجلات المحددة</mnuToolsExtract>
+<mnuToolsCharacterConversion>أدوات تحويل الحرف</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>تحويلات Characterset</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>الكشف عن الطابع</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>معالج البرنامج النصي مارسيديت</mnuAddScriptWizard>
+<mnuExplorer>مارك SQL مستكشف</mnuExplorer>
+<toolStripMenuItem4>أدوات حصاده OAI</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>سجلات OAI الحصاد</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>حصاده دفعة</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>إنشاء مهمة المجموعة</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>تشغيل دفعة الحصاد</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>أوبينريفيني</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>تصدير</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>استيراد</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>أدوات أونيمارك</mnuToolsUnimarcTools>
+<mnuAddinURL>التحقق من عناوين Url</mnuAddinURL>
+<mnuAddinZ39_50>عميل Z39.50/SRU</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>أدوات تجهيز مارك</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>سجلات عملية دفعية</mnuToolsBatch>
+<toolClusterData>المجموعة أدوات البيانات</toolClusterData>
+<mnuToolsDedup>البحث عن السجلات المكررة</mnuToolsDedup>
+<generateToolStripMenuItem>توليد...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>أرقام الاتصال</mnuGenerateCallnumber>
+<toolStripMenuItem3>عناوين سريعة</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>عناوين المواضيع LC</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>مارككومباري</muntoolsMarcCompare>
+<mnuToolsJoin>ماركجوين</mnuToolsJoin>
+<mnuToolsSplit>ماركسبليت</mnuToolsSplit>
+<mnuAddinValidator>ماركفاليداتور</mnuAddinValidator>
+<mnutoolsmerge>دمج السجلات</mnutoolsmerge>
+<toolStripMenuItem5>مساعد قانون التمييز العنصري</toolStripMenuItem5>
+<toolStripMenuItem6>عمليات مؤسسهاو</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>تنزيل سجل مؤسسهاو</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>تحديث سجل WorldCat القابضة</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>تحميل السجلات بيبليوجراف إلى وورلدكات</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>التحقق من صحة العناوين</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>حالة الخدمة</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>التحقق من صحة العناوين</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>تفضيلات</mnuToolsPreferences>
+<pluginsToolStripMenuItem>المكونات الإضافية</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>مدير البرنامج المساعد</mnuAddinPluginManager>
+<mnuaddincdsisis>الأقراص المضغوطة-إيزيس.iso =&gt; مارك الترجمة</mnuaddincdsisis>
+<mnuHelp>تعليمات</mnuHelp>
+<mnuHelpContents>محتويات والتعليمات</mnuHelpContents>
+<mnuHelpTutorials>عرض الدروس</mnuHelpTutorials>
+<mnuHelpOnline>التعليمات عبر الإنترنت</mnuHelpOnline>
+<mnuHelpList>انضم إلى قائمة إعلام مارسيديت</mnuHelpList>
+<mnuHelpError>التقرير اقتراحات/خطأ</mnuHelpError>
+<mnuBlog>مدونة مارسيديت</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>القضايا المعروفة باسم مارسيديت</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>معلومات النظام</systemInfoToolStripMenuItem>
+<mnuAddLang>تحرير ملفات اللغة</mnuAddLang>
+<mnuRestartIn32bitMode>مارسيديت بإعادة تشغيل في وضع 32-بت</mnuRestartIn32bitMode>
+<mnuFileShare>مشاركة إعدادات التكوين</mnuFileShare>
+<exportSettingsToolStripMenuItem>إعدادات التصدير</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>استيراد الإعدادات</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>خيارات استكشاف الأخطاء وإصلاحها</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>مسح الملفات المؤقتة</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>تنزيل الخطوط Unicode نوتو</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>إصلاح الملفات المهمة</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>استعادة ملفات الشبكة من النسخ الاحتياطي</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>تحديد المهام لإعادة ربط</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>إعادة تعيين بيانات التكوين</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>HexEditor مفتوحة</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>معالج استكشاف الأخطاء وإصلاحها</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>قم بتحميل التحديث (وضع التصحيح)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>التحقق من وجود تحديثات</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>اختصارات التطبيقات</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>مسار بيانات التطبيق</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>مسار البيانات اللغة</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>مسار البيانات موضوع</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>مسار بيانات XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>حول...</mnuHelpAboutGroup>
+<mnuHelpAbout>7 مارسيديت</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>صاحب البلاغ، تيري ريز</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>مارسيديت اتفاقية ترخيص المستخدم</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>ماذا تحب أن تفعل؟</mnuContextHelp>
+<lnkResearch>ماركنيكست</lnkResearch>
+<lnkUserDefined3>3 المعرف من قبل المستخدم</lnkUserDefined3>
+<lnkUserDefined1>بيانات أوبينريفيني</lnkUserDefined1>
+<lnkMarcToolsStart>أدوات مارك</lnkMarcToolsStart>
+<lnkUserDefined2>2 المعرفة من قبل المستخدم</lnkUserDefined2>
+<lnkUserDefined4>Defined4 المستخدم</lnkUserDefined4>
+<startEditor>مارسيديتور</startEditor>
+<groupBox1>أود أن:</groupBox1>
+<cmbLastToolUsed>الأدوات المستخدمة في الماضي</cmbLastToolUsed>
+<lnkTopic5>العمل مع البيانات المرتبطة</lnkTopic5>
+<lnkTopic4>ترجمة Excel إلى مارك</lnkTopic4>
+<lnkTopic3>دمج ملفات مارك</lnkTopic3>
+<lnkTopic2>بيانات OAI الحصاد</lnkTopic2>
+<lnkTopic1>تحرير ملف مارك</lnkTopic1>
+<this>مارسيديت {إصدار}.beta بريس تيري</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>بيانات OAI الحصاد</lbTitle>
+<lbServer>عنوان الملقم:</lbServer>
+<lbSet>اسم مجموعة:</lbSet>
+<lbMetadata>نوع بيانات التعريف:</lbMetadata>
+<cmdOK>موافق</cmdOK>
+<cmdClose>قم بإغلاق</cmdClose>
+<opt_default>افتراضي</opt_default>
+<opt_saxon>ساكسون</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>محرك XSLT:</label4>
+<ck_Raw>حصاد "البيانات الخام" (حفظ البيانات OAI إلى نظام الملفات المحلي)</ck_Raw>
+<lbtoken>ريسومبتيونتوكين:</lbtoken>
+<lnkAdvanced>إعدادات متقدمة</lnkAdvanced>
+<lbGetRecord>جيتريكورد:</lbGetRecord>
+<lbTimeout>مهلة (في ثانية).</lbTimeout>
+<ck_Translate>ترجمة لمارك-8</ck_Translate>
+<label2>نهاية:</label2>
+<label1>البدء:</label1>
+<lbCrosswalk>مسار للمشاة:</lbCrosswalk>
+<cmdSave>حفظ</cmdSave>
+<lnkDebug>تصحيح عنوان URL</lnkDebug>
+<tabPage1>الصفحة الرئيسية</tabPage1>
+<tabPage2>إعدادات متقدمة</tabPage2>
+<this>بيانات التعريف حصاده</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>الملف المصدر لأرقام مؤسسهاو:</label1>
+<cmdDownload>تحميل</cmdDownload>
+<cmdClose>قم بإغلاق</cmdClose>
+<label2>حفظ الملف:</label2>
+<this>سجلات تحميل الجزء الأكبر من مؤسسهاو</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>وورلدكات البحث:</label1>
+<cmbarg1>الكلمات الرئيسية</cmbarg1>
+<cmbconditional>و</cmbconditional>
+<cmdSearch>البحث عن</cmdSearch>
+<cmdClose>قم بإغلاق</cmdClose>
+<label2>النتائج:</label2>
+<col_oclcnum>عدد مؤسسهاو</col_oclcnum>
+<col_title>العنوان</col_title>
+<ck_LocalBib>تحميل السجلات الببليوغرافية المحلية إذا كانت موجودة</ck_LocalBib>
+<lnkAll>حدد كافة</lnkAll>
+<label3>|</label3>
+<lnkNone>لا شيء</lnkNone>
+<this>البحث مؤسسهاو WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>تحديث الخاص بك "حيازات WorldCat مؤسسهاو"</label1>
+<groupBox1>خيارات</groupBox1>
+<rdDeleteHoldings>حذف المقتنيات</rdDeleteHoldings>
+<rdAddHolding>إضافة القابضة</rdAddHolding>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<label2>رمز المؤسسة:</label2>
+<label3>مخطط التصنيف:</label3>
+<cmb_schema>مكتبة الكونغرس</cmb_schema>
+<ck_debug>طباعة معلومات التصحيح</ck_debug>
+<this>تحديث WorldCat القابضة</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>مكتبة الكونغرس</cmb_schema>
+<label3>مخطط التصنيف:</label3>
+<label2>رمز المؤسسة:</label2>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdProcess>عملية</cmdProcess>
+<label4>سيتم تحديث السجلات الببليوغرافية مع أرقام مؤسسهاو في WorldCat.  بيبليوجراف </label4>
+<label1>إجراء التعليمات البرمجية:</label1>
+<lnkGetHoldings>الحصول على رموز</lnkGetHoldings>
+<ckLocalBibData>العملية كالسجلات الببليوغرافية المحلية</ckLocalBibData>
+<ck_deleterecords>حذف السجلات</ck_deleterecords>
+<this>تحميل السجلات إلى وورلدكات</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>موافق</cmd_options_ok>
+<cmd_options_cancel>قم بإغلاق</cmd_options_cancel>
+<cmd_options_apply>تطبيق</cmd_options_apply>
+<lnkMainWindow>الإطار الرئيسي</lnkMainWindow>
+<lnkMarcEditor>مارسيديتور</lnkMarcEditor>
+<lnkLanguage>اللغة</lnkLanguage>
+<lnkEaseOfUse>سهولة الاستخدام</lnkEaseOfUse>
+<lnkMarcEngine>مارسينجيني</lnkMarcEngine>
+<lnkUpdates>التحديثات</lnkUpdates>
+<lnkFileAssociations>اقترانات الملفات</lnkFileAssociations>
+<lnkOther>الأخرى</lnkOther>
+<lnkILSIntegration>التكامل ILS</lnkILSIntegration>
+<lnkOCLCAPI>مؤسسهاو API التكامل</lnkOCLCAPI>
+<label15>برامج تعيين الافتراضي</label15>
+<ckLogging>تمكين تسجيل الدخول:</ckLogging>
+<ckAutosave>تمكين الحفظ التلقائي</ckAutosave>
+<ck_enhanced_editor_loading>تعزيز استخدام إدارة ترحيل الصفحات</ck_enhanced_editor_loading>
+<ckRDATemplates>استخدام قوالب قانون التمييز العنصري</ckRDATemplates>
+<ckCompileMarc8>تجميع السجلات حسب MARC8</ckCompileMarc8>
+<label37>مسار التسجيل:</label37>
+<cksaveutf8>تجميع السجلات حسب UTF8</cksaveutf8>
+<ck_intellisense>تمكين خاصية التحسس الذكي</ck_intellisense>
+<label2>سجلات لكل صفحة</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>ترميز الافتراضي:</lb_Encoding>
+<ck_nwindow>فتح الملفات في نافذة جديدة</ck_nwindow>
+<ck_append>إلحاق السجلات الجديدة</ck_append>
+<lb_psize>حجم المعاينة:</lb_psize>
+<ckUsePreview>استخدام وضع المعاينة</ckUsePreview>
+<cmd_editor_font_default>تعيين الافتراضات</cmd_editor_font_default>
+<cmd_editor_set_font>تعيين الخط</cmd_editor_set_font>
+<lb_Editor_Font_Props>تعيين خصائص الخط مارسيديتور:</lb_Editor_Font_Props>
+<cmd_editor_template_default>تعيين الافتراضات</cmd_editor_template_default>
+<cmd_editor_modify>تعديل</cmd_editor_modify>
+<lb_Current_Template>القالب الحالي:</lb_Current_Template>
+<lb_Editor_Template>تعيين قالب مارسيديتور:</lb_Editor_Template>
+<label9>* يتطلب إعادة تشغيل البرنامج *</label9>
+<label8>حزب العمال.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>حجم الخط:</label4>
+<lb_Example>مثال على نص</lb_Example>
+<lb_lang_font>تعيين خط اللغة:</lb_lang_font>
+<lb_Set_Lang>تعيين حزمة اللغة:</lb_Set_Lang>
+<rd_theme_dark>السمات المخصصة:</rd_theme_dark>
+<rd_theme_normal>عادي (افتراضي)</rd_theme_normal>
+<label39>خيارات عرض التطبيق</label39>
+<ck_export_output>تصدير استلام (ILS التقاط الإخراج)</ck_export_output>
+<lb_TCP_Timeout>المهلة:</lb_TCP_Timeout>
+<lb_TCP_Port>المنفذ:</lb_TCP_Port>
+<lb_TCP_Host>عنوان المضيف:</lb_TCP_Host>
+<lb_TCPIP_Props>خصائص TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>السجلات في تنسيق MARC21</ck_marc21>
+<ck_marcxml_sax>استخدم الخيار الأصلي (XSLT غير عملية)</ck_marcxml_sax>
+<groupBox2>محرك XSLT</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>تطبيع Unicode</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>ترميز الأحرف الافتراضي:</label35>
+<ckC>الكنسي Decomposition (C)</ckC>
+<ckKD>التوافق التحلل (دينار كويتي)</ckKD>
+<ck_Diacritics>استخدام علامات التشكيل عندما كسر</ck_Diacritics>
+<lb_Diacritics>خيارات عامة:</lb_Diacritics>
+<lb_Engine_XML_Options>خيارات XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>استخدام Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>XSLT مارككسمل:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>وقد تم تعطيل التحديثات التلقائية بواسطة مسؤول النظام الخاص بك</labelAutoUpdateDisabled>
+<ckDetectProxy>استخدام إعدادات الوكيل النظام</ckDetectProxy>
+<ck_Update_Validator>التحقق تلقائياً من وجود تحديثات مدقق</ck_Update_Validator>
+<label3>يجب أن تنتمي إلى مجال لهذا العمل في هذا الوقت.</label3>
+<groupBox4>معلومات المستخدم:</groupBox4>
+<lb_domain>المجال:</lb_domain>
+<label6>كلمة المرور:</label6>
+<label5>اسم المستخدم:</label5>
+<ckUpdates>التحقق تلقائياً من وجود تحديثات</ckUpdates>
+<groupBox5>اقترانات الملفات المحددة</groupBox5>
+<cmd_file_assoc_view>أنواع طرق العرض</cmd_file_assoc_view>
+<cmd_file_assoc_delete>حذف نوع</cmd_file_assoc_delete>
+<cmd_file_assoc_save>حفظ النوع</cmd_file_assoc_save>
+<rd_file_assoc_editor>مارسيديتور</rd_file_assoc_editor>
+<rd_file_assoc_maker>ماركماكير</rd_file_assoc_maker>
+<rd_file_assoc_breaker>ماركبريكير</rd_file_assoc_breaker>
+<label7>معاون (*.                      ) نوع مع الملف:</label7>
+<ck_mrk8_editor>إقران الملفات (*.mrk8) مارسيديتور</ck_mrk8_editor>
+<ck_mrk_editor>إقران الملفات (*.mrk) مارسيديتور</ck_mrk_editor>
+<ck_mrc>إقران الملفات (*.mrc) ماركبريكير</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>حدد</lnkSelectILS>
+<lnkDeleteProfile>حذف</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>إضافة</lnkAddProfile>
+<label31>التشكيلات الجانبية:</label31>
+<ck_ignore_ssl>تجاهل الأخطاء شهادة SSL</ck_ignore_ssl>
+<lnk_ils_delete>حذف</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>تحرير</lnk_ils_z3950_edit>
+<ck_ils_z3950>استخدام إعدادات Z39.50</ck_ils_z3950>
+<ck_ils_enable>تمكين خيارات ILS</ck_ils_enable>
+<label13>اسم المضيف:</label13>
+<label12>كلمة المرور:</label12>
+<label11>اسم المستخدم:</label11>
+<label10>حدد النظام:</label10>
+<lnkGetCodes>الحصول على عقد رموز</lnkGetCodes>
+<label24>إجراء التعليمات البرمجية:</label24>
+<cmb_schema>مكتبة الكونغرس</cmb_schema>
+<label22>مخطط التصنيف:</label22>
+<label23>رمز المؤسسة:</label23>
+<ckshow>إظهار النص</ckshow>
+<cmdValidateKeys>التحقق من صحة مفاتيح</cmdValidateKeys>
+<linkLabel1>طلب/إدارة "مفتاح مؤسسهاو" له (يربط إلى مؤسسهاو)</linkLabel1>
+<label21>إعدادات مفتاح API مؤسسهاو</label21>
+<label20>برينسيباليدنس</label20>
+<label19>برينسيباليد</label19>
+<label18>المفتاح السري (يقترن التعريف API الرئيسية)</label18>
+<label17>مؤسسهاو بيانات التعريف API الرئيسية</label17>
+<label16>مؤسسهاو البحث API الرئيسية</label16>
+<lnkFilePaths>مواقع</lnkFilePaths>
+<label38>شبكة مهلة (300 ميلي ثانية الافتراضية):</label38>
+<lnkCopyLocalFiles>نسخ الملفات المحلية الآن</lnkCopyLocalFiles>
+<label30>تعيين مسار محرك الأقراص أدوات مارك الافتراضي:</label30>
+<label27>مسارات الملفات:</label27>
+<label26>مجلد المهام:</label26>
+<label25>مجلدات شبكة الاتصال:</label25>
+<lb_mono>المسار الأحادي:</lb_mono>
+<lb_temp>تعيين المسار المؤقت:</lb_temp>
+<ck_rss>قراءة موجز ويب ل RSS</ck_rss>
+<lb_title>عنوان الوسم:</lb_title>
+<lb_Author>العلامة المؤلف:</lb_Author>
+<lbCall>العلامة رقم الاستدعاء:</lbCall>
+<label1>علامة الرقم عنصر التحكم:</label1>
+<ck_allow_z3950>تمكين وظائف Z39.50</ck_allow_z3950>
+<label28>خيارات الحقل:</label28>
+<ck_touch_friendly>استخدام القوائم الصديقة تعمل باللمس</ck_touch_friendly>
+<ck64_bit>64-بت المثبتة</ck64_bit>
+<ck_32bit>32-بت المثبتة</ck_32bit>
+<label36>مايكروسوفت أوفيس الإصدار:</label36>
+<label34>العلامة ISBN:</label34>
+<ckSort880>880: استخدام حقل الربط للفرز</ckSort880>
+<ck880Infile>حقول Infile 880 مع أزواج الحقل</ck880Infile>
+<label29>خيارات الفرز:</label29>
+<ckShowDescriptionInScreenTips>إظهار أوصاف وظيفة في تلميحات الشاشة</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>إظهار مفاتيح الاختصار في تلميحات الشاشة</ckScreenTipShortcuts>
+<label42>خيارات لوحة المفاتيح</label42>
+<ckProvideSoundAccess>توفير الملاحظات مع صوت</ckProvideSoundAccess>
+<label41>خيارات الملاحظات</label41>
+<groupBox3>الإجراءات:</groupBox3>
+<lnkSearch4Themes>حذف السمة المحددة</lnkSearch4Themes>
+<lnkNewTheme>إنشاء موضوع جديد</lnkNewTheme>
+<label40>إتاحة أكثر من مارسيديت</label40>
+<this>تفضيلات مارسيديت</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>الإضافات المتوفرة:</label1>
+<ch1>اسم المساعد</ch1>
+<ch2>عنوان URL</ch2>
+<c3>حجم الملف</c3>
+<c4>Version #:</c4>
+<cmddownload>تحميل</cmddownload>
+<cmdClose>قم بإغلاق</cmdClose>
+<columnHeader1>إزالة؟</columnHeader1>
+<columnHeader2>اسم المساعد</columnHeader2>
+<columnHeader3>اسم الفئة</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>تثبيت الإضافات:</label2>
+<cmdRemove>إزالة</cmdRemove>
+<c5>رقم الإصدار مارسيديت</c5>
+<this>مدير البرنامج المساعد</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>الموارد. GetString ("label1. النص ")</label1>
+<label2>نمط:</label2>
+<cmdProcess>عملية</cmdProcess>
+<cmdCancel>إلغاء الأمر</cmdCancel>
+<lbstatus>الحالة:</lbstatus>
+<ckEscape>بيانات الهروب من URL</ckEscape>
+<ckAddNew>استبدال حقل موجود</ckAddNew>
+<ck_addnewfield>إضافة حقل جديد إذا لم يكن موجوداً</ck_addnewfield>
+<ckAlwaysAdd>دائماً قم بإضافة حقل جديد</ckAlwaysAdd>
+<groupBox1>خيارات</groupBox1>
+<this>إنشاء حقول جديدة</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>البحث دفعة</ck_batch>
+<lbdbtitle>label2</lbdbtitle>
+<groupBox3>النتائج</groupBox3>
+<lnkClearResults>نتائج واضحة</lnkClearResults>
+<lnkDownload>تنزيل كافة العناصر</lnkDownload>
+<lnkGetNext>احصل على التالي {الحد}</lnkGetNext>
+<lnkDownloadAllHoldings>تحميل جميع المقتنيات</lnkDownloadAllHoldings>
+<col1>موقف</col1>
+<col2>العنوان</col2>
+<columnHeader1>قاعدة بيانات</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>تنزيل العناصر المحددة</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>تحميل سجلات المقتنيات المختارة</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>عرض السجل المحدد</viewSelectedRecordToolStripMenuItem>
+<groupBox1>خيارات</groupBox1>
+<rdEditDB>حدد قاعدة البيانات</rdEditDB>
+<rdEditSettings>تحرير إعدادات</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>سجلات لكل صفحة</label4>
+<ckUnicode>استرداد Unicode</ckUnicode>
+<lb_encoding_single>مجموعة أحرف ملقم</lb_encoding_single>
+<lbSearchb>البحث عن:</lbSearchb>
+<lbSearch>استعلام قاعدة بيانات:</lbSearch>
+<label3>تعيين تفضيلات قاعدة البيانات:</label3>
+<cmdSelectDatabase>حدد</cmdSelectDatabase>
+<MCol3>معرف</MCol3>
+<MCol1>الاسم</MCol1>
+<MCol2>نوع</MCol2>
+<lb_PModifyTitle>حدد قاعدة البيانات:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>الإجراءات</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>إضافة ملقم جديد Z39.50</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>إضافة ملقم جديد SRU</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>تفضيلات</preferencesToolStripMenuItem>
+<cmdCloseSettings>قم بإغلاق</cmdCloseSettings>
+<label5>مراقبة حقول (لإلغاء البيانات المكررة في تجهيز الدفعة)</label5>
+<cmdSaveSettings>حفظ الإعدادات</cmdSaveSettings>
+<rdDownloadPreferred>التحميل من المصدر المفضل</rdDownloadPreferred>
+<rdDownloadMostComplete>تحميل السجلات الأكثر اكتمالا</rdDownloadMostComplete>
+<rdAllRecords>تحميل كافة السجلات</rdAllRecords>
+<label2>خيارات المعالجة دفعة</label2>
+<label1>تفضيلات</label1>
+<this>عميل Z39.50/SRU مارسيديت</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>عملية 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>تحرير الحقول</lnkEditFields>
+<ck_040>تعديل 040-إضافة $erda</ck_040>
+<ck_qualifyinginfo>تصفيات المعلومات (015/020/024/027)</ck_qualifyinginfo>
+<lnkEdit>تحرير قائمة</lnkEdit>
+<ck_dgmd>حذف GMD</ck_dgmd>
+<ckAbbrev>قم بتوسيع المختصرات</ckAbbrev>
+<ckgmd>توليد GMD</ckgmd>
+<ck264>تقييم 260/264</ck264>
+<ck_signs>دائماً استخدم موقع، رموز ℗</ck_signs>
+<ck381>381-إضافة أخرى</ck381>
+<ck380>إضافة 380-نموذج للعمل</ck380>
+<ck347>347-إضافة الخصائص الرقمية</ck347>
+<ck346>346-إضافة خصائص الفيديو</ck346>
+<ck345>إضافة 345-Proj. الخصائص</ck345>
+<ck344>344-إضافة خصائص الصوت</ck344>
+<ck337>337-إضافة نوع الوسائط
+338-إضافة نوع الناقل</ck337>
+<ck336>336-إضافة نوع المحتوى</ck336>
+<cmdProcess>موافق</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<label1>المصدر:</label1>
+<label2>حفظ:</label2>
+<lnkAll>جميع</lnkAll>
+<label3>قم بتحديد:</label3>
+<label4>|</label4>
+<lnkNone>لا شيء</lnkNone>
+<label7>الحالة:</label7>
+<this>مساعد قانون التمييز العنصري</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>قم بإغلاق</cmd_Close>
+<rEdit></rEdit>
+<this>النتائج</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>الصفحة الرئيسية</lnkHome>
+<label5>الموارد. GetString ("label5. النص ")</label5>
+<label4>حول روبيرتكومباري</label4>
+<label3>|</label3>
+<lnkAbout>حول روبيرتكومباري</lnkAbout>
+<ckSort>فرز الملفات مسبقاً</ckSort>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdExecute>تنفيذ</cmdExecute>
+<label1>حفظ الملف:</label1>
+<label6>مقارنة الملفات:</label6>
+<label2>الموارد. GetString ("label2. النص ")</label2>
+<lnkPreferences>تفضيلات</lnkPreferences>
+<label7>|</label7>
+<lbSortField>فرز الحقل:</lbSortField>
+<lbdelete>الحذف:</lbdelete>
+<lbAddColor>الإضافات:</lbAddColor>
+<this>مارككومباري/روبيرتكومباري</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>لا شيء</lnkNone>
+<lnkAll>حدد كافة</lnkAll>
+<col_title>العنوان</col_title>
+<col_id>معرف</col_id>
+<label3>|</label3>
+<label2>النتائج:</label2>
+<cmdClose>قم بإغلاق</cmdClose>
+<cmdSearch>البحث عن</cmdSearch>
+<cmbarg1>العنوان</cmbarg1>
+<label1>قاعدة بيانات البحث:</label1>
+<ck_batch>البحث دفعة</ck_batch>
+<this>البحث عن</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>حدد</cmdSelect>
+<this>حدد ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>رقم السجل</columnHeader1>
+<columnHeader2>عرض الحقل</columnHeader2>
+<selectItemsToolStripMenuItem>تحديد عناصر</selectItemsToolStripMenuItem>
+<cmdImport>استيراد ملف</cmdImport>
+<cmdfDelete>حذف تحديد</cmdfDelete>
+<cmdExport>تصدير مختارة</cmdExport>
+<cmdExit>خروج</cmdExit>
+<lb_Search>البحث عن:</lb_Search>
+<lb_DisplayField>عرض الحقل:</lb_DisplayField>
+<lb_SourceFile>مارك الملف المصدر:</lb_SourceFile>
+<ckSource>حفظ سجلات تم التعديل في المصدر</ckSource>
+<ck_retain>الاحتفاظ بالعناصر المحددة</ck_retain>
+<cmd_Generate>إنشاء تقرير</cmd_Generate>
+<ck_find_all>البحث في كل سجل بيانات</ck_find_all>
+<ck_use_regex>استخدام تعبيرات عادية</ck_use_regex>
+<cmdRandomExport>تصدير عشوائي</cmdRandomExport>
+<lnkDoesNotMatch>لا يتطابق</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>عكس تحديدات</lnkInvert>
+<ckExactWord>مطابقة الكلمة الضبط</ckExactWord>
+<this>MarcEdit.NET: تعديل سجلات مارك مختارة</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>حدد الحقول المراد استبعادها من الفرز</lb_title>
+<lb_fields>حقول الفرز:</lb_fields>
+<lbExclude>استبعاد حقول:</lbExclude>
+<cmd_OK>موافق</cmd_OK>
+<cmd_Close>قم بإغلاق</cmd_Close>
+<this>معالج فرز مخصص</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>سباركل نقطة النهاية:</lbsparql>
+<cmdQuery>الاستعلام</cmdQuery>
+<cmdClose>قم بإغلاق</cmdClose>
+<lbQuery>استعلام سباركل:</lbQuery>
+<lbresults>النتائج:</lbresults>
+<cklocal>تحميل ملف محلي</cklocal>
+<lbOutput>الإخراج:</lbOutput>
+<cmbOutput>إكس أم ال</cmbOutput>
+<groupBox1>استعلامات عينة:</groupBox1>
+<lbExample3>الاستعلام عن: 軍事基地</lbExample3>
+<lnkExample3>مكتبة البرلمان الياباني</lnkExample3>
+<lbexample2>الاستعلام غيتي كبريتات النحاس</lbexample2>
+<lnkExample2>مثال غيتي</lnkExample2>
+<label1>شبكة الاستعلام للأنفلونزا البشرية</label1>
+<lnkExample1>مثال على شبكة</lnkExample1>
+<label2>سباركل المراجع:</label2>
+<lnkW3C>سباركل (W3C)</lnkW3C>
+<lnkEndpoints>سباركل نقاط النهاية (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>سباركل (ويكيبيديا)</lnkwikipediaSparql>
+<lnkTutorials>دروس سباركل</lnkTutorials>
+<this>متصفح سباركل</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>الأقراص المضغوطة-إيزيس =&gt; مارك الترجمة</lb_title>
+<groupBox1>إدخال المستخدم</groupBox1>
+<lb_output>ملف الإخراج:</lb_output>
+<lb_input>ملف الإدخال:</lb_input>
+<groupBox2>خيارات:</groupBox2>
+<rd_advanced>الترجمة المتقدمة</rd_advanced>
+<rd_simple>ترجمة بسيطة</rd_simple>
+<lb_subfield>علامة حقلاً فرعياً</lb_subfield>
+<cmd_Ok>موافق</cmd_Ok>
+<cmd_Close>قم بإغلاق</cmd_Close>
+<this>الأقراص المضغوطة-إيزيس.iso =&gt; مارك الترجمة</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>خيارات:</lb_title>
+<lnkLoad>تحميل تعيينات الحقل</lnkLoad>
+<ck_indicators>إضافة مؤشرات</ck_indicators>
+<ckLDR>تصحيح فدرالي</ckLDR>
+<ck_subfield>أضف حقلاً فرعياً الرائدة</ck_subfield>
+<cmdOK>موافق</cmdOK>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>خيارات متقدمة</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>label1</lbCaption>
+<cmdCancel>إلغاء الأمر</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>الأحرف الخاصة:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>إدراج</cmd_Insert>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>Characterset علاء مارك-8</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>اسم قائمة المهام:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>إضافة حذف حقل المهمة</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>أضف حقلاً فرعياً تحرير المهمة</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>إضافة تحرير مؤشر المهمة</addToolStripMenuItem>
+<cmdSave>حفظ</cmdSave>
+<addNewFieldTaskToolStripMenuItem>إضافة مهمة جديدة في الميدان</addNewFieldTaskToolStripMenuItem>
+<cmdClose>قم بإغلاق</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>إضافة استبدال كافة المهام</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>إضافة تعليق</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>إضافة حقل تحرير المهمة</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>إضافة المهمة الميدانية المبادلة</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>إضافة نسخ حقل المهمة</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>إضافة قائمة المهام</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>إضافة مساعد قانون التمييز العنصري</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>إضافة المهمة البيانات المرتبطة</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>إضافة مهمة ميدانية جديدة البناء</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>تحرير الاختصارات</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>بيانات الحالة</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>الحالة الأدنى</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>حالة العلوي</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>حالة أحرف العنوان</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>الحالة الأولى</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>الاستفادة من الحالة الأولية</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>ميدان التحرير</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>تنظيف أحرف الذكية</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>دالات رياضية</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>تحويل إلى درجة عشرية</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>إزالة الأسطر الفارغة</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>قلنسوة</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>توليد تقطيع</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>توليد تقطيع Sanborn3</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>نسخ عمل المهمة المحددة</mnuCopy>
+<mnuPasteTask>لصق مهمة العمل</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>تعليق تحديد مهمة</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>قم بالمهام المحددة</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>المهام:</lbTasks>
+<label1>الإجراءات:</label1>
+<label2>الوصف:</label2>
+<cmdDebug>التصحيح</cmdDebug>
+<this>تحرير قائمة المهام</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>الاسم</columnHeader1>
+<columnHeader2>مسار</columnHeader2>
+<columnHeader3>الاختصار</columnHeader3>
+<columnHeader4>الوصف</columnHeader4>
+<cmdClose>قم بإغلاق</cmdClose>
+<lnkNew>إنشاء قائمة مهام جديدة</lnkNew>
+<lbMacro>قوائم المهام:</lbMacro>
+<lnkCloneTask>استنساخ قائمة المهام الموجودة</lnkCloneTask>
+<groupBox1>الإجراءات المهمة</groupBox1>
+<lnkRelink>إعادة ربط المهام</lnkRelink>
+<lnk_import_task>استيراد المهمة</lnk_import_task>
+<groupBox2>إدارة المهام الموجودة</groupBox2>
+<lnkBackup>النسخ الاحتياطي كافة المهام</lnkBackup>
+<lnk_export_task>تصدير المهمة المحددة</lnk_export_task>
+<lnkKey>تعيين المفتاح</lnkKey>
+<lnkEdit>تحرير قائمة المهام المحددة</lnkEdit>
+<lnkDelete>حذف المهمة المحددة القائمة</lnkDelete>
+<this>إدارة المهام</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>اقتطاع سجلات طويلة</ckTruncate>
+<label1>حدد العملية:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>ترميز الأحرف الافتراضي:</label35>
+<ck_Marc8>ترجمة لمارك-8</ck_Marc8>
+<ck_UTF8>تترجم إلى UTF8</ck_UTF8>
+<lb_OutputFile>حفظ باسم...</lb_OutputFile>
+<lb_InputFile>فتح...</lb_InputFile>
+<cmdCancel>قم بإغلاق</cmdCancel>
+<cmdEdit>تحرير السجلات</cmdEdit>
+<cmdExecute>تنفيذ</cmdExecute>
+<lb_Results>النتائج:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>أدوات</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>العودة إلى الإطار الرئيسي</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>تحرير قائمة XML الدالة</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>ماركفاليداتور</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>سجلات عملية دفعية</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>التحويل Characterset</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>مارككومباري</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>ماركجوين</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>ماركميرجي</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>ماركسبليت</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>أدوات أونيمارك</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>ماذا تحب أن تفعل؟</mnuContextHelp>
+<lnkTopic1>تحويل الملف الخاص بي لترميز الأحرف المختلفة</lnkTopic1>
+<lnkTopic2>إضافة/تعديل الترجمات XML</lnkTopic2>
+<lnkTopic4>كيف يمكن العثور على خطأ في ملف مارك الخاص بي؟</lnkTopic4>
+<groupBox1>أود أن:</groupBox1>
+<groupBox2>حدد البيانات للعملية:</groupBox2>
+<groupBox3>خيارات ترميز الأحرف</groupBox3>
+<this>أدوات مارك</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>مارسيديت يوفر مجموعة من أدوات التحويل UNIMARC لايت الوزن.  وإذا كانت هذه الأدوات ذات الأهمية بالنسبة لك، وكنت ترغب في المساعدة في جعلها أفضل، يرجى يدباك و.
+
+</label1>
+<label2>المصدر</label2>
+<label3>الوجهة</label3>
+<groupBox1>خيارات</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 UNIMARC =&gt;</rdMARC21>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<this>أدوات أونيمارك</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>تحديث الملاحظات:</label1>
+<cmd_Update>التحديث</cmd_Update>
+<cmd_Cancel>إلغاء الأمر</cmd_Cancel>
+<this>تحديث مارسيديت</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Unicode ترميز</ckIsUTF8>
+<ck_merge_to_source>دمج مصدر</ck_merge_to_source>
+<label17>حفظ الملف:</label17>
+<label16>جاري إنشاء نشرة مصورة المصدر</label16>
+<ck_SameFile>معالجة الملف المصدر</ck_SameFile>
+<cmd_merge_cancel>إلغاء الأمر</cmd_merge_cancel>
+<cmd_merge_next>=&gt; التالية</cmd_merge_next>
+<lb_merge_title>دمج بيانات السجل</lb_merge_title>
+<ck_merge_repeatable>هو قابل للتكرار</ck_merge_repeatable>
+<lb_id>معرف السجل:</lb_id>
+<lb_merge>دمج الملفات:</lb_merge>
+<lb_source>الملف المصدر:</lb_source>
+<ck_overlayexisting>تراكب العناصر الموجودة</ck_overlayexisting>
+<label4>قيمة الثقة:</label4>
+<ck_mergeUnique>دمج عناصر فريدة</ck_mergeUnique>
+<button1>إلغاء الأمر</button1>
+<cmd_merge_select_fields_next>=&gt; التالية</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = مرة أخرى</cmd_merge_select_fields_back>
+<label7>حقول الدمج:</label7>
+<label6>حدد الحقل:</label6>
+<label5>دمج بيانات السجل: حدد الحقول</label5>
+<button5>قم بإغلاق</button5>
+<label15>وقد تم دمج الملفات.  النتائج الموجودة في {merge_results_file}.</label15>
+<label13>إكمال الدمج</label13>
+<this>دمج سجلات مارك</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>يمكن استخدام أداة "التحقق من صحة العناوين" للتحقق من صحة 1xx أو 6xx حقول 7xx.  ال ه أداة تستخدم مزيجاً من الويب والخدمات المحلية لتحديد إذا كان ز هادين يظهر في عنوان المأذون بها.</label1>
+<ck_1xx>تأذن لحقول 1xx/7xx</ck_1xx>
+<ck_6xx>تأذن للحقل 6xx</ck_6xx>
+<cmdProcess>عملية</cmdProcess>
+<cmdClose>قم بإغلاق</cmdClose>
+<label2>المصدر:</label2>
+<lbStatus>الحالة:</lbStatus>
+<cmdExtract>استخراج</cmdExtract>
+<ckdeletecache>حذف ذاكرة التخزين المؤقت المحلية</ckdeletecache>
+<lnkDelimited>حفظ محدد</lnkDelimited>
+<ckonlyA>فقط عملية حقلاً فرعياً A</ckonlyA>
+<ckVariant>المتغيرات الصحيحة تلقائياً</ckVariant>
+<ckGenerateBriefHeadings>إنشاء السلطات مختصر الاسم الشخصي</ckGenerateBriefHeadings>
+<label3>السلطات التي تم إنشاؤها:</label3>
+<ckAddURIs>تضمين محددات عند الإمكان</ckAddURIs>
+<ck_download_authorities>تحميل السلطات LC</ck_download_authorities>
+<this>التحقق من صحة العناوين</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>الملف المصدر:</lb_Source>
+<lb_Rules>ملف النظام:</lb_Rules>
+<cmd_Ok>موافق</cmd_Ok>
+<cmd_close>قم بإغلاق</cmd_close>
+<groupBox1>خيارات</groupBox1>
+<optIdentify>التحقق من صحة بنية السجل</optIdentify>
+<opt_remove>إزالة السجلات غير صحيح</opt_remove>
+<opt_validate>تحقق من قواعد مارك باستخدام الملف</opt_validate>
+<rdHex>عرض في HexEditor</rdHex>
+<this>ماركفاليداتور</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>موافق</cmd_Ok>
+<cmdCancel>قم بإغلاق</cmdCancel>
+<groupBox1>خيارات التقرير:</groupBox1>
+<lb_MARC_Title>العنوان:</lb_MARC_Title>
+<lbReport>نوع التقرير:</lbReport>
+<lb_XSLT>ملف XSLT:</lb_XSLT>
+<lb_Dest>ملف الإخراج:</lb_Dest>
+<lb_MARC>ملف الإدخال:</lb_MARC>
+<lb_Fields>الحقول:</lb_Fields>
+<lbTimeout>المهلة (بالثواني)</lbTimeout>
+<this>تحقق من عنوان URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>حول خدمة سريعة مؤسسهاو</lnkClassify>
+<label1>الموارد. GetString ("label1. النص ")</label1>
+<ck_conditional_fast>إضافة عناوين سريعة عند حضور لا من عناوين المواضيع</ck_conditional_fast>
+<ck_always_fast>دائماً إضافة عناوين سريعة</ck_always_fast>
+<label8>عناوين المواضيع:</label8>
+<button1>عملية</button1>
+<cmd_Close>قم بإغلاق</cmd_Close>
+<this>إنشاء عناوين سريعة</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>حفظ</cmd_save>
+<cmd_close>قم بإغلاق</cmd_close>
+<ck_1xxa>$a: المدخل الرئيسي</ck_1xxa>
+<ck_245p>$p: اسم pt/ثانية للعمل</ck_245p>
+<ck_245n>$n: عدد pt/ثانية للعمل</ck_245n>
+<ck_245c>$c: بيان ريسبونسيبليتي</ck_245c>
+<ck_245b>$b: ما تبقى عنوان</ck_245b>
+<ck_245a>$a: العنوان</ck_245a>
+<ck_lang>اللغة (المواقف: 35-37)</ck_lang>
+<ck_dates>تواريخ (المواقف: 7-14)</ck_dates>
+<ck_p7>بلفل (موقف 7)</ck_p7>
+<ck_p6>نوع (موقف 6)</ck_p6>
+<ck_001>19/01/00</ck_001>
+<label6>أرقام التحكم</label6>
+<ck_form>النموذج (المواقف: 23)</ck_form>
+<ck_245_h>$h: تسمية المواد العامة</ck_245_h>
+<label5>الحقول المتنوعة:</label5>
+<label4>الحقل 245:</label4>
+<label3>الحقل author (1xx)</label3>
+<label2>مواقف 008</label2>
+<label1>موقف LDR</label1>
+<this>دمج خيارات</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>خصائص قاعدة البيانات</tabDBProps>
+<ck_Paused>تجاوز وقفه (6 ثوان).</ck_Paused>
+<label1>قاعدة البيانات:</label1>
+<ck_Show>وتظهر قاعدة البيانات</ck_Show>
+<lbPassword>كلمة المرور:</lbPassword>
+<lbUsername>اسم المستخدم:</lbUsername>
+<lbSyntax>بناء الجملة:</lbSyntax>
+<lbPort>المنفذ:</lbPort>
+<lbHost>المضيف:</lbHost>
+<lbname>الاسم:</lbname>
+<tabDBAdvanced>خصائص متقدمة</tabDBAdvanced>
+<label4>المهلة (بالثواني):</label4>
+<label2>عنصر مجموعة:</label2>
+<label3>خيارات أخرى:</label3>
+<lnkftp>http://www.loc.gov/z3950/agency/defns/bib1.html</lnkftp>
+<lbInfo>مزيد من المعلومات:</lbInfo>
+<lbISBN>ردمك/ردمد:</lbISBN>
+<lbSubject>الموضوع:</lbSubject>
+<lbTitle>العنوان:</lbTitle>
+<lbAuthor>مقدم البلاغ:</lbAuthor>
+<lbadvTitle>السمة Z39.50 4: هيكل</lbadvTitle>
+<cmdSave>حفظ</cmdSave>
+<cmdClose>قم بإغلاق</cmdClose>
+<label17>Z39.50 إعدادات قاعدة البيانات:</label17>
+<cmdDeleteZ3950>حذف</cmdDeleteZ3950>
+<gbCustom>إعدادات التشكيل الجانبي المخصص</gbCustom>
+<label5>فهرس العنوان:</label5>
+<label6>فهرس المؤلف:</label6>
+<label10>فهرس الكلمات الأساسية:</label10>
+<label7>فهرس الموضوع:</label7>
+<label11>Record # Index:</label11>
+<label8>مؤشر ISBN:</label8>
+<label12>ISSN الفهرس:</label12>
+<cmdDeleteSRU>حذف</cmdDeleteSRU>
+<ck_SRU_Show>وتظهر قاعدة البيانات</ck_SRU_Show>
+<label13>معلمات إضافية</label13>
+<label14>البحث عن الشخصية:</label14>
+<lbVersion>الإصدار:</lbVersion>
+<cmdCloseSRU>قم بإغلاق</cmdCloseSRU>
+<cmdSaveSRU>حفظ</cmdSaveSRU>
+<label15>الاسم:</label15>
+<lbMetadata>مخطط بيانات التعريف:</lbMetadata>
+<label16>URL:</label16>
+<lbSRUTitle>خصائص قاعدة البيانات SRU:</lbSRUTitle>
+<this>خصائص قاعدة البيانات</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>البحث عن:</label1>
+<ckMatchCase>مطابقة حالة الأحرف</ckMatchCase>
+<cmdFind>البحث عن</cmdFind>
+<this>ست عشري: العثور على سلسلة</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>الملف</fileToolStripMenuItem>
+<openToolStripMenuItem>فتح</openToolStripMenuItem>
+<exitToolStripMenuItem>خروج</exitToolStripMenuItem>
+<editToolStripMenuItem>تحرير</editToolStripMenuItem>
+<findToolStripMenuItem>البحث عن</findToolStripMenuItem>
+<findNextToolStripMenuItem>بحث عن التالي</findNextToolStripMenuItem>
+<this>هيكسفييو</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>قص</cutToolStripMenuItem>
+<copyToolStripMenuItem>نسخة</copyToolStripMenuItem>
+<pasteToolStripMenuItem>لصق</pasteToolStripMenuItem>
+<clearToolStripMenuItem>واضحة</clearToolStripMenuItem>
+<findToolStripMenuItem>البحث عن</findToolStripMenuItem>
+<replaceToolStripMenuItem>استبدال</replaceToolStripMenuItem>
+<lnkLoadAll>تحميل الملف بأكمله</lnkLoadAll>
+<lb_bytes>{loaded_bytes} من {file_bytes} تم تحميلها بالبايت.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>سجل جديد</tbNew>
+<mnuCNewWindow>فتح نافذة جديدة</mnuCNewWindow>
+<ContextAuthority>سلطة</ContextAuthority>
+<ContextAuthorityName>الاسم</ContextAuthorityName>
+<ContextAuthoritySubject>هذا الموضوع</ContextAuthoritySubject>
+<cBook>كتاب</cBook>
+<cSerial>المسلسل</cSerial>
+<cVisualMat>المواد البصرية</cVisualMat>
+<cMaps>المورد رسم الخرائط</cMaps>
+<cSoundRec>تسجيل الصوت</cSoundRec>
+<cScore>نقاط</cScore>
+<cElectMat>الموارد الإلكترونية</cElectMat>
+<cMixedMat>المواد المختلطة</cMixedMat>
+<tbOpen>فتح ملف</tbOpen>
+<tbSave>حفظ ملف</tbSave>
+<tbPrint>طباعة ملف</tbPrint>
+<tbCompile>تجميع السجلات</tbCompile>
+<tbCut>قص</tbCut>
+<tbCopy>نسخة</tbCopy>
+<tbPaste>لصق</tbPaste>
+<tbALA>MARC8 علاء Characterset</tbALA>
+<tbDelete>حذف</tbDelete>
+<tbFind>البحث عن</tbFind>
+<tbZ39_50>عميل Z39.50/SRU</tbZ39_50>
+<toolStripSplitButton1>مارك العالمية تحرير المرافق</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>إضافة أو حذف حقل</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>إنشاء حقل جديد</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>نسخ حقل</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>تحرير بيانات الحقل</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>تحرير بيانات المؤشر</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>تحرير البيانات حقلاً فرعياً</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>تبادل بيانات الحقل</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>الملف</mnuFile>
+<mnuFileMain>العودة إلى الإطار الرئيسي</mnuFileMain>
+<mnuFileNew>الجديد</mnuFileNew>
+<mnuFileNewWindow>فتح نافذة جديدة</mnuFileNewWindow>
+<mnuFileNewDefault>افتراضي</mnuFileNewDefault>
+<mnuFileNewAuthority>سلطة</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>الاسم</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>هذا الموضوع</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>كتاب</mnuFileNewBook>
+<mnuFileNewSerial>المسلسل</mnuFileNewSerial>
+<mnuFileVisualMat>المواد البصرية</mnuFileVisualMat>
+<mnuFileNewMap>المورد رسم الخرائط</mnuFileNewMap>
+<mnuFileNewSound>تسجيل الصوت</mnuFileNewSound>
+<mnuFileNewScore>نقاط</mnuFileNewScore>
+<mnuFileNewER>الموارد الإلكترونية</mnuFileNewER>
+<mnuFileNewMix>المواد المختلطة</mnuFileNewMix>
+<mnuFileOpen>فتح</mnuFileOpen>
+<mnuFileRecent>الملفات الأخيرة</mnuFileRecent>
+<mnunone10>لا شيء</mnunone10>
+<mnunone9>لا شيء</mnunone9>
+<mnunone8>لا شيء</mnunone8>
+<mnunone7>لا شيء</mnunone7>
+<mnunone6>لا شيء</mnunone6>
+<mnunone5>لا شيء</mnunone5>
+<mnunone4>لا شيء</mnunone4>
+<mnunone3>لا شيء</mnunone3>
+<mnunone2>لا شيء</mnunone2>
+<mnunone1>لا شيء</mnunone1>
+<mnuFileClearHistory>مسح المحفوظات</mnuFileClearHistory>
+<mnuFileClearList>مسح الملفات الأخيرة</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>مسح محفوظات تحرير/استبدال</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>قم بإغلاق</mnuFileClose>
+<mnuFileExportData>التصدير من أجل...</mnuFileExportData>
+<openRefineExport>أوبينريفيني</openRefineExport>
+<mnuFileImportData>استيراد من...</mnuFileImportData>
+<openRefineImport>أوبينريفيني</openRefineImport>
+<mnuFileSave>حفظ</mnuFileSave>
+<mnuFileSaveAs>حفظ باسم...</mnuFileSaveAs>
+<mnuFilePrint>طباعة</mnuFilePrint>
+<toolStripMenuItem34>طباعة سجل في كل صفحة</toolStripMenuItem34>
+<FileSelectIndividualMake>حدد السجلات لتحرير</FileSelectIndividualMake>
+<mnuFileCompile>ترجمة الملف إلى مارك</mnuFileCompile>
+<mnuFileExit>خروج</mnuFileExit>
+<mnuEdit>تحرير</mnuEdit>
+<mnuEditUndo>التراجع عن</mnuEditUndo>
+<mnuEditRedo>الإعادة</mnuEditRedo>
+<mnuEditSpecialUndo>تراجع الخاص</mnuEditSpecialUndo>
+<mnuEditCut>قص</mnuEditCut>
+<mnuEditCopy>نسخة</mnuEditCopy>
+<mnuEditPaste>لصق</mnuEditPaste>
+<mnuEditDupLines>خطوط مكررة</mnuEditDupLines>
+<mnuEditClear>واضحة</mnuEditClear>
+<mnuEditFind>البحث عن</mnuEditFind>
+<mnuEditReplace>استبدال</mnuEditReplace>
+<toolStripMenuItem28>تحرير الاختصارات</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>تغيير حالة الأحرف</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>الحالة الأدنى</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>حالة العلوي</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>حالة أحرف العنوان</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>الحالة الأولى</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>الاستفادة من الأحرف الأولى</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>ميدان التحرير</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>تنظيف أحرف الذكية</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>البحث عن الحقول المفقودة كلمة</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>البحث عن السجلات الميدانية في عداد المفقودين</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>البحث عن السجلات باستخدام العلامات المكررة</toolStripMenuItem39>
+<toolStripMenuItem40>البحث عن السجلات التي تحتوي على بيانات مكررة في حقل</toolStripMenuItem40>
+<mnuEditLimitFields>تحديد عدد الحقول</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>تبديل العنوان</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>دالات رياضية</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>تحويل إلى درجة عشرية</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>الانتقال السريع إلى...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>الانتقال السريع إلى... سجل</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>الانتقال السريع إلى... الصفحة</jumpToPageToolStripMenuItem>
+<mnuEditControl>إدراج عنصر تحكم واحد رقم</mnuEditControl>
+<mnuEdit006>إدراج/تحرير 006</mnuEdit006>
+<mnuEdit006Edit>تحرير</mnuEdit006Edit>
+<mnuEdit006Book>كتاب</mnuEdit006Book>
+<mnuEdit006Serial>الموارد المستمرة</mnuEdit006Serial>
+<mnuEdit006Map>المورد رسم الخرائط</mnuEdit006Map>
+<mnuEdit006Sound>تسجيل الصوت</mnuEdit006Sound>
+<mnuEdit006Score>نقاط</mnuEdit006Score>
+<mnuEdit006ER>الموارد الإلكترونية</mnuEdit006ER>
+<mnuEdit006Visual>المواد البصرية</mnuEdit006Visual>
+<mnuEdit006Mixed>المواد المختلطة</mnuEdit006Mixed>
+<mnuEdit008>إدراج/تحرير 008</mnuEdit008>
+<mnuEdit008Edit>تحرير</mnuEdit008Edit>
+<mnuEdit008Book>كتاب</mnuEdit008Book>
+<mnuEdit008Serial>الموارد المستمرة</mnuEdit008Serial>
+<mnuEdit008Map>المورد رسم الخرائط</mnuEdit008Map>
+<mnuEdit008Sound>تسجيل الصوت</mnuEdit008Sound>
+<mnuEdit008Score>نقاط</mnuEdit008Score>
+<mnuEdit008ER>الموارد الإلكترونية</mnuEdit008ER>
+<mnuEdit008Visual>المواد البصرية</mnuEdit008Visual>
+<mnuEdit008Mixed>المواد المختلطة</mnuEdit008Mixed>
+<toolStripMenuItem27>تحويل محتوى الحافظة</toolStripMenuItem27>
+<mnuEditConverttoUTF8>8-مارك إلى utf-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 إلى 8-مارك</mnuEditConvertoMarc8>
+<mnuEditALA>Characterset "علاء" مارك-8</mnuEditALA>
+<mnuEditUTF8CharacterMap>مخطط توزيع الأحرف UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>حدد كافة</mnuEditSelectAll>
+<mnuEditWrap>التفاف النص</mnuEditWrap>
+<mnuEditRTL>عرض من اليمين إلى اليسار</mnuEditRTL>
+<mnuFont>الخطوط</mnuFont>
+<mnuFontFont>الخط...</mnuFontFont>
+<mnuFontColor>اللون...</mnuFontColor>
+<mnuReports>التقارير</mnuReports>
+<mnuReportsField>حقل العد</mnuReportsField>
+<tlReportsMaterialReport>تقرير نوع المواد</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>إنشاء تقرير</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>البحث عن السجلات حسب النوع</findBookToolStripMenuItem>
+<booksToolStripMenuItem>الكتب</booksToolStripMenuItem>
+<toolStripMenuItem32>ملفات الكمبيوتر</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>الموارد المستمرة</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>خرائط</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>مواد مختلطة</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>عشرات</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>التسجيلات الصوتية</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>المواد البصرية</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>ماركفاليداتور</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>التحقق من صحة إيسبنس</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>التحقق من صحة إيسنس</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>التحقق من صحة العناوين</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>حالة الخدمة</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>التحقق من صحة العناوين</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>إدارة ملفات السجل</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>عرض ملف السجل الحالي</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>إدارة سجل تقدما</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>حذف ملفات السجل</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>عرض كافة ملفات السجل</viewAllLogFilesToolStripMenuItem>
+<mnuTools>أدوات</mnuTools>
+<mnuToolsCluster>تجميع الأدوات</mnuToolsCluster>
+<mnutoolCutters>أدوات كوتيرينج</mnutoolCutters>
+<mnuToolsCalculator>كتالوج الإله الحاسبة</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>توليد تقطيع</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>سانبورن الجدول 3 قطع</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>توليد أرقام الاتصال</mnuToolsCallNum>
+<mnuToolsControlNumber>توليد أرقام التحكم</mnuToolsControlNumber>
+<toolStripMenuItem33>أدوات البيانات المرتبطة</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>بناء السجلات المرتبطة</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>سجل إلغاء البيانات المكررة</mnuToolsDedup>
+<mnuToolsRDAHelpers>مساعد قانون التمييز العنصري</mnuToolsRDAHelpers>
+<mnuToolsZ3950>خيارات Z39.50/SRU</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>عميل Z39.50/SRU مارسيديت</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 تحميل السجل</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 حذف السجل</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 تحديث المقتنيات</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>تحرير بيانات ثابتة</mnuToolsEditConstant>
+<mnuToolsAssigned>البيانات الثابتة المعينة</mnuToolsAssigned>
+<mnuConstant1>1) السلسلة غير معروف</mnuConstant1>
+<mnuConstant2>2) سلسلة غير معروف</mnuConstant2>
+<mnuConstant3>3) سلسلة غير معروف</mnuConstant3>
+<mnuConstant4>4) السلسلة غير معروف</mnuConstant4>
+<mnuConstant5>5) السلسلة غير معروف</mnuConstant5>
+<mnuConstant6>6) السلسلة غير معروف</mnuConstant6>
+<mnuConstant7>7) سلسلة غير معروف</mnuConstant7>
+<mnuConstant8>8) السلسلة غير معروف</mnuConstant8>
+<mnuConstant9>9) سلسلة غير معروف</mnuConstant9>
+<mnuConstant10>10) سلسلة غير معروف</mnuConstant10>
+<mnutoolmanageAutomate>إدارة المهام</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>المهام المعينة</mnuToolsAssignedTasks>
+<mnuDefTask>المهام المتوفرة حاليا</mnuDefTask>
+<task1>1) المهمة غير معروف</task1>
+<task2>2) المهمة غير معروف</task2>
+<task3>3) المهمة غير معروف</task3>
+<task4>4) المهمة غير معروف</task4>
+<task5>5) المهمة غير معروف</task5>
+<task6>6) غير معرف المهمة</task6>
+<task7>7) غير معرف المهمة</task7>
+<task8>8) المهمة غير معروف</task8>
+<task9>9) المهمة غير معروف</task9>
+<task10>10) المهمة غير معروف</task10>
+<task11>11) المهمة غير معروف</task11>
+<task12>12) المهمة غير معروف</task12>
+<task13>13) المهمة غير معروف</task13>
+<task14>14) المهمة غير معروف</task14>
+<task15>15) المهمة غير معروف</task15>
+<task16>16) المهمة غير معروف</task16>
+<task17>17) المهمة غير معروف</task17>
+<task18>18) المهمة غير معروف</task18>
+<task19>19) غير معرف المهمة</task19>
+<task20>20) غير معرف المهمة</task20>
+<mnuToolsValidate>التحقق من صحة سجلات مارك</mnuToolsValidate>
+<mnuToolsOAI>الحصاد من OAI</mnuToolsOAI>
+<mnutoolsurl>توليد مارك من URL</mnutoolsurl>
+<toolStripMenuItem43>أدوات التنسيق ذاكري</toolStripMenuItem43>
+<toolStripMenuItem3>تطبيع...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>تطبيع سجلات LC</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>تطبيع سجلات ميكروليف</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>إزالة الأسطر الفارغة</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>إزالة الحقول الفارغة/الفروع</mnuToolsRemoveEmpty>
+<mnuToolsAdd>إضافة أو حذف حقل</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>إنشاء حقل جديد</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>نسخ حقل</toolStripMenuItem26>
+<mnuToolsEditField>تحرير بيانات الحقل</mnuToolsEditField>
+<mnuToolsIndicator>تحرير بيانات المؤشر</mnuToolsIndicator>
+<mnuToolsSubfield>تحرير البيانات حقلاً فرعياً</mnuToolsSubfield>
+<mnuToolsSortby>فرز حسب...</mnuToolsSortby>
+<toolStripMenuItem41>ترتيب فرز السجلات حسب...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>حقل مخصص</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>الحقل author</mnuToolsSortAuthor>
+<mnuToolsSortByCall>حقل رقم الاستدعاء</mnuToolsSortByCall>
+<mnuToolsSortControl>حقل رقم التحكم</mnuToolsSortControl>
+<mnuToolsSortbyTitle>حقل العنوان</mnuToolsSortbyTitle>
+<toolStripMenuItem42>فرز الحقول فيتن السجل قبل...</toolStripMenuItem42>
+<mnuToolsCustomSort>فرز مخصص</mnuToolsCustomSort>
+<mnuToolsSort2>0xx حقول الفرز</mnuToolsSort2>
+<mnuToolsSort>فرز كافة الحقول</mnuToolsSort>
+<mnuToolsSwap>تبادل بيانات الحقل</mnuToolsSwap>
+<mnuToolsOptions>تفضيلات</mnuToolsOptions>
+<mnu_ILS>[اسم ILS]</mnu_ILS>
+<mnu_ils_search>البحث عن</mnu_ils_search>
+<updateCreateToolStripMenuItem>إنشاء/تحديث</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>إعدادات عملية</processSettingsToolStripMenuItem>
+<mnuOCLC>WorldCat مؤسسهاو</mnuOCLC>
+<toolStripMenuItem31>وورلدكات البحث</toolStripMenuItem31>
+<mnuOCLCLocalBibData>إضافة/حذف/تحديث البيانات الببليوغرافية المحلية</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>إنشاء/تحديث البيانات الببليوغرافية</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>تحديث المقتنيات</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>المكونات الإضافية</pluginsToolStripMenuItem>
+<mnuHelp>تعليمات</mnuHelp>
+<mnuHelpContents>محتويات والتعليمات</mnuHelpContents>
+<mnuEditInfo>معلومات مارك</mnuEditInfo>
+<mnuEditInfoOCLC>مساعدة مارك مؤسسهاو</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>قانون التمييز العنصري مجموعة الأدوات</mnuHelpRDAToolkit>
+<mnuEditInfoLC>الولايات المتحدة مكتبة الكونغرس مارك مساعدة</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>ملفات حزمة لتصحيح الأخطاء</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>ماذا تحب أن تفعل؟</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>سجلات لكل صفحة</label1>
+<lblPage>صفحات</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>عرض ملفات حفظ تلقائي للبريد</lnkLoadAutoSave>
+<this>مارسيديتور</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>تقدم "خدمات التحقق من صحة" البيانات من خلال "الخدمات تيرمولوجي" في مؤسسهاو. من أجل الاستفادة من هذه الخدمات، يجب عليك الموافقة على اتباع وتلتزم بالشروط والشروط المنصوص عليها قبل مؤسسهاو فيما يتعلق باستخدام والإخلاص لهذه الخدمات.</lb_text>
+<label1>مؤسسهاو اتفاق الارتباط:</label1>
+<lnk_Terms>عرض شروط الاستخدام</lnk_Terms>
+<cmd_Agree>أوافق</cmd_Agree>
+<cmd_disagree>أنا لا أوافق</cmd_disagree>
+<this>اتفاق مؤسسهاو</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>الإنكليزية</comboBox1>
+<linkLabel2>لا شكرا، مجرد استخدام الإعدادات الافتراضية</linkLabel2>
+<linkLabel1>دعونا نبدأ!</linkLabel1>
+<label2>أنا هنا لمساعدتك على البدء!  سوف يطلب منك بعض الأسئلة، وتحصل يو </label2>
+<label1>مرحبا بكم في مارسيديت 7!</label1>
+<this>معالج بدء تشغيل مارسيديت 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>إلى إعدادات البيانات... راف!</linkLabel1>
+<label6>تذكر، يمكنك تعيين المواضيع وأحجام الخطوط واللغات ويا الوصول متقدمة </label6>
+<cmb_theme_picker>افتراضي</cmb_theme_picker>
+<label5>موضوع الموصى بها:</label5>
+<label4>حزب العمال.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>وأوصى حجم الخط:</label3>
+<cmbFont>نوتو بلا</cmbFont>
+<label2>الخط الافتراضي:</label2>
+<label1>مظهر مارسيديت</label1>
+<this>معالج بدء تشغيل مارسيديت 7: الصفحة 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>مارسيديت مارك الملحد، لذلك دعونا نقول قليلاً حول البيانات الخاصة بك.</label5>
+<comboBox3>اختر بالنسبة لي</comboBox3>
+<label4>محرك معالجة XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>ترميز السجل الافتراضي:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>تنسيق مارك بي:</label2>
+<linkLabel1>ونحن على وشك الانتهاء!  سنجاب!</linkLabel1>
+<label1>إعدادات البيانات مارسيديت</label1>
+<this>معالج بدء تشغيل مارسيديت 7: الصفحة 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>تحرير سعيد!</linkLabel1>
+<label5>الموارد. GetString ("label5. النص ")</label5>
+<label1>تهانينا!  كنت على استعداد لاستخدام 7 مارسيديت</label1>
+<this>معالج بدء تشغيل مارسيديت 7: الانتهاء</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>قم بإغلاق</cmdClose>
+<ck_remote>حل الكيانات البعيد</ck_remote>
+<ck_Marc8>تحويل إلى مارك-8</ck_Marc8>
+<opt_default>افتراضي</opt_default>
+<opt_saxon>ساكسون</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>حفظ</cmdSave>
+<gp_XSLT>محرك XSLT</gp_XSLT>
+<label7>الشكل النهائي</label7>
+<label6>الشكل الأصلي</label6>
+<label4>مسار XSLT/XQuery</label4>
+<label3>اسم الدالة (اسم مستعار):</label3>
+<label2>معلومات عامة:</label2>
+<lnkXMLFunctionWizard>معالج الدالة XML</lnkXMLFunctionWizard>
+<groupBox1>الإجراءات</groupBox1>
+<lnkAdd>إضافة</lnkAdd>
+<lnkModify>تعديل</lnkModify>
+<lnkDelete>حذف</lnkDelete>
+<label5>التنسيق:</label5>
+<label1>المهام المحددة:</label1>
+<this>تحرير المهام XML</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>

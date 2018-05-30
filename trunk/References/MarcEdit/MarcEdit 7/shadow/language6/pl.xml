@@ -1,0 +1,2170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<marcedit language="">
+<MarcEdit_Field_Count>
+<mnuExtract>Wyodrębnić rekordy</mnuExtract>
+<cmenuClipboard>Kopiuj do schowka</cmenuClipboard>
+<cmenuSubfields>Liczba pól podrzędnych</cmenuSubfields>
+<menuItem3>-</menuItem3>
+<cmenuHelp>Pomoc</cmenuHelp>
+<cmd_OK>Zamknij</cmd_OK>
+<cmd_Report>Generowanie raportu</cmd_Report>
+<lb_ReportStyle>Styl raportu:</lb_ReportStyle>
+<opt_tab>Rozdzielany sprawozdanie kartę</opt_tab>
+<opt_xml>Raport XML</opt_xml>
+<opt_html>Raport w formacie HTML</opt_html>
+<this>Pole Count</this>
+</MarcEdit_Field_Count>
+<MarcEdit_FindReplace>
+<groupBox3>Kierunek:</groupBox3>
+<rd_down>Dół</rd_down>
+<rd_up>W górę</rd_up>
+<btn_findall>Znajdź wszystkie</btn_findall>
+<groupBox1>Opcje wyszukiwania:</groupBox1>
+<ck_f_whole_word>Znajdź tylko całe wyrazy</ck_f_whole_word>
+<ck_find_regex>Użyć wyrażeń regularnych</ck_find_regex>
+<ck_f_match_case>Uwzględniaj wielkość liter</ck_f_match_case>
+<cmdFClose>Zamknij</cmdFClose>
+<cmdFFind>Znajdź</cmdFFind>
+<lb_FindWhat>Znajdź:</lb_FindWhat>
+<cmdNav_Find>Znajdź</cmdNav_Find>
+<cmdReplaceNav>Zamień</cmdReplaceNav>
+<ckReplaceConditional>Znajdź i zamień można wykonać, jeśli...</ckReplaceConditional>
+<cmbCondOpt>REGEX</cmbCondOpt>
+<label1>Jeżeli:</label1>
+<cmd_R_Close>Zamknij</cmd_R_Close>
+<cmd_R_All>Zamień wszystko</cmd_R_All>
+<cmd_R_Replace>Zamień</cmd_R_Replace>
+<groupBox2>Opcje wyszukiwania:</groupBox2>
+<ck_Replace_ExactWordMatch>Dopasowanie dokładne słowo</ck_Replace_ExactWordMatch>
+<ckMultiLine>Wielowierszowy oceny</ckMultiLine>
+<ckFile>Użyj kryteriów zewnętrznych Szukaj i Zamień</ckFile>
+<ck_R_RegExp>Użyć wyrażeń regularnych</ck_R_RegExp>
+<ck_R_Case>Uwzględniaj wielkość liter</ck_R_Case>
+<lb_ReplaceWith>Zastąpić:</lb_ReplaceWith>
+<lb_R_FindWhat>Znajdź:</lb_R_FindWhat>
+<this>Znajdź i Zamień:</this>
+</MarcEdit_FindReplace>
+<MarcEdit_frmBatchProcessRecords>
+<lb_bProccess_status>Status:
+
+</lb_bProccess_status>
+<ck_bTask>Załadować zadania</ck_bTask>
+<ckBatchProcessSubfolders>Uwzględnij podfoldery</ckBatchProcessSubfolders>
+<lb_Operation>Funkcja:</lb_Operation>
+<cmdBClose>Zamknij</cmdBClose>
+<cmdBProcess>Proces</cmdBProcess>
+<lb_Extensions>Typy plików:</lb_Extensions>
+<lb_BSource>Katalog źródłowy:</lb_BSource>
+<lbBTitle>Partia procesu rekordy MARC</lbBTitle>
+<groupBox1>Opcje</groupBox1>
+<this>Partia procesu rekordy</this>
+</MarcEdit_frmBatchProcessRecords>
+<MarcEdit_frmCharacterConversions>
+<ck_batch_character_process>Przetwarzanie wsadowe</ck_batch_character_process>
+<cmbfinal>MARC8</cmbfinal>
+<lb_final>Końcowe kodowania:</lb_final>
+<cmd_encoding>MARC8</cmd_encoding>
+<lb_encoding>Oryginalne kodowanie:</lb_encoding>
+<lb_UTF8_Header>Konwersji znaków</lb_UTF8_Header>
+<cmdCancel>Zamknij</cmdCancel>
+<cmdOK>Proces</cmdOK>
+<lb_UTF8_Dest>Plik docelowy:</lb_UTF8_Dest>
+<lb_UTF8_Source>Plik źródłowy:</lb_UTF8_Source>
+<groupBox1>Ustawienia kodowania</groupBox1>
+<this>CharacterSet konwersje</this>
+</MarcEdit_frmCharacterConversions>
+<MarcEdit_frmClustering>
+<label1>Narzędzia klastra danych</label1>
+<label2>Dane klastrowanie narzędzi zawierają zestaw uproszczonych klastrowanie enha zaawansowanego partii danych oczyszczania.  Dla zaawansowanych, klastrowanie funkcjonalności, należy rozważyć przy użyciu OpenRefine.</label2>
+<groupBox1>Opcje</groupBox1>
+<rdCustom>Niestandardowe pola indeksu</rdCustom>
+<rdControlData>Indeks kontrolowanych danych (1xx, 6xx, 7xx)</rdControlData>
+<rdAll>Wszystkie dane indeksu</rdAll>
+<cmdImport>Importowanie danych</cmdImport>
+<label3>Plik źródłowy:</label3>
+<label9>Sortowanie danych:</label9>
+<label8>Wyświetlania klastrów:</label8>
+<label7>Klastra na następujące pola podrzędne:</label7>
+<cmbclusteringalgorithm>Odległość Levenshteina</cmbclusteringalgorithm>
+<label6>Wybierz algorytm klastrowania:</label6>
+<cmbClusterField>Nazwy (1xx, 7xx)</cmbClusterField>
+<label4>Wybierz dane, które mają być klastrowane:</label4>
+<cmdGenerateCluster>Wygenerować klastra</cmdGenerateCluster>
+<cmbAlg>Odległość Levenshteina</cmbAlg>
+<lnkAddCriteria>Dodawanie aktualizacji</lnkAddCriteria>
+<lnkClose>Zamknij</lnkClose>
+<lnkEditCluster>Przetworzyć wszystkie zmiany</lnkEditCluster>
+<label5>Klastrowany danych:</label5>
+<this>Klastrowanie narzędzi</this>
+</MarcEdit_frmClustering>
+<MarcEdit_frmDebugger>
+<rEdit_Results></rEdit_Results>
+<rEdit_Log></rEdit_Log>
+<this>Zadaniem debugera</this>
+</MarcEdit_frmDebugger>
+<MarcEdit_frmExportTabDelimited>
+<cmb_third_del></cmb_third_del>
+<label8>Kontekstowe ogranicznik</label8>
+<lb_Tab_Header>Eksport karcie rekordy rozdzielane</lb_Tab_Header>
+<cmb_sec_del></cmb_sec_del>
+<label18>W Ogranicznik pola</label18>
+<lbdelimiter>Wybierz Ogranicznik pola</lbdelimiter>
+<cmdTClose2>Zamknij</cmdTClose2>
+<cmdTNext>Następny &gt;&gt;</cmdTNext>
+<label1>Krok 1: Ustaw ścieżki plików</label1>
+<ck_normalize>Normalizacja danych pola</ck_normalize>
+<cmd_tab2_back>Wstecz</cmd_tab2_back>
+<lnkSettings>Ustawienia...</lnkSettings>
+<lnkDeleteField>Usuń pole</lnkDeleteField>
+<lnkAddField>Dodaj pole</lnkAddField>
+<label14>Podpól:</label14>
+<label11>Pole:</label11>
+<cmdTClose>Zamknij</cmdTClose>
+<cmdTExport>Eksport</cmdTExport>
+<label2>Krok 2: Definiowanie pola/pól podrzędnych do eksportu</label2>
+<label3>Eksport karcie rekordy rozdzielane</label3>
+<mnuLoad>Wczytywanie ustawień</mnuLoad>
+<menuItem2>-</menuItem2>
+<mnusave>Zapisz ustawienia</mnusave>
+<menuItem1>-</menuItem1>
+<menuItem3>Wyczyść ustawienia</menuItem3>
+<this>Eksport karcie rekordy rozdzielane</this>
+</MarcEdit_frmExportTabDelimited>
+<MarcEdit_frmFontDialog>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Rozmiar:</label4>
+<lb_Example>Przykładowy tekst</lb_Example>
+<lb_lang_font>Wybierz czcionkę:</lb_lang_font>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zamknij</cmdClose>
+<this>Wybierz czcionkę</this>
+</MarcEdit_frmFontDialog>
+<MarcEdit_frmILS_Processing_Settings>
+<groupBox1>Zadań, aby uruchomić na Import</groupBox1>
+<lnkSelectPre>Wybierz zadanie</lnkSelectPre>
+<cname>Nazwa</cname>
+<cPath>Ścieżkę zadania</cPath>
+<groupBox2>Zadań, aby uruchomić na eksport</groupBox2>
+<linkLabel1>Wybierz zadanie</linkLabel1>
+<columnHeader1>Nazwa</columnHeader1>
+<columnHeader2>Ścieżkę zadania</columnHeader2>
+<cmdSave>Zapisz</cmdSave>
+<cmdClose>Zamknij</cmdClose>
+<deleteItemToolStripMenuItem>Usuń element</deleteItemToolStripMenuItem>
+<this>Ustawienia procesu ILS</this>
+</MarcEdit_frmILS_Processing_Settings>
+<MarcEdit_frmMARCJoin>
+<ckJoinSubfolders>Uwzględnij podfoldery</ckJoinSubfolders>
+<cmdEditFile>Edytuj plik</cmdEditFile>
+<lnkJoinedFiles>Pokaż połączone pliki</lnkJoinedFiles>
+<label19>Typy plików:</label19>
+<ck_JoinIndividual>Dołącz do pojedynczych plików</ck_JoinIndividual>
+<cmdJoinCancel>Zamknij</cmdJoinCancel>
+<cmdJoinProcess>Proces</cmdJoinProcess>
+<lb_Join_Files>Plik(i) do sprzężenia:</lb_Join_Files>
+<lb_Join_Source>Zapisz plik:</lb_Join_Source>
+<lb_Join_Header>Narzędzie MARCJoin</lb_Join_Header>
+<lbJoinStatus>Status:</lbJoinStatus>
+<groupBox1>Opcje</groupBox1>
+<this>MARCJoin</this>
+</MarcEdit_frmMARCJoin>
+<MarcEdit_frmMARCSplit>
+<ck_limit_split># of files:</ck_limit_split>
+<lb_Split_Records>Rekordy na plik:</lb_Split_Records>
+<cmdSplitClose>Zamknij</cmdSplitClose>
+<cmdSplitProcess>Proces</cmdSplitProcess>
+<lb_Split_Folder>Folder docelowy:</lb_Split_Folder>
+<lb_Split_Source>Plik źródłowy:</lb_Split_Source>
+<lb_Split_Header>Narzędzie MARCSplit</lb_Split_Header>
+<groupBox1>Opcje</groupBox1>
+<this>MARCSplit</this>
+</MarcEdit_frmMARCSplit>
+<MarcEdit_frmThemeBuilder>
+<label1>Nazwa motywu:</label1>
+<label2>Opis:</label2>
+<label3>Globalne wartości</label3>
+<label4>Kolor czcionki</label4>
+<label5>Kolor tła</label5>
+<label6>Kolor tła</label6>
+<label7>Kolor czcionki</label7>
+<label8>MarcEditor wartości</label8>
+<cmdSave>Zapisz</cmdSave>
+<cmdClose>Zamknij</cmdClose>
+<cmdPreview>Podgląd</cmdPreview>
+<richTextBox1>Przykładowy tekst</richTextBox1>
+<label9>MarcEditor wyświetlacz:</label9>
+<cmdOpen>Otwarte</cmdOpen>
+<label10>GroupBox tło</label10>
+<groupBox1>Przykład GroupBox</groupBox1>
+<this>MarcEdit tematu Builder</this>
+</MarcEdit_frmThemeBuilder>
+<MarcEdit_frmTroubleShootingWizard>
+<label1>Kreator rozwiązywania problemów z MarcEdit miało na celu pomóc użytkownikom w znalezieniu pomocy, który </label1>
+<gpStart>Opcje</gpStart>
+<rdErrorMessage>Mam komunikat o błędzie</rdErrorMessage>
+<rdErrorNumber>Mam numer błędu</rdErrorNumber>
+<lbMessage>{komunikat}</lbMessage>
+<cmdPage1>Następny</cmdPage1>
+<gpResults>Wyniki</gpResults>
+<cmdClose>Zamknij</cmdClose>
+<lnkCreateDebugPackage>Utwórz pakiet debugowania do wysyłania na potrzeby debugowania?</lnkCreateDebugPackage>
+<label2>Kreator rozwiązywania problemów nie mógł zlokalizować artykuł w bazie wiedzy </label2>
+<this>Kreator rozwiązywania problemów z MarcEdit</this>
+</MarcEdit_frmTroubleShootingWizard>
+<MarcEdit_frmXMLPRofilerWizard>
+<rdOther>Innych XML</rdOther>
+<rdMARCXML>MARCXML</rdMARCXML>
+<rdMARC>MARC</rdMARC>
+<label17>Wybierz ostateczny Format</label17>
+<label16>Krok 3:</label16>
+<label15>Zapisz plik:</label15>
+<label13>Krok 2:</label13>
+<label12>Nazwa transformacji:</label12>
+<lnkNextPg1>Przejdź do następnego kroku</lnkNextPg1>
+<label4>Wybierz plik:</label4>
+<label3>Krok 1:</label3>
+<label2>zasobów. GetString ("label2. Tekst")</label2>
+<label1>Profiler XML/JSON</label1>
+<lbTop>Element dokumentu:</lbTop>
+<ckTopLevel>Użyj elementu dokumentu</ckTopLevel>
+<lnkNextPg2>Przejdź do następnego kroku</lnkNextPg2>
+<label7>Wybierz rekord elementu</label7>
+<label6>Krok 3:</label6>
+<label5>Profiler XML/JSON</label5>
+<label14>Zdefiniować mapowania</label14>
+<lnkNextP3>Przejdź do następnego kroku</lnkNextP3>
+<groupBox2>Argumenty</groupBox2>
+<ck_filing_characters>Obliczyć wspólne dane nonfiling</ck_filing_characters>
+<ck_sort>Pola sortowania</ck_sort>
+<button2>Wczytaj szablon</button2>
+<toolStripMenuItem2>Edycja elementu</toolStripMenuItem2>
+<deleteItemsToolStripMenuItem>Usuwanie elementów</deleteItemsToolStripMenuItem>
+<joinItemsToolStripMenuItem>Dołącz do elementów</joinItemsToolStripMenuItem>
+<groupBox1>Ustawienia</groupBox1>
+<ckTrim>Przyciąć istniejące znaki interpunkcyjne</ckTrim>
+<ck_Repeatable>Powtarzalne podpól</ck_Repeatable>
+<P3_ck_constant>Dane stałe</P3_ck_constant>
+<P3_cmd_Apply>Dodać Argument</P3_cmd_Apply>
+<P3_lb_punct>Termin. Znaki interpunkcyjne:</P3_lb_punct>
+<P3_txt_indicators>\\\\</P3_txt_indicators>
+<P3_lb_indicators>IND.:</P3_lb_indicators>
+<P3_mapto>Mapowania:</P3_mapto>
+<P3_lb_select>Wybierz:</P3_lb_select>
+<label9>Krok 4:</label9>
+<label8>Profiler XML/JSON</label8>
+<lnkClose>Zamknij kreatora</lnkClose>
+<label11>Transformacja ma zostały utworzone i dodane do listy funkcji XML.
+</label11>
+<label10>Profiler XML/JSON</label10>
+<this>Profiler XML/JSON</this>
+</MarcEdit_frmXMLPRofilerWizard>
+<MarcEdit_frm008>
+<label11>Typ: książki</label11>
+<lbbTitle>006/008 opcje:</lbbTitle>
+<lnkbBiog>Biog:</lnkbBiog>
+<lnkbLitF>LitF:</lnkbLitF>
+<lnkbIndx>INDX:</lnkbIndx>
+<lnkbFest>Fest:</lnkbFest>
+<lnkbConf>Conf:</lnkbConf>
+<lnkbGPub>GPub:</lnkbGPub>
+<lnkbCont>CONT:</lnkbCont>
+<lnkbForm>Formularz:</lnkbForm>
+<lnkbAudn>Audn:</lnkbAudn>
+<lnkbIlls>Dolegliwości:</lnkbIlls>
+<lnkbType>Typ:</lnkbType>
+<label12>Typ: Elektronicznych zasobów</label12>
+<label5>006/008 opcje:</label5>
+<lnkcFile>Plik:</lnkcFile>
+<lnkcGPub>GPub:</lnkcGPub>
+<lnkcAudn>Audn:</lnkcAudn>
+<lnkcType>Typ:</lnkcType>
+<label2>,</label2>
+<lnkbDates>Daty:</lnkbDates>
+<lnkbDtSt>DtSt:</lnkbDtSt>
+<lnkbCtry>Odwołania w ctrY:</lnkbCtry>
+<lnkbLang>Lang:</lnkbLang>
+<lnkbMRec>MRec:</lnkbMRec>
+<label1>008 opcje:</label1>
+<label13>Typ: Mapa</label13>
+<label3>006/008 opcje:</label3>
+<lnkmSpFm>SpFm:</lnkmSpFm>
+<lnkmIndx>INDX:</lnkmIndx>
+<lnkmForm>Formularz:</lnkmForm>
+<lnkmGPub>GPub:</lnkmGPub>
+<lnkmCrTp>CrTp:</lnkmCrTp>
+<lnkmProj>PROJ:</lnkmProj>
+<lnkmRelf>Relf:</lnkmRelf>
+<lnkmType>Typ:</lnkmType>
+<label14>Typu: Materiały mieszane</label14>
+<label4>006/008 opcje:</label4>
+<lnkmmForm>Formularz:</lnkmmForm>
+<lnkmmType>Typ:</lnkmmType>
+<label15>Typ: Ocena na</label15>
+<label6>006/008 opcje:</label6>
+<lnkscLTxt>LTxt:</lnkscLTxt>
+<lnkscAccM>AccM:</lnkscAccM>
+<lnkscForm>Formularz:</lnkscForm>
+<lnkscAudn>Audn:</lnkscAudn>
+<lnkscFMus>FMus:</lnkscFMus>
+<lnkscComp>Komp:</lnkscComp>
+<lnkscType>Typ:</lnkscType>
+<label10>Typ: Kontynuując zasobów</label10>
+<lnkslEntW>EntW:</lnkslEntW>
+<lnkslS_L>S/L:</lnkslS_L>
+<label7>006/008 opcje:</label7>
+<lnkslAlph>Alph:</lnkslAlph>
+<lnkslConf>Conf:</lnkslConf>
+<lnkslGPub>GPub:</lnkslGPub>
+<lnkslCont>CONT:</lnkslCont>
+<lnkslForm>Formularz:</lnkslForm>
+<lnkslOrig>ORIG:</lnkslOrig>
+<lnkslSrTp>SrTp:</lnkslSrTp>
+<lnkslISSN>ISSN:</lnkslISSN>
+<lnkslRegl>REGL:</lnkslRegl>
+<lnkslFreq>FREQ:</lnkslFreq>
+<lnkslType>Typ:</lnkslType>
+<label16>Typ: Dźwięk nagrywanie</label16>
+<label8>006/008 opcje:</label8>
+<lnksdLTxt>LTxt:</lnksdLTxt>
+<lnksdAccM>AccM:</lnksdAccM>
+<lnksdForm>Formularz:</lnksdForm>
+<lnksdAudn>Audn:</lnksdAudn>
+<lnksdFMus>FMus:</lnksdFMus>
+<lnksdComp>Komp:</lnksdComp>
+<lnksdType>Typ:</lnksdType>
+<label17>Typu: Materiały wizualne</label17>
+<label9>006/008 opcje:</label9>
+<lnkvmTech>Tech:</lnkvmTech>
+<lnkvmTMat>TMat:</lnkvmTMat>
+<lnkvmForm>Formularz:</lnkvmForm>
+<lnkvmGPub>GPub:</lnkvmGPub>
+<lnkvmAudn>Audn:</lnkvmAudn>
+<lnkvmTime>Czas:</lnkvmTime>
+<lnkvmType>Typ:</lnkvmType>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_Close>Zamknij</cmd_Close>
+<lnkSrce>Srce:</lnkSrce>
+<linkLabel1>Formularz:</linkLabel1>
+<this>006/008</this>
+</MarcEdit_frm008>
+<MarcEdit_frmAbout>
+<lb_AboutDesc>zasobów. GetString("lb_AboutDesc.Text")</lb_AboutDesc>
+<lb_Authors>O mnie:</lb_Authors>
+<lbBuildCode>Aktualizacja kodu:</lbBuildCode>
+<lnkHomepage>http://marcedit.reeset.NET</lnkHomepage>
+<label5>Witryna projektu:</label5>
+<label2>Podziękowania:</label2>
+<lb_modified>.</lb_modified>
+<lbMod>Zmodyfikowano:</lbMod>
+<lbMailto>Terry Reese</lbMailto>
+<lbAuthor>Autor:</lbAuthor>
+<lbVersion>Numer kompilacji:</lbVersion>
+<label4>O MarcEdit</label4>
+<linkLabel1>http://marcedit.reeset.NET/Technical-Details</linkLabel1>
+<label1>Szczegóły techniczne:</label1>
+<this>O MarcEdit</this>
+</MarcEdit_frmAbout>
+<MarcEdit_frmAutoSave>
+<cmdLoad>Obciążenia</cmdLoad>
+<cmdClose>Zamknij</cmdClose>
+<cmdDelete>Usuń</cmdDelete>
+<this>Automatyczne zapisywanie plików:</this>
+</MarcEdit_frmAutoSave>
+<MarcEdit_frmBatchEdit>
+<lnk_Edit_Fields>Edytowanie pól</lnk_Edit_Fields>
+<lnkCopy>Skopiuj dane pola</lnkCopy>
+<lnkSwapFields>Wymiany pól</lnkSwapFields>
+<lnkIndicators>Edycję wskaźników</lnkIndicators>
+<lnkSubfield>Edytowanie danych parametru Subfield</lnkSubfield>
+<lnkAddDelete>Dodaj/Usuń pola</lnkAddDelete>
+<groupBox8>Usuń pole opcji</groupBox8>
+<ckRemoveByPostition>Aby usunąć pole pozycji</ckRemoveByPostition>
+<ck_RemoveIfNot>Usunąć, jeśli pole danych nie pasuje</ck_RemoveIfNot>
+<ck_dedup>Usuń zduplikowane dane</ck_dedup>
+<groupBox7>Dodać opcje pola</groupBox7>
+<ck_A_addifnotduplicate>Dodaj pole tylko, jeśli nie duplikat</ck_A_addifnotduplicate>
+<ck_A_Insert>Wstaw przed</ck_A_Insert>
+<ck_A_not_present>Dodaj pole tylko jeśli nie są zainstalowane</ck_A_not_present>
+<ck_AddIfPresent>Dodaj pola, jeśli jest obecny</ck_AddIfPresent>
+<ck_last>Wstawianie ostatnio</ck_last>
+<groupBox6>Opcje ogólne</groupBox6>
+<ck_delete_batch>Przetwarzanie partia operacji</ck_delete_batch>
+<ck_A_Case>Uwzględniaj wielkość liter</ck_A_Case>
+<ck_A_regular_Expression>Opcja Użyj wyrażenia regularnego</ck_A_regular_Expression>
+<label1>Znajdź:</label1>
+<cmd_A_Close>Zamknij</cmd_A_Close>
+<cmd_A_Add>Dodaj pole</cmd_A_Add>
+<cmd_A_Delete>Usuń pole</cmd_A_Delete>
+<label3>Pola danych:</label3>
+<lb_A_Field>Pole:</lb_A_Field>
+<lb_A_Title>Dodawanie/usuwanie narzędzie pola</lb_A_Title>
+<cmd_Sub_Close>Zamknij</cmd_Sub_Close>
+<cmd_Sub_Remove>Usuwanie tekstu</cmd_Sub_Remove>
+<cmd_Sub_Replace>Zastępowanie tekstu</cmd_Sub_Replace>
+<groupBox2>Opcje wyszukiwania:</groupBox2>
+<ckDeleteDuplicate>Usuń zduplikowane podpól</ckDeleteDuplicate>
+<ck_edit_subfield_delete_subfield>Usuń pole podrzędne</ck_edit_subfield_delete_subfield>
+<ck_move_subfield>Przenoszenie danych parametru subfield</ck_move_subfield>
+<ck_Reg_Express>Opcja Użyj wyrażenia regularnego</ck_Reg_Express>
+<ck_Sub_Case>Uwzględniaj wielkość liter</ck_Sub_Case>
+<ck_Sub_New>Nowe pole podrzędne tylko</ck_Sub_New>
+<ck_Sub_NotPresent>Dodaj pole podrzędne, jeśli nie zainstalowane</ck_Sub_NotPresent>
+<label8>Zamień na:</label8>
+<label7>Pola danych:</label7>
+<label6>Podpól:</label6>
+<label5>Pole:</label5>
+<lb_Sub_Title>Edycję parametru Subfield narzędzie</lb_Sub_Title>
+<cmd_I_Close>Zamknij</cmd_I_Close>
+<cmd_I_Replace>Zamień</cmd_I_Replace>
+<lb_Ind_Replace>Zastąpić wskaźników</lb_Ind_Replace>
+<label12>Pola danych:</label12>
+<label11>Wskaźniki</label11>
+<label10>Pole:</label10>
+<lb_Ind_Title>Edytować narzędzia Wskaźnik</lb_Ind_Title>
+<ck_Match_All_Subfields>Pasują wszystkie podpól</ck_Match_All_Subfields>
+<ck_swap_expression>Traktować jako wyrażenie regularne</ck_swap_expression>
+<label4>Znajdź:</label4>
+<cmd_Swap_Close>Zamknij</cmd_Swap_Close>
+<cmd_Swap_Process>Proces</cmd_Swap_Process>
+<groupBox3>Opcje wyszukiwania</groupBox3>
+<ck_swap_once_per>Przetwarzać jedno pole na swap</ck_swap_once_per>
+<ck_swap_sort>Zmodyfikowano sortowania pola</ck_swap_sort>
+<ck_Swap_Override>Dodać do istniejących/Utwórz nowy</ck_Swap_Override>
+<ck_Swap_Add>Dodać do istniejącego pola</ck_Swap_Add>
+<ck_Swap_Copy>Źródło kopii</ck_Swap_Copy>
+<label20>Zmodyfikowane dane:</label20>
+<label22>Podpól</label22>
+<label23>Wskaźniki</label23>
+<label24>Pole</label24>
+<label19>Oryginalne dane:</label19>
+<label18>Znajdź:</label18>
+<label17>Podpól</label17>
+<label16>Wskaźniki</label16>
+<label15>Pole</label15>
+<lb_Swap_Title>Pole Narzędzie do wymiany</lb_Swap_Title>
+<label14>Pole danych</label14>
+<lbFindInField>Znaleźć w dziedzinie</lbFindInField>
+<groupBox4>Opcje</groupBox4>
+<ck_copy_field_regex>Użyć wyrażeń regularnych</ck_copy_field_regex>
+<ck_copy_delete>Usuń źródło pola</ck_copy_delete>
+<label2>Pole docelowe:</label2>
+<cmdCopyClose>Zamknij</cmdCopyClose>
+<cmdCopy>Kopiowanie</cmdCopy>
+<label9>Pole źródłowe:</label9>
+<label13>Skopiuj dane pola</label13>
+<label26>Pozycja:</label26>
+<label21>Zastąpić:</label21>
+<label25>Znajdź:</label25>
+<groupBox5>Opcje</groupBox5>
+<ck_editfield_match_case>Uwzględniaj wielkość liter</ck_editfield_match_case>
+<ck_UserRegularExpressions>Użyć wyrażeń regularnych</ck_UserRegularExpressions>
+<cmdFieldEdit_Close>Zamknij</cmdFieldEdit_Close>
+<cmdEditField_Process>Proces</cmdEditField_Process>
+<label27>Pole:</label27>
+<label28>Edytowanie pola danych</label28>
+<this>Narzędzia do edycji MarcEdit.NET partia</this>
+</MarcEdit_frmBatchEdit>
+<MarcEdit_frmBibframe>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<label1>BibFrame2 Testbed jest prostym w obsłudze narzędzie przeznaczone do umożliwienia metadane specy </label1>
+<label2>Plik źródłowy:</label2>
+<label3>Zapisz plik:</label3>
+<label4>Serializacja danych:</label4>
+<cmbSerialization>RDFXML</cmbSerialization>
+<label5>Tłumaczenie zasad:</label5>
+<label6>BaseURI:</label6>
+<lnkEditXQuery>Edycja</lnkEditXQuery>
+<label7>Typ pliku:</label7>
+<label8>Profil:</label8>
+<cmbProfile>BibFrame2</cmbProfile>
+<label9>Pole ID:</label9>
+<this>BibFrame TestBed</this>
+</MarcEdit_frmBibframe>
+<MarcEdit_frmBuildLinks>
+<label3>Zapisz plik:</label3>
+<label2>Plik źródłowy:</label2>
+<label1>Narzędzie połączonych danych został zaprojektowany do pętli zestaw rekordów, MARC i rozwiązać punktów dostępu w 1xx, 6xx i 7xx danych elementów do ich dat połączonych punktów końcowych.</label1>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Zamknij</cmdCancel>
+<groupBox1>Identyfikator usługi</groupBox1>
+<ckLimiter>Limit rozdzielczości do:</ckLimiter>
+<ck3xxFields>Proces 3xx pola</ck3xxFields>
+<label4>OCLC numer:</label4>
+<ckWorkId>Osadzić OCLC pracy ID</ckWorkId>
+<cmb_viaf_index>LC (NACO)</cmb_viaf_index>
+<ckAutodetect>Identyfikator tematu AutoDetect</ckAutodetect>
+<ck_viaf>OCLC WYMAGAJĄCE</ck_viaf>
+<ck_loc>AutoDetect Main/dodano wpis</ck_loc>
+<label5>Plik zasad:</label5>
+<cmdStatus>Stan usługi</cmdStatus>
+<lbstatus>Status:</lbstatus>
+<this>Budować połączone rekordy</this>
+</MarcEdit_frmBuildLinks>
+<MarcEdit_frmCatalogCalculator>
+<lnkFind>Znajdź</lnkFind>
+<lbResults>Wyniki:</lbResults>
+<lnkCatalog>Kyle Banerjee katalog Kalkulator</lnkCatalog>
+<cmdClose>Zamknij</cmdClose>
+<label1>Frezy LC</label1>
+<this>Katalogowanie Kalkulator</this>
+</MarcEdit_frmCatalogCalculator>
+<MarcEdit_frmCharacterDetection>
+<label1>Narzędzie do wykrywania postać używa procesu heuristical dać najlepsze przypuszczenie wypoc </label1>
+<cmdDetect>Wykryć</cmdDetect>
+<cmdClose>Zamknij</cmdClose>
+<label2>Wyniki:</label2>
+<ckDetailed>Pełne wyniki</ckDetailed>
+<this>Wykrywanie znaków</this>
+</MarcEdit_frmCharacterDetection>
+<MarcEdit_frmClassify>
+<label1>zasobów. GetString ("label1. Tekst")</label1>
+<lnkClassify>O OCLC klasyfikować usługi</lnkClassify>
+<ck_all>Dodać do wszystkich rekordów</ck_all>
+<ck_single>Dodać do wybranego rekordu</ck_single>
+<ck_lc>Biblioteka Kongresu Stanów Zjednoczonych</ck_lc>
+<ck_dewey>Dewey Decimal</ck_dewey>
+<cmdProcess>Klasyfikowania</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<label5>Jeśli pola nie są obecne, włóż (przykład: 050 060; 090; 092)</label5>
+<label4>Wstaw wygenerowany klasyfikacje w poniższe pole:</label4>
+<ck_cutters>Obliczyć Frezy i daty</ck_cutters>
+<ck_use_z>Użyj parametru subfield z dopasowania</ck_use_z>
+<ck_DateMod>Dołączyć flagę do daty</ck_DateMod>
+<ck_omit_serial>Pominąć Data dla seriali</ck_omit_serial>
+<ck_omit_integrated>Pominąć termin zintegrowani pracownicy</ck_omit_integrated>
+<ck_omit>Dołączyć wyjątki dat</ck_omit>
+<ck_always_fast>Zawsze dodawaj szybko nagłówki</ck_always_fast>
+<ck_conditional_fast>Dodać nagłówki szybko, gdy nie nagłówków tematów są obecne</ck_conditional_fast>
+<label6>Wskaźniki:</label6>
+<cmdInsert>Instrukcje wstawiania</cmdInsert>
+<cmdClassification>Klasyfikacje</cmdClassification>
+<cmdSubjects>Nagłówków tematów</cmdSubjects>
+<lnkClassification>Wybierz klasyfikację</lnkClassification>
+<lnkSubjects>Wybierz Opcje tematu</lnkSubjects>
+<lnkOptions>Ustawianie opcji</lnkOptions>
+<cmdOptions>Opcje</cmdOptions>
+<label2>Podpól:</label2>
+<label3>Kutrowanie podpól:</label3>
+<this>Wygenerować klasyfikacji</this>
+</MarcEdit_frmClassify>
+<MarcEdit_frmConstantData>
+<columnHeader1>Dane stałe</columnHeader1>
+<columnHeader3>Skrót</columnHeader3>
+<cmdClose>Zamknij</cmdClose>
+<lnkKey>Przypisanie klawisza</lnkKey>
+<lnkEdit>Edytuj zaznaczony ciąg</lnkEdit>
+<lnkDelete>Usunąć zaznaczony ciąg</lnkDelete>
+<lnkNew>Utworzyć nowy ciąg</lnkNew>
+<lbActions>Akcje:</lbActions>
+<lbMacro>Danych stałych:</lbMacro>
+<this>Edycja danych stałych</this>
+</MarcEdit_frmConstantData>
+<MarcEdit_frmControlNumb>
+<lb_prefix>Prefiks numeru:</lb_prefix>
+<lb_digit>Uruchomić cyfrowy:</lb_digit>
+<ck_autogenerate>Wstawianie nowych rekordów</ck_autogenerate>
+<button1>Ok</button1>
+<button2>Zamknij</button2>
+<lb_length>Długość cyfra (minus prefiks)</lb_length>
+<ckgenerate>Wygenerować w bieżącym pliku</ckgenerate>
+<ck_label>Mark zapis liczb</ck_label>
+<label1>Pole/podpole (przykład: 001, 949$ b)</label1>
+<ck_repeat>Zawsze należy wstawić</ck_repeat>
+<this>Generowanie numerów kontrolnych</this>
+</MarcEdit_frmControlNumb>
+<MarcEdit_frmDedup>
+<ck_UseFuzzyMatch>Użyj dopasowania rozmyte</ck_UseFuzzyMatch>
+<ck_save>Zapisz elementy Dedup do:</ck_save>
+<ck_unique>Unikatowe elementy danych wyjściowych</ck_unique>
+<ck_remove>Usuń zduplikowane elementy</ck_remove>
+<lbOptions>Opcje:</lbOptions>
+<label1>Dedup utrzymanie:</label1>
+<lb_Control>Pole sterowania:</lb_Control>
+<cmdClose>Zamknij</cmdClose>
+<cmdOK>Proces</cmdOK>
+<btnCancel>Anuluj</btnCancel>
+<btnNext>Następny</btnNext>
+<label4>Zapisz plik:</label4>
+<label3>Znaleźć duplikatów z następujących plików:</label3>
+<label2>Rekordu deduplikacji narzędzie</label2>
+<label5>Zaufanie:</label5>
+<this>Rekordu deduplikacji</this>
+</MarcEdit_frmDedup>
+<MarcEdit_frmLogManager>
+<label1>Wybierz plik dziennika:</label1>
+<groupBox1>Opcje</groupBox1>
+<ckChanged>Wyodrębnianie zmienionych rekordów</ckChanged>
+<ckEnhance>Zwiększenia dzienniki</ckEnhance>
+<label2>Wybierz rekordy:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<this>Menedżer dziennika</this>
+</MarcEdit_frmLogManager>
+<MarcEdit_frmMarcNext>
+<label1>MARCNext</label1>
+<lbaboutmn>MARCNext jest przestrzenią laboratorium do wprowadzenia nowych narzędzi i pojęć związanych z </lbaboutmn>
+<lnkOpenRefine>Integracja OpenRefine</lnkOpenRefine>
+<lnkSPARQL>SPARQL przeglądarki</lnkSPARQL>
+<lnkLinkIds>Identyfikatory link</lnkLinkIds>
+<lnkBibframe>BibFrame Testbed</lnkBibframe>
+<this>MARCNext</this>
+</MarcEdit_frmMarcNext>
+<MarcEdit_frmOpenRefine>
+<label1>Narzędzie to służy do przenoszenia danych między MARC lub MarcEdit w formacie mnemoniczny i OpenRef </label1>
+<label2>Plik źródłowy:</label2>
+<label3>Zapisz plik:</label3>
+<rdExport>Eksport do OpenRefine</rdExport>
+<rdImport>Import z OpenRefine</rdImport>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Zamknij</cmdCancel>
+<lbStatus>Status:</lbStatus>
+<groupBox1>Opcje</groupBox1>
+<this>Narzędzie transferu danych OpenRefine</this>
+</MarcEdit_frmOpenRefine>
+<MarcEdit_frmExportSettings>
+<label1>Wybierz pliki do udziału:</label1>
+<ckconfig>Opcje konfiguracji</ckconfig>
+<label2>Eksportuje wszystkie dane w katalogu config użytkownika.  Obejmuje to dane konfiguracyjne, </label2>
+<ckXSLT>Funkcji XSLT</ckXSLT>
+<label3>Eksportuj określone arkusze stylów XSLT
+</label3>
+<ckMacros>Makra zdefiniowane i zadania</ckMacros>
+<label4>Eksportuj wszystkie zdefiniowane makra i zadania...
+</label4>
+<label5>Eksportuj wszystkie zdefiniowane szablony materiału typu MarcEditor.</label5>
+<ckTemplates>MarcEditor zdefiniowane szablony</ckTemplates>
+<cmdExport>Eksport</cmdExport>
+<cmdClose>Zamknij</cmdClose>
+<this>Eksportowanie ustawień</this>
+</MarcEdit_frmExportSettings>
+<MarcEdit_frmFindAllResults>
+<columnHeader2>Działania</columnHeader2>
+<columnHeader1>Znaleziony tekst</columnHeader1>
+<button1>Zamknij</button1>
+<button2>Przejść do strony</button2>
+<cmdFindUpdate>Edytowanie kwerendy Znajdź</cmdFindUpdate>
+<lb_result_num>{search_string} was found {#} times.</lb_result_num>
+<this>Znajdź wszystkie wyniki</this>
+</MarcEdit_frmFindAllResults>
+<MarcEdit_frmGenerateCutters>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<lbField>Wprowadź pole Liczba połączeń do oceny. (np. 090)</lbField>
+<groupBox1>Opcje</groupBox1>
+<rdTitle>Frez do zamówienia (2xx, 1xx)</rdTitle>
+<rdDefault>Frez do zamówienia (1xx, 2xx)</rdDefault>
+<groupBox2>Opcje</groupBox2>
+<label1>Znajdź:</label1>
+<rdCustomField>Pole niestandardowe</rdCustomField>
+<rdMainEntry>Ocenić główne wejścia (1xx, 245)</rdMainEntry>
+<this>Wygenerować frezów</this>
+</MarcEdit_frmGenerateCutters>
+<MarcEdit_frmHarvestBatch>
+<label1>Serwerów zdefiniowanych OAI:</label1>
+<label2>(Użyć formantu shift/shift, aby zaznaczyć wiele elementów)</label2>
+<ck_date>Zbierz od ostatniego pobrania</ck_date>
+<cmdCreate>Zapisz</cmdCreate>
+<button1>Zamknij</button1>
+<this>Utworzyć zadanie wsadowe żniwa</this>
+</MarcEdit_frmHarvestBatch>
+<MarcEdit_frmHex>
+<BytesGroup>Bajtów</BytesGroup>
+<label5>Bitów</label5>
+<label4>ISO-8859-1</label4>
+<label3>Dziesiętny</label3>
+<label2>HEX</label2>
+<columnHeader1>Pozycji</columnHeader1>
+<columnHeader2>Bajtów</columnHeader2>
+<columnHeader3>Tekst</columnHeader3>
+<menuStrip1>menuStrip1</menuStrip1>
+<menuItem1>Plik</menuItem1>
+<openToolStripMenuItem>Otwarte</openToolStripMenuItem>
+<ExitProgram>Wyjścia</ExitProgram>
+<this>MARCSpy</this>
+</MarcEdit_frmHex>
+<MarcEdit_frmHTMLResults>
+<this>Okno wyniki MarcEdit</this>
+</MarcEdit_frmHTMLResults>
+<MarcEdit_frmjoin_xml_func>
+<lb_Alias>Nazwa funkcji (Alias):</lb_Alias>
+<label1>Dołącz do z:</label1>
+<cmd_ok>Zapisz</cmd_ok>
+<cmd_close>Zamknij</cmd_close>
+<this>Dołącz do funkcji XML</this>
+</MarcEdit_frmjoin_xml_func>
+<MarcEdit_frmListTasks>
+<columnHeader1>Nazwa</columnHeader1>
+<columnHeader2>Ścieżka</columnHeader2>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zamknij</cmdClose>
+<this>Dostępne zadania</this>
+</MarcEdit_frmListTasks>
+<MarcEdit_frmMain>
+<menuStrip1>menuStrip1</menuStrip1>
+<mnuTools>Narzędzia</mnuTools>
+<mnuAddinsEditLinkedData>Edycja reguł dotyczących połączonych danych</mnuAddinsEditLinkedData>
+<editXMLRulesFileToolStripMenuItem>Edytuj plik zasady XML</editXMLRulesFileToolStripMenuItem>
+<howDoIProfileNewEndPointsToolStripMenuItem>Jak profil nowe punkty końcowe?</howDoIProfileNewEndPointsToolStripMenuItem>
+<updateRulesFileToolStripMenuItem>Zaktualizować plik Rules</updateRulesFileToolStripMenuItem>
+<toolStripMenuItem9>Zarządzanie dziennikami</toolStripMenuItem9>
+<advancedLogManagementToolStripMenuItem>Zarządzanie dziennikiem zaawansowane</advancedLogManagementToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Usuwanie plików dziennika</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Wyświetl wszystkie pliki dziennika</viewAllLogFilesToolStripMenuItem>
+<mnuAddinTranslator>Tłumacz Tekst rozdzielany</mnuAddinTranslator>
+<mnuExportGroup>Eksportuj...</mnuExportGroup>
+<mnuToolsTabbed>Eksport karcie rekordy rozdzielane</mnuToolsTabbed>
+<mnuToolsGateway>Wyeksportować rekordu MARC</mnuToolsGateway>
+<mnuToolsSelect>Wybierz rekordy MARC</mnuToolsSelect>
+<mnuToolsDelete>Usunąć wybrane rekordy</mnuToolsDelete>
+<mnuToolsExtract>Wyodrębnić zaznaczone rekordy</mnuToolsExtract>
+<mnuToolsCharacterConversion>Narzędzia do konwersji znaków</mnuToolsCharacterConversion>
+<mnuToolCharacterConversionConversionTools>CharacterSet konwersje</mnuToolCharacterConversionConversionTools>
+<characterDetectionToolStripMenuItem>Wykrywanie znaków</characterDetectionToolStripMenuItem>
+<mnuAddScriptWizard>Kreator skryptu MarcEdit</mnuAddScriptWizard>
+<mnuExplorer>Explorer MARC SQL</mnuExplorer>
+<toolStripMenuItem4>OAI kombajn do narzędzi</toolStripMenuItem4>
+<harvestOAIRecordsToolStripMenuItem>Harvest OAI Records</harvestOAIRecordsToolStripMenuItem>
+<batchHarvesterToolStripMenuItem>Kombajn do partii</batchHarvesterToolStripMenuItem>
+<createBatchJobToolStripMenuItem>Utworzyć zadanie wsadowe</createBatchJobToolStripMenuItem>
+<runBatchHarvestToolStripMenuItem>Uruchom partia zbiorów</runBatchHarvestToolStripMenuItem>
+<openRefineToolStripMenuItem>OpenRefine</openRefineToolStripMenuItem>
+<mnuToolOpenRefineExport>Eksport</mnuToolOpenRefineExport>
+<mnuToolOpenRefineImport>Importu</mnuToolOpenRefineImport>
+<mnuToolsUnimarcTools>UNIMARC narzędzia</mnuToolsUnimarcTools>
+<mnuAddinURL>Sprawdź adresy URL</mnuAddinURL>
+<mnuAddinZ39_50>Z39.50/SRU klienta</mnuAddinZ39_50>
+<mnuToolsMARCProcessingGroup>Narzędzia do obróbki MARC</mnuToolsMARCProcessingGroup>
+<mnuToolsBatch>Partia procesu rekordy</mnuToolsBatch>
+<toolClusterData>Narzędzia danych klastra</toolClusterData>
+<mnuToolsDedup>Znajdź duplikaty rekordów</mnuToolsDedup>
+<generateToolStripMenuItem>Generowania...</generateToolStripMenuItem>
+<mnuGenerateCallnumber>Dzwoń pod numery telefonów</mnuGenerateCallnumber>
+<toolStripMenuItem3>SZYBKO nagłówki</toolStripMenuItem3>
+<lCSubjectHeadingsToolStripMenuItem>Nagłówków tematów LC</lCSubjectHeadingsToolStripMenuItem>
+<muntoolsMarcCompare>MARCCompare</muntoolsMarcCompare>
+<mnuToolsJoin>MARCJoin</mnuToolsJoin>
+<mnuToolsSplit>MARCSplit</mnuToolsSplit>
+<mnuAddinValidator>MARCValidator</mnuAddinValidator>
+<mnutoolsmerge>Scalanie rekordów</mnutoolsmerge>
+<toolStripMenuItem5>RDA Helper</toolStripMenuItem5>
+<toolStripMenuItem6>OCLC operacji</toolStripMenuItem6>
+<oCLCRecordDownloaderToolStripMenuItem>OCLC rekordu Downloader</oCLCRecordDownloaderToolStripMenuItem>
+<updateWorldCatRecordHoldingsToolStripMenuItem>Zaktualizować rekord WorldCat gospodarstw</updateWorldCatRecordHoldingsToolStripMenuItem>
+<uploadBibliographRecordsToWorldCatToolStripMenuItem>Wgrać WorldCat Bibliograph rekordów</uploadBibliographRecordsToWorldCatToolStripMenuItem>
+<mnuToolsValidateHeadings>Sprawdzanie poprawności nagłówków</mnuToolsValidateHeadings>
+<serviceStatusToolStripMenuItem>Stan usługi</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Sprawdzanie poprawności nagłówków</validateHeadingsToolStripMenuItem>
+<mnuToolsPreferences>Preferencje</mnuToolsPreferences>
+<pluginsToolStripMenuItem>Plug-ins</pluginsToolStripMenuItem>
+<mnuAddinPluginManager>Plugin Manager</mnuAddinPluginManager>
+<mnuaddincdsisis>CDS ISIS .iso =&gt; MARC tłumaczenie</mnuaddincdsisis>
+<mnuHelp>Pomoc</mnuHelp>
+<mnuHelpContents>Zawartość i pomoc</mnuHelpContents>
+<mnuHelpTutorials>Wyświetl samouczki</mnuHelpTutorials>
+<mnuHelpOnline>Pomoc online</mnuHelpOnline>
+<mnuHelpList>Dołącz do listy powiadomienie MarcEdit</mnuHelpList>
+<mnuHelpError>Sugestie/błąd raport</mnuHelpError>
+<mnuBlog>MarcEdit Blog</mnuBlog>
+<marcEditKnownIssuesToolStripMenuItem>MarcEdit znane problemy</marcEditKnownIssuesToolStripMenuItem>
+<systemInfoToolStripMenuItem>Informacje o systemie</systemInfoToolStripMenuItem>
+<mnuAddLang>Edycja plików językowych interfejsu</mnuAddLang>
+<mnuRestartIn32bitMode>Uruchom ponownie MarcEdit w trybie 32-bitowym</mnuRestartIn32bitMode>
+<mnuFileShare>Udostępnianie konfiguracji ustawień</mnuFileShare>
+<exportSettingsToolStripMenuItem>Eksportowanie ustawień</exportSettingsToolStripMenuItem>
+<importSettingsToolStripMenuItem>Importowanie ustawień</importSettingsToolStripMenuItem>
+<toolStripMenuItem11>Sposoby rozwiązywania problemów</toolStripMenuItem11>
+<mnuHelpDeleteTempFiles>Wyczyścić pliki tymczasowe</mnuHelpDeleteTempFiles>
+<downloadNotoFontsToolStripMenuItem>Pobieranie czcionek Noto Unicode</downloadNotoFontsToolStripMenuItem>
+<repairTaskFileToolStripMenuItem>Plik zadania naprawy</repairTaskFileToolStripMenuItem>
+<restoreFromBackupToolStripMenuItem>Przywróć z kopii zapasowej plików w sieci</restoreFromBackupToolStripMenuItem>
+<selectTasksToRelinkToolStripMenuItem>Wybierz zadania, aby ponownie połączyć</selectTasksToRelinkToolStripMenuItem>
+<mnuHelpResetConfig>Resetowanie danych konfiguracji</mnuHelpResetConfig>
+<openInHexEditorToolStripMenuItem>Otwórz HexEditor</openInHexEditorToolStripMenuItem>
+<troubleshootingWizardToolStripMenuItem>Kreator rozwiązywania problemów</troubleshootingWizardToolStripMenuItem>
+<mnuHelpDebugLoader>Pobierz aktualizację (tryb debugowania)</mnuHelpDebugLoader>
+<updateMarcEditToolStripMenuItem>Sprawdź aktualizacje</updateMarcEditToolStripMenuItem>
+<toolStripMenuItem2>Skróty do aplikacji</toolStripMenuItem2>
+<applicationDataPathToolStripMenuItem>Ścieżka danych aplikacji</applicationDataPathToolStripMenuItem>
+<languageDataPathToolStripMenuItem>Ścieżka danych języka</languageDataPathToolStripMenuItem>
+<themeDataPathToolStripMenuItem>Kompozycja ścieżki danych</themeDataPathToolStripMenuItem>
+<xSLTDataPathToolStripMenuItem>Ścieżka danych XSLT</xSLTDataPathToolStripMenuItem>
+<mnuHelpAboutGroup>O...</mnuHelpAboutGroup>
+<mnuHelpAbout>MarcEdit 7</mnuHelpAbout>
+<aboutTheAuthorToolStripMenuItem>Autor, Terry Reese</aboutTheAuthorToolStripMenuItem>
+<marcEditEULAToolStripMenuItem>MarcEdit EULA</marcEditEULAToolStripMenuItem>
+<mnuContextHelp>Co chcesz zrobić?</mnuContextHelp>
+<lnkResearch>MARCNext</lnkResearch>
+<lnkUserDefined3>3 zdefiniowane przez użytkownika</lnkUserDefined3>
+<lnkUserDefined1>OpenRefine danych</lnkUserDefined1>
+<lnkMarcToolsStart>MARC narzędzia</lnkMarcToolsStart>
+<lnkUserDefined2>Zdefiniowane przez użytkownika 2</lnkUserDefined2>
+<lnkUserDefined4>Użytkownik Defined4</lnkUserDefined4>
+<startEditor>MarcEditor</startEditor>
+<groupBox1>Chciałbym:</groupBox1>
+<cmbLastToolUsed>Ostatni używanych narzędzi</cmbLastToolUsed>
+<lnkTopic5>Praca z połączonych danych</lnkTopic5>
+<lnkTopic4>Tłumaczenie programu Excel do MARC</lnkTopic4>
+<lnkTopic3>Scalić pliki MARC</lnkTopic3>
+<lnkTopic2>Zbiorów danych OAI</lnkTopic2>
+<lnkTopic1>Edytuj plik MARC</lnkTopic1>
+<this>MarcEdit {wersja} .beta przez Terry Reese</this>
+</MarcEdit_frmMain>
+<MarcEdit_frmOAIHarvest>
+<lbTitle>Zbiorów danych OAI</lbTitle>
+<lbServer>Adres serwera:</lbServer>
+<lbSet>Nazwa zestawu:</lbSet>
+<lbMetadata>Typ metadanych:</lbMetadata>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zamknij</cmdClose>
+<opt_default>Domyślne</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<label4>Aparat XSLT:</label4>
+<ck_Raw>Zbierz dane surowe (Zapisz dane OAI lokalnego systemu plików)</ck_Raw>
+<lbtoken>ResumptionToken:</lbtoken>
+<lnkAdvanced>Ustawienia zaawansowane</lnkAdvanced>
+<lbGetRecord>GetRecord:</lbGetRecord>
+<lbTimeout>Limit czasu (w sekundach).</lbTimeout>
+<ck_Translate>Tłumaczenie na MARC-8</ck_Translate>
+<label2>Koniec:</label2>
+<label1>Start:</label1>
+<lbCrosswalk>Przejście dla pieszych ścieżkę:</lbCrosswalk>
+<cmdSave>Zapisz</cmdSave>
+<lnkDebug>Debugowania URL</lnkDebug>
+<tabPage1>Strona główna</tabPage1>
+<tabPage2>Ustawienia zaawansowane</tabPage2>
+<this>Kombajn do metadanych</this>
+</MarcEdit_frmOAIHarvest>
+<MarcEdit_frmOCLCBulkDownload>
+<label1>Plik źródłowy OCLC liczb:</label1>
+<cmdDownload>Pobierz</cmdDownload>
+<cmdClose>Zamknij</cmdClose>
+<label2>Zapisz plik:</label2>
+<this>Zbiorcze pobieranie rekordów z OCLC</this>
+</MarcEdit_frmOCLCBulkDownload>
+<MarcEdit_frmOCLCSearchWorldCat>
+<label1>WorldCat Szukaj:</label1>
+<cmbarg1>słowo kluczowe</cmbarg1>
+<cmbconditional>i</cmbconditional>
+<cmdSearch>Szukaj</cmdSearch>
+<cmdClose>Zamknij</cmdClose>
+<label2>Wyniki:</label2>
+<col_oclcnum>OCLC numer</col_oclcnum>
+<col_title>Tytuł</col_title>
+<ck_LocalBib>Pobierz lokalnych rekord bibliograficzny, jeśli jest obecny</ck_LocalBib>
+<lnkAll>Zaznacz wszystkie</lnkAll>
+<label3>|</label3>
+<lnkNone>Brak</lnkNone>
+<this>Szukaj OCLC WorldCat</this>
+</MarcEdit_frmOCLCSearchWorldCat>
+<MarcEdit_frmOCLCUpdateHoldings>
+<label1>Zaktualizować swój OCLC WorldCat gospodarstw</label1>
+<groupBox1>Opcje</groupBox1>
+<rdDeleteHoldings>Usuwanie pakietów</rdDeleteHoldings>
+<rdAddHolding>Dodaj gospodarstw</rdAddHolding>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<label2>Kod instytucji:</label2>
+<label3>Schemat klasyfikacji:</label3>
+<cmb_schema>Biblioteka Kongresu Stanów Zjednoczonych</cmb_schema>
+<ck_debug>Drukowanie informacji debuggera</ck_debug>
+<this>Aktualizacja WorldCat gospodarstw</this>
+</MarcEdit_frmOCLCUpdateHoldings>
+<MarcEdit_frmOCLCUpload2WorldCat>
+<cmb_schema>Biblioteka Kongresu Stanów Zjednoczonych</cmb_schema>
+<label3>Schemat klasyfikacji:</label3>
+<label2>Kod instytucji:</label2>
+<cmdClose>Zamknij</cmdClose>
+<cmdProcess>Proces</cmdProcess>
+<label4>Rekordy bibliograficzne z OCLC numery zostaną zaktualizowane w WorldCat.  Bibliograph </label4>
+<label1>Kod gospodarstwa:</label1>
+<lnkGetHoldings>Pobierz kody</lnkGetHoldings>
+<ckLocalBibData>Proces jako lokalne rekordy bibliograficzne</ckLocalBibData>
+<ck_deleterecords>Usuwanie rekordów</ck_deleterecords>
+<this>Wgrać WorldCat rekordów</this>
+</MarcEdit_frmOCLCUpload2WorldCat>
+<MarcEdit_frmOptions>
+<cmd_options_ok>Ok</cmd_options_ok>
+<cmd_options_cancel>Zamknij</cmd_options_cancel>
+<cmd_options_apply>Zastosowanie</cmd_options_apply>
+<lnkMainWindow>Okno główne</lnkMainWindow>
+<lnkMarcEditor>MarcEditor</lnkMarcEditor>
+<lnkLanguage>Język</lnkLanguage>
+<lnkEaseOfUse>Łatwość obsługi</lnkEaseOfUse>
+<lnkMarcEngine>MARCEngine</lnkMarcEngine>
+<lnkUpdates>Aktualizacje</lnkUpdates>
+<lnkFileAssociations>Skojarzenia plików</lnkFileAssociations>
+<lnkOther>Inne</lnkOther>
+<lnkILSIntegration>ILS integracji</lnkILSIntegration>
+<lnkOCLCAPI>Integracja API OCLC</lnkOCLCAPI>
+<label15>Ustawianie programów domyślnych</label15>
+<ckLogging>Włączanie rejestrowania:</ckLogging>
+<ckAutosave>Włączyć Autozapisywanie</ckAutosave>
+<ck_enhanced_editor_loading>Udoskonalone zarządzanie stronicowania</ck_enhanced_editor_loading>
+<ckRDATemplates>Użyj szablonów RDA</ckRDATemplates>
+<ckCompileMarc8>Skompilować rekordów jako MARC8</ckCompileMarc8>
+<label37>Rejestrowanie ścieżki:</label37>
+<cksaveutf8>Skompilować rekordów jako UTF8</cksaveutf8>
+<ck_intellisense>Włączyć Intellisense</ck_intellisense>
+<label2>Rekordów na jednej stronie</label2>
+<cmb_encoding>UTF8</cmb_encoding>
+<lb_Encoding>Kodowanie domyślne:</lb_Encoding>
+<ck_nwindow>Otwórz pliki w nowym oknie</ck_nwindow>
+<ck_append>Dołączanie nowych rekordów</ck_append>
+<lb_psize>Rozmiar podglądu:</lb_psize>
+<ckUsePreview>Użyj trybu podglądu</ckUsePreview>
+<cmd_editor_font_default>Ustaw domyślne</cmd_editor_font_default>
+<cmd_editor_set_font>Zestaw czcionek</cmd_editor_set_font>
+<lb_Editor_Font_Props>Ustawić właściwości czcionki MarcEditor:</lb_Editor_Font_Props>
+<cmd_editor_template_default>Ustaw domyślne</cmd_editor_template_default>
+<cmd_editor_modify>Zmodyfikować</cmd_editor_modify>
+<lb_Current_Template>Bieżący szablon:</lb_Current_Template>
+<lb_Editor_Template>Ustaw szablon MarcEditor:</lb_Editor_Template>
+<label9>* Wymaga ponownego uruchomienia programu *</label9>
+<label8>pt.</label8>
+<cmb_global_font_size>10</cmb_global_font_size>
+<label4>Rozmiar czcionki:</label4>
+<lb_Example>Przykładowy tekst</lb_Example>
+<lb_lang_font>Ustawianie czcionki języka:</lb_lang_font>
+<lb_Set_Lang>Zestaw Language Pack:</lb_Set_Lang>
+<rd_theme_dark>Motywy niestandardowe:</rd_theme_dark>
+<rd_theme_normal>Normal (ustawienie domyślne)</rd_theme_normal>
+<label39>Opcje wyświetlania aplikacji</label39>
+<ck_export_output>Wyeksportować otrzymania (wyjście przechwytywania ILS)</ck_export_output>
+<lb_TCP_Timeout>Limit czasu:</lb_TCP_Timeout>
+<lb_TCP_Port>Port:</lb_TCP_Port>
+<lb_TCP_Host>Adres hosta:</lb_TCP_Host>
+<lb_TCPIP_Props>Właściwości protokołu TCP/IP:</lb_TCPIP_Props>
+<ck_marc21>Rekordy w formacie MARC21</ck_marc21>
+<ck_marcxml_sax>Opcja Użyj macierzystego (Non-XSLT procesu)</ck_marcxml_sax>
+<groupBox2>Aparat XSLT</groupBox2>
+<rd_Saxon>SAXON.NET</rd_Saxon>
+<rd_MSXML>MSXML</rd_MSXML>
+<groupBox1>Normalizacji Unicode</groupBox1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Domyślne kodowanie znaków:</label35>
+<ckC>Kanoniczna Decomposition (C)</ckC>
+<ckKD>Dekompozycji zgodności (KD)</ckKD>
+<ck_Diacritics>Używać znaków diakrytycznych, gdy złamanie</ck_Diacritics>
+<lb_Diacritics>Opcje ogólne:</lb_Diacritics>
+<lb_Engine_XML_Options>Opcje XML:</lb_Engine_XML_Options>
+<ck_engine_namespace>Za pomocą Namespace</ck_engine_namespace>
+<lb_Global_XSLT_Path>MARCXML XSLT:</lb_Global_XSLT_Path>
+<labelAutoUpdateDisabled>Automatyczne aktualizacje zostały wyłączone przez administratora systemu</labelAutoUpdateDisabled>
+<ckDetectProxy>Użyj ustawień serwera proxy w systemie</ckDetectProxy>
+<ck_Update_Validator>Automatycznie sprawdzaj dostępność aktualizacji modułu sprawdzania poprawności</ck_Update_Validator>
+<label3>Użytkownik musi należeć do domeny, to do pracy w tej chwili.</label3>
+<groupBox4>Informacje o użytkowniku:</groupBox4>
+<lb_domain>Domena:</lb_domain>
+<label6>Hasło:</label6>
+<label5>Nazwa użytkownika:</label5>
+<ckUpdates>Automatyczne sprawdzanie dostępności aktualizacji</ckUpdates>
+<groupBox5>Ustaw plik stowarzyszeń</groupBox5>
+<cmd_file_assoc_view>Typy widoków</cmd_file_assoc_view>
+<cmd_file_assoc_delete>Usuń typ</cmd_file_assoc_delete>
+<cmd_file_assoc_save>Zapisz typ</cmd_file_assoc_save>
+<rd_file_assoc_editor>MarcEditor</rd_file_assoc_editor>
+<rd_file_assoc_maker>MarcMaker</rd_file_assoc_maker>
+<rd_file_assoc_breaker>MarcBreaker</rd_file_assoc_breaker>
+<label7>Skojarzyć (*.                      ) typ z pliku:</label7>
+<ck_mrk8_editor>Skojarzenia plików (*.mrk8) z MarcEditor</ck_mrk8_editor>
+<ck_mrk_editor>Skojarzenia plików (*.mrk) z MarcEditor</ck_mrk_editor>
+<ck_mrc>Skojarzenia plików (*.mrc) z MarcBreaker</ck_mrc>
+<label33>|</label33>
+<lnkSelectILS>Wybierz</lnkSelectILS>
+<lnkDeleteProfile>Usuń</lnkDeleteProfile>
+<label32>|</label32>
+<lnkAddProfile>Dodać</lnkAddProfile>
+<label31>Profile:</label31>
+<ck_ignore_ssl>Ignoruj błędy certyfikatów SSL</ck_ignore_ssl>
+<lnk_ils_delete>Usuń</lnk_ils_delete>
+<label14>|</label14>
+<lnk_ils_z3950_edit>Edycja</lnk_ils_z3950_edit>
+<ck_ils_z3950>Użyj ustawień Z39.50</ck_ils_z3950>
+<ck_ils_enable>Włącz opcje ILS</ck_ils_enable>
+<label13>Nazwa hosta:</label13>
+<label12>Hasło:</label12>
+<label11>Nazwa użytkownika:</label11>
+<label10>Wybierz System:</label10>
+<lnkGetCodes>Trzymając się kody</lnkGetCodes>
+<label24>Kod gospodarstwa:</label24>
+<cmb_schema>Biblioteka Kongresu Stanów Zjednoczonych</cmb_schema>
+<label22>Schemat klasyfikacji:</label22>
+<label23>Kod instytucji:</label23>
+<ckshow>Pokaż tekst</ckshow>
+<cmdValidateKeys>Sprawdzanie poprawności kluczy</cmdValidateKeys>
+<linkLabel1>Wniosek/Zarządzaj kluczem OCLC (łączy się z OCLC)</linkLabel1>
+<label21>OCLC klucz API ustawień</label21>
+<label20>principalIDNS</label20>
+<label19>principalID</label19>
+<label18>Tajny klucz (w połączeniu z klucz API metadanych)</label18>
+<label17>Klucz API metadanych OCLC</label17>
+<label16>Klucz API wyszukiwania OCLC</label16>
+<lnkFilePaths>Lokalizacje</lnkFilePaths>
+<label38>Limit czasu sieci (300 milisekund domyślnie):</label38>
+<lnkCopyLocalFiles>Teraz Skopiuj pliki lokalne</lnkCopyLocalFiles>
+<label30>Ustaw domyślne MARC ścieżki narzędzia dysku:</label30>
+<label27>Ścieżki dostępu do pliku:</label27>
+<label26>Folder zadania:</label26>
+<label25>Foldery sieciowe:</label25>
+<lb_mono>MONO ścieżki:</lb_mono>
+<lb_temp>Ustaw ścieżka tymczasowa:</lb_temp>
+<ck_rss>Czytaj RSS Feed</ck_rss>
+<lb_title>Tytuł Tag:</lb_title>
+<lb_Author>Autor Tag:</lb_Author>
+<lbCall>Liczba połączeń Tag:</lbCall>
+<label1>Numer tagu formantu:</label1>
+<ck_allow_z3950>Włącz funkcje Z39.50</ck_allow_z3950>
+<label28>Opcje pola:</label28>
+<ck_touch_friendly>Użyj dotyku przyjazne menu</ck_touch_friendly>
+<ck64_bit>Zainstalowana 64-bitowa</ck64_bit>
+<ck_32bit>Zainstalowana 32-bitowa</ck_32bit>
+<label36>Wersja MS Office:</label36>
+<label34>ISBN Tag:</label34>
+<ckSort880>880: Użyj pola łączącego dla sortowania</ckSort880>
+<ck880Infile>880 PlikWejściowy pola z pola par</ck880Infile>
+<label29>Opcje sortowania:</label29>
+<ckShowDescriptionInScreenTips>Pokaż opisy funkcji w etykietkach ekranowych</ckShowDescriptionInScreenTips>
+<ckScreenTipShortcuts>Pokaż klawisze skrótów w etykietkach ekranowych</ckScreenTipShortcuts>
+<label42>Opcje klawiatury</label42>
+<ckProvideSoundAccess>Zapewniaj informacje dźwiękowe</ckProvideSoundAccess>
+<label41>Opcje dotyczące opinii</label41>
+<groupBox3>Akcje:</groupBox3>
+<lnkSearch4Themes>Usuwanie wybranego tematu</lnkSearch4Themes>
+<lnkNewTheme>Tworzenie nowego tematu</lnkNewTheme>
+<label40>Udostępnić więcej MarcEdit</label40>
+<this>MarcEdit Preferencje</this>
+</MarcEdit_frmOptions>
+<MarcEdit_frmPluginManager>
+<label1>Dostępne pluginy:</label1>
+<ch1>Nazwa pluginu</ch1>
+<ch2>ADRES URL</ch2>
+<c3>Rozmiar pliku</c3>
+<c4>Version #:</c4>
+<cmddownload>Pobierz</cmddownload>
+<cmdClose>Zamknij</cmdClose>
+<columnHeader1>Usunąć?</columnHeader1>
+<columnHeader2>Nazwa pluginu</columnHeader2>
+<columnHeader3>Nazwa klasy</columnHeader3>
+<columnHeader4>Version #:</columnHeader4>
+<label2>Zainstalowane pluginy:</label2>
+<cmdRemove>Usuń</cmdRemove>
+<c5>Numer wersji MarcEdit</c5>
+<this>Plugin Manager</this>
+</MarcEdit_frmPluginManager>
+<MarcEdit_frmProxy>
+<label1>zasobów. GetString ("label1. Tekst")</label1>
+<label2>Wzór:</label2>
+<cmdProcess>Proces</cmdProcess>
+<cmdCancel>Anuluj</cmdCancel>
+<lbstatus>Status:</lbstatus>
+<ckEscape>Danych z adresu URL</ckEscape>
+<ckAddNew>Zastąp istniejące pole</ckAddNew>
+<ck_addnewfield>Dodaj nowe pole, jeśli nie zainstalowane</ck_addnewfield>
+<ckAlwaysAdd>Dodać nowe pole</ckAlwaysAdd>
+<groupBox1>Opcje</groupBox1>
+<this>Tworzenie nowych pól</this>
+</MarcEdit_frmProxy>
+<MarcEdit_frmQueryLite>
+<ck_batch>Szukaj partii</ck_batch>
+<lbdbtitle>Label2</lbdbtitle>
+<groupBox3>Wyniki</groupBox3>
+<lnkClearResults>Wyczyść wyniki</lnkClearResults>
+<lnkDownload>Pobierz wszystkie elementy</lnkDownload>
+<lnkGetNext>Dostać się dalej {limit}</lnkGetNext>
+<lnkDownloadAllHoldings>Pobierz wszystkie gospodarstwa</lnkDownloadAllHoldings>
+<col1>Pozycji</col1>
+<col2>Tytuł</col2>
+<columnHeader1>Bazy danych</columnHeader1>
+<downloadSelectedItemsToolStripMenuItem>Pobierz zaznaczone elementy</downloadSelectedItemsToolStripMenuItem>
+<downloadSelectedHoldingsRecordsToolStripMenuItem>Pobierz zaznaczone rekordy gospodarstw</downloadSelectedHoldingsRecordsToolStripMenuItem>
+<viewSelectedRecordToolStripMenuItem>Wybrany widok rekordu</viewSelectedRecordToolStripMenuItem>
+<groupBox1>Opcje</groupBox1>
+<rdEditDB>Wybierz bazy danych</rdEditDB>
+<rdEditSettings>Edytuj ustawienia</rdEditSettings>
+<cmd_encoding>MARC8</cmd_encoding>
+<label4>Rekordów na jednej stronie</label4>
+<ckUnicode>Pobierania Unicode</ckUnicode>
+<lb_encoding_single>Zestaw znaków serwera</lb_encoding_single>
+<lbSearchb>Szukaj:</lbSearchb>
+<lbSearch>Kwerendy bazy danych:</lbSearch>
+<label3>Ustawianie preferencji bazy danych:</label3>
+<cmdSelectDatabase>Wybierz</cmdSelectDatabase>
+<MCol3>IDENTYFIKATOR</MCol3>
+<MCol1>Nazwa</MCol1>
+<MCol2>Typu</MCol2>
+<lb_PModifyTitle>Wybierz bazy danych:</lb_PModifyTitle>
+<menuStrip1>menuStrip1</menuStrip1>
+<actionsToolStripMenuItem>Działania</actionsToolStripMenuItem>
+<addNewZ3950ServerToolStripMenuItem>Dodawanie nowego serwera Z39.50</addNewZ3950ServerToolStripMenuItem>
+<addNewSRUServerToolStripMenuItem>Dodaj nowy serwer SRU</addNewSRUServerToolStripMenuItem>
+<preferencesToolStripMenuItem>Preferencje</preferencesToolStripMenuItem>
+<cmdCloseSettings>Zamknij</cmdCloseSettings>
+<label5>Kontrola pola (dla partii przetwarzania deduplikacji)</label5>
+<cmdSaveSettings>Zapisz ustawienia</cmdSaveSettings>
+<rdDownloadPreferred>Pobierz z preferowanego źródła</rdDownloadPreferred>
+<rdDownloadMostComplete>Pobierz najbardziej kompletne zapisy</rdDownloadMostComplete>
+<rdAllRecords>Pobierz wszystkie rekordy</rdAllRecords>
+<label2>Opcje przetwarzania wsadowego</label2>
+<label1>Preferencje</label1>
+<this>MarcEdit Z39.50/SRU klienta</this>
+</MarcEdit_frmQueryLite>
+<MarcEdit_frmRDA>
+<ck_502>Proces 502</ck_502>
+<label6>|</label6>
+<lnkEditFields>Edytowanie pól</lnkEditFields>
+<ck_040>Modyfikowanie 040--Dodaj $erda</ck_040>
+<ck_qualifyinginfo>Kwalifikację informacje (015, 020, 024, 027)</ck_qualifyinginfo>
+<lnkEdit>Edytuj listę</lnkEdit>
+<ck_dgmd>Usunąć GMD</ck_dgmd>
+<ckAbbrev>Rozwiń skróty</ckAbbrev>
+<ckgmd>Wygenerować GMD</ckgmd>
+<ck264>Ocenić 260/264</ck264>
+<ck_signs>Zawsze używaj ©, symbole ℗</ck_signs>
+<ck381>Dodaj 381--inne</ck381>
+<ck380>Dodaj 380--formą pracy</ck380>
+<ck347>Dodaj 347--cechy cyfrowych</ck347>
+<ck346>Dodaj 346--wideo cechy</ck346>
+<ck345>Dodaj 345--Proj. Charakterystyka</ck345>
+<ck344>Dodaj 344--Charakterystyka dźwięku</ck344>
+<ck337>Dodaj 337--typ nośnika
+Dodaj 338--typu bagażnika</ck337>
+<ck336>Dodaj 336--typ zawartości</ck336>
+<cmdProcess>Ok</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<label1>Źródło:</label1>
+<label2>Zapisz:</label2>
+<lnkAll>Wszystkie</lnkAll>
+<label3>Wybierz:</label3>
+<label4>|</label4>
+<lnkNone>Brak</lnkNone>
+<label7>Status:</label7>
+<this>RDA Helper</this>
+</MarcEdit_frmRDA>
+<MarcEdit_frmResults>
+<cmd_Close>Zamknij</cmd_Close>
+<rEdit></rEdit>
+<this>Wyniki</this>
+</MarcEdit_frmResults>
+<MarcEdit_frmRobertCompare>
+<lnkHome>Strona główna</lnkHome>
+<label5>zasobów. GetString ("label5. Tekst")</label5>
+<label4>O RobertCompare</label4>
+<label3>|</label3>
+<lnkAbout>O RobertCompare</lnkAbout>
+<ckSort>Wstępne sortowanie plików</ckSort>
+<cmdClose>Zamknij</cmdClose>
+<cmdExecute>Wykonanie</cmdExecute>
+<label1>Zapisz plik:</label1>
+<label6>Porównaj pliki:</label6>
+<label2>zasobów. GetString ("label2. Tekst")</label2>
+<lnkPreferences>Preferencje</lnkPreferences>
+<label7>|</label7>
+<lbSortField>Pole sortowania:</lbSortField>
+<lbdelete>Usunięcia:</lbdelete>
+<lbAddColor>Dodatki:</lbAddColor>
+<this>MARCCompare/RobertCompare</this>
+</MarcEdit_frmRobertCompare>
+<MarcEdit_frmSearchILSGeneric>
+<lnkNone>Brak</lnkNone>
+<lnkAll>Zaznacz wszystkie</lnkAll>
+<col_title>Tytuł</col_title>
+<col_id>IDENTYFIKATOR</col_id>
+<label3>|</label3>
+<label2>Wyniki:</label2>
+<cmdClose>Zamknij</cmdClose>
+<cmdSearch>Szukaj</cmdSearch>
+<cmbarg1>tytuł</cmbarg1>
+<label1>Szukaj w bazie danych:</label1>
+<ck_batch>Szukaj partii</ck_batch>
+<this>Szukaj</this>
+</MarcEdit_frmSearchILSGeneric>
+<MarcEdit_frmSelectILS>
+<cmdSelect>Wybierz</cmdSelect>
+<this>Wybierz ILS</this>
+</MarcEdit_frmSelectILS>
+<MarcEdit_frmSelectMARCRecords>
+<columnHeader1>Numer rekordu</columnHeader1>
+<columnHeader2>Pole wyświetlania</columnHeader2>
+<selectItemsToolStripMenuItem>Wybierz elementy</selectItemsToolStripMenuItem>
+<cmdImport>Plik importu</cmdImport>
+<cmdfDelete>Usuń zaznaczone</cmdfDelete>
+<cmdExport>Eksportuj zaznaczone</cmdExport>
+<cmdExit>Wyjścia</cmdExit>
+<lb_Search>Szukaj:</lb_Search>
+<lb_DisplayField>Aby wyświetlić pole:</lb_DisplayField>
+<lb_SourceFile>MARC pliku źródłowego:</lb_SourceFile>
+<ckSource>Ponownie zapisać zmodyfikowanych rekordów w źródle</ckSource>
+<ck_retain>Zachować zaznaczone elementy</ck_retain>
+<cmd_Generate>Generowanie raportu</cmd_Generate>
+<ck_find_all>Przeszukaj wszystkie dane rekordu</ck_find_all>
+<ck_use_regex>Użyć wyrażeń regularnych</ck_use_regex>
+<cmdRandomExport>Eksport losowe</cmdRandomExport>
+<lnkDoesNotMatch>Nie pasuje</lnkDoesNotMatch>
+<label1>|</label1>
+<lnkInvert>Odwracanie zaznaczenia</lnkInvert>
+<ckExactWord>Dopasowanie dokładne słowo</ckExactWord>
+<this>MarcEdit.NET: Modyfikowanie rekordów wybranych MARC</this>
+</MarcEdit_frmSelectMARCRecords>
+<MarcEdit_frmSort>
+<lb_title>Wybierz pola, aby wykluczyć z sortowania</lb_title>
+<lb_fields>Pola sortowania:</lb_fields>
+<lbExclude>Wykluczyć pola:</lbExclude>
+<cmd_OK>Ok</cmd_OK>
+<cmd_Close>Zamknij</cmd_Close>
+<this>Sortowanie niestandardowe kreatora</this>
+</MarcEdit_frmSort>
+<MarcEdit_frmSPARQL_Browser>
+<lbsparql>SPARQL punktu końcowego:</lbsparql>
+<cmdQuery>Zapytanie</cmdQuery>
+<cmdClose>Zamknij</cmdClose>
+<lbQuery>SPARQL kwerendy:</lbQuery>
+<lbresults>Wyniki:</lbresults>
+<cklocal>Lokalny plik obciążenia</cklocal>
+<lbOutput>Wyjście:</lbOutput>
+<cmbOutput>XML</cmbOutput>
+<groupBox1>Przykładowe zapytania:</groupBox1>
+<lbExample3>Zapytanie do: 軍事基地</lbExample3>
+<lnkExample3>DIETA Japońska biblioteki</lnkExample3>
+<lbexample2>Kwerendy Getty dla siarczanu miedzi</lbexample2>
+<lnkExample2>Przykład Getty</lnkExample2>
+<label1>SIATKI kwerendy dla grypy, człowieka</label1>
+<lnkExample1>Przykład siatki</lnkExample1>
+<label2>SPARQL odwołania:</label2>
+<lnkW3C>SPARQL (W3C)</lnkW3C>
+<lnkEndpoints>SPARQL punktów końcowych (W3C)</lnkEndpoints>
+<lnkwikipediaSparql>SPARQL (Wikipedia)</lnkwikipediaSparql>
+<lnkTutorials>SPARQL Poradniki</lnkTutorials>
+<this>SPARQL przeglądarki</this>
+</MarcEdit_frmSPARQL_Browser>
+<MarcEdit_frmSpecial_Formats>
+<lb_title>CDS ISIS =&gt; MARC tłumaczenie</lb_title>
+<groupBox1>Dane wejściowe użytkownika</groupBox1>
+<lb_output>Plik wyjściowy:</lb_output>
+<lb_input>Plik wejściowy:</lb_input>
+<groupBox2>Opcje:</groupBox2>
+<rd_advanced>Zaawansowane oprogramowanie do tłumaczeń</rd_advanced>
+<rd_simple>Prosty Translation</rd_simple>
+<lb_subfield>Znacznik parametru subfield</lb_subfield>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_Close>Zamknij</cmd_Close>
+<this>CDS ISIS .iso =&gt; MARC tłumaczenie</this>
+</MarcEdit_frmSpecial_Formats>
+<MarcEdit_frmSpecific_Options>
+<lb_title>Opcje:</lb_title>
+<lnkLoad>Mapowania pól obciążenia</lnkLoad>
+<ck_indicators>Dodawanie wskaźników</ck_indicators>
+<ckLDR>Odpowiednie LDRs</ckLDR>
+<ck_subfield>Dodawanie parametru subfield wiodących</ck_subfield>
+<cmdOK>Ok</cmdOK>
+<cmdClose>Zamknij</cmdClose>
+<this>Opcje zaawansowane</this>
+</MarcEdit_frmSpecific_Options>
+<MarcEdit_frmStatus>
+<lbCaption>Label1</lbCaption>
+<cmdCancel>Anuluj</cmdCancel>
+</MarcEdit_frmStatus>
+<MarcEdit_frmSymbols>
+<Label1>Znaki specjalne:</Label1>
+<_CharC_0>A</_CharC_0>
+<_CharC_1>A</_CharC_1>
+<_CharC_2>A</_CharC_2>
+<_CharC_3>A</_CharC_3>
+<_CharC_4>A</_CharC_4>
+<_CharC_5>A</_CharC_5>
+<_CharC_6>A</_CharC_6>
+<_CharC_7>A</_CharC_7>
+<_CharC_8>A</_CharC_8>
+<_CharC_9>A</_CharC_9>
+<_CharC_10>A</_CharC_10>
+<_CharC_11>A</_CharC_11>
+<_CharC_12>A</_CharC_12>
+<_CharC_13>A</_CharC_13>
+<_CharC_14>A</_CharC_14>
+<_CharC_15>A</_CharC_15>
+<_CharC_16>A</_CharC_16>
+<_CharC_17>A</_CharC_17>
+<_CharC_18>A</_CharC_18>
+<_CharC_19>A</_CharC_19>
+<_CharC_20>A</_CharC_20>
+<_CharC_21>A</_CharC_21>
+<_CharC_22>A</_CharC_22>
+<_CharC_23>A</_CharC_23>
+<_CharC_24>A</_CharC_24>
+<_CharC_25>A</_CharC_25>
+<_CharC_26>A</_CharC_26>
+<_CharC_27>A</_CharC_27>
+<_CharC_28>A</_CharC_28>
+<_CharC_29>A</_CharC_29>
+<_CharC_30>A</_CharC_30>
+<_CharC_31>A</_CharC_31>
+<_CharC_32>A</_CharC_32>
+<_CharC_33>A</_CharC_33>
+<_CharC_34>A</_CharC_34>
+<_CharC_35>A</_CharC_35>
+<_CharC_36>A</_CharC_36>
+<_CharC_37>A</_CharC_37>
+<_CharC_38>A</_CharC_38>
+<_CharC_39>A</_CharC_39>
+<_CharC_40>A</_CharC_40>
+<_CharC_41>A</_CharC_41>
+<_CharC_42>A</_CharC_42>
+<_CharC_43>A</_CharC_43>
+<_CharC_44>A</_CharC_44>
+<_CharC_45>A</_CharC_45>
+<_CharC_46>A</_CharC_46>
+<_CharC_47>A</_CharC_47>
+<_CharC_48>A</_CharC_48>
+<_CharC_49>A</_CharC_49>
+<_CharC_50>A</_CharC_50>
+<_CharC_51>A</_CharC_51>
+<_CharC_52>A</_CharC_52>
+<_CharC_53>A</_CharC_53>
+<_CharC_54>A</_CharC_54>
+<_CharC_55>A</_CharC_55>
+<_CharC_56>A</_CharC_56>
+<_CharC_57>A</_CharC_57>
+<_CharC_58>A</_CharC_58>
+<_CharC_59>A</_CharC_59>
+<_CharC_60>A</_CharC_60>
+<_CharC_61>A</_CharC_61>
+<_CharC_62>A</_CharC_62>
+<_CharC_63>A</_CharC_63>
+<_CharC_64>A</_CharC_64>
+<_CharC_65>A</_CharC_65>
+<_CharC_66>A</_CharC_66>
+<_CharC_67>A</_CharC_67>
+<_CharC_68>A</_CharC_68>
+<_CharC_69>A</_CharC_69>
+<_CharC_70>A</_CharC_70>
+<_CharC_71>A</_CharC_71>
+<_CharC_72>A</_CharC_72>
+<_CharC_73>A</_CharC_73>
+<_CharC_74>A</_CharC_74>
+<_CharC_75>A</_CharC_75>
+<_CharC_76>A</_CharC_76>
+<_CharC_77>A</_CharC_77>
+<_CharC_78>A</_CharC_78>
+<_CharC_79>A</_CharC_79>
+<_CharC_80>A</_CharC_80>
+<_CharC_81>A</_CharC_81>
+<_CharC_82>A</_CharC_82>
+<_CharC_83>A</_CharC_83>
+<_CharC_84>A</_CharC_84>
+<_CharC_85>A</_CharC_85>
+<_CharC_86>A</_CharC_86>
+<_CharC_87>A</_CharC_87>
+<_CharC_88>A</_CharC_88>
+<_CharC_89>A</_CharC_89>
+<_CharC_90>A</_CharC_90>
+<_CharC_91>A</_CharC_91>
+<_CharC_92>A</_CharC_92>
+<_CharC_93>A</_CharC_93>
+<_CharC_94>A</_CharC_94>
+<_CharC_95>A</_CharC_95>
+<_CharC_96>A</_CharC_96>
+<_CharC_97>A</_CharC_97>
+<_CharC_98>A</_CharC_98>
+<_CharC_99>A</_CharC_99>
+<_CharC_100>A</_CharC_100>
+<_CharC_101>A</_CharC_101>
+<_CharC_102>A</_CharC_102>
+<_CharC_103>A</_CharC_103>
+<_CharC_104>A</_CharC_104>
+<_CharC_105>A</_CharC_105>
+<_CharC_106>A</_CharC_106>
+<_CharC_107>A</_CharC_107>
+<_CharC_108>A</_CharC_108>
+<_CharC_109>A</_CharC_109>
+<_CharC_110>A</_CharC_110>
+<_CharC_111>A</_CharC_111>
+<_CharC_112>A</_CharC_112>
+<_CharC_113>A</_CharC_113>
+<_CharC_114>A</_CharC_114>
+<_CharC_115>A</_CharC_115>
+<_CharC_116>A</_CharC_116>
+<_CharC_117>A</_CharC_117>
+<_CharC_118>A</_CharC_118>
+<_CharC_119>A</_CharC_119>
+<_CharC_120>A</_CharC_120>
+<_CharC_121>A</_CharC_121>
+<_CharC_122>A</_CharC_122>
+<_CharC_123>A</_CharC_123>
+<_CharC_124>A</_CharC_124>
+<_CharC_125>A</_CharC_125>
+<_CharC_126>A</_CharC_126>
+<_CharC_127>A</_CharC_127>
+<_CharC_128>A</_CharC_128>
+<_CharC_129>A</_CharC_129>
+<_CharC_130>A</_CharC_130>
+<_CharC_131>A</_CharC_131>
+<_CharC_132>A</_CharC_132>
+<_CharC_133>A</_CharC_133>
+<_CharC_134>A</_CharC_134>
+<_CharC_135>A</_CharC_135>
+<_CharC_136>A</_CharC_136>
+<_CharC_137>A</_CharC_137>
+<_CharC_138>A</_CharC_138>
+<_CharC_139>A</_CharC_139>
+<_CharC_140>A</_CharC_140>
+<_CharC_141>A</_CharC_141>
+<_CharC_142>A</_CharC_142>
+<_CharC_143>A</_CharC_143>
+<_CharC_144>A</_CharC_144>
+<_CharC_145>A</_CharC_145>
+<_CharC_146>A</_CharC_146>
+<_CharC_147>A</_CharC_147>
+<_CharC_148>A</_CharC_148>
+<_CharC_154>A</_CharC_154>
+<_CharC_155>A</_CharC_155>
+<_CharC_160>A</_CharC_160>
+<_CharC_161>A</_CharC_161>
+<_CharC_162>A</_CharC_162>
+<_CharC_163>A</_CharC_163>
+<_CharC_164>A</_CharC_164>
+<_CharC_165>A</_CharC_165>
+<_CharC_166>A</_CharC_166>
+<_CharC_149>A</_CharC_149>
+<_CharC_150>A</_CharC_150>
+<_CharC_151>A</_CharC_151>
+<_CharC_152>A</_CharC_152>
+<_CharC_153>A</_CharC_153>
+<_CharC_156>A</_CharC_156>
+<_CharC_157>A</_CharC_157>
+<_CharC_158>A</_CharC_158>
+<_CharC_159>A</_CharC_159>
+<_CharC_167>A</_CharC_167>
+<_CharC_168>A</_CharC_168>
+<_CharC_169>A</_CharC_169>
+<_CharC_170>A</_CharC_170>
+<_CharC_171>A</_CharC_171>
+<_CharC_172>A</_CharC_172>
+<_CharC_173>A</_CharC_173>
+<_CharC_174>A</_CharC_174>
+<_CharC_175>A</_CharC_175>
+<_CharC_176>A</_CharC_176>
+<_CharC_177>A</_CharC_177>
+<_CharC_178>A</_CharC_178>
+<_CharC_179>A</_CharC_179>
+<_CharC_180>A</_CharC_180>
+<_CharC_181>A</_CharC_181>
+<_CharC_182>A</_CharC_182>
+<_CharC_183>A</_CharC_183>
+<_CharC_184>A</_CharC_184>
+<_CharC_185>A</_CharC_185>
+<_CharC_186>A</_CharC_186>
+<_CharC_187>A</_CharC_187>
+<_CharC_188>A</_CharC_188>
+<_CharC_189>A</_CharC_189>
+<_CharC_190>A</_CharC_190>
+<_CharC_191>A</_CharC_191>
+<_CharC_192>A</_CharC_192>
+<_CharC_193>A</_CharC_193>
+<_CharC_194>A</_CharC_194>
+<_CharC_195>A</_CharC_195>
+<_CharC_196>A</_CharC_196>
+<_CharC_197>A</_CharC_197>
+<_CharC_198>A</_CharC_198>
+<_CharC_199>A</_CharC_199>
+<_CharC_200>A</_CharC_200>
+<_CharC_201>A</_CharC_201>
+<_CharC_202>A</_CharC_202>
+<_CharC_203>A</_CharC_203>
+<_CharC_204>A</_CharC_204>
+<_CharC_205>A</_CharC_205>
+<_CharC_206>A</_CharC_206>
+<_CharC_207>A</_CharC_207>
+<_CharC_208>A</_CharC_208>
+<_CharC_209>A</_CharC_209>
+<_CharC_210>A</_CharC_210>
+<_CharC_211>A</_CharC_211>
+<_CharC_212>A</_CharC_212>
+<_CharC_213>A</_CharC_213>
+<_CharC_214>A</_CharC_214>
+<_CharC_215>A</_CharC_215>
+<_CharC_216>A</_CharC_216>
+<_CharC_217>A</_CharC_217>
+<_CharC_218>A</_CharC_218>
+<_CharC_219>A</_CharC_219>
+<_CharC_220>A</_CharC_220>
+<_CharC_221>A</_CharC_221>
+<_CharC_222>A</_CharC_222>
+<_CharC_223>A</_CharC_223>
+<_CharC_224>A</_CharC_224>
+<_CharC_225>A</_CharC_225>
+<_CharC_226>A</_CharC_226>
+<_CharC_227>A</_CharC_227>
+<_CharC_228>A</_CharC_228>
+<_CharC_229>A</_CharC_229>
+<_CharC_230>A</_CharC_230>
+<_CharC_231>A</_CharC_231>
+<_CharC_232>A</_CharC_232>
+<_CharC_233>A</_CharC_233>
+<_CharC_234>A</_CharC_234>
+<_CharC_235>A</_CharC_235>
+<_CharC_236>A</_CharC_236>
+<_CharC_237>A</_CharC_237>
+<_CharC_238>A</_CharC_238>
+<_CharC_239>A</_CharC_239>
+<_CharC_240>A</_CharC_240>
+<_CharC_241>A</_CharC_241>
+<_CharC_242>A</_CharC_242>
+<_CharC_243>A</_CharC_243>
+<_CharC_244>A</_CharC_244>
+<_CharC_245>A</_CharC_245>
+<_CharC_246>A</_CharC_246>
+<_CharC_247>A</_CharC_247>
+<_CharC_248>A</_CharC_248>
+<_CharC_249>A</_CharC_249>
+<_CharC_250>A</_CharC_250>
+<_CharC_251>A</_CharC_251>
+<_CharC_252>A</_CharC_252>
+<_CharC_253>A</_CharC_253>
+<_CharC_254>A</_CharC_254>
+<_CharC_255>A</_CharC_255>
+<cmd_Insert>Wstaw</cmd_Insert>
+<cmdClose>Zamknij</cmdClose>
+<this>MARC-8 ALA Characterset</this>
+</MarcEdit_frmSymbols>
+<MarcEdit_frmTaskEditor>
+<lbTaskName>Nazwa listy zadań:</lbTaskName>
+<addDeleteFieldTaskToolStripMenuItem>Dodaj Usuń pole zadania</addDeleteFieldTaskToolStripMenuItem>
+<addEditSubfieldTaskToolStripMenuItem>Dodać zadanie parametru Subfield Edytuj</addEditSubfieldTaskToolStripMenuItem>
+<addToolStripMenuItem>Dodać wskaźnik Edytuj zadanie</addToolStripMenuItem>
+<cmdSave>Zapisz</cmdSave>
+<addNewFieldTaskToolStripMenuItem>Dodaj nowe pole zadania</addNewFieldTaskToolStripMenuItem>
+<cmdClose>Zamknij</cmdClose>
+<addReplaceAllTaskToolStripMenuItem>Dodaj wymienić wszystkie zadania</addReplaceAllTaskToolStripMenuItem>
+<addCommentToolStripMenuItem>Dodaj komentarz</addCommentToolStripMenuItem>
+<mnuEditTaskFieldEdit>Dodaj pole Edytuj zadanie</mnuEditTaskFieldEdit>
+<addSwapFieldTaskToolStripMenuItem>Dodaj zadanie pole Swap</addSwapFieldTaskToolStripMenuItem>
+<addCopyFieldTaskToolStripMenuItem>Dodać zadanie kopiowania w dziedzinie</addCopyFieldTaskToolStripMenuItem>
+<addTaskListToolStripMenuItem>Dodaj listy zadań</addTaskListToolStripMenuItem>
+<addRDAHelperToolStripMenuItem>Add RDA Helper</addRDAHelperToolStripMenuItem>
+<addLinkedDataTaskToolStripMenuItem>Dodaj powiązane dane zadań</addLinkedDataTaskToolStripMenuItem>
+<addBuildNewFieldTaskToolStripMenuItem>Dodaj nowe pole zadania kompilacji</addBuildNewFieldTaskToolStripMenuItem>
+<editShortCutsToolStripMenuItem>Edytować skróty</editShortCutsToolStripMenuItem>
+<caseStatementsToolStripMenuItem>Instrukcji case</caseStatementsToolStripMenuItem>
+<lowerCaseToolStripMenuItem>małe litery</lowerCaseToolStripMenuItem>
+<uPPERCASEToolStripMenuItem>WIELKIE LITERY</uPPERCASEToolStripMenuItem>
+<titleCaseToolStripMenuItem>Nazwy własne</titleCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Początkowej sprawie</initialCaseToolStripMenuItem>
+<capitalizeInitialCaseToolStripMenuItem>Wykorzystać początkowej sprawie</capitalizeInitialCaseToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Pole edycji</fieldEditsToolStripMenuItem>
+<cleanSmartCharactersToolStripMenuItem>Clean Smart znaków</cleanSmartCharactersToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Funkcje matematyczne</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>W stopniach dziesiętnych</convertToDecimalDegreesToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Usuń puste wiersze</removeBlankLinesToolStripMenuItem>
+<cutterToolsToolStripMenuItem>Narzędzia tnące</cutterToolsToolStripMenuItem>
+<generateCuttersToolStripMenuItem>Wygenerować frezów</generateCuttersToolStripMenuItem>
+<generateSanborn3CuttersToolStripMenuItem>Wygenerować Frezy Sanborn3</generateSanborn3CuttersToolStripMenuItem>
+<mnuCopy>Skopiuj wybrane zadanie działania</mnuCopy>
+<mnuPasteTask>Wklej zadanie działania</mnuPasteTask>
+<commentSelectedTaskToolStripMenuItem>Komentarz zaznaczone zadania</commentSelectedTaskToolStripMenuItem>
+<unCommentSelectedTasksToolStripMenuItem>Usuń oznaczenie komentarza wybranych zadań</unCommentSelectedTasksToolStripMenuItem>
+<lbTasks>Zadania:</lbTasks>
+<label1>Akcje:</label1>
+<label2>Opis:</label2>
+<cmdDebug>Debugowania</cmdDebug>
+<this>Edycja listy zadań</this>
+</MarcEdit_frmTaskEditor>
+<MarcEdit_frmTaskManager>
+<columnHeader1>Nazwa</columnHeader1>
+<columnHeader2>Ścieżka</columnHeader2>
+<columnHeader3>Skrót</columnHeader3>
+<columnHeader4>Opis</columnHeader4>
+<cmdClose>Zamknij</cmdClose>
+<lnkNew>Tworzenie nowej listy zadań</lnkNew>
+<lbMacro>Listy zadań:</lbMacro>
+<lnkCloneTask>Klonowanie istniejącej listy zadań</lnkCloneTask>
+<groupBox1>Akcje zadania</groupBox1>
+<lnkRelink>Ponowne łączenie zadań</lnkRelink>
+<lnk_import_task>Importowanie zadania</lnk_import_task>
+<groupBox2>Zarządzanie istniejących zadań</groupBox2>
+<lnkBackup>Wszystkie zadania tworzenia kopii zapasowych</lnkBackup>
+<lnk_export_task>Eksportuj wybrane zadanie</lnk_export_task>
+<lnkKey>Przypisanie klawisza</lnkKey>
+<lnkEdit>Edytuj zaznaczone listy zadań</lnkEdit>
+<lnkDelete>Usuń wybrane listy zadań</lnkDelete>
+<this>Menedżer zadań</this>
+</MarcEdit_frmTaskManager>
+<MarcEdit_frmTools>
+<ckTruncate>Obciąć długie rekordów</ckTruncate>
+<label1>Wybierz operację:</label1>
+<cmd_encoding>MARC8</cmd_encoding>
+<label35>Domyślne kodowanie znaków:</label35>
+<ck_Marc8>Tłumaczenie na MARC-8</ck_Marc8>
+<ck_UTF8>Tłumaczenie na UTF8</ck_UTF8>
+<lb_OutputFile>Zapisz jako...</lb_OutputFile>
+<lb_InputFile>Otwórz...</lb_InputFile>
+<cmdCancel>Zamknij</cmdCancel>
+<cmdEdit>Edytowanie rekordów</cmdEdit>
+<cmdExecute>Wykonanie</cmdExecute>
+<lb_Results>Wyniki:</lb_Results>
+<menuStrip1>menuStrip1</menuStrip1>
+<toolsToolStripMenuItem>Narzędzia</toolsToolStripMenuItem>
+<mnuToolsReturnToMainWindows>Powrócić do głównego okna</mnuToolsReturnToMainWindows>
+<editXMLFunctionListToolStripMenuItem>Edytuj listę funkcji XML</editXMLFunctionListToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<batchProcessFunctionToolStripMenuItem>Partia procesu rekordy</batchProcessFunctionToolStripMenuItem>
+<characterConversionToolsToolStripMenuItem>CharacterSet konwersji</characterConversionToolsToolStripMenuItem>
+<mARCCompareToolStripMenuItem>MARCCompare</mARCCompareToolStripMenuItem>
+<mARCJoinToolStripMenuItem>MARCJoin</mARCJoinToolStripMenuItem>
+<mnuToolsMarcMerge>MARCMerge</mnuToolsMarcMerge>
+<mARCSplitToolStripMenuItem>MARCSplit</mARCSplitToolStripMenuItem>
+<uNIMARCToolsToolStripMenuItem>UNIMARC narzędzia</uNIMARCToolsToolStripMenuItem>
+<mnuContextHelp>Co chcesz zrobić?</mnuContextHelp>
+<lnkTopic1>Mój konwertowanie do kodowania znaków różnych</lnkTopic1>
+<lnkTopic2>Dodawanie/modyfikowanie tłumaczenia XML</lnkTopic2>
+<lnkTopic4>Jak można znaleźć błąd w moim pliku MARC?</lnkTopic4>
+<groupBox1>Chciałbym:</groupBox1>
+<groupBox2>Zaznacz dane do procesu:</groupBox2>
+<groupBox3>Opcje kodowania znaków</groupBox3>
+<this>MARC narzędzia</this>
+</MarcEdit_frmTools>
+<MarcEdit_frmUnimarc>
+<label1>MarcEdit zawiera zestaw narzędzi do konwersji UNIMARC lite waga.  Jeśli narzędzia te są interesujące dla Ciebie i chcesz pomóc, aby ich lepiej, proszę podać f eedback.
+
+</label1>
+<label2>Źródła</label2>
+<label3>Miejsca przeznaczenia</label3>
+<groupBox1>Opcje</groupBox1>
+<rdUNIMARC>UNIMARC =&gt; MARC21</rdUNIMARC>
+<rdMARC21>MARC21 =&gt; UNIMARC</rdMARC21>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<this>UNIMARC narzędzia</this>
+</MarcEdit_frmUnimarc>
+<MarcEdit_frmUpdate>
+<label1>Aktualizuj notatki:</label1>
+<cmd_Update>Aktualizacja</cmd_Update>
+<cmd_Cancel>Anuluj</cmd_Cancel>
+<this>Aktualizacja MarcEdit</this>
+</MarcEdit_frmUpdate>
+<MarcEdit_frmUtilities>
+<mnuLoad></mnuLoad>
+<menuItem2></menuItem2>
+<mnusave></mnusave>
+<menuItem1></menuItem1>
+<menuItem3></menuItem3>
+<ckIsUTF8>Zakodowane w Unicode</ckIsUTF8>
+<ck_merge_to_source>Scalić źródła</ck_merge_to_source>
+<label17>Zapisz plik:</label17>
+<label16>Katalogowanie źródła</label16>
+<ck_SameFile>Proces pliku źródłowego</ck_SameFile>
+<cmd_merge_cancel>Anuluj</cmd_merge_cancel>
+<cmd_merge_next>Następny =&gt;</cmd_merge_next>
+<lb_merge_title>Scalanie rekordów danych</lb_merge_title>
+<ck_merge_repeatable>Jest powtarzalne</ck_merge_repeatable>
+<lb_id>Identyfikator rekordu:</lb_id>
+<lb_merge>Scalanie plików:</lb_merge>
+<lb_source>Plik źródłowy:</lb_source>
+<ck_overlayexisting>Istniejące elementy nakładki</ck_overlayexisting>
+<label4>Wartość zaufania:</label4>
+<ck_mergeUnique>Scalić unikaty</ck_mergeUnique>
+<button1>Anuluj</button1>
+<cmd_merge_select_fields_next>Następny =&gt;</cmd_merge_select_fields_next>
+<cmd_merge_select_fields_back>&lt; = Back</cmd_merge_select_fields_back>
+<label7>Pola korespondencji seryjnej:</label7>
+<label6>Wybierz pole:</label6>
+<label5>Scalanie rekordów danych: Wybierz pola</label5>
+<button5>Zamknij</button5>
+<label15>Pliki zostały scalone.  Wyniki w {merge_results_file}.</label15>
+<label13>Seryjnej zakończone</label13>
+<this>Scalanie rekordów MARC</this>
+</MarcEdit_frmUtilities>
+<MarcEdit_frmValidateHeadings>
+<label1>Narzędzie sprawdzania poprawności nagłówków może służyć do sprawdzania poprawności 1xx, 6xx lub pól 7xx.  Th e Narzędzie wykorzystuje połączenie sieci web i usługi lokalne do określenia, jeśli headin g pojawia się w autoryzowanych pozycji.</label1>
+<ck_1xx>Autoryzować pola 1xx/7xx</ck_1xx>
+<ck_6xx>Autoryzować pola 6xx</ck_6xx>
+<cmdProcess>Proces</cmdProcess>
+<cmdClose>Zamknij</cmdClose>
+<label2>Źródło:</label2>
+<lbStatus>Status:</lbStatus>
+<cmdExtract>Wyciąg</cmdExtract>
+<ckdeletecache>Usunąć z lokalnej pamięci podręcznej</ckdeletecache>
+<lnkDelimited>Zapisz rozdzielany</lnkDelimited>
+<ckonlyA>Tylko proces podpole A</ckonlyA>
+<ckVariant>Automatyczne poprawianie wariantów</ckVariant>
+<ckGenerateBriefHeadings>Generują krótkie nazwy osobowej władze</ckGenerateBriefHeadings>
+<label3>Wygenerowany organy:</label3>
+<ckAddURIs>Osadzić identyfikatorów URI, gdy jest to możliwe</ckAddURIs>
+<ck_download_authorities>Pobierz władze LC</ck_download_authorities>
+<this>Sprawdzanie poprawności nagłówków</this>
+</MarcEdit_frmValidateHeadings>
+<MarcEdit_frmvalidator>
+<lb_Source>Plik źródłowy:</lb_Source>
+<lb_Rules>Plik zasad:</lb_Rules>
+<cmd_Ok>Ok</cmd_Ok>
+<cmd_close>Zamknij</cmd_close>
+<groupBox1>Opcje</groupBox1>
+<optIdentify>Sprawdź strukturę rekordu</optIdentify>
+<opt_remove>Usuń nieprawidłowe rekordy</opt_remove>
+<opt_validate>Sprawdź plik Rules MARC za pomocą</opt_validate>
+<rdHex>Widok w pewien HexEditor</rdHex>
+<this>MARCValidator</this>
+</MarcEdit_frmvalidator>
+<MarcEdit_frmVURL>
+<cmd_Ok>Ok</cmd_Ok>
+<cmdCancel>Zamknij</cmdCancel>
+<groupBox1>Opcje raportu:</groupBox1>
+<lb_MARC_Title>Tytuł:</lb_MARC_Title>
+<lbReport>Typ raportu:</lbReport>
+<lb_XSLT>Plik XSLT:</lb_XSLT>
+<lb_Dest>Plik wyjściowy:</lb_Dest>
+<lb_MARC>Plik wejściowy:</lb_MARC>
+<lb_Fields>Pola:</lb_Fields>
+<lbTimeout>Limit czasu (w sekundach)</lbTimeout>
+<this>Sprawdź adres URL</this>
+</MarcEdit_frmVURL>
+<MarcEdit_frm_FASTHeadings>
+<lnkClassify>O szybką obsługę OCLC</lnkClassify>
+<label1>zasobów. GetString ("label1. Tekst")</label1>
+<ck_conditional_fast>Dodać nagłówki szybko, gdy nie nagłówków tematów są obecne</ck_conditional_fast>
+<ck_always_fast>Zawsze dodawaj szybko nagłówki</ck_always_fast>
+<label8>Nagłówków tematów:</label8>
+<button1>Proces</button1>
+<cmd_Close>Zamknij</cmd_Close>
+<this>Wygenerować szybko nagłówki</this>
+</MarcEdit_frm_FASTHeadings>
+<MarcEdit_frm_merge_options>
+<cmd_save>Zapisz</cmd_save>
+<cmd_close>Zamknij</cmd_close>
+<ck_1xxa>$a: wejścia głównego</ck_1xxa>
+<ck_245p>$p: Nazwa pt/s pracy</ck_245p>
+<ck_245n>$n: liczba pt/s pracy</ck_245n>
+<ck_245c>$c: oświadczenie o odpowiedzialność</ck_245c>
+<ck_245b>$b: pozostała część tytuł</ck_245b>
+<ck_245a>$a: tytuł</ck_245a>
+<ck_lang>Język (pozycje: 35-37)</ck_lang>
+<ck_dates>Daty (pozycji: 7-14)</ck_dates>
+<ck_p7>BLvl (7 pozycji)</ck_p7>
+<ck_p6>Typ (6 pozycji)</ck_p6>
+<ck_001>001/019</ck_001>
+<label6>Liczby kontroli</label6>
+<ck_form>Formularz (pozycji: 23)</ck_form>
+<ck_245_h>$h: materiał ogólne oznaczenie</ck_245_h>
+<label5>Pozostałe pola:</label5>
+<label4>Pole 245:</label4>
+<label3>Autor (1xx) pola</label3>
+<label2>Pozycje 008</label2>
+<label1>LDR pozycji</label1>
+<this>Opcje scalania</this>
+</MarcEdit_frm_merge_options>
+<MarcEdit_frm_z3950_preferences>
+<tabDBProps>Właściwości bazy danych</tabDBProps>
+<ck_Paused>Zastąpić pauza (6 sekund).</ck_Paused>
+<label1>Bazy danych:</label1>
+<ck_Show>Pokaż bazy danych</ck_Show>
+<lbPassword>Hasło:</lbPassword>
+<lbUsername>Nazwa użytkownika:</lbUsername>
+<lbSyntax>Składnia:</lbSyntax>
+<lbPort>Port:</lbPort>
+<lbHost>Host:</lbHost>
+<lbname>Nazwa:</lbname>
+<tabDBAdvanced>Właściwości zaawansowane</tabDBAdvanced>
+<label4>Limit czasu (w sekundach):</label4>
+<label2>Element zestawu:</label2>
+<label3>Inne opcje:</label3>
+<lnkftp>http://www.Loc.gov/z3950/Agency/defns/bib1.html</lnkftp>
+<lbInfo>Więcej informacji:</lbInfo>
+<lbISBN>ISBN/ISSN:</lbISBN>
+<lbSubject>Temat:</lbSubject>
+<lbTitle>Tytuł:</lbTitle>
+<lbAuthor>Autor:</lbAuthor>
+<lbadvTitle>Z39.50 atrybut 4: Struktura</lbadvTitle>
+<cmdSave>Zapisz</cmdSave>
+<cmdClose>Zamknij</cmdClose>
+<label17>Ustawienia bazy danych Z39.50:</label17>
+<cmdDeleteZ3950>Usuń</cmdDeleteZ3950>
+<gbCustom>Ustawienia profilu niestandardowego</gbCustom>
+<label5>Tytuł indeksu:</label5>
+<label6>Indeks autorów:</label6>
+<label10>Indeks słów kluczowych:</label10>
+<label7>Indeks tematyczny:</label7>
+<label11>Record # Index:</label11>
+<label8>↑ Indeks:</label8>
+<label12>ISSN indeksu:</label12>
+<cmdDeleteSRU>Usuń</cmdDeleteSRU>
+<ck_SRU_Show>Pokaż bazy danych</ck_SRU_Show>
+<label13>Dodatkowe parametry</label13>
+<label14>Profil wyszukiwania:</label14>
+<lbVersion>Wersja:</lbVersion>
+<cmdCloseSRU>Zamknij</cmdCloseSRU>
+<cmdSaveSRU>Zapisz</cmdSaveSRU>
+<label15>Nazwa:</label15>
+<lbMetadata>Metadane:</lbMetadata>
+<label16>ADRES URL:</label16>
+<lbSRUTitle>Właściwości bazy danych SRU:</lbSRUTitle>
+<this>Właściwości bazy danych</this>
+</MarcEdit_frm_z3950_preferences>
+<MarcEdit_HexFindForm>
+<label1>Znajdź:</label1>
+<ckMatchCase>Uwzględniaj wielkość liter</ckMatchCase>
+<cmdFind>Znajdź</cmdFind>
+<this>Hex: Znajdź ciąg</this>
+</MarcEdit_HexFindForm>
+<MarcEdit_HexView>
+<menuStrip1>menuStrip1</menuStrip1>
+<fileToolStripMenuItem>Plik</fileToolStripMenuItem>
+<openToolStripMenuItem>Otwarte</openToolStripMenuItem>
+<exitToolStripMenuItem>Wyjścia</exitToolStripMenuItem>
+<editToolStripMenuItem>Edycja</editToolStripMenuItem>
+<findToolStripMenuItem>Znajdź</findToolStripMenuItem>
+<findNextToolStripMenuItem>Znajdź następny</findNextToolStripMenuItem>
+<this>HexView</this>
+</MarcEdit_HexView>
+<MarcEdit_meEditor>
+<cutToolStripMenuItem>Cięcie</cutToolStripMenuItem>
+<copyToolStripMenuItem>Kopiowanie</copyToolStripMenuItem>
+<pasteToolStripMenuItem>Wklej</pasteToolStripMenuItem>
+<clearToolStripMenuItem>Jasne</clearToolStripMenuItem>
+<findToolStripMenuItem>Znajdź</findToolStripMenuItem>
+<replaceToolStripMenuItem>Zamień</replaceToolStripMenuItem>
+<lnkLoadAll>Obciążenia całego pliku</lnkLoadAll>
+<lb_bytes>{loaded_bytes} z {file_bytes} bajtów zostały załadowane.</lb_bytes>
+<tbar1>toolStrip1</tbar1>
+<tbNew>Nowy rekord</tbNew>
+<mnuCNewWindow>Otwórz nowe okno</mnuCNewWindow>
+<ContextAuthority>Organ</ContextAuthority>
+<ContextAuthorityName>Nazwa</ContextAuthorityName>
+<ContextAuthoritySubject>Temat</ContextAuthoritySubject>
+<cBook>Książki</cBook>
+<cSerial>Powieść w odcinkach</cSerial>
+<cVisualMat>Materiałów wizualnych</cVisualMat>
+<cMaps>Zasobów kartograficznych</cMaps>
+<cSoundRec>Nagrywanie dźwięku</cSoundRec>
+<cScore>Ocena na</cScore>
+<cElectMat>Elektronicznych zasobów</cElectMat>
+<cMixedMat>Mieszany materiał</cMixedMat>
+<tbOpen>Otwórz plik</tbOpen>
+<tbSave>Zapisz plik</tbSave>
+<tbPrint>Plik wydruku</tbPrint>
+<tbCompile>Skompilować rekordów</tbCompile>
+<tbCut>Cięcie</tbCut>
+<tbCopy>Kopiowanie</tbCopy>
+<tbPaste>Wklej</tbPaste>
+<tbALA>MARC8 ALA Characterset</tbALA>
+<tbDelete>Usuń</tbDelete>
+<tbFind>Znajdź</tbFind>
+<tbZ39_50>Z39.50/SRU klienta</tbZ39_50>
+<toolStripSplitButton1>Narzędzia edycji Global MARC</toolStripSplitButton1>
+<addDeleteFieldToolStripMenuItem>Dodaj/Usuń pola</addDeleteFieldToolStripMenuItem>
+<buildNewFieldToolStripMenuItem>Budować nowe pole</buildNewFieldToolStripMenuItem>
+<copyFieldToolStripMenuItem>Skopiuj pola</copyFieldToolStripMenuItem>
+<editFieldDataToolStripMenuItem>Edytowanie pola danych</editFieldDataToolStripMenuItem>
+<editIndicatorDataToolStripMenuItem>Edytowanie danych wskaźnik</editIndicatorDataToolStripMenuItem>
+<editSubfieldDataToolStripMenuItem>Edytowanie danych parametru Subfield</editSubfieldDataToolStripMenuItem>
+<swapFieldDataToolStripMenuItem>Wymiany danych pola</swapFieldDataToolStripMenuItem>
+<toolStripEncoding>UTF8</toolStripEncoding>
+<mnuObj>menuStrip1</mnuObj>
+<mnuFile>Plik</mnuFile>
+<mnuFileMain>Powrócić do głównego okna</mnuFileMain>
+<mnuFileNew>Nowy</mnuFileNew>
+<mnuFileNewWindow>Otwórz nowe okno</mnuFileNewWindow>
+<mnuFileNewDefault>domyślne</mnuFileNewDefault>
+<mnuFileNewAuthority>Organ</mnuFileNewAuthority>
+<mnuFileNewAuthorityName>Nazwa</mnuFileNewAuthorityName>
+<mnuFileNewAuthoritySubject>Temat</mnuFileNewAuthoritySubject>
+<mnuFileNewBook>Książki</mnuFileNewBook>
+<mnuFileNewSerial>Powieść w odcinkach</mnuFileNewSerial>
+<mnuFileVisualMat>Materiałów wizualnych</mnuFileVisualMat>
+<mnuFileNewMap>Zasobów kartograficznych</mnuFileNewMap>
+<mnuFileNewSound>Nagrywanie dźwięku</mnuFileNewSound>
+<mnuFileNewScore>Ocena na</mnuFileNewScore>
+<mnuFileNewER>Elektronicznych zasobów</mnuFileNewER>
+<mnuFileNewMix>Mieszany materiał</mnuFileNewMix>
+<mnuFileOpen>Otwarte</mnuFileOpen>
+<mnuFileRecent>Ostatnie pliki</mnuFileRecent>
+<mnunone10>Brak</mnunone10>
+<mnunone9>Brak</mnunone9>
+<mnunone8>Brak</mnunone8>
+<mnunone7>Brak</mnunone7>
+<mnunone6>Brak</mnunone6>
+<mnunone5>Brak</mnunone5>
+<mnunone4>Brak</mnunone4>
+<mnunone3>Brak</mnunone3>
+<mnunone2>Brak</mnunone2>
+<mnunone1>Brak</mnunone1>
+<mnuFileClearHistory>Wyczyść historię</mnuFileClearHistory>
+<mnuFileClearList>Wyczyść ostatnie pliki</mnuFileClearList>
+<clearEditReplaceHistoryToolStripMenuItem>Wyczyść historię edycji i Zamień</clearEditReplaceHistoryToolStripMenuItem>
+<mnuFileClose>Zamknij</mnuFileClose>
+<mnuFileExportData>Eksport dla...</mnuFileExportData>
+<openRefineExport>OpenRefine</openRefineExport>
+<mnuFileImportData>Importowanie z...</mnuFileImportData>
+<openRefineImport>OpenRefine</openRefineImport>
+<mnuFileSave>Zapisz</mnuFileSave>
+<mnuFileSaveAs>Zapisz jako...</mnuFileSaveAs>
+<mnuFilePrint>Drukuj</mnuFilePrint>
+<toolStripMenuItem34>Drukowanie rekordu na stronę</toolStripMenuItem34>
+<FileSelectIndividualMake>Wybierz rekordy do edycji</FileSelectIndividualMake>
+<mnuFileCompile>Skompiluj plik do MARC</mnuFileCompile>
+<mnuFileExit>Wyjścia</mnuFileExit>
+<mnuEdit>Edycja</mnuEdit>
+<mnuEditUndo>Cofnij</mnuEditUndo>
+<mnuEditRedo>Wykonaj ponownie</mnuEditRedo>
+<mnuEditSpecialUndo>Cofnij specjalne</mnuEditSpecialUndo>
+<mnuEditCut>Cięcie</mnuEditCut>
+<mnuEditCopy>Kopiowanie</mnuEditCopy>
+<mnuEditPaste>Wklej</mnuEditPaste>
+<mnuEditDupLines>Zduplikowane wiersze</mnuEditDupLines>
+<mnuEditClear>Jasne</mnuEditClear>
+<mnuEditFind>Znajdź</mnuEditFind>
+<mnuEditReplace>Zamień</mnuEditReplace>
+<toolStripMenuItem28>Edytować skróty</toolStripMenuItem28>
+<changeCaseToolStripMenuItem>Zmień wielkość liter</changeCaseToolStripMenuItem>
+<lowerCaseToolStripMenuItem>małe litery</lowerCaseToolStripMenuItem>
+<upperCaseToolStripMenuItem>WIELKIE LITERY</upperCaseToolStripMenuItem>
+<sentenceCaseToolStripMenuItem>Nazwy własne</sentenceCaseToolStripMenuItem>
+<initialCaseToolStripMenuItem>Początkowej sprawie</initialCaseToolStripMenuItem>
+<capitalizeInitialCharacterToolStripMenuItem>Wykorzystać początkowy znak</capitalizeInitialCharacterToolStripMenuItem>
+<fieldEditsToolStripMenuItem>Pole edycji</fieldEditsToolStripMenuItem>
+<mnuEditShortcutFieldEditCleanSmartChars>Clean Smart znaków</mnuEditShortcutFieldEditCleanSmartChars>
+<mnuEditShortCutsMissingWord>Znajdź brakujące słowo pola</mnuEditShortCutsMissingWord>
+<findRecordsMissingFieldToolStripMenuItem>Znajdowanie rekordów, brak pola</findRecordsMissingFieldToolStripMenuItem>
+<toolStripMenuItem39>Znajdowanie rekordów z zduplikowane Tagi</toolStripMenuItem39>
+<toolStripMenuItem40>Znajdowanie rekordów z zduplikowane pola danych</toolStripMenuItem40>
+<mnuEditLimitFields>Ogranicz liczbę pól</mnuEditLimitFields>
+<swapTitleToolStripMenuItem>Tytuł do wymiany</swapTitleToolStripMenuItem>
+<mathFunctionsToolStripMenuItem>Funkcje matematyczne</mathFunctionsToolStripMenuItem>
+<convertToDecimalDegreesToolStripMenuItem>W stopniach dziesiętnych</convertToDecimalDegreesToolStripMenuItem>
+<mnuEditJumpTo>Przejdź do...</mnuEditJumpTo>
+<jumpToRecordToolStripMenuItem>Przejdź do... Rekord</jumpToRecordToolStripMenuItem>
+<jumpToPageToolStripMenuItem>Przejdź do... Strona</jumpToPageToolStripMenuItem>
+<mnuEditControl>Wstaw numer pojedynczej kontroli</mnuEditControl>
+<mnuEdit006>Wstaw/Edytuj 006</mnuEdit006>
+<mnuEdit006Edit>Edycja</mnuEdit006Edit>
+<mnuEdit006Book>Książki</mnuEdit006Book>
+<mnuEdit006Serial>Ciągłego</mnuEdit006Serial>
+<mnuEdit006Map>Zasobów kartograficznych</mnuEdit006Map>
+<mnuEdit006Sound>Nagrywanie dźwięku</mnuEdit006Sound>
+<mnuEdit006Score>Ocena na</mnuEdit006Score>
+<mnuEdit006ER>Elektronicznych zasobów</mnuEdit006ER>
+<mnuEdit006Visual>Materiałów wizualnych</mnuEdit006Visual>
+<mnuEdit006Mixed>Mieszany materiał</mnuEdit006Mixed>
+<mnuEdit008>Wstaw/Edytuj 008</mnuEdit008>
+<mnuEdit008Edit>Edycja</mnuEdit008Edit>
+<mnuEdit008Book>Książki</mnuEdit008Book>
+<mnuEdit008Serial>Ciągłego</mnuEdit008Serial>
+<mnuEdit008Map>Zasobów kartograficznych</mnuEdit008Map>
+<mnuEdit008Sound>Nagrywanie dźwięku</mnuEdit008Sound>
+<mnuEdit008Score>Ocena na</mnuEdit008Score>
+<mnuEdit008ER>Elektronicznych zasobów</mnuEdit008ER>
+<mnuEdit008Visual>Materiałów wizualnych</mnuEdit008Visual>
+<mnuEdit008Mixed>Mieszany materiał</mnuEdit008Mixed>
+<toolStripMenuItem27>Konwersja zawartości Schowka</toolStripMenuItem27>
+<mnuEditConverttoUTF8>MARC-8, UTF-8</mnuEditConverttoUTF8>
+<mnuEditConvertoMarc8>UTF-8 do MARC-8</mnuEditConvertoMarc8>
+<mnuEditALA>MARC-8 ALA characterset</mnuEditALA>
+<mnuEditUTF8CharacterMap>Tablica znaków UTF-8</mnuEditUTF8CharacterMap>
+<mnuEditSelectAll>Zaznacz wszystkie</mnuEditSelectAll>
+<mnuEditWrap>Zawijanie wyrazów</mnuEditWrap>
+<mnuEditRTL>Wyświetlania od prawej do lewej</mnuEditRTL>
+<mnuFont>Czcionki</mnuFont>
+<mnuFontFont>Czcionka...</mnuFontFont>
+<mnuFontColor>Kolor...</mnuFontColor>
+<mnuReports>Raporty</mnuReports>
+<mnuReportsField>Pole Count</mnuReportsField>
+<tlReportsMaterialReport>Materiał typu raportu</tlReportsMaterialReport>
+<generateReportToolStripMenuItem>Generowanie raportu</generateReportToolStripMenuItem>
+<findBookToolStripMenuItem>Znajdź rekordy według typu</findBookToolStripMenuItem>
+<booksToolStripMenuItem>Książki</booksToolStripMenuItem>
+<toolStripMenuItem32>Plików na komputerze</toolStripMenuItem32>
+<continuingResourcesToolStripMenuItem>ISSN</continuingResourcesToolStripMenuItem>
+<mapsToolStripMenuItem>Mapy</mapsToolStripMenuItem>
+<mixedMaterialsToolStripMenuItem>Materiały mieszane</mixedMaterialsToolStripMenuItem>
+<scoresToolStripMenuItem>Wyniki</scoresToolStripMenuItem>
+<soundRecordingsToolStripMenuItem>Nagrania dźwiękowe</soundRecordingsToolStripMenuItem>
+<visualMaterialsToolStripMenuItem>Materiały wizualne</visualMaterialsToolStripMenuItem>
+<mARCValidatorToolStripMenuItem>MARCValidator</mARCValidatorToolStripMenuItem>
+<validateISBNSToolStripMenuItem>Sprawdź poprawność numeru ISBN</validateISBNSToolStripMenuItem>
+<validateISSNSToolStripMenuItem>Sprawdź poprawność ISSN</validateISSNSToolStripMenuItem>
+<toolStripMenuItem45>Sprawdzanie poprawności nagłówków</toolStripMenuItem45>
+<serviceStatusToolStripMenuItem>Stan usługi</serviceStatusToolStripMenuItem>
+<validateHeadingsToolStripMenuItem>Sprawdzanie poprawności nagłówków</validateHeadingsToolStripMenuItem>
+<manageLogFilesToolStripMenuItem>Zarządzanie plikami dziennika</manageLogFilesToolStripMenuItem>
+<viewCurrentLogFileToolStripMenuItem>Widok bieżący plik dziennika</viewCurrentLogFileToolStripMenuItem>
+<advancedLogManagmentToolStripMenuItem>Managment dziennika zaawansowane</advancedLogManagmentToolStripMenuItem>
+<deleteLogFilesToolStripMenuItem>Usuwanie plików dziennika</deleteLogFilesToolStripMenuItem>
+<viewAllLogFilesToolStripMenuItem>Wyświetl wszystkie pliki dziennika</viewAllLogFilesToolStripMenuItem>
+<mnuTools>Narzędzia</mnuTools>
+<mnuToolsCluster>Klastrowanie narzędzi</mnuToolsCluster>
+<mnutoolCutters>Kutrowanie narzędzia</mnutoolCutters>
+<mnuToolsCalculator>Katalog Kalkulator</mnuToolsCalculator>
+<generateCuttersToolStripMenuItem>Wygenerować frezów</generateCuttersToolStripMenuItem>
+<sanbornTable3CuttersToolStripMenuItem>Sanborn tabela 3 Frezy</sanbornTable3CuttersToolStripMenuItem>
+<mnuToolsCallNum>Generować numery</mnuToolsCallNum>
+<mnuToolsControlNumber>Generowanie numerów kontrolnych</mnuToolsControlNumber>
+<toolStripMenuItem33>Połączone dane narzędzi</toolStripMenuItem33>
+<buildLinkedRecordsToolStripMenuItem>Budować połączone rekordy</buildLinkedRecordsToolStripMenuItem>
+<mnuToolsDedup>Rekordu deduplikacji</mnuToolsDedup>
+<mnuToolsRDAHelpers>RDA Helper</mnuToolsRDAHelpers>
+<mnuToolsZ3950>Opcje Z39.50/SRU</mnuToolsZ3950>
+<marcEditZ3950SRUClientToolStripMenuItem>MarcEdit Z39.50/SRU klienta</marcEditZ3950SRUClientToolStripMenuItem>
+<uploadEditedRecordToolStripMenuItem>Z39.50 przesłać rekord</uploadEditedRecordToolStripMenuItem>
+<toolz3950delete>Z39.50 usunąć rekord</toolz3950delete>
+<z3950UpdateHoldingsToolStripMenuItem>Z39.50 aktualizacji gospodarstw</z3950UpdateHoldingsToolStripMenuItem>
+<mnuToolsEditConstant>Edycja danych stałych</mnuToolsEditConstant>
+<mnuToolsAssigned>Przypisane dane stałe</mnuToolsAssigned>
+<mnuConstant1>(1) niezdefiniowany ciąg</mnuConstant1>
+<mnuConstant2>(2) niezdefiniowany ciąg</mnuConstant2>
+<mnuConstant3>(3) niezdefiniowany ciąg</mnuConstant3>
+<mnuConstant4>(4) niezdefiniowany ciąg</mnuConstant4>
+<mnuConstant5>(5) niezdefiniowany ciąg</mnuConstant5>
+<mnuConstant6>(6) niezdefiniowany ciąg</mnuConstant6>
+<mnuConstant7>(7) niezdefiniowany ciąg</mnuConstant7>
+<mnuConstant8>(8) niezdefiniowany ciąg</mnuConstant8>
+<mnuConstant9>(9) niezdefiniowany ciąg</mnuConstant9>
+<mnuConstant10>10) niezdefiniowany ciąg</mnuConstant10>
+<mnutoolmanageAutomate>Zarządzanie zadaniami</mnutoolmanageAutomate>
+<mnuToolsAssignedTasks>Przydzielonych zadań</mnuToolsAssignedTasks>
+<mnuDefTask>Obecnie dostępne zadania</mnuDefTask>
+<task1>1) zadanie niezdefiniowany</task1>
+<task2>(2) niezdefiniowany zadania</task2>
+<task3>3) zadanie niezdefiniowany</task3>
+<task4>4) zadanie niezdefiniowany</task4>
+<task5>5) zadanie niezdefiniowany</task5>
+<task6>6) zadanie niezdefiniowany</task6>
+<task7>7) zadanie niezdefiniowany</task7>
+<task8>8) zadanie niezdefiniowany</task8>
+<task9>9) zadanie niezdefiniowany</task9>
+<task10>10) zadanie niezdefiniowany</task10>
+<task11>11) zadanie niezdefiniowany</task11>
+<task12>12) zadanie niezdefiniowany</task12>
+<task13>13) zadanie niezdefiniowany</task13>
+<task14>14) zadanie niezdefiniowany</task14>
+<task15>15) zadanie niezdefiniowany</task15>
+<task16>16) zadanie niezdefiniowany</task16>
+<task17>17) zadanie niezdefiniowany</task17>
+<task18>18) niezdefiniowany zadania</task18>
+<task19>19) zadanie niezdefiniowany</task19>
+<task20>20) zadanie niezdefiniowany</task20>
+<mnuToolsValidate>Walidowanie rekordów MARC</mnuToolsValidate>
+<mnuToolsOAI>Zbiorów z OAI</mnuToolsOAI>
+<mnutoolsurl>Wygenerować MARC z adresu URL</mnutoolsurl>
+<toolStripMenuItem43>Mnemoniczny narzędzia formatowania</toolStripMenuItem43>
+<toolStripMenuItem3>Normalizacji...</toolStripMenuItem3>
+<normalizeLCRecordToolStripMenuItem>Normalizacja ewidencji LC</normalizeLCRecordToolStripMenuItem>
+<normalizeMicrolifRecordsToolStripMenuItem>Normalizacja ewidencji Microlif</normalizeMicrolifRecordsToolStripMenuItem>
+<removeBlankLinesToolStripMenuItem>Usuń puste wiersze</removeBlankLinesToolStripMenuItem>
+<mnuToolsRemoveEmpty>Usuń puste pola/pól podrzędnych</mnuToolsRemoveEmpty>
+<mnuToolsAdd>Dodaj/Usuń pola</mnuToolsAdd>
+<mnuFieldEditsBuildProxy>Budować nowe pole</mnuFieldEditsBuildProxy>
+<toolStripMenuItem26>Skopiuj pola</toolStripMenuItem26>
+<mnuToolsEditField>Edytowanie pola danych</mnuToolsEditField>
+<mnuToolsIndicator>Edytowanie danych wskaźnik</mnuToolsIndicator>
+<mnuToolsSubfield>Edytowanie danych parametru Subfield</mnuToolsSubfield>
+<mnuToolsSortby>Sortuj według...</mnuToolsSortby>
+<toolStripMenuItem41>Sortowanie rekordów przez...</toolStripMenuItem41>
+<mnuToolsSortRecordOrderCustom>Pole niestandardowe</mnuToolsSortRecordOrderCustom>
+<mnuToolsSortAuthor>Autor pola</mnuToolsSortAuthor>
+<mnuToolsSortByCall>Pole Liczba połączeń</mnuToolsSortByCall>
+<mnuToolsSortControl>Numer pola formantu</mnuToolsSortControl>
+<mnuToolsSortbyTitle>Pole Tytuł</mnuToolsSortbyTitle>
+<toolStripMenuItem42>Sortowania pola podmiana rekordu przez...</toolStripMenuItem42>
+<mnuToolsCustomSort>Sortowanie niestandardowe</mnuToolsCustomSort>
+<mnuToolsSort2>Pola sortowania 0xx</mnuToolsSort2>
+<mnuToolsSort>Sortować wszystkie pola</mnuToolsSort>
+<mnuToolsSwap>Wymiany danych pola</mnuToolsSwap>
+<mnuToolsOptions>Preferencje</mnuToolsOptions>
+<mnu_ILS>[Nazwa ILS]</mnu_ILS>
+<mnu_ils_search>Szukaj</mnu_ils_search>
+<updateCreateToolStripMenuItem>Aktualizacja/tworzenie</updateCreateToolStripMenuItem>
+<processSettingsToolStripMenuItem>Ustawienia procesu</processSettingsToolStripMenuItem>
+<mnuOCLC>OCLC WorldCat</mnuOCLC>
+<toolStripMenuItem31>Szukaj WorldCat</toolStripMenuItem31>
+<mnuOCLCLocalBibData>Dodaj/Usuń/Update lokalnych danych bibliograficznych</mnuOCLCLocalBibData>
+<createUpdateToolStripMenuItem>Utwórz/Aktualizuj dane bibliograficzne</createUpdateToolStripMenuItem>
+<deleteHoldingsToolStripMenuItem>Aktualizacja pakietów</deleteHoldingsToolStripMenuItem>
+<pluginsToolStripMenuItem>Plug-ins</pluginsToolStripMenuItem>
+<mnuHelp>Pomoc</mnuHelp>
+<mnuHelpContents>Zawartość i pomoc</mnuHelpContents>
+<mnuEditInfo>MARC informacje</mnuEditInfo>
+<mnuEditInfoOCLC>OCLC MARC pomoc</mnuEditInfoOCLC>
+<mnuHelpRDAToolkit>RDA Toolkit</mnuHelpRDAToolkit>
+<mnuEditInfoLC>USA biblioteki Kongresu MARC pomocy</mnuEditInfoLC>
+<packageFilesForDebuggingToolStripMenuItem>Pliki pakietu dla debugowania</packageFilesForDebuggingToolStripMenuItem>
+<mnuContextHelp>Co chcesz zrobić?</mnuContextHelp>
+<rtxt_Edit></rtxt_Edit>
+<label1>Rekordów na jednej stronie</label1>
+<lblPage>stron</lblPage>
+<btnPre>&lt;</btnPre>
+<btnNext>&gt;</btnNext>
+<btnLast>&gt;&gt;</btnLast>
+<btnFirst>&lt;&lt;</btnFirst>
+<lnkLoadAutoSave>Zobacz Automatyczne zapisywanie plików</lnkLoadAutoSave>
+<this>MarcEditor</this>
+</MarcEdit_meEditor>
+<MarcEdit_oclc_agree>
+<lb_text>Usługi walidacji danych są dostarczane przez OCLC Termology usług. Aby korzystać z tych usług, musi zgadza się przestrzegać warunków i warunków określonych przez OCLC dotyczących wykorzystania i jakości tych usług.</lb_text>
+<label1>OCLC umową linku:</label1>
+<lnk_Terms>Zobacz warunki użytkowania</lnk_Terms>
+<cmd_Agree>Zgadzam się</cmd_Agree>
+<cmd_disagree>Nie zgadzam się</cmd_disagree>
+<this>OCLC umowy</this>
+</MarcEdit_oclc_agree>
+<MarcEdit_frmWizardStart>
+<comboBox1>Angielski</comboBox1>
+<linkLabel2>Nie, dziękuję, wystarczy użyć ustawień domyślnych</linkLabel2>
+<linkLabel1>Zaczynajmy!</linkLabel1>
+<label2>Jestem tu po to, aby pomóc Ci zacząć!  Zadać kilka pytań, a dostać się na yo </label2>
+<label1>Witamy w MarcEdit 7!</label1>
+<this>Kreator uruchamiania MarcEdit 7</this>
+</MarcEdit_frmWizardStart>
+<MarcEdit_frmWizardStartPage2>
+<linkLabel1>Do ustawienia danych... Ruff!</linkLabel1>
+<label6>Należy pamiętać, że można ustawić motywy, rozmiary czcionek, Języki i dostępność zaawansowanych o </label6>
+<cmb_theme_picker>Domyślne</cmb_theme_picker>
+<label5>Polecane temat:</label5>
+<label4>pt.</label4>
+<cmbFontSize>11</cmbFontSize>
+<label3>Zalecany rozmiar czcionki:</label3>
+<cmbFont>Noto Sans</cmbFont>
+<label2>Domyślna czcionka:</label2>
+<label1>MarcEdit wygląd</label1>
+<this>Kreator uruchamiania MarcEdit 7: Strona 2</this>
+</MarcEdit_frmWizardStartPage2>
+<MarcEdit_frmWizardStartPage3>
+<label5>MarcEdit jest niezależna od MARC, warto więc powiedzieć trochę o swoje dane.</label5>
+<comboBox3>Wybierz dla mnie</comboBox3>
+<label4>Aparat przetwarzania XML:</label4>
+<comboBox2>MARC8/UTF8</comboBox2>
+<label3>Domyślne kodowanie rekordu:</label3>
+<comboBox1>MARC21</comboBox1>
+<label2>Mój plik w formacie MARC jest:</label2>
+<linkLabel1>Prawie gotowe!  Wiewiórka!</linkLabel1>
+<label1>Ustawienia danych MarcEdit</label1>
+<this>Kreator uruchamiania MarcEdit 7: Strona 3</this>
+</MarcEdit_frmWizardStartPage3>
+<MarcEdit_frmWizardStartPage4>
+<linkLabel1>Szczęśliwy edycji!</linkLabel1>
+<label5>zasobów. GetString ("label5. Tekst")</label5>
+<label1>Gratulacje!  Jesteś gotowy do użycia MarcEdit 7</label1>
+<this>Kreator uruchamiania MarcEdit 7: zakończone</this>
+</MarcEdit_frmWizardStartPage4>
+<MarcEdit_frm_xmlfunctions>
+<cmdClose>Zamknij</cmdClose>
+<ck_remote>Rozwiązać zdalne podmioty</ck_remote>
+<ck_Marc8>Konwersja do MARC-8</ck_Marc8>
+<opt_default>Domyślne</opt_default>
+<opt_saxon>SAXON</opt_saxon>
+<opt_msxml>MSXML</opt_msxml>
+<cmdSave>Zapisz</cmdSave>
+<gp_XSLT>Aparat XSLT</gp_XSLT>
+<label7>Ostateczny Format</label7>
+<label6>Format oryginalny</label6>
+<label4>XSLT/XQuery ścieżka</label4>
+<label3>Nazwa funkcji (Alias):</label3>
+<label2>Informacje ogólne:</label2>
+<lnkXMLFunctionWizard>Kreator funkcji XML</lnkXMLFunctionWizard>
+<groupBox1>Działania</groupBox1>
+<lnkAdd>Dodać</lnkAdd>
+<lnkModify>Zmodyfikować</lnkModify>
+<lnkDelete>Usuń</lnkDelete>
+<label5>Formatowanie:</label5>
+<label1>Określone funkcje:</label1>
+<this>Edytować funkcji XML</this>
+</MarcEdit_frm_xmlfunctions>
+</marcedit>
