@@ -37,6 +37,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             {
                 int batchSize = 10000;
 
+                //_marcFieldParsingFactory.ClearMarcRecordDataFieldTables();
                 _marcFieldParsingFactory.ClearOldMarcRecordData();
 
                 var counterBatch = 0;
@@ -103,6 +104,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     new MarcRecordDataField
                     {
                         MarcRecordId = marcRecord.MarcRecordId,
+                        ProviderId = marcRecord.ProviderId,
                         MarcValue = field,
                         FieldNumber = field.Substring(1, 3)
                     };

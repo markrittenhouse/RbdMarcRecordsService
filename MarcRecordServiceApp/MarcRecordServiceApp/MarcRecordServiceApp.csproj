@@ -86,6 +86,7 @@
     <Compile Include="Core\DataAccess\Entities\Base\IDataEntity.cs" />
     <Compile Include="Core\DataAccess\Entities\Category.cs" />
     <Compile Include="Core\DataAccess\Entities\LcMarcRecordFile.cs" />
+    <Compile Include="Core\DataAccess\Entities\MarcRecordData.cs" />
     <Compile Include="Core\DataAccess\Entities\NlmMarcRecordFile.cs" />
     <Compile Include="Core\DataAccess\Entities\Product.cs" />
     <Compile Include="Core\DataAccess\Entities\ProductEntity.cs" />
@@ -153,8 +154,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Tasks\CallNumbers\LcCallNumberTask.cs" />
-    <Compile Include="Tasks\CallNumbers\NlmCallNumberTask.cs" />
+    <Compile Include="Tasks\CallNumbers\CallNumberTask.cs" />
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="Tasks\MarcRecords\DailyMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
