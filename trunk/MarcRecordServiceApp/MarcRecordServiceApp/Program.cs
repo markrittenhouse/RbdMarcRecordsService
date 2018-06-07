@@ -61,14 +61,13 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("05 = CreateDailyMarcRecords");
                     Console.WriteLine("06 = RecreateAllRbdMarcRecords");
                     Console.WriteLine("");
-                    Console.WriteLine("10 = LcCallNumberTask");
-                    Console.WriteLine("11 = NlmCallNumberTask");
+                    Console.WriteLine("10 = ParseMarcFieldsTask");
+                    Console.WriteLine("11 = CallNumberTask");
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("20 = CreateR2libraryMarcRecords");
                     Console.WriteLine("21 = CreateOclcR2libraryMarcRecords");
 
-                    Console.WriteLine("99 = ParseMarcFieldsTask");
                     Console.WriteLine("");
 					Console.Write("Please enter code: ");
                     arg = Console.ReadLine();
@@ -115,17 +114,20 @@ namespace MarcRecordServiceApp
                     case "06":
                         task = new RittenhouseOnlyMarcRecordsTask(false);
                         break;
-                    
 
-                    case "-LcCallNumberTask":
+
+
+
+                    case "-ParseMarcFieldsTask":
                     case "10":
-                        task = new LcCallNumberTask();
+                        task = new ParseMarcFieldsTask();
+                        break;
+                    case "-CallNumberTask":
+                    case "11":
+                        task = new CallNumberTask();
                         break;
 
-                    case "-NlmCallNumberTask":
-                    case "11":
-                        task = new NlmCallNumberTask();
-                        break;
+
 
 
                     case "-CreateR2libraryMarcRecords":
@@ -138,10 +140,6 @@ namespace MarcRecordServiceApp
                         task = new OclcR2LibraryMarcRecordsTask(new R2ProductFactory());
                         break;
 
-                    case "-ParseMarcFieldsTask":
-                    case "99":
-                        task = new ParseMarcFieldsTask();
-                        break;
 
                     
                     default:

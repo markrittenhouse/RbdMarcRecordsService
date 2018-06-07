@@ -2,268 +2,246 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
 using MarcRecordServiceApp.Core.DataAccess.SqlCommandParameters;
-using Rittenhouse.RBD.Core.DataAccess.Entities;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Factories
 {
     public class CallNumberFactory : FactoryBase
     {
         #region "LC Sql"
-        private readonly string _lcMarcRecordFileUpdateSql = new StringBuilder()
-            .Append(" Update LcMarcRecordFile ")
-            .Append(" set  ")
-            .Append("     LcMarcRecordFile.xmlFileData = mrfXML.filedata, ")
-            .Append("     LcMarcRecordFile.dateUpdated = getdate() ")
-            .Append(" from MarcRecord mr ")
-            .Append(" join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = 1 ")
-            .Append(" join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
-            .Append(" join MarcRecordFile mrfXML on mrp.marcRecordProviderId = mrfXML.marcRecordProviderId and mrfXML.marcRecordFileTypeId = 3 ")
-            .Append(" join LcMarcRecordFile lmrf on mr.sku = lmrf.sku ")
-            .Append(" where mr.sku not like '%R2P%' and lmrf.XMLfileData != mrfXML.filedata ; ")
-            .ToString();
 
-        private readonly string _lcMarcRecordFileInsertSql = new StringBuilder()
-            .Append(" Insert Into LcMarcRecordFile (isbn10, isbn13, sku, xmlFiledata, dateUpdated) ")
-            .Append("     select mr.isbn10, mr.isbn13, mr.sku, mrfXML.filedata, getdate() ")
-            .Append(" from MarcRecord mr ")
-            .Append(" join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = 1 ")
-            .Append(" join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
-            .Append(" join MarcRecordFile mrfXML on mrp.marcRecordProviderId = mrfXML.marcRecordProviderId and mrfXML.marcRecordFileTypeId = 3 ")
-            .Append(" left join LcMarcRecordFile lmrf on mr.sku = lmrf.sku ")
-            .Append(" where mr.sku not like '%R2P%' and lmrf.lcMarcRecordFileId is null; ")
-            .ToString();
+        private const string LcCallNumberInsert = @"
+insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
+select x.marcRecordId, x.marcRecordProviderTypeId, GETDATE()
+	, STUFF(( SELECT '' + sub.subFieldValue
+				from MarcRecordDataSubField sub 
+				WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+				FOR XML PATH('')), 1, 0,'') AS value
+from (select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId
+		from MarcRecordDataField mrf 
+		where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
+		group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
+	) x
+	left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
+	where mrcn.marcRecordId is null
+";
 
-        private readonly string _lcGetMarcRecordFileXml = new StringBuilder()
-            .Append(" select top {0} lcMarcRecordFileId, xmlFileData, lcCallNumber ")
-            .Append(" from LcMarcRecordFile ")
-            .Append(" where (lcCallNumber is null and dateCallNumberProcessed is null) or dateUpdated > dateCallNumberProcessed ")
-            .ToString();
+        private const string LcCallNumberUpdate = @"
+update MarcRecordDataCallNumber
+set callNumber = xx.value, dateUpdated = GETDATE()
+from MarcRecordDataCallNumber mrcn
+join (
+	select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
+		, STUFF(( SELECT '' + c2.subFieldValue
+			from MarcRecordDataSubField c2 
+			WHERE x.marcRecordDataFieldId = c2.marcRecordDataFieldId
+			FOR XML PATH('')), 1, 0,'') AS value
+	from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+			from MarcRecordDataField xx 
+			where xx.fieldNumber = '050' and xx.marcRecordProviderTypeId = 1
+			group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+		) x
+	) xx on mrcn.marcRecordId = xx.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
+where xx.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
 
-        private readonly string _lcUpdateMarcRecordFileCallNumber = new StringBuilder()
-            .Append(" Update LcMarcRecordFile ")
-            .Append(" set ")
-            .Append("     dateCallNumberProcessed = GETDATE(), ")
-            .Append("     lcCallNumber = @LcCallNumber_{0} ")
-            .Append(" where lcMarcRecordFileId = @LcMarcRecordFileId_{0}; ")
-            .ToString();
+";
+
+        private const string LcCategoryUpdate = @"
+update MarcRecordDataCallNumber
+set category = substring(replace(subTest.subFieldValue, '''', ''''), 0, 500), dateUpdated = GETDATE()
+from MarcRecordDataCallNumber mrcn
+join (
+	select p.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, p.marcRecordProviderTypeId
+	from MarcRecordDataSubField sub
+	join MarcRecordDataField p on p.marcRecordDataFieldId = sub.marcRecordDataFieldId and p.marcRecordProviderTypeId = 1
+	where p.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
+	group by p.marcRecordId, p.marcRecordProviderTypeId
+) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
+join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.marcRecordDataSubFieldsId 
+where category is null or category <> substring(replace(subTest.subFieldValue, '''', ''''), 0, 500)
+
+";
+
+
+
+
         #endregion
 
         #region "NLM Sql"
-        private readonly string _nlmMarcRecordFileUpdateSql = new StringBuilder()
-            .Append(" Update NlmMarcRecordFile ")
-            .Append(" set  ")
-            .Append("     NlmMarcRecordFile.xmlFileData = mrfXML.filedata, ")
-            .Append("     NlmMarcRecordFile.dateUpdated = getdate() ")
-            .Append(" from MarcRecord mr ")
-            .Append(" join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = 2 ")
-            .Append(" join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
-            .Append(" join MarcRecordFile mrfXML on mrp.marcRecordProviderId = mrfXML.marcRecordProviderId and mrfXML.marcRecordFileTypeId = 3 ")
-            .Append(" join NlmMarcRecordFile nmrf on mr.sku = nmrf.sku ")
-            .Append(" where mr.sku not like '%R2P%' and nmrf.XMLfileData != mrfXML.filedata ; ")
-            .ToString();
 
-        private readonly string _nlmMarcRecordFileInsertSql = new StringBuilder()
-            .Append(" Insert Into NlmMarcRecordFile (isbn10, isbn13, sku, xmlFiledata, dateUpdated) ")
-            .Append("     select mr.isbn10, mr.isbn13, mr.sku, mrfXML.filedata, getdate() ")
-            .Append(" from MarcRecord mr ")
-            .Append(" join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = 2 ")
-            .Append(" join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId ")
-            .Append(" join MarcRecordFile mrfXML on mrp.marcRecordProviderId = mrfXML.marcRecordProviderId and mrfXML.marcRecordFileTypeId = 3 ")
-            .Append(" left join NlmMarcRecordFile nmrf on mr.sku = nmrf.sku ")
-            .Append(" where mr.sku not like '%R2P%' and nmrf.nlmMarcRecordFileId is null; ")
-            .ToString();
+        private const string NlmCallNumberInsert = @"
+insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
+select mrf.marcRecordId, mrf.marcRecordProviderTypeId, GETDATE()
+, STUFF(( SELECT ', ' + sub.subFieldValue
+				from MarcRecordDataSubField sub 
+				WHERE mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId
+				FOR XML PATH(''),TYPE)
+				.value('.','NVARCHAR(MAX)'),1,2,'') AS value
+from MarcRecordDataField mrf
+join (
+	select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId
+	from MarcRecordDataField mrf
+	where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
+	group by mrf.marcRecordId
+) mrfSingle on mrf.marcRecordDataFieldId = mrfSingle.marcRecordDataFieldId and mrf.marcRecordId = mrfSingle.marcRecordId
+left join MarcRecordDataCallNumber mrcn on mrfSingle.marcRecordId = mrcn.marcRecordId and mrf.marcRecordProviderTypeId = mrcn.providerId
+where mrcn.marcRecordId is null
+";
 
-        private readonly string _nlmGetMarcRecordFileXml = new StringBuilder()
-            .Append(" select top {0} nlmMarcRecordFileId, xmlFileData, nlmCallNumber ")
-            .Append(" from NlmMarcRecordFile ")
-            .Append(" where (nlmCallNumber is null and dateCallNumberProcessed is null) or dateUpdated > dateCallNumberProcessed ")
-            .ToString();
+        private const string NlmCallNumberUpdate = @"
+update MarcRecordDataCallNumber
+set callNumber = x.value, dateUpdated = GETDATE()
+from MarcRecordDataCallNumber mrcn
+join (
+	select mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+	, STUFF(( SELECT ', ' + sub.subFieldValue
+					from MarcRecordDataSubField sub 
+					WHERE mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId
+					FOR XML PATH(''),TYPE)
+					.value('.','NVARCHAR(MAX)'),1,2,'') AS value
+	from MarcRecordDataField mrf
+	join (
+		select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId
+		from MarcRecordDataField mrf
+		where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
+		group by mrf.marcRecordId
+	) mrfSingle on mrf.marcRecordDataFieldId = mrfSingle.marcRecordDataFieldId and mrf.marcRecordId = mrfSingle.marcRecordId
+) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
+where x.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+";
 
-        private readonly string _nlmUpdateMarcRecordFileCallNumber = new StringBuilder()
-            .Append(" Update NlmMarcRecordFile ")
-            .Append(" set ")
-            .Append("     dateCallNumberProcessed = GETDATE(), ")
-            .Append("     nlmCallNumber = @NlmCallNumber_{0} ")
-            .Append(" where nlmMarcRecordFileId = @NlmMarcRecordFileId_{0}; ")
-            .ToString();
-
-        private readonly string _nlmMarcFilesNeedToBeParseCount = new StringBuilder()
-            .Append("SELECT count(nlmMarcRecordFileId) ")
-            .Append("      FROM NlmMarcRecordFile ")
-            .Append("WHERE (nlmCallNumber is null and dateCallNumberProcessed is null) or dateUpdated > dateCallNumberProcessed ")
-
-            .ToString();
+        private const string NlmCategoryUpdate = @"
+update MarcRecordDataCallNumber
+set category = replace(subTest.subFieldValue, '''', ''''), dateUpdated = GETDATE()
+from MarcRecordDataCallNumber mrcn
+join (
+	select mrf.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, mrf.marcRecordProviderTypeId
+	from MarcRecordDataSubField sub
+	join MarcRecordDataField mrf on mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId and mrf.marcRecordProviderTypeId = 2
+	where mrf.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
+	group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
+) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
+join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.marcRecordDataSubFieldsId 
+";
         #endregion
 
-        #region "LC Queries"
-        public int UpdateLcMarcRecordFiles()
-        {
-            var sql = _lcMarcRecordFileUpdateSql;
-
-            return ExecuteUpdateStatement(sql, null, true, Settings.Default.RittenhouseMarcDb);
-        }
-
-        public int InsertLcMarcRecordFiles()
-        {
-            var sql = _lcMarcRecordFileInsertSql;
-
-            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
-        }
-
-        public List<LcMarcRecordFile> GetBatchedLcMarcRecordFiles(int batchSize)
+        public int BuildLcCallNumbers()
         {
             SqlConnection cnn = null;
             SqlCommand command = null;
-            SqlDataReader reader = null;
+            int callNumbersInserted = 0;
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+            
 
-            string sql = string.Format(_lcGetMarcRecordFileXml, batchSize);
-
-            List<LcMarcRecordFile> lcMarcRecordFiles = new List<LcMarcRecordFile>();
             try
             {
-                cnn = GetRittenhouseConnection();
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, LcCallNumberInsert, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                int rows = command.ExecuteNonQuery();
+                callNumbersInserted += rows;
+                stopwatch.Stop();
+                Log.Debug($"LC Call Numbers Inserted: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
 
-                command.Parameters.AddWithValue("BatchSize", batchSize);
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, LcCallNumberUpdate, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                rows = command.ExecuteNonQuery();
+                callNumbersInserted += rows;
+                stopwatch.Stop();
+                Log.Debug($"LC Call Numbers Updated: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                reader = command.ExecuteReader();
 
-                while (reader.Read())
-                {
-                    LcMarcRecordFile lcMarcRecordFile = new LcMarcRecordFile();
-                    lcMarcRecordFile.Populate(reader);
-                    lcMarcRecordFiles.Add(lcMarcRecordFile);
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, LcCategoryUpdate, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                var categoryRows = command.ExecuteNonQuery();
+                stopwatch.Stop();
+                Log.Debug($"LC Categories Updated: {categoryRows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                }
+                return callNumbersInserted;
             }
             catch (Exception ex)
             {
-                Log.InfoFormat("sql: {0}", sql);
+                LogCommandInfo(command);
                 Log.Error(ex.Message, ex);
                 throw;
             }
             finally
             {
-                DisposeConnections(cnn, command, reader);
+                DisposeConnections(cnn, command);
             }
-            return lcMarcRecordFiles;
         }
 
-        public int UpdateLcCallNumbers(List<LcMarcRecordFile> lcMarcRecordFiles)
-        {
-            List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>();
-            StringBuilder sql = new StringBuilder();
-            for (int i = 0; i < lcMarcRecordFiles.Count; i++)
-            {
-                sql.AppendFormat(_lcUpdateMarcRecordFileCallNumber, i);
 
-                parameters.Add(new StringParameter(string.Format("LcCallNumber_{0}", i), lcMarcRecordFiles[i].LcCallNumber));
-                parameters.Add(new Int32Parameter(string.Format("LcMarcRecordFileId_{0}", i), lcMarcRecordFiles[i].Id));
-            }
-            return ExecuteUpdateStatement(sql.ToString(), parameters.ToArray(), false, Settings.Default.RittenhouseMarcDb);
-        }
-        #endregion
-
-        #region "NLM Queries"
-        public int UpdateNlmMarcRecordFiles()
-        {
-            var sql = _nlmMarcRecordFileUpdateSql;
-
-            return ExecuteUpdateStatement(sql, null, true, Settings.Default.RittenhouseMarcDb);
-        }
-
-        public int InsertNlmMarcRecordFiles()
-        {
-            var sql = _nlmMarcRecordFileInsertSql;
-
-            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
-        }
-
-        public List<NlmMarcRecordFile> GetBatchedNlmMarcRecordFiles(int batchSize)
+        public int BuildNlmCallNumbers()
         {
             SqlConnection cnn = null;
             SqlCommand command = null;
-            SqlDataReader reader = null;
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+            int callNumbersInserted = 0;
 
-            string sql = string.Format(_nlmGetMarcRecordFileXml, batchSize);
-
-            List<NlmMarcRecordFile> nlmMarcRecordFiles = new List<NlmMarcRecordFile>();
             try
             {
-                cnn = GetRittenhouseConnection();
+                Stopwatch stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, NlmCallNumberInsert, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                int rows = command.ExecuteNonQuery();
+                callNumbersInserted += rows;
+                stopwatch.Stop();
+                Log.Debug($"NLM Call Numbers Inserted: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
 
-                command.Parameters.AddWithValue("BatchSize", batchSize);
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, NlmCallNumberUpdate, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                rows = command.ExecuteNonQuery();
+                callNumbersInserted += rows;
+                stopwatch.Stop();
+                Log.Debug($"NLM Call Numbers Updated: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                reader = command.ExecuteReader();
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
+                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
+                command = GetSqlCommand(cnn, NlmCategoryUpdate, new ISqlCommandParameter[0], 300);
+                LogCommandDebug(command);
+                var categoryRows = command.ExecuteNonQuery();
+                stopwatch.Stop();
+                Log.Debug($"NLM Categories effected: {categoryRows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-                while (reader.Read())
-                {
-                    NlmMarcRecordFile nlmMarcRecordFile = new NlmMarcRecordFile();
-                    nlmMarcRecordFile.Populate(reader);
-                    nlmMarcRecordFiles.Add(nlmMarcRecordFile);
-
-                }
+                return callNumbersInserted;
             }
             catch (Exception ex)
             {
-                Log.InfoFormat("sql: {0}", sql);
+                LogCommandInfo(command);
                 Log.Error(ex.Message, ex);
                 throw;
             }
             finally
             {
-                DisposeConnections(cnn, command, reader);
+                DisposeConnections(cnn, command);
             }
-            return nlmMarcRecordFiles;
         }
 
-        public int UpdateNlmCallNumbers(List<NlmMarcRecordFile> nlmMarcRecordFiles)
-        {
-            List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>();
-            StringBuilder sql = new StringBuilder();
-            for (int i = 0; i < nlmMarcRecordFiles.Count; i++)
-            {
-                sql.AppendFormat(_nlmUpdateMarcRecordFileCallNumber, i);
-
-                parameters.Add(new StringParameter(string.Format("NlmCallNumber_{0}", i), nlmMarcRecordFiles[i].NlmCallNumber));
-                parameters.Add(new Int32Parameter(string.Format("NlmMarcRecordFileId_{0}", i), nlmMarcRecordFiles[i].Id));
-            }
-            return ExecuteUpdateStatement(sql.ToString(), parameters.ToArray(), false, Settings.Default.RittenhouseMarcDb);
-        }
-
-        public int GetNlmCallNumberCount()
-        {
-            List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>();
-
-            var sql = _nlmMarcFilesNeedToBeParseCount;
-            return ExecuteBasicCountQuery(sql, parameters, false, Settings.Default.RittenhouseMarcDb);
-        }
-        #endregion
 
 
 
 
-
-        private readonly string InsertNlmFields = @"
-select top {0} mr.marcRecordId, mrf.fileData, par.dateCreated, mrp.dateCreated, mrp.dateUpdated
+        private readonly string GetExternalMarcRecords = @"
+select top {0} mr.marcRecordId, mrf.fileData, par.dateCreated, mrp.dateCreated, mrp.dateUpdated, mrpt.marcRecordProviderTypeId
 from MarcRecordFile mrf
 join MarcRecordProvider mrp on mrf.marcRecordProviderId = mrp.marcRecordProviderId
 join MarcRecord mr on mr.marcRecordId = mrp.marcRecordId
@@ -292,10 +270,8 @@ order by 1
                 cnn = GetRittenhouseConnection();
 
                 command = cnn.CreateCommand();
-                command.CommandText = string.Format(InsertNlmFields, batchSize);
+                command.CommandText = string.Format(GetExternalMarcRecords, batchSize);
                 command.CommandTimeout = 150;
-
-                //command.Parameters.AddWithValue("BatchSize", batchSize);
 
                 reader = command.ExecuteReader();
 
@@ -309,7 +285,7 @@ order by 1
             }
             catch (Exception ex)
             {
-                Log.InfoFormat("sql: {0}", InsertNlmFields);
+                Log.InfoFormat("sql: {0}", GetExternalMarcRecords);
                 Log.Error(ex.Message, ex);
                 throw;
             }
@@ -322,91 +298,4 @@ order by 1
     }
 
 
-
-
-    public class MarcRecordData : FactoryBase, IDataEntity
-    {
-        public int MarcRecordId { get; set; }
-        public string FileData { get; set; }
-
-        //public List<MarcRecordField> MarcRecordFields { get; set; }
-
-        public void Populate(SqlDataReader reader)
-        {
-            try
-            {
-                MarcRecordId = GetInt32Value(reader, "marcRecordId", -1);
-                FileData = GetStringValue(reader, "fileData");
-            }
-            catch (Exception ex)
-            {
-                Log.ErrorFormat(ex.Message, ex);
-                throw;
-            }
-        }
-    }
-
-    //public class MarcRecordField
-    //{
-    //    public string Identifier { get; set; }
-    //    public string Value { get; set; }
-
-    //    public string EntireField { get; set; }
-    //}
-
-
-    public class MarcRecordDataField : FactoryBase, IDataEntity
-    {
-        public MarcRecordDataField()
-        {
-            MarcRecordDataSubFields = new List<MarcRecordDataSubField>();
-        }
-        public int Id { get; set; }
-        public int MarcRecordId { get; set; }
-        public string FieldNumber { get; set; }
-        public string FieldIndicator { get; set; }
-        public string MarcValue { get; set; }
-        public List<MarcRecordDataSubField> MarcRecordDataSubFields { get; set; }
-        public void Populate(SqlDataReader reader)
-        {
-            try
-            {
-                Id = GetInt32Value(reader, "marcRecordDataFieldId", -1);
-                MarcRecordId = GetInt32Value(reader, "marcRecordId", -1);
-                FieldNumber = GetStringValue(reader, "fieldNumber");
-                FieldIndicator = GetStringValue(reader, "fieldIndicator");
-                MarcValue = GetStringValue(reader, "marcValue");
-            }
-            catch (Exception ex)
-            {
-                Log.ErrorFormat(ex.Message, ex);
-                throw;
-            }
-        }
-    }
-
-    public class MarcRecordDataSubField : FactoryBase, IDataEntity
-    {
-        public int Id { get; set; }
-        public int MarcRecordDataFieldId{ get; set; }
-        public string SubFieldIndicator { get; set; }
-        public string SubFieldValue { get; set; }
-
-
-        public void Populate(SqlDataReader reader)
-        {
-            try
-            {
-                Id = GetInt32Value(reader, "marcRecordDataSubFieldsId", -1);
-                MarcRecordDataFieldId = GetInt32Value(reader, "marcRecordDataFieldId", -1);
-                SubFieldIndicator = GetStringValue(reader, "subFieldIndicator");
-                SubFieldValue = GetStringValue(reader, "subFieldValue");
-            }
-            catch (Exception ex)
-            {
-                Log.ErrorFormat(ex.Message, ex);
-                throw;
-            }
-        }
-    }
 }

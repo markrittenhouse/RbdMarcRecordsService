@@ -15,6 +15,7 @@ GO
 CREATE TABLE [dbo].[MarcRecordDataField](
 	[marcRecordDataFieldId] [int] NOT NULL,
 	[marcRecordId] [int] NOT NULL,
+	[marcRecordProviderTypeId] [int] NOT NULL,
 	[fieldNumber] [varchar](10) NOT NULL,
 	[fieldIndicator] [varchar](10) NULL,
 	[marcValue] [varchar](max) NOT NULL,
