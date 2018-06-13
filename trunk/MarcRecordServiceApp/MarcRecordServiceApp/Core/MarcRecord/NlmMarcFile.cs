@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Tasks.MarcRecords;
 
@@ -26,5 +27,6 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 
         public bool IsProviderUpdate { get; set; }
         public bool IsFileUpdate { get; set; }
+        public List<AdditionalField> AdditionalFields { get; set; }
     }
 }

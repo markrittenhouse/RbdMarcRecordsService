@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
+using MarcRecordServiceApp.Core.MarcRecord;
 using Rittenhouse.RBD.Core.DataAccess.Entities;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Entities
@@ -35,6 +36,8 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
         public IEnumerable<R2Author> AuthorList { get; set; }
         public IEnumerable<R2Category> Categories { get; set; }
         public IEnumerable<R2SubCategory> SubCategories { get; set; }
+
+        public List<AdditionalField> AdditionalFields { get; set; }
 
         public void Populate(SqlDataReader reader)
         {

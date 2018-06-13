@@ -252,7 +252,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories.Base
         /// <param name="tableName"></param>
         /// <param name="connectionString"></param>
         /// <returns></returns>
-        protected static int ExecuteTrancateTable(string tableName, string connectionString)
+        protected static int ExecuteTruncateTable(string tableName, string connectionString)
         {
             SqlConnection cnn = null;
             SqlCommand command = null;

@@ -14,11 +14,13 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 {
     public class MarcRecordService
     {
-        private MarcRecordProviderType _marcRecordType;
+        private readonly MarcRecordProviderType _marcRecordType;
+
         public MarcRecordService(MarcRecordProviderType type)
         {
             _marcRecordType = type;
         }
+
         private readonly Random _random = new Random();
         private readonly DateTime _currentDateTime = DateTime.Now;
 
@@ -31,10 +33,9 @@ namespace MarcRecordServiceApp.Core.MarcRecord
             //Loop five times if a failure
             while (processAttempts < 5)
             {
-                IResultSet resultSet;
                 try
                 {
-                    int queryLoopCount = 0;
+                    //int queryLoopCount = 0;
                     Stopwatch timer = new Stopwatch();
                     timer.Start();
                     MARC21 marc21 = new MARC21();
@@ -58,8 +59,9 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                             Log.Info("Zoom-Connected");
                             foreach (string query in queries)
                             {
-                                queryLoopCount++;
+                                //queryLoopCount++;
                                 PrefixQuery prefixQuery = new PrefixQuery(query);
+                                IResultSet resultSet;
                                 using (resultSet = lcConnection.Search(prefixQuery))
                                 {
                                     foreach (IRecord record in resultSet)
@@ -77,8 +79,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 
                                         foreach (string isbn in isbns)
                                         {
-                                            var marcFile = marcFiles.FirstOrDefault(x =>
-                                                x.Product.Isbn10 == isbn || x.Product.Isbn13 == isbn);
+                                            var marcFile = marcFiles.FirstOrDefault(x => x.Product.Isbn10 == isbn || x.Product.Isbn13 == isbn);
                                             if (marcFile != null)
                                             {
                                                 marcFile.MrcFileText = mrcFileText;
@@ -98,17 +99,9 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                     }
                     else
                     {
-                        //MarcFieldParsingFactory marcFieldParsingFactory = new MarcFieldParsingFactory();
-                        //var skuList = marcFiles.Select(x => x.Product.Sku).ToList();
-                        //List<ParsedMarcField> allParsedMarcFields = marcFieldParsingFactory.GetParsedMarcFields(skuList);
-                        //MARC21 marc21 = new MARC21();
-
                         foreach (IMarcFile marcFile in marcFiles)
                         {
-                            //List<ParsedMarcField> parsedMarcFields = allParsedMarcFields?.Where(x => x.Sku == marcFile.Product.Sku).ToList();
-
-                            Product product = marcFile.Product;
-                            string mrkFileText = GetRbdMrkFileText(product);
+                            string mrkFileText = GetRbdMrkFileText2(marcFile);
                             string mrcFileText = marc21.Mnemonic2Stream(mrkFileText);
                             string xmlFileText = marc21.MARC2MARC21XML_Stream(mrcFileText, false);
 
@@ -119,8 +112,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                         }
                     }
 
-                    Log.Info(
-                        $"GetMarcRecords --- It took {timer.ElapsedMilliseconds}ms to set {foundRecords} out of {marcFiles.Count} Marc Records");
+                    Log.Info($"GetMarcRecords --- It took {timer.ElapsedMilliseconds}ms to set {foundRecords} out of {marcFiles.Count} Marc Records");
                     break;
                 }
                 catch (Exception ex)
@@ -151,8 +143,10 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                     {
                         orBuilder.Append("@or ");
                     }
+
                     queryBuilder.Append($" @attr 1=7 {marcRecord.Product.Isbn13 ?? marcRecord.Product.Isbn10} ");
                 }
+
                 queries.Add($"{orBuilder}{queryBuilder}");
 
                 skipCounter++;
@@ -173,41 +167,50 @@ namespace MarcRecordServiceApp.Core.MarcRecord
 
                 List<string> isbns = new List<string>();
 
-                foreach (XmlNode node in xmlNodeList.Cast<XmlNode>().Where(node => node.Attributes != null && Convert.ToInt32(node.Attributes["tag"].InnerText) == 20))
+                foreach (XmlNode node in xmlNodeList.Cast<XmlNode>().Where(node =>
+                    node.Attributes != null && Convert.ToInt32(node.Attributes["tag"].InnerText) == 20))
                 {
                     if (node.HasChildNodes)
                     {
                         foreach (XmlNode xmlNode in node.ChildNodes)
                         {
-                            string nodeInnterText = xmlNode.InnerText.Replace(".", "");
-                            int space = nodeInnterText.IndexOf(" ");
-                            int seperator = nodeInnterText.IndexOf("(");
-                            if (space > 0 || seperator > 0)
+                            string nodeInnerText = xmlNode.InnerText.Replace(".", "");
+                            if (!string.IsNullOrWhiteSpace(nodeInnerText))
                             {
-                                isbns.Add(space > 0
-                                          ? nodeInnterText.Substring(0, space)
-                                          : nodeInnterText.Substring(0, nodeInnterText.IndexOf("(")));
+                                int space = nodeInnerText.IndexOf(" ", StringComparison.Ordinal);
+                                int seperator = nodeInnerText.IndexOf("(", StringComparison.Ordinal);
+                                if (space > 0 || seperator > 0)
+                                {
+                                    isbns.Add(space > 0
+                                        ? nodeInnerText.Substring(0, space)
+                                        : nodeInnerText.Substring(0, seperator));
+                                }
+                                else
+                                {
+                                    isbns.Add(nodeInnerText);
+                                }
                             }
-                            else
-                            {
-                                isbns.Add(nodeInnterText);
-                            }
+                            
                         }
                     }
                     else
                     {
-                        string nodeInnterText = node.InnerText.Replace(".", "");
-                        if (nodeInnterText.Length > 13)
+                        string nodeInnerText = node.InnerText.Replace(".", "");
+                        if (!string.IsNullOrWhiteSpace(nodeInnerText))
                         {
-                            int space = nodeInnterText.IndexOf(" ");
-                            isbns.Add(space > 0
-                                          ? nodeInnterText.Substring(0, space)
-                                          : nodeInnterText.Substring(0, node.InnerText.IndexOf("(")));
+                            if (nodeInnerText.Length > 13)
+                            {
+                                int space = nodeInnerText.IndexOf(" ", StringComparison.Ordinal);
+                                isbns.Add(space > 0
+                                    ? nodeInnerText.Substring(0, space)
+                                    : nodeInnerText.Substring(0, node.InnerText.IndexOf("(", StringComparison.Ordinal)));
+                            }
+                            else
+                            {
+                                isbns.Add(nodeInnerText);
+                            }
                         }
-                        else
-                        {
-                            isbns.Add(nodeInnterText);
-                        }
+                        
                     }
                 }
 
@@ -220,89 +223,131 @@ namespace MarcRecordServiceApp.Core.MarcRecord
             }
         }
 
-        private string GetRbdMrkFileText(Product product)
+        //private string GetRbdMrkFileText(Product product)
+        //{
+        //    try
+        //    {
+        //        string publicationYearText = product.PublicationYearText;
+
+        //        if (publicationYearText == "")
+        //        {
+        //            Log.Debug($"Id: {product.Id}, Sku: {product.Sku}, Isbn13: {product.Isbn13}");
+        //        }
+
+        //        StringBuilder mrkFileText = new StringBuilder();
+        //        string sitepath = Settings.Default.SiteSubDirectory;
+
+        //        mrkFileText.AppendLine(
+        //            $"=LDR  {GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500");
+
+        //        Log.Debug(
+        //            $"PublicationYearText: {product.PublicationYearText}, PublicationYear: {product.PublicationYear}, sku: {product.Sku}");
+
+        //        string line008 =
+        //            $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
+
+        //        Log.DebugFormat("line008: {0}", line008);
+        //        Log.DebugFormat("line008.Length: {0}", line008.Length);
+
+        //        mrkFileText.AppendLine($"=001  {product.Sku}");
+        //        mrkFileText.AppendLine($"=005  {DateTime.Now:yyyyMMddhhmmss}.0");
+        //        mrkFileText.AppendLine(line008);
+
+
+
+        //        if (!string.IsNullOrWhiteSpace(product.Isbn10))
+        //        {
+        //            mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn10}");
+        //        }
+
+        //        if (!string.IsNullOrWhiteSpace(product.Isbn13))
+        //        {
+        //            mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn13}");
+        //        }
+
+        //        mrkFileText.AppendLine("=037  \\\\$bRittenhouse Book Distributors, Inc");
+
+
+        //        mrkFileText.AppendLine($"=100  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
+        //        mrkFileText.AppendLine($"=245  10$a{StripOffCarriageReturnAndLineFeed(product.Title)}");
+        //        mrkFileText.AppendLine($"=260  \\\\$b{product.PublisherName},$c{publicationYearText}");
+        //        mrkFileText.AppendLine(
+        //            $"=533  \\\\$a{product.Format}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{publicationYearText}");
+        //        mrkFileText.AppendLine($"=650  \\4$a{product.CategoryName}.");
+
+
+        //        mrkFileText.AppendLine($"=700  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
+        //        mrkFileText.AppendLine(
+        //                $"=856  4\\$zConnect to this resource online$u{sitepath}Products/Book.aspx?sku={product.Isbn10}")
+        //            .AppendLine();
+
+
+        //        return mrkFileText.ToString();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        if (product != null)
+        //        {
+        //            Log.Info(product.ToString());
+        //            Log.InfoFormat("Id: {0}", product.Id);
+        //            Log.InfoFormat("Sku: {0}", product.Sku);
+        //            Log.InfoFormat("Isbn10: {0}", product.Isbn10);
+        //            Log.InfoFormat("Isbn13: {0}", product.Isbn13);
+        //            Log.InfoFormat("Title: {0}", product.Title);
+        //            Log.InfoFormat("Authors: {0}", product.Authors);
+        //            Log.InfoFormat("PublicationYearText: {0}", product.PublicationYearText);
+        //            Log.InfoFormat("PublicationDate: {0}", product.PublicationDate);
+        //            Log.InfoFormat("Copyright: {0}", product.Copyright);
+        //            Log.InfoFormat("Format: {0}", product.Format);
+        //            Log.InfoFormat("CategoryName: {0}", product.CategoryName);
+        //        }
+        //        else
+        //        {
+        //            Log.Info("Product is null!");
+        //        }
+
+        //        Log.Error(ex.Message, ex);
+        //        throw;
+        //    }
+
+        //}
+
+        private string GetRbdMrkFileText2(IMarcFile marcFile)
         {
+            Product product = marcFile.Product;
+            List<AdditionalField> additionalFields = marcFile.AdditionalFields;
             try
             {
-                string publicationYearText = product.PublicationYearText;
-
-                if (publicationYearText == "")
-                {
-                    Log.Debug($"Id: {product.Id}, Sku: {product.Sku}, Isbn13: {product.Isbn13}");
-                }
-
                 StringBuilder mrkFileText = new StringBuilder();
                 string sitepath = Settings.Default.SiteSubDirectory;
 
-                mrkFileText.AppendLine($"=LDR  {GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500");
+                mrkFileText.AppendMarcValue($"{GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500",additionalFields);
+                mrkFileText.AppendMarcValue(product.Sku, additionalFields, 1);
+                mrkFileText.AppendMarcValue($"{DateTime.Now:yyyyMMddhhmmss}.0", additionalFields, 5);
+                mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",additionalFields, 8);
 
-                Log.Debug($"PublicationYearText: {product.PublicationYearText}, PublicationYear: {product.PublicationYear}, sku: {product.Sku}");
-
-
-                string line008 = $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
-
-                Log.DebugFormat("line008: {0}", line008);
-                Log.DebugFormat("line008.Length: {0}", line008.Length);
-
-                mrkFileText.AppendLine($"=001  {product.Sku}");
-                mrkFileText.AppendLine($"=005  {DateTime.Now:yyyyMMddhhmmss}.0");
-                mrkFileText.AppendLine(line008);
 
                 if (!string.IsNullOrWhiteSpace(product.Isbn10))
                 {
-                    mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn10}");
+                    mrkFileText.AppendMarcValue($"\\\\$a{product.Isbn10}", additionalFields, 20);
                 }
 
                 if (!string.IsNullOrWhiteSpace(product.Isbn13))
                 {
-                    mrkFileText.AppendLine($"=020  \\\\$a{product.Isbn13}");
+                    mrkFileText.AppendMarcValue($"\\\\$a{product.Isbn13}", additionalFields, 20);
                 }
 
-                //var parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.OclcNumber).ToList();
-                //if (parsedMarcFields != null && parsedMarcFields.Any())
-                //{
-                //    foreach (var parsedMarcField in parsedMarcFields)
-                //    {
-                //        mrkFileText.AppendLine(parsedMarcField.Value);
-                //    }
-                //}
+                mrkFileText.AppendMarcValue("\\\\$bRittenhouse Book Distributors, Inc", additionalFields, 37);
+                mrkFileText.AppendMarcValue($"1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}",additionalFields, 100);
+                mrkFileText.AppendMarcValue($"10$a{StripOffCarriageReturnAndLineFeed(product.Title)}", additionalFields,245);
+                mrkFileText.AppendMarcValue($"\\\\$b{product.PublisherName}{(string.IsNullOrWhiteSpace(product.PublicationYearText) ? "" : $",$c{product.PublicationYearText}")}", additionalFields,260);
+                mrkFileText.AppendMarcValue($"\\\\$a{product.Format}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc{(string.IsNullOrWhiteSpace(product.PublicationYearText) ? "" : $",$d{product.PublicationYearText}")}",additionalFields, 533);
+                mrkFileText.AppendMarcValue($"\\4$a{product.CategoryName}.", additionalFields, 650);
 
-                mrkFileText.AppendLine("=037  \\\\$bRittenhouse Book Distributors, Inc");
-
-                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.NlmNumber).ToList();
-                //if (parsedMarcFields != null && parsedMarcFields.Any())
-                //{
-                //    foreach (var parsedMarcField in parsedMarcFields)
-                //    {
-                //        mrkFileText.AppendLine(parsedMarcField.Value);
-                //    }
-                //}
-
-                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.LcNumber).ToList();
-                //if (parsedMarcFields != null && parsedMarcFields.Any())
-                //{
-                //    foreach (var parsedMarcField in parsedMarcFields)
-                //    {
-                //        mrkFileText.AppendLine(parsedMarcField.Value);
-                //    }
-                //}
-                mrkFileText.AppendLine($"=100  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
-                mrkFileText.AppendLine($"=245  10$a{StripOffCarriageReturnAndLineFeed(product.Title)}");
-                mrkFileText.AppendLine($"=260  \\\\$b{product.PublisherName},$c{publicationYearText}");
-                mrkFileText.AppendLine($"=533  \\\\$a{product.Format}.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{publicationYearText}");
-                mrkFileText.AppendLine($"=650  \\4$a{product.CategoryName}.");
-
-
-                //parsedMarcFields = marcFieldsToAdd?.Where(x => x.Type == MarcFieldType.NlmSubject).ToList();
-                //if (parsedMarcFields != null && parsedMarcFields.Any())
-                //{
-                //    foreach (var parsedMarcField in parsedMarcFields)
-                //    {
-                //        mrkFileText.AppendLine(parsedMarcField.Value);
-                //    }
-                //}
-                mrkFileText.AppendLine($"=700  1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}");
-                mrkFileText.AppendLine($"=856  4\\$zConnect to this resource online$u{sitepath}Products/Book.aspx?sku={product.Isbn10}").AppendLine();
+                mrkFileText.AppendMarcValue($"1\\$a{StripOffCarriageReturnAndLineFeed(product.Authors)}",additionalFields, 700);
+                mrkFileText.AppendMarcValue($"4\\$zConnect to this resource online$u{sitepath}Products/Book.aspx?sku={product.Isbn10}",additionalFields, 856);
+                mrkFileText.AppendMarcValue(additionalFields);
+                mrkFileText.AppendLine();
 
                 return mrkFileText.ToString();
             }
@@ -327,10 +372,139 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                 {
                     Log.Info("Product is null!");
                 }
+
                 Log.Error(ex.Message, ex);
                 throw;
             }
+        }
 
+
+        public R2LibraryMarcFile GetR2LibraryMarcFile(R2Resource resource)
+        {
+            List<AdditionalField> additionalFields = resource.AdditionalFields;
+
+            StringBuilder mrkFileText = new StringBuilder();
+
+            mrkFileText.AppendMarcValue($"{GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500", additionalFields);
+            mrkFileText.AppendMarcValue(resource.Isbn, additionalFields, 1);
+            mrkFileText.AppendMarcValue($"{DateTime.Now:yyyyMMddhhmmss}.0", additionalFields, 5);
+            mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{resource.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ", additionalFields, 8);
+
+
+
+            var firstAuthorString = resource.AuthorList.Any()
+                ? resource.AuthorList.First(x => x.Order == 1).ToDisplayName()
+                : resource.FirstAuthor;
+
+            if (!string.IsNullOrWhiteSpace(resource.Isbn10))
+            {
+                mrkFileText.AppendMarcValue($"\\\\$a{resource.Isbn10}", additionalFields, 20);
+            }
+
+            if (!string.IsNullOrWhiteSpace(resource.Isbn13))
+            {
+                mrkFileText.AppendMarcValue($"\\\\$a{resource.Isbn13}", additionalFields, 20);
+            }
+
+            if (!string.IsNullOrWhiteSpace(resource.EIsbn))
+            {
+                mrkFileText.AppendMarcValue($"\\\\$a{resource.EIsbn}", additionalFields, 20);
+
+            }
+
+            mrkFileText.AppendMarcValue("\\\\$bRittenhouse Book Distributors, Inc", additionalFields, 37);
+            mrkFileText.AppendMarcValue($"1\\$a{StripOffCarriageReturnAndLineFeed(firstAuthorString)}", additionalFields, 100);
+            mrkFileText.AppendMarcValue($"10$a{StripOffCarriageReturnAndLineFeed(resource.Title)}", additionalFields, 245);
+            mrkFileText.AppendMarcValue($"\\\\$b{resource.PublisherName},$c{resource.PublicationYear}", additionalFields, 260);
+
+
+            mrkFileText.AppendMarcValue("\\\\$a online resource", additionalFields, 300);
+            mrkFileText.AppendMarcValue($"\\\\$aeBook.$bKing of Prussia, PA:$cRittenhouse Book Distributors, Inc,$d{resource.PublicationYear}", additionalFields, 533);
+            mrkFileText.AppendMarcValue("\\\\$a Mode of Access: World Wide Web", additionalFields, 538);
+
+
+            WriteCategories(mrkFileText, resource, additionalFields); //650
+
+            mrkFileText.AppendMarcValue("\\4$a Electronic books", additionalFields, 655);
+
+            if (resource.AuthorList != null)
+            {
+                foreach (var r2Author in resource.AuthorList)
+                {
+                    mrkFileText.AppendMarcValue($"1\\$a{r2Author.ToDisplayName()}", additionalFields, 700);
+                }
+            }
+            else
+            {
+                mrkFileText.AppendMarcValue($"1\\$a{resource.FirstAuthor}", additionalFields, 700);
+            }
+
+            mrkFileText.AppendMarcValue($"4\\$zConnect to this resource online$u{Settings.Default.R2WebSite}{resource.Isbn}", additionalFields, 856);
+
+            mrkFileText.AppendMarcValue(additionalFields);
+
+            return new R2LibraryMarcFile
+            {
+                MrkText = mrkFileText.ToString(),
+                ProviderSourceId = 4,
+                Isbn = resource.Isbn,
+                Isbn10 = resource.Isbn10,
+                Isbn13 = resource.Isbn13,
+                EIsbn = resource.EIsbn
+            };
+        }
+
+        public static void WriteCategories(StringBuilder mrkFileText, R2Resource resource, List<AdditionalField> additionalFields)
+        {
+            if (resource.Categories != null || resource.SubCategories != null)
+            {
+                var categories = resource.Categories?.ToList();
+                var subCategories = resource.SubCategories?.ToList();
+                if (categories != null && subCategories != null)
+                {
+                    if (categories.Count == subCategories.Count)
+                    {
+                        for (int i = 0; i < categories.Count; i++)
+                        {
+                            mrkFileText.AppendMarcValue($"\\4$a{categories[i].Category}$x{subCategories[i].SubCategory}", additionalFields,650);
+                        }
+                    }
+                    else if (categories.Count > subCategories.Count && subCategories.Count == 1)
+                    {
+                        if (subCategories.Count == 1)
+                        {
+                            foreach (var r2Category in categories)
+                            {
+                                mrkFileText.AppendMarcValue($"\\4$a{r2Category.Category}$x{subCategories[0].SubCategory}", additionalFields,650);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (var r2Category in categories)
+                        {
+                            foreach (var r2SubCategory in subCategories)
+                            {
+                                mrkFileText.AppendMarcValue($"\\4$a{r2Category.Category}$x{r2SubCategory.SubCategory}",additionalFields, 650);
+                            }
+                        }
+                    }
+                }
+                else if (categories != null) //subCategories == null
+                {
+                    foreach (var r2Category in categories)
+                    {
+                        mrkFileText.AppendMarcValue($"\\4$a{r2Category.Category}", additionalFields, 650);
+                    }
+                }
+                else
+                {
+                    foreach (var r2SubCategories in subCategories)
+                    {
+                        mrkFileText.AppendMarcValue($"\\4$a{r2SubCategories.SubCategory}", additionalFields, 650);
+                    }
+                }
+            }
         }
 
         public string StripOffCarriageReturnAndLineFeed(string value)
@@ -339,6 +513,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
             {
                 return value;
             }
+
             return value.Replace("\r", string.Empty).Replace("\n", string.Empty);
         }
 
@@ -347,5 +522,52 @@ namespace MarcRecordServiceApp.Core.MarcRecord
             int next = _random.Next(10000, 99999);
             return next;
         }
+    }
+
+    public static class StringBuilderExtension
+    {
+        public static void AppendMarcValue(this StringBuilder sb, string fieldValue,
+            List<AdditionalField> additionalFields, int fieldNumber = 0)
+        {
+            if (fieldNumber == 0)
+            {
+                sb.AppendLine($"=LDR  {fieldValue}");
+            }
+            else
+            {
+                if (additionalFields != null && additionalFields.Any())
+                {
+                    var additionalFieldsFound = additionalFields.Where(x => x.FieldNumber < fieldNumber).ToList();
+                    if (additionalFieldsFound.Any())
+                    {
+                        additionalFieldsFound = additionalFieldsFound.OrderBy(x => x.FieldNumber).ToList();
+                        foreach (var additionalField in additionalFieldsFound)
+                        {
+                            sb.AppendLine(additionalField.Value);
+                            additionalFields.Remove(additionalField);
+                        }
+                    }
+                }
+
+
+                sb.AppendLine($"={fieldNumber:000}  {fieldValue}");
+            }
+        }
+
+        public static void AppendMarcValue(this StringBuilder sb, List<AdditionalField> additionalFields)
+        {
+
+            if (additionalFields != null && additionalFields.Any())
+            {
+                additionalFields = additionalFields.OrderBy(x => x.FieldNumber).ToList();
+                foreach (var additionalField in additionalFields)
+                {
+                    sb.AppendLine(additionalField.Value);
+                }
+            }
+
+
+        }
+
     }
 }

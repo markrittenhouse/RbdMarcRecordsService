@@ -4,7 +4,9 @@ namespace MarcRecordServiceApp.Core.MarcRecord
     {        
         Lc = 1,    
         Nlm = 2,
-        Rbd = 3
+        Rbd = 3,
+        R2Library = 4,
+
     }
     public class MarcRecordProviderValue
     {
@@ -19,7 +21,10 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                   case MarcRecordProviderType.Nlm:
                     _provider = "ilsz3950.nlm.nih.gov";
                     break;
-                  case MarcRecordProviderType.Rbd:
+                case MarcRecordProviderType.Rbd:
+                    _provider = "";
+                    break;
+                case MarcRecordProviderType.R2Library:
                     _provider = "";
                     break;
             }

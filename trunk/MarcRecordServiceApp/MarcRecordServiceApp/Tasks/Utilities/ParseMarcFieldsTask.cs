@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
 
-namespace MarcRecordServiceApp.Tasks.MarcRecords
+namespace MarcRecordServiceApp.Tasks.Utilities
 {
     public class ParseMarcFieldsTask : TaskBase2
     {

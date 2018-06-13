@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 {
     public class R2ProductFactory : FactoryBase
     {
+        private SqlBulkCopyFactory _sqlBulkCopyFactory;
+
+        public R2ProductFactory()
+        {
+            _sqlBulkCopyFactory = new SqlBulkCopyFactory();
+        }
         private string GetAllResources()
         {
             return new StringBuilder()
@@ -93,6 +100,14 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             return sql;
         }
 
+        private readonly string _additionalDataFieldsQuery = $@"
+select r.vchIsbn13 as sku, amf.marcValue, amf.fieldNumber, amf.marcRecordId
+from {Settings.Default.R2DatabaseName}..tResource r
+join MarcRecord mr on r.vchIsbn13 = mr.isbn13
+join AdditionalMarcField amf on mr.marcRecordId = amf.marcRecordId
+
+";
+
         private string GetNlmAndLcMarcRecords()
         {
             return new StringBuilder()
@@ -142,6 +157,8 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append(GetAllResourcesCategories())
                 .Append("; ")
                 .Append(GetAllResourcesSubCategories())
+                .Append("; ")
+                .Append(_additionalDataFieldsQuery)
                 .ToString();
 
             try
@@ -156,6 +173,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 List<R2Author> r2Authors = new List<R2Author>();
                 List<R2Category> r2Categories = new List<R2Category>();
                 List<R2SubCategory> r2SubCategories = new List<R2SubCategory>();
+                List<AdditionalField> addionalFields = new List<AdditionalField>();
 
                 reader = command.ExecuteReader();
                 while (reader.Read())
@@ -192,12 +210,23 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                     }
                 }
 
-                foreach (var r2Resource in r2Resources)
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        AdditionalField additionalField = new AdditionalField();
+                        additionalField.Populate(reader);
+                        addionalFields.Add(additionalField);
+                    }
+                }
+
+                foreach (R2Resource r2Resource in r2Resources)
                 {
                     int resourceId = r2Resource.ResourceId;
                     r2Resource.AuthorList = r2Authors.Where(x => x.ResourceId == resourceId);
                     r2Resource.Categories = r2Categories.Where(x => x.ResourceId == resourceId);
                     r2Resource.SubCategories = r2SubCategories.Where(x => x.ResourceId == resourceId);
+                    r2Resource.AdditionalFields = addionalFields.Where(x => x.Sku == r2Resource.Isbn13).ToList();
                 }
 
                 return r2Resources;
@@ -442,9 +471,36 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
         public int TruncateWebR2LibraryMarcRecords()
         {
-            int rowCount = ExecuteTrancateTable("WebR2LibraryMarcRecords", Settings.Default.RittenhouseMarcDb);
+            int rowCount = ExecuteTruncateTable("WebR2LibraryMarcRecords", Settings.Default.RittenhouseMarcDb);
             return rowCount;
         }
+
+        public int InsertWebR2LibraryMarcRecords2(List<R2LibraryMarcFile> r2LibraryMarcFiles)
+        {
+            int rowCount = 0;
+            var dataTable = _sqlBulkCopyFactory.GetBulkInsertDataTable("WebR2LibraryMarcRecords");
+
+            foreach (var r2LibraryMarcFile in r2LibraryMarcFiles)
+            {
+                //isbn, isbn10, isbn13, eIsbn, marcRecordProviderTypeId, fileData, createdDate
+                DataRow row = dataTable.NewRow();
+
+                row.SetField(0, r2LibraryMarcFile.Isbn);
+                row.SetField(1, r2LibraryMarcFile.Isbn10);
+                row.SetField(2, r2LibraryMarcFile.Isbn13);
+                row.SetField(3, r2LibraryMarcFile.EIsbn);
+                row.SetField(4, r2LibraryMarcFile.ProviderSourceId);
+                row.SetField(5, r2LibraryMarcFile.MrkText);
+                row.SetField(6, r2LibraryMarcFile.CreatedDate);
+
+                dataTable.Rows.Add(row);
+                rowCount++;
+            }
+
+            _sqlBulkCopyFactory.BulkInsertData("WebR2LibraryMarcRecords", dataTable);
+            return rowCount;
+        }
+
 
         public int InsertWebR2LibraryMarcRecords(List<R2LibraryMarcFile> r2LibraryMarcFiles)
         {
