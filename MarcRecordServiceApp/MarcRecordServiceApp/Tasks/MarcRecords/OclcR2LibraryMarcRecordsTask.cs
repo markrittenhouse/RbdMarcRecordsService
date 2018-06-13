@@ -12,10 +12,10 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         private readonly R2ProductFactory _r2ProductFactory;
         private readonly DateTime _currentDateTime = DateTime.Now;
 
-        public OclcR2LibraryMarcRecordsTask(R2ProductFactory r2ProductFactory)
+        public OclcR2LibraryMarcRecordsTask()
             : base("Generate OCLC R2library MArC Records", "CreateOclcR2libraryMarcRecords")
         {
-            _r2ProductFactory = r2ProductFactory;
+            _r2ProductFactory = new R2ProductFactory();
         }
 
         public override void Run()

@@ -111,6 +111,7 @@
     <Compile Include="Core\DataAccess\Entities\R2Product.cs" />
     <Compile Include="Core\DataAccess\Entities\TaskResult.cs" />
     <Compile Include="Core\DataAccess\Entities\TaskResultStep.cs" />
+    <Compile Include="Core\DataAccess\Factories\AdditionalMarcFieldFactory.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\DbCommandHelper.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\DbConnectionHelper.cs" />
     <Compile Include="Core\DataAccess\Factories\Base\DbReaderHelper.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="Core\DataAccess\SqlCommandParameters\Int64Parameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\ISqlCommandParameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\StringParameter.cs" />
+    <Compile Include="Core\MarcRecord\AdditionalField.cs" />
     <Compile Include="Core\MarcRecord\IMarcFile.cs" />
     <Compile Include="Core\MarcRecord\LcMarcFile.cs" />
     <Compile Include="Core\MarcRecord\MARC21slim.cs" />
@@ -159,7 +161,8 @@
     <Compile Include="Tasks\MarcRecords\DailyMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\MarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\OclcR2LibraryMarcRecordsTask.cs" />
-    <Compile Include="Tasks\MarcRecords\ParseMarcFieldsTask.cs" />
+    <Compile Include="Tasks\Utilities\AdditionalMarcFieldTask.cs" />
+    <Compile Include="Tasks\Utilities\ParseMarcFieldsTask.cs" />
     <Compile Include="Tasks\MarcRecords\R2LibraryMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />

@@ -40,9 +40,9 @@ select mf.marcRecordId
 
         public void ClearMarcRecordDataFieldTables()
         {
-            ExecuteTrancateTable("MarcRecordDataSubField", Settings.Default.RittenhouseMarcDb);
+            ExecuteTruncateTable("MarcRecordDataSubField", Settings.Default.RittenhouseMarcDb);
             DropForeignKey();
-            ExecuteTrancateTable("MarcRecordDataField", Settings.Default.RittenhouseMarcDb);
+            ExecuteTruncateTable("MarcRecordDataField", Settings.Default.RittenhouseMarcDb);
             AddForeignKey();
         }
 
@@ -159,157 +159,8 @@ select mf.marcRecordId
             return lastColumnName;
         }
 
-//        public List<ParsedMarcField> GetParsedMarcFields(List<string> skus)
-//        {
-//            SqlConnection cnn = null;
-//            SqlCommand command = null;
-//            SqlDataReader reader = null;
 
-//            Stopwatch stopWatch = new Stopwatch();
-//            stopWatch.Start();
 
-//            List<ParsedMarcField> parsedMarcFields = new List<ParsedMarcField>();
-//            string lastSql = null;
-//            try
-//            {
-//                //String.Join(", ", isbnsNotFound)
-//                var skuString = String.Join(",", skus.Select(x=> $"'{x}'"));
-//                var sqlOclcNumber = $@"
-//select mf.marcValue, mr.sku
-//from MarcRecordDataField mf
-//join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-//join MarcRecord mr on mf.marcRecordId = mr.marcRecordId
-//where mf.fieldNumber = '035' and sub.subFieldIndicator = '$a' and sub.subFieldvalue like '%ocolc%'
-//and mr.sku in ({skuString})
-//group by mf.marcValue, mr.sku
-//order by mr.sku";
 
-//                var sqlNlmNumber = $@"
-//select mf.marcValue, mr.sku
-//from MarcRecordDataField mf
-//join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-//join MarcRecord mr on mf.marcRecordId = mr.marcRecordId
-//where mf.fieldNumber = '060' and sub.subFieldIndicator = '$a'
-//and mr.sku in ({skuString})
-//group by mf.marcValue, mr.sku
-//order by mr.sku";
-
-//                var sqlLcNumber = $@"
-//select mf.marcValue, mr.sku
-//from MarcRecordDataField mf
-//join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-//join MarcRecord mr on mf.marcRecordId = mr.marcRecordId
-//where mf.fieldNumber = '090' and sub.subFieldIndicator = '$a'
-//and mr.sku in ({skuString})
-//group by mf.marcValue, mr.sku
-//order by mr.sku";
-
-//                var sqlNlmSubjects = $@"
-//select mf.marcValue, mr.sku
-//from MarcRecordDataField mf
-//join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-//join MarcRecord mr on mf.marcRecordId = mr.marcRecordId
-//where mf.fieldNumber = '650' and mf.fieldIndicator in ('12', '\2')
-//and mr.sku in ({skuString})
-//group by mf.marcValue, mr.sku
-//order by mr.sku";
-
-//                lastSql = sqlOclcNumber;
-//                cnn = GetRittenhouseConnection();
-//                command = cnn.CreateCommand();
-//                command.CommandText = sqlOclcNumber;
-//                command.CommandTimeout = 150;
-//                reader = command.ExecuteReader();
-
-//                while (reader.Read())
-//                {
-//                    ParsedMarcField marcRecordData = new ParsedMarcField();
-//                    marcRecordData.Populate(reader, MarcFieldType.OclcNumber);
-//                    parsedMarcFields.Add(marcRecordData);
-//                }
-
-//                lastSql = sqlNlmNumber;
-//                cnn = GetRittenhouseConnection();
-//                command = cnn.CreateCommand();
-//                command.CommandText = sqlNlmNumber;
-//                command.CommandTimeout = 150;
-//                reader = command.ExecuteReader();
-
-//                while (reader.Read())
-//                {
-//                    ParsedMarcField marcRecordData = new ParsedMarcField();
-//                    marcRecordData.Populate(reader, MarcFieldType.NlmNumber);
-//                    parsedMarcFields.Add(marcRecordData);
-//                }
-
-//                lastSql = sqlLcNumber;
-//                cnn = GetRittenhouseConnection();
-//                command = cnn.CreateCommand();
-//                command.CommandText = sqlLcNumber;
-//                command.CommandTimeout = 150;
-//                reader = command.ExecuteReader();
-
-//                while (reader.Read())
-//                {
-//                    ParsedMarcField marcRecordData = new ParsedMarcField();
-//                    marcRecordData.Populate(reader, MarcFieldType.LcNumber);
-//                    parsedMarcFields.Add(marcRecordData);
-//                }
-
-//                lastSql = sqlNlmSubjects;
-//                cnn = GetRittenhouseConnection();
-//                command = cnn.CreateCommand();
-//                command.CommandText = sqlNlmSubjects;
-//                command.CommandTimeout = 150;
-//                reader = command.ExecuteReader();
-
-//                while (reader.Read())
-//                {
-//                    ParsedMarcField marcRecordData = new ParsedMarcField();
-//                    marcRecordData.Populate(reader, MarcFieldType.NlmSubject);
-//                    parsedMarcFields.Add(marcRecordData);
-//                }
-//            }
-//            catch (Exception ex)
-//            {
-//                Log.Info($"sql: {lastSql}");
-//                Log.Error(ex.Message, ex);
-//                throw;
-//            }
-//            finally
-//            {
-//                DisposeConnections(cnn, command, reader);
-//            }
-
-//            return parsedMarcFields;
-//        }
     }
-
-
-    //public class ParsedMarcField : FactoryBase, IDataEntity
-    //{
-    //    public MarcFieldType Type { get; set; }
-    //    public string Value { get; set; }
-    //    public string Sku { get; set; }
-
-    //    public void Populate(SqlDataReader reader)
-    //    {
-    //        throw new NotImplementedException();
-    //    }
-
-    //    public void Populate(SqlDataReader reader, MarcFieldType type)
-    //    {
-    //        Type = type;
-    //        Sku = GetStringValue(reader, "Sku");
-    //        Value = GetStringValue(reader, "marcValue");
-    //    }
-    //}
-
-    //public enum MarcFieldType
-    //{
-    //    OclcNumber = 035,
-    //    NlmNumber = 060,
-    //    LcNumber = 090,
-    //    NlmSubject = 650
-    //}
 }

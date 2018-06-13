@@ -14,12 +14,14 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
     public class R2LibraryMarcRecordsTask : TaskBase2
     {
         private readonly R2ProductFactory _r2ProductFactory;
+        private readonly MarcRecordService _marcRecordService;
         private readonly DateTime _currentDateTime = DateTime.Now;
 
-        public R2LibraryMarcRecordsTask(R2ProductFactory r2ProductFactory)
+        public R2LibraryMarcRecordsTask()
             : base("Generate R2library MArC Records", "CreateR2libraryMarcRecords")
         {
-            _r2ProductFactory = r2ProductFactory;
+            _r2ProductFactory = new R2ProductFactory();
+            _marcRecordService = new MarcRecordService(MarcRecordProviderType.R2Library);
         }
 
         public override void Run()
@@ -36,40 +38,47 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             try
             {
+                List<R2Resource> r2Resources2 = _r2ProductFactory.GetAllR2Resource();
 
-                var resourcesThatDoNotExistInProviders = _r2ProductFactory.GetR2ResourcesThatDoNotExist();
-                var r2LibraryMarcFiles = (from resource in resourcesThatDoNotExistInProviders
-                    let mrkFileString = GetR2LibraryMrkFileText(resource)
-                    select new R2LibraryMarcFile
-                    {
-                        MrkText = mrkFileString,
-                        ProviderSourceId = 4,
-                        Isbn = resource.Isbn,
-                        Isbn10 = resource.Isbn10,
-                        Isbn13 = resource.Isbn13,
-                        EIsbn = resource.EIsbn
-                    }).ToList();
+                List<R2LibraryMarcFile> r2LibraryMarcFiles = r2Resources2.Select(x => _marcRecordService.GetR2LibraryMarcFile(x)).ToList();
 
-                List<R2LibraryMarcFile> nlmandLcR2LibraryMarcFiles = _r2ProductFactory.GetNlmAndLcMarcFiles();
+                int rowsDeleted = _r2ProductFactory.TruncateWebR2LibraryMarcRecords();
+                var rowsInserted = _r2ProductFactory.InsertWebR2LibraryMarcRecords2(r2LibraryMarcFiles);
 
-                RemoveFieldsFromExternalMarcFiles(nlmandLcR2LibraryMarcFiles);
 
-                r2LibraryMarcFiles.AddRange(nlmandLcR2LibraryMarcFiles);
+                //var resourcesThatDoNotExistInProviders = _r2ProductFactory.GetR2ResourcesThatDoNotExist();
+                //var r2LibraryMarcFiles = (from resource in resourcesThatDoNotExistInProviders
+                //    let mrkFileString = GetR2LibraryMrkFileText(resource)
+                //    select new R2LibraryMarcFile
+                //    {
+                //        MrkText = mrkFileString,
+                //        ProviderSourceId = 4,
+                //        Isbn = resource.Isbn,
+                //        Isbn10 = resource.Isbn10,
+                //        Isbn13 = resource.Isbn13,
+                //        EIsbn = resource.EIsbn
+                //    }).ToList();
 
-                int recordsUpdated = 0;
-                int recordsInserted;
-                if (_r2ProductFactory.CreateAllR2LibraryMarcRecords())
-                {
-                    recordsInserted = _r2ProductFactory.InsertWebR2LibraryMarcRecords(r2LibraryMarcFiles);
-                }
-                else
-                {
-                    //Updates and inserts
-                    _r2ProductFactory.UpdateWebR2LibraryMarcRecords(r2LibraryMarcFiles, out recordsUpdated, out recordsInserted);
-                }
+                //List<R2LibraryMarcFile> nlmandLcR2LibraryMarcFiles = _r2ProductFactory.GetNlmAndLcMarcFiles();
+
+                //RemoveFieldsFromExternalMarcFiles(nlmandLcR2LibraryMarcFiles);
+
+                //r2LibraryMarcFiles.AddRange(nlmandLcR2LibraryMarcFiles);
+
+                //int recordsUpdated = 0;
+                
+                //if (_r2ProductFactory.CreateAllR2LibraryMarcRecords())
+                //{
+                //    recordsInserted = _r2ProductFactory.InsertWebR2LibraryMarcRecords(r2LibraryMarcFiles);
+                //}
+                //else
+                //{
+                //    //Updates and inserts
+                //    _r2ProductFactory.UpdateWebR2LibraryMarcRecords(r2LibraryMarcFiles, out recordsUpdated, out recordsInserted);
+                //}
                 
                 step.CompletedSuccessfully = true;
-                step.Results.AppendFormat("R2Library Records Updated: {0} | Records Inserted: {1}", recordsUpdated, recordsInserted);
+                step.Results.AppendFormat($"R2Library Records Deleted: {rowsDeleted} | Records Inserted: {rowsInserted}");
             }
             catch (Exception ex)
             {

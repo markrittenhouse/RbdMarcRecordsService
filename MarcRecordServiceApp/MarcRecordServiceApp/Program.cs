@@ -8,6 +8,7 @@ using MarcRecordServiceApp.Tasks;
 using MarcRecordServiceApp.Tasks.CallNumbers;
 using MarcRecordServiceApp.Tasks.MarcRecords;
 using log4net;
+using MarcRecordServiceApp.Tasks.Utilities;
 
 namespace MarcRecordServiceApp
 {
@@ -63,6 +64,8 @@ namespace MarcRecordServiceApp
                     Console.WriteLine("");
                     Console.WriteLine("10 = ParseMarcFieldsTask");
                     Console.WriteLine("11 = CallNumberTask");
+                    Console.WriteLine("12 = AdditionalMarcFieldTask");
+
                     Console.WriteLine("");
                     Console.WriteLine("");
                     Console.WriteLine("20 = CreateR2libraryMarcRecords");
@@ -126,18 +129,21 @@ namespace MarcRecordServiceApp
                     case "11":
                         task = new CallNumberTask();
                         break;
-
+                    case "-AdditionalMarcFieldTask":
+                    case "12":
+                        task = new AdditionalMarcFieldTask();
+                        break;
 
 
 
                     case "-CreateR2libraryMarcRecords":
                     case "20":
-                        task = new R2LibraryMarcRecordsTask(new R2ProductFactory());
+                        task = new R2LibraryMarcRecordsTask();
                         break;
                         
                     case "-CreateOclcR2libraryMarcRecords":
                     case "21":
-                        task = new OclcR2LibraryMarcRecordsTask(new R2ProductFactory());
+                        task = new OclcR2LibraryMarcRecordsTask();
                         break;
 
 

@@ -438,7 +438,7 @@ group by marcRecordProviderId";
 
             if (providerUpdates.Any())
             {
-                ExecuteTrancateTable("MarcRecordProviderUpdate", Settings.Default.RittenhouseMarcDb);
+                ExecuteTruncateTable("MarcRecordProviderUpdate", Settings.Default.RittenhouseMarcDb);
                 InsertProviderUpdates(providerUpdates);
                 var sql = @"
 Update MarcRecordProvider
@@ -454,7 +454,7 @@ join MarcRecordProvider mrp on mrp.marcRecordProviderId = u.marcRecordProviderId
 
             if (fileUpdates.Any())
             {
-                ExecuteTrancateTable("MarcRecordFileUpdate", Settings.Default.RittenhouseMarcDb);
+                ExecuteTruncateTable("MarcRecordFileUpdate", Settings.Default.RittenhouseMarcDb);
 
                 InsertFileUpdates(fileUpdates);
                 var sql = @"
@@ -653,6 +653,59 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
                 DisposeConnections(cnn, command, reader);
             }
         }
+
+        public void PopulateAdditionalFields(List<IMarcFile> marcFiles)
+        {
+            SqlConnection cnn = null;
+            SqlCommand command = null;
+            SqlDataReader reader = null;
+
+
+            var sql = @"
+select amf.marcRecordId, amf.fieldNumber, amf.marcValue, mr.sku
+from AdditionalMarcField amf
+join MarcRecord mr on amf.marcRecordId = mr.marcRecordId
+";
+            List<AdditionalField> additionalFields = new List<AdditionalField>();
+            try
+            {
+                cnn = GetRittenhouseConnection();
+
+                command = cnn.CreateCommand();
+                command.CommandText = sql;
+                command.CommandTimeout = 15;
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    AdditionalField additionalField = new AdditionalField();
+                    additionalField.Populate(reader);
+                    additionalFields.Add(additionalField);
+                }
+
+                foreach (var marcFile in marcFiles)
+                {
+                    marcFile.AdditionalFields = marcFile.MarcRecordId.HasValue
+                        ? additionalFields.Where(x => x.MarcRecordId == marcFile.MarcRecordId.Value).ToList()
+                        : additionalFields.Where(x => x.Sku == marcFile.Product.Sku).ToList();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Log.Info($"sql: {sql}");
+                Log.Error(ex.Message, ex);
+                throw;
+            }
+            finally
+            {
+                DisposeConnections(cnn, command, reader);
+            }
+
+
+        }
+
 
         public int GetRittenhouseOnlyMarcFilesCount(bool missingFilesOnly)
         {

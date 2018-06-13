@@ -31,7 +31,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         /// <returns></returns>
         public static int TruncateDailyMarcRecords()
         {
-            int rowCount = ExecuteTrancateTable("DailyMarcRecordFile", Settings.Default.RittenhouseMarcDb);
+            int rowCount = ExecuteTruncateTable("DailyMarcRecordFile", Settings.Default.RittenhouseMarcDb);
             return rowCount;
         }
 
