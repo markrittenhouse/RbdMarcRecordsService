@@ -118,10 +118,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     // get next batch to process
                     List<IMarcFile> marcFiles = _marcRecordProductFactory.GetRittenhouseOnlyMarcFiles(batchSize, _onlyMissingFiles);
 
-                    _marcRecordProductFactory.PopulateAdditionalFields(marcFiles);
-
-
-
                     Log.InfoFormat("batch contains {0} products", marcFiles.Count);
                     if (marcFiles.Count == 0)
                     {

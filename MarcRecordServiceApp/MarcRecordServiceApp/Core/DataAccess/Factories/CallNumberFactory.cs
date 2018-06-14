@@ -15,17 +15,17 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         private const string LcCallNumberInsert = @"
 insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
 select x.marcRecordId, x.marcRecordProviderTypeId, GETDATE()
-	, STUFF(( SELECT '' + sub.subFieldValue
-				from MarcRecordDataSubField sub 
-				WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
-				FOR XML PATH('')), 1, 0,'') AS value
+    , STUFF(( SELECT '' + sub.subFieldValue
+                from MarcRecordDataSubField sub 
+                WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+                FOR XML PATH('')), 1, 0,'') AS value
 from (select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId
-		from MarcRecordDataField mrf 
-		where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
-		group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
-	) x
-	left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
-	where mrcn.marcRecordId is null
+        from MarcRecordDataField mrf 
+        where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
+        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
+    ) x
+    left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
+    where mrcn.marcRecordId is null
 ";
 
         private const string LcCallNumberUpdate = @"
@@ -33,17 +33,17 @@ update MarcRecordDataCallNumber
 set callNumber = xx.value, dateUpdated = GETDATE()
 from MarcRecordDataCallNumber mrcn
 join (
-	select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
-		, STUFF(( SELECT '' + c2.subFieldValue
-			from MarcRecordDataSubField c2 
-			WHERE x.marcRecordDataFieldId = c2.marcRecordDataFieldId
-			FOR XML PATH('')), 1, 0,'') AS value
-	from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-			from MarcRecordDataField xx 
-			where xx.fieldNumber = '050' and xx.marcRecordProviderTypeId = 1
-			group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-		) x
-	) xx on mrcn.marcRecordId = xx.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
+    select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
+        , STUFF(( SELECT '' + c2.subFieldValue
+            from MarcRecordDataSubField c2 
+            WHERE x.marcRecordDataFieldId = c2.marcRecordDataFieldId
+            FOR XML PATH('')), 1, 0,'') AS value
+    from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+            from MarcRecordDataField xx 
+            where xx.fieldNumber = '050' and xx.marcRecordProviderTypeId = 1
+            group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+        ) x
+    ) xx on mrcn.marcRecordId = xx.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
 where xx.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
 
 ";
@@ -53,11 +53,11 @@ update MarcRecordDataCallNumber
 set category = substring(replace(subTest.subFieldValue, '''', ''''), 0, 500), dateUpdated = GETDATE()
 from MarcRecordDataCallNumber mrcn
 join (
-	select p.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, p.marcRecordProviderTypeId
-	from MarcRecordDataSubField sub
-	join MarcRecordDataField p on p.marcRecordDataFieldId = sub.marcRecordDataFieldId and p.marcRecordProviderTypeId = 1
-	where p.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
-	group by p.marcRecordId, p.marcRecordProviderTypeId
+    select p.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, p.marcRecordProviderTypeId
+    from MarcRecordDataSubField sub
+    join MarcRecordDataField p on p.marcRecordDataFieldId = sub.marcRecordDataFieldId and p.marcRecordProviderTypeId = 1
+    where p.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
+    group by p.marcRecordId, p.marcRecordProviderTypeId
 ) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
 join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.marcRecordDataSubFieldsId 
 where category is null or category <> substring(replace(subTest.subFieldValue, '''', ''''), 0, 500)
@@ -73,43 +73,38 @@ where category is null or category <> substring(replace(subTest.subFieldValue, '
 
         private const string NlmCallNumberInsert = @"
 insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
-select mrf.marcRecordId, mrf.marcRecordProviderTypeId, GETDATE()
+select x.marcRecordId, x.marcRecordProviderTypeId, GETDATE()
 , STUFF(( SELECT ', ' + sub.subFieldValue
-				from MarcRecordDataSubField sub 
-				WHERE mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-				FOR XML PATH(''),TYPE)
-				.value('.','NVARCHAR(MAX)'),1,2,'') AS value
-from MarcRecordDataField mrf
-join (
-	select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId
-	from MarcRecordDataField mrf
-	where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
-	group by mrf.marcRecordId
-) mrfSingle on mrf.marcRecordDataFieldId = mrfSingle.marcRecordDataFieldId and mrf.marcRecordId = mrfSingle.marcRecordId
-left join MarcRecordDataCallNumber mrcn on mrfSingle.marcRecordId = mrcn.marcRecordId and mrf.marcRecordProviderTypeId = mrcn.providerId
-where mrcn.marcRecordId is null
+                from MarcRecordDataSubField sub 
+                WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+                FOR XML PATH('')), 1, 2,'') AS value
+from (
+    select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId
+    from MarcRecordDataField mrf
+    where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
+    group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
+    ) x
+    left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
+    where mrcn.marcRecordId is null
 ";
 
         private const string NlmCallNumberUpdate = @"
 update MarcRecordDataCallNumber
-set callNumber = x.value, dateUpdated = GETDATE()
+set callNumber = xx.value, dateUpdated = GETDATE()
 from MarcRecordDataCallNumber mrcn
 join (
-	select mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
-	, STUFF(( SELECT ', ' + sub.subFieldValue
-					from MarcRecordDataSubField sub 
-					WHERE mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-					FOR XML PATH(''),TYPE)
-					.value('.','NVARCHAR(MAX)'),1,2,'') AS value
-	from MarcRecordDataField mrf
-	join (
-		select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId
-		from MarcRecordDataField mrf
-		where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
-		group by mrf.marcRecordId
-	) mrfSingle on mrf.marcRecordDataFieldId = mrfSingle.marcRecordDataFieldId and mrf.marcRecordId = mrfSingle.marcRecordId
-) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
-where x.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+    select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
+    , STUFF(( SELECT ', ' + sub.subFieldValue
+                    from MarcRecordDataSubField sub 
+                    WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+                    FOR XML PATH('')), 1, 2,'') AS value
+    from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+            from MarcRecordDataField xx 
+            where xx.fieldNumber = '060' and xx.marcRecordProviderTypeId = 2 and xx.fieldIndicator like '1%'
+            group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
+        ) x
+) as xx on xx.marcRecordId = mrcn.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
+where xx.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
 ";
 
         private const string NlmCategoryUpdate = @"
@@ -117,11 +112,11 @@ update MarcRecordDataCallNumber
 set category = replace(subTest.subFieldValue, '''', ''''), dateUpdated = GETDATE()
 from MarcRecordDataCallNumber mrcn
 join (
-	select mrf.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, mrf.marcRecordProviderTypeId
-	from MarcRecordDataSubField sub
-	join MarcRecordDataField mrf on mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId and mrf.marcRecordProviderTypeId = 2
-	where mrf.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
-	group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
+    select mrf.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, mrf.marcRecordProviderTypeId
+    from MarcRecordDataSubField sub
+    join MarcRecordDataField mrf on mrf.marcRecordDataFieldId = sub.marcRecordDataFieldId and mrf.marcRecordProviderTypeId = 2
+    where mrf.fieldNumber = '650' and sub.subFieldIndicator = '$a' 
+    group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
 ) as x on x.marcRecordId = mrcn.marcRecordId and mrcn.providerId = x.marcRecordProviderTypeId
 join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.marcRecordDataSubFieldsId 
 ";

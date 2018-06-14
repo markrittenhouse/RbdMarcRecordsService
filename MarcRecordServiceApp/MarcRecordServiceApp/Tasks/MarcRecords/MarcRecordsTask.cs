@@ -31,7 +31,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
         /// 
         /// </summary>
         public MarcRecordsTask(MarcRecordProviderType recordProviderType)
-            : base("Generate MArC Records", "CreateMarcRecords")
+            : base($"Generate MArC Records - {recordProviderType.ToString()}", "CreateMarcRecords")
         {
             ProviderType = recordProviderType;
             switch (recordProviderType)
@@ -193,12 +193,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                     var timer = new Stopwatch();
                     timer.Start();
                     List<IMarcFile> marcFiles = _marcRecordProductFactory.GetProductsWithoutMarcRecords(batchSize, ProviderType);
-
-                    if (ProviderType == MarcRecordProviderType.Rbd)
-                    {
-                        _marcRecordProductFactory.PopulateAdditionalFields(marcFiles);
-                    }
-
 
                     Log.Info("");
                     Log.Info($"GetProductsWithoutMarcRecords count[{marcFiles.Count}] products. It took {timer.ElapsedMilliseconds}ms");
