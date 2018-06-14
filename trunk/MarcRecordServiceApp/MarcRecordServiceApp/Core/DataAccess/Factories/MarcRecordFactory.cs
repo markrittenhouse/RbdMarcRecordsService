@@ -327,23 +327,33 @@ group by marcRecordProviderId";
             var marcRecordFileDataTable = _sqlBulkCopyFactory.GetBulkInsertDataTable("MarcRecordFile");
             foreach (var marcFile in marcFiles)
             {
-                DataRow row1 = marcRecordFileDataTable.NewRow();
-                row1.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
-                row1.SetField(1, 1);
-                row1.SetField(2, marcFile.MrcFileText);
-                marcRecordFileDataTable.Rows.Add(row1);
+                if (!string.IsNullOrWhiteSpace(marcFile.MrcFileText))
+                {
+                    DataRow row1 = marcRecordFileDataTable.NewRow();
+                    row1.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
+                    row1.SetField(1, 1);
+                    row1.SetField(2, marcFile.MrcFileText);
+                    marcRecordFileDataTable.Rows.Add(row1);
+                }
 
-                DataRow row2 = marcRecordFileDataTable.NewRow();
-                row2.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
-                row2.SetField(1, 2);
-                row2.SetField(2, marcFile.MrkFileText);
-                marcRecordFileDataTable.Rows.Add(row2);
+                if (!string.IsNullOrWhiteSpace(marcFile.MrkFileText))
+                {
+                    DataRow row2 = marcRecordFileDataTable.NewRow();
+                    row2.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
+                    row2.SetField(1, 2);
+                    row2.SetField(2, marcFile.MrkFileText);
+                    marcRecordFileDataTable.Rows.Add(row2);
+                }
 
-                DataRow row3 = marcRecordFileDataTable.NewRow();
-                row3.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
-                row3.SetField(1, 3);
-                row3.SetField(2, marcFile.XmlFileText);
-                marcRecordFileDataTable.Rows.Add(row3);
+                if (!string.IsNullOrWhiteSpace(marcFile.XmlFileText))
+                {
+                    DataRow row3 = marcRecordFileDataTable.NewRow();
+                    row3.SetField(0, marcFile.MarcRecordProviderId.GetValueOrDefault());
+                    row3.SetField(1, 3);
+                    row3.SetField(2, marcFile.XmlFileText);
+                    marcRecordFileDataTable.Rows.Add(row3);
+                }
+                    
             }
 
             _sqlBulkCopyFactory.BulkInsertData("MarcRecordFile", marcRecordFileDataTable);
@@ -535,8 +545,26 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
                 .Append(" order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc ")
                 .ToString();
 
+            var sql2 = $@"
+select amf.marcRecordId, amf.fieldNumber, amf.marcValue, mr.sku
+from AdditionalMarcField amf
+join MarcRecord mr on amf.marcRecordId = mr.marcRecordId
+where mr.sku in (
+    select top {batchSize} p.sku
+    {FromProductAndMarcRecords((int)providerType)}
+    order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc
+)
+";
+
+
             try
             {
+                if (providerType == MarcRecordProviderType.Rbd)
+                {
+                    sql = $"{sql}; {sql2}";
+                }
+
+
                 cnn = GetRittenhouseConnection();
 
                 command = cnn.CreateCommand();
@@ -544,6 +572,8 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
                 command.CommandTimeout = 15;
 
                 reader = command.ExecuteReader();
+
+                List<AdditionalField> addionalFields = new List<AdditionalField>();
 
                 while (reader.Read())
                 {
@@ -566,6 +596,24 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
                             marcFiles.Add(new RittenhouseMarcFile(productEntity.GetProduct(), marcRecordId,
                                 marcRecordProviderId));
                             break;
+                    }
+                }
+
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        AdditionalField additionalField = new AdditionalField();
+                        additionalField.Populate(reader);
+                        addionalFields.Add(additionalField);
+                    }
+                }
+
+                if (addionalFields.Any())
+                {
+                    foreach (var marcFile in marcFiles)
+                    {
+                        marcFile.AdditionalFields = addionalFields.Where(x => x.Sku == marcFile.Product.Sku).ToList();
                     }
                 }
 
@@ -604,30 +652,48 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
 
-            var sqlBuilder = new StringBuilder()
-                .AppendFormat("select top {0} ", batchSize).Append(ProductSelectFields)
-                .Append(" from RittenhouseWeb.dbo.Product p ")
-                .Append(" left join RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId ")
-                .Append(" left join RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId ")
-                .Append(" left join MarcRecord mr on mr.sku = p.sku ")
-                .Append(" left join MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3 ")
-                .Append(" where (p.copyright is not null or p.publicationDate is not null)  and p.sku not like '%R2P%' ")
-                .Append($"{(missingFilesOnly ? " and (mrp.dateCreated is null) " : "")}")
-                ;
-
-            sqlBuilder.Append(" order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc ");
-
+            var sql = $@"
+select top {batchSize} {ProductSelectFields}
+from RittenhouseWeb.dbo.Product p 
+left join RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId 
+left join RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId 
+left join MarcRecord mr on mr.sku = p.sku 
+left join MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3
+where (p.copyright is not null or p.publicationDate is not null)  and p.sku not like '%R2P%'
+    {(missingFilesOnly ? " and (mrp.dateCreated is null) " : "")}
+order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc
+";
 
 
+            var sql2 = $@"
+select amf.marcRecordId, amf.fieldNumber, amf.marcValue, mr.sku
+from AdditionalMarcField amf
+join MarcRecord mr on amf.marcRecordId = mr.marcRecordId
+where mr.sku in (
+    select top {batchSize} p.sku
+from RittenhouseWeb.dbo.Product p
+left join RittenhouseWeb.dbo.Category cat on p.categoryId = cat.categoryId
+left join RittenhouseWeb.dbo.Publisher pub on p.publisherId = pub.publisherId
+left join MarcRecord mr on mr.sku = p.sku
+left join MarcRecordProvider mrp on mrp.MarcRecordId = mr.MarcRecordId and mrp.MarcRecordProviderTypeId = 3
+where (p.copyright is not null or p.publicationDate is not null)  and p.sku not like '%R2P%'
+{(missingFilesOnly ? " and (mrp.dateCreated is null) " : "")}
+order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc 
+)
+";
+
+            sql = $"{sql}; {sql2}";
             try
             {
                 cnn = GetRittenhouseConnection();
 
                 command = cnn.CreateCommand();
-                command.CommandText = sqlBuilder.ToString();
+                command.CommandText = sql;
                 command.CommandTimeout = 15;
 
                 reader = command.ExecuteReader();
+
+                List<AdditionalField> addionalFields = new List<AdditionalField>();
 
                 while (reader.Read())
                 {
@@ -639,12 +705,29 @@ join MarcRecordFile mrf on mrf.marcRecordProviderId = u.marcRecordProviderId and
                     marcFiles.Add(new RittenhouseMarcFile(productEntity.GetProduct(), marcRecordId,
                         marcRecordProviderId));
                 }
+                if (reader.NextResult())
+                {
+                    while (reader.Read())
+                    {
+                        AdditionalField additionalField = new AdditionalField();
+                        additionalField.Populate(reader);
+                        addionalFields.Add(additionalField);
+                    }
+                }
+
+                if (addionalFields.Any())
+                {
+                    foreach (var marcFile in marcFiles)
+                    {
+                        marcFile.AdditionalFields = addionalFields.Where(x => x.Sku == marcFile.Product.Sku).ToList();
+                    }
+                }
 
                 return marcFiles;
             }
             catch (Exception ex)
             {
-                Log.Info($"sql: {sqlBuilder}");
+                Log.Info($"sql: {sql}");
                 Log.Error(ex.Message, ex);
                 throw;
             }
