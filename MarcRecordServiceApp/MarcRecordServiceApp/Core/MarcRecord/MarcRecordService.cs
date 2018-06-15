@@ -112,7 +112,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                         }
                     }
 
-                    Log.Info($"GetMarcRecords --- It took {timer.ElapsedMilliseconds}ms to set {foundRecords} out of {marcFiles.Count} Marc Records");
+                    //Log.Info($"GetMarcRecords --- It took {timer.ElapsedMilliseconds}ms to set {foundRecords} out of {marcFiles.Count} Marc Records");
                     break;
                 }
                 catch (Exception ex)

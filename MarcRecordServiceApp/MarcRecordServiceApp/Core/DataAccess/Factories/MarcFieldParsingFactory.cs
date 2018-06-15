@@ -22,16 +22,16 @@ delete from MarcRecordDataSubField where marcRecordDataSubFieldsId in (
     select sub.marcRecordDataSubFieldsId
     from MarcRecordDataField mf
     join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId
-    where mf.dateCreated < mrp.dateCreated or mf.dateCreated < isnull(mrp.dateUpdated, GETDATE())
+    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
+    where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated)
     group by sub.marcRecordDataSubFieldsId
 )
 
 delete from MarcRecordDataField where marcRecordId in (
-select mf.marcRecordId
+    select mf.marcRecordId
     from MarcRecordDataField mf
-    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId
-    where mf.dateCreated < mrp.dateCreated or mf.dateCreated < isnull(mrp.dateUpdated, GETDATE())
+    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
+    where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated)
     group by mf.marcRecordId
 )
 ";
@@ -41,22 +41,15 @@ select mf.marcRecordId
         public void ClearMarcRecordDataFieldTables()
         {
             ExecuteTruncateTable("MarcRecordDataSubField", Settings.Default.RittenhouseMarcDb);
-            DropForeignKey();
-            ExecuteTruncateTable("MarcRecordDataField", Settings.Default.RittenhouseMarcDb);
-            AddForeignKey();
-        }
 
-        private void DropForeignKey()
-        {
             var sql = @"
     ALTER TABLE MarcRecordDataSubField DROP CONSTRAINT FK_MarcRecordDataField_MarcRecordDataFieldId;
 ";
             ExecuteStatement(sql, false, Settings.Default.RittenhouseMarcDb);
-        }
 
-        private void AddForeignKey()
-        {
-            var sql = @"
+            ExecuteTruncateTable("MarcRecordDataField", Settings.Default.RittenhouseMarcDb);
+
+            sql = @"
             ALTER TABLE[dbo].[MarcRecordDataSubField] WITH CHECK ADD CONSTRAINT[FK_MarcRecordDataField_MarcRecordDataFieldId] FOREIGN KEY([marcRecordDataFieldId])
             REFERENCES[dbo].[MarcRecordDataField]
                 ([marcRecordDataFieldId])

@@ -737,59 +737,6 @@ order by mrp.DateUpdated, p.productStatusId asc, p.orderByDate, p.productId asc
             }
         }
 
-        public void PopulateAdditionalFields(List<IMarcFile> marcFiles)
-        {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-            SqlDataReader reader = null;
-
-
-            var sql = @"
-select amf.marcRecordId, amf.fieldNumber, amf.marcValue, mr.sku
-from AdditionalMarcField amf
-join MarcRecord mr on amf.marcRecordId = mr.marcRecordId
-";
-            List<AdditionalField> additionalFields = new List<AdditionalField>();
-            try
-            {
-                cnn = GetRittenhouseConnection();
-
-                command = cnn.CreateCommand();
-                command.CommandText = sql;
-                command.CommandTimeout = 15;
-
-                reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    AdditionalField additionalField = new AdditionalField();
-                    additionalField.Populate(reader);
-                    additionalFields.Add(additionalField);
-                }
-
-                foreach (var marcFile in marcFiles)
-                {
-                    marcFile.AdditionalFields = marcFile.MarcRecordId.HasValue
-                        ? additionalFields.Where(x => x.MarcRecordId == marcFile.MarcRecordId.Value).ToList()
-                        : additionalFields.Where(x => x.Sku == marcFile.Product.Sku).ToList();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Log.Info($"sql: {sql}");
-                Log.Error(ex.Message, ex);
-                throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command, reader);
-            }
-
-
-        }
-
-
         public int GetRittenhouseOnlyMarcFilesCount(bool missingFilesOnly)
         {
             var sqlBuilder = new StringBuilder()
