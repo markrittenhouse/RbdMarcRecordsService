@@ -37,17 +37,13 @@ namespace MarcRecordServiceApp.Tasks.Utilities
             {
                 int batchSize = 10000;
 
-                //_marcFieldParsingFactory.ClearMarcRecordDataFieldTables();
-                _marcFieldParsingFactory.ClearOldMarcRecordData();
+                _marcFieldParsingFactory.ClearMarcRecordDataFieldTables();
+                //_marcFieldParsingFactory.ClearOldMarcRecordData();
 
                 var counterBatch = 0;
                 int marcRecordDataFieldsCounter = 0;
                 Stopwatch timer = new Stopwatch();
                 timer.Start();
-
-                //var test = MarcRecordsProductFactory.GetAllRittenhouseMarcRecordProducts(batchSize);
-                //var test2 = test.Select(x => x.Product.Sku);
-                //var test3 = _marcFieldParsingFactory.GetParsedMarcFields(test2.ToList());
 
                 List<MarcRecordData> marcRecords = _callNumberFactory.GetNlmAndLcMarcRecords(batchSize);
 

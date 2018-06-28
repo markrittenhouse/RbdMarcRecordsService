@@ -35,15 +35,6 @@ namespace MarcRecordServiceApp {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("60")]
-        public int DatabaseCommandTimeout {
-            get {
-                return ((int)(this["DatabaseCommandTimeout"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20000")]
         public int LcMarcRecordMaxProducts {
             get {
@@ -84,24 +75,6 @@ namespace MarcRecordServiceApp {
         public string DefaultFromAddressName {
             get {
                 return ((string)(this["DefaultFromAddressName"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
-        public int MarcRecordBatchSize {
-            get {
-                return ((int)(this["MarcRecordBatchSize"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Dev2_RIT001")]
-        public string R2DatabaseName {
-            get {
-                return ((string)(this["R2DatabaseName"]));
             }
         }
         
@@ -149,6 +122,33 @@ namespace MarcRecordServiceApp {
         public string RittenhouseMarcDb {
             get {
                 return ((string)(this["RittenhouseMarcDb"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("600")]
+        public int DatabaseCommandTimeout {
+            get {
+                return ((int)(this["DatabaseCommandTimeout"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        public int MarcRecordBatchSize {
+            get {
+                return ((int)(this["MarcRecordBatchSize"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("DEV_RIT001")]
+        public string R2DatabaseName {
+            get {
+                return ((string)(this["R2DatabaseName"]));
             }
         }
     }

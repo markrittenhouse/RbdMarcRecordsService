@@ -18,22 +18,16 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         public void ClearOldMarcRecordData()
         {
             var deleteSql = @"
-delete from MarcRecordDataSubField where marcRecordDataSubFieldsId in (
-    select sub.marcRecordDataSubFieldsId
-    from MarcRecordDataField mf
-    join MarcRecordDataSubField sub on mf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
-    where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated)
-    group by sub.marcRecordDataSubFieldsId
-)
+Delete x
+from MarcRecordDataSubField x
+join MarcRecordDataField mf on x.marcRecordDataFieldId = mf.marcRecordDataFieldId
+join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
+where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated);
 
-delete from MarcRecordDataField where marcRecordId in (
-    select mf.marcRecordId
-    from MarcRecordDataField mf
-    join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
-    where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated)
-    group by mf.marcRecordId
-)
+Delete mf
+from MarcRecordDataField mf
+join MarcRecordProvider mrp on mf.marcRecordId = mrp.marcRecordId and mf.marcRecordProviderTypeId = mrp.marcRecordProviderTypeId
+where mf.dateCreated < isnull(mrp.dateUpdated, mrp.dateCreated);
 ";
             ExecuteStatement(deleteSql, false, Settings.Default.RittenhouseMarcDb);
         }
