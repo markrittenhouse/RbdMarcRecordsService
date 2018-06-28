@@ -63,9 +63,31 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         /// <returns></returns>
         public static int InsertDailyRittenhouseMarcRecords()
         {
-            var sql = InsertDailyMarcRecordFiles(3);
+            int batchCount = 10000;
+            var sql = $@"
+                Insert Into DailyMarcRecordFile
+                select top {batchCount} mr.isbn10, mr.isbn13, mr.sku, mrp.marcRecordProviderTypeId, mrf.fileData
+                from MarcRecord mr
+                join MarcRecordProvider mrp on mr.marcRecordId = mrp.marcRecordId and mrp.marcRecordProviderTypeId = 3
+                join MarcRecordProviderType mrpt on mrp.marcRecordProviderTypeId = mrpt.marcRecordProviderTypeId 
+                left join ExcludedMarcRecord emr on mr.sku = emr.sku and mrpt.marcRecordProviderTypeId = emr.marcRecordProviderTypeId
+                join MarcRecordFile mrf on mrp.marcRecordProviderId = mrf.marcRecordProviderId and marcRecordFileTypeId = 2
+                left join DailyMarcRecordFile dmrf on mr.isbn10 = dmrf.isbn10 and mr.isbn13 = dmrf.isbn13 and mr.sku = dmrf.sku
+                where dmrf.dailyMarcRecordFileId is null and mr.sku not like '%R2P%' and emr.excludedMarcRecordId is null
+            ";
 
-            return ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+            int totalRecordCount = 0;
+            int counter = ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+            totalRecordCount += counter;
+            Log.Info($"InsertDailyRittenhouseMarcRecords Count: {totalRecordCount}");
+            while (counter == batchCount)
+            {
+                counter = ExecuteInsertStatementReturnRowCount(sql, null, true, Settings.Default.RittenhouseMarcDb);
+                totalRecordCount += counter;
+                Log.Info($"InsertDailyRittenhouseMarcRecords Count: {totalRecordCount}");
+            }
+
+            return totalRecordCount;
         }
 
         public static void ReIndexDailyMarcRecords()

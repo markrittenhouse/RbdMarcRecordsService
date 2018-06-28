@@ -146,7 +146,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories.Base
                 cnn = GetConnection(connectionString);
                 command = GetSqlCommand(cnn, sql, sqlCommandParameters);
 
-                command.CommandTimeout = 360;
+                command.CommandTimeout = Settings.Default.DatabaseCommandTimeout;
 
                 if (logSql)
                 {

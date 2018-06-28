@@ -135,7 +135,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCallNumberInsert, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, LcCallNumberInsert, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 int rows = command.ExecuteNonQuery();
                 callNumbersInserted += rows;
@@ -146,7 +146,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCallNumberUpdate, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, LcCallNumberUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 rows = command.ExecuteNonQuery();
                 callNumbersInserted += rows;
@@ -157,7 +157,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCategoryUpdate, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, LcCategoryUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 var categoryRows = command.ExecuteNonQuery();
                 stopwatch.Stop();
@@ -190,7 +190,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCallNumberInsert, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, NlmCallNumberInsert, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 int rows = command.ExecuteNonQuery();
                 callNumbersInserted += rows;
@@ -201,7 +201,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCallNumberUpdate, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, NlmCallNumberUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 rows = command.ExecuteNonQuery();
                 callNumbersInserted += rows;
@@ -211,7 +211,7 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
                 cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCategoryUpdate, new ISqlCommandParameter[0], 300);
+                command = GetSqlCommand(cnn, NlmCategoryUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
                 LogCommandDebug(command);
                 var categoryRows = command.ExecuteNonQuery();
                 stopwatch.Stop();
@@ -266,7 +266,7 @@ order by 1
 
                 command = cnn.CreateCommand();
                 command.CommandText = string.Format(GetExternalMarcRecords, batchSize);
-                command.CommandTimeout = 150;
+                command.CommandTimeout = Settings.Default.DatabaseCommandTimeout;
 
                 reader = command.ExecuteReader();
 
