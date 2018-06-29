@@ -2,55 +2,21 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.Linq;
+using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
 using MarcRecordServiceApp.Core.DataAccess.SqlCommandParameters;
+using Rittenhouse.RBD.Core.DataAccess.Entities;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Factories
 {
     public class CallNumberFactory : FactoryBase
     {
         #region "LC Sql"
-
-        private const string LcCallNumberInsert = @"
-insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
-select x.marcRecordId, x.marcRecordProviderTypeId, GETDATE()
-    , STUFF(( SELECT '' + sub.subFieldValue
-                from MarcRecordDataSubField sub 
-                WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
-                FOR XML PATH('')), 1, 0,'') AS value
-from (select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId
-        from MarcRecordDataField mrf 
-        where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
-        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
-    ) x
-    left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
-    where mrcn.marcRecordId is null
-";
-
-        private const string LcCallNumberUpdate = @"
-update MarcRecordDataCallNumber
-set callNumber = xx.value, dateUpdated = GETDATE()
-from MarcRecordDataCallNumber mrcn
-join (
-    select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
-        , STUFF(( SELECT '' + c2.subFieldValue
-            from MarcRecordDataSubField c2 
-            WHERE x.marcRecordDataFieldId = c2.marcRecordDataFieldId
-            FOR XML PATH('')), 1, 0,'') AS value
-    from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-            from MarcRecordDataField xx 
-            where xx.fieldNumber = '050' and xx.marcRecordProviderTypeId = 1
-            group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-        ) x
-    ) xx on mrcn.marcRecordId = xx.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
-where xx.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
-
-";
-
         private const string LcCategoryUpdate = @"
 update MarcRecordDataCallNumber
-set category = substring(replace(subTest.subFieldValue, '''', ''''), 0, 500), dateUpdated = GETDATE()
+set category = substring(replace(subTest.subFieldValue, '''', ''''), 0, 500), dateUpdated = isnull(mrcn.dateUpdated, mrcn.dateCreated)
 from MarcRecordDataCallNumber mrcn
 join (
     select p.marcRecordId, min(sub.marcRecordDataSubFieldsId) marcRecordDataSubFieldsId, p.marcRecordProviderTypeId
@@ -70,43 +36,7 @@ where category is null or category <> substring(replace(subTest.subFieldValue, '
         #endregion
 
         #region "NLM Sql"
-
-        private const string NlmCallNumberInsert = @"
-insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
-select x.marcRecordId, x.marcRecordProviderTypeId, GETDATE()
-, STUFF(( SELECT ', ' + sub.subFieldValue
-                from MarcRecordDataSubField sub 
-                WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
-                FOR XML PATH('')), 1, 2,'') AS value
-from (
-    select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId
-    from MarcRecordDataField mrf
-    where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
-    group by mrf.marcRecordId, mrf.marcRecordProviderTypeId
-    ) x
-    left join MarcRecordDataCallNumber mrcn on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
-    where mrcn.marcRecordId is null
-";
-
-        private const string NlmCallNumberUpdate = @"
-update MarcRecordDataCallNumber
-set callNumber = xx.value, dateUpdated = GETDATE()
-from MarcRecordDataCallNumber mrcn
-join (
-    select x.marcRecordId, x.marcRecordProviderTypeId, x.dateCreated
-    , STUFF(( SELECT ', ' + sub.subFieldValue
-                    from MarcRecordDataSubField sub 
-                    WHERE x.marcRecordDataFieldId = sub.marcRecordDataFieldId
-                    FOR XML PATH('')), 1, 2,'') AS value
-    from (select min(xx.marcRecordDataFieldId) marcRecordDataFieldId, xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-            from MarcRecordDataField xx 
-            where xx.fieldNumber = '060' and xx.marcRecordProviderTypeId = 2 and xx.fieldIndicator like '1%'
-            group by xx.marcRecordId, xx.marcRecordProviderTypeId, xx.dateCreated
-        ) x
-) as xx on xx.marcRecordId = mrcn.marcRecordId and mrcn.providerId = xx.marcRecordProviderTypeId
-where xx.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
-";
-
+        
         private const string NlmCategoryUpdate = @"
 update MarcRecordDataCallNumber
 set category = replace(subTest.subFieldValue, '''', ''''), dateUpdated = GETDATE()
@@ -122,44 +52,214 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
 ";
         #endregion
 
+
+        private int BuildLcCallNumbers(bool isInsert)
+        {
+            var sql = isInsert ?
+                @"
+select x.marcRecordId, x.marcRecordProviderTypeId, sub.subFieldValue, x.dateCreated, null as callNumber
+from (select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+        from MarcRecordDataField mrf 
+		left join MarcRecordDataCallNumber xxx on mrf.marcRecordId = xxx.marcRecordId and mrf.marcRecordProviderTypeId = xxx.providerId
+        where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
+		and xxx.marcRecordId is null
+        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+    ) x
+join MarcRecordDataSubField sub on x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+order by sub.marcRecordDataSubFieldsId
+"
+                :
+                @"
+select mrcn.marcRecordId, mrcn.callNumber, mrdf.marcRecordProviderTypeId, sub.subFieldValue, mrdf.dateCreated
+from MarcRecordDataCallNumber mrcn
+join MarcRecordDataField mrdf on mrcn.marcRecordId = mrdf.marcRecordId and mrcn.providerId = mrdf.marcRecordProviderTypeId
+join MarcRecordDataSubField sub on mrdf.marcRecordDataFieldId = sub.marcRecordDataFieldId
+where mrdf.fieldNumber = '050' and mrdf.marcRecordProviderTypeId = 1
+and mrdf.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+order by sub.marcRecordDataSubFieldsId
+";
+            List<CallNumberItem> callNumberItems = EntityFactory.GetEntityList<CallNumberItem>(sql, null, true, Settings.Default.RittenhouseMarcDb);
+            if (!callNumberItems.Any())
+            {
+                return 0;
+            }
+            List<CallNumberItem> callNumbersToSave = BuildCallNumbers(callNumberItems, true);
+
+            return isInsert ? InsertCallNumbers(callNumbersToSave) : UpdateCallNumbers(callNumbersToSave);
+        }
+
+
+        private int BuildNlmCallNumbers(bool isInsert)
+        {
+            var sql = isInsert ?
+                @"
+select x.marcRecordId, x.marcRecordProviderTypeId, sub.subFieldValue, x.dateCreated, null as callNumber
+from(select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+        from MarcRecordDataField mrf
+        left join MarcRecordDataCallNumber xxx on mrf.marcRecordId = xxx.marcRecordId and mrf.marcRecordProviderTypeId = xxx.providerId
+        where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
+        and xxx.marcRecordId is null
+        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+    ) x
+join MarcRecordDataSubField sub on x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+order by sub.marcRecordDataSubFieldsId
+"
+                :
+                @"
+select mrcn.marcRecordId, mrcn.callNumber, mrdf.marcRecordProviderTypeId, sub.subFieldValue, mrdf.dateCreated
+from MarcRecordDataCallNumber mrcn
+join MarcRecordDataField mrdf on mrcn.marcRecordId = mrdf.marcRecordId and mrcn.providerId = mrdf.marcRecordProviderTypeId
+join MarcRecordDataSubField sub on mrdf.marcRecordDataFieldId = sub.marcRecordDataFieldId
+where mrdf.fieldNumber = '060' and mrdf.marcRecordProviderTypeId = 2 and mrdf.fieldIndicator like '1%'
+and mrdf.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+order by sub.marcRecordDataSubFieldsId
+";
+            List<CallNumberItem> callNumberItems = EntityFactory.GetEntityList<CallNumberItem>(sql, null, true, Settings.Default.RittenhouseMarcDb);
+
+            if (!callNumberItems.Any())
+            {
+                return 0;
+            }
+            List<CallNumberItem> callNumbersToSave = BuildCallNumbers(callNumberItems, false);
+
+            return isInsert ? InsertCallNumbers(callNumbersToSave) : UpdateCallNumbers(callNumbersToSave);
+        }
+
+
+
+        #region Generic
+        private List<CallNumberItem> BuildCallNumbers(List<CallNumberItem> callNumberItems, bool isLcCallNumber)
+        {
+            List<CallNumberItem> callNumbersToSave = new List<CallNumberItem>();
+            CallNumberItem lastCallNumberItem = null;
+            bool itemIsAdded = false;
+            foreach (var callNumberItem in callNumberItems)
+            {
+                if (lastCallNumberItem == null)
+                {
+                    lastCallNumberItem = new CallNumberItem
+                    {
+                        MarcRecordId = callNumberItem.MarcRecordId,
+                        CallNumber = callNumberItem.SubFieldValue,
+                        DateCreated = callNumberItem.DateCreated,
+                        ProviderId = callNumberItem.ProviderId
+                    };
+                    continue;
+                }
+
+
+
+                if (callNumberItem.MarcRecordId != lastCallNumberItem.MarcRecordId)
+                {
+                    if (lastCallNumberItem.MarcRecordId > 0)
+                    {
+                        callNumbersToSave.Add(lastCallNumberItem);
+                        itemIsAdded = true;
+                    }
+
+                    lastCallNumberItem = new CallNumberItem
+                    {
+                        MarcRecordId = callNumberItem.MarcRecordId,
+                        CallNumber = callNumberItem.SubFieldValue,
+                        DateCreated = callNumberItem.DateCreated,
+                        ProviderId = callNumberItem.ProviderId
+                    };
+                }
+                else
+                {
+                    lastCallNumberItem.CallNumber = $"{lastCallNumberItem.CallNumber}{(isLcCallNumber ? "" : " ")}{callNumberItem.SubFieldValue}";
+                    itemIsAdded = false;
+                }
+
+            }
+
+            if (!itemIsAdded)
+            {
+                callNumbersToSave.Add(lastCallNumberItem);
+            }
+
+            return callNumbersToSave;
+        }
+        private static int InsertCallNumbers(List<CallNumberItem> callNumberItems)
+        {
+            int totalInserted = 0;
+            var sqlBuilder = new StringBuilder();
+            int counter = 0;
+            foreach (var callNumberItem in callNumberItems)
+            {
+                counter++;
+                sqlBuilder.Append($@"
+insert into MarcRecordDataCallNumber(marcRecordId, providerId, dateCreated, callNumber)
+values({callNumberItem.MarcRecordId}, {callNumberItem.ProviderId}, '{callNumberItem.DateCreated}', '{callNumberItem.CallNumber}');");
+                if (counter >= 50)
+                {
+                    totalInserted += ExecuteInsertStatementReturnRowCount(sqlBuilder.ToString(), null, true, Settings.Default.RittenhouseMarcDb);
+                    counter = 0;
+                    sqlBuilder = new StringBuilder();
+                }
+            }
+
+            if (sqlBuilder.Length > 0)
+            {
+                totalInserted += ExecuteInsertStatementReturnRowCount(sqlBuilder.ToString(), null, true, Settings.Default.RittenhouseMarcDb);
+            }
+
+            return totalInserted;
+        }
+        private static int UpdateCallNumbers(List<CallNumberItem> callNumberItems)
+        {
+            int totalUpdated = 0;
+            var sqlBuilder = new StringBuilder();
+            int counter = 0;
+            foreach (var callNumberItem in callNumberItems)
+            {
+                counter++;
+                sqlBuilder.Append($@"
+update MarcRecordDataCallNumber set callNumber = '{callNumberItem.CallNumber}', dateUpdated = '{callNumberItem.DateCreated}'
+where marcRecordId = {callNumberItem.MarcRecordId} and providerId = {callNumberItem.ProviderId};");
+                if (counter >= 50)
+                {
+                    totalUpdated += ExecuteUpdateStatement(sqlBuilder.ToString(), null, true, Settings.Default.RittenhouseMarcDb);
+                    counter = 0;
+                    sqlBuilder = new StringBuilder();
+                }
+            }
+
+            if (sqlBuilder.Length > 0)
+            {
+                totalUpdated += ExecuteUpdateStatement(sqlBuilder.ToString(), null, true, Settings.Default.RittenhouseMarcDb);
+            }
+
+            return totalUpdated;
+        }
+        #endregion
+
+
         public int BuildLcCallNumbers()
         {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
             int callNumbersInserted = 0;
-
-            
 
             try
             {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCallNumberInsert, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                int rows = command.ExecuteNonQuery();
+                var rows = BuildLcCallNumbers(true);
                 callNumbersInserted += rows;
                 stopwatch.Stop();
                 Log.Debug($"LC Call Numbers Inserted: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-
+                
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCallNumberUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                rows = command.ExecuteNonQuery();
+                rows = BuildLcCallNumbers(false);
                 callNumbersInserted += rows;
                 stopwatch.Stop();
                 Log.Debug($"LC Call Numbers Updated: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
-
+                //Category Update is fine
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, LcCategoryUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                var categoryRows = command.ExecuteNonQuery();
+                var categoryRows = ExecuteUpdateStatement(LcCategoryUpdate, null, true, Settings.Default.RittenhouseMarcDb);
                 stopwatch.Stop();
                 Log.Debug($"LC Categories Updated: {categoryRows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
@@ -167,32 +267,22 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
             }
             catch (Exception ex)
             {
-                LogCommandInfo(command);
                 Log.Error(ex.Message, ex);
                 throw;
             }
-            finally
-            {
-                DisposeConnections(cnn, command);
-            }
+
         }
 
 
         public int BuildNlmCallNumbers()
         {
-            SqlConnection cnn = null;
-            SqlCommand command = null;
-
             int callNumbersInserted = 0;
 
             try
             {
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCallNumberInsert, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                int rows = command.ExecuteNonQuery();
+                var rows = BuildNlmCallNumbers(true);
                 callNumbersInserted += rows;
                 stopwatch.Stop();
                 Log.Debug($"NLM Call Numbers Inserted: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
@@ -200,20 +290,15 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
 
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCallNumberUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                rows = command.ExecuteNonQuery();
+                rows = BuildNlmCallNumbers(false);
                 callNumbersInserted += rows;
                 stopwatch.Stop();
                 Log.Debug($"NLM Call Numbers Updated: {rows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
+
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
-                cnn = GetConnection(Settings.Default.RittenhouseMarcDb);
-                command = GetSqlCommand(cnn, NlmCategoryUpdate, new ISqlCommandParameter[0], Settings.Default.DatabaseCommandTimeout);
-                LogCommandDebug(command);
-                var categoryRows = command.ExecuteNonQuery();
+                var categoryRows = ExecuteUpdateStatement(NlmCategoryUpdate, null, true, Settings.Default.RittenhouseMarcDb);
                 stopwatch.Stop();
                 Log.Debug($"NLM Categories effected: {categoryRows}, statement time: {stopwatch.ElapsedMilliseconds}ms");
 
@@ -221,13 +306,8 @@ join MarcRecordDataSubField subTest on x.marcRecordDataSubFieldsId = subTest.mar
             }
             catch (Exception ex)
             {
-                LogCommandInfo(command);
                 Log.Error(ex.Message, ex);
                 throw;
-            }
-            finally
-            {
-                DisposeConnections(cnn, command);
             }
         }
 
@@ -290,7 +370,29 @@ order by 1
             }
             return nlmMarcFields;
         }
+
+        //x.marcRecordId, x.marcRecordProviderTypeId, sub.subFieldValue
+        private class CallNumberItem : FactoryBase, IDataEntity
+        {
+            public int MarcRecordId { get; set; }
+            public int ProviderId { get; set; }
+            public string SubFieldValue { get; set; }
+            public string CallNumber { get; set; }
+            public DateTime DateCreated { get; set; }
+            public void Populate(SqlDataReader reader)
+            {
+                //x.marcRecordId, x.marcRecordProviderTypeId, sub.subFieldValue
+                MarcRecordId = GetInt32Value(reader, "marcRecordId", 0);
+                ProviderId = GetInt32Value(reader, "marcRecordProviderTypeId", 0);
+                SubFieldValue = GetStringValue(reader, "subFieldValue");
+
+                CallNumber = GetStringValue(reader, "callNumber");
+                DateCreated = GetDateValue(reader, "dateCreated", DateTime.MinValue);
+                //mrcn.marcRecordId, mrcn.callNumber, sub.subFieldValue, mrdf.dateCreated
+            }
+        }
     }
 
+    
 
 }

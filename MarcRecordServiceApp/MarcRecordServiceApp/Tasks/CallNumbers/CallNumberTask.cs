@@ -27,7 +27,10 @@ namespace MarcRecordServiceApp.Tasks.CallNumbers
 
             try
             {
+                Log.Debug("Start BuildLcCallNumbers");
                 var lcCallNumbersAddedOrUpdated = _callNumberFactory.BuildLcCallNumbers();
+
+                Log.Debug("Start BuildNlmCallNumbers");
                 var nlmCallNumbersAddedOrUpdated = _callNumberFactory.BuildNlmCallNumbers();
 
                 step.CompletedSuccessfully = true;
