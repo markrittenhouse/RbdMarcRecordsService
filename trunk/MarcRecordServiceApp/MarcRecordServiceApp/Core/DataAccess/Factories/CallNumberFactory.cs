@@ -70,12 +70,18 @@ order by sub.marcRecordDataSubFieldsId
 "
                 :
                 @"
-select mrcn.marcRecordId, mrcn.callNumber, mrdf.marcRecordProviderTypeId, sub.subFieldValue, mrdf.dateCreated
+select mrcn.marcRecordId, mrcn.callNumber, x.marcRecordProviderTypeId, sub.subFieldValue, x.dateCreated
 from MarcRecordDataCallNumber mrcn
-join MarcRecordDataField mrdf on mrcn.marcRecordId = mrdf.marcRecordId and mrcn.providerId = mrdf.marcRecordProviderTypeId
-join MarcRecordDataSubField sub on mrdf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-where mrdf.fieldNumber = '050' and mrdf.marcRecordProviderTypeId = 1
-and mrdf.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+join 
+(select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+        from MarcRecordDataField mrf 
+		left join MarcRecordDataCallNumber xxx on mrf.marcRecordId = xxx.marcRecordId and mrf.marcRecordProviderTypeId = xxx.providerId
+        where mrf.fieldNumber = '050' and mrf.marcRecordProviderTypeId = 1
+		--and xxx.marcRecordId is null
+        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+    ) x on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
+join MarcRecordDataSubField sub on x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+where x.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
 order by sub.marcRecordDataSubFieldsId
 ";
             List<CallNumberItem> callNumberItems = EntityFactory.GetEntityList<CallNumberItem>(sql, null, true, Settings.Default.RittenhouseMarcDb);
@@ -106,12 +112,17 @@ order by sub.marcRecordDataSubFieldsId
 "
                 :
                 @"
-select mrcn.marcRecordId, mrcn.callNumber, mrdf.marcRecordProviderTypeId, sub.subFieldValue, mrdf.dateCreated
+select mrcn.marcRecordId, mrcn.callNumber, x.marcRecordProviderTypeId, sub.subFieldValue, x.dateCreated
 from MarcRecordDataCallNumber mrcn
-join MarcRecordDataField mrdf on mrcn.marcRecordId = mrdf.marcRecordId and mrcn.providerId = mrdf.marcRecordProviderTypeId
-join MarcRecordDataSubField sub on mrdf.marcRecordDataFieldId = sub.marcRecordDataFieldId
-where mrdf.fieldNumber = '060' and mrdf.marcRecordProviderTypeId = 2 and mrdf.fieldIndicator like '1%'
-and mrdf.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
+join 
+(select min(mrf.marcRecordDataFieldId) marcRecordDataFieldId, mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+        from MarcRecordDataField mrf 
+        left join MarcRecordDataCallNumber xxx on mrf.marcRecordId = xxx.marcRecordId and mrf.marcRecordProviderTypeId = xxx.providerId
+        where mrf.fieldNumber = '060' and mrf.marcRecordProviderTypeId = 2 and mrf.fieldIndicator like '1%'
+        group by mrf.marcRecordId, mrf.marcRecordProviderTypeId, mrf.dateCreated
+    ) x on x.marcRecordId = mrcn.marcRecordId and x.marcRecordProviderTypeId = mrcn.providerId
+join MarcRecordDataSubField sub on x.marcRecordDataFieldId = sub.marcRecordDataFieldId
+where x.dateCreated > isnull(mrcn.dateUpdated, mrcn.dateCreated)
 order by sub.marcRecordDataSubFieldsId
 ";
             List<CallNumberItem> callNumberItems = EntityFactory.GetEntityList<CallNumberItem>(sql, null, true, Settings.Default.RittenhouseMarcDb);
