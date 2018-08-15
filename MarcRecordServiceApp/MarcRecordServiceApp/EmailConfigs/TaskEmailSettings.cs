@@ -8,11 +8,13 @@ namespace MarcRecordServiceApp.EmailConfigs
 {
     public class TaskEmailSettings
     {
-        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName);
+        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType?.FullName);
 
         public string TaskKey { get; set; }
-        public EmailConfiguration SuccessEmailConfig { get; private set; }
-        public EmailConfiguration ErrorEmailConfig { get; private set; }        
+        public EmailConfiguration SuccessEmailConfig { get; }
+        public EmailConfiguration ErrorEmailConfig { get; }
+
+        public EmailConfiguration TaskEmailConfig { get; }
 
         /// <summary>
         /// 
@@ -23,12 +25,16 @@ namespace MarcRecordServiceApp.EmailConfigs
             TaskKey = taskKey;
 
             SuccessEmailConfig = new EmailConfiguration { Type = "Success" };
-            ErrorEmailConfig = new EmailConfiguration { Type = "Error" };
-
             PopulateEmailConfigurations("Default", SuccessEmailConfig);
-            PopulateEmailConfigurations("Default", ErrorEmailConfig);
             PopulateEmailConfigurations(taskKey, SuccessEmailConfig);
+
+            ErrorEmailConfig = new EmailConfiguration { Type = "Error" };
+            PopulateEmailConfigurations("Default", ErrorEmailConfig);
             PopulateEmailConfigurations(taskKey, ErrorEmailConfig);
+
+            TaskEmailConfig = new EmailConfiguration { Type = "Task" };
+            PopulateEmailConfigurations("Default", TaskEmailConfig);
+            PopulateEmailConfigurations(taskKey, TaskEmailConfig);
         }
 
         /// <summary>
@@ -39,7 +45,8 @@ namespace MarcRecordServiceApp.EmailConfigs
         private static void PopulateEmailConfigurations(string taskKey, EmailConfiguration emailConfiguration)
         {
             Log.DebugFormat("EmailConfigDirectory: {0}", Settings.Default.EmailConfigDirectory);
-            string xmlFilename = string.Format(@"{0}\{1}.xml", Settings.Default.EmailConfigDirectory, taskKey);
+            string path = Path.GetFullPath(Settings.Default.EmailConfigDirectory);
+            string xmlFilename = string.Format(@"{0}\{1}.xml", path, taskKey);
             Log.DebugFormat("xmlFilename: {0}", xmlFilename);
 
             if (File.Exists(xmlFilename))
@@ -63,7 +70,7 @@ namespace MarcRecordServiceApp.EmailConfigs
                             XmlAttribute send = xmlNode.Attributes["send"];
                             if (type.Value == emailConfiguration.Type)
                             {
-								PopulateEmailAddresses(emailConfiguration, xmlNode);
+                                PopulateEmailAddresses(emailConfiguration, xmlNode);
                                 emailConfiguration.Send = (send.Value.ToLower() == "true");
                             }
                         }
@@ -79,9 +86,9 @@ namespace MarcRecordServiceApp.EmailConfigs
         /// <param name="emailConfigNode"></param>
         private static void PopulateEmailAddresses(EmailConfiguration emailConfiguration, XmlNode emailConfigNode)
         {
-			List<string> toEmailAddresses = new List<string>();
-			List<string> ccEmailAddresses = new List<string>();
-			List<string> bccEmailAddresses = new List<string>();
+            List<string> toEmailAddresses = new List<string>();
+            List<string> ccEmailAddresses = new List<string>();
+            List<string> bccEmailAddresses = new List<string>();
 
             //XmlNodeList emailAddressNodes = emailConfigNode.SelectNodes("/RittenhouseWebLoader/EmailConfigurations/EmailConfiguration/ToAddresses/EmailAddress");
             //XmlNodeList emailAddressNodes = emailConfigNode.SelectNodes("/RittenhouseWebLoader/EmailConfigurations/EmailConfiguration/ToAddresses/EmailAddress");
@@ -103,52 +110,52 @@ namespace MarcRecordServiceApp.EmailConfigs
                     }
                 }
 
-				if (childNode.Name == "CcAddresses")
-				{
-					XmlNodeList emailAddressNodes = childNode.ChildNodes;
+                if (childNode.Name == "CcAddresses")
+                {
+                    XmlNodeList emailAddressNodes = childNode.ChildNodes;
 
-					foreach (XmlNode emailAddressNode in emailAddressNodes)
-					{
-						if (emailAddressNode.Name == "EmailAddress")
-						{
-							Log.DebugFormat("emailAddressNode: {0}", emailAddressNode.InnerText);
-							ccEmailAddresses.Add(emailAddressNode.InnerText);
-						}
-					}
-				}
+                    foreach (XmlNode emailAddressNode in emailAddressNodes)
+                    {
+                        if (emailAddressNode.Name == "EmailAddress")
+                        {
+                            Log.DebugFormat("emailAddressNode: {0}", emailAddressNode.InnerText);
+                            ccEmailAddresses.Add(emailAddressNode.InnerText);
+                        }
+                    }
+                }
 
-				if (childNode.Name == "BccAddresses")
-				{
-					XmlNodeList emailAddressNodes = childNode.ChildNodes;
+                if (childNode.Name == "BccAddresses")
+                {
+                    XmlNodeList emailAddressNodes = childNode.ChildNodes;
 
-					foreach (XmlNode emailAddressNode in emailAddressNodes)
-					{
-						if (emailAddressNode.Name == "EmailAddress")
-						{
-							Log.DebugFormat("emailAddressNode: {0}", emailAddressNode.InnerText);
-							bccEmailAddresses.Add(emailAddressNode.InnerText);
-						}
-					}
-				}
-			}
+                    foreach (XmlNode emailAddressNode in emailAddressNodes)
+                    {
+                        if (emailAddressNode.Name == "EmailAddress")
+                        {
+                            Log.DebugFormat("emailAddressNode: {0}", emailAddressNode.InnerText);
+                            bccEmailAddresses.Add(emailAddressNode.InnerText);
+                        }
+                    }
+                }
+            }
 
-			emailConfiguration.ToAddresses.Clear();
-			if (toEmailAddresses.Count > 0)
+            emailConfiguration.ToAddresses.Clear();
+            if (toEmailAddresses.Count > 0)
             {
                 emailConfiguration.ToAddresses.AddRange(toEmailAddresses);
             }
 
-			emailConfiguration.CcAddresses.Clear();
-			if (ccEmailAddresses.Count > 0)
-			{
-				emailConfiguration.CcAddresses.AddRange(ccEmailAddresses);
-			}
+            emailConfiguration.CcAddresses.Clear();
+            if (ccEmailAddresses.Count > 0)
+            {
+                emailConfiguration.CcAddresses.AddRange(ccEmailAddresses);
+            }
 
-			emailConfiguration.BccAddresses.Clear();
-			if (bccEmailAddresses.Count > 0)
-			{
-				emailConfiguration.BccAddresses.AddRange(bccEmailAddresses);
-			}
-		}
+            emailConfiguration.BccAddresses.Clear();
+            if (bccEmailAddresses.Count > 0)
+            {
+                emailConfiguration.BccAddresses.AddRange(bccEmailAddresses);
+            }
+        }
     }
 }

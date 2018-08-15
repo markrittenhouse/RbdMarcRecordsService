@@ -4,7 +4,7 @@ using MarcRecordServiceApp.Core.DataAccess.Factories;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class DailyMarcRecordsTask : TaskBase2
+    public class DailyMarcRecordsTask : TaskBase
     {
         public DailyMarcRecordsTask()
             : base("Generate Daily MArC Records", "CreateDailyMarcRecords")

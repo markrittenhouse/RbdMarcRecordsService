@@ -4,7 +4,7 @@ using MarcRecordServiceApp.Core.DataAccess.Factories;
 
 namespace MarcRecordServiceApp.Tasks.CallNumbers
 {
-    public class CallNumberTask : TaskBase2
+    public class CallNumberTask : TaskBase
     {
         private readonly CallNumberFactory _callNumberFactory;
         public CallNumberTask() 

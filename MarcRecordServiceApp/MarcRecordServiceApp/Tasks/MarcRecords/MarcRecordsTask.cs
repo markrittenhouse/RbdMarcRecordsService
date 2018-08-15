@@ -9,7 +9,7 @@ using MarcRecordServiceApp.Core.MarcRecord;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class MarcRecordsTask : TaskBase2
+    public class MarcRecordsTask : TaskBase
     {
         //private readonly int _batchSize = Properties.Settings.Default.MarcRecordBatchSize;
         //private readonly int _batchSize = 100;
@@ -62,7 +62,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             TaskResultStep step = new TaskResultStep
             {
-                Name = "MarcRecords.Generator",
+                Name = $"MarcRecords.Generator  - {ProviderType.ToString()}",
                 TaskResultId = TaskResult.Id,
                 StartTime = DateTime.Now
             };
@@ -70,7 +70,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
             try
             {
-                step.CompletedSuccessfully = ProcessMarcRecordBatchs();
+                step.CompletedSuccessfully = ProcessMarcRecordBatchs(step);
                 step.Results.Append($"Marc Record Provider: {ProviderType.ToString()}");
                 step.Results.Append($"Records To Find {_recordsToFind} || Records Found: {_recordsFound} ");
             }
@@ -87,7 +87,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             }
         }
 
-        private bool ProcessMarcRecordBatchs()
+        private bool ProcessMarcRecordBatchs(TaskResultStep step)
         {
             try
             {
@@ -101,9 +101,16 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 int newProductsProcessed = 0;
                 int batchProductProcessed;
 
-
+                Stopwatch timer = new Stopwatch();
+                timer.Start();
+                var fiveHours = 1.8e+7;
                 while ((batchProductProcessed = ProcessNextBatchOfNewProducts(Settings.Default.MarcRecordBatchSize)) > 0)
                 {
+                    if (timer.ElapsedMilliseconds >= fiveHours)
+                    {
+                        step.Results.Append("Ending Process after 5 hours of run time.");
+                        break;
+                    }
                     Log.InfoFormat("batchProductProcessed: {0}", batchProductProcessed);
                     newProductsProcessed += batchProductProcessed;
                     Log.InfoFormat("newProductsProcessed: {0}", newProductsProcessed);
@@ -125,57 +132,6 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
                 return false;
             }
         }
-
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <returns></returns>
-        //private int ProcessNextBatchOfNewProducts(int batchSize, string workingDirectory)
-        //{
-        //    var batchTimer = new Stopwatch();
-        //    batchTimer.Start();
-            
-        //    int productProcessedCount = 0;
-        //    int processedAttempts = 0;
-        //    //Loop three times if a failure
-        //    while (processedAttempts < 3)
-        //    {
-        //        try
-        //        {
-        //            // get next batch to process
-        //            Stopwatch timer = new Stopwatch();
-        //            timer.Start();
-        //            List<IMarcFile> marcFiles = MarcRecordsProductFactory.GetProductsWithoutMarcRecords(batchSize, ProviderType);
-        //            Log.Info("");
-        //            Log.Info($"GetProductsWithoutMarcRecords count[{marcFiles.Count}] products. It took {timer.ElapsedMilliseconds}ms");
-        //            if (marcFiles.Count == 0)
-        //            {
-        //                return 0;
-        //            }
-        //            timer = new Stopwatch();
-        //            timer.Start();
-        //            marcFiles = SetMarcDataForProductsOld(marcFiles, workingDirectory);
-        //            Log.Info($"SetMarcDataForProductsOld. It took {timer.ElapsedMilliseconds}ms");
-
-        //            timer = new Stopwatch();
-        //            timer.Start();
-        //            foreach (int rowsSaved in marcFiles.Select(MarcRecordsProductFactory.InsertUpdateMarcRecordFile))
-        //            {
-        //                Log.DebugFormat("rowsSaved: {0}", rowsSaved);
-        //                productProcessedCount++;
-        //            }
-        //            Log.Info($"MarcRecordsProductFactory.InsertUpdateMarcRecordFile loop . It took {timer.ElapsedMilliseconds}ms");
-        //            break;
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Log.Error(ex.Message, ex);
-        //            processedAttempts++;
-        //        }
-        //    }
-        //    Log.Info($"ProcessNextBatchOfNewProducts Batch took {batchTimer.ElapsedMilliseconds}ms");
-        //    return productProcessedCount;
-        //}
 
         private int ProcessNextBatchOfNewProducts(int batchSize)
         {

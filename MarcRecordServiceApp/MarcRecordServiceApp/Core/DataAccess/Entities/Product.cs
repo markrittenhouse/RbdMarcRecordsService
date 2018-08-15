@@ -3,7 +3,7 @@ using MarcRecordServiceApp.Core.DataAccess.Entities.Base;
 
 namespace MarcRecordServiceApp.Core.DataAccess.Entities
 {
-	public class Product : EntityBase 
+    public class Product : EntityBase 
     {
         public int Id { get; set; }
         public string Sku { get; set; }
@@ -15,7 +15,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Entities
         public string Authors { get; set; }
         public string FirstAuthorLastName { get; set; }
 
-		
+        
         public int Copyright { get; set; }
         public string PublicationDate { get; set; }
         public string Format { get; set; }

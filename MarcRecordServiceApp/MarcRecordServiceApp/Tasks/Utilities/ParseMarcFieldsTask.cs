@@ -8,7 +8,7 @@ using MarcRecordServiceApp.Core.DataAccess.Factories;
 
 namespace MarcRecordServiceApp.Tasks.Utilities
 {
-    public class ParseMarcFieldsTask : TaskBase2
+    public class ParseMarcFieldsTask : TaskBase
     {
         private readonly CallNumberFactory _callNumberFactory;
         private readonly MarcFieldParsingFactory _marcFieldParsingFactory;

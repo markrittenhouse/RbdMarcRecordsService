@@ -7,7 +7,7 @@ using MarcRecordServiceApp.Core.MarcRecord;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class OclcR2LibraryMarcRecordsTask : TaskBase2
+    public class OclcR2LibraryMarcRecordsTask : TaskBase
     {
         private readonly R2ProductFactory _r2ProductFactory;
         private readonly DateTime _currentDateTime = DateTime.Now;
