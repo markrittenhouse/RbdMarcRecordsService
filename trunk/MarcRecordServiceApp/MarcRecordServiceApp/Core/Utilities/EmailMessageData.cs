@@ -9,7 +9,7 @@ namespace MarcRecordServiceApp.Core.Utilities
 {
     public class EmailMessageData
     {
-        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName);
+        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType?.FullName);
 
         public string MessageBody { get; set;}
         public string Subject { get; set; }

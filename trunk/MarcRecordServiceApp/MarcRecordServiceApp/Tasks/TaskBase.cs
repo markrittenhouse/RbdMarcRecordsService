@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Xml;
-using System.Xml.Linq;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories;
 using MarcRecordServiceApp.Core.Utilities;
@@ -14,32 +11,32 @@ using log4net;
 
 namespace MarcRecordServiceApp.Tasks
 {
-    public abstract class TaskBase2 : ITask
+    public abstract class TaskBase : ITask
     {
         private readonly Random _random = new Random();
         private readonly DateTime _currentDateTime = DateTime.Now;
 
-        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName);
+        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType?.FullName);
 
-        protected TaskEmailSettings EmailSettings { get; private set; }
+        protected TaskEmailSettings EmailSettings { get; }
 
 		//protected SqlConnectionStringBuilder RittenhouseWebSqlConnection = new SqlConnectionStringBuilder(Properties.Settings.Default.RittenhouseWebDb);
 		protected SqlConnectionStringBuilder DatabaseConnection = new SqlConnectionStringBuilder(Settings.Default.RittenhouseMarcDb);
 
-        public TaskResult TaskResult { get; private set; }
-        public TaskResult PreviousTaskResult { get; private set; }
+        public TaskResult TaskResult { get; }
+        public TaskResult PreviousTaskResult { get; }
 
-        protected string BulkInsertDataFileName { get; set; }
-        protected string BulkInsertDatabaseTable { get; set; }
-        protected string BulkInsertDelimiter { get; set; }
-        protected string WorkingDatabasePrefix { get; set; }
+        //protected string BulkInsertDataFileName { get; set; }
+        //protected string BulkInsertDatabaseTable { get; set; }
+        //protected string BulkInsertDelimiter { get; set; }
+        //protected string WorkingDatabasePrefix { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="taskName"></param>
         /// <param name="taskKey"></param>
-        protected TaskBase2(string taskName, string taskKey)
+        protected TaskBase(string taskName, string taskKey)
         {
             //TaskName = taskName;
 
@@ -92,14 +89,8 @@ namespace MarcRecordServiceApp.Tasks
                 return;
             }
 
-			if ((TaskResult.CompletedSuccessfully))
-			{
-				SendCompleteEmail(subject, emailBody.ToString(), EmailSettings.SuccessEmailConfig);				
-			}
-			else
-			{
-				SendCompleteEmail(subject, emailBody.ToString(), EmailSettings.ErrorEmailConfig);
-			}
+            SendCompleteEmail(subject, emailBody.ToString(),
+                TaskResult.CompletedSuccessfully ? EmailSettings.SuccessEmailConfig : EmailSettings.ErrorEmailConfig);
         }
 
         /// <summary>
@@ -283,29 +274,29 @@ namespace MarcRecordServiceApp.Tasks
             return next;
         }
 
-        public IEnumerable<XElement> SimpleStreamAxis2(string marcXml, string elementName)
-        {
-            XmlReaderSettings settings = new XmlReaderSettings { DtdProcessing = DtdProcessing.Parse };
+        //public IEnumerable<XElement> SimpleStreamAxis2(string marcXml, string elementName)
+        //{
+        //    XmlReaderSettings settings = new XmlReaderSettings { DtdProcessing = DtdProcessing.Parse };
 
-            using (XmlReader reader = XmlReader.Create(new StringReader(marcXml), settings))
-            {
-                reader.MoveToContent(); // will not advance reader if already on a content node; if successful, ReadState is Interactive
-                reader.Read();          // this is needed, even with MoveToContent and ReadState.Interactive
-                while (!reader.EOF && reader.ReadState == ReadState.Interactive)
-                {
-                    if (reader.NodeType == XmlNodeType.Element && reader.Name.Equals(elementName))
-                    {
-                        var matchedElement = XNode.ReadFrom(reader) as XElement;
-                        if (matchedElement != null)
-                            yield return matchedElement;
-                    }
-                    else
-                    {
-                        reader.Read();
-                    }
-                }
-            }
-        }
+        //    using (XmlReader reader = XmlReader.Create(new StringReader(marcXml), settings))
+        //    {
+        //        reader.MoveToContent(); // will not advance reader if already on a content node; if successful, ReadState is Interactive
+        //        reader.Read();          // this is needed, even with MoveToContent and ReadState.Interactive
+        //        while (!reader.EOF && reader.ReadState == ReadState.Interactive)
+        //        {
+        //            if (reader.NodeType == XmlNodeType.Element && reader.Name.Equals(elementName))
+        //            {
+        //                var matchedElement = XNode.ReadFrom(reader) as XElement;
+        //                if (matchedElement != null)
+        //                    yield return matchedElement;
+        //            }
+        //            else
+        //            {
+        //                reader.Read();
+        //            }
+        //        }
+        //    }
+        //}
 
         public void ClearWorkingDirectory(string workingDirectory)
         {
@@ -323,8 +314,8 @@ namespace MarcRecordServiceApp.Tasks
         {
             if (resource.Categories != null || resource.SubCategories != null)
             {
-                var categories = resource.Categories != null ? resource.Categories.ToList() : null;
-                var subCategories = resource.SubCategories != null ? resource.SubCategories.ToList() : null;
+                var categories = resource.Categories?.ToList();
+                var subCategories = resource.SubCategories?.ToList();
                 //If categories = subCategories
                 if (categories != null && subCategories != null)
                 {
@@ -366,7 +357,7 @@ namespace MarcRecordServiceApp.Tasks
                         mrkFileText.AppendFormat("=650  {0}4$a{1}", GetSpace(1), r2Category.Category).AppendLine();
                     }
                 }
-                else if (subCategories != null)
+                else
                 {
                     foreach (var r2SubCategories in subCategories)
                     {

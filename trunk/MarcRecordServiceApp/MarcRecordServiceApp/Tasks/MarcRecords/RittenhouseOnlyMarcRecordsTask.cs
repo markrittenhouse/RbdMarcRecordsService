@@ -12,7 +12,7 @@ using MarcRecordServiceApp.Core.MarcRecord;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class RittenhouseOnlyMarcRecordsTask : TaskBase2
+    public class RittenhouseOnlyMarcRecordsTask : TaskBase
     {
         
         private readonly StringBuilder _results = new StringBuilder();

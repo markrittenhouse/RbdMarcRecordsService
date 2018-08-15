@@ -4,7 +4,7 @@ using MarcRecordServiceApp.Core.DataAccess.Factories;
 
 namespace MarcRecordServiceApp.Tasks.Utilities
 {
-    public class AdditionalMarcFieldTask : TaskBase2
+    public class AdditionalMarcFieldTask : TaskBase
     {
         private readonly AdditionalMarcFieldFactory _additionalMarcFieldFactory;
         public AdditionalMarcFieldTask() : base("Additional Marc Field Task", "AdditionalMarcFieldTask")

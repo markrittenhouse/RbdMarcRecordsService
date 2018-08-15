@@ -106,20 +106,23 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
         /// </summary>
         /// <param name="minDate"></param>
         /// <param name="maxDate"></param>
+        /// <param name="taskResultId"></param>
         /// <returns></returns>
-        public static List<TaskResult> GetTaskResultsFromDate(DateTime minDate, DateTime maxDate)
+        public static List<TaskResult> GetTaskResultsFromDate(DateTime minDate, DateTime maxDate, int taskResultId)
         {
             StringBuilder sql = new StringBuilder()
                 .Append("select taskResultId, taskName, taskStartTime, taskEndTime, taskCompletedSuccessfully, taskRunComments ")
                 .Append("from   TaskResult ")
                 .Append("where  taskStartTime >= @MinDate ")
                 .Append("  and  taskStartTime < @MaxDate ")
+                .Append("  and  taskResultId <> @TaskResultId ")
                 .Append("order by taskResultId desc ");
 
             List<ISqlCommandParameter> parameters = new List<ISqlCommandParameter>
                                                         {
                                                             new DateTimeParameter("MinDate", minDate),
-                                                            new DateTimeParameter("MaxDate", maxDate)
+                                                            new DateTimeParameter("MaxDate", maxDate),
+                                                            new Int32Parameter("TaskResultId", taskResultId)
                                                         };
 
 			List<TaskResult> taskResultEntities = EntityFactory.GetEntityList<TaskResult>(sql.ToString(), parameters, true, DbConnectionString);
@@ -129,6 +132,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 .Append("from   TaskResult tr join  dbo.TaskResultStep trs on trs.taskResultId = tr.taskResultId ")
                 .Append("where  tr.taskStartTime >= @MinDate ")
                 .Append("  and  tr.taskStartTime < @MaxDate ")
+                .Append("  and  tr.taskResultId <> @TaskResultId ")
                 .Append("order by trs.taskResultId, trs.taskResultStepId ");
 
 			List<TaskResultStep> taskResultStepEntities = EntityFactory.GetEntityList<TaskResultStep>(sql.ToString(), parameters, true, DbConnectionString);

@@ -11,7 +11,7 @@ using MARCEngine5;
 
 namespace MarcRecordServiceApp.Tasks.MarcRecords
 {
-    public class R2LibraryMarcRecordsTask : TaskBase2
+    public class R2LibraryMarcRecordsTask : TaskBase
     {
         private readonly R2ProductFactory _r2ProductFactory;
         private readonly MarcRecordService _marcRecordService;

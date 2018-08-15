@@ -11,5 +11,10 @@
 				<EmailAddress>Kenhaberle@technotects.com</EmailAddress>
 				</ToAddresses>
 		</EmailConfiguration>
+	  <EmailConfiguration type="Task" send="true">
+	    <ToAddresses>
+	      <EmailAddress>Kenhaberle@technotects.com</EmailAddress>
+	    </ToAddresses>
+	  </EmailConfiguration>
 	</EmailConfigurations>
 </RittenhouseWebLoader>

@@ -134,6 +134,7 @@
     <Compile Include="Core\DataAccess\SqlCommandParameters\Int64Parameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\ISqlCommandParameter.cs" />
     <Compile Include="Core\DataAccess\SqlCommandParameters\StringParameter.cs" />
+    <Compile Include="Core\HtmlControlBuilder.cs" />
     <Compile Include="Core\MarcRecord\AdditionalField.cs" />
     <Compile Include="Core\MarcRecord\IMarcFile.cs" />
     <Compile Include="Core\MarcRecord\LcMarcFile.cs" />
@@ -166,6 +167,7 @@
     <Compile Include="Tasks\MarcRecords\R2LibraryMarcRecordsTask.cs" />
     <Compile Include="Tasks\MarcRecords\RittenhouseOnlyMarcRecordsTask.cs" />
     <Compile Include="Tasks\TaskBase.cs" />
+    <Compile Include="Tasks\Utilities\TaskResultsEmailTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
