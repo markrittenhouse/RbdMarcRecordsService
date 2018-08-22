@@ -108,7 +108,7 @@ namespace MarcRecordServiceApp.Core.Utilities
             if (!string.IsNullOrEmpty(ReplyToAddress))
             {
                 Log.DebugFormat("Adding REPLY-TO address: <{0}>, '{1}'", ReplyToAddress, ReplyToDisplayName);
-                message.ReplyTo = (string.IsNullOrEmpty(ReplyToDisplayName)) ? new MailAddress(ReplyToAddress) : new MailAddress(ReplyToAddress, ReplyToDisplayName);
+                message.ReplyToList.Add((string.IsNullOrEmpty(ReplyToDisplayName)) ? new MailAddress(ReplyToAddress) : new MailAddress(ReplyToAddress, ReplyToDisplayName));
             }
 
             message.Subject = Subject;

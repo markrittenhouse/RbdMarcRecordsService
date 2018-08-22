@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using MarcRecordServiceApp.Core.DataAccess.Entities;
 using MarcRecordServiceApp.Core.DataAccess.Factories.Base;
@@ -148,6 +149,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
                 }
             }
 
+            taskResultEntities = taskResultEntities.OrderByDescending(x => x.StartTime).ToList();
             return taskResultEntities;
         }
 
