@@ -343,6 +343,12 @@ order by 1
 
         public List<MarcRecordData> GetNlmAndLcMarcRecords(int batchSize)
         {
+            DailyMarcRecordFactory.ReIndexTable("MarcRecordFile");
+            DailyMarcRecordFactory.ReIndexTable("MarcRecordProvider");
+            DailyMarcRecordFactory.ReIndexTable("MarcRecord");
+            DailyMarcRecordFactory.ReIndexTable("MarcRecordProviderType");
+            DailyMarcRecordFactory.ReIndexTable("MarcRecordDataField");
+            
             SqlConnection cnn = null;
             SqlCommand command = null;
             SqlDataReader reader = null;

@@ -90,9 +90,9 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
             return totalRecordCount;
         }
 
-        public static void ReIndexDailyMarcRecords()
+        public static void ReIndexTable(string tableName)
         {
-            RebuildIndexTable("DailyMarcRecordFile");
+            RebuildIndexTable(tableName);
 
             var sql = string.Format(" EXEC sp_updatestats ");
 
@@ -130,6 +130,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
         private static void RebuildIndexTable(string tableName)
         {
+            var sql2 = $"ALTER INDEX ALL ON [MarcRecords]..{tableName} REBUILD";
             var sql = string.Format("DBCC DBREINDEX (\"[MarcRecords]..{0}\", \" \", 80);", tableName);
 
             SqlConnection cnn = null;
