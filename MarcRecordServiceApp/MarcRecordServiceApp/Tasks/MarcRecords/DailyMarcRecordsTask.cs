@@ -62,7 +62,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
             //Log.InfoFormat("files truncated : {0}  ||  files added : {1}", originalCount, (nlmCount + lcCount + rittenhouseCount));
             Log.InfoFormat("files truncated : {0}  ||  files added : {1}", originalCount, rittenhouseCount);
 
-            DailyMarcRecordFactory.ReIndexDailyMarcRecords();
+            DailyMarcRecordFactory.ReIndexTable("DailyMarcRecordFile");
             return true;
         }
     }
