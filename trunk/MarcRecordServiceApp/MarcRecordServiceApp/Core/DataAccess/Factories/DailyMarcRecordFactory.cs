@@ -145,7 +145,7 @@ namespace MarcRecordServiceApp.Core.DataAccess.Factories
 
                 command = cnn.CreateCommand();
                 command.CommandText = sql;
-                command.CommandTimeout = 120;
+                command.CommandTimeout = 360;
 
                 command.ExecuteNonQuery();
 
