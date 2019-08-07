@@ -324,7 +324,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
                 mrkFileText.AppendMarcValue($"{GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500",additionalFields);
                 mrkFileText.AppendMarcValue(product.Sku, additionalFields, 1);
                 mrkFileText.AppendMarcValue($"{DateTime.Now:yyyyMMddhhmmss}.0", additionalFields, 5);
-                mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",additionalFields, 8);
+                mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ",additionalFields, 8);
 
 
                 if (!string.IsNullOrWhiteSpace(product.Isbn10))
