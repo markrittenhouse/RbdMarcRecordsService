@@ -361,10 +361,21 @@ namespace MarcRecordServiceSite.Controllers
                     }
                 }
 
+                string urlSuffix = null;
+                //var customMarcFields = marcRecordRequest.CustomMarcFields;
+                if (customMarcFields != null && customMarcFields.Any())
+                {
+                    foreach (var jsonCustomMarcField in customMarcFields.Where(x => x.FieldNumber == 8566))
+                    {
+                        urlSuffix = jsonCustomMarcField.FieldValue;
+                    }
+                }
+
+                //urlSuffix
                 stopwatch = new Stopwatch();
                 stopwatch.Start();
 
-                List<string> marcRecordPaths = _marcRecordService.WriteDigitalMarcRecordFiles(files, marcRecordRequest.AccountNumber, urlPrefix);
+                List<string> marcRecordPaths = _marcRecordService.WriteDigitalMarcRecordFiles(files, marcRecordRequest.AccountNumber, urlPrefix, urlSuffix);
 
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>WriteMarcRecordFiles Time it took: {0}ms", stopwatch.ElapsedMilliseconds);
