@@ -173,15 +173,15 @@ namespace MarcRecordServiceSite.Infrastructure
 
         public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber)
         {
-            return WriteDigitalMarcRecordFiles(files, accountNumber, null);
+            return WriteDigitalMarcRecordFiles(files, accountNumber, null, null);
         }
-        public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber, string urlPrefix)
+        public List<string> WriteDigitalMarcRecordFiles(List<DigitalMarcRecordFile> files, string accountNumber, string urlPrefix, string urlSuffix)
         {
             List<string> marcRecordPaths = new List<string>();
 
             foreach (DigitalMarcRecordFile file in files)
             {
-                var marcRecord = WriteDigitalMarcRecordFile(file, accountNumber, urlPrefix);
+                var marcRecord = WriteDigitalMarcRecordFile(file, accountNumber, urlPrefix, urlSuffix);
                 if (!string.IsNullOrWhiteSpace(marcRecord))
                 {
                     marcRecordPaths.Add(marcRecord);
@@ -191,7 +191,7 @@ namespace MarcRecordServiceSite.Infrastructure
             return marcRecordPaths;
         }
 
-        public string WriteDigitalMarcRecordFile(DigitalMarcRecordFile marcRecordFile, string accountNumber, string urlPrefix)
+        public string WriteDigitalMarcRecordFile(DigitalMarcRecordFile marcRecordFile, string accountNumber, string urlPrefix, string urlSuffix)
         {
             string filePath = GetFilePath(accountNumber, marcRecordFile.Isbn13);
             try
@@ -206,6 +206,8 @@ namespace MarcRecordServiceSite.Infrastructure
                         {
                             marcFile = marcFile.Insert((marcFile.IndexOf("online$u", StringComparison.Ordinal) + 8), urlPrefix);
                         }
+
+                        marcFile = $"{marcFile}{urlSuffix}";
                         streamWriter.Write(marcFile);
                     }
                     fileStream.Close();
