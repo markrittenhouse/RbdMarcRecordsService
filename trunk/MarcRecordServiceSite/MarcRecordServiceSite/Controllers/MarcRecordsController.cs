@@ -346,6 +346,8 @@ namespace MarcRecordServiceSite.Controllers
                     return View("Error", isbnsNotFound);
                 }
 
+                files = AlterDigitalMarcRecords(files);
+                
                 if (marcRecordRequest.IsDeleteFile)
                 {
                     files = _marcRecordService.CreateDeleteMarcRecordFiles(files);
@@ -361,7 +363,7 @@ namespace MarcRecordServiceSite.Controllers
                     }
                 }
 
-                string urlSuffix = null;
+                string urlSuffix = "";
                 //var customMarcFields = marcRecordRequest.CustomMarcFields;
                 if (customMarcFields != null && customMarcFields.Any())
                 {
@@ -433,6 +435,25 @@ namespace MarcRecordServiceSite.Controllers
             }
             return View("Error");
         }
+
+        private List<DigitalMarcRecordFile> AlterDigitalMarcRecords(List<DigitalMarcRecordFile> files)
+        {
+            var alteredFiles = new List<DigitalMarcRecordFile>();
+
+            if (files != null && files.Any())
+            {
+                foreach (var digitalMarcRecordFile in files)
+                {
+                    var marcRecord = digitalMarcRecordFile.MarcFile.Replace(@"\\\\\\\\\\\\\\\\\\\\\\\eng\d", @"\\\\\\\\\\\o\\\\\\\\\\\eng\d");
+                    digitalMarcRecordFile.MarcFile = marcRecord;
+                    alteredFiles.Add(digitalMarcRecordFile);
+                }
+            }
+
+            return alteredFiles;
+        }
+
+
         [DeleteFileAttribute]
         private ActionResult OclcEBookDownload(JsonMarcRecordRequest marcRecordRequest)
         {
@@ -476,6 +497,8 @@ namespace MarcRecordServiceSite.Controllers
                 List<DigitalMarcRecordFile> files = marcRecordQueries.GetOclcEBookMarcRecords(IsbnsToFind);
                 stopwatch.Stop();
                 Log.InfoFormat(">>>>>>>>>>>>Marc files found: {0} || Time it took: {1}ms", files.Count, stopwatch.ElapsedMilliseconds);
+
+                files = AlterDigitalMarcRecords(files);
 
                 if (files.Count == 0)
                 {
