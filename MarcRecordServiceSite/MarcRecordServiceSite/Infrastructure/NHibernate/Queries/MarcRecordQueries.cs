@@ -138,15 +138,17 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
 
         public List<DigitalMarcRecordFile> GetEBookMarcRecords(List<string> items)
         {
-            StringBuilder sbItemsToFind = new StringBuilder();
+            StringBuilder sbIsbnInserts = new StringBuilder();
             foreach (string item in items)
             {
-                sbItemsToFind.AppendFormat("'{0}',", item);
+                sbIsbnInserts.AppendFormat("INSERT INTO @itemsToFind SELECT '{0}' ", item);
             }
 
-            string itemsToFind = sbItemsToFind.ToString(0, sbItemsToFind.Length - 1);
-
             var sql = new StringBuilder()
+                .Append("DECLARE @itemsToFind TABLE ")
+                .Append("(isbn varchar(20)) ")
+
+                .Append(sbIsbnInserts)
 
                 .Append("SELECT {wmrOUTER.*} ")
                 .Append("from WebR2LibraryMarcRecords wmrOUTER ")
@@ -158,12 +160,10 @@ namespace MarcRecordServiceSite.Infrastructure.NHibernate.Queries
                 .Append("    order by mrpt.[priority] ")
                 .Append(") ")
 
-
-
                 //.Append("SELECT {wrmr.*} ")
                 //.Append("FROM [dbo].[WebR2LibraryMarcRecords] as wrmr ")
-//                .AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
-                .AppendFormat("and (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+                //.AppendFormat("where (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", itemsToFind)
+                .AppendFormat("and (isbn10 in ({0}) or isbn13 in ({0}) or isbn in ({0}) or eisbn in ({0})) ", "SELECT isbn FROM @itemsToFind")
 
                 .ToString();
 
