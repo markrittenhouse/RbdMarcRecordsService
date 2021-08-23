@@ -103,7 +103,7 @@ namespace MarcRecordServiceApp.Tasks.MarcRecords
 
                 mrkFileText.AppendLine(string.Format("=001  {0}", resource.Isbn));
                 mrkFileText.AppendLine(string.Format("=005  {0:yyyyMMddhhmmss}.0", DateTime.Now));
-                mrkFileText.AppendLine(string.Format("=008  {0:yyMMdd}s{1:0000}{2}eng{3}o", _currentDateTime, resource.PublicationYear, GetSpace(23), GetSpace(1)));
+                mrkFileText.AppendLine(string.Format("=008  {0:yyMMdd}s{1:0000}{2}eng{3}o", _currentDateTime, resource.PublicationYear, GetSpace(24), GetSpace(1)));
 
                 var firstAuthorString = resource.AuthorList.Any()
                     ? resource.AuthorList.First(x => x.Order == 1).ToDisplayName()

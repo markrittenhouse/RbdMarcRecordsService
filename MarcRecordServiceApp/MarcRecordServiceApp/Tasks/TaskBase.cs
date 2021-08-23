@@ -165,7 +165,7 @@ namespace MarcRecordServiceApp.Tasks
                 Log.Debug($"PublicationYearText: {product.PublicationYearText}, PublicationYear: {product.PublicationYear}, sku: {product.Sku}");
 
 
-                string line008 = $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
+                string line008 = $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
 
                 Log.DebugFormat("line008: {0}", line008);
                 Log.DebugFormat("line008.Length: {0}", line008.Length);

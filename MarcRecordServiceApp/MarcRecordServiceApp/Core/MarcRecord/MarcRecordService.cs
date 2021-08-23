@@ -244,7 +244,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
         //            $"PublicationYearText: {product.PublicationYearText}, PublicationYear: {product.PublicationYear}, sku: {product.Sku}");
 
         //        string line008 =
-        //            $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
+        //            $"=008  {_currentDateTime:yyMMdd}s{product.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ";
 
         //        Log.DebugFormat("line008: {0}", line008);
         //        Log.DebugFormat("line008.Length: {0}", line008.Length);
@@ -388,7 +388,7 @@ namespace MarcRecordServiceApp.Core.MarcRecord
             mrkFileText.AppendMarcValue($"{GetNext5DigitRandomNumber()}nam  22{GetNext5DigitRandomNumber()}2a 4500", additionalFields);
             mrkFileText.AppendMarcValue(resource.Isbn, additionalFields, 1);
             mrkFileText.AppendMarcValue($"{DateTime.Now:yyyyMMddhhmmss}.0", additionalFields, 5);
-            mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{resource.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ", additionalFields, 8);
+            mrkFileText.AppendMarcValue($"{_currentDateTime:yyMMdd}s{resource.PublicationYear:0000}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\eng\\d ", additionalFields, 8);
 
 
 
