@@ -21,7 +21,7 @@ echo.
 echo ----------------------
 echo -- Building Web App --
 echo ----------------------
-"C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe" "..\MarcRecordServiceSite\MarcRecordServiceSite.sln" /p:DeployOnBuild=true /p:PublishProfile=Profile1
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\msbuild.exe" "..\MarcRecordServiceSite\MarcRecordServiceSite.sln" /p:DeployOnBuild=true /p:PublishProfile=Profile1
 pause
 
 echo.
