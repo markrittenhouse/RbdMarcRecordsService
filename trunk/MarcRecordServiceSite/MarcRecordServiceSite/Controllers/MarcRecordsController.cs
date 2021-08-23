@@ -444,7 +444,7 @@ namespace MarcRecordServiceSite.Controllers
             {
                 foreach (var digitalMarcRecordFile in files)
                 {
-                    var marcRecord = digitalMarcRecordFile.MarcFile.Replace(@"\\\\\\\\\\\\\\\\\\\\\\\eng\d", @"\\\\\\\\\\\o\\\\\\\\\\\eng\d");
+                    var marcRecord = digitalMarcRecordFile.MarcFile.Replace(@"\\\\\\\\\\\\\\\\\\\\\\\\eng\d", @"\\\\\\\\\\\\o\\\\\\\\\\\eng\d");
                     digitalMarcRecordFile.MarcFile = marcRecord;
                     alteredFiles.Add(digitalMarcRecordFile);
                 }
