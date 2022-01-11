@@ -10,7 +10,7 @@
         <label>Sorry for the inconvenience, but we could not find Marc Records for the following:</label><br/>
         foreach (var isbn in Model.Isbns)
         {
-            Html.DisplayFor(x => isbn);<br/>
+            @Html.DisplayFor(x => isbn);<br/>
         }
         <br/>
     }
